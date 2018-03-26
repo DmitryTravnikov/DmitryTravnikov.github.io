@@ -102,14 +102,14 @@ header {
           flex-direction: column;
   padding: 2rem;
   height: 100vh;
-  background: -webkit-gradient(linear, right top, left top, from(#1aa37a), color-stop(#1aa35c), color-stop(#1aa33d), color-stop(#1aa31f), color-stop(#2da31a), color-stop(#45a31a), color-stop(#5da31a), color-stop(#76a31a), color-stop(#94a31a), color-stop(#a39a1a), color-stop(#a3821a), color-stop(#a3701a), color-stop(#a35e1a), color-stop(#a3451a), color-stop(#a32d1a), color-stop(#a31a31), color-stop(#a31a4f), color-stop(#a31a67), color-stop(#a31a80), color-stop(#a31a9e), color-stop(#901aa3), color-stop(#7e1aa3), color-stop(#661aa3), color-stop(#4d1aa3), color-stop(#2f1aa3), color-stop(#1a23a3), color-stop(#1a3ba3), color-stop(#1a53a3), color-stop(#1a72a3), color-stop(#1a8aa3), color-stop(#1aa2a3), to(#1aa392));
-  background: -webkit-linear-gradient(right, #1aa37a, #1aa35c, #1aa33d, #1aa31f, #2da31a, #45a31a, #5da31a, #76a31a, #94a31a, #a39a1a, #a3821a, #a3701a, #a35e1a, #a3451a, #a32d1a, #a31a31, #a31a4f, #a31a67, #a31a80, #a31a9e, #901aa3, #7e1aa3, #661aa3, #4d1aa3, #2f1aa3, #1a23a3, #1a3ba3, #1a53a3, #1a72a3, #1a8aa3, #1aa2a3, #1aa392);
-  background: -o-linear-gradient(right, #1aa37a, #1aa35c, #1aa33d, #1aa31f, #2da31a, #45a31a, #5da31a, #76a31a, #94a31a, #a39a1a, #a3821a, #a3701a, #a35e1a, #a3451a, #a32d1a, #a31a31, #a31a4f, #a31a67, #a31a80, #a31a9e, #901aa3, #7e1aa3, #661aa3, #4d1aa3, #2f1aa3, #1a23a3, #1a3ba3, #1a53a3, #1a72a3, #1a8aa3, #1aa2a3, #1aa392);
-  background: linear-gradient(270deg, #1aa37a, #1aa35c, #1aa33d, #1aa31f, #2da31a, #45a31a, #5da31a, #76a31a, #94a31a, #a39a1a, #a3821a, #a3701a, #a35e1a, #a3451a, #a32d1a, #a31a31, #a31a4f, #a31a67, #a31a80, #a31a9e, #901aa3, #7e1aa3, #661aa3, #4d1aa3, #2f1aa3, #1a23a3, #1a3ba3, #1a53a3, #1a72a3, #1a8aa3, #1aa2a3, #1aa392);
+  background: -webkit-gradient(linear, right top, left top, from(#3da39b), color-stop(#3d99a3), color-stop(#3d87a3), color-stop(#3d75a3), color-stop(#3d63a3), color-stop(#3d51a3), color-stop(#3f3da3), color-stop(#563da3), color-stop(#683da3), color-stop(#7a3da3), color-stop(#8c3da3), to(#8c3da3));
+  background: -webkit-linear-gradient(right, #3da39b, #3d99a3, #3d87a3, #3d75a3, #3d63a3, #3d51a3, #3f3da3, #563da3, #683da3, #7a3da3, #8c3da3, #8c3da3);
+  background: -o-linear-gradient(right, #3da39b, #3d99a3, #3d87a3, #3d75a3, #3d63a3, #3d51a3, #3f3da3, #563da3, #683da3, #7a3da3, #8c3da3, #8c3da3);
+  background: linear-gradient(270deg, #3da39b, #3d99a3, #3d87a3, #3d75a3, #3d63a3, #3d51a3, #3f3da3, #563da3, #683da3, #7a3da3, #8c3da3, #8c3da3);
   -webkit-background-size: 8000% 8000%;
           background-size: 8000% 8000%;
-  -webkit-animation: AnimationName 80s ease infinite;
-  animation: AnimationName 80s ease infinite; }
+  -webkit-animation: AnimationName 35s ease infinite;
+  animation: AnimationName 35s ease infinite; }
 
 @-webkit-keyframes AnimationName {
   0% {
