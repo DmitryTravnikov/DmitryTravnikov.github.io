@@ -108,8 +108,8 @@ header {
   background: linear-gradient(270deg, #3da39b, #3d99a3, #3d87a3, #3d75a3, #3d63a3, #3d51a3, #3f3da3, #563da3, #683da3, #7a3da3, #8c3da3, #8c3da3);
   -webkit-background-size: 8000% 8000%;
           background-size: 8000% 8000%;
-  -webkit-animation: AnimationName 35s ease infinite;
-  animation: AnimationName 35s ease infinite; }
+  -webkit-animation: AnimationName 60s ease infinite;
+  animation: AnimationName 60s ease infinite; }
 
 @-webkit-keyframes AnimationName {
   0% {
