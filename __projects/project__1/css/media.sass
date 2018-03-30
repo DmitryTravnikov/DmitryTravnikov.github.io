@@ -1,0 +1,344 @@
+/*  Desktop First Method */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+	body
+		background: purple
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+	body
+		background: orange
+
+	// Popular
+	.popular
+		padding: 2rem 0
+		h2
+		.popular-container
+			// @extend .flex-container
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			margin: 2rem 0 0
+			.block
+				flex-direction: column
+				justify-content: center
+				align-items: end
+				img
+				.info
+					// @extend .flex-container
+					padding: 1rem
+					.price
+						p
+							span
+					.buttons
+						// @extend .flex-container
+						.option
+							padding: .8rem 2.2rem
+						.options
+							// @extend .flex-container
+							top: 4.1rem
+							input
+								padding: .8rem 1.7rem
+						.buy
+							padding: 1rem 3.5rem
+
+	// Contact
+	.contact
+		padding: 2rem 0
+		h2
+		p
+			margin: .3rem 0 0
+			line-height: 1.5
+		.contact-container
+			width: 70%
+			margin: 2rem auto 0
+			form
+				input
+				.name-surname-container
+					// @extend .flex-container
+					.name
+					.surname
+				.email
+				.ur-message
+				.message
+				.send
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+	body
+		background: lightblue
+	
+	// Header
+	.main
+		.main__overlay
+		.main__slider
+		header
+			align-items: center
+			width: 100%
+			background: #303030
+			flex-direction: column
+			.content-top
+				justify-content: center
+				flex-direction: column
+				align-items: center
+				width: 100%
+				.logo
+				.main-menu
+					width: 100%
+					margin: 4rem 0 0
+					nav
+						.menu-trigger
+							display: block
+							text-align: center
+						ul
+							flex-direction: column
+							align-items: center
+							display: none
+							li
+								margin: .1rem 0 0
+								width: 100%
+								&:last-child
+									display: none
+								a
+									width: 100%
+									background-color: darken(orange, 5%)
+									color: black
+									&:hover
+										color: black
+										border-bottom: 0px solid #271B2D
+										background-color: orange
+			.content-mid
+				margin: 12rem 0 0
+				h1
+					line-height: 1
+				p
+					line-height: 1
+					margin: 4rem 0 0
+				a
+					margin: 1.6rem 0 0
+					margin: 4rem 0 0
+
+	// Categories
+	.categories
+		padding: 2rem 0 8rem
+		h2
+		.categories-container
+			flex-direction: column
+			align-items: center
+			.block
+				margin-right: 0
+				.overlay
+				.block-content
+					h3
+					p
+					a
+			.block1
+			.block2
+			.block3
+	
+	// Popular
+	.popular
+		padding: 2rem 0
+		h2
+		.popular-container
+			// @extend .flex-container
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			margin: 2rem 0 0
+			.block
+				flex-direction: column
+				justify-content: center
+				align-items: end
+				img
+				.info
+					// @extend .flex-container
+					padding: 1rem
+					.price
+						p
+							span
+					.buttons
+						// @extend .flex-container
+						.option
+							padding: .8rem 2.2rem
+						.options
+							// @extend .flex-container
+							top: 4.1rem
+							input
+								padding: .8rem 1.7rem
+						.buy
+							padding: 1rem 3.5rem
+
+	// Contact
+	.contact
+		padding: 2rem 0
+		h2
+		p
+			margin: .3rem 0 0
+			line-height: 1.5
+		.contact-container
+			width: 90%
+			margin: 2rem auto 0
+			form
+				input
+				.name-surname-container
+					// @extend .flex-container
+					.name
+					.surname
+				.email
+				.ur-message
+				.message
+				.send
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+	body
+		background: pink
+	
+	// Header
+	.main
+		.main__overlay
+		.main__slider
+		header
+			align-items: center
+			width: 100%
+			background: #303030
+			flex-direction: column
+			.content-top
+				justify-content: center
+				flex-direction: column
+				align-items: center
+				width: 100%
+				.logo
+				.main-menu
+					width: 100%
+					margin: 1rem 0 0
+					nav
+						.menu-trigger
+							display: block
+							text-align: center
+						ul
+							flex-direction: column
+							align-items: center
+							display: none
+							li
+								margin: .1rem 0 0
+								width: 100%
+								&:last-child
+									display: none
+								a
+									width: 100%
+									background-color: darken(orange, 5%)
+									color: black
+									&:hover
+										color: black
+										border-bottom: 0px solid #271B2D
+										background-color: orange
+			.content-mid
+				margin: 2rem 0 0
+				h1
+					line-height: 1
+				p
+					line-height: 1
+				a
+					margin: 1.6rem 0 0
+
+	// Categories
+	.categories
+		padding: 2rem 0 8rem
+		h2
+		.categories-container
+			flex-direction: column
+			align-items: center
+			.block
+				margin-right: 0
+				.overlay
+				.block-content
+					h3
+					p
+					a
+			.block1
+			.block2
+			.block3
+
+	// Popular
+	.popular
+		padding: 2rem 0
+		h2
+		.popular-container
+			// @extend .flex-container
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			margin: 2rem 0 0
+			.block
+				width: 100%
+				flex-direction: column
+				justify-content: center
+				align-items: end
+				img
+					width: 100%
+				.info
+					// @extend .flex-container
+					padding: 0
+					.price
+						p
+							span
+					.buttons
+						// @extend .flex-container
+						.option
+							padding: .8rem 1.2rem
+						.options
+							// @extend .flex-container
+							top: 4.1rem
+							input
+								padding: .8rem 0.7rem
+						.buy
+							padding: 1rem 1.5rem
+
+	// Contact
+	.contact
+		padding: 2rem 0
+		h2
+		p
+			margin: .3rem 0 0
+			line-height: 1.5
+		.contact-container
+			width: 100%
+			margin: 2rem 0 0
+			form
+				input
+				.name-surname-container
+					// @extend .flex-container
+					.name
+						width: 100%
+						margin-right: 0
+					.surname
+						width: 100%
+						margin: 2rem 0 0
+				.email
+				.ur-message
+				.message
+				.send
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+	body
+		background: lightgreen
+// /* Mobile First Method */
+// /* Custom, iPhone Retina */
+// @media only screen and (min-width: 320px)
+// 	body
+// 		background: lightgreen
+// /* Extra Small Devices, Phones */
+// @media only screen and (min-width: 480px)
+// 	body
+// 		background: pink
+// /* Small Devices, Tablets */
+// @media only screen and (min-width: 768px)
+// 	body
+// 		background: lightblue
+// /* Medium Devices, Desktops */
+// @media only screen and (min-width: 992px)
+// 	body
+// 		background: orange
+// /* Large Devices, Wide Screens */
+// @media only screen and (min-width: 1200px)
+// 	body
+// 		background: purple
