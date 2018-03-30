@@ -1,13 +1,7 @@
 /*  Desktop First Method */
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
-  body {
-    background: purple; } }
-
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  body {
-    background: orange; }
   .popular {
     padding: 2rem 0; }
   .popular .popular-container {
@@ -60,8 +54,6 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  body {
-    background: lightblue; }
   .main header {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -195,8 +187,6 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  body {
-    background: pink; }
   .main header {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -336,6 +326,3 @@
     margin: 2rem 0 0; } }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  body {
-    background: lightgreen; } }
