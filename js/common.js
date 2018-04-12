@@ -36,11 +36,18 @@
 // 		});
 // 	});
 
-// 	//Каруселька
-// 	//Документация: http://owlgraphic.com/owlcarousel/
+// 	Каруселька
+// 	Документация: http://owlgraphic.com/owlcarousel/
 // 	var owl = $(".carousel");
 // 	owl.owlCarousel({
-// 		items : 4
+// 		items : 1,
+// 		autoPlay: 5000,
+// 		pagination: false,
+// 		transitionStyle: 'fade',
+// 		itemsDesktop: [1199,1],
+// 		itemsDesktopSmall: [979,1],
+// 		itemsTablet: [768,0],
+// 		itemsMobile: [479,0]
 // 	});
 // 	owl.on("mousewheel", ".owl-wrapper", function (e) {
 // 		if (e.deltaY > 0) {
@@ -110,65 +117,53 @@
 
 // var random = Math.floor(Math.random() * 100 + 1);
 
-// var w = $(window).width() / 2 - box.outerWidth() / 2;
-
 $(document).ready(function() {
 
-	var firstLink = $('header>nav>ul>.first');
-	var secondLink = $('header>nav>ul>.second');
-	var thirdLink = $('header>nav>ul>.third');
-	var firstBlock = $('header>.header__content>.header__block1');
-	var secondBlock = $('header>.header__content>.header__block2');
-	var thirdBlock = $('header>.header__content>.header__block3');
+	var firstLink = $('header .main-menu .first');
+	var secondLink = $('header .main-menu .second');
+	var thirdLink = $('header .main-menu .third');
+	var link = $('header .main-menu li');
 
-	$(firstLink).css({
-		'borderBottom': '1px solid white'
-	});
+	var block1 = $('header .content .block1');
+	var block2 = $('header .content .block2');
+	var block3 = $('header .content .block3');
+
+	// Links and border-bottom while active
+	$(firstLink).addClass('active');
 
 	$(firstLink).on('click', function() {
-		$(secondBlock).hide();
-		$(thirdBlock).hide();
-		$(firstBlock).show(100);
-		$(this).css({
-			'borderBottom': '0.1rem solid white'
-		});
-		$(secondLink).css({
-			'borderBottom': 'none'
-		});
-		$(thirdLink).css({
-			'borderBottom': 'none'
-		});
+		$(this).addClass('active');
+		$(secondLink).removeClass('active');
+		$(thirdLink).removeClass('active');
 	});
-
 	$(secondLink).on('click', function() {
-		$(firstBlock).hide();
-		$(thirdBlock).hide();
-		$(secondBlock).show(100);
-		$(this).css({
-			'borderBottom': '0.1rem solid white'
-		});
-		$(firstLink).css({
-			'borderBottom': 'none'
-		});
-		$(thirdLink).css({
-			'borderBottom': 'none'
-		});
+		$(this).addClass('active');
+		$(firstLink).removeClass('active');
+		$(thirdLink).removeClass('active');
 	});
-
-
 	$(thirdLink).on('click', function() {
-		$(firstBlock).hide();
-		$(secondBlock).hide();
-		$(thirdBlock).show(100);
-		$(this).css({
-			'borderBottom': '0.1rem solid white'
-		});
-		$(firstLink).css({
-			'borderBottom': 'none'
-		});
-		$(secondLink).css({
-			'borderBottom': 'none'
-		});
+		$(this).addClass('active');
+		$(firstLink).removeClass('active');
+		$(secondLink).removeClass('active');
 	});
 
-})
+	// Display blocks and animation
+	$(block1).addClass('slide-from-left');
+
+	$(firstLink).on('click', function() {
+		$(block1).addClass('slide-from-left').show();
+		$(block2).hide();
+		$(block3).hide();
+	});
+	$(secondLink).on('click', function() {
+		$(block1).hide();
+		$(block2).addClass('slide-from-left').show();
+		$(block3).hide();
+	});
+	$(thirdLink).on('click', function() {
+		$(block1).hide();
+		$(block2).hide();
+		$(block3).addClass('slide-from-left').show();
+	});
+		
+});
