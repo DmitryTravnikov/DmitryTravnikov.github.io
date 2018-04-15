@@ -191,6 +191,8 @@
     width: 100%; }
   .information .slider .slide .text .description {
     width: 100%; }
+  .diagram {
+    padding-bottom: 6rem; }
   .diagram .wrapper {
     width: 100%;
     padding: 0;
@@ -1292,6 +1294,7 @@
         -ms-flex-align: start;
             align-items: flex-start;
     padding: 0;
+    padding-bottom: 6rem;
     width: 100%;
     text-align: center;
     margin: 4rem 0 0; }
@@ -2353,6 +2356,7 @@
         -ms-flex-align: start;
             align-items: flex-start;
     padding: 0;
+    padding-bottom: 6rem;
     width: 100%;
     text-align: center; }
   .diagram .wrapper .text b {
@@ -3520,6 +3524,7 @@
         -ms-flex-align: start;
             align-items: flex-start;
     padding: 0;
+    padding-bottom: 6rem;
     width: 100%;
     text-align: center; }
   .diagram .wrapper .text b {
