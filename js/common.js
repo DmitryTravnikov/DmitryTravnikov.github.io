@@ -119,51 +119,12 @@
 
 $(document).ready(function() {
 
-	var firstLink = $('header .main-menu .first');
-	var secondLink = $('header .main-menu .second');
-	var thirdLink = $('header .main-menu .third');
-	var link = $('header .main-menu li');
-
-	var block1 = $('header .content .block1');
-	var block2 = $('header .content .block2');
-	var block3 = $('header .content .block3');
-
-	// Links and border-bottom while active
-	$(firstLink).addClass('active');
-
-	$(firstLink).on('click', function() {
-		$(this).addClass('active');
-		$(secondLink).removeClass('active');
-		$(thirdLink).removeClass('active');
+	//Prevent default
+	$('.prevdef').click(function(event) {
+		event.preventDefault();
 	});
-	$(secondLink).on('click', function() {
-		$(this).addClass('active');
-		$(firstLink).removeClass('active');
-		$(thirdLink).removeClass('active');
+	$('.submit').click(function(event) {
+		event.preventDefault();
 	});
-	$(thirdLink).on('click', function() {
-		$(this).addClass('active');
-		$(firstLink).removeClass('active');
-		$(secondLink).removeClass('active');
-	});
-
-	// Display blocks and animation
-	$(block1).addClass('slide-from-left');
-
-	$(firstLink).on('click', function() {
-		$(block1).addClass('slide-from-left').show();
-		$(block2).hide();
-		$(block3).hide();
-	});
-	$(secondLink).on('click', function() {
-		$(block1).hide();
-		$(block2).addClass('slide-from-left').show();
-		$(block3).hide();
-	});
-	$(thirdLink).on('click', function() {
-		$(block1).hide();
-		$(block2).hide();
-		$(block3).addClass('slide-from-left').show();
-	});
-		
+	
 });
