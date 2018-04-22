@@ -16,7 +16,8 @@ body {
 header {
   background: url(../img/header-bg.jpg) no-repeat;
   position: relative;
-  padding-bottom: 12.3rem; }
+  padding-bottom: 12.3rem;
+  background-attachment: fixed; }
 
 header .menu-container {
   background-color: rgba(0, 0, 0, 0.3);
