@@ -162,7 +162,8 @@ $(document).ready(function() {
 	var contactClose =$('.modal-contact .modal-content-close');
 	var contactName = $('.modal-contact form .name');
 	var contactSurname = $('.modal-contact form .surname');
-	var contactEmail = $('.modal-contact form .email')
+	var contactEmail = $('.modal-contact form .email');
+	var contactMessage =$('.modal-contact form .message')
 	var contactSend = $('.modal-contact form .btn');
 
 	var modalSuccess = $('.modal-success');
@@ -188,15 +189,17 @@ $(document).ready(function() {
 	});
 
 	$(contactSend).on('click', function() {
-		if (!contactName.val() || !contactSurname.val() || !contactEmail.val()) {
+		if (!contactName.val() || !contactSurname.val() || !contactEmail.val() || !contactMessage.val()) {
 			$(contactName).addClass('red');
 			$(contactSurname).addClass('red');
 			$(contactEmail).addClass('red');
+			$(contactMessage).addClass('red');
 			$(modalContact).addClass('shake');
 		} else if (contactName.val() || contactSurname.val() || contactEmail.val()) {
 			$(contactName).removeClass('red');
 			$(contactSurname).removeClass('red');
 			$(contactEmail).removeClass('red');
+			$(contactMessage).removeClass('red');
 			$(modalContact).removeClass('shake');
 			$(modalContact).removeClass('show');
 			$(modalSuccess).addClass('show bounceInTop');

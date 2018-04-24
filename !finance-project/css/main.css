@@ -1499,6 +1499,18 @@ footer .container .block4 .row5 p {
 .modal-contact form input:first-child {
   margin-top: 4rem; }
 
+.modal-contact form .message {
+  width: 100%;
+  border: 0.1rem solid #009688;
+  -webkit-border-radius: 0.5rem;
+          border-radius: 0.5rem;
+  padding: 2rem 2rem;
+  margin-top: 1rem;
+  resize: none; }
+
+.modal-contact form .message:focus {
+  outline: none; }
+
 .modal-contact form .btn {
   width: 100%;
   font-family: "Open Sans";
