@@ -164,11 +164,15 @@ header .slider .slide .slide-content .learn-more {
   padding-right: 4.5rem;
   padding-bottom: 1rem;
   padding-left: 3.5rem;
-  background: white url(../img/arrow-right.svg) no-repeat center;
-  -webkit-background-size: 6% 6%;
-          background-size: 6%;
-  background-position: 84% 53%;
+  background: white;
   margin-top: 4rem; }
+
+header .slider .slide .slide-content .learn-more svg {
+  width: 1.1rem;
+  height: 2rem;
+  position: relative;
+  left: 1.6rem;
+  top: 0.5rem; }
 
 header .slider .slide .slide-content .learn-more:hover {
   opacity: 1; }
@@ -279,14 +283,18 @@ header .slider .owl-controls .owl-page.active span {
   -webkit-border-bottom-right-radius: 2rem;
           border-bottom-right-radius: 2rem;
   text-decoration: none;
-  background: white url(../img/arrow-right.svg) no-repeat;
-  -webkit-background-size: 7% 7%;
-          background-size: 7%;
-  background-position: 80% 50%;
+  background: white;
   padding-top: 1.2rem;
   padding-right: 5rem;
   padding-bottom: 1.2rem;
   padding-left: 2rem; }
+
+.service .container .block1 .button .read-more svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  position: relative;
+  left: 1.6rem;
+  top: 0.1rem; }
 
 .service .container .block1 .button .read-more:hover {
   opacity: 1; }
@@ -1055,6 +1063,13 @@ footer .container .block3 .row2 form .btn {
           align-items: center;
   text-decoration: none; }
 
+footer .container .block3 .row2 form .btn svg {
+  width: 2rem;
+  height: 2rem; }
+
+footer .container .block3 .row2 form .btn svg path {
+  fill: white; }
+
 footer .container .block3 .row2 form .btn:hover {
   background: #00a091; }
 
@@ -1137,8 +1152,35 @@ footer .container .block3 .row3 .socials li a:hover {
   background: #31AAE2;
   color: white; }
 
+footer .container .block3 .row3 .socials li a:hover svg path {
+  fill: white; }
+
 footer .container .block3 .row3 .socials li a:active {
   background: #1f9fdb; }
+
+footer .container .block3 .row3 .socials li a svg {
+  width: 1.8rem; }
+
+footer .container .block3 .row3 .socials li a svg path {
+  fill: #6B6B6B; }
+
+footer .container .block3 .row3 .socials li .twitter svg {
+  width: 1.8rem; }
+
+footer .container .block3 .row3 .socials li .google svg {
+  width: 2.3rem; }
+
+footer .container .block3 .row3 .socials li .facebook svg {
+  width: 1rem; }
+
+footer .container .block3 .row3 .socials li .linkedin svg {
+  width: 1.8rem; }
+
+footer .container .block3 .row3 .socials li .youtube svg {
+  width: 2rem; }
+
+footer .container .block3 .row3 .socials li .instagram svg {
+  width: 2rem; }
 
 footer .container .block4 {
   width: 29.2rem;
@@ -1180,17 +1222,23 @@ footer .container .block4 .row3 {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: .6rem 0;
   border-top: .1rem solid #3C3C3C;
   margin-top: 1.5rem; }
 
-footer .container .block4 .row3 i {
-  color: #6B6B6B;
-  margin-top: .2rem; }
+footer .container .block4 .row3 svg {
+  width: 1.6rem;
+  height: 2rem;
+  position: relative;
+  top: 0.1rem;
+  left: 0; }
+
+footer .container .block4 .row3 svg path {
+  fill: #6B6B6B; }
 
 footer .container .block4 .row3 p {
   margin: 0;
@@ -1219,16 +1267,22 @@ footer .container .block4 .row4 {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: .6rem 0;
   border-top: .1rem solid #3C3C3C; }
 
-footer .container .block4 .row4 i {
-  color: #6B6B6B;
-  margin-top: .2rem; }
+footer .container .block4 .row4 svg {
+  width: 1.4rem;
+  height: 2rem;
+  position: relative;
+  top: 0rem;
+  left: 0; }
+
+footer .container .block4 .row4 svg path {
+  fill: #6B6B6B; }
 
 footer .container .block4 .row4 p {
   margin: 0;
@@ -1264,9 +1318,15 @@ footer .container .block4 .row5 {
   padding: .6rem 0;
   border-top: .1rem solid #3C3C3C; }
 
-footer .container .block4 .row5 i {
-  color: #6B6B6B;
-  margin-top: .2rem; }
+footer .container .block4 .row5 svg {
+  width: 1.3rem;
+  height: 2rem;
+  position: relative;
+  top: 0.1rem;
+  left: 0; }
+
+footer .container .block4 .row5 svg path {
+  fill: #6B6B6B; }
 
 footer .container .block4 .row5 p {
   margin: 0;
