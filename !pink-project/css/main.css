@@ -921,14 +921,15 @@ header .wrapper .content .right .iPhone {
   text-transform: uppercase;
   margin-right: 1.9rem; }
 
-.photography-main-section .panorama-container .info .row1 .item2 .like {
-  display: block;
-  width: 1.4rem;
-  height: 1.2rem;
-  background: url(../img/photography-like.png) no-repeat center; }
+.photography-main-section .panorama-container .info .row1 .item2 .like svg {
+  width: 1.5rem;
+  height: 1.5rem; }
 
-.photography-main-section .panorama-container .info .row1 .item2 .like:hover {
-  background: url(../img/like-active.png) no-repeat center; }
+.photography-main-section .panorama-container .info .row1 .item2 .like svg path {
+  fill: rgba(210, 40, 86, 0.4); }
+
+.photography-main-section .panorama-container .info .row1 .item2 .like svg path.like-active {
+  fill: #d22856; }
 
 .photography-main-section .panorama-container .info .row2 {
   padding: 0.4rem 2.8rem;
@@ -1077,14 +1078,15 @@ header .wrapper .content .right .iPhone {
   text-transform: uppercase;
   margin-right: 1.9rem; }
 
-.photography-main-section .photos-container .photo-container .info .row3 .item2 .like {
-  display: block;
-  width: 1.4rem;
-  height: 1.2rem;
-  background: url(../img/photography-like.png) no-repeat center; }
+.photography-main-section .photos-container .photo-container .info .row3 .item2 .like svg {
+  width: 1.5rem;
+  height: 1.5rem; }
 
-.photography-main-section .photos-container .photo-container .info .row3 .item2 .like:hover {
-  background: url(../img/like-active.png) no-repeat center; }
+.photography-main-section .photos-container .photo-container .info .row3 .item2 .like svg path {
+  fill: rgba(210, 40, 86, 0.4); }
+
+.photography-main-section .photos-container .photo-container .info .row3 .item2 .like svg path.like-active {
+  fill: #d22856; }
 
 .competition {
   padding-bottom: 5.3rem;

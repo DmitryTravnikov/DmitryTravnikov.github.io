@@ -249,6 +249,17 @@ $(document).ready(function() {
 
 
 
+	//Like
+	$('.photography-main-section .panorama-container .like svg').on('click', function() {
+		$(this).children().toggleClass('like-active');
+	});
+	$('.photography-main-section .photos-container .photo-container .like svg').on('click', function() {
+		$(this).children().toggleClass('like-active');
+	});
+
+
+
+
 
 	//Submiting
 	var submit = $('#submit');
