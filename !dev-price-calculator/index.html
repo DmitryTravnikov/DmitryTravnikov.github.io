@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!-- [if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!-- [if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!-- [if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!-- [if gt IE 8]><!-->
+<html lang="ru">
+  <!-- <![endif]-->
+  <head>
+    <title>Price Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwesome-->
+    <link rel="stylesheet" href="libs/fontawesome/css/fontawesome-all.min.css">
+    <!-- OwlCarousel-->
+    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.transitions.css">
+    <!-- Animate-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Slider.UI-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- Powerange-->
+    <link rel="stylesheet" href="libs/powerange/powerange.min.css">
+    <!-- General-->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css" media="all and (max-width: 900px)">
+  </head>
+  <body>
+    <!-- Content Start-->
+    <div class="container">
+      <div class="content">
+        <div class="main-table">
+          <h1>Оценка стоимости верстки макета</h1>
+          <table>
+            <tr>
+              <td class="bold">Страницы</td>
+              <td class="bold">Кол-во</td>
+              <td class="bold">Названия блоков</td>
+              <td class="bold">Стоимость</td>
+            </tr>
+            <tr>
+              <td>Шаблон</td>
+              <td>
+                <input class="ammount" id="template-ammount" type="text">
+              </td>
+              <td>
+                <textarea class="block-name" cols="30" rows="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+              </td>
+              <td class="cost" id="template-cost">0</td>
+            </tr>
+            <tr>
+              <td>Экранов</td>
+              <td>
+                <input class="ammount" id="screen-ammount" type="text">
+              </td>
+              <td>
+                <textarea class="block-name" cols="30" rows="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+              </td>
+              <td class="cost" id="screen-cost">0</td>
+            </tr>
+            <tr>
+              <td>Сложных</td>
+              <td>
+                <input class="ammount" id="hard-ammount" type="text">
+              </td>
+              <td>
+                <textarea class="block-name" cols="30" rows="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+              </td>
+              <td class="cost" id="hard-cost">0</td>
+            </tr>
+            <tr>
+              <td>Интерактивных</td>
+              <td>
+                <input class="ammount" id="interactive-ammount" type="text">
+              </td>
+              <td>
+                <textarea class="block-name" cols="30" rows="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+              </td>
+              <td class="cost" id="interactive-cost">0</td>
+            </tr>
+            <tr>
+              <td>Форм</td>
+              <td>
+                <input class="ammount" id="form-ammount" type="text">
+              </td>
+              <td>
+                <textarea class="block-name" cols="30" rows="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+              </td>
+              <td class="cost" id="form-cost">0</td>
+            </tr>
+            <tr>
+              <td>Слайдеров</td>
+              <td>
+                <input class="ammount" id="slider-ammount" type="text">
+              </td>
+              <td>
+                <textarea class="block-name" cols="30" rows="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+              </td>
+              <td class="cost" id="slider-cost">0</td>
+            </tr>
+            <tr>
+              <td>Модальные окна</td>
+              <td>
+                <input class="ammount" id="modal-ammount" type="text">
+              </td>
+              <td>
+                <textarea class="block-name" cols="30" rows="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+              </td>
+              <td class="cost" id="modal-cost">0</td>
+            </tr>
+            <tr>
+              <td class="delete"></td>
+              <td class="delete"></td>
+              <td class="delete"></td>
+              <td class="main-summ summ" id="main-summ">0</td>
+            </tr>
+          </table>
+        </div>
+        <div class="additional-table">
+          <h1>Дополнительно</h1>
+          <table>
+            <tr>
+              <td class="bold">Страницы</td>
+              <td class="bold">Кол-во</td>
+              <td class="bold">Названия блоков</td>
+              <td class="bold">Стоимость</td>
+            </tr>
+            <tr>
+              <td>Адаптация под планшеты</td>
+              <td>
+                <input class="ammount" id="tablet-adaptation" type="text" placeholder="1=y / 0=n">
+              </td>
+              <td>
+                <textarea class="block-name" cols="30" rows="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+              </td>
+              <td class="cost" id="tablet-adaptation-cost">0</td>
+            </tr>
+            <tr>
+              <td>Адаптация под мобильные</td>
+              <td>
+                <input class="ammount" id="mobile-adaptation" type="text" placeholder="1=y / 0=n">
+              </td>
+              <td>
+                <textarea class="block-name" cols="30" rows="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+              </td>
+              <td class="cost" id="mobile-adaptation-cost">0</td>
+            </tr>
+            <tr>
+              <td>Заливка на сервер</td>
+              <td>
+                <input class="ammount" id="site-publishing" type="text" placeholder="1=y / 0=n">
+              </td>
+              <td>
+                <textarea class="block-name" cols="30" rows="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+              </td>
+              <td class="cost" id="site-publishing-cost">0</td>
+            </tr>
+            <tr>
+              <td>Тестирование</td>
+              <td>
+                <input class="ammount" id="site-testing" type="text" placeholder="1=y / 0=n">
+              </td>
+              <td>
+                <textarea class="block-name" cols="30" rows="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+              </td>
+              <td class="cost" id="site-testing-cost">0</td>
+            </tr>
+            <tr>
+              <td class="delete"></td>
+              <td class="delete"></td>
+              <td class="delete"></td>
+              <td class="additional-summ summ" id="additional-summ">0</td>
+            </tr>
+          </table>
+        </div>
+        <div class="result-table">
+          <h1>Итого</h1>
+          <table>
+            <tr>
+              <td class="delete"></td>
+              <td class="delete"></td>
+              <td>Предоплата</td>
+              <td>
+                <input id="prepayment" type="text" placeholder="0">
+              </td>
+            </tr>
+            <tr>
+              <td class="delete"></td>
+              <td class="delete"></td>
+              <td>Предоплата в %</td>
+              <td class="cost" id="prepayment-percent">0%</td>
+            </tr>
+            <tr>
+              <td class="delete"></td>
+              <td class="delete"></td>
+              <td>Скидка за предоплату</td>
+              <td class="cost" id="discount">0</td>
+            </tr>
+            <tr>
+              <td class="delete"></td>
+              <td class="delete"></td>
+              <td>Скидка за предоплату в %</td>
+              <td class="cost" id="discount-percent">0%</td>
+            </tr>
+            <tr>
+              <td class="delete"></td>
+              <td class="delete"></td>
+              <td class="bold">Итого:</td>
+              <td class="result-summ summ" id="total-result">0</td>
+            </tr>
+            <tr>
+              <td class="delete"></td>
+              <td class="delete"></td>
+              <td class="bold">Итого со скидкой:</td>
+              <td class="result-summ summ" id="total-result-with-discount">0</td>
+            </tr>
+          </table>
+        </div>
+        <div class="calculate-container">
+          <button class="calculate" id="calculate">Посчитать</button>
+        </div>
+      </div>
+    </div>
+    <!-- Content End-->
+    <!-- Scripts-->
+    <!-- General-->
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- Powerange-->
+    <script src="libs/powerange/powerange.min.js"></script>
+    <!-- Slider.UI (https://jqueryui.com/slider/)-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- WoW-->
+    <script src="libs/wow/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <!-- Parallax-->
+    <script src="libs/parallax/parallax.min.js"></script>
+    <script>
+      var scene = document.getElementById('scene');
+      var parallaxInstance = new Parallax(scene);
+    </script>
+    <!-- PageScroll2id-->
+    <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.min.js"></script>
+    <!-- OwlCarousel-->
+    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+    <!--  
+    [if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script>
+    <![endif]
+    -->
+    <!--
+    script(src="libs/jquery-mousewheel/jquery.mousewheel.min.js")
+    script(type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js")
+    script(src="libs/fancybox/fancybox-1.3.4/jquery.fancybox-1.3.4.pack.js")
+    script(src="libs/fancybox/fancybox-1.3.4/jquery.easing-1.3.pack.js")
+    script(src="libs/fancybox/fancybox-1.3.4/jquery.mousewheel-3.0.4.pack.js")
+    script(src="libs/scrollto/jquery.scrollTo.min.js")
+    script(src="libs/waypoints/waypoints-1.6.2.min.js")
+    script(src="libs/countdown/jquery.plugin.js")
+    script(src="libs/countdown/jquery.countdown.min.js")
+    script(src="libs/countdown/jquery.countdown-ru.js")
+    script(src="libs/landing-nav/navigation.js")
+    -->
+  </body>
+</html>
