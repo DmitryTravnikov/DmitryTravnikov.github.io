@@ -69,9 +69,7 @@ header .container .main-menu {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-animation: fade-in 2s;
-          animation: fade-in 2s; }
+          align-items: flex-start; }
 
 header .container .main-menu li {
   padding: 0;
@@ -109,9 +107,7 @@ header .container .portfolio {
       -ms-flex-align: center;
           align-items: center;
   height: 90vh;
-  min-height: 60rem;
-  -webkit-animation: fade-in 2s;
-          animation: fade-in 2s; }
+  min-height: 60rem; }
 
 header .container .portfolio a {
   color: white;
@@ -153,9 +149,7 @@ header .container .portfolio a:last-child {
       -ms-flex-align: center;
           align-items: center;
   height: 90vh;
-  min-height: 60rem;
-  -webkit-animation: fade-in 2s;
-          animation: fade-in 2s; }
+  min-height: 60rem; }
 
 .skills .skills-list {
   padding: 0;
@@ -186,9 +180,7 @@ header .container .portfolio a:last-child {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center;
-  -webkit-animation: fade-in 2s;
-          animation: fade-in 2s; }
+          align-items: center; }
 
 .contact p {
   font-size: 5rem;
@@ -211,36 +203,21 @@ header .container .portfolio a:last-child {
           background-size: cover;
   opacity: 0.5; }
 
-.active {
-  border-bottom: .1rem solid white; }
+.link-active {
+  border-bottom: 0.1rem solid white; }
 
-@-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(-200rem);
-            transform: translateX(-200rem); }
-  70% {
-    -webkit-transform: translateX(3rem);
-            transform: translateX(3rem); }
-  90% {
-    -webkit-transform: translateX(-1rem);
-            transform: translateX(-1rem); }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); } }
+#content {
+  overflow: hidden;
+  -webkit-animation: fade-in .5s;
+          animation: fade-in .5s; }
 
-@keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(-200rem);
-            transform: translateX(-200rem); }
-  70% {
-    -webkit-transform: translateX(3rem);
-            transform: translateX(3rem); }
-  90% {
-    -webkit-transform: translateX(-1rem);
-            transform: translateX(-1rem); }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); } }
+#content.content-active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: fade-in 0.5s;
+          animation: fade-in 0.5s; }
 
 @-webkit-keyframes fade-in {
   from {
