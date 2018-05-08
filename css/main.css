@@ -211,14 +211,6 @@ header .container .portfolio a:last-child {
   -webkit-animation: fade-in .5s;
           animation: fade-in .5s; }
 
-#content.content-active {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-animation: fade-in 0.5s;
-          animation: fade-in 0.5s; }
-
 @-webkit-keyframes fade-in {
   from {
     opacity: 0; }
