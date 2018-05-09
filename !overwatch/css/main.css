@@ -62,8 +62,7 @@ body {
   width: 35rem;
   height: 60rem;
   position: relative;
-  overflow: hidden;
-  cursor: pointer; }
+  overflow: hidden; }
 
 .container .box .block .overlay {
   position: relative;

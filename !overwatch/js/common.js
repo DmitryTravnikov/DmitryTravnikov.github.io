@@ -146,7 +146,7 @@ $(document).ready(function() {
 		event.preventDefault();
 	});
 
-	$('.container .box .block').on('click', function() {
+	$('.container .box .block').on('mouseenter', function() {
 		$(this).children().addClass('slide-left slide-right');
 	}).on('mouseleave', function() {
 		$(this).children().removeClass('slide-left slide-right');
