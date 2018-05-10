@@ -1,0 +1,334 @@
+body {
+  background: #263238;
+  color: white; }
+
+.container {
+  background: #263238;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+  font-family: "RobotoLight";
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  position: relative;
+  height: 100vh;
+  overflow: hidden; }
+
+.container p {
+  margin: 0;
+  font-family: "RobotoLight";
+  text-transform: uppercase;
+  font-size: 3em;
+  color: rgba(173, 216, 230, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-25%, -25%);
+      -ms-transform: translate(-25%, -25%);
+          transform: translate(-25%, -25%);
+  -webkit-animation: text 10s infinite alternate;
+          animation: text 10s infinite alternate;
+  z-index: 1; }
+
+.container #scene {
+  width: 100%;
+  height: 100vh; }
+
+.container #scene .fish1 {
+  width: 10%;
+  height: 20%;
+  background: orange;
+  position: absolute;
+  top: 0;
+  right: -10%;
+  -webkit-animation: fish1 12s infinite linear;
+          animation: fish1 12s infinite linear;
+  z-index: 2; }
+
+.container #scene .fish2 {
+  width: 5%;
+  height: 6%;
+  background: pink;
+  position: absolute;
+  top: 30%;
+  left: -5%;
+  -webkit-animation: fish2 20s infinite alternate ease-in;
+          animation: fish2 20s infinite alternate ease-in;
+  z-index: 3; }
+
+.container #scene .fish3 {
+  width: 13%;
+  height: 40%;
+  background: green;
+  position: absolute;
+  top: 45%;
+  left: 82%;
+  -webkit-animation: fish3 10s infinite alternate ease-in;
+          animation: fish3 10s infinite alternate ease-in;
+  z-index: 2; }
+
+.container #scene .fish4 {
+  width: 13%;
+  height: 21%;
+  background: blue;
+  position: absolute;
+  top: 45%;
+  left: 82%;
+  z-index: 2;
+  -webkit-animation: fish4 15s infinite alternate;
+          animation: fish4 15s infinite alternate; }
+
+.container #scene .puz1,
+.container #scene .puz2,
+.container #scene .puz3 {
+  width: 5rem;
+  height: 5rem;
+  background: lightblue;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  position: absolute; }
+
+.container #scene .puz1 {
+  -webkit-animation: puz1 17s infinite;
+          animation: puz1 17s infinite; }
+
+.container #scene .puz2 {
+  -webkit-animation: puz2 12s infinite;
+          animation: puz2 12s infinite;
+  z-index: 4; }
+
+.container #scene .puz3 {
+  -webkit-animation: puz3 23s infinite;
+          animation: puz3 23s infinite; }
+
+@-webkit-keyframes text {
+  from {
+    color: rgba(173, 216, 230, 0.1); }
+  20% {
+    color: rgba(255, 192, 203, 0.1); }
+  40% {
+    color: rgba(255, 0, 255, 0.1); }
+  60% {
+    color: rgba(255, 165, 0, 0.1); }
+  80% {
+    color: rgba(255, 0, 0, 0.1); }
+  to {
+    color: rgba(0, 128, 0, 0.1); } }
+
+@keyframes text {
+  from {
+    color: rgba(173, 216, 230, 0.1); }
+  20% {
+    color: rgba(255, 192, 203, 0.1); }
+  40% {
+    color: rgba(255, 0, 255, 0.1); }
+  60% {
+    color: rgba(255, 165, 0, 0.1); }
+  80% {
+    color: rgba(255, 0, 0, 0.1); }
+  to {
+    color: rgba(0, 128, 0, 0.1); } }
+
+@-webkit-keyframes fish1 {
+  from {
+    top: 0;
+    left: -10%; }
+  50% {
+    top: 30%; }
+  70% {
+    top: 10%; }
+  80% {
+    top: 20%; }
+  to {
+    top: 0;
+    left: 110%; } }
+
+@keyframes fish1 {
+  from {
+    top: 0;
+    left: -10%; }
+  50% {
+    top: 30%; }
+  70% {
+    top: 10%; }
+  80% {
+    top: 20%; }
+  to {
+    top: 0;
+    left: 110%; } }
+
+@-webkit-keyframes fish2 {
+  from {
+    top: 30%;
+    left: -10%; }
+  50% {
+    top: 50%; }
+  70% {
+    top: 55%; }
+  80% {
+    top: 70%; }
+  to {
+    top: 0;
+    left: 110%; } }
+
+@keyframes fish2 {
+  from {
+    top: 30%;
+    left: -10%; }
+  50% {
+    top: 50%; }
+  70% {
+    top: 55%; }
+  80% {
+    top: 70%; }
+  to {
+    top: 0;
+    left: 110%; } }
+
+@-webkit-keyframes fish3 {
+  from {
+    top: 45%;
+    left: 82%; }
+  50% {
+    top: 36%; }
+  70% {
+    top: 55%;
+    left: 65%; }
+  80% {
+    top: 48%;
+    left: 70%; }
+  to {
+    top: 30%;
+    left: 65%; } }
+
+@keyframes fish3 {
+  from {
+    top: 45%;
+    left: 82%; }
+  50% {
+    top: 36%; }
+  70% {
+    top: 55%;
+    left: 65%; }
+  80% {
+    top: 48%;
+    left: 70%; }
+  to {
+    top: 30%;
+    left: 65%; } }
+
+@-webkit-keyframes fish4 {
+  from {
+    top: 80%;
+    left: -20%; }
+  30% {
+    top: 60%; }
+  50% {
+    top: 70%; }
+  70% {
+    top: 30%; }
+  to {
+    top: 60%;
+    left: 120%; } }
+
+@keyframes fish4 {
+  from {
+    top: 80%;
+    left: -20%; }
+  30% {
+    top: 60%; }
+  50% {
+    top: 70%; }
+  70% {
+    top: 30%; }
+  to {
+    top: 60%;
+    left: 120%; } }
+
+@-webkit-keyframes puz1 {
+  from {
+    top: 120%;
+    left: 20%; }
+  50% {
+    top: 30%;
+    left: 30%; }
+  to {
+    top: -20%;
+    left: 20%; } }
+
+@keyframes puz1 {
+  from {
+    top: 120%;
+    left: 20%; }
+  50% {
+    top: 30%;
+    left: 30%; }
+  to {
+    top: -20%;
+    left: 20%; } }
+
+@-webkit-keyframes puz2 {
+  from {
+    top: 120%;
+    left: 51%; }
+  50% {
+    top: 30%;
+    left: 61%; }
+  to {
+    top: -20%;
+    left: 51%; } }
+
+@keyframes puz2 {
+  from {
+    top: 120%;
+    left: 51%; }
+  50% {
+    top: 30%;
+    left: 61%; }
+  to {
+    top: -20%;
+    left: 51%; } }
+
+@-webkit-keyframes puz3 {
+  from {
+    top: 120%;
+    left: 82%; }
+  50% {
+    top: 30%;
+    left: 92%; }
+  to {
+    top: -20%;
+    left: 82%; } }
+
+@keyframes puz3 {
+  from {
+    top: 120%;
+    left: 82%; }
+  50% {
+    top: 30%;
+    left: 92%; }
+  to {
+    top: -20%;
+    left: 82%; } }
