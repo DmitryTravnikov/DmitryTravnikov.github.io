@@ -146,10 +146,26 @@ $(document).ready(function() {
 		event.preventDefault();
 	});
 
-	$('.container .box .block').on('mouseenter', function() {
-		$(this).children().addClass('slide-left slide-right');
-	}).on('mouseleave', function() {
-		$(this).children().removeClass('slide-left slide-right');
+	var overlayOdd = $('.overlay:nth-child(odd)');
+	var overlayEven = $('.overlay:nth-child(even)');
+
+	$('.block').on('mouseenter', function() {
+		$(this).find(overlayOdd).stop().animate({top: '0', left: '-100%'});
+		$(this).find(overlayEven).stop().animate({top: '0', left: '100%'});
 	});
+
+	$('.block').on('mouseleave', function() {
+		$(this).find(overlayOdd).stop().animate({top: '0', left: '0'});
+		$(this).find(overlayEven).stop().animate({top: '0', left: '0'});
+	});
+
+	// $('.block').on('mouseenter', function() {
+	// 	$(overlayOdd).stop().animate({top: '0', left: '-100%'});
+	// 	$(overlayEven).stop().animate({top: '0', left: '100%'});
+	// })
+	// $('.block').on('mouseleave', function() {
+	// 	$(overlayOdd).stop().animate({top: '0', left: '0'});
+	// 	$(overlayEven).stop().animate({top: '0', left: '0'});
+	// })
 
 });
