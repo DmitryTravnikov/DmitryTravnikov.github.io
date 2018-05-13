@@ -743,17 +743,6 @@ body {
     top: 10%;
     left: 25%; } }
 
-.animated-block {
-  margin-left: 13%; }
-
-.animated-block.animated-block-on {
-  -webkit-animation: animated-block-on 0.5s forwards;
-          animation: animated-block-on 0.5s forwards; }
-
-.animated-block.animated-block-off {
-  -webkit-animation: animated-block-off 0.5s forwards;
-          animation: animated-block-off 0.5s forwards; }
-
 @-webkit-keyframes animated-block-on {
   from {
     margin-left: 13%; }
