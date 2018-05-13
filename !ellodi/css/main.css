@@ -346,6 +346,7 @@ body {
 
 .container .home-content .site-name {
   position: absolute;
+  display: block;
   margin: 0;
   top: 50%;
   left: 50%;
