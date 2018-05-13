@@ -150,8 +150,6 @@ $(document).ready(function() {
 	//page onload animation
 	//bg
 	$('#bg').animate({opacity: '0.6'}, 3000);
-	//site name
-	$('#site-name').addClass('site-name-active');
 	//parallaxed items
 	$('.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10').animate({opacity: '0.2'}, 3000);
 

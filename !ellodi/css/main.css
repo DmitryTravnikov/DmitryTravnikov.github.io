@@ -355,9 +355,7 @@ body {
           transform: translate(-50%, -50%);
   font-family: "Indie Flower", cursive;
   text-align: center;
-  font-size: 10rem;
-  opacity: 0;
-  visibility: hidden; }
+  font-size: 10rem; }
 
 .container .gallery-content {
   /* Слайдер Gallery end */ }
@@ -915,23 +913,3 @@ body {
     margin-left: 0; }
   to {
     margin-left: 13%; } }
-
-.site-name.site-name-active {
-  -webkit-animation: fade-in 3s forwards;
-          animation: fade-in 3s forwards; }
-
-@-webkit-keyframes fade-in {
-  from {
-    visibility: hidden;
-    opacity: 0; }
-  to {
-    visibility: visible;
-    opacity: 1; } }
-
-@keyframes fade-in {
-  from {
-    visibility: hidden;
-    opacity: 0; }
-  to {
-    visibility: visible;
-    opacity: 1; } }
