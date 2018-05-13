@@ -590,6 +590,19 @@ body {
   margin: 0;
   cursor: pointer; }
 
+.copyright {
+  z-index: 100; }
+
+.copyright a {
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 100;
+  text-decoration: none;
+  font-size: 1.4rem;
+  position: absolute;
+  left: 1%;
+  bottom: 1%;
+  font-family: "Indie Flower", cursive; }
+
 @-webkit-keyframes main-background {
   from {
     background-position: 0% 30%; }
