@@ -356,7 +356,8 @@ body {
   font-family: "Indie Flower", cursive;
   text-align: center;
   font-size: 10rem;
-  opacity: 0; }
+  opacity: 0;
+  visibility: hidden; }
 
 .container .gallery-content {
   /* Слайдер Gallery end */ }
@@ -921,12 +922,16 @@ body {
 
 @-webkit-keyframes fade-in {
   from {
+    visibility: hidden;
     opacity: 0; }
   to {
+    visibility: visible;
     opacity: 1; } }
 
 @keyframes fade-in {
   from {
+    visibility: hidden;
     opacity: 0; }
   to {
+    visibility: visible;
     opacity: 1; } }
