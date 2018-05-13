@@ -163,7 +163,7 @@ $(document).ready(function() {
 		$('#button').css('visibility', 'hidden');
 
 		//menu
-		$('#main-menu').animate({top: '29%', left: '85%'});
+		$('#main-menu').animate({top: '35%', left: '85%'});
 
 		//close
 		$('#close').animate({opacity: '1'});
