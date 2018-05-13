@@ -151,7 +151,7 @@ $(document).ready(function() {
 	//bg
 	$('#bg').animate({opacity: '0.6'}, 3000);
 	//site name
-	$('#site-name').animate({opacity: '1'}, 3000);
+	$('#site-name').addClass('site-name-active');
 	//parallaxed items
 	$('.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10').animate({opacity: '0.2'}, 3000);
 
@@ -190,6 +190,58 @@ $(document).ready(function() {
 
 		//circles
 		$('#circle2, #circle1').delay(300).animate({width: '0', height: '0'});
+
 	});
+
+	//AJAX start
+	$('.menu-link').click(function() {
+
+		var info = $(this).attr('href') + ' #content';//берет href ссылки и задает тот блок, который будет обновляться с помощью ajax при переходе по ссылке
+		$('#content').hide(0, loadContent());//скрываем содержимое блока #content той страницы, на которой находимся//задать анимацию для содержимого
+		$('#loader').fadeIn('slow');//анимация лоадера
+
+		function loadContent() {//основная функция для загрузки контента
+			$('#content').load(info, '', function() {//блок, в который мы хотим загрузить новый контент//info подгружает именно тот контент, который нам нужен//'' - различные переменные, дата, опускаем его
+				$('#content').show(0, hideLoader());//показываем наш блок с контентом//скрываем лоадер//задать анимацию для содержимого
+
+				//Слайдер
+				var owl = $("#gallery");
+				owl.owlCarousel({
+					items : 1,//кол-во итемов
+					autoPlay: 2000,//скорость воспроизведения в милисекундах
+					pagination: false,//переключатели (true - вкл, false - выкл)
+					transitionStyle: 'fade',
+					itemsDesktop: [1199,1],
+					itemsDesktopSmall: [979,1],
+					itemsTablet: [768,1],
+					itemsMobile: [479,1]
+				});
+				$("#next-button").click(function(){
+					owl.trigger("owl.next");
+				});
+				$("#prev-button").click(function(){
+					owl.trigger("owl.prev");
+				});//карусель end
+
+				//анимация слайдера (сдвиг)
+				$('#close').on('click', function() {
+					$('#content .animated-block').addClass('animated-block-on');
+					$('#content .animated-block').removeClass('animated-block-off');
+				});
+				$('#button').on('click', function() {
+					$('#content .animated-block').removeClass('animated-block-on');
+					$('#content .animated-block').addClass('animated-block-off');
+				});//анимация сдвиг end
+
+			});
+		}
+
+		function hideLoader() {//функция для скрытия лоадера
+			$('#loader').fadeOut('normal');
+		}
+
+		return false;//чтобы не происходило перехода по ссылке, а только происходила подгрузка контента
+
+	});//AJAX end
 
 });
