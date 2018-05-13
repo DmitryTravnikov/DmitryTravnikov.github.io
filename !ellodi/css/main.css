@@ -537,7 +537,7 @@ body {
   margin: 0; }
 
 .container .skills-content .skills-container ul.skills li {
-  margin: 0;
+  margin: 1rem 0 0;
   padding: 0; }
 
 .container .contact-content {
