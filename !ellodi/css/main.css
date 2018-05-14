@@ -344,9 +344,16 @@ body {
   /* Home logo start */
   /* Home logo end */ }
 
-.container .home-content .site-name {
+.container .home-content .site-name-container {
   position: absolute;
-  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.container .home-content .site-name-container .site-name {
+  position: absolute;
+  font-weight: normal;
   margin: 0;
   top: 50%;
   left: 50%;
@@ -354,7 +361,8 @@ body {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-family: "Indie Flower", cursive;
-  font-size: 10rem; }
+  font-size: 10rem;
+  z-index: 3; }
 
 .container .gallery-content {
   /* Слайдер Gallery end */ }
