@@ -337,18 +337,18 @@
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%; }
+    width: 90%; }
   .contact .contact-container .contact-link {
     width: 100%;
     text-align: center;
     margin: 1rem 0 0;
     font-size: 3rem;
-    padding: 2rem 2rem; }
+    padding: 2rem 1rem; }
   .contact .contact-container .contact-link:first-child {
     margin-top: 0; }
   .contact .contact-container p {
     font-size: 3rem;
-    padding: 2rem 2rem;
+    padding: 2rem 1rem;
     text-align: center;
     margin: 1rem 0 0;
     background: rgba(255, 255, 255, 0.2);
