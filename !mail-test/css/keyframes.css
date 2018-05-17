@@ -1,0 +1,63 @@
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes fade-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@-webkit-keyframes shadow {
+  from {
+    -webkit-box-shadow: 0 0 3rem 0.2rem rgba(23, 140, 198, 0.6);
+            box-shadow: 0 0 3rem 0.2rem rgba(23, 140, 198, 0.6); }
+  20% {
+    -webkit-box-shadow: 0 0 3rem 0.2rem rgba(7, 183, 95, 0.6);
+            box-shadow: 0 0 3rem 0.2rem rgba(7, 183, 95, 0.6); }
+  40% {
+    -webkit-box-shadow: 0 0 3rem 0.2rem rgba(255, 221, 0, 0.6);
+            box-shadow: 0 0 3rem 0.2rem rgba(255, 221, 0, 0.6); }
+  60% {
+    -webkit-box-shadow: 0 0 3rem 0.2rem rgba(245, 130, 32, 0.6);
+            box-shadow: 0 0 3rem 0.2rem rgba(245, 130, 32, 0.6); }
+  80% {
+    -webkit-box-shadow: 0 0 3rem 0.2rem rgba(196, 35, 62, 0.6);
+            box-shadow: 0 0 3rem 0.2rem rgba(196, 35, 62, 0.6); }
+  to {
+    -webkit-box-shadow: 0 0 3rem 0.2rem rgba(230, 91, 112, 0.6);
+            box-shadow: 0 0 3rem 0.2rem rgba(230, 91, 112, 0.6); } }
+
+@keyframes shadow {
+  from {
+    -webkit-box-shadow: 0 0 3rem 0.2rem rgba(23, 140, 198, 0.6);
+            box-shadow: 0 0 3rem 0.2rem rgba(23, 140, 198, 0.6); }
+  20% {
+    -webkit-box-shadow: 0 0 3rem 0.2rem rgba(7, 183, 95, 0.6);
+            box-shadow: 0 0 3rem 0.2rem rgba(7, 183, 95, 0.6); }
+  40% {
+    -webkit-box-shadow: 0 0 3rem 0.2rem rgba(255, 221, 0, 0.6);
+            box-shadow: 0 0 3rem 0.2rem rgba(255, 221, 0, 0.6); }
+  60% {
+    -webkit-box-shadow: 0 0 3rem 0.2rem rgba(245, 130, 32, 0.6);
+            box-shadow: 0 0 3rem 0.2rem rgba(245, 130, 32, 0.6); }
+  80% {
+    -webkit-box-shadow: 0 0 3rem 0.2rem rgba(196, 35, 62, 0.6);
+            box-shadow: 0 0 3rem 0.2rem rgba(196, 35, 62, 0.6); }
+  to {
+    -webkit-box-shadow: 0 0 3rem 0.2rem rgba(230, 91, 112, 0.6);
+            box-shadow: 0 0 3rem 0.2rem rgba(230, 91, 112, 0.6); } }
