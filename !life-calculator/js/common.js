@@ -170,6 +170,7 @@ $(document).ready(function() {
 
 	$(ageOutput).on('change keyup', function() {
 		$(ageOutput).val(ageOutput.val());
+		$(range).val(ageOutput.val());
 
 		if (event.keyCode >= 0 && event.keyCode < 8 || event.keyCode >8 && event.keyCode < 48 || event.keyCode > 57 && event.keyCode < 96 || event.keyCode > 105) {
 			$(ageOutput).val('');
@@ -192,7 +193,18 @@ $(document).ready(function() {
 	});
 
 	$(ageOutput).on('focus', function() {
+		$(range).val('50');
 		$(this).val('');
+	}).on('focusout', function() {
+		$(this).val(range.val());
+		daysResult = range.val() * 365;
+		$(daysOutput).text(daysResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+
+		monthsResult = range.val() * 12;
+		$(monthsOutput).text(monthsResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+
+		percentsResult = Math.round(range.val() / averageLifeExpectancy);
+		$(percentsOutput).text(percentsResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
 	});
 
 });
