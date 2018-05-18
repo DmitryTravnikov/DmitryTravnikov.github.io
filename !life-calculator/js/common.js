@@ -155,9 +155,8 @@ $(document).ready(function() {
 
 	var daysResult, monthsResult, percentsResult;
 
-	$(range).on('mousemove change', function() {
-		$(ageOutput).val(range.val());
-
+	//calc
+	function calc() {
 		daysResult = range.val() * 365;
 		$(daysOutput).text(daysResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
 
@@ -166,8 +165,18 @@ $(document).ready(function() {
 
 		percentsResult = Math.round(range.val() / averageLifeExpectancy);
 		$(percentsOutput).text(percentsResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+	}
+
+	//calc on mousemove and changing
+	$(range).on('input', function() {
+		$(this).trigger('change');//best way to track changes on input[type=range]
+		$(ageOutput).val(range.val());
+
+
+		calc();
 	});
 
+	//calc on change and keyup
 	$(ageOutput).on('change keyup', function() {
 		$(ageOutput).val(ageOutput.val());
 		$(range).val(ageOutput.val());
@@ -182,29 +191,16 @@ $(document).ready(function() {
 			$(ageOutput).val('');
 		}
 
-		daysResult = ageOutput.val() * 365;
-		$(daysOutput).text(daysResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
-
-		monthsResult = ageOutput.val() * 12;
-		$(monthsOutput).text(monthsResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
-
-		percentsResult = Math.round(ageOutput.val() / averageLifeExpectancy);
-		$(percentsOutput).text(percentsResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+		calc();
 	});
 
+	//calc on focus and focusout
 	$(ageOutput).on('focus', function() {
-		$(range).val('50');
 		$(this).val('');
 	}).on('focusout', function() {
 		$(this).val(range.val());
-		daysResult = range.val() * 365;
-		$(daysOutput).text(daysResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
-
-		monthsResult = range.val() * 12;
-		$(monthsOutput).text(monthsResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
-
-		percentsResult = Math.round(range.val() / averageLifeExpectancy);
-		$(percentsOutput).text(percentsResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+		
+		calc();
 	});
 
 });
