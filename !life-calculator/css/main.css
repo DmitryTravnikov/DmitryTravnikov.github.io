@@ -99,15 +99,21 @@ body {
   outline-offset: -2px;
   background: rgba(245, 130, 32, 0.3);
   width: 8rem;
-  height: 5rem;
-  padding-top: 0.7rem;
+  height: 5.2rem;
+  padding: 0.8rem 0;
   text-align: center;
   background: none;
   color: #F58220;
   -webkit-box-shadow: 0 0 3rem #f58220;
           box-shadow: 0 0 3rem #f58220;
-  -webkit-animation: animated-shadow 5s infinite alternate;
-          animation: animated-shadow 5s infinite alternate; }
+  border: none;
+  cursor: pointer;
+  -webkit-animation: pulse 1.5s infinite alternate;
+          animation: pulse 1.5s infinite alternate; }
+
+.age-output-container .output:hover, .age-output-container .output:focus {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused; }
 
 h1 {
   color: #F58220;
@@ -143,8 +149,6 @@ h1 {
   padding: 2rem;
   -webkit-box-shadow: 0 0 3rem #f58220;
           box-shadow: 0 0 3rem #f58220;
-  -webkit-animation: animated-shadow 5s infinite alternate;
-          animation: animated-shadow 5s infinite alternate;
   margin-top: 0.7rem; }
 
 .outputs .row {
@@ -185,8 +189,6 @@ h1 {
   color: #F58220;
   -webkit-box-shadow: 0 0 3rem #f58220;
           box-shadow: 0 0 3rem #f58220;
-  -webkit-animation: animated-shadow 5s infinite alternate;
-          animation: animated-shadow 5s infinite alternate;
   margin-right: 1rem; }
 
 .outputs .row p {

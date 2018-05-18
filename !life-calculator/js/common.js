@@ -156,7 +156,7 @@ $(document).ready(function() {
 	var daysResult, monthsResult, percentsResult;
 
 	$(range).on('mousemove change', function() {
-		$(ageOutput).text(range.val());
+		$(ageOutput).val(range.val());
 
 		daysResult = range.val() * 365;
 		$(daysOutput).text(daysResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
@@ -166,6 +166,33 @@ $(document).ready(function() {
 
 		percentsResult = Math.round(range.val() / averageLifeExpectancy);
 		$(percentsOutput).text(percentsResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+	});
+
+	$(ageOutput).on('change keyup', function() {
+		$(ageOutput).val(ageOutput.val());
+
+		if (event.keyCode >= 0 && event.keyCode < 8 || event.keyCode >8 && event.keyCode < 48 || event.keyCode > 57 && event.keyCode < 96 || event.keyCode > 105) {
+			$(ageOutput).val('');
+		}
+
+		if (ageOutput.val() > 100) {
+			$(ageOutput).val('');
+		} else if (ageOutput.val() < 1) {
+			$(ageOutput).val('');
+		}
+
+		daysResult = ageOutput.val() * 365;
+		$(daysOutput).text(daysResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+
+		monthsResult = ageOutput.val() * 12;
+		$(monthsOutput).text(monthsResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+
+		percentsResult = Math.round(ageOutput.val() / averageLifeExpectancy);
+		$(percentsOutput).text(percentsResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+	});
+
+	$(ageOutput).on('focus', function() {
+		$(this).val('');
 	});
 
 });

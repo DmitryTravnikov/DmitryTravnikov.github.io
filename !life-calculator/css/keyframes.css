@@ -37,3 +37,31 @@
   to {
     -webkit-box-shadow: 0 0 3rem 0.2rem rgba(245, 130, 32, 0.4);
             box-shadow: 0 0 3rem 0.2rem rgba(245, 130, 32, 0.4); } }
+
+@-webkit-keyframes pulse {
+  from {
+    outline: 2px solid #F58220;
+    outline-offset: -2px;
+    background: rgba(245, 130, 32, 0.3);
+    background: none; }
+  to {
+    outline: 2px solid #07b75f;
+    outline-offset: -2px;
+    background: rgba(7, 183, 95, 0.3);
+    background: none;
+    -webkit-box-shadow: 0 0 3rem #07b75f;
+            box-shadow: 0 0 3rem #07b75f; } }
+
+@keyframes pulse {
+  from {
+    outline: 2px solid #F58220;
+    outline-offset: -2px;
+    background: rgba(245, 130, 32, 0.3);
+    background: none; }
+  to {
+    outline: 2px solid #07b75f;
+    outline-offset: -2px;
+    background: rgba(7, 183, 95, 0.3);
+    background: none;
+    -webkit-box-shadow: 0 0 3rem #07b75f;
+            box-shadow: 0 0 3rem #07b75f; } }
