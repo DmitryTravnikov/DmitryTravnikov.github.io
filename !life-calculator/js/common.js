@@ -169,7 +169,7 @@ $(document).ready(function() {
 
 	//calc on mousemove and changing
 	$(range).on('input', function() {
-		$(this).trigger('change');//best way to track changes on input[type=range]
+		$(this).trigger('change mousemove');//best way to track changes on input[type=range] for Chrome. But not cross-browser
 		$(ageOutput).val(range.val());
 
 
@@ -181,7 +181,7 @@ $(document).ready(function() {
 		$(ageOutput).val(ageOutput.val());
 		$(range).val(ageOutput.val());
 
-		if (event.keyCode >= 0 && event.keyCode < 8 || event.keyCode >8 && event.keyCode < 48 || event.keyCode > 57 && event.keyCode < 96 || event.keyCode > 105) {
+		if (event.keyCode >= 0 && event.keyCode < 8 || event.keyCode > 8 && event.keyCode < 48 || event.keyCode > 57 && event.keyCode < 96 || event.keyCode > 105) {
 			$(ageOutput).val('');
 		}
 
@@ -203,4 +203,49 @@ $(document).ready(function() {
 		calc();
 	});
 
-});
+	//switch language and color theme
+	var trigger = $('#trigger');
+
+	$(trigger).on('click', function() {
+		//change color theme
+		$(this).toggleClass('active');
+		$('.container').toggleClass('active');
+		$('.outputs, .output').toggleClass('active');
+		$('.language .rus, .language .eng').toggleClass('active');
+		$('h1').toggleClass('active');
+		$(range).toggleClass('active');
+
+		//switch between languages
+		var firstParagraph = $('.outputs .row1 p');
+		var secondParagraph = $('.outputs .row2 p');
+		var thirdParagraph = $('.outputs .row3 p');
+
+		$('.outputs .row p').toggleClass('eng');
+		if ($(firstParagraph).hasClass('eng')) {
+			$(firstParagraph).text('— Days you had lived');
+		} else {
+			$(firstParagraph).text('— Дней вы прожили');
+		}
+
+		if ($(secondParagraph).hasClass('eng')) {
+			$(secondParagraph).text('— Months');
+		} else {
+			$(secondParagraph).text('— Месяцев');
+		}
+
+		if ($(thirdParagraph).hasClass('eng')) {
+			$(thirdParagraph).text('— Percentage of average life expectancy worldwide');
+		} else {
+			$(thirdParagraph).text('— Процентов от средней продолжительности жизни');
+		}
+		//headline switch language
+		var headline = $('h1');
+		$(headline).toggleClass('eng');
+		if ($(headline).hasClass('eng')) {
+			$(headline).text('Your age:');
+		} else {
+			$(headline).text('Ваш возраст:');
+		}
+	});//trigger.click end
+
+});//doc.ready end
