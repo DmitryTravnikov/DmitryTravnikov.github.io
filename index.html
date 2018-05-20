@@ -6,41 +6,70 @@
 <html lang="ru">
   <!-- <![endif]-->
   <head>
-    <title>Web Development</title>
+    <title>Gulp Project</title>
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwesome-->
+    <link rel="stylesheet" href="libs/fontawesome/css/fontawesome-all.min.css">
+    <!-- OwlCarousel-->
+    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.transitions.css">
+    <!-- Animate-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Slider.UI-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- Powerange-->
+    <link rel="stylesheet" href="libs/powerange/powerange.min.css">
+    <!-- General-->
     <link rel="shortcut icon" href="img/!js.png" type="image/x-icon">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/keyframes.css">
     <link rel="stylesheet" href="css/media.css" media="all and (max-width: 900px)">
   </head>
   <body>
-    <!-- Pixel Perfect-->
-    <div id="bg-image"></div>
     <!-- Content Start-->
+    <div class="bg-container">
+      <div class="bg" id="bg"></div>
+    </div>
     <header>
-      <div class="container">
-        <ul class="main-menu">
-          <li><a class="link first-link" href="index.html">portfolio</a></li>
-          <li><a class="link second-link" href="skills.html">skills</a></li>
-          <li><a class="link third-link" href="contact.html">contact</a></li>
+      <nav class="main-menu">
+        <ul>
+          <li><a class="menu-link active" href="index.html">portfolio</a></li>
+          <li><a class="menu-link" href="skills.html">skills</a></li>
+          <li><a class="menu-link" href="contact.html">contact</a></li>
         </ul>
-        <div class="portfolio" id="content"><a href="http://dmitrytravnikov.github.io/!pink-project" target="_blank">project 1</a><a href="http://dmitrytravnikov.github.io/!finance-project" target="_blank">project 2</a><a href="https://ellodi.github.io/" target="_blank">project 3</a></div>
-      </div>
+      </nav>
     </header>
-    <div class="second-bg"></div>
+    <div class="content" id="content">
+      <div class="container portfolio"><a class="project1 project-link" href="https://dmitrytravnikov.github.io/!pink-project/" target="_blank">project 1</a><a class="project2 project-link" href="https://dmitrytravnikov.github.io/!finance-project/" target="_blank">project 2</a><a class="project3 project-link" href="https://ellodi.github.io/" target="_blank">project 3</a><a class="project4 project-link" href="https://dmitrytravnikov.github.io/!life-calculator/" target="_blank">project 4</a><a class="prevdef project5 project-link" href="#">project 5</a><a class="prevdef project6 project-link" href="#">project 6</a></div>
+    </div>
     <!-- Content End-->
+    <!-- Scripts-->
+    <!-- General-->
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
+    <!-- Powerange-->
+    <script src="libs/powerange/powerange.min.js"></script>
+    <!-- Slider.UI (https://jqueryui.com/slider/)-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- WoW-->
+    <script src="libs/wow/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <!-- Parallax-->
     <script src="libs/parallax/parallax.min.js"></script>
     <script>
       var scene = document.getElementById('scene');
       var parallaxInstance = new Parallax(scene);
     </script>
+    <!-- PageScroll2id-->
+    <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.min.js"></script>
+    <!-- OwlCarousel-->
     <script src="libs/owl-carousel/owl.carousel.min.js"></script>
     <!--  
     [if lt IE 9]>
@@ -56,8 +85,8 @@
     script(src="libs/fancybox/fancybox-1.3.4/jquery.fancybox-1.3.4.pack.js")
     script(src="libs/fancybox/fancybox-1.3.4/jquery.easing-1.3.pack.js")
     script(src="libs/fancybox/fancybox-1.3.4/jquery.mousewheel-3.0.4.pack.js")
-    script(src="libs/waypoints/waypoints-1.6.2.min.js")
     script(src="libs/scrollto/jquery.scrollTo.min.js")
+    script(src="libs/waypoints/waypoints-1.6.2.min.js")
     script(src="libs/countdown/jquery.plugin.js")
     script(src="libs/countdown/jquery.countdown.min.js")
     script(src="libs/countdown/jquery.countdown-ru.js")
