@@ -222,29 +222,29 @@ $(document).ready(function() {
 
 		$('.outputs .row p').toggleClass('eng');
 		if ($(firstParagraph).hasClass('eng')) {
-			$(firstParagraph).text('— Days you had lived');
-		} else {
 			$(firstParagraph).text('— Дней вы прожили');
+		} else {
+			$(firstParagraph).text('— Days you had lived');
 		}
 
 		if ($(secondParagraph).hasClass('eng')) {
-			$(secondParagraph).text('— Months');
-		} else {
 			$(secondParagraph).text('— Месяцев');
+		} else {
+			$(secondParagraph).text('— Months');
 		}
 
 		if ($(thirdParagraph).hasClass('eng')) {
-			$(thirdParagraph).text('— Percentage of average life expectancy worldwide');
-		} else {
 			$(thirdParagraph).text('— Процентов от средней продолжительности жизни');
+		} else {
+			$(thirdParagraph).text('— Percentage of average life expectancy worldwide');
 		}
 		//headline switch language
 		var headline = $('h1');
 		$(headline).toggleClass('eng');
 		if ($(headline).hasClass('eng')) {
-			$(headline).text('Your age:');
-		} else {
 			$(headline).text('Ваш возраст:');
+		} else {
+			$(headline).text('Your age:');
 		}
 	});//trigger.click end
 
