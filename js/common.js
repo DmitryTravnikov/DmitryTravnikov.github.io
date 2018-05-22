@@ -166,7 +166,7 @@ $(document).ready(function() {
 			if ($(skype).hasClass('active')) {
 				$(skype).text('travnikov.skype');
 			} else {
-				$(skype).text('skype');
+				$(skype).text('Skype');
 			}
 		})
 		.on('mouseleave', function() {
@@ -175,7 +175,7 @@ $(document).ready(function() {
 			if ($(skype).hasClass('active')) {
 				$(skype).text('travnikov.skype');
 			} else {
-				$(skype).text('skype');
+				$(skype).text('Skype');
 			}
 		}).on('touchstart', function() {
 			$(this).addClass('active');
@@ -183,13 +183,13 @@ $(document).ready(function() {
 			if ($(skype).hasClass('active')) {
 				$(skype).text('travnikov.skype');
 			} else {
-				$(skype).text('skype');
+				$(skype).text('Skype');
 			}
 		}).on('touchend', function() {
 			if ($(skype).hasClass('active')) {
 				$(skype).text('travnikov.skype');
 			} else {
-				$(skype).text('skype');
+				$(skype).text('Skype');
 			}
 		});
 	}//ссылка со скайпом end
