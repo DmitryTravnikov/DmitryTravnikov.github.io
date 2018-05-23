@@ -168,20 +168,18 @@ $(document).ready(function() {
 	}
 
 	//calc on mousemove and changing
-	$(range).on('input', function() {
-		$(this).trigger('change mousemove');//best way to track changes on input[type=range] for Chrome. But not cross-browser
+	$(range).on('mousemove change', function() {
 		$(ageOutput).val(range.val());
-
 
 		calc();
 	});
 
 	//calc on change and keyup
-	$(ageOutput).on('change keyup', function() {
+	$(ageOutput).on('change keyup', function(e) {
 		$(ageOutput).val(ageOutput.val());
 		$(range).val(ageOutput.val());
 
-		if (event.keyCode >= 0 && event.keyCode < 8 || event.keyCode > 8 && event.keyCode < 48 || event.keyCode > 57 && event.keyCode < 96 || event.keyCode > 105) {
+		if (e.keyCode >= 0 && e.keyCode < 8 || e.keyCode > 8 && e.keyCode < 48 || e.keyCode > 57 && e.keyCode < 96 || e.keyCode > 105) {
 			$(ageOutput).val('');
 		}
 
