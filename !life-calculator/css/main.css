@@ -545,3 +545,21 @@ h1.active {
 
 .range::-ms-tooltip {
   display: none; }
+
+.range.active::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #d9d9d9;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 0 5rem #07b75f;
+          box-shadow: 0 0 5rem #07b75f; }
+
+.range.active::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #d9d9d9;
+  border-radius: 5px;
+  box-shadow: 0 0 5rem #07b75f; }
