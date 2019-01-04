@@ -263,9 +263,7 @@ body {
   -webkit-box-shadow: 0 0 3rem #178cc6;
           box-shadow: 0 0 3rem #178cc6;
   border: none;
-  cursor: pointer;
-  -webkit-animation: green-shadow 1.5s infinite alternate;
-          animation: green-shadow 1.5s infinite alternate; }
+  cursor: pointer; }
 
 .age-output-container .output:hover, .age-output-container .output:focus {
   -webkit-animation-play-state: paused;
@@ -284,9 +282,7 @@ body {
   -webkit-box-shadow: 0 0 3rem #07b75f;
           box-shadow: 0 0 3rem #07b75f;
   border: none;
-  cursor: pointer;
-  -webkit-animation: blue-shadow 1.5s infinite alternate;
-          animation: blue-shadow 1.5s infinite alternate; }
+  cursor: pointer; }
 
 .age-output-container .output.active:hover, .age-output-container .output.active:focus {
   -webkit-animation-play-state: paused;
