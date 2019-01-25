@@ -1065,7 +1065,13 @@
   outline: none;
   margin-right: 1rem;
   width: 38rem;
-  height: auto; }
+  height: auto;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+
+.prices__email:focus {
+  border-color: #226BE2; }
 
 .prices__phone {
   font-family: "PT Sans";
@@ -1080,7 +1086,13 @@
   outline: none;
   margin-right: 1rem;
   width: 38rem;
-  height: auto; }
+  height: auto;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+
+.prices__phone:focus {
+  border-color: #226BE2; }
 
 .prices__submit-button {
   font-family: "PT Sans";
