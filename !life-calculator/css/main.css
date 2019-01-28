@@ -212,7 +212,10 @@ body {
   -webkit-box-shadow: 0 0 3rem #178cc6;
           box-shadow: 0 0 3rem #178cc6;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
 
 .age-output-container .output:hover, .age-output-container .output:focus {
   -webkit-animation-play-state: paused;
