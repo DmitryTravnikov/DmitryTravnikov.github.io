@@ -143,73 +143,39 @@ $(document).ready(function() {
 		$('.prevdef').click(function(event) {
 			event.preventDefault();
 		});
-	}
+	}// prevdef();
 	prevdef();
 
-	//main menu link active
-	function menuActive() {
-		var link = $('header .main-menu ul .menu-link');
-
-		$(link).on('click', function() {
-			$(link).removeClass('active');
-			$(this).addClass('active');
-		});
+	var navLinks = document.querySelectorAll('.header__nav-link');
+	for (var i = 0; i < navLinks.length; i++) {
+		navLinks[i].onclick = function() {
+			for (var i = 0; i < navLinks.length; i++) {
+				navLinks[i].classList.remove('active');
+			}
+			this.classList.add('active');
+		}
 	}
-	menuActive();
 
-	//ссылка со скайпом
-	function skype() {
-		var skype = $('.contact-list li:last-child a');
-		$(skype).on('mouseenter', function() {
-			$(this).addClass('active');
+	//ajax start
+	$('.header__nav-link').click(function() {
 
-			if ($(skype).hasClass('active')) {
-				$(skype).text('travnikov.skype');
-			} else {
-				$(skype).text('Skype');
-			}
-		})
-		.on('mouseleave', function() {
-			$(this).removeClass('active');
-
-			if ($(skype).hasClass('active')) {
-				$(skype).text('travnikov.skype');
-			} else {
-				$(skype).text('Skype');
-			}
-		}).on('touchstart', function() {
-			$(this).addClass('active');
-
-			if ($(skype).hasClass('active')) {
-				$(skype).text('travnikov.skype');
-			} else {
-				$(skype).text('Skype');
-			}
-		}).on('touchend', function() {
-			if ($(skype).hasClass('active')) {
-				$(skype).text('travnikov.skype');
-			} else {
-				$(skype).text('Skype');
-			}
-		});
-	}//ссылка со скайпом end
-	skype();
-
-	//ajax
-	$('.menu-link').click(function() {
-
-		var info = $(this).attr('href') + ' #content';//берет href ссылки и задает тот блок, который будет обновляться с помощью ajax при переходе по ссылке
-		$('#content').hide(0, loadContent());//скрываем содержимое блока #content той страницы, на которой находимся//задать анимацию для содержимого
-		$('#loader').fadeIn('slow');//анимация лоадера
+		var info = $(this).attr('href') + ' #main__content';//берет href ссылки и задает тот блок, который будет обновляться с помощью ajax при переходе по ссылке
+		$('#main__content').hide(0, loadContent());//скрываем содержимое блока #content той страницы, на которой находимся//задать анимацию для содержимого
+		$('#loader').show(0);//анимация лоадера
 
 		function loadContent() {//основная функция для загрузки контента
-			$('#content').load(info, '', function() {//блок, в который мы хотим загрузить новый контент//info подгружает именно тот контент, который нам нужен//'' - различные переменные, дата, опускаем его
-				$('#content').show(0, hideLoader());//показываем наш блок с контентом//скрываем лоадер//задать анимацию для содержимого
+			$('#main__content').load(info, '', function() {//блок, в который мы хотим загрузить новый контент//info подгружает именно тот контент, который нам нужен//'' - различные переменные, дата, опускаем его
+				$('#main__content').show(0, hideLoader());//показываем наш блок с контентом//скрываем лоадер//задать анимацию для содержимого
 				prevdef();
-				menuActive();
-				skype();
 				$(this).css('opacity', '0').animate({opacity: '1'}, 300);
-
+				$('.main__contacts-link-skype').on('click', function() {
+					$(this.classList.toggle('active'));
+					if ($(this).hasClass('active')) {
+						$(this).text('travnikov.skype');
+					} else {
+						$(this).text('Skype');
+					}
+				})
 			});
 		}
 
@@ -221,4 +187,9 @@ $(document).ready(function() {
 
 	});//ajax end
 
-});
+});//doc.ready end
+
+
+var cLog = function(n) {
+	return console.log(n);
+};//console.log
