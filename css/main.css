@@ -4,9 +4,6 @@ body {
 .particles-js {
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(45deg, #c4233e, #3B1D6A);
-  background: -o-linear-gradient(45deg, #c4233e, #3B1D6A);
-  background: linear-gradient(45deg, #c4233e, #3B1D6A);
   position: absolute;
   top: 0rem;
   left: 0rem;
@@ -100,6 +97,9 @@ body {
   z-index: 1;
   top: 0rem;
   left: 0rem;
+  background: -webkit-linear-gradient(45deg, #c4233e, #3B1D6A);
+  background: -o-linear-gradient(45deg, #c4233e, #3B1D6A);
+  background: linear-gradient(45deg, #c4233e, #3B1D6A);
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -238,7 +238,7 @@ body {
   letter-spacing: .1rem;
   color: #fff;
   background: #512950;
-  margin-top: 1rem;
+  margin: 1rem auto 0rem;
   text-shadow: 0.2rem 0.2rem 0rem rgba(59, 29, 106, 0.5);
   -webkit-transition: .2s;
   -o-transition: .2s;
