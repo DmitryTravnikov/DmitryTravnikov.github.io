@@ -100,6 +100,10 @@ body {
   background: -webkit-linear-gradient(45deg, #c4233e, #3B1D6A);
   background: -o-linear-gradient(45deg, #c4233e, #3B1D6A);
   background: linear-gradient(45deg, #c4233e, #3B1D6A);
+  -webkit-background-size: 200% 200%;
+          background-size: 200%;
+  -webkit-animation: backgroundGradient 5s linear infinite alternate;
+          animation: backgroundGradient 5s linear infinite alternate;
   width: 100%;
   height: 100%;
   display: -webkit-box;
