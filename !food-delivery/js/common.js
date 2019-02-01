@@ -256,10 +256,10 @@ $(document).ready(function() {
 		    var parallax2 = document.querySelectorAll('.parallax2');
 
 		    for (var i = 0; i < parallax1.length; i++) {
-		      parallax1[i].style.top = ypos * -0.05 + 'rem';
+		      parallax1[i].style.top = ypos * -0.035 + 'rem';
 		    }
 		    for (var i = 0; i < parallax2.length; i++) {
-		      parallax2[i].style.top = 34.1 + ypos * -0.05 + 'rem';	
+		      parallax2[i].style.top = 34.1 + ypos * -0.035 + 'rem';	
 		    } 
 		  }
 		}
