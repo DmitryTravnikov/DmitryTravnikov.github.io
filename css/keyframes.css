@@ -24,16 +24,16 @@
 
 @-webkit-keyframes backgroundGradient {
   from {
-    background-position: 100% 50%; }
+    background-position: 0% 100%; }
   50% {
-    background-position: 0% 50%; }
+    background-position: center; }
   to {
-    background-position: 100% 50%; } }
+    background-position: 100% 0%; } }
 
 @keyframes backgroundGradient {
   from {
-    background-position: 100% 50%; }
+    background-position: 0% 100%; }
   50% {
-    background-position: 0% 50%; }
+    background-position: center; }
   to {
-    background-position: 100% 50%; } }
+    background-position: 100% 0%; } }
