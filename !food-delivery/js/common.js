@@ -247,6 +247,24 @@ $(document).ready(function() {
 		}
 	})();
 
+	(function parallax() {
+		//parallax
+		window.onscroll = function() {
+		  if ($(window).width() > 960) {
+		    var ypos = window.pageYOffset;
+		    var parallax1 = document.querySelectorAll('.parallax1');
+		    var parallax2 = document.querySelectorAll('.parallax2');
+
+		    for (var i = 0; i < parallax1.length; i++) {
+		      parallax1[i].style.top = ypos * -0.05 + 'rem';
+		    }
+		    for (var i = 0; i < parallax2.length; i++) {
+		      parallax2[i].style.top = 34.1 + ypos * -0.05 + 'rem';	
+		    } 
+		  }
+		}
+	})();
+
 });//doc.ready end
 
 
