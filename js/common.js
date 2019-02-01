@@ -146,46 +146,143 @@ $(document).ready(function() {
 	}// prevdef();
 	prevdef();
 
-	var navLinks = document.querySelectorAll('.header__nav-link');
-	for (var i = 0; i < navLinks.length; i++) {
-		navLinks[i].onclick = function() {
-			for (var i = 0; i < navLinks.length; i++) {
-				navLinks[i].classList.remove('active');
-			}
+
+	//remove active
+	function removeActiveFun() {
+		for (var i = 0; i < visitedLinks.length; i++) {
+			visitedLinks[i].classList.remove('active');
+		}
+	}
+
+	var visitedLinks = document.querySelectorAll('.visited__link');
+	for (var i = 0; i < visitedLinks.length; i++) {
+		visitedLinks[i].onclick = function() {
+			removeActiveFun();
 			this.classList.add('active');
 		}
 	}
 
-	//ajax start
-	$('.header__nav-link').click(function() {
+	var joinSubmit = document.querySelectorAll('.join__submit');
+	for (var i = 0; i < joinSubmit.length; i++) {
+		joinSubmit[i].onclick = function() {
+			removeActiveFun();
+		}
+	}
 
-		var info = $(this).attr('href') + ' #main__content';//берет href ссылки и задает тот блок, который будет обновляться с помощью ajax при переходе по ссылке
-		$('#main__content').hide(0, loadContent());//скрываем содержимое блока #content той страницы, на которой находимся//задать анимацию для содержимого
-		$('#loader').show(0);//анимация лоадера
+	var  livePoweredBy = document.querySelector('.live__powered-by');
+	livePoweredBy.onclick = function() {
+			removeActiveFun();
+	}
 
-		function loadContent() {//основная функция для загрузки контента
-			$('#main__content').load(info, '', function() {//блок, в который мы хотим загрузить новый контент//info подгружает именно тот контент, который нам нужен//'' - различные переменные, дата, опускаем его
-				$('#main__content').show(0, hideLoader());//показываем наш блок с контентом//скрываем лоадер//задать анимацию для содержимого
-				prevdef();
-				$(this).css('opacity', '0').animate({opacity: '1'}, 300);
-				$('.main__contacts-link-skype').on('click', function() {
-					$(this.classList.toggle('active'));
-					if ($(this).hasClass('active')) {
-						$(this).text('travnikov.skype');
-					} else {
-						$(this).text('Skype');
+
+
+	//modal videos
+	var body = document.body;
+	var watchNowLinks = document.querySelectorAll('.video__watch-now');
+	var modalVideoContainer = document.querySelectorAll('.modal__video-container');
+	var modalOverlay = document.querySelector('.modal__overlay');
+	var modalCloseButtons = document.querySelectorAll('.modal__close-button');
+	var videos = document.querySelectorAll('iframe');
+
+	for (var i = 0; i < watchNowLinks.length; i++) {
+		watchNowLinks[i].onclick = function() {
+			for (var i = 0; i < watchNowLinks.length; i++) {
+				watchNowLinks[i].classList.remove('play');
+				this.classList.add('play');
+				if (watchNowLinks[i].classList.contains('play')) {
+					modalVideoContainer[i].style.display = 'block';
+					videos[i].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+					modalOverlay.style.display = 'block';
+					body.style.overflow = 'hidden';
+				}
+			}
+		}
+	}
+
+	function hideModalVideos() {
+		for (var i = 0; i < modalVideoContainer.length; i++) {
+			modalVideoContainer[i].style.display = '';
+			videos[i].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+		}
+		modalOverlay.style.display = '';
+		body.style.overflow = 'auto';
+	}
+
+	for (var i = 0; i < modalCloseButtons.length; i++) {
+		modalCloseButtons[i].onclick = function() {
+			hideModalVideos();
+		}
+	}
+
+	modalOverlay.onclick = function() {
+		hideModalVideos();
+	}
+
+
+	//inputs validation
+	var joinSubmitButtons = document.querySelectorAll('.join__submit');
+	for (var i = 0; i < joinSubmitButtons.length; i++) {
+		joinSubmitButtons[i].onclick = function() {
+
+			var joinInputs = document.querySelectorAll('.join__input');
+			for (var i = 0; i < joinInputs.length; i++) {
+				if (joinInputs[i].value) {
+					for (var i = 0; i < joinSubmitButtons.length; i++) {
+
+						var thanks = document.createElement('p');
+						thanks.classList.add('thanks__for-signing-up');
+						thanks.innerHTML = 'Thanks for signing up!';
+						joinSubmitButtons[i].parentNode.appendChild(thanks);
+
+
+						joinSubmitButtons[i].parentNode.removeChild(joinSubmitButtons[i].previousElementSibling);
+						joinSubmitButtons[i].parentNode.removeChild(joinSubmitButtons[i]);
 					}
-				})
-			});
+				}
+			}
+
+
 		}
+	}
 
-		function hideLoader() {//функция для скрытия лоадера
-			$('#loader').fadeOut('normal');
+
+	//parallax
+	window.onscroll = function() {
+		if ($(window).width() > 960) {
+			var ypos = window.pageYOffset;
+			var parallax1 = document.querySelectorAll('.parallax1');
+			var parallax2 = document.querySelectorAll('.parallax2');
+			var parallax3 = document.querySelectorAll('.parallax3');
+
+			for (var i = 0; i < parallax1.length; i++) {
+				parallax1[i].style.top = ypos * -0.035 + 'rem';
+			}
+			for (var i = 0; i < parallax2.length; i++) {
+				parallax2[i].style.top = 44.3 + ypos * 0.035 + 'rem';	
+			}
+
+			for (var i = 0; i < parallax3.length; i++) {
+				if (ypos > 2200) {
+					parallax3[i].style.top = -18.8 + (ypos - 2200) * 0.035 + 'rem';
+				}
+			}
 		}
+	}
 
-		return false;//чтобы не происходило перехода по ссылке, а только происходила подгрузка контента
 
-	});//ajax end
+
+	//smooth scrolling
+	$('.nav__menu-link, .xperience-top__tickets-link').mPageScroll2id({
+	  scrollSpeed: 200
+	});
+
+
+	//show/hide menu
+	var navMenuButton = document.querySelector('.nav__menu-button');
+	navMenuButton.onclick = function() {
+		this.classList.toggle('active');
+	}
+
 
 });//doc.ready end
 
