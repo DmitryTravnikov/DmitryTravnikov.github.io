@@ -193,7 +193,7 @@ $(document).ready(function() {
 					modalVideoContainer[i].style.display = 'block';
 					videos[i].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
 					modalOverlay.style.display = 'block';
-					body.style.overflow = 'hidden';
+					body.style.overflowY = 'hidden';
 				}
 			}
 		}
@@ -205,7 +205,7 @@ $(document).ready(function() {
 			videos[i].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
 		}
 		modalOverlay.style.display = '';
-		body.style.overflow = 'auto';
+		body.style.overflowY = 'auto';
 	}
 
 	for (var i = 0; i < modalCloseButtons.length; i++) {
