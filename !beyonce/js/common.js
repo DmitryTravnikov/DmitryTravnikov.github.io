@@ -193,45 +193,7 @@ $(document).ready(function() {
 	}// prevdef();
 	prevdef();
 
-	// //parallax
-	// window.onscroll = function() {
-	//   if ($(window).width() > 960) {
-	//     var ypos = window.pageYOffset;
-	//     var parallax1 = document.querySelectorAll('.parallax1');
-	//     var parallax2 = document.querySelectorAll('.parallax2');
-	//     var parallax3 = document.querySelectorAll('.parallax3');
-
-	//     for (var i = 0; i < parallax1.length; i++) {
-	//       parallax1[i].style.bottom = -46 + ypos * 0.23 + 'rem';	
-	//     }
-	//     for (var i = 0; i < parallax2.length; i++) {
-	//       parallax2[i].style.bottom = -19.4 + ypos * 0.11 + 'rem';	
-	//     }
-
-	//     var fire = document.querySelector('.block1__fire');
-	//     if (ypos == 200) {
-	//     	for (var i = 0; i < parallax1.length; i++) {
-	//     		parallax1[i].classList.remove('parallax1');
-	//     	}
-	//     	for (var i = 0; i < parallax2.length; i++) {
-	//     		parallax2[i].classList.remove('parallax2');
-	//     	}
-	//     	fire.style.opacity = '1';
-	//     }
-
-	//   }
-	// }
- //  window.timerId = window.setInterval(function() {
- //  	var counter = 0;
- //  	counter = counter + 3;
-	//   window.scrollBy(0, counter);
-	//   if (counter >= 200) {
-	//   	window.timerId.clearInterval(window.timerId);
-	//   }
- //  }, 5);
-
 });//doc.ready end
-
 
 var cLog = function(n) {
 	return console.log(n);
