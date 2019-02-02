@@ -1,0 +1,66 @@
+.sky-of-fire {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  height: 100vh;
+  background: url("https://stmed.net/sites/default/files/fire-wallpapers-25207-7825014.jpg") no-repeat center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s; }
+
+.block1 {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #178CC6), to(#F58220));
+  background: -webkit-linear-gradient(bottom, #178CC6 50%, #F58220 100%);
+  background: -o-linear-gradient(bottom, #178CC6 50%, #F58220 100%);
+  background: linear-gradient(0deg, #178CC6 50%, #F58220 100%);
+  position: relative;
+  overflow: hidden; }
+
+.block1__mountains {
+  position: absolute;
+  bottom: 0rem;
+  left: 0rem;
+  z-index: 2; }
+
+.block1__such-wow {
+  width: 25rem;
+  position: absolute;
+  top: 49rem;
+  left: -6rem;
+  z-index: 1; }
+
+.block1__beyonce {
+  width: 30rem;
+  position: absolute;
+  bottom: -46rem;
+  left: 60%;
+  z-index: 3; }
+
+.block1__guitar {
+  position: absolute;
+  bottom: -16rem;
+  left: 58%;
+  width: 51rem;
+  -webkit-transform: rotate(-11deg);
+      -ms-transform: rotate(-11deg);
+          transform: rotate(-11deg);
+  z-index: 4; }
+
+.block2 {
+  width: 100%;
+  height: 28rem;
+  position: relative;
+  background: url("https://thumbs.gfycat.com/FlakyPassionateDuiker-size_restricted.gif") no-repeat 0% 100%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  z-index: 5; }
+
+.block2 audio {
+  display: none; }
