@@ -138,63 +138,14 @@
 
 document.body.onload = function() {
 	setTimeout(function() {
-		//parallax
-		window.onscroll = function() {
-		  if ($(window).width() > 960) {
-		    var ypos = window.pageYOffset;
-		    var parallax1 = document.querySelectorAll('.parallax1');
-		    var parallax2 = document.querySelectorAll('.parallax2');
-		    var parallax3 = document.querySelectorAll('.parallax3');
+		var fire = document.querySelector('.scene__fire');
+		var beyonce1 = document.querySelector('.scene__beyonce1');
+		var beyonce2 = document.querySelector('.scene__beyonce2');
+		var guitar = document.querySelector('.scene__guitar');
 
-		    for (var i = 0; i < parallax1.length; i++) {
-		      parallax1[i].style.bottom = -46 + ypos * 0.23 + 'rem';	
-		    }
-		    for (var i = 0; i < parallax2.length; i++) {
-		      parallax2[i].style.bottom = -19.4 + ypos * 0.11 + 'rem';	
-		    }
-
-		    var fire = document.querySelector('.block1__fire');
-		    if (ypos == 200) {
-		    	for (var i = 0; i < parallax1.length; i++) {
-		    		parallax1[i].classList.remove('parallax1');
-		    	}
-		    	for (var i = 0; i < parallax2.length; i++) {
-		    		parallax2[i].classList.remove('parallax2');
-		    	}
-		    	fire.style.opacity = '1';
-		    }
-
-		  }
-		}
-	  window.scrollDown = window.setInterval(function() {
-	  	var ypos = window.pageYOffset;
-	  	var counter = 0;
-	  	counter = counter + 3;
-		  window.scrollBy(0, counter);
-		  cLog(ypos);
-		  if (ypos == 200) {
-		  	window.clearInterval(window.scrollDown);
-		  	window.scrollUp = window.setInterval(function() {
-			  	counter = counter - 3;
-				  window.scrollBy(0, counter);
-		  	}, 10);
-		  }
-	  }, 5);
+		fire.style.opacity = '1';
+		beyonce1.style.bottom = '0rem';
+		beyonce2.style.bottom = '-4rem';
+		guitar.style.bottom = '2rem';
 	}, 1000);
 }
-
-$(document).ready(function() {
-
-	//prevent default
-	function prevdef() {
-		$('.prevdef').click(function(event) {
-			event.preventDefault();
-		});
-	}// prevdef();
-	prevdef();
-
-});//doc.ready end
-
-var cLog = function(n) {
-	return console.log(n);
-};//console.log
