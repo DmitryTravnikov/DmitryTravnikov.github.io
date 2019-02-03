@@ -145,7 +145,9 @@ document.body.onload = function() {
 
 		fire.style.opacity = '1';
 		beyonce1.style.bottom = '0rem';
-		beyonce2.style.bottom = '-4rem';
 		guitar.style.bottom = '2rem';
+		window.timerId = window.setInterval(function() {
+			beyonce2.style.bottom = '-4rem';
+		}, 2000);
 	}, 1000);
 }
