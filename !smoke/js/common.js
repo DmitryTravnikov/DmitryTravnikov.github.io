@@ -136,7 +136,7 @@
 
 // });//doc ready end
 
-window.onload = function() {
+document.body.onload = function() {
 	var preloader = document.querySelector('.preloader');
 	var video = document.querySelector('video');
 	var spans = document.querySelectorAll('span');
