@@ -136,55 +136,28 @@
 
 // });//doc ready end
 
-$(document).ready(function() {
-
-	//prevent default
-	function prevdef() {
-		$('.prevdef').click(function(event) {
-			event.preventDefault();
+window.onload = function() {
+	var preloader = document.querySelector('.preloader');
+	var video = document.querySelector('video');
+	var spans = document.querySelectorAll('span');
+	window.startAnimation = window.setInterval(function() {
+		for (var i = 0; i < spans.length; i++) {
+			spans[i].style.animation = 'animate 1s linear forwards';
+			spans[0].style.animationDelay = '1.9s';
+			spans[1].style.animationDelay = '2.3s';
+			spans[2].style.animationDelay = '2.7s';
+			spans[3].style.animationDelay = '2.8s';
+			spans[4].style.animationDelay = '3.3s';
+			spans[5].style.animationDelay = '3.7s';
+			spans[6].style.animationDelay = '4.1s';
+		}
+		preloader.style.opacity = '0';
+		video.play();video.addEventListener("timeupdate", function(){
+	    if(this.currentTime >= 7.5) {
+				this.pause();
+				this.style.opacity = '0';
+				window.clearInterval(window.startAnimation);
+	    }
 		});
-	}// prevdef();
-	prevdef();
-
-	
-
-});//doc.ready end
-
-var cLog = function(n) {
-	return console.log(n);
-};//console.log
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	}, 1000);
+}
