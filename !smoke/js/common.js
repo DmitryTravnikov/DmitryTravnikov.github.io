@@ -136,7 +136,7 @@
 
 // });//doc ready end
 
-document.body.onload = function() {
+document.addEventListener('DOMContentLoaded', function(event) {
 	var preloader = document.querySelector('.preloader');
 	var video = document.querySelector('video');
 	var spans = document.querySelectorAll('span');
@@ -160,4 +160,4 @@ document.body.onload = function() {
 	    }
 		});
 	}, 1000);
-}
+})
