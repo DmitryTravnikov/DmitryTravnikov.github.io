@@ -146,24 +146,37 @@ $(document).ready(function() {
 	}// prevdef();
 	prevdef();
 
+	var contactEmail = document.querySelector('.contact__email');
+	var contactSubscribeButton = document.querySelector('.contact__subscribe-button');
+	var modalOverlay = document.querySelector('.modal__overlay');
+	var modalContent = document.querySelector('.modal__content');
+	contactSubscribeButton.addEventListener('click', modalShow);
+	function modalShow() {
+		if (contactEmail.value) {
+			modalOverlay.style.display = 'block';
+			modalContent.style.top = '50%';
+			window.modalHideTimer = window.setInterval(function() {
+				modalOverlay.style.display = '';
+				modalContent.style.top = '';
+				contactSubscribeButton.removeEventListener('click', modalShow);
+				window.clearInterval(window.modalHideTimer);
+				window.reAddEventListener = window.setInterval(function() {
+					contactSubscribeButton.addEventListener('click', modalShow);
+				}, 1000);
+			}, 1000);
+		}
+	}
+
+	var homeHamburger = document.querySelector('.home__hamburger');
+	homeHamburger.onclick = function() {
+		for (var i = 0; i < this.children.length; i++) {
+			this.children[i].classList.toggle('active');
+		}
+		this.classList.toggle('active');
+	}
+
 });//doc.ready end
 
 var cLog = function(n) {
 	return console.log(n);
 };//console.log
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
