@@ -6,9 +6,9 @@
     height: auto;
     margin: 0 auto; }
   .top-panel__menu-overlay {
-    height: 60rem; }
+    height: 100%; }
   .header {
-    height: 60rem;
+    height: 100vh;
     padding-top: 17.9rem; }
   .header__wrapper {
     width: 100%;
