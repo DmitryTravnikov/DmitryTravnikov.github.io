@@ -321,7 +321,7 @@ $(document).ready(function() {
  }
 
  //smooth scroll
- 	$('.top-panel__menu-link, .top-panel__logo, .footer__logo, .to-top-link').mPageScroll2id({
+ 	$('.top-panel__menu-link, .top-panel__logo, .footer__logo, .to-top-link, .prices__contact-us-link').mPageScroll2id({
 	  offset: 50,
 	  scrollSpeed: 200
 	});
