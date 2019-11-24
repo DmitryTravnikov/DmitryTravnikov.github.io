@@ -558,7 +558,27 @@ body {
 
 .section1__slider {
   width: 55rem;
-  height: 44rem; }
+  height: 44rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .section1__slider .owl-controls {
   position: absolute;
@@ -590,7 +610,8 @@ body {
 
 .section1__slide {
   width: 100%;
-  height: 44rem; }
+  height: 44rem;
+  margin: 0rem auto; }
 
 .section1__slide1 {
   background: #c4233e; }
