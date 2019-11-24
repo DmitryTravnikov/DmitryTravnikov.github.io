@@ -1,8 +1,6 @@
 /*  Desktop First Method */
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1300px) {
-  body {
-    background: #2D1D34; }
   .top-panel {
     top: -8.5rem;
     height: 9rem; }
@@ -696,8 +694,6 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  body {
-    background: #85552B; }
   .top-panel {
     top: -8.5rem;
     height: 9rem; }
@@ -1391,8 +1387,6 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  body {
-    background: #59363B; }
   .top-panel {
     top: -8.5rem;
     height: 9rem; }
@@ -2062,8 +2056,6 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  body {
-    background: #2B4146; }
   .top-panel {
     top: -8.5rem;
     height: 9rem; }
@@ -2693,8 +2685,6 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  body {
-    background: #254823; }
   .top-panel {
     top: -8.5rem;
     height: 9rem; }
