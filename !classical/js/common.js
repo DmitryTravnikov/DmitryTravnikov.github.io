@@ -170,7 +170,7 @@ $(document).ready(function() {
 	var section1Slider = $(".second__slider");
 	section1Slider.owlCarousel({
 		items : 1,
-		autoPlay: 1000,
+		autoPlay: 3000,
 		pagination: false,
 		itemsDesktop: [1199,1],
 		itemsDesktopSmall: [979,1],
