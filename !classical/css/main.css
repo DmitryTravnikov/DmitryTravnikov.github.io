@@ -429,80 +429,49 @@ body {
   top: 0rem;
   left: 3.9rem; }
 
-.section1-slider {
+.second {
+  padding-top: 0.8rem;
   width: 100%; }
 
-.section1-slider__wrapper {
+.second__wrapper {
+  width: 96rem;
   position: relative;
-  padding-top: 3.1rem;
-  padding-bottom: 3.1rem;
-  position: relative; }
+  margin: 0rem auto; }
 
-.section1-slider__wrapper::before {
-  content: '';
+.second__slider {
+  width: 80rem;
+  margin: 0rem auto; }
+
+.second__slide {
+  width: 73rem;
+  margin: 0rem auto; }
+
+.second__paragraph {
   width: 100%;
-  height: 0.1rem;
-  background: #D4D4D4;
-  position: absolute;
-  bottom: 0rem;
-  left: 0rem; }
-
-.section1-slider__slider {
-  width: 96rem; }
-
-.section1-slider__slide {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin: 0rem auto; }
-
-.section1-slider__paragraph-container {
-  width: 80%;
-  margin: 0rem auto; }
-
-.section1-slider__paragraph {
-  margin: 0rem;
-  text-align: center;
-  font-family: "Georgia";
-  font-weight: 400;
-  font-size: 2.2rem;
-  line-height: 3.2rem;
-  font-style: italic;
   color: #505050;
+  font-family: "Georgia";
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 400;
+  font-style: italic;
   text-align: center;
   display: block; }
 
-.section1-slider__button {
+.second__slider-button {
   width: 4rem;
   height: 7rem;
   outline: none;
   border: none;
   position: absolute;
-  top: 2.8rem;
+  top: 2rem;
   cursor: pointer; }
 
-.section1-slider__prev-button {
+.second__prev-button {
   background: url("../assets/section2__arrow-left.png") no-repeat center;
   left: 2.8rem; }
 
-.section1-slider__next-button {
+.second__next-button {
   background: url("../assets/section2__arrow-right.png") no-repeat center;
   right: 2.8rem; }
 

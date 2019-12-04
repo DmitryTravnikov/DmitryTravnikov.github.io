@@ -167,20 +167,20 @@ $(document).ready(function() {
 
 	//Каруселька
 	//Документация: http://owlgraphic.com/owlcarousel/
-	var section1Slider = $(".section1-slider__slider");
+	var section1Slider = $(".second__slider");
 	section1Slider.owlCarousel({
 		items : 1,
-		autoPlay: 3000,
+		autoPlay: 1000,
 		pagination: false,
 		itemsDesktop: [1199,1],
 		itemsDesktopSmall: [979,1],
 		itemsTablet: [768,1],
 		itemsMobile: [479,1]
 	});
-	$(".section1-slider__next-button").click(function(){
+	$(".second__next-button").click(function(){
 		section1Slider.trigger("owl.next");
 	});
-	$(".section1-slider__prev-button").click(function(){
+	$(".second__prev-button").click(function(){
 		section1Slider.trigger("owl.prev");
 	});//карусель end
 
