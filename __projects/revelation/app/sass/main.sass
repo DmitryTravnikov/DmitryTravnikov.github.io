@@ -1,0 +1,556 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+*
+	transition: all .2s
+
+body
+	cursor: default
+
+.wrapper
+	@include wrapper(96rem, auto)
+
+// 1rem === 10px
+
+.top-panel
+	background: #55415F
+	padding-top: 0.8rem
+	padding-bottom: 1rem
+	&__wrapper
+		@include flex(row, wrap, flex-end, flex-start)
+	&__menu-container
+	&__menu
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		@include flex(row, wrap, flex-start, flex-start)
+	&__menu-list-item
+		padding: 0rem
+		margin: 0rem
+		@include flex(row, wrap, flex-start, flex-start)
+		margin-right: 1.3rem
+		position: relative
+		&::before
+			content: ''
+			@include size(.1rem, 1.1rem)
+			background: #fff
+			position: absolute
+			top: 50%
+			right: -0.7rem
+			transform: translateY(-50%)
+		&:last-child
+			margin-right: 0rem
+		&:last-child::before
+			content: none
+	&__menu-link
+		text-decoration: none
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.1rem
+		color: #fff
+
+.header
+	padding-top: 3.2rem
+	padding-bottom: 3.8rem
+	&__wrapper
+		@include flex(row, wrap, space-between, center)
+	&__logo-container
+		text-decoration: none
+		@include flex(column, wrap, flex-start, flex-start)
+	&__logo
+		width: 100%
+		margin: 0rem
+		font-family: $gg
+		font-weight: 400
+		font-size: 3.4rem
+		color: #000
+		text-transform: uppercase
+		span
+			font-size: 2.6rem
+	&__logo-description
+		width: 100%
+		margin: 0rem
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.2rem
+		color: #999
+		margin-top: 0.8rem
+	&__menu-container
+	&__menu
+		margin: 0rem
+		padding: 0rem
+		list-style: none
+		@include flex(row, wrap, flex-start, flex-start)
+		position: relative
+		margin-top: 0.6rem
+		&::before
+			content: ''
+			@include size(100%, .1rem)
+			background: #EBEBEB
+			position: absolute
+			bottom: -1.4rem
+			left: 0rem
+	&__menu-list-item
+		margin: 0rem
+		padding: 0rem
+		@include flex(row, wrap, flex-start, flex-start)
+		margin-right: 1.9rem
+		&:last-child
+			margin-right: 0rem
+	&__menu-link
+		text-decoration: none
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.2rem
+		color: #333
+		position: relative
+		transition: .2s
+		text-transform: uppercase
+		&::before
+			content: ''
+			@include size(100%, .2rem)
+			background: #55415F
+			position: absolute
+			bottom: -1.4rem
+			left: 0rem
+			transition: .2s
+			opacity: 0
+		&:hover
+			color: #55415F
+		&:hover::before
+			opacity: 1
+
+.main
+	background: #EBEBEB
+	&__wrapper
+		position: relative
+	&__slider
+		width: 100%
+		height: 42rem
+	&__slide
+		width: 100%
+		height: 42rem
+		margin: 0rem auto
+		background: url('../assets/main__monitor.png') no-repeat 0rem 2.6rem
+		@include flex(row, wrap, flex-start, flex-start)
+		padding-top: 4.6rem
+		padding-left: 2rem
+	&__slide1
+	&__slide2
+	&__slide3
+	&__img
+	&__text-container
+		width: 40%
+		@include flex(column, wrap, flex-start, flex-start)
+		margin-top: 8.7rem
+		margin-left: 10.8rem
+	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $gg
+		font-weight: 400
+		font-size: 3.6rem
+		color: #333
+		text-transform: uppercase
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.6rem
+		line-height: 2.2rem
+		color: #999
+		margin-top: 1.7rem
+		padding-right: 3rem
+	&__read-more-link
+		text-decoration: none
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.6rem
+		color: #fff
+		background: #55415F
+		text-transform: uppercase
+		padding: 0.6rem 1.4rem
+		border-radius: 0.6rem
+		margin-top: 1.6rem
+		transition: .2s
+		&:hover
+			background: darken(#55415F, 3%)
+		&:active
+			background: #55415F
+	&__buttons-container
+		background: #fff
+		width: 100%
+		@include flex(row, wrap, space-between, center)
+		position: absolute
+		bottom: 0rem
+		left: 0rem
+		border-top-left-radius: 1rem
+		border-top-right-radius: 1rem
+		overflow: hidden
+	&__slider-button
+		outline: none
+		border: none
+		cursor: pointer
+		@include size(2.9rem, 5.3rem)
+	&__prev-button
+		border-bottom: .1rem solid #EBEBEB
+		border-right: .1rem solid #EBEBEB
+		background: url('../assets/main__arrow-left.png') no-repeat center, #fff
+	&__next-button
+		border-bottom: .1rem solid #EBEBEB
+		border-left: .1rem solid #EBEBEB
+		background: url('../assets/main__arrow-right.png') no-repeat center, #fff
+
+.section1
+	&__wrapper
+		@include flex(row, wrap, center, stretch)
+	&__block
+		@include flex(column, wrap, center, center)
+		@include size(21rem, auto)
+		margin-right: 2rem
+		position: relative
+		top: -2.4rem
+		left: 0rem
+		&:last-child
+			margin-right: 0rem
+	&__block1
+	&__block2
+	&__block3
+	&__block4
+	&__block-img
+	&__block-headline
+		width: 100%
+		margin: 0rem
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.8rem
+		color: #55415F
+		text-align: center
+		margin-top: 1.9rem
+	&__separator
+		margin: 0rem
+		border: none
+		background: #D7D7D7
+		@include size(100%, .1rem)
+		margin-top: 2rem
+	&__block-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.3rem
+		line-height: 2.3rem
+		color: #807D77
+		text-align: center
+		margin-top: 1.5rem
+
+.section2
+	padding-top: 0.5rem
+	padding-bottom: 3.7rem
+	&__wrapper
+		@include flex(column, wrap, flex-start, center)
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.8rem
+		color: #222
+		line-height: 2.9rem
+		text-align: center
+		padding: 0rem 2rem
+	&__blocks-container
+		@include flex(row, wrap, center, stretch)
+		margin-top: 3.4rem
+	&__block
+		@include size(22.5rem, auto)
+		@include flex(column, wrap, flex-start, flex-start)
+		margin-right: 2rem
+		&:last-child
+			margin-right: 0rem
+	&__block1
+	&__block2
+	&__block3
+	&__block4
+	&__block-headline
+		width: 100%
+		margin: 0rem
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.8rem
+		color: #7F7D77
+	&__block-img
+		margin-top: 1.6rem
+	&__block-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.3rem
+		line-height: 2rem
+		color: #807D77
+		margin-top: 1.7rem
+	&__read-more-link
+		text-decoration: none
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.3rem
+		color: #55415F
+		text-transform: capitalize
+		margin-top: 1.5rem
+
+.footer
+	background: #222
+	position: relative
+	padding-top: 2.8rem
+	padding-bottom: 3.2rem
+	&::before
+		content: ''
+		@include size(100%, .1rem)
+		background: #000
+		position: absolute
+		bottom: 0rem
+		left: 0rem
+	&__wrapper
+		@include flex(row, wrap, flex-start, stretch)
+	&__block
+		@include flex(column, wrap, flex-start, flex-start)
+		@include size(calc(100% / 4), auto)
+	&__block1
+	&__block2
+		padding-left: 0.6rem
+	&__block3
+		padding-left: 1rem
+	&__block4
+		padding-left: 1.6rem
+	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.8rem
+		color: #fff
+		text-transform: capitalize
+	&__post-container
+		text-decoration: none
+		@include flex(column, wrap, flex-start, flex-start)
+		width: 100%
+		margin-top: 2.8rem
+	&__post-title
+		width: 100%
+		margin: 0rem
+		font-family: $gg
+		font-weight: 900
+		font-size: 1.3rem
+		color: #9F81A9
+		text-transform: capitalize
+	&__post-info
+		width: 100%
+		margin: 0rem
+		font-family: $gg
+		font-weight: 400
+		font-size: 1rem
+		color: #807D77
+		margin-top: 0.4rem
+	&__post-day
+	&__post-date
+	&__post
+		width: 100%
+		margin: 0rem
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.2rem
+		line-height: 1.9rem
+		color: #807D77
+		margin-top: 1.1rem
+		padding-right: 2rem
+	&__list
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		padding-left: 1.5rem
+		margin-top: 2.3rem
+	&__list-item
+		padding: 0rem
+		margin: 0rem
+		position: relative
+		margin-top: 0.6rem
+		&:first-child
+			margin-top: 0rem
+		&::before
+			content: '\00bb'
+			font-family: $gg
+			font-weight: 400
+			font-size: 1.2rem
+			color: #fff
+			position: absolute
+			top: 50%
+			left: -1.7rem
+			transform: translateY(-50%)
+	&__list-link
+		text-decoration: none
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.2rem
+		color: #9F80A9
+	&__block3-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.2rem
+		color: #807D77
+	&__company-name
+		margin-top: 2.6rem
+	&__street-name
+		margin-top: 0.7rem
+	&__line-two
+		margin-top: 0.7rem
+	&__town
+		margin-top: .7rem
+	&__postcode
+		margin-top: 0.6rem
+	&__tel
+		margin-top: 1.6rem
+	&__fax
+		margin-top: 0.6rem
+	&__email
+		margin-top: 0.6rem
+		span
+			color: #9F80A9
+	&__form
+		@include flex(column, wrap, flex-start, flex-start)
+		width: 100%
+	&__input
+		outline: none
+		border: .1rem solid transparent
+		background: #353535
+		border-radius: .6rem
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.3rem
+		color: #807D77
+		width: 100%
+		padding: 0.8rem 0.9rem
+		transition: .2s
+		&::placeholder
+			text-transform: capitalize
+			font-family: $gg
+			font-weight: 400
+			font-size: 1.3rem
+			color: #807D77
+	&__name-input
+		margin-top: 2.8rem
+	&__email-input
+		margin-top: 1rem
+	&__submit-button
+		outline: none
+		cursor: pointer
+		border: none
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.3rem
+		color: #fff
+		text-transform: uppercase
+		border-radius: 0.4rem
+		background: #9F81A9
+		padding: 0.8rem 1.4rem
+		margin-top: 0.8rem
+		transition: .2s
+		&:hover
+			background: darken(#9F81A9, 3%)
+		&:active
+			background: #9F81A9
+	&__socials-container
+		@include flex(row, wrap, flex-start, flex-start)
+		margin-top: 2.3rem
+	&__social-link
+		@include flex(row, wrap, center, center)
+		@include size(3.2rem, 3.2rem)
+		border-radius: 50%
+		background: #353535
+		margin-right: 1rem
+		&:last-child
+			margin-right: 0rem
+		svg
+			@include size(1.8rem, 1.8rem)
+			path
+				fill: #807D77
+	&__social-link:hover svg path
+		fill: #353535
+	&__social-link:hover
+		background: #807D77
+	&__linkedin
+	&__twitter
+	&__pinterest
+	&__google-plus
+		svg
+			@include size(2.4rem, 2.4rem)
+			path
+				fill: #807D77
+	&__rss
+
+.copy
+	position: relative
+	background: #202020
+	padding-top: 2.3rem
+	padding-bottom: 2.5rem
+	&::before
+		content: ''
+		@include size(100%, .1rem)
+		background: #3A3A3A
+		position: absolute
+		top: 0rem
+		left: 0rem
+	&__wrapper
+		@include flex(row, wrap, space-between, flex-start)
+	&__paragraph
+		width: 50%
+		margin: 0rem
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.2rem
+		color: #807D77
+	&__by-link
+		text-decoration: none
+		font-family: $gg
+		font-weight: 400
+		font-size: 1.2rem
+		color: #666
+		transition: .2s
+		&:hover
+			color: lighten(#666, 10%)
+
+.modal
+	&__overlay
+		@include size(100%, 100%)
+		background: rgba($space-grey, .9)
+		position: fixed
+		top: 0rem
+		left: 0rem
+		display: none
+	&__window
+		@include size(31rem, 10rem)
+		background: #000
+		position: fixed
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		@include flex(row, wrap, center, center)
+		opacity: 0
+		z-index: -1
+		transition: .2s
+	&__error-container
+	&__success-container
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gg
+		font-weight: 400
+		font-size: 2rem
+		color: #fff
+		text-align: center
+
+*
+	// @include outline($blue)

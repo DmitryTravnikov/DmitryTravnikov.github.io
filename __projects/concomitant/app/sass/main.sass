@@ -1,0 +1,566 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+*
+	transition: all .2s
+
+body
+	cursor: default
+	background: #1F1F1F
+	font-family: $gg
+
+.wrapper
+	+wrapper(96rem, auto)
+
+// 1rem === 10px
+
+.header
+	&__wrapper
+		background: #fff
+		+flex(column, wrap, flex-start, flex-start)
+		position: relative
+		&::before
+			content: ''
+			+size(100%, .5rem)
+			background: $green
+			position: absolute
+			top: 0rem
+			left: 0rem
+	&__block
+		+flex(row, wrap, space-between, flex-start)
+		width: 100%
+	&__block1
+	&__block2
+		+flex(row, wrap, space-between, flex-start)
+		background: $green
+		margin-top: 3.7rem
+		padding-left: 2.9rem
+		padding-right: 3rem
+		padding-top: 1.9rem
+		padding-bottom: 1.9rem
+	&__logo-container
+		text-decoration: none
+		padding-top: 3.2rem
+		padding-left: 2.8rem
+	&__logo
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 4.7rem
+		color: #333
+		text-transform: uppercase
+		text-align: left
+		span
+			font-size: 3.6rem
+	&__logo-description
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.2rem
+		color: #999
+		text-align: left
+		margin-top: 0.4rem
+		margin-left: 0.2rem
+	&__socials-n-secondary-menu-container
+		margin-top: 0.5rem
+		+flex(column, wrap, flex-start, flex-end)
+	&__socials-container
+		+size(25.1rem, auto)
+		background: $green
+		border-bottom-left-radius: 1.4rem
+		border-bottom-right-radius: 1.4rem
+		+flex(row, wrap, center, flex-start)
+		padding-top: 0.8rem
+		padding-bottom: 0.8rem
+		margin-right: 3rem
+	&__social-link
+		+size(3.2rem, 3.2rem)
+		border-radius: 50%
+		background: #1F1F1F
+		margin-right: 1.7rem
+		transition: .2s
+		+flex(row, wrap, center, center)
+		&:hover
+			background: #00ACEE
+		&:last-child
+			margin-right: 0rem
+		svg
+			+size(1.6rem, 1.6rem)
+			+flex(row, wrap, center, center)
+			path
+				fill: #fff
+	&__linkedin
+	&__twitter
+	&__pinterest
+	&__google-plus
+		svg
+			+size(2.2rem, 2.2rem)
+			+flex(row, wrap, center, center)
+			path
+				fill: #fff
+	&__rss
+	&__secondary-menu-container
+		margin-top: 3.7rem
+		margin-right: 3rem
+	&__secondary-menu
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(row, wrap, flex-start, flex-start)
+	&__secondary-menu-list-item
+		padding: 0rem
+		margin: 0rem
+		+flex(row, wrap, flex-start, flex-start)
+		position: relative
+		margin-right: 1.4rem
+		&:last-child
+			margin-right: 0rem
+		&::before
+			content: ''
+			+size(.1rem, 100%)
+			background: $green
+			position: absolute
+			top: 48%
+			right: -0.8rem
+			transform: translateY(-50%)
+		&:last-child::before
+			content: none
+	&__secondary-menu-link
+		text-decoration: none
+		font-weight: 400
+		font-size: 1.2rem
+		color: $green
+		text-align: left
+	&__menu-container
+		margin-top: 1rem
+	&__menu
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(row, wrap, flex-start, flex-start)
+	&__menu-list-item
+		padding: 0rem
+		margin: 0rem
+		+flex(row, wrap, flex-start, flex-start)
+		margin-right: 1.8rem
+		&:last-child
+			margin-right: 0rem
+	&__menu-link
+		text-decoration: none
+		font-weight: 400
+		font-size: 1.3rem
+		color: #fff
+		text-transform: uppercase
+		text-align: left
+		transition: .2s
+		&:hover
+			color: #000
+	&__search-container
+		+flex(row, wrap, flex-start, stretch)
+	&__search-input
+		outline: none
+		border: none
+		background: #fff
+		font-weight: 400
+		font-size: 1.2rem
+		color: #7F7F7F
+		text-align: left
+		border: .1rem solid #DDDDDD
+		border-right: none
+		width: 21.7rem
+		padding-left: 0.9rem
+		padding-right: 0.9rem
+		&::placeholder
+			font-weight: 400
+			font-size: 1.2rem
+			color: #7F7F7F
+			text-align: left
+	&__search-button
+		outline: none
+		cursor: pointer
+		border: none
+		font-weight: 400
+		font-size: 1.2rem
+		color: $green
+		text-transform: uppercase
+		background: #fff
+		color: $green
+		border: .1rem solid #DDDDDD
+		padding-top: 0.8rem
+		padding-bottom: 0.9rem
+		padding-left: 0.8rem
+		padding-right: 0.8rem
+
+.main
+	&__wrapper
+		background: #F2F2F2
+		padding-top: 3.1rem
+		padding-bottom: 6.1rem
+		position: relative
+		overflow: hidden
+	&__slider
+		width: 90rem
+		margin: 0rem auto
+		position: relative
+		.owl-pagination
+			position: absolute
+			bottom: -4.2rem
+			left: 50%
+			transform: translateX(-50%)
+			z-index: 5
+			.owl-page
+			.owl-page span
+				margin: 0rem
+				+size(1.2rem, 1.2rem)
+				background: #333
+				border: .2rem solid #333333
+				opacity: 1
+				margin-right: 0.9rem
+			.owl-page:last-child span
+				margin-right: 0rem
+			.owl-page.active span
+				background: none
+	&__slide
+		+size(90rem, 37.8rem)
+		margin: 0rem auto
+		border: .9rem solid #fff
+		box-shadow: 0rem 0rem 0rem 0.1rem rgba(#000, 0.1)
+		background: url('http://placekitten.com/900/400') no-repeat center
+	&__slide1
+	&__slide2
+	&__slide3
+	&__slide4
+	&__slide5
+	&__buttons-container
+		width: 100%
+		+flex(row, wrap, center, center)
+		position: absolute
+		bottom: 3rem
+		left: 50%
+		transform: translateX(-50%)
+	&__slider-button
+		outline: none
+		cursor: pointer
+		+size(2rem, 2rem)
+		border: none
+		border-radius: 50%
+	&__prev-button
+		background: url('../assets/main__arrow-left.png') no-repeat center, #333333
+	&__next-button
+		background: url('../assets/main__arrow-right.png') no-repeat center, #333333
+		margin-left: 11.5rem
+
+.section1
+	&__wrapper
+		background: #fff
+		+flex(row, wrap, center, stretch)
+		position: relative
+		overflow: hidden
+		padding-top: 3.3rem
+		padding-bottom: 5rem
+		&::before
+			content: ''
+			+size(100%, .1rem)
+			background: #E2E2E2
+			position: absolute
+			top: 0rem
+			left: 0rem
+		&::after
+			content: ''
+			+size(95%, .1rem)
+			background: #E2E2E2
+			position: absolute
+			bottom: 0rem
+			left: 50%
+			transform: translateX(-50%)
+	&__block
+		+size(21rem, auto)
+		+flex(column, wrap, flex-start, center)
+		margin-right: 2rem
+		&:last-child
+			margin-right: 0rem
+	&__block1
+	&__block2
+	&__block3
+	&__block4
+	&__icon
+		+size(10rem, 10rem)
+	&__icon1
+		background: url('../assets/section1__icon1.png') no-repeat center
+	&__icon2
+		background: url('../assets/section1__icon2.png') no-repeat center
+	&__icon3
+		background: url('../assets/section1__icon3.png') no-repeat center
+	&__icon4
+		background: url('../assets/section1__icon4.png') no-repeat center
+	&__block-headline
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.8rem
+		color: $green
+		text-transform: capitalize
+		text-align: center
+	&__block-paragraph
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.3rem
+		line-height: 2.08rem
+		color: #888
+		text-align: center
+		margin-top: 1.7rem
+		padding: 0rem 1rem
+
+.section2
+	&__wrapper
+		+flex(row, wrap, center, stretch)
+		background: #fff
+		padding-top: 5.1rem
+		padding-bottom: 4.7rem
+	&__block
+		+flex(column, wrap, flex-start, flex-end)
+		+size(21rem, auto)
+		margin-right: 2.1rem
+		&:last-child
+			margin-right: 0rem
+	&__block1
+	&__block2
+	&__block3
+	&__block4
+	&__block-img
+		border: .4rem solid #fff
+		box-shadow: 0rem 0rem .1rem .1rem rgba(#000, .1)
+	&__block-headline
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.4rem
+		color: #444
+		text-transform: capitalize
+		text-align: left
+		margin-top: 1.9rem
+	&__block-paragraph
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.3rem
+		line-height: 2.1rem
+		color: #878787
+		text-align: left
+		margin-top: 1rem
+		padding-right: 1.2rem
+	&__view-details-link
+		text-decoration: none
+		font-weight: 400
+		font-size: 1.3rem
+		text-transform: capitalize
+		text-align: right
+		color: $green
+		margin-top: 1rem
+
+.footer
+	&__wrapper
+		background: #3B3B3B
+		+flex(row, wrap, center, stretch)
+		padding-top: 4rem
+		padding-bottom: 3.3rem
+	&__block
+		+size(21rem, auto)
+		margin-right: 2.1rem
+		&:last-child
+			margin-right: 0rem
+	&__block1
+		+flex(column, wrap, flex-start, flex-start)
+	&__block2
+	&__block3
+		+flex(column, wrap, flex-start, flex-end)
+	&__block4
+	&__block-headline
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.3rem
+		text-transform: uppercase
+		color: #666
+		text-align: left
+	&__block-paragraph
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.4rem
+		line-height: 2.08rem
+		color: #999
+		text-align: left
+	&__block1-paragraph
+		margin-top: 2.4rem
+	&__tel
+		margin-top: 1.9rem
+		text-decoration: none
+	&__fax
+		text-decoration: none
+	&__email
+		text-decoration: none
+	&__list
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		width: 100%
+		+flex(column, wrap, flex-start, flex-start)
+		padding-top: 1.6rem
+	&__list-item
+		padding: 0rem
+		margin: 0rem
+		width: 100%
+		+flex(column, wrap, flex-start, flex-start)
+	&__list-link
+		text-decoration: none
+		font-weight: 400
+		font-size: 1.2rem
+		color: #999
+		text-align: left
+		position: relative
+		width: 100%
+		padding: 1rem 0rem
+		&::before
+			content: ''
+			+size(100%, .1rem)
+			background: #484848
+			position: absolute
+			bottom: 0rem
+			left: 0rem
+	&__post-container
+		width: 100%
+		+flex(column, wrap, flex-start, flex-end)
+		margin-top: 2.7rem
+	&__post-title
+		width: 100%
+		margin: 0rem
+		font-weight: 900
+		font-size: 1.3rem
+		color: #999
+		text-transform: capitalize
+		text-align: left
+	&__post-info
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.3rem
+		color: #999
+		text-align: left
+		margin-top: 0.6rem
+	&__post-author
+	&__post-time
+	&__post
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.2rem
+		line-height: 1.92rem
+		color: #999
+		text-align: left
+		margin-top: 0.7rem
+		padding-right: 1rem
+	&__read-more-link
+		text-decoration: none
+		font-weight: 400
+		font-size: 1.2rem
+		color: $green
+		text-transform: capitalize
+	&__form
+		width: 100%
+		+flex(column, wrap, flex-start, flex-start)
+	&__input
+		width: 100%
+		outline: none
+		border: none
+		background: #1F1F1F
+		border-radius: 0.4rem
+		font-weight: 400
+		font-size: 1.3rem
+		color: #999
+		text-align: left
+		margin-top: 2.6rem
+		padding: 0.8rem 1rem
+		border: .1rem solid transparent
+		&::placeholder
+			font-weight: 400
+			font-size: 1.3rem
+			color: #999
+			text-align: left
+	&__name-input
+	&__email-input
+		margin-top: 1rem
+	&__submit-button
+		outline: none
+		border: none
+		cursor: pointer
+		background: #1F1F1F
+		border-radius: .6rem
+		font-weight: 400
+		font-size: 1.3rem
+		color: $green
+		text-transform: uppercase
+		padding: 0.8rem 1.4rem
+		transition: .2s
+		margin-top: 1rem
+		&:hover
+			background: lighten(#1F1F1F, 3%)
+		&:active
+			background: #1F1F1F
+
+.copy
+	&__wrapper
+		background: #2E2E2E
+		+flex(row, wrap, space-between, flex-start)
+		padding-top: 2.5rem
+		padding-bottom: 2.2rem
+		padding-left: 3rem
+		padding-right: 3rem
+	&__paragraph
+		width: 50%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.2rem
+		color: #737373
+		text-align: left
+	&__by-link
+		text-decoration: none
+		font-weight: 400
+		font-size: 1.2rem
+		color: #737373
+		transition: .2s
+		&:hover
+			color: lighten(#737373, 15%)
+
+.modal
+	&__overlay
+		+size(100%, 100%)
+		background: rgba($space-grey, .9)
+		position: fixed
+		top: 0rem
+		left: 0rem
+		display: none
+	&__window
+		+size(30rem, 10rem)
+		+flex(row, wrap, center, center)
+		background: #000
+		position: fixed
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		transition: .2s
+		opacity: 0
+		z-index: -1
+	&__error-container
+	&__success-container
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 2rem
+		color: #fff
+		text-align: center
+
+*
+	// @include outline($blue)

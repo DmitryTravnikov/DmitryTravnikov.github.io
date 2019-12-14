@@ -1,0 +1,1103 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+/*  Desktop First Method */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1300px)
+	body
+
+	.header
+		&__wrapper
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 100%//
+			&::before
+		&__block
+			+flex(row, wrap, space-between, flex-start)//
+			width: 100%//
+		&__block1
+		&__block2
+			+flex(column, wrap, flex-start, center)//
+			margin-top: 3.5rem//
+			padding-left: 0rem//
+			padding-right: 0rem//
+			padding-top: 0rem//
+			padding-bottom: 2rem//
+		&__logo-container
+			padding-top: 0rem//
+			padding-left: 2rem//
+			width: 50%//
+			+flex(column, wrap, flex-start, flex-start)//
+		&__logo
+			text-align: left//
+			span
+		&__logo-description
+			text-align: left//
+		&__socials-n-secondary-menu-container
+			width: 50%//
+			margin-top: 0.5rem//
+			+flex(column, wrap, flex-start, flex-end)//
+		&__socials-container
+			+size(60%, auto)//
+			border-bottom-left-radius: 2rem//
+			border-bottom-right-radius: 2rem//
+			+flex(row, wrap, center, flex-start)//
+			margin-right: 2rem//
+		&__social-link
+			+flex(row, wrap, center, center)//
+			margin-right: 1rem//
+			&:hover
+			&:last-child
+			svg
+				+flex(row, wrap, center, center)//
+				path
+		&__linkedin
+		&__twitter
+		&__pinterest
+		&__google-plus
+			svg
+				+flex(row, wrap, center, center)//
+				path
+		&__rss
+		&__secondary-menu-container
+			+flex(row, wrap, flex-end, flex-start)//
+			margin-right: 0rem//
+			width: 100%//
+			padding-right: 3rem//
+		&__secondary-menu
+			+flex(row, wrap, flex-start, flex-start)//
+		&__secondary-menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			&:last-child
+			&::before
+			&:last-child::before
+		&__secondary-menu-link
+		&__menu-container
+			margin-top: 3rem//
+		&__menu
+			+flex(row, wrap, center, flex-start)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 2rem//
+			margin-top: 0rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+			&:hover
+		&__search-container
+			+flex(row, wrap, flex-start, stretch)//
+			margin-top: 2rem//
+		&__search-input
+			width: auto//
+			&::placeholder
+		&__search-button
+
+	.main
+		&__wrapper
+			width: 100%//
+		&__slider
+			width: 100%//
+			.owl-pagination
+				.owl-page
+				.owl-page span
+				.owl-page:last-child span
+				.owl-page.active span
+		&__slide
+			+size(100%, 37.8rem)//
+			border: 0rem solid #fff//
+			box-shadow: 0rem 0rem 0rem 0rem rgba(#000, 0.1)//
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide4
+		&__slide5
+		&__buttons-container
+			+flex(row, wrap, center, center)//
+		&__slider-button
+		&__prev-button
+		&__next-button
+
+	.section1
+		&__wrapper
+			width: 100%//
+			&::before
+			&::after
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			margin: 2rem//
+			&:last-child
+				margin-right: 2rem//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__icon
+		&__icon1
+		&__icon2
+		&__icon3
+		&__icon4
+		&__block-headline
+		&__block-paragraph
+
+	.section2
+		&__wrapper
+			+flex(row, wrap, center, stretch)//
+			width: 100%//
+		&__block
+			+flex(column, wrap, center, flex-start)//
+			+size(21rem, auto)
+			margin-right: 0rem//
+			margin: 2rem//
+			&:first-child
+			&:last-child
+				margin-right: 2rem//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-img
+		&__block-headline
+		&__block-paragraph
+		&__view-details-link
+
+	.footer
+		&__wrapper
+			background: #3B3B3B
+			+flex(row, wrap, center, stretch)//
+			width: 100%//
+		&__block
+			margin-right: 0rem//
+			margin: 2rem//
+			&:last-child
+				margin-right: 2rem//
+		&__block1
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block2
+		&__block3
+			+flex(column, wrap, flex-start, flex-end)//
+		&__block4
+		&__block-headline
+		&__block-paragraph
+		&__block1-paragraph
+		&__tel
+		&__fax
+		&__email
+		&__list
+			+flex(column, wrap, flex-start, flex-start)//
+		&__list-item
+			+flex(column, wrap, flex-start, flex-start)//
+		&__list-link
+			&::before
+		&__post-container
+			+flex(column, wrap, flex-start, flex-end)//
+		&__post-title
+		&__post-info
+		&__post-author
+		&__post-time
+		&__post
+		&__read-more-link
+		&__form
+			+flex(column, wrap, flex-start, flex-start)//
+		&__input
+			&::placeholder
+		&__name-input
+		&__email-input
+		&__submit-button
+			&:hover
+			&:active
+
+	.copy
+		&__wrapper
+			+flex(column, wrap, space-between, center)//
+			width: 100%//
+		&__paragraph
+			line-height: 2rem//
+			text-align: center//
+		&__by-link
+			margin-top: 1rem//
+			&:hover
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+	body
+
+	.header
+		&__wrapper
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 100%//
+			&::before
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__block1
+		&__block2
+			+flex(column, wrap, flex-start, center)//
+			margin-top: 3.5rem//
+			padding-left: 0rem//
+			padding-right: 0rem//
+			padding-top: 0rem//
+			padding-bottom: 2rem//
+		&__logo-container
+			padding-top: 0rem//
+			padding-left: 0rem//
+			width: 95%//
+			+flex(column, wrap, flex-start, center)//
+		&__logo
+			text-align: center//
+			span
+		&__logo-description
+			text-align: center//
+		&__socials-n-secondary-menu-container
+			width: 100%//
+			margin-top: 1.5rem//
+			+flex(column, wrap, flex-start, flex-end)//
+		&__socials-container
+			+size(100%, auto)//
+			border-bottom-left-radius: 0rem//
+			border-bottom-right-radius: 0rem//
+			+flex(row, wrap, center, flex-start)//
+			margin-right: 0rem//
+		&__social-link
+			+flex(row, wrap, center, center)//
+			margin-right: 1rem//
+			&:hover
+			&:last-child
+			svg
+				+flex(row, wrap, center, center)//
+				path
+		&__linkedin
+		&__twitter
+		&__pinterest
+		&__google-plus
+			svg
+				+flex(row, wrap, center, center)//
+				path
+		&__rss
+		&__secondary-menu-container
+			+flex(row, wrap, center, flex-start)//
+			margin-right: 0rem//
+			width: 100%//
+			padding-right: 0rem//
+		&__secondary-menu
+			+flex(row, wrap, flex-start, flex-start)//
+		&__secondary-menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			&:last-child
+			&::before
+			&:last-child::before
+		&__secondary-menu-link
+		&__menu-container
+			margin-top: 3rem//
+		&__menu
+			+flex(row, wrap, center, flex-start)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 2rem//
+			margin-top: 0rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+			&:hover
+		&__search-container
+			+flex(row, wrap, flex-start, stretch)//
+			margin-top: 2rem//
+		&__search-input
+			width: auto//
+			&::placeholder
+		&__search-button
+
+	.main
+		&__wrapper
+			width: 100%//
+		&__slider
+			width: 100%//
+			.owl-pagination
+				.owl-page
+				.owl-page span
+				.owl-page:last-child span
+				.owl-page.active span
+		&__slide
+			+size(100%, 37.8rem)//
+			border: 0rem solid #fff//
+			box-shadow: 0rem 0rem 0rem 0rem rgba(#000, 0.1)//
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide4
+		&__slide5
+		&__buttons-container
+			+flex(row, wrap, center, center)//
+		&__slider-button
+		&__prev-button
+		&__next-button
+
+	.section1
+		&__wrapper
+			width: 100%//
+			&::before
+			&::after
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			margin: 2rem//
+			&:last-child
+				margin-right: 2rem//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__icon
+		&__icon1
+		&__icon2
+		&__icon3
+		&__icon4
+		&__block-headline
+		&__block-paragraph
+
+	.section2
+		&__wrapper
+			+flex(row, wrap, center, stretch)//
+			width: 100%//
+		&__block
+			+flex(column, wrap, center, flex-start)//
+			+size(21rem, auto)
+			margin-right: 0rem//
+			margin: 2rem//
+			&:first-child
+			&:last-child
+				margin-right: 2rem//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-img
+		&__block-headline
+		&__block-paragraph
+		&__view-details-link
+
+	.footer
+		&__wrapper
+			background: #3B3B3B
+			+flex(row, wrap, center, stretch)//
+			width: 100%//
+		&__block
+			margin-right: 0rem//
+			margin: 2rem//
+			&:last-child
+				margin-right: 2rem//
+		&__block1
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block2
+		&__block3
+			+flex(column, wrap, flex-start, flex-end)//
+		&__block4
+		&__block-headline
+		&__block-paragraph
+		&__block1-paragraph
+		&__tel
+		&__fax
+		&__email
+		&__list
+			+flex(column, wrap, flex-start, flex-start)//
+		&__list-item
+			+flex(column, wrap, flex-start, flex-start)//
+		&__list-link
+			&::before
+		&__post-container
+			+flex(column, wrap, flex-start, flex-end)//
+		&__post-title
+		&__post-info
+		&__post-author
+		&__post-time
+		&__post
+		&__read-more-link
+		&__form
+			+flex(column, wrap, flex-start, flex-start)//
+		&__input
+			&::placeholder
+		&__name-input
+		&__email-input
+		&__submit-button
+			&:hover
+			&:active
+
+	.copy
+		&__wrapper
+			+flex(column, wrap, space-between, center)//
+			width: 100%//
+		&__paragraph
+			line-height: 2rem//
+			text-align: center//
+		&__by-link
+			margin-top: 1rem//
+			&:hover
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+	body
+
+	.header
+		&__wrapper
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 100%//
+			&::before
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__block1
+		&__block2
+			+flex(column, wrap, flex-start, center)//
+			margin-top: 3.5rem//
+			padding-left: 0rem//
+			padding-right: 0rem//
+			padding-top: 0rem//
+			padding-bottom: 2rem//
+		&__logo-container
+			padding-top: 0rem//
+			padding-left: 0rem//
+			width: 95%//
+			+flex(column, wrap, flex-start, center)//
+		&__logo
+			text-align: center//
+			span
+		&__logo-description
+			text-align: center//
+		&__socials-n-secondary-menu-container
+			width: 100%//
+			margin-top: 1.5rem//
+			+flex(column, wrap, flex-start, flex-end)//
+		&__socials-container
+			+size(100%, auto)//
+			border-bottom-left-radius: 0rem//
+			border-bottom-right-radius: 0rem//
+			+flex(row, wrap, center, flex-start)//
+			margin-right: 0rem//
+		&__social-link
+			+flex(row, wrap, center, center)//
+			margin-right: 1rem//
+			&:hover
+			&:last-child
+			svg
+				+flex(row, wrap, center, center)//
+				path
+		&__linkedin
+		&__twitter
+		&__pinterest
+		&__google-plus
+			svg
+				+flex(row, wrap, center, center)//
+				path
+		&__rss
+		&__secondary-menu-container
+			+flex(row, wrap, center, flex-start)//
+			margin-right: 0rem//
+			width: 100%//
+			padding-right: 0rem//
+		&__secondary-menu
+			+flex(row, wrap, flex-start, flex-start)//
+		&__secondary-menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			&:last-child
+			&::before
+			&:last-child::before
+		&__secondary-menu-link
+		&__menu-container
+			margin-top: 1.5rem//
+		&__menu
+			+flex(column, wrap, flex-start, center)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 0rem//
+			margin-top: 1rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+			&:hover
+		&__search-container
+			+flex(row, wrap, flex-start, stretch)//
+			margin-top: 1rem//
+		&__search-input
+			width: auto//
+			&::placeholder
+		&__search-button
+
+	.main
+		&__wrapper
+			width: 100%//
+		&__slider
+			width: 100%//
+			.owl-pagination
+				.owl-page
+				.owl-page span
+				.owl-page:last-child span
+				.owl-page.active span
+		&__slide
+			+size(100%, 37.8rem)//
+			border: 0rem solid #fff//
+			box-shadow: 0rem 0rem 0rem 0rem rgba(#000, 0.1)//
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide4
+		&__slide5
+		&__buttons-container
+			+flex(row, wrap, center, center)//
+		&__slider-button
+		&__prev-button
+		&__next-button
+
+	.section1
+		&__wrapper
+			width: 100%//
+			&::before
+			&::after
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			margin: 2rem//
+			&:last-child
+				margin-right: 2rem//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__icon
+		&__icon1
+		&__icon2
+		&__icon3
+		&__icon4
+		&__block-headline
+		&__block-paragraph
+
+	.section2
+		&__wrapper
+			+flex(row, wrap, center, stretch)//
+			width: 100%//
+		&__block
+			+flex(column, wrap, center, flex-start)//
+			+size(21rem, auto)
+			margin-right: 0rem//
+			margin: 2rem//
+			&:first-child
+			&:last-child
+				margin-right: 2rem//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-img
+		&__block-headline
+		&__block-paragraph
+		&__view-details-link
+
+	.footer
+		&__wrapper
+			background: #3B3B3B
+			+flex(row, wrap, center, stretch)//
+			width: 100%//
+		&__block
+			margin-right: 0rem//
+			margin: 2rem//
+			&:last-child
+				margin-right: 2rem//
+		&__block1
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block2
+		&__block3
+			+flex(column, wrap, flex-start, flex-end)//
+		&__block4
+		&__block-headline
+		&__block-paragraph
+		&__block1-paragraph
+		&__tel
+		&__fax
+		&__email
+		&__list
+			+flex(column, wrap, flex-start, flex-start)//
+		&__list-item
+			+flex(column, wrap, flex-start, flex-start)//
+		&__list-link
+			&::before
+		&__post-container
+			+flex(column, wrap, flex-start, flex-end)//
+		&__post-title
+		&__post-info
+		&__post-author
+		&__post-time
+		&__post
+		&__read-more-link
+		&__form
+			+flex(column, wrap, flex-start, flex-start)//
+		&__input
+			&::placeholder
+		&__name-input
+		&__email-input
+		&__submit-button
+			&:hover
+			&:active
+
+	.copy
+		&__wrapper
+			+flex(column, wrap, space-between, center)//
+			width: 100%//
+		&__paragraph
+			line-height: 2rem//
+			text-align: center//
+		&__by-link
+			margin-top: 1rem//
+			&:hover
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+	body
+
+	.header
+		&__wrapper
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 100%//
+			&::before
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__block1
+		&__block2
+			+flex(column, wrap, flex-start, center)//
+			margin-top: 3.5rem//
+			padding-left: 0rem//
+			padding-right: 0rem//
+			padding-top: 0rem//
+			padding-bottom: 2rem//
+		&__logo-container
+			padding-top: 0rem//
+			padding-left: 0rem//
+			width: 95%//
+			+flex(column, wrap, flex-start, center)//
+		&__logo
+			text-align: center//
+			span
+		&__logo-description
+			text-align: center//
+		&__socials-n-secondary-menu-container
+			width: 100%//
+			margin-top: 1.5rem//
+			+flex(column, wrap, flex-start, flex-end)//
+		&__socials-container
+			+size(100%, auto)//
+			border-bottom-left-radius: 0rem//
+			border-bottom-right-radius: 0rem//
+			+flex(row, wrap, center, flex-start)//
+			margin-right: 0rem//
+		&__social-link
+			+flex(row, wrap, center, center)//
+			margin-right: 1rem//
+			&:hover
+			&:last-child
+			svg
+				+flex(row, wrap, center, center)//
+				path
+		&__linkedin
+		&__twitter
+		&__pinterest
+		&__google-plus
+			svg
+				+flex(row, wrap, center, center)//
+				path
+		&__rss
+		&__secondary-menu-container
+			+flex(row, wrap, center, flex-start)//
+			margin-right: 0rem//
+			width: 100%//
+			padding-right: 0rem//
+		&__secondary-menu
+			+flex(row, wrap, flex-start, flex-start)//
+		&__secondary-menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			&:last-child
+			&::before
+			&:last-child::before
+		&__secondary-menu-link
+		&__menu-container
+			margin-top: 1.5rem//
+		&__menu
+			+flex(column, wrap, flex-start, center)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 0rem//
+			margin-top: 1rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+			&:hover
+		&__search-container
+			+flex(row, wrap, flex-start, stretch)//
+			margin-top: 1rem//
+		&__search-input
+			width: auto//
+			&::placeholder
+		&__search-button
+
+	.main
+		&__wrapper
+			width: 100%//
+		&__slider
+			width: 100%//
+			.owl-pagination
+				.owl-page
+				.owl-page span
+				.owl-page:last-child span
+				.owl-page.active span
+		&__slide
+			+size(100%, 37.8rem)//
+			border: 0rem solid #fff//
+			box-shadow: 0rem 0rem 0rem 0rem rgba(#000, 0.1)//
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide4
+		&__slide5
+		&__buttons-container
+			+flex(row, wrap, center, center)//
+		&__slider-button
+		&__prev-button
+		&__next-button
+
+	.section1
+		&__wrapper
+			width: 100%//
+			&::before
+			&::after
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			margin: 2rem//
+			&:last-child
+				margin-right: 2rem//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__icon
+		&__icon1
+		&__icon2
+		&__icon3
+		&__icon4
+		&__block-headline
+		&__block-paragraph
+
+	.section2
+		&__wrapper
+			+flex(row, wrap, center, stretch)//
+			width: 100%//
+		&__block
+			+flex(column, wrap, center, flex-start)//
+			+size(21rem, auto)
+			margin-right: 0rem//
+			margin: 2rem//
+			&:first-child
+			&:last-child
+				margin-right: 2rem//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-img
+		&__block-headline
+		&__block-paragraph
+		&__view-details-link
+
+	.footer
+		&__wrapper
+			background: #3B3B3B
+			+flex(row, wrap, center, stretch)//
+			width: 100%//
+		&__block
+			margin-right: 0rem//
+			margin: 2rem//
+			&:last-child
+				margin-right: 2rem//
+		&__block1
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block2
+		&__block3
+			+flex(column, wrap, flex-start, flex-end)//
+		&__block4
+		&__block-headline
+		&__block-paragraph
+		&__block1-paragraph
+		&__tel
+		&__fax
+		&__email
+		&__list
+			+flex(column, wrap, flex-start, flex-start)//
+		&__list-item
+			+flex(column, wrap, flex-start, flex-start)//
+		&__list-link
+			&::before
+		&__post-container
+			+flex(column, wrap, flex-start, flex-end)//
+		&__post-title
+		&__post-info
+		&__post-author
+		&__post-time
+		&__post
+		&__read-more-link
+		&__form
+			+flex(column, wrap, flex-start, flex-start)//
+		&__input
+			&::placeholder
+		&__name-input
+		&__email-input
+		&__submit-button
+			&:hover
+			&:active
+
+	.copy
+		&__wrapper
+			+flex(column, wrap, space-between, center)//
+			width: 100%//
+		&__paragraph
+			line-height: 2rem//
+			text-align: center//
+		&__by-link
+			margin-top: 1rem//
+			&:hover
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+	body
+
+	.header
+		&__wrapper
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 100%//
+			&::before
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__block1
+		&__block2
+			+flex(column, wrap, flex-start, center)//
+			margin-top: 3.5rem//
+			padding-left: 0rem//
+			padding-right: 0rem//
+			padding-top: 0rem//
+			padding-bottom: 2rem//
+		&__logo-container
+			padding-top: 0rem//
+			padding-left: 0rem//
+			width: 95%//
+			+flex(column, wrap, flex-start, center)//
+		&__logo
+			text-align: center//
+			span
+		&__logo-description
+			text-align: center//
+		&__socials-n-secondary-menu-container
+			width: 100%//
+			margin-top: 1.5rem//
+			+flex(column, wrap, flex-start, flex-end)//
+		&__socials-container
+			+size(100%, auto)//
+			border-bottom-left-radius: 0rem//
+			border-bottom-right-radius: 0rem//
+			+flex(row, wrap, center, flex-start)//
+			margin-right: 0rem//
+		&__social-link
+			+flex(row, wrap, center, center)//
+			margin-right: 1rem//
+			&:hover
+			&:last-child
+			svg
+				+flex(row, wrap, center, center)//
+				path
+		&__linkedin
+		&__twitter
+		&__pinterest
+		&__google-plus
+			svg
+				+flex(row, wrap, center, center)//
+				path
+		&__rss
+		&__secondary-menu-container
+			+flex(row, wrap, center, flex-start)//
+			margin-right: 0rem//
+			width: 100%//
+			padding-right: 0rem//
+		&__secondary-menu
+			+flex(row, wrap, flex-start, flex-start)//
+		&__secondary-menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			&:last-child
+			&::before
+			&:last-child::before
+		&__secondary-menu-link
+		&__menu-container
+			margin-top: 1.5rem//
+		&__menu
+			+flex(column, wrap, flex-start, center)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 0rem//
+			margin-top: 1rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+			&:hover
+		&__search-container
+			+flex(row, wrap, flex-start, stretch)//
+			margin-top: 1rem//
+		&__search-input
+			width: auto//
+			&::placeholder
+		&__search-button
+
+	.main
+		&__wrapper
+			width: 100%//
+		&__slider
+			width: 100%//
+			.owl-pagination
+				.owl-page
+				.owl-page span
+				.owl-page:last-child span
+				.owl-page.active span
+		&__slide
+			+size(100%, 37.8rem)//
+			border: 0rem solid #fff//
+			box-shadow: 0rem 0rem 0rem 0rem rgba(#000, 0.1)//
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide4
+		&__slide5
+		&__buttons-container
+			+flex(row, wrap, center, center)//
+		&__slider-button
+		&__prev-button
+		&__next-button
+
+	.section1
+		&__wrapper
+			width: 100%//
+			&::before
+			&::after
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			margin: 2rem//
+			&:last-child
+				margin-right: 2rem//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__icon
+		&__icon1
+		&__icon2
+		&__icon3
+		&__icon4
+		&__block-headline
+		&__block-paragraph
+
+	.section2
+		&__wrapper
+			+flex(row, wrap, center, stretch)//
+			width: 100%//
+		&__block
+			+flex(column, wrap, center, flex-start)//
+			+size(21rem, auto)
+			margin-right: 0rem//
+			margin: 2rem//
+			&:first-child
+			&:last-child
+				margin-right: 2rem//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-img
+		&__block-headline
+		&__block-paragraph
+		&__view-details-link
+
+	.footer
+		&__wrapper
+			background: #3B3B3B
+			+flex(row, wrap, center, stretch)//
+			width: 100%//
+		&__block
+			margin-right: 0rem//
+			margin: 2rem//
+			&:last-child
+				margin-right: 2rem//
+		&__block1
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block2
+		&__block3
+			+flex(column, wrap, flex-start, flex-end)//
+		&__block4
+		&__block-headline
+		&__block-paragraph
+		&__block1-paragraph
+		&__tel
+		&__fax
+		&__email
+		&__list
+			+flex(column, wrap, flex-start, flex-start)//
+		&__list-item
+			+flex(column, wrap, flex-start, flex-start)//
+		&__list-link
+			&::before
+		&__post-container
+			+flex(column, wrap, flex-start, flex-end)//
+		&__post-title
+		&__post-info
+		&__post-author
+		&__post-time
+		&__post
+		&__read-more-link
+		&__form
+			+flex(column, wrap, flex-start, flex-start)//
+		&__input
+			&::placeholder
+		&__name-input
+		&__email-input
+		&__submit-button
+			&:hover
+			&:active
+
+	.copy
+		&__wrapper
+			+flex(column, wrap, space-between, center)//
+			width: 100%//
+		&__paragraph
+			line-height: 2rem//
+			text-align: center//
+		&__by-link
+			margin-top: 1rem//
+			&:hover
+
+	.modal
+		&__overlay
+		&__window
+			+size(100%, 10rem)//
+		&__error-container
+		&__success-container
+		&__paragraph
+// /* Mobile First Method */
+// /* Custom, iPhone Retina */
+// @media only screen and (min-width: 320px)
+// 	body
+// 		background: $media-green
+// /* Extra Small Devices, Phones */
+// @media only screen and (min-width: 480px)
+// 	body
+// 		background: $media-blue
+// /* Small Devices, Tablets */
+// @media only screen and (min-width: 768px)
+// 	body
+// 		background: $media-pink
+// /* Medium Devices, Desktops */
+// @media only screen and (min-width: 992px)
+// 	body
+// 		background: $media-orange
+// /* Large Devices, Wide Screens */
+// @media only screen and (min-width: 1300px)
+// 	body
+// 		background: $media-purple

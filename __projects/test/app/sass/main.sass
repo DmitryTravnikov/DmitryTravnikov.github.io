@@ -1,0 +1,28 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+// 1rem === 10px
+
+body
+	color: #fff
+	font-size: 1.6rem
+	font-family: $rl
+	background: $space-grey
+	cursor: default
+
+.block
+	@include flex(column, wrap, center, center)
+	font-size: 1.8rem
+	overflow: visible
+
+.active
+	background: $blue
+
+td
+	@include size(5rem, 5rem)
+	border: .2rem solid orange
+
+
+
+*
+	// @include outline($blue)

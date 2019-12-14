@@ -1,0 +1,1002 @@
+* {
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s; }
+
+body {
+  cursor: default; }
+
+.wrapper {
+  width: 96rem;
+  height: auto;
+  margin: 0 auto; }
+
+.top-panel {
+  background: #212D3A;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem; }
+
+.top-panel__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.top-panel__socials-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.top-panel__social-link {
+  width: 2.6rem;
+  height: 2.6rem;
+  background: #2E3F51;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  margin-right: 1rem; }
+
+.top-panel__social-link:last-child {
+  margin-right: 0rem; }
+
+.top-panel__social-link:hover {
+  background: #DB4A39; }
+
+.top-panel__social-link svg {
+  width: 1.4rem;
+  height: 1.4rem; }
+
+.top-panel__social-link svg path {
+  fill: #657181;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+
+.top-panel__social-link:hover svg path {
+  fill: #fff; }
+
+.top-panel__social-google-plus svg {
+  width: 1.9rem;
+  height: 1.9rem; }
+
+.top-panel__search-input {
+  outline: none;
+  background: url("../assets/top-panel__search-input.png") no-repeat 18.5rem center, #2E3F51;
+  -webkit-border-radius: 2rem;
+          border-radius: 2rem;
+  width: 21rem;
+  border: none;
+  padding-top: 0.8rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1rem;
+  padding-right: 2.9rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #fff;
+  letter-spacing: .1rem; }
+
+.header {
+  padding-top: 2.9rem;
+  padding-bottom: 3.8rem; }
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.header__logo-container {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.header__logo {
+  width: 100%;
+  margin: 0rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 3.3rem;
+  color: #4A4A4A;
+  text-transform: uppercase;
+  text-align: left; }
+
+.header__logo span {
+  font-size: 2.6rem; }
+
+.header__logo-description {
+  width: 100%;
+  margin: 0rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #999;
+  text-align: left;
+  margin-top: 0.8rem; }
+
+.header__menu-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 2.8rem; }
+
+.header__menu {
+  padding: 0rem;
+  margin: 0rem;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.header__menu-list-item {
+  padding: 0rem;
+  margin: 0rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-right: 2rem; }
+
+.header__menu-list-item:last-child {
+  margin-right: 0rem; }
+
+.header__menu-link {
+  text-decoration: none;
+  font-family: "Georgia";
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #999;
+  text-transform: uppercase;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+
+.header__menu-link:hover {
+  color: #212D3A; }
+
+.main {
+  background: #2E3F51;
+  padding-top: 3.9rem;
+  padding-bottom: 3.9rem; }
+
+.main__wrapper {
+  position: relative; }
+
+.main__slider {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+.main__slide {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+.main__slide-text-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background: #2F3944;
+  width: 30rem;
+  padding-top: 11rem;
+  padding-left: 2.5rem; }
+
+.main__slide-headline {
+  width: 100%;
+  margin: 0rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: left; }
+
+.main__slide-paragraph {
+  width: 100%;
+  margin: 0rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.24rem;
+  color: #fff;
+  text-align: left;
+  margin-top: 2.4rem;
+  padding-right: 4.6rem; }
+
+.main__slide-read-more-link {
+  text-decoration: none;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: capitalize;
+  margin-top: 1.9rem;
+  margin-right: 2.9rem; }
+
+.main__slide-img {
+  width: -webkit-calc(100% - 30rem);
+  width: calc(100% - 30rem);
+  height: 45rem;
+  background: url("http://placekitten.com/660/450") no-repeat center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.main__slider-button {
+  width: 7rem;
+  height: 10rem;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  top: 0rem;
+  left: 0rem; }
+
+.main__prev-button {
+  background: url("../assets/section1__arrow-left.png") no-repeat center;
+  top: 0rem;
+  left: 0rem; }
+
+.main__next-button {
+  background: url("../assets/section1__arrow-right.png") no-repeat center;
+  top: 0rem;
+  left: 3.9rem; }
+
+.second {
+  padding-top: 0.8rem;
+  width: 100%; }
+
+.second__wrapper {
+  width: 96rem;
+  position: relative;
+  margin: 0rem auto; }
+
+.second__slider {
+  width: 80rem;
+  margin: 0rem auto; }
+
+.second__slide {
+  width: 73rem;
+  margin: 0rem auto; }
+
+.second__paragraph {
+  width: 100%;
+  color: #505050;
+  font-family: "Georgia";
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  display: block; }
+
+.second__slider-button {
+  width: 4rem;
+  height: 7rem;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 2rem;
+  cursor: pointer; }
+
+.second__prev-button {
+  background: url("../assets/section2__arrow-left.png") no-repeat center;
+  left: 2.8rem; }
+
+.second__next-button {
+  background: url("../assets/section2__arrow-right.png") no-repeat center;
+  right: 2.8rem; }
+
+.section1 {
+  padding-bottom: 5rem;
+  width: 100%; }
+
+.section1__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.section1__blocks-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 4.8rem; }
+
+.section1__block1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 69%; }
+
+.section1__block2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 31%; }
+
+.section1__block1-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50%; }
+
+.section1__item-headline {
+  width: 100%;
+  margin: 0rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #1F1F1F;
+  text-align: left; }
+
+.section1__block1-item-img-container {
+  width: 30rem;
+  height: 19rem;
+  border: .1rem solid #C8C8C8;
+  background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-top: 1.2rem; }
+
+.section1__block1-item-img-container::before {
+  content: '';
+  width: 27rem;
+  height: 19rem;
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-shadow: 0rem 0.4rem 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0rem 0.4rem 1rem rgba(0, 0, 0, 0.4);
+  z-index: -1; }
+
+.section1__block1-item-paragraph {
+  width: 100%;
+  margin: 0rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  color: #807D77;
+  text-align: left;
+  margin-top: 2.5rem;
+  padding-right: 3rem; }
+
+.section1__item-continue-reading-link {
+  text-decoration: none;
+  font-family: "Georgia";
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #2E3F51;
+  margin-top: 2rem; }
+
+.section1__block2-item {
+  width: 100%; }
+
+.section1__block2-item2 {
+  margin-top: 1.8rem; }
+
+.section1__block2-item-text-container {
+  padding-top: 2rem; }
+
+.section1__block2-item-img {
+  float: left;
+  margin-right: 1.1rem; }
+
+.section1__block2-item-paragraph {
+  float: right;
+  width: 100%;
+  margin: 0rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  color: #7F7D77;
+  text-align: left;
+  padding-right: 3rem; }
+
+.section1__block2-item .section1__item-continue-reading-link {
+  float: right;
+  margin-top: 0.7rem; }
+
+.section2 {
+  background: #EEE;
+  padding-top: 3rem; }
+
+.section2__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  padding-bottom: 4.2rem; }
+
+.section2__wrapper::before {
+  content: '';
+  width: 100%;
+  height: 0.2rem;
+  background: #E0E0E0;
+  position: absolute;
+  bottom: 0rem;
+  left: 0rem; }
+
+.section2__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.section2__block1 {
+  width: 51%;
+  padding-right: 7rem; }
+
+.section2__block2 {
+  width: 25%;
+  padding-right: 3rem; }
+
+.section2__block3 {
+  width: 24%; }
+
+.section2__headline {
+  width: 100%;
+  margin: 0rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #505050;
+  text-transform: capitalize;
+  text-align: left; }
+
+.section2__block1-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 2.6rem; }
+
+.section2__block1-item2 {
+  margin-top: 3rem; }
+
+.section2__block1-post-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-decoration: none; }
+
+.section2__block1-item-text-container {
+  width: -webkit-calc(100% - 10.5rem);
+  width: calc(100% - 10.5rem);
+  padding-top: 0.8rem;
+  padding-left: 2rem; }
+
+.section2__block1-img-container {
+  width: 10.5rem;
+  height: 10.5rem;
+  border: .1rem solid #8E8F8A;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.section2__block1-item-headline {
+  width: 100%;
+  margin: 0rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #505050;
+  text-align: left; }
+
+.section2__block1-item-paragraph {
+  width: 100%;
+  margin: 0rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+  color: #737373;
+  text-align: left;
+  margin-top: 1.2rem; }
+
+.section2__block2-tweet-container {
+  width: 100%;
+  margin-top: 2.4rem;
+  text-decoration: none; }
+
+.section2__block2-tweet {
+  width: 100%;
+  margin: 0rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  color: #737373;
+  text-align: left; }
+
+.section2__block2-tweet span {
+  color: #2D3F51; }
+
+.section2__block2-tweet-date {
+  width: 100%;
+  margin: 0rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #737373;
+  text-align: left;
+  margin-top: 0.3rem; }
+
+.section2__block3-images-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem; }
+
+.section2__block3-image-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1.6rem;
+  margin-top: 1.6rem;
+  text-decoration: none; }
+
+.section2__block3-image-container:nth-child(3n) {
+  margin-right: 0rem; }
+
+.copy {
+  background: #EEE;
+  padding-top: 2.3rem;
+  padding-bottom: 2.3rem; }
+
+.copy__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.copy__paragraph {
+  width: 50%;
+  margin: 0rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #737373;
+  text-align: left; }
+
+.copy__by-link {
+  text-decoration: none;
+  margin: 0rem;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #737373;
+  text-align: left; }

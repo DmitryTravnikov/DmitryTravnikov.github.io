@@ -1,0 +1,1179 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+/*  Desktop First Method */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1300px)
+	body
+
+	.top-panel
+		&__wrapper
+			@include flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__menu-container
+		&__menu
+			@include flex(row, wrap, flex-start, flex-start)//
+		&__menu-list-item
+			@include flex(row, wrap, flex-start, flex-start)//
+			&::before
+			&:last-child
+			&:last-child::before
+		&__menu-link
+
+	.header
+		padding-top: 1.2rem//
+		padding-bottom: 1.2rem//
+		&__wrapper
+			@include flex(row, wrap, space-around, center)//
+			width: 100%//
+		&__logo-container
+			@include flex(column, wrap, flex-start, flex-start)//
+		&__logo
+			text-align: center//
+			span
+		&__logo-description
+			text-align: center//
+		&__menu-container
+		&__menu
+			@include flex(row, wrap, flex-start, center)//
+			margin-top: 0rem//
+			&::before
+				content: ''//
+		&__menu-list-item
+			@include flex(row, wrap, flex-start, flex-start)//
+			margin-right: 2rem//
+			margin-top: 0rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+			&::before
+				bottom: -1.4rem//
+			&:hover
+			&:hover::before
+
+	.main
+		&__wrapper
+			width: 100%//
+		&__slider
+			width: 100%
+			height: 56rem//
+		&__slide
+			width: 100%
+			height: 56rem//
+			background: none//
+			@include flex(column, wrap, space-between, center)//
+			padding-top: 2rem//
+			padding-bottom: 8rem//
+			padding-left: 0rem//
+		&__slide1
+		&__slide2
+		&__slide3
+		&__img
+		&__text-container
+			width: 100%//
+			@include flex(column, wrap, flex-start, center)//
+			margin-top: 0rem//
+			margin-left: 0rem//
+			padding-left: 25%//
+			padding-right: 25%//
+		&__headline
+			text-align: center//
+		&__paragraph
+			text-align: center//
+			padding-right: 0rem//
+		&__read-more-link
+			&:hover
+			&:active
+		&__buttons-container
+			@include flex(row, wrap, space-between, center)//
+		&__slider-button
+		&__prev-button
+		&__next-button
+
+	.section1
+		&__wrapper
+			@include flex(row, wrap, center, center)//
+			width: 100%//
+		&__block
+			@include flex(column, wrap, center, center)//
+			@include size(calc(80% / 4), auto)//
+			margin-right: 4rem//
+			margin-top: 0rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-img
+		&__block-headline
+		&__separator
+		&__block-paragraph
+
+	.section2
+		&__wrapper
+			@include flex(column, wrap, flex-start, center)//
+			width: 90%//
+		&__paragraph
+		&__blocks-container
+			@include flex(row, wrap, flex-start, center)//
+		&__block
+			@include size(calc(100% / 4.5), auto)//
+			@include flex(column, wrap, flex-start, center)//
+			margin-right: 2rem//
+			margin-top: 0rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-headline
+			text-align: center//
+		&__block-img
+		&__block-paragraph
+			text-align: center//
+		&__read-more-link
+
+	.footer
+		&::before
+		&__wrapper
+			@include flex(row, wrap, center, stretch)//
+			width: 100%//
+		&__block
+			@include flex(column, wrap, flex-start, flex-start)//
+			@include size(calc(100% / 4.5), auto)//
+			margin-top: 0rem//
+			margin-right: 1rem//
+			&:last-child
+				margin-right: 0rem//
+			&:first-child
+				margin-top: 0rem//
+		&__block1
+			padding-left: 0rem//
+		&__block2
+			padding-left: 0rem//
+		&__block3
+			padding-left: 0rem//
+		&__block4
+			padding-left: 0rem//
+		&__headline
+			text-align: left//
+		&__post-container
+			@include flex(column, wrap, flex-start, center)//
+		&__post-title
+			text-align: left//
+		&__post-info
+			text-align: left//
+		&__post-day
+		&__post-date
+		&__post
+			padding: 0rem 0%//
+			padding-right: 2rem//
+			text-align: left//
+		&__list
+			padding-left: 1.7rem//
+		&__list-item
+			&:first-child
+			&::before
+		&__list-link
+		&__block3-paragraph
+			text-align: left//
+		&__company-name
+		&__street-name
+		&__line-two
+		&__town
+		&__postcode
+		&__tel
+		&__fax
+		&__email
+			span
+		&__form
+			@include flex(column, wrap, flex-start, flex-start)//
+		&__input
+			width: 90%//
+			&::placeholder
+		&__name-input
+			margin-top: 1.8rem//
+		&__email-input
+		&__submit-button
+			&:hover
+			&:active
+		&__socials-container
+			@include flex(row, wrap, flex-start, flex-start)//
+		&__social-link
+			@include flex(row, wrap, center, center)//
+			&:last-child
+			svg
+				path
+		&__social-link:hover svg path
+		&__social-link:hover
+		&__linkedin
+		&__twitter
+		&__pinterest
+		&__google-plus
+			svg
+				path
+		&__rss
+
+	.copy
+		&::before
+		&__wrapper
+			@include flex(column, wrap, center, center)//
+			width: 80%//
+			text-align: center//
+		&__paragraph
+			width: 100%//
+			text-align: center//
+		&__by-link
+			margin-top: 1rem//
+			&:hover
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+	body
+
+	.top-panel
+		&__wrapper
+			@include flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__menu-container
+		&__menu
+			@include flex(row, wrap, flex-start, flex-start)//
+		&__menu-list-item
+			@include flex(row, wrap, flex-start, flex-start)//
+			&::before
+			&:last-child
+			&:last-child::before
+		&__menu-link
+
+	.header
+		padding-top: 1.2rem//
+		padding-bottom: 1.2rem//
+		&__wrapper
+			@include flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__logo-container
+			@include flex(column, wrap, flex-start, flex-start)//
+		&__logo
+			text-align: center//
+			span
+		&__logo-description
+			text-align: center//
+		&__menu-container
+		&__menu
+			@include flex(row, wrap, flex-start, center)//
+			margin-top: 2.6rem//
+			&::before
+				content: none//
+		&__menu-list-item
+			@include flex(row, wrap, flex-start, flex-start)//
+			margin-right: 2rem//
+			margin-top: 0rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+			&::before
+				bottom: -0.4rem//
+			&:hover
+			&:hover::before
+
+	.main
+		&__wrapper
+			width: 100%//
+		&__slider
+			width: 100%
+			height: 56rem//
+		&__slide
+			width: 100%
+			height: 56rem//
+			background: none//
+			@include flex(column, wrap, space-between, center)//
+			padding-top: 2rem//
+			padding-bottom: 8rem//
+			padding-left: 0rem//
+		&__slide1
+		&__slide2
+		&__slide3
+		&__img
+		&__text-container
+			width: 100%//
+			@include flex(column, wrap, flex-start, center)//
+			margin-top: 0rem//
+			margin-left: 0rem//
+			padding-left: 20%//
+			padding-right: 20%//
+		&__headline
+			text-align: center//
+		&__paragraph
+			text-align: center//
+			padding-right: 0rem//
+		&__read-more-link
+			&:hover
+			&:active
+		&__buttons-container
+			@include flex(row, wrap, space-between, center)//
+		&__slider-button
+		&__prev-button
+		&__next-button
+
+	.section1
+		&__wrapper
+			@include flex(row, wrap, center, center)//
+			width: 100%//
+		&__block
+			@include flex(column, wrap, center, center)//
+			@include size(calc(90% / 4), auto)//
+			margin-right: 1rem//
+			margin-top: 0rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-img
+		&__block-headline
+		&__separator
+		&__block-paragraph
+
+	.section2
+		&__wrapper
+			@include flex(column, wrap, flex-start, center)//
+			width: 90%//
+		&__paragraph
+		&__blocks-container
+			@include flex(row, wrap, flex-start, center)//
+		&__block
+			@include size(calc(100% / 4.5), auto)//
+			@include flex(column, wrap, flex-start, center)//
+			margin-right: 2rem//
+			margin-top: 0rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-headline
+			text-align: center//
+		&__block-img
+		&__block-paragraph
+			text-align: center//
+		&__read-more-link
+
+	.footer
+		&::before
+		&__wrapper
+			@include flex(row, wrap, center, stretch)//
+			width: 100%//
+		&__block
+			@include flex(column, wrap, flex-start, center)//
+			@include size(26rem, auto)//
+			margin-top: 4rem//
+			margin-right: 0rem//
+			&:last-child
+				margin-right: 0rem//
+			&:first-child
+				margin-top: 4rem//
+		&__block1
+			padding-left: 0rem//
+		&__block2
+			padding-left: 0rem//
+		&__block3
+			padding-left: 0rem//
+		&__block4
+			padding-left: 0rem//
+		&__headline
+			text-align: center//
+		&__post-container
+			@include flex(column, wrap, flex-start, center)//
+		&__post-title
+			text-align: center//
+		&__post-info
+			text-align: center//
+		&__post-day
+		&__post-date
+		&__post
+			padding-right: 0rem//
+			padding: 0rem 22%//
+			text-align: center//
+		&__list
+			padding-left: 0rem//
+		&__list-item
+			&:first-child
+			&::before
+		&__list-link
+		&__block3-paragraph
+			text-align: center//
+		&__company-name
+		&__street-name
+		&__line-two
+		&__town
+		&__postcode
+		&__tel
+		&__fax
+		&__email
+			span
+		&__form
+			@include flex(column, wrap, flex-start, center)//
+		&__input
+			width: 50%//
+			&::placeholder
+		&__name-input
+			margin-top: 1.8rem//
+		&__email-input
+		&__submit-button
+			&:hover
+			&:active
+		&__socials-container
+			@include flex(row, wrap, flex-start, flex-start)//
+		&__social-link
+			@include flex(row, wrap, center, center)//
+			&:last-child
+			svg
+				path
+		&__social-link:hover svg path
+		&__social-link:hover
+		&__linkedin
+		&__twitter
+		&__pinterest
+		&__google-plus
+			svg
+				path
+		&__rss
+
+	.copy
+		&::before
+		&__wrapper
+			@include flex(column, wrap, center, center)//
+			width: 80%//
+			text-align: center//
+		&__paragraph
+			width: 100%//
+			text-align: center//
+		&__by-link
+			margin-top: 1rem//
+			&:hover
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+	body
+
+	.top-panel
+		&__wrapper
+			@include flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__menu-container
+		&__menu
+			@include flex(row, wrap, flex-start, flex-start)//
+		&__menu-list-item
+			@include flex(row, wrap, flex-start, flex-start)//
+			&::before
+			&:last-child
+			&:last-child::before
+		&__menu-link
+
+	.header
+		padding-top: 1.2rem//
+		padding-bottom: 1.2rem//
+		&__wrapper
+			@include flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__logo-container
+			@include flex(column, wrap, flex-start, flex-start)//
+		&__logo
+			text-align: center//
+			span
+		&__logo-description
+			text-align: center//
+		&__menu-container
+		&__menu
+			@include flex(column, wrap, flex-start, center)//
+			margin-top: 1.6rem//
+			&::before
+				content: none//
+		&__menu-list-item
+			@include flex(row, wrap, flex-start, flex-start)//
+			margin-right: 0rem//
+			margin-top: 1.4rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+			&::before
+				bottom: -0.4rem//
+			&:hover
+			&:hover::before
+
+	.main
+		&__wrapper
+			width: 100%//
+		&__slider
+			width: 100%
+			height: 56rem//
+		&__slide
+			width: 100%
+			height: 56rem//
+			background: none//
+			@include flex(column, wrap, space-between, center)//
+			padding-top: 2rem//
+			padding-bottom: 8rem//
+			padding-left: 0rem//
+		&__slide1
+		&__slide2
+		&__slide3
+		&__img
+		&__text-container
+			width: 100%//
+			@include flex(column, wrap, flex-start, center)//
+			margin-top: 0rem//
+			margin-left: 0rem//
+			padding-left: 15%//
+			padding-right: 15%//
+		&__headline
+			text-align: center//
+		&__paragraph
+			text-align: center//
+			padding-right: 0rem//
+		&__read-more-link
+			&:hover
+			&:active
+		&__buttons-container
+			@include flex(row, wrap, space-between, center)//
+		&__slider-button
+		&__prev-button
+		&__next-button
+
+	.section1
+		&__wrapper
+			@include flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__block
+			@include flex(column, wrap, center, center)//
+			@include size(40%, auto)//
+			margin-right: 0rem//
+			margin-top: 2rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-img
+		&__block-headline
+		&__separator
+		&__block-paragraph
+
+	.section2
+		&__wrapper
+			@include flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__paragraph
+		&__blocks-container
+			@include flex(column, wrap, flex-start, center)//
+		&__block
+			@include size(60%, auto)//
+			@include flex(column, wrap, flex-start, center)//
+			margin-right: 0rem//
+			margin-top: 2rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-headline
+			text-align: center//
+		&__block-img
+		&__block-paragraph
+			text-align: center//
+		&__read-more-link
+
+	.footer
+		&::before
+		&__wrapper
+			@include flex(row, wrap, flex-start, stretch)//
+			width: 100%//
+		&__block
+			@include flex(column, wrap, flex-start, center)//
+			@include size(100%, auto)//
+			margin-top: 3rem//
+			margin-right: 0rem//
+			&:last-child
+				margin-right: 0rem//
+			&:first-child
+				margin-top: 0rem//
+		&__block1
+			padding-left: 0rem//
+		&__block2
+			padding-left: 0rem//
+		&__block3
+			padding-left: 0rem//
+		&__block4
+			padding-left: 0rem//
+		&__headline
+			text-align: center//
+		&__post-container
+			@include flex(column, wrap, flex-start, center)//
+		&__post-title
+			text-align: center//
+		&__post-info
+			text-align: center//
+		&__post-day
+		&__post-date
+		&__post
+			padding-right: 0rem//
+			padding: 0rem 20%//
+			text-align: center//
+		&__list
+			padding-left: 0rem//
+		&__list-item
+			&:first-child
+			&::before
+		&__list-link
+		&__block3-paragraph
+			text-align: center//
+		&__company-name
+		&__street-name
+		&__line-two
+		&__town
+		&__postcode
+		&__tel
+		&__fax
+		&__email
+			span
+		&__form
+			@include flex(column, wrap, flex-start, center)//
+		&__input
+			width: 50%//
+			&::placeholder
+		&__name-input
+			margin-top: 1.8rem//
+		&__email-input
+		&__submit-button
+			&:hover
+			&:active
+		&__socials-container
+			@include flex(row, wrap, flex-start, flex-start)//
+		&__social-link
+			@include flex(row, wrap, center, center)//
+			&:last-child
+			svg
+				path
+		&__social-link:hover svg path
+		&__social-link:hover
+		&__linkedin
+		&__twitter
+		&__pinterest
+		&__google-plus
+			svg
+				path
+		&__rss
+
+	.copy
+		&::before
+		&__wrapper
+			@include flex(column, wrap, center, center)//
+			width: 80%//
+			text-align: center//
+		&__paragraph
+			width: 100%//
+			text-align: center//
+		&__by-link
+			margin-top: 1rem//
+			&:hover
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+	body
+
+	.top-panel
+		&__wrapper
+			@include flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__menu-container
+		&__menu
+			@include flex(row, wrap, flex-start, flex-start)//
+		&__menu-list-item
+			@include flex(row, wrap, flex-start, flex-start)//
+			&::before
+			&:last-child
+			&:last-child::before
+		&__menu-link
+
+	.header
+		padding-top: 1.2rem//
+		padding-bottom: 1.2rem//
+		&__wrapper
+			@include flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__logo-container
+			@include flex(column, wrap, flex-start, flex-start)//
+		&__logo
+			text-align: center//
+			span
+		&__logo-description
+			text-align: center//
+		&__menu-container
+		&__menu
+			@include flex(column, wrap, flex-start, center)//
+			margin-top: 1.6rem//
+			&::before
+				content: none//
+		&__menu-list-item
+			@include flex(row, wrap, flex-start, flex-start)//
+			margin-right: 0rem//
+			margin-top: 1.4rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+			&::before
+				bottom: -0.4rem//
+			&:hover
+			&:hover::before
+
+	.main
+		&__wrapper
+			width: 100%//
+		&__slider
+			width: 100%
+			height: 56rem//
+		&__slide
+			width: 100%
+			height: 56rem//
+			background: none//
+			@include flex(column, wrap, space-between, center)//
+			padding-top: 2rem//
+			padding-bottom: 8rem//
+			padding-left: 0rem//
+		&__slide1
+		&__slide2
+		&__slide3
+		&__img
+		&__text-container
+			width: 100%//
+			@include flex(column, wrap, flex-start, center)//
+			margin-top: 0rem//
+			margin-left: 0rem//
+			padding-left: 10%//
+			padding-right: 10%//
+		&__headline
+			text-align: center//
+		&__paragraph
+			text-align: center//
+			padding-right: 0rem//
+		&__read-more-link
+			&:hover
+			&:active
+		&__buttons-container
+			@include flex(row, wrap, space-between, center)//
+		&__slider-button
+		&__prev-button
+		&__next-button
+
+	.section1
+		&__wrapper
+			@include flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__block
+			@include flex(column, wrap, center, center)//
+			@include size(60%, auto)//
+			margin-right: 0rem//
+			margin-top: 2rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-img
+		&__block-headline
+		&__separator
+		&__block-paragraph
+
+	.section2
+		&__wrapper
+			@include flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__paragraph
+		&__blocks-container
+			@include flex(column, wrap, flex-start, center)//
+		&__block
+			@include size(60%, auto)//
+			@include flex(column, wrap, flex-start, center)//
+			margin-right: 0rem//
+			margin-top: 2rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-headline
+			text-align: center//
+		&__block-img
+		&__block-paragraph
+			text-align: center//
+		&__read-more-link
+
+	.footer
+		&::before
+		&__wrapper
+			@include flex(row, wrap, flex-start, stretch)//
+			width: 100%//
+		&__block
+			@include flex(column, wrap, flex-start, center)//
+			@include size(100%, auto)//
+			margin-top: 3rem//
+			margin-right: 0rem//
+			&:last-child
+				margin-right: 0rem//
+			&:first-child
+				margin-top: 0rem//
+		&__block1
+			padding-left: 0rem//
+		&__block2
+			padding-left: 0rem//
+		&__block3
+			padding-left: 0rem//
+		&__block4
+			padding-left: 0rem//
+		&__headline
+			text-align: center//
+		&__post-container
+			@include flex(column, wrap, flex-start, center)//
+		&__post-title
+			text-align: center//
+		&__post-info
+			text-align: center//
+		&__post-day
+		&__post-date
+		&__post
+			padding-right: 0rem//
+			padding: 0rem 20%//
+			text-align: center//
+		&__list
+			padding-left: 0rem//
+		&__list-item
+			&:first-child
+			&::before
+		&__list-link
+		&__block3-paragraph
+			text-align: center//
+		&__company-name
+		&__street-name
+		&__line-two
+		&__town
+		&__postcode
+		&__tel
+		&__fax
+		&__email
+			span
+		&__form
+			@include flex(column, wrap, flex-start, center)//
+		&__input
+			width: 50%//
+			&::placeholder
+		&__name-input
+			margin-top: 1.8rem//
+		&__email-input
+		&__submit-button
+			&:hover
+			&:active
+		&__socials-container
+			@include flex(row, wrap, flex-start, flex-start)//
+		&__social-link
+			@include flex(row, wrap, center, center)//
+			&:last-child
+			svg
+				path
+		&__social-link:hover svg path
+		&__social-link:hover
+		&__linkedin
+		&__twitter
+		&__pinterest
+		&__google-plus
+			svg
+				path
+		&__rss
+
+	.copy
+		&::before
+		&__wrapper
+			@include flex(column, wrap, center, center)//
+			width: 80%//
+			text-align: center//
+		&__paragraph
+			width: 100%//
+			text-align: center//
+		&__by-link
+			margin-top: 1rem//
+			&:hover
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+	body
+
+	.top-panel
+		&__wrapper
+			@include flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__menu-container
+		&__menu
+			@include flex(row, wrap, flex-start, flex-start)//
+		&__menu-list-item
+			@include flex(row, wrap, flex-start, flex-start)//
+			&::before
+			&:last-child
+			&:last-child::before
+		&__menu-link
+
+	.header
+		padding-top: 1.2rem//
+		padding-bottom: 1.2rem//
+		&__wrapper
+			@include flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__logo-container
+			@include flex(column, wrap, flex-start, flex-start)//
+		&__logo
+			text-align: center//
+			span
+		&__logo-description
+			text-align: center//
+		&__menu-container
+		&__menu
+			@include flex(column, wrap, flex-start, center)//
+			margin-top: 1.6rem//
+			&::before
+				content: none//
+		&__menu-list-item
+			@include flex(row, wrap, flex-start, flex-start)//
+			margin-right: 0rem//
+			margin-top: 1.4rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+			&::before
+				bottom: -0.4rem//
+			&:hover
+			&:hover::before
+
+	.main
+		&__wrapper
+			width: 100%//
+		&__slider
+			width: 100%
+			height: 56rem//
+		&__slide
+			width: 100%
+			height: 56rem//
+			background: none//
+			@include flex(column, wrap, space-between, center)//
+			padding-top: 2rem//
+			padding-bottom: 8rem//
+			padding-left: 0rem//
+		&__slide1
+		&__slide2
+		&__slide3
+		&__img
+		&__text-container
+			width: 100%//
+			@include flex(column, wrap, flex-start, center)//
+			margin-top: 0rem//
+			margin-left: 0rem//
+			padding-left: 5%//
+			padding-right: 5%//
+		&__headline
+			text-align: center//
+		&__paragraph
+			text-align: center//
+			padding-right: 0rem//
+		&__read-more-link
+			&:hover
+			&:active
+		&__buttons-container
+			@include flex(row, wrap, space-between, center)//
+		&__slider-button
+		&__prev-button
+		&__next-button
+
+	.section1
+		&__wrapper
+			@include flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__block
+			@include flex(column, wrap, center, center)//
+			@include size(80%, auto)//
+			margin-right: 0rem//
+			margin-top: 2rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-img
+		&__block-headline
+		&__separator
+		&__block-paragraph
+
+	.section2
+		&__wrapper
+			@include flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__paragraph
+		&__blocks-container
+			@include flex(column, wrap, flex-start, center)//
+		&__block
+			@include size(80%, auto)//
+			@include flex(column, wrap, flex-start, center)//
+			margin-right: 0rem//
+			margin-top: 2rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-headline
+			text-align: center//
+		&__block-img
+		&__block-paragraph
+			text-align: center//
+		&__read-more-link
+
+	.footer
+		&::before
+		&__wrapper
+			@include flex(row, wrap, flex-start, stretch)//
+			width: 100%//
+		&__block
+			@include flex(column, wrap, flex-start, center)//
+			@include size(100%, auto)//
+			margin-top: 3rem//
+			margin-right: 0rem//
+			&:last-child
+				margin-right: 0rem//
+			&:first-child
+				margin-top: 0rem//
+		&__block1
+			padding-left: 0rem//
+		&__block2
+			padding-left: 0rem//
+		&__block3
+			padding-left: 0rem//
+		&__block4
+			padding-left: 0rem//
+		&__headline
+			text-align: center//
+		&__post-container
+			@include flex(column, wrap, flex-start, center)//
+		&__post-title
+			text-align: center//
+		&__post-info
+			text-align: center//
+		&__post-day
+		&__post-date
+		&__post
+			padding-right: 0rem//
+			padding: 0rem 10%//
+			text-align: center//
+		&__list
+			padding-left: 0rem//
+		&__list-item
+			&:first-child
+			&::before
+		&__list-link
+		&__block3-paragraph
+			text-align: center//
+		&__company-name
+		&__street-name
+		&__line-two
+		&__town
+		&__postcode
+		&__tel
+		&__fax
+		&__email
+			span
+		&__form
+			@include flex(column, wrap, flex-start, center)//
+		&__input
+			width: 80%//
+			&::placeholder
+		&__name-input
+			margin-top: 1.8rem//
+		&__email-input
+		&__submit-button
+			&:hover
+			&:active
+		&__socials-container
+			@include flex(row, wrap, flex-start, flex-start)//
+		&__social-link
+			@include flex(row, wrap, center, center)//
+			&:last-child
+			svg
+				path
+		&__social-link:hover svg path
+		&__social-link:hover
+		&__linkedin
+		&__twitter
+		&__pinterest
+		&__google-plus
+			svg
+				path
+		&__rss
+
+	.copy
+		&::before
+		&__wrapper
+			@include flex(column, wrap, center, center)//
+			width: 80%//
+			text-align: center//
+		&__paragraph
+			width: 100%//
+			text-align: center//
+		&__by-link
+			margin-top: 1rem//
+			&:hover
+
+	.modal
+		&__overlay
+		&__window
+			@include size(100%, 10rem)//
+			@include flex(row, wrap, center, center)//
+		&__error-container
+		&__success-container
+		&__paragraph
+// /* Mobile First Method */
+// /* Custom, iPhone Retina */
+// @media only screen and (min-width: 320px)
+// 	body
+// 		background: $media-green
+// /* Extra Small Devices, Phones */
+// @media only screen and (min-width: 480px)
+// 	body
+// 		background: $media-blue
+// /* Small Devices, Tablets */
+// @media only screen and (min-width: 768px)
+// 	body
+// 		background: $media-pink
+// /* Medium Devices, Desktops */
+// @media only screen and (min-width: 992px)
+// 	body
+// 		background: $media-orange
+// /* Large Devices, Wide Screens */
+// @media only screen and (min-width: 1300px)
+// 	body
+// 		background: $media-purple
