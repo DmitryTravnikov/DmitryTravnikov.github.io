@@ -6,12 +6,209 @@
 
 body
 	cursor: default
+	font-family: $gg
 
 .wrapper
+	+wrapper(96rem, auto)
 
 // 1rem === 10px
 
+.header
+	position: relative
+	&::before
+		content: ''
+		+size(100%, .5rem)
+		background: $blue
+		position: absolute
+		top: 0rem
+		left: 0rem
+	&__wrapper
+		+flex(row, wrap, space-between, flex-start)
+		position: relative
+		&::before
+			content: ''
+			+size(100%, .1rem)
+			background: #E2E2E2
+			position: absolute
+			bottom: 0rem
+			left: 0rem
+	&__block
+	&__block1
+		+flex(column, wrap, flex-start, flex-start)
+	&__block2
+		+flex(column, wrap, flex-start, flex-end)
+	&__socials-container
+		+flex(row, wrap, flex-start, flex-start)
+	&__social-link
+		+flex(row, wrap, center, center)
+		+size(3.2rem, 3.2rem)
+		border-radius: 50%
+		background: #1F1F1F
+		transition: .2s
+		margin-right: 1rem
+		&:last-child
+			margin-right: 0rem
+		&:hover
+			background: $orange
+		svg
+			+size(1.6rem, 1.6rem)
+			path
+				fill: #fff
+	&__linkedin
+	&__twitter
+	&__pinterest
+	&__google-plus
+		svg
+			+size(2.4rem, 2.4rem)
+	&__rss
+	&__logo-container
+		text-decoration: none
+	&__logo
+		font-weight: 400
+		font-size: 3rem
+		color: #4A4A4A
+		text-transform: uppercase
+		text-align: left
+		span
+			font-size: 2rem
+	&__logo-description
+		font-weight: 400
+		font-size: 1.2rem
+		color: #999
+		text-align: left
+	&__search-container
+		+flex(row, wrap, flex-start, flex-start)
+	&__search-input
+		outline: none
+		border: none
+		background: #333
+		border-radius: 1rem
+		font-weight: 400
+		font-size: 1.2rem
+		color: #fff
+		padding: 1rem 2rem
+		width: 21.7rem
+		&::placeholder
+			font-weight: 400
+			font-size: 1.2rem
+			color: #fff
+	&__search-button
+		outline: none
+		border: none
+		cursor: pointer
+		font-weight: 400
+		font-size: 1.2rem
+		color: #fff
+		text-transform: uppercase
+		background: $blue
+		border-radius: 1rem
+		padding: 1rem 2rem
+	&__menu-container
+	&__menu
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(row, wrap, flex-start, flex-start)
+	&__menu-list-item
+		padding: 0rem
+		margin: 0rem
+		+flex(row, wrap, flex-start, flex-start)
+		margin-right: 1rem
+		&:last-child
+			margin-right: 0rem
+	&__menu-link
+		text-decoration: none
+		font-weight: 900
+		font-size: 1.2rem
+		color: #999
+		text-transform: uppercase
+		transition: .2s
+		&:hover
+			color: $blue
 
+.main
+	&__wrapper
+	&__slider
+	&__slide
+	&__slide1
+	&__slide2
+	&__slide3
+	&__slide4
+	&__slide5
+	&__text-container
+	&__headline
+	&__paragraph
+	&__read-more-link
+
+.section1
+	&__wrapper
+	&__block
+	&__block1
+	&__block2
+	&__block3
+	&__block-img
+	&__block-headline
+	&__block-paragraph
+	&__read-more-link
+
+.section2
+	&__wrapper
+	&__headline
+	&__block
+	&__block1
+	&__block2
+	&__block3
+	&__item
+	&__item1
+	&__item2
+	&__item-img
+	&__item-text-container
+	&__item-headline
+	&__item-paragraph
+
+.footer
+	&__wrapper
+	&__block
+	&__block1
+	&__block2
+	&__block3
+	&__block4
+	&__block-headline
+	&__block-paragraph
+	&__company-name
+	&__street-name
+	&__town
+	&__postcode
+	&__tel
+	&__fax
+	&__email
+	&__list
+	&__list-item
+	&__list-link
+	&__post-container
+	&__post-title
+	&__post-info
+	&__post-author
+	&__post-time
+	&__post
+	&__read-more-link
+	&__form
+	&__input
+	&__name-input
+	&__email-input
+	&__submit-button
+
+.copy
+	&__wrapper
+	&__paragraph
+	&__by-link
+
+.modal
+	&__overlay
+	&__window
+	&__error-container
+	&__success-container
+	&__paragraph
 
 *
 	// @include outline($blue)
