@@ -15,6 +15,8 @@ body
 
 .header
 	position: relative
+	width: 100%
+	padding-top: 3rem
 	&::before
 		content: ''
 		+size(100%, .5rem)
@@ -25,13 +27,16 @@ body
 	&__wrapper
 		+flex(row, wrap, space-between, flex-start)
 		position: relative
+		overflow: hidden
+		padding-bottom: 2rem
 		&::before
 			content: ''
-			+size(100%, .1rem)
+			+size(100rem, .1rem)
 			background: #E2E2E2
 			position: absolute
 			bottom: 0rem
-			left: 0rem
+			left: 50%
+			transform: translateX(-50%)
 	&__block
 	&__block1
 		+flex(column, wrap, flex-start, flex-start)
@@ -63,15 +68,20 @@ body
 	&__rss
 	&__logo-container
 		text-decoration: none
+		margin-top: 1.9rem
 	&__logo
+		width: 100%
+		margin: 0rem
 		font-weight: 400
-		font-size: 3rem
+		font-size: 3.1rem
 		color: #4A4A4A
 		text-transform: uppercase
 		text-align: left
 		span
-			font-size: 2rem
+			font-size: 2.6rem
 	&__logo-description
+		width: 100%
+		margin: 0rem
 		font-weight: 400
 		font-size: 1.2rem
 		color: #999
@@ -86,7 +96,7 @@ body
 		font-weight: 400
 		font-size: 1.2rem
 		color: #fff
-		padding: 1rem 2rem
+		padding: 1rem 1.1rem
 		width: 21.7rem
 		&::placeholder
 			font-weight: 400
@@ -102,8 +112,13 @@ body
 		text-transform: uppercase
 		background: $blue
 		border-radius: 1rem
-		padding: 1rem 2rem
+		padding: 1rem 0.9rem
+		margin-left: 0.4rem
+		transition: .2s
+		&:hover
+			background: lighten($blue, 5%)
 	&__menu-container
+		margin-top: 5rem
 	&__menu
 		padding: 0rem
 		margin: 0rem
@@ -113,7 +128,7 @@ body
 		padding: 0rem
 		margin: 0rem
 		+flex(row, wrap, flex-start, flex-start)
-		margin-right: 1rem
+		margin-right: 1.9rem
 		&:last-child
 			margin-right: 0rem
 	&__menu-link
@@ -128,87 +143,389 @@ body
 
 .main
 	&__wrapper
+		+flex(row, wrap, flex-start, flex-start)
+		position: relative
+		overflow: hidden
+		&::before
+			content: ''
+			+size(100%, .1rem)
+			background: #E2E2E2
+			position: absolute
+			bottom: 0rem
+			left: 50%
+			transform: translateX(-50%)
 	&__slider
+		+size(96rem, 41.8rem)
+		margin: 0rem auto
+		+flex(row, wrap, center, flex-start)
+		position: relative
+		.owl-controls
+			position: absolute
+			bottom: 4.7rem
+			right: 0.8rem
+			.owl-page span
+				opacity: 1
+				margin: 0rem
+				+size(1.5rem, 1.5rem)
+				background: $blue
+				border: .2rem solid $blue
+				margin-right: 0.4rem
+			.owl-page:last-child span
+				margin-right: 0rem
+			.owl-page.active span
+				background: none
 	&__slide
+		+size(96rem, 41.8rem)
+		margin: 0rem auto
+		+flex(row, wrap, flex-end, flex-start)
+		background: url('../assets/main__monitor.png') no-repeat 0rem 5rem
+		padding-top: 10.9rem
 	&__slide1
 	&__slide2
 	&__slide3
 	&__slide4
 	&__slide5
 	&__text-container
+		+flex(column, wrap, flex-start, flex-start)
+		width: 51%
 	&__headline
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 4.2rem
+		color: #4A4A4A
+		text-transform: uppercase
+		text-align: left
 	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.6rem
+		line-height: 2.24rem
+		color: #999
+		text-align: left
+		margin-top: 1.3rem
 	&__read-more-link
+		text-decoration: none
+		font-weight: 400
+		font-size: 1.6rem
+		color: #fff
+		text-transform: uppercase
+		background: $blue
+		border-radius: 1rem
+		padding: 0.7rem 0.8rem
+		transition: .2s
+		margin-top: 3.2rem
+		&:hover
+			background: lighten($blue, 5%)
 
 .section1
+	padding-top: 5rem
 	&__wrapper
+		+flex(row, wrap, space-between, stretch)
+		position: relative
+		overflow: hidden
+		padding-bottom: 5.1rem
+		&::before
+			content: ''
+			+size(100%, .1rem)
+			background: #E2E2E2
+			position: absolute
+			bottom: 0rem
+			left: 50%
+			transform: translateX(-50%)
 	&__block
+		width: 30rem
+		+flex(column, wrap, flex-start, flex-start)
 	&__block1
 	&__block2
 	&__block3
 	&__block-img
 	&__block-headline
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.6rem
+		color: #4A4A4A
+		text-transform: uppercase
+		text-align: left
+		margin-top: 2.9rem
 	&__block-paragraph
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.3rem
+		line-height: 2.08rem
+		color: #999
+		text-align: left
+		margin-top: 1.8rem
+		padding-right: 1rem
 	&__read-more-link
+		text-decoration: none
+		font-weight: 400
+		font-size: 1.3rem
+		color: #fff
+		text-transform: uppercase
+		background: $blue
+		border-radius: 1rem
+		padding: 0.9rem 0.8rem
+		transition: .2s
+		margin-top: 1.7rem
+		&:hover
+			background: lighten($blue, 5%)
 
 .section2
+	padding-top: 4.5rem
+	padding-bottom: 5.1rem
 	&__wrapper
+		+flex(row, wrap, space-between, flex-start)
 	&__headline
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 2.2rem
+		line-height: 3.08rem
+		color: #666
+		text-align: center
+		font-style: italic
+		padding: 0rem 10rem
 	&__block
+		width: 30rem
+		+flex(column, wrap, flex-start, stretch)
+		margin-top: 4.5rem
 	&__block1
 	&__block2
 	&__block3
 	&__item
+		+flex(row, wrap, flex-start, flex-start)
+		margin-top: 4.2rem
+		&:first-child
+			margin-top: 0rem
 	&__item1
 	&__item2
 	&__item-img
+		border: .4rem solid #fff
+		box-shadow: 0rem 0rem .1rem .1rem #D8D8D8
 	&__item-text-container
+		width: calc(100% - 9rem)
+		padding-left: 1.7rem
+		padding-top: 0.3rem
 	&__item-headline
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.3rem
+		color: $blue
+		text-transform: capitalize
+		text-align: left
 	&__item-paragraph
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.2rem
+		line-height: 1.92rem
+		color: #848C92
+		text-align: left
+		margin-top: 0.5rem
 
 .footer
+	background: #252525
+	padding-top: 3.6rem
+	padding-bottom: 3.9rem
 	&__wrapper
+		+flex(row, wrap, space-between, stretch)
 	&__block
+		width: 22rem
+		+flex(column, wrap, flex-start, flex-start)
 	&__block1
 	&__block2
 	&__block3
 	&__block4
 	&__block-headline
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 2rem
+		color: #fff
+		text-transform: capitalize
+		text-align: left
 	&__block-paragraph
+		text-decoration: none
+		width: 100%
+		margin: 0rem
+		font-size: 1.3rem
+		line-height: 1.92rem
+		color: #999
+		text-align: left
 	&__company-name
+		margin-top: 2.1rem
 	&__street-name
 	&__town
 	&__postcode
 	&__tel
+		margin-top: 0.8rem
 	&__fax
 	&__email
+		span
+			color: $blue
+			transition: .2s
+			&:hover
+				color: lighten($blue, 10%)
 	&__list
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(column, wrap, flex-start, flex-start)
+		width: 100%
+		margin-top: 1.9rem
 	&__list-item
+		padding: 0rem
+		margin: 0rem
+		+flex(row, wrap, flex-start, flex-start)
+		margin-top: 1rem
+		position: relative
+		width: 100%
+		margin-top: 0.4rem
+		&:first-child
+			margin-top: 0rem
+		&:first-child
+			margin-top: 0rem
+		&::before
+			content: ''
+			+size(100%, .1rem)
+			background: #2C2C2C
+			position: absolute
+			bottom: 0rem
+			left: 0rem
 	&__list-link
+		text-decoration: none
+		font-weight: 400
+		font-size: 1.2rem
+		color: $blue
+		text-transform: capitalize
+		text-align: left
+		transition: .2s
+		padding: 0.7rem 0rem
+		&:hover
+			color: lighten($blue, 10%)
 	&__post-container
+		width: 100%
+		+flex(column, wrap, flex-start, flex-end)
+		margin-top: 2.5rem
 	&__post-title
+		width: 100%
+		margin: 0rem
+		font-size: 1.3rem
+		color: #999
+		text-transform: capitalize
+		text-align: left
 	&__post-info
+		width: 100%
+		margin: 0rem
+		font-size: 1.3rem
+		color: #999
+		text-align: left
+		margin-top: 0.6rem
 	&__post-author
 	&__post-time
 	&__post
+		margin-top: 0.6rem
 	&__read-more-link
+		text-decoration: none
+		font-weight: 400
+		font-size: 1.2rem
+		color: $blue
+		text-transform: capitalize
+		transition: .2s
+		margin-top: 1.1rem
+		&:hover
+			color: lighten($blue, 10%)
 	&__form
+		width: 100%
+		+flex(column, wrap, flex-start, flex-start)
+		margin-top: 2.4rem
 	&__input
+		outline: none
+		border: .1rem solid transparent
+		border-radius: 0.6rem
+		font-weight: 400
+		font-size: 1.3rem
+		color: #989898
+		background: #2C2C2C
+		transition: .2s
+		padding: 0.8rem 0.8rem
+		width: 100%
+		&::placeholder
+			font-weight: 400
+			font-size: 1.3rem
+			color: #989898
 	&__name-input
 	&__email-input
+		margin-top: 1rem
 	&__submit-button
+		outline: none
+		border: none
+		cursor: pointer
+		font-weight: 400
+		font-size: 1.3rem
+		color: #fff
+		text-transform: uppercase
+		background: $blue
+		border-radius: 0.6rem
+		padding: 0.9rem 1.5rem
+		transition: .2s
+		margin-top: 0.8rem
+		&:hover
+			background: lighten($blue, 5%)
+		&:active
+			background: $blue
 
 .copy
+	background: #1A1A1A
+	padding-top: 1rem
+	padding-bottom: 1rem
 	&__wrapper
+		+flex(row, wrap, space-between, center)
 	&__paragraph
+		width: 50%
+		font-weight: 400
+		font-size: 1.3rem
+		color: #999
+		text-align: left
 	&__by-link
+		text-decoration: none
+		font-weight: 400
+		font-size: 1.3rem
+		color: #999
+		transition: .2s
+		&:hover
+			color: lighten(#999999, 15%)
 
 .modal
 	&__overlay
+		+size(100%, 100%)
+		position: fixed
+		top: 0rem
+		left: 0rem
+		background: rgba($space-grey, .9)
+		display: none
 	&__window
+		+size(31rem, 10rem)
+		background: #000
+		+flex(row, wrap, center, center)
+		position: fixed
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		opacity: 0
+		z-index: -1
 	&__error-container
 	&__success-container
 	&__paragraph
+		font-weight: 400
+		font-size: 2rem
+		color: #fff
+		text-align: center
 
 *
 	// @include outline($blue)
