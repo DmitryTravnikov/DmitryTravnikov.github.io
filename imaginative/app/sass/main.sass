@@ -6,10 +6,359 @@
 
 body
 	cursor: default
+	font-family: $gg
 
 .wrapper
+	+wrapper(96rem, auto)
 
 // 1rem === 10px
+
+.header
+	&__wrapper-container1
+		background: #fff
+		position: relative
+		&::before
+			content: ''
+			+size(100%, .1rem)
+			background: $pink
+			position: absolute
+			bottom: 0rem
+			left: 0rem
+	&__wrapper-container2
+		background: #EBEBEB
+	&__wrapper-container3
+		background: #EBEBEB
+	&__wrapper-container1 &__wrapper
+		+flex(row, wrap, space-between, flex-start)
+	&__wrapper-container2 &__wrapper
+		+flex(row, wrap, space-between, flex-start)
+	&__wrapper-container3 &__wrapper
+		+flex(row, wrap, flex-start, flex-start)
+	&__wrapper
+		position: relative
+	&__socials-container
+		+flex(row, wrap, flex-start, flex-start)
+	&__social-link
+		+flex(row, wrap, center, center)
+		+size(3.2rem, 3.2rem)
+		border-radius: 50%
+		background: #D2D2D2
+		transition: .2s
+		&:hover
+			background: $orange
+		svg
+			+size(2rem, 2rem)
+			path
+				fill: #fff
+	&__linkedin
+	&__twitter
+	&__pinterest
+	&__google-plus
+		svg
+			+size(2.8rem, 2.8rem)
+	&__rss
+	&__secondary-menu
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(row, wrap, flex-start, flex-start)
+	&__secondary-menu-list
+		padding: 0rem
+		margin: 0rem
+		+flex(row, wrap, flex-start, flex-start)
+	&__secondary-menu-link
+		text-decoration: none
+		font-weight: 400
+		font-size: 1.2rem
+		color: $pink
+		position: relative
+		&::before
+			content: ''
+			+size(.1rem, 100%)
+			position: absolute
+			background: $pink
+			top: 50%
+			right: 0rem
+			transform: translateY(-50%)
+	&__toggle-button
+		outline: none
+		border: none
+		cursor: pointer
+		+size(3rem, 2.5rem)
+		background: $pink
+		border-bottom-left-radius: .4rem
+		border-bottom-right-radius: .4rem
+		position: absolute
+		bottom: 0rem
+		right: 0rem
+		&::before, &::after
+			content: ''
+			+size(1.1rem, .1rem)
+			background: #fff
+			position: absolute
+			transition: .2s
+		&::before
+			top: 1.2rem
+			left: 0.9rem
+		&::after
+			top: 1.2rem
+			left: 0.9rem
+			transform: rotate(90deg)
+			opacity: 0
+	&__logo-container
+		text-decoration: none
+		+flex(row, wrap, flex-start, flex-start)
+	&__logo
+		margin: 0rem
+		font-weight: 400
+		font-size: 3rem
+		color: #333
+		text-transform: uppercase
+		text-align: left
+		span
+			font-size: 2rem
+	&__logo-description
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.2rem
+		color: $grey
+		text-align: left
+		position: relative
+		&::before
+			content: ''
+			+size(.1rem, 100%)
+			background: $grey
+			position: absolute
+			top: 50%
+			left: 0rem
+			transform: translateY(-50%)
+	&__search-container
+		+flex(row, wrap, flex-start, stretch)
+	&__search-input
+		width: 21.8rem
+		background: #fff
+		outline: none
+		border: none
+		font-weight: 400
+		font-size: 1.2rem
+		color: $grey
+		padding: 1rem 1rem
+		&::placeholder
+			font-weight: 400
+			font-size: 1.2rem
+			color: $grey
+	&__search-button
+		outline: none
+		border: none
+		cursor: pointer
+		background: $pink
+		color: #fff
+		font-weight: 400
+		font-size: 1.2rem
+		text-transform: uppercase
+		padding: 1rem 2rem
+	&__menu-container
+		background: $pink
+		border-top-left-radius: .4rem
+		border-top-right-radius: .4rem
+		overflow: hidden
+	&__menu
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(row, wrap, flex-start, flex-start)
+	&__menu-list-item
+		padding: 0rem
+		margin: 0rem
+		+flex(row, wrap, flex-start, flex-start)
+		margin-right: 1rem
+		&:last-child
+			margin-right: 0rem
+	&__menu-link
+		text-decoration: none
+		font-weight: 400
+		font-size: 1.2rem
+		color: #fff
+		text-transform: uppercase
+		padding: 1rem 1rem
+		transition: .2s
+		&:hover
+			background: #6A3144
+
+
+.main
+	background: linear-gradient(0deg, #fff 25%, #fff 25%, #fff 25%, #EBEBEB 25%)
+	&__wrapper
+		+flex(row, wrap, center, flex-start)
+		background: #fff
+	&__slider
+		+size(90rem, 35rem)
+		margin: 0rem auto
+		position: relative
+		.owl-controls
+			width: auto
+			height: auto
+			position: relative
+			bottom: 0rem
+			left: 50%
+			transform: translateX(-50%)
+			.owl-page span
+				opacity: 1
+				margin: 0rem
+				+size(1.6rem, 1.6rem)
+				margin-right: 0.4rem
+				background: #333
+				border: 0.3rem solid #333333
+			.owl-page:last-child span
+				margin-right: 0rem
+			.owl-page.active span
+				background: none
+	&__slide
+		+size(90rem, 35rem)
+		margin: 0rem auto
+		background: url('http://placekitten.com/1000/400') no-repeat center
+		background-size: cover
+		+flex(row, wrap, flex-end, flex-end)
+	&__slide1
+	&__slide2
+	&__slide3
+	&__slide4
+	&__slide5
+	&__slide-text-container
+		+flex(column, wrap, flex-start, flex-start)
+		background: #ADADAD
+		width: 45.5rem
+	&__slide-headline
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 3.6rem
+		color: #383838
+		text-align: left
+	&__slide-paragraph
+		width: 100%
+		margin: 0rem
+		font-size: 1.6rem
+		line-height: 2.24rem
+		color: #383838
+		text-align: left
+
+.section1
+	&__wrapper
+		+flex(row, wrap, flex-start, flex-start)
+		+wrapper(90rem, auto)
+	&__headline-container
+		width: 100%
+		position: relative
+		+flex(row, wrap, center, flex-start)
+		&::before
+			content: ''
+			+size(100%, .5rem)
+			background: #EBEBEB
+			position: absolute
+			top: 50%
+			left: 0rem
+			transform: translateY(-50%)
+			z-index: -1
+	&__headline
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.6rem
+		color: #333
+		text-transform: uppercase
+		text-align: left
+		background: #fff
+		padding: 0rem 1rem
+	&__blocks-container
+		+flex(row, wrap, flex-start, flex-start)
+	&__block
+		width: calc(100% / 3)
+		+flex(column, wrap, flex-start, flex-start)
+	&__block1
+	&__block2
+	&__block3
+	&__item
+		+flex(row, wrap, flex-start, flex-start)
+	&__item1
+	&__item2
+	&__item-img
+	&__item-text-container
+		width: calc(100% - 6.4rem)
+	&__item-headline
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.6rem
+		color: $pink
+		text-align: left
+	&__item-paragraph
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.3rem
+		line-height: 1.82rem
+		color: $grey
+		text-align: left
+
+.section2
+	&__wrapper
+	&__block
+	&__block1
+	&__block2
+	&__block3
+	&__block-headline
+	&__block-content
+	&__block-img
+	&__block-text-container
+	&__block-headline
+	&__view-this-project-link
+	&__block-paragraph
+	&__block-read-more-link
+	&__block3-text-container
+	&__block3-headline
+	&__block3-paragraph
+	&__contact-us-link
+
+.section3
+	&__wrapper
+	&__block
+	&__block1
+	&__block2
+	&__block3
+	&__headline
+	&__paragraph
+	&__item
+	&__item1
+	&__item2
+	&__item-img
+	&__item-headline
+	&__item-paragraph
+	&__company-name
+	&__street-name
+	&__town
+	&__postcode
+	&__tel
+	&__fax
+	&__email
+	&__office-hours
+		span
+	&__input
+	&__name-input
+	&__email-input
+	&__message-input
+	&__submit-button
+
+.copy
+	&__wrapper
+	&__paragraph
+	&__by-link
+
+.modal
+	&__overlay
+	&__window
+	&__error-container
+	&__success-container
+	&__paragraph
 
 *
 	// @include outline($blue)

@@ -146,7 +146,19 @@ $(document).ready(function() {
 	}// prevdef();
 	prevdef();
 
-	
+	//Каруселька
+	//Документация: http://owlgraphic.com/owlcarousel/
+	var mainSlider = $(".main__slider");
+	mainSlider.owlCarousel({
+		items : 1,
+		autoPlay: 3000,
+		pagination: true,
+		transitionStyle: 'fade',
+		itemsDesktop: [1199,1],
+		itemsDesktopSmall: [979,1],
+		itemsTablet: [768,1],
+		itemsMobile: [479,1]
+	});
 
 });//doc.ready end
 

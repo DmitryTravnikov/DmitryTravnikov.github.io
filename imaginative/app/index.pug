@@ -28,8 +28,8 @@ html(lang="ru")
 		// Content Start
 		//- Header
 		header.header
-			.header__wrapper.wrapper
-				.header__block.header__block1
+			.header__wrapper-container1
+				.header__wrapper.wrapper
 					.header__socials-container
 						a.prevdef.header__social-link.header__linkedin(href="#")
 							svg(aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-linkedin-in fa-w-14 fa-3x")
@@ -56,17 +56,19 @@ html(lang="ru")
 						li.header__secondary-menu-list-item
 							a.prevdef.header__secondary-menu-link(href="#") Archived News
 					button.header__toggle-button
-				.header__block.header__block2
+			.header__wrapper-container2
+				.header__wrapper.wrapper
 					a.prevdef.header__logo-container(href="#")
 						h3.header__logo I#[span maginative]
-						p.header__lodo-description Free PSD
+						p.header__logo-description Free PSD
 							|
 							br
 							| Website Template
 					.header__search-container
 						input.header__search-input(type="text" placeholder="Search Our Website...")
 						button.header__search-button Submit
-				.header__block.header__block3
+			.header__wrapper-container3
+				.header__wrapper.wrapper
 					nav.header__menu-container
 						ul.header__menu
 							li.header__menu-list-item
@@ -112,7 +114,8 @@ html(lang="ru")
 		//- Section1
 		section.section1
 			.section1__wrapper.wrapper
-				h3.section1__headline Your Title Here
+				.section1__headline-container
+					h3.section1__headline Your Title Here
 				.section1__blocks-container
 					.section1__block.section1__block1
 						.section1__item.section1__item1
@@ -160,7 +163,8 @@ html(lang="ru")
 							p.section2__block-paragraph Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt.
 							a.prevdef.section2__block-read-more-link(href="#") Read More &raquo;
 				.section2__block.section2__block2
-					h3.section2__block-headline Your Title Here
+					h3.section2__block-headline Tommy Tanker - CEO
+					a.prevdef.section2__view-this-project-link(href="#") View This Project &raquo;
 					.section2__block-content
 						img.section2__block-img(src="http://placekitten.com/128/128", alt="pic")
 						.section2__block-text-container
@@ -174,7 +178,7 @@ html(lang="ru")
 					a.prevdef.section2__contact-us-link(href="#") Contact Us Today
 
 		//- Section3
-		section.section3
+		footer.section3
 			.section3__wrapper.wrapper
 				.section3__block.section3__block1
 					h3.section3__block-headline Latest From The Blog
