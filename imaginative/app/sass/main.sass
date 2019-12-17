@@ -189,8 +189,8 @@ body
 .main
 	background: linear-gradient(0deg, #fff 25%, #fff 25%, #fff 25%, #EBEBEB 25%)
 	&__wrapper
-		+flex(row, wrap, center, flex-start)
 		background: #fff
+		overflow: hidden
 	&__slider
 		+size(90rem, 35rem)
 		margin: 0rem auto
@@ -279,6 +279,7 @@ body
 	&__block3
 	&__item
 		+flex(row, wrap, flex-start, flex-start)
+		width: 100%
 	&__item1
 	&__item2
 	&__item-img
@@ -301,38 +302,197 @@ body
 		text-align: left
 
 .section2
+	margin-top: 5rem
 	&__wrapper
+		+flex(column, wrap, flex-start, flex-start)
+		+wrapper(90rem, auto)
+	&__row
+		width: 100%
+	&__row1
+		+flex(row, wrap, space-between, flex-start)
+	&__row2
 	&__block
 	&__block1
+		width: 48%
+		+flex(column, wrap, flex-start, center)
 	&__block2
+		width: 48%
+		+flex(column, wrap, flex-start, center)
 	&__block3
+		width: 100%
+		background: $pink
+		border-radius: 1rem
+		+flex(row, wrap, space-between, flex-start)
+	&__headline-container
+		width: 100%
+		position: relative
+		+flex(row, wrap, center, center)
+		&::before
+			content: ''
+			+size(100%, .5rem)
+			background: #F5F5F5
+			position: absolute
+			top: 50%
+			left: 0rem
+			transform: translateY(-50%)
+			z-index: -1
 	&__block-headline
-	&__block-content
-	&__block-img
-	&__block-text-container
-	&__block-headline
-	&__view-this-project-link
-	&__block-paragraph
-	&__block-read-more-link
+		width: auto
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.6rem
+		color: #333
+		background: #fff
+		text-transform: uppercase
+		text-align: center
+	&__block1-content
+		+flex(row, wrap, flex-start, flex-start)
+		width: 100%
+	&__block1-img
+		border-radius: 50%
+	&__block1-text-container
+		width: calc(100% - 12.8rem)
+		+flex(column, wrap, flex-start, flex-start)
+	&__block1-text-container-headline
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.6rem
+		color: #333
+		text-transform: capitalize
+		text-align: left
+	&__block1-text-container-paragraph
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.3rem
+		line-height: 1.82rem
+		color: $grey
+		text-align: left
+	&__block1-text-container-read-more-link
+		text-decoration: none
+		font-weight: 400
+		font-size: 1.3rem
+		color: $pink
+		text-transform: capitalize
+	&__block2-content
+		width: 100%
+		+flex(column, wrap, flex-start, flex-start)
+	&__block2-content-row
+		width: 100%
+	&__block2-content-row1
+		+flex(row, wrap, flex-start, flex-start)
+	&__block2-content-row2
+	&__block2-img
+	&__block2-text-container
+		+flex(column, wrap, flex-start, flex-start)
+	&__block2-headline
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.6rem
+		color: #333
+		text-align: left
+	&__block2-view-link
+		text-decoration: none
+		font-weight: 400
+		font-size: 1.3rem
+		color: $pink
+		text-transform: capitalize
+	&__block2-paragraph
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.3rem
+		color: $grey
+		line-height: 1.82rem
 	&__block3-text-container
+		width: 60%
+		background: $pink
+		border-radius: 1rem
+		+flex(row, wrap, flex-start, flex-start)
 	&__block3-headline
+		margin: 0rem
+		font-weight: 400
+		font-size: 3.6rem
+		color: #fff
+		text-transform: capitalize
+		text-align: left
 	&__block3-paragraph
-	&__contact-us-link
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.8rem
+		color: #fff
+		text-align: left
+	&__contact-us-today-link
+		text-decoration: none
+		background: #fff
+		color: $pink
+		font-weight: 400
+		font-size: 2.6rem
+		text-transform: uppercase
+		border-radius: 1rem
 
 .section3
+	background: #EBEBEB
+	position: relative
+	&::before
+		content: ''
+		+size(100%, .5rem)
+		background: #D2D2D2
+		position: absolute
+		top: 0rem
+		left: 0rem
 	&__wrapper
+		+flex(row, wrap, space-between, flex-start)
+		+wrapper(96rem, auto)
 	&__block
 	&__block1
+		width: 45.5rem
 	&__block2
+		width: 19rem
 	&__block3
+		width: 22.5rem
 	&__headline
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.6rem
+		color: #333
+		text-transform: capitalize
+		text-align: left
 	&__paragraph
-	&__item
-	&__item1
-	&__item2
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.2rem
+		color: $grey
+		text-align: left
+	&__block-item
+		width: 100%
+		+flex(row, wrap, flex-start, flex-start)
+	&__block-item1
+	&__block-item2
 	&__item-img
+		border: .4rem solid transparent
+		box-shadow: 0rem 0rem .1rem .1rem #D2D2D2
+	&__item-text-container
+		width: calc(100% - 10.3rem)
 	&__item-headline
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.6rem
+		color: $pink
+		text-align: left
 	&__item-paragraph
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.2rem
+		color: $grey
+		line-height: 2.16rem
+		text-align: left
 	&__company-name
 	&__street-name
 	&__town
@@ -340,25 +500,103 @@ body
 	&__tel
 	&__fax
 	&__email
-	&__office-hours
 		span
+			color: $pink
+	&__office-hours
+		font-weight: 900
+		span
+			font-weight: 400
+	&__form
+		width: 100%
+		+flex(column, wrap, flex-start, flex-start)
 	&__input
+		outline: none
+		resize: none
+		border: .1rem solid transparent
+		width: 100%
+		border-radius: .4rem
+		font-weight: 400
+		font-size: 1.3rem
+		color: $grey
+		padding: 1rem 1rem
 	&__name-input
 	&__email-input
 	&__message-input
 	&__submit-button
+		outline: none
+		border: none
+		cursor: pointer
+		font-weight: 400
+		font-size: 1.3rem
+		color: #fff
+		text-transform: uppercase
+		background: $pink
+		border-radius: .4rem
+		padding: 1rem 2rem
 
 .copy
+	background: #EBEBEB
+	position: relative
+	&::before
+		content: ''
+		+size(100%, .1rem)
+		background: #fff
+		position: absolute
+		top: 0rem
+		left: 0rem
+	&::after
+		content: ''
+		+size(100%, .1rem)
+		background: #BCBCBC
+		position: absolute
+		top: -0.1rem
+		left: 0rem
 	&__wrapper
+		+flex(row, wrap, space-between, flex-start)
 	&__paragraph
+		width: 50%
+		margin: 0rem
+		font-weight: 400
+		font-size: 1.2rem
+		color: $grey
+		text-align: left
 	&__by-link
+		text-decoration: none
+		font-weight: 400
+		font-size: 1.2rem
+		color: $grey
+		transition: .2s
+		&:hover
+			color: darken($grey, 10%)
 
 .modal
 	&__overlay
+		+size(100%, 100%)
+		background: rgba($space-grey, .9)
+		position: fixed
+		top: 0rem
+		left: 0rem
+		display: none
 	&__window
+		+size(31rem, 10rem)
+		background: #000
+		position: fixed
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		+flex(row, wrap, center, center)
+		transition: .2s
+		opacity: 0
+		z-index: -5
 	&__error-container
 	&__success-container
 	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-weight: 400
+		font-size: 2rem
+		color: #fff
+		text-align: center
 
 *
 	// @include outline($blue)
