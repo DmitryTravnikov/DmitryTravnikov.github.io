@@ -160,6 +160,21 @@ $(document).ready(function() {
 		itemsMobile: [479,1]
 	});
 
+	var headerToggleButton = document.querySelector('.header__toggle-button');
+	var headerWrapperContainer1 = document.querySelector('.header__wrapper-container1');
+	var headerWrapperContainer2 = document.querySelector('.header__wrapper-container2');
+
+	headerToggleButton.onclick = function() {
+		this.classList.toggle('active');
+		if (this.classList.contains('active')) {
+			headerWrapperContainer1.style.top = '0';
+			headerWrapperContainer2.style.top = '0';
+		} else {
+			headerWrapperContainer1.style.top = '';
+			headerWrapperContainer2.style.top = '';
+		}
+	}
+
 });//doc.ready end
 
 var cLog = function(n) {

@@ -277,6 +277,8 @@ body {
       opacity: 0; }
     .header__toggle-button:hover {
       background: #a94d6a; }
+    .header__toggle-button.active::after {
+      opacity: 1; }
   .header__logo-container {
     text-decoration: none;
     display: -webkit-box;

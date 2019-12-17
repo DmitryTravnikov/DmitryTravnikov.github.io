@@ -129,6 +129,8 @@ body
 			opacity: 0
 		&:hover
 			background: lighten($pink, 5%)
+		&.active::after
+			opacity: 1
 	&__logo-container
 		text-decoration: none
 		+flex(row, wrap, flex-start, flex-start)
