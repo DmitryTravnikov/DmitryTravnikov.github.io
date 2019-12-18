@@ -203,9 +203,9 @@ html(lang="ru")
 					p.section3__paragraph.section3__street-name Street Name & Number
 					p.section3__paragraph.section3__town Town
 					p.section3__paragraph.section3__postcode Postcode/Zip
-					p.section3__paragraph.section3__tel Tel: xxxxx xxxxxxxxxx
-					p.section3__paragraph.section3__fax Fax: xxxxx xxxxxxxxxx
-					p.section3__paragraph.section3__email Email: #[span contact@mydomain.com]
+					a.prevdef.section3__paragraph.section3__tel(href="#") Tel: xxxxx xxxxxxxxxx
+					a.prevdef.section3__paragraph.section3__fax(href="#") Fax: xxxxx xxxxxxxxxx
+					a.prevdef.section3__paragraph.section3__email(href="#") Email: #[span contact@mydomain.com]
 					p.section3__paragraph.section3__office-hours Office Hours
 						|
 						br
@@ -220,18 +220,18 @@ html(lang="ru")
 						textarea.section3__input.section3__message-input(placeholder="Message")
 						button.prevdef.section3__submit-button Submit
 
-		//- //- Copy
-		//- section.copy
-		//- 	.copy__wrapper.wrapper
-		//- 		p.copy__paragraph Copyright &copy; 2013 - All Rights Reserved - Domain Name
-		//- 		a.prevdef.copy__by-link(href="#") Template by OS Templates
+		//- Copy
+		section.copy
+			.copy__wrapper.wrapper
+				p.copy__paragraph Copyright &copy; 2013 - All Rights Reserved - Domain Name
+				a.prevdef.copy__by-link(href="#") Template by OS Templates
 
-		//- //- Modals
-		//- .modal__overlay
-		//- .modal__error-container.modal__window
-		//- 	p.modal__paragraph Fill all the inputs, please!
-		//- .modal__success-container.modal__window
-		//- 	p.modal__paragraph Check your email out!
+		//- Modals
+		.modal__overlay
+		.modal__error-container.modal__window
+			p.modal__paragraph Fill all the inputs, please!
+		.modal__success-container.modal__window
+			p.modal__paragraph Check your email out!
 
 		// Content End
 		// Scripts
