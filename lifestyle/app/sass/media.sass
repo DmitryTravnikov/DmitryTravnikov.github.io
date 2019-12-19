@@ -5,23 +5,751 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1300px)
 	body
-		background: $media-purple
+
+	.header
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__logo-container
+		&__logo
+			text-align: center//
+			span
+		&__logo-description
+			text-align: center//
+		&__search-n-menu-container
+			+flex(column, wrap, flex-start, center)//
+			margin-top: 1rem//
+			width: 100%//
+		&__search-input
+			width: 21rem//
+			padding:
+			&::placeholder
+		&__menu-container
+		&__menu
+			+flex(row, wrap, flex-start, flex-start)//
+		&__menu-list-item
+			margin-right: 2rem//
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-top: 0rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+
+	.section2
+		&::before
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 90%//
+		&__headline
+			width: 100%//
+			font-size: 2.2rem//
+			text-align: center//
+		&__contact-us-today-link
+			font-size: 2rem//
+			margin-top: 1.7rem//
+			&:hover
+
+	.section3
+		padding-top: 2.1rem//
+		&__wrapper
+			+flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__block
+			width: 26rem//
+			margin: 2rem//
+			+flex(row, wrap, flex-start, flex-start)//
+		&__block1
+		&__block2
+		&__block3
+		&__block-img
+		&__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block-headline
+			&::before
+		&__block-paragraph
+
+	.section4
+		padding-top: 4rem//
+		padding-bottom: 4rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, flex-start)//
+			+wrapper(100%, auto)//
+		&__headline-container
+			+flex(row, wrap, center, flex-start)//
+			&::before
+		&__headline
+		&__blocks-container
+			+flex(row, wrap, center, flex-start)//
+		&__block
+			width: 30rem//
+			+flex(column, wrap, flex-start, center)//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block5
+		&__block6
+		&__block-img
+		&__block-headline
+		&__block-paragraph
+
+	.footer
+		padding-top: 0rem//
+		&__wrapper
+			+flex(row, wrap, center, stretch)//
+			width: 100%//
+		&__block
+			+flex(column, wrap, space-between, flex-start)
+			width: 21rem//
+			margin: 2rem//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-headline
+		&__block-paragraph
+		&__company-name
+		&__street-name
+		&__town
+		&__postcode
+		&__tel
+		&__fax
+		&__email
+		&__list
+			+flex(column, wrap, space-between, flex-start)//
+		&__list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			&:first-child
+			&::before
+		&__list-link
+		&__post-container
+			+flex(column, wrap, flex-start, flex-end)//
+		&__post-title
+		&__post-info
+		&__post-author
+		&__post-time
+		&__post
+		&__read-more-link
+		&__form
+			+flex(column, wrap, flex-start, flex-start)//
+		&__input
+			&::placeholder
+		&__name-input
+		&__email-input
+		&__submit-button
+			&:hover
+
+	.copy
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__paragraph
+			line-height: 2rem//
+			text-align: center//
+		&__by-link
+			margin-top: 1rem//
+			&:hover
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
 	body
-		background: $media-orange
+
+	.header
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__logo-container
+		&__logo
+			text-align: center//
+			span
+		&__logo-description
+			text-align: center//
+		&__search-n-menu-container
+			+flex(column, wrap, flex-start, center)//
+			margin-top: 1rem//
+			width: 100%//
+		&__search-input
+			width: 21rem//
+			padding:
+			&::placeholder
+		&__menu-container
+		&__menu
+			+flex(row, wrap, flex-start, flex-start)//
+		&__menu-list-item
+			margin-right: 2rem//
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-top: 0rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+
+	.section2
+		&::before
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 60%//
+		&__headline
+			width: 100%//
+			font-size: 2.2rem//
+			text-align: center//
+		&__contact-us-today-link
+			font-size: 2rem//
+			margin-top: 1.7rem//
+			&:hover
+
+	.section3
+		padding-top: 2.1rem//
+		&__wrapper
+			+flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__block
+			width: 26rem//
+			margin: 2rem//
+			+flex(row, wrap, flex-start, flex-start)//
+		&__block1
+		&__block2
+		&__block3
+		&__block-img
+		&__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block-headline
+			&::before
+		&__block-paragraph
+
+	.section4
+		padding-top: 4rem//
+		padding-bottom: 4rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, flex-start)//
+			+wrapper(100%, auto)//
+		&__headline-container
+			+flex(row, wrap, center, flex-start)//
+			&::before
+		&__headline
+		&__blocks-container
+			+flex(row, wrap, center, flex-start)//
+		&__block
+			width: 30rem//
+			+flex(column, wrap, flex-start, center)//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block5
+		&__block6
+		&__block-img
+		&__block-headline
+		&__block-paragraph
+
+	.footer
+		padding-top: 0rem//
+		&__wrapper
+			+flex(row, wrap, center, stretch)//
+			width: 100%//
+		&__block
+			+flex(column, wrap, space-between, flex-start)
+			width: 21rem//
+			margin: 2rem//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-headline
+		&__block-paragraph
+		&__company-name
+		&__street-name
+		&__town
+		&__postcode
+		&__tel
+		&__fax
+		&__email
+		&__list
+			+flex(column, wrap, space-between, flex-start)//
+		&__list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			&:first-child
+			&::before
+		&__list-link
+		&__post-container
+			+flex(column, wrap, flex-start, flex-end)//
+		&__post-title
+		&__post-info
+		&__post-author
+		&__post-time
+		&__post
+		&__read-more-link
+		&__form
+			+flex(column, wrap, flex-start, flex-start)//
+		&__input
+			&::placeholder
+		&__name-input
+		&__email-input
+		&__submit-button
+			&:hover
+
+	.copy
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__paragraph
+			line-height: 2rem//
+			text-align: center//
+		&__by-link
+			margin-top: 1rem//
+			&:hover
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
 	body
-		background: $media-pink
+
+	.header
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__logo-container
+		&__logo
+			text-align: center//
+			span
+		&__logo-description
+			text-align: center//
+		&__search-n-menu-container
+			+flex(column, wrap, flex-start, center)//
+			margin-top: 1rem//
+			width: 22rem//
+		&__search-input
+			width: 100%//
+			padding:
+			&::placeholder
+		&__menu-container
+		&__menu
+			+flex(column, wrap, flex-start, center)//
+		&__menu-list-item
+			margin-right: 0rem//
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-top: 1rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+
+	.section2
+		&::before
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 60%//
+		&__headline
+			width: 100%//
+			font-size: 2.2rem//
+			text-align: center//
+		&__contact-us-today-link
+			font-size: 2rem//
+			margin-top: 1.7rem//
+			&:hover
+
+	.section3
+		padding-top: 2.1rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 70%//
+		&__block
+			width: 80%//
+			margin: 2rem//
+			+flex(row, wrap, flex-start, flex-start)//
+		&__block1
+		&__block2
+		&__block3
+		&__block-img
+		&__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block-headline
+			&::before
+		&__block-paragraph
+
+	.section4
+		padding-top: 4rem//
+		padding-bottom: 4rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, flex-start)//
+			+wrapper(100%, auto)//
+		&__headline-container
+			+flex(row, wrap, center, flex-start)//
+			&::before
+		&__headline
+		&__blocks-container
+			+flex(row, wrap, center, flex-start)//
+		&__block
+			width: 30rem//
+			+flex(column, wrap, flex-start, center)//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block5
+		&__block6
+		&__block-img
+		&__block-headline
+		&__block-paragraph
+
+	.footer
+		padding-top: 0rem//
+		&__wrapper
+			+flex(row, wrap, center, stretch)//
+			width: 100%//
+		&__block
+			+flex(column, wrap, space-between, flex-start)
+			width: 21rem//
+			margin: 2rem//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-headline
+		&__block-paragraph
+		&__company-name
+		&__street-name
+		&__town
+		&__postcode
+		&__tel
+		&__fax
+		&__email
+		&__list
+			+flex(column, wrap, space-between, flex-start)//
+		&__list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			&:first-child
+			&::before
+		&__list-link
+		&__post-container
+			+flex(column, wrap, flex-start, flex-end)//
+		&__post-title
+		&__post-info
+		&__post-author
+		&__post-time
+		&__post
+		&__read-more-link
+		&__form
+			+flex(column, wrap, flex-start, flex-start)//
+		&__input
+			&::placeholder
+		&__name-input
+		&__email-input
+		&__submit-button
+			&:hover
+
+	.copy
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__paragraph
+			line-height: 2rem//
+			text-align: center//
+		&__by-link
+			margin-top: 1rem//
+			&:hover
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px)
 	body
-		background: $media-blue
+
+	.header
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__logo-container
+		&__logo
+			text-align: center//
+			span
+		&__logo-description
+			text-align: center//
+		&__search-n-menu-container
+			+flex(column, wrap, flex-start, center)//
+			margin-top: 1rem//
+			width: 22rem//
+		&__search-input
+			width: 100%//
+			padding:
+			&::placeholder
+		&__menu-container
+		&__menu
+			+flex(column, wrap, flex-start, center)//
+		&__menu-list-item
+			margin-right: 0rem//
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-top: 1rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+
+	.section2
+		&::before
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 80%//
+		&__headline
+			width: 100%//
+			font-size: 2.2rem//
+			text-align: center//
+		&__contact-us-today-link
+			font-size: 2rem//
+			margin-top: 1.7rem//
+			&:hover
+
+	.section3
+		padding-top: 2.1rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__block
+			width: 80%//
+			margin: 2rem//
+			+flex(row, wrap, flex-start, flex-start)//
+		&__block1
+		&__block2
+		&__block3
+		&__block-img
+		&__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block-headline
+			&::before
+		&__block-paragraph
+
+	.section4
+		padding-top: 4rem//
+		padding-bottom: 4rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, flex-start)//
+			+wrapper(100%, auto)//
+		&__headline-container
+			+flex(row, wrap, center, flex-start)//
+			&::before
+		&__headline
+		&__blocks-container
+			+flex(row, wrap, center, flex-start)//
+		&__block
+			width: 30rem//
+			+flex(column, wrap, flex-start, center)//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block5
+		&__block6
+		&__block-img
+		&__block-headline
+		&__block-paragraph
+
+	.footer
+		padding-top: 0rem//
+		&__wrapper
+			+flex(column, wrap, stretch, center)//
+			width: 100%//
+		&__block
+			+flex(column, wrap, space-between, flex-start)
+			width: 21rem//
+			margin: 2rem//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-headline
+		&__block-paragraph
+		&__company-name
+		&__street-name
+		&__town
+		&__postcode
+		&__tel
+		&__fax
+		&__email
+		&__list
+			+flex(column, wrap, space-between, flex-start)//
+		&__list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			&:first-child
+			&::before
+		&__list-link
+		&__post-container
+			+flex(column, wrap, flex-start, flex-end)//
+		&__post-title
+		&__post-info
+		&__post-author
+		&__post-time
+		&__post
+		&__read-more-link
+		&__form
+			+flex(column, wrap, flex-start, flex-start)//
+		&__input
+			&::placeholder
+		&__name-input
+		&__email-input
+		&__submit-button
+			&:hover
+
+	.copy
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__paragraph
+			line-height: 2rem//
+			text-align: center//
+		&__by-link
+			margin-top: 1rem//
+			&:hover
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px)
 	body
-		background: $media-green
+
+	.header
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__logo-container
+		&__logo
+			text-align: center//
+			span
+		&__logo-description
+			text-align: center//
+		&__search-n-menu-container
+			+flex(column, wrap, flex-start, center)//
+			margin-top: 1rem//
+			width: 100%//
+		&__search-input
+			width: 60%//
+			padding:
+			&::placeholder
+		&__menu-container
+		&__menu
+			+flex(column, wrap, flex-start, center)//
+		&__menu-list-item
+			margin-right: 0rem//
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-top: 1rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+
+	.section2
+		&::before
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 90%//
+		&__headline
+			width: 100%//
+			font-size: 2.2rem//
+			text-align: center//
+		&__contact-us-today-link
+			font-size: 2rem//
+			margin-top: 1.7rem//
+			&:hover
+
+	.section3
+		padding-top: 2.1rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__block
+			width: 80%//
+			margin: 2rem//
+			+flex(row, wrap, flex-start, flex-start)//
+		&__block1
+		&__block2
+		&__block3
+		&__block-img
+		&__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block-headline
+			&::before
+		&__block-paragraph
+
+	.section4
+		padding-top: 4rem//
+		padding-bottom: 4rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, flex-start)//
+			+wrapper(100%, auto)//
+		&__headline-container
+			+flex(row, wrap, center, flex-start)//
+			&::before
+		&__headline
+		&__blocks-container
+			+flex(row, wrap, center, flex-start)//
+		&__block
+			width: 80%//
+			+flex(column, wrap, flex-start, center)//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block5
+		&__block6
+		&__block-img
+		&__block-headline
+		&__block-paragraph
+
+	.footer
+		padding-top: 0rem//
+		&__wrapper
+			+flex(column, wrap, stretch, center)//
+			width: 100%//
+		&__block
+			+flex(column, wrap, space-between, flex-start)
+			width: 80%//
+			margin-top: 3rem//
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-headline
+		&__block-paragraph
+		&__company-name
+		&__street-name
+		&__town
+		&__postcode
+		&__tel
+		&__fax
+		&__email
+		&__list
+			+flex(column, wrap, space-between, flex-start)//
+		&__list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			&:first-child
+			&::before
+		&__list-link
+		&__post-container
+			+flex(column, wrap, flex-start, flex-end)//
+		&__post-title
+		&__post-info
+		&__post-author
+		&__post-time
+		&__post
+		&__read-more-link
+		&__form
+			+flex(column, wrap, flex-start, flex-start)//
+		&__input
+			&::placeholder
+		&__name-input
+		&__email-input
+		&__submit-button
+			&:hover
+
+	.copy
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__paragraph
+			line-height: 2rem//
+			text-align: center//
+		&__by-link
+			margin-top: 1rem//
+			&:hover
+
+	.modal
+		&__overlay
+		&__window
+			+size(100%, 10rem)//
+		&__error-container
+		&__success-container
+		&__paragraph
 // /* Mobile First Method */
 // /* Custom, iPhone Retina */
 // @media only screen and (min-width: 320px)

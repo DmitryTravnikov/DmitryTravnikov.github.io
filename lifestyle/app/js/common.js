@@ -146,7 +146,59 @@ $(document).ready(function() {
 	}// prevdef();
 	prevdef();
 
-	
+	var modalOverlay = document.querySelector('.modal__overlay');
+	var modalWindows = document.querySelectorAll('.modal__window');
+	var modalErrorContainer = document.querySelector('.modal__error-container');
+	var modalSuccessContainer = document.querySelector('.modal__success-container');
+	var footerNameInput = document.querySelector('.footer__name-input');
+	var footerEmailInput = document.querySelector('.footer__email-input');
+	var footerSubmitButton = document.querySelector('.footer__submit-button');
+	var validationArr = [footerNameInput, footerEmailInput];
+
+	footerSubmitButton.addEventListener('click', validationCheck);
+	modalOverlay.addEventListener('click', modalsHide);
+	for (var i = 0; i < modalWindows.length; i++) {
+		modalWindows[i].addEventListener('click', modalsHide);
+	}
+
+	function validationCheck() {
+		for (var i = 0; i < validationArr.length; i++) {
+			if (!validationArr[i].value) {
+				validationArr[i].style.borderColor = '#1F232C';
+				modalErrorShow();
+			} else {
+				validationArr[i].style.borderColor = '';
+			}
+		}
+
+		if (footerNameInput.value && footerEmailInput.value) {
+			modalSuccessShow();
+		}
+	}
+
+	function modalsHide() {
+		modalOverlay.style.display = '';
+		modalErrorContainer.style.opacity = '';
+		modalErrorContainer.style.zIndex = '';
+		modalSuccessContainer.style.opacity = '';
+		modalSuccessContainer.style.zIndex = '';
+	}
+
+	function modalErrorShow() {
+		modalOverlay.style.display = 'block';
+		modalErrorContainer.style.opacity = '1';
+		modalErrorContainer.style.zIndex = '999';
+	}
+
+	function modalSuccessShow() {
+		modalOverlay.style.display = 'block';
+		modalSuccessContainer.style.opacity = '1';
+		modalSuccessContainer.style.zIndex = '999';
+
+		for (var i = 0; i < validationArr.length; i++) {
+			validationArr[i].value = '';
+		}
+	}
 
 });//doc.ready end
 
