@@ -1,0 +1,222 @@
+doctype html
+// [if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]
+// [if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]
+// [if IE 8]><html lang="ru" class="lt-ie9"><![endif]
+// [if gt IE 8]><!
+html(lang="ru")
+	// <![endif]
+	head
+		title CloudBudget
+		meta(charset="UTF-8")
+		meta(name="description" content="")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		// OwlCarousel
+		link(rel="stylesheet", href="libs/owl-carousel/owl.carousel.css")
+		link(rel="stylesheet", href="libs/owl-carousel/owl.theme.css")
+		link(rel="stylesheet", href="libs/owl-carousel/owl.transitions.css")
+		// Bootstrap
+		link(rel="stylesheet", href="libs/bootstrap/bootstrap-grid-4.3.1.min.css")
+		// General
+		link(rel="shortcut icon" href="assets/!js.png" type="image/x-icon")
+		link(rel="stylesheet", href="css/normalize.css")
+		link(rel="stylesheet", href="css/fonts.css")
+		link(rel="stylesheet", href="css/keyframes.css")
+		link(rel="stylesheet" href="css/main.css")
+		link(rel="stylesheet", href="css/media.css")
+		link(href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet")
+	body
+		// Content Start
+
+		//- Header
+		header.header
+			.header__wrapper.wrapper
+				a.prevdef.header__logo-container(href="#")
+					img(src="assets/header__cloud-icon.png", alt="pic").header__logo-icon
+					h3.header__logo-text CloudBudget
+				nav.header__menu-container
+					ul.header__menu
+						li.header__menu-list-item
+							a.predef.header__menu-link(href="#") Overview
+						li.header__menu-list-item
+							a.predef.header__menu-link(href="#") Features
+						li.header__menu-list-item
+							a.predef.header__menu-link(href="#") Technology
+						li.header__menu-list-item
+							a.predef.header__menu-link(href="#") Contact
+						li.header__menu-list-item
+							a.predef.header__menu-link(href="#") Sign Up
+				.header__select-container
+					select.header__lang-select-real(name="lang")
+						option.header__select-option-real(value="en") En
+						option.header__select-option-real(value="ru") Ru
+					output.header__lang-select-fake En
+					output.header__lang-select-option-fake En
+					output.header__lang-select-option-fake Ru
+				button.header__login-button Login
+
+		//- Main Section
+		section.main
+			.main__text-container
+				h1.main__headline CloudBudget
+				p.main__paragraph Cloud budget management for everyone. Only €69.95 a Month After a 7 Day Trial of Up to €4.99
+				button.main__sign-up-button Sign Up
+
+		//- Video Section
+		section.video-section
+			.video-section__wrapper.wrapper
+				.video-section__block.video-section__block1
+					h3.video-section__headline Easy to Use Cloud Budget Management Software
+					p.video-section__paragraph Our software is made so you can access and manage your budget and expenses online at any time from any device. It provides detailed income and expense reports with graphs so you can easilly see your spending patterns and budget at a glance. Read below to find out more.
+					a.prevdef.video-section__learn-more(href="#") Learn More
+				.video-section__block.video-section__block2
+					.video-section__video-container
+						iframe.video-section(src="", frameborder="0")
+					button.video-section__play-button
+
+		//- Features
+		section.features
+			h3.features__headline Features
+			.features__wrapper.wrapper
+				.features__block.features__block1
+					img.features__block-img(src="assets/features__pic1.jpg", alt="pic")
+					.features__block-text-container
+						h3.features__block-headline Supports All Currencies and Cards
+						p.features__block-paragraph We support all popular currencies and is fully customizable to add
+						a.prevdef.features__read-more(href="#") Read More
+				.features__block.features__block2
+					img.features__block-img(src="assets/features__pic2.jpg", alt="pic")
+					.features__block-text-container
+						h3.features__block-headline Manage your expenses on the go
+						p.features__block-paragraph You can access your account from anywhere in the world on any device
+						a.prevdef.features__read-more(href="#") Read More
+				.features__block.features__block3
+					img.features__block-img(src="assets/features__pic3.jpg", alt="pic")
+					.features__block-text-container
+						h3.features__block-headline Cloud Budget Management Software
+						p.features__block-paragraph Our software is made so you can access and manage your budget
+						a.prevdef.features__read-more(href="#") Read More
+
+		//- Technology
+		section.technology
+			.technology__wrapper.wrapper
+				.technology__block.technology__block1
+					p.technology__block-icon.technology__block-icon1 01
+					h3.technology__block-headline Cloud Storage
+					p.technology__block-paragraph Access your account from anywhere in the world on any device
+				.technology__block.technology__block2
+				.technology__block.technology__block1
+					p.technology__block-icon.technology__block-icon2 02
+					h3.technology__block-headline Secure
+					p.technology__block-paragraph All your information is stored on secure cloud servers
+				.technology__block.technology__block3
+				.technology__block.technology__block1
+					p.technology__block-icon.technology__block-icon3 03
+					h3.technology__block-headline PDF Download
+					p.technology__block-paragraph Download any of your reports in PDF format
+				.technology__block.technology__block4
+				.technology__block.technology__block1
+					p.technology__block-icon.technology__block-icon4 04
+					h3.technology__block-headline CSV Download
+					p.technology__block-paragraph All your information is stored on secure cloud servers
+
+		//- Saving money
+		section.saving-money
+			.saving-money__wrapper.wrapper
+				.saving-money__block.saving-money__block1
+					h3.saving-money__headline Stay focused on saving money
+					p.saving-money__paragraph It is important to stay focused on saving money in any way you can. We help you monitor your spending habits so you can easily spot and cut any unnecessary expenses. Simply join today to get started!
+					.saving-money__platforms-container
+						img.saving-money__platform.saving-money__platform1(src="assets/saving-money__icon1.png", alt="pic")
+						img.saving-money__platform.saving-money__platform2(src="assets/saving-money__icon2.png", alt="pic")
+						img.saving-money__platform.saving-money__platform3(src="assets/saving-money__icon3.png", alt="pic")
+				.saving-money__block.saving-money__block2
+					.saving-money__carousel
+						img.saving-money__slide.saving-money__slide1(src="http://placekitten.com/445/311", alt="pic")
+						img.saving-money__slide.saving-money__slide2(src="http://placekitten.com/445/311", alt="pic")
+						img.saving-money__slide.saving-money__slide3(src="http://placekitten.com/445/311", alt="pic")
+
+		//- Contact
+		section.contact
+			.contact__wrapper.wrapper
+				.contact__block.contact__block1
+					h3.contact__block-headline Contact
+					p.contact__block-paragraph Questions or concerns? Just fill out the form below and our support team will get back to you within 24 hours
+				.contact__block.contact__block2
+					form.contact__form(action="" method="POST")
+						.contact__form-row.contact__form-row1
+							input.contact__input.contact__first-name-input(type="text" placeholder="First Name")
+							input.contact__input.contact__last-name-input(type="text" placeholder="Last Name")
+						.contact__form-row.contact__form-row2
+							input.contact__input.contact__phone-number-input(type="text" placeholder="Phone Number")
+							select.contact__select-real
+								option.contact__select-option-real(value="service1") Service 1
+								option.contact__select-option-real(value="service2") Service 2
+								option.contact__select-option-real(value="service3") Service 3
+							.contact__select-fake-container
+								output.contact__select-fake Select Service
+								output.contact__select-option-fake Service 1
+								output.contact__select-option-fake Service 2
+								output.contact__select-option-fake Service 3
+							button.prevdef.contact__submit-button Submit Now
+
+		//- Footer
+		footer.footer
+			.footer__wrapper.wrapper
+				.footer__block.footer__block1
+					h3.footer__block-headline Address
+					p.footer__block-paragraph.footer__address Pipang Ltd, Griva Digeni, 
+						|
+						br
+						| 81-83 Jacovides Tower, 1st Floor 
+						br
+						| 1090 Picosia USA
+				.footer__block.footer__block2
+					h3.footer__block-headline Services
+					ul.footer__list
+						li.footer__list-item
+							a.prevdef.footer__list-link(href="#") Overview
+						li.footer__list-item
+							a.prevdef.footer__list-link(href="#") Features
+						li.footer__list-item
+							a.prevdef.footer__list-link(href="#") Technology
+						li.footer__list-item
+							a.prevdef.footer__list-link(href="#") Terms & Conditions
+						li.footer__list-item
+							a.prevdef.footer__list-link(href="#") Privacy
+				.footer__block.footer__block3
+					h3.footer__block-headline Get in Touch
+					a.prevdef.footer__email-link(href="#") info@cloudbudget.com
+					a.prevdef.footer__tel-link(href="#") +1 844-721-7120
+					.footer__socials-container
+						a.prevdef.footer__social-link.footer__facebook(href="#")
+						a.prevdef.footer__social-link.footer__linkedin(href="#")
+						a.prevdef.footer__social-link.footer__twitter(href="#")
+				.footer__block.footer__block4
+					h3.footer__block-headline We Support
+					a.prevdef.footer__cards-container(href="#")
+						img.footer__cards(src="assets/footer__credit-cards.png", alt="pic")
+
+		//- Copy
+		section.copy
+			.copy__wrapper.wrapper
+				a.prevdef.copy__link Copyright 2018 CloudBudget
+
+		// Content End
+		// Scripts
+		// General
+		script(src="libs/jquery/jquery-3.3.1.min.js")
+		script(src="js/common.js")
+		// Masked Input
+		script(src="libs/masked-input/jquery.maskedinput.min.js")
+		// PageScroll2id
+		script(src="libs/pagescroll2id/jquery.malihu.PageScroll2id.min.js")
+		// OwlCarousel
+		script(src="libs/owl-carousel/owl.carousel.min.js")
+		//  
+				[if lt IE 9]>
+				<script src="libs/html5shiv/es5-shim.min.js"></script>
+				<script src="libs/html5shiv/html5shiv.min.js"></script>
+				<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+				<script src="libs/respond/respond.min.js"></script>
+				<![endif]
