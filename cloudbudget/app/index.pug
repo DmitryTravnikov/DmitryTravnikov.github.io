@@ -24,7 +24,7 @@ html(lang="ru")
 		link(rel="stylesheet", href="css/keyframes.css")
 		link(rel="stylesheet" href="css/main.css")
 		link(rel="stylesheet", href="css/media.css")
-		link(href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet")
 	body
 		// Content Start
 
@@ -37,22 +37,27 @@ html(lang="ru")
 				nav.header__menu-container
 					ul.header__menu
 						li.header__menu-list-item
-							a.predef.header__menu-link(href="#") Overview
+							a.prevdef.header__menu-link(href="#") Overview
 						li.header__menu-list-item
-							a.predef.header__menu-link(href="#") Features
+							a.prevdef.header__menu-link(href="#") Features
 						li.header__menu-list-item
-							a.predef.header__menu-link(href="#") Technology
+							a.prevdef.header__menu-link(href="#") Technology
 						li.header__menu-list-item
-							a.predef.header__menu-link(href="#") Contact
+							a.prevdef.header__menu-link(href="#") Contact
 						li.header__menu-list-item
-							a.predef.header__menu-link(href="#") Sign Up
-				.header__select-container
-					select.header__lang-select-real(name="lang")
-						option.header__select-option-real(value="en") En
-						option.header__select-option-real(value="ru") Ru
-					output.header__lang-select-fake En
-					output.header__lang-select-option-fake En
-					output.header__lang-select-option-fake Ru
+							a.prevdef.header__menu-link(href="#") Sign Up
+				.header__select-block
+					.header__lang-pic-container
+						.header__lang-pic.header__lang-pic1.active
+						.header__lang-pic.header__lang-pic2
+					.header__select-container
+						select.header__lang-select-real(name="lang")
+							option.header__select-option-real(value="en") En
+							option.header__select-option-real(value="ru") Ru
+						output.header__lang-select-fake En
+						.header__fake-options-container
+							output.header__lang-select-option-fake En
+							output.header__lang-select-option-fake Ru
 				button.header__login-button Login
 
 		//- Main Section
@@ -71,7 +76,8 @@ html(lang="ru")
 					a.prevdef.video-section__learn-more(href="#") Learn More
 				.video-section__block.video-section__block2
 					.video-section__video-container
-						iframe.video-section(src="", frameborder="0")
+						.video-section__video-overlay
+						iframe.video-section__video(width="901" height="380" src="https://www.youtube.com/embed/WbJjkd4HXLg?autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer;showinfo=0&controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 					button.video-section__play-button
 
 		//- Features
@@ -99,23 +105,21 @@ html(lang="ru")
 
 		//- Technology
 		section.technology
+			h3.technology__headline Technology
 			.technology__wrapper.wrapper
 				.technology__block.technology__block1
 					p.technology__block-icon.technology__block-icon1 01
 					h3.technology__block-headline Cloud Storage
 					p.technology__block-paragraph Access your account from anywhere in the world on any device
 				.technology__block.technology__block2
-				.technology__block.technology__block1
 					p.technology__block-icon.technology__block-icon2 02
 					h3.technology__block-headline Secure
 					p.technology__block-paragraph All your information is stored on secure cloud servers
 				.technology__block.technology__block3
-				.technology__block.technology__block1
 					p.technology__block-icon.technology__block-icon3 03
 					h3.technology__block-headline PDF Download
 					p.technology__block-paragraph Download any of your reports in PDF format
 				.technology__block.technology__block4
-				.technology__block.technology__block1
 					p.technology__block-icon.technology__block-icon4 04
 					h3.technology__block-headline CSV Download
 					p.technology__block-paragraph All your information is stored on secure cloud servers
@@ -132,9 +136,9 @@ html(lang="ru")
 						img.saving-money__platform.saving-money__platform3(src="assets/saving-money__icon3.png", alt="pic")
 				.saving-money__block.saving-money__block2
 					.saving-money__carousel
-						img.saving-money__slide.saving-money__slide1(src="http://placekitten.com/445/311", alt="pic")
-						img.saving-money__slide.saving-money__slide2(src="http://placekitten.com/445/311", alt="pic")
-						img.saving-money__slide.saving-money__slide3(src="http://placekitten.com/445/311", alt="pic")
+						img.saving-money__slide.saving-money__slide1.left(src="http://placekitten.com/445/318", alt="pic")
+						img.saving-money__slide.saving-money__slide2.center(src="http://placekitten.com/445/311", alt="pic")
+						img.saving-money__slide.saving-money__slide3.right(src="http://placekitten.com/445/321", alt="pic")
 
 		//- Contact
 		section.contact
@@ -201,6 +205,13 @@ html(lang="ru")
 		section.copy
 			.copy__wrapper.wrapper
 				a.prevdef.copy__link Copyright 2018 CloudBudget
+
+		//- Modals
+		.modal__overlay
+		.modal__error-container.modal__window
+			p.modal__paragraph Fill all the inputs, please!
+		.modal__success-container.modal__window
+			p.modal__paragraph We will contact you soon!
 
 		// Content End
 		// Scripts

@@ -146,6 +146,55 @@ $(document).ready(function() {
 	}// prevdef();
 	prevdef();
 
+	var headerLangPics = document.querySelectorAll('.header__lang-pic');
+	var headerSelectOptionsReal = document.querySelectorAll('.header__select-option-real');
+	var headerLangSelectFake = document.querySelector('.header__lang-select-fake');
+	var headerFakeOptionsContainer = document.querySelector('.header__fake-options-container');
+	var headerLangSelectOptionsFake = document.querySelectorAll('.header__lang-select-option-fake');
+
+	headerLangSelectFake.onclick = function() {
+		this.classList.toggle('active');
+		if (this.classList.contains('active')) {
+			headerFakeOptionsContainer.style.opacity = '1';
+			headerFakeOptionsContainer.style.zIndex = '999';
+		} else {
+			headerFakeOptionsContainer.style.opacity = '';
+			headerFakeOptionsContainer.style.zIndex = '';
+		}
+	}
+
+	for (var i = 0; i < headerLangSelectOptionsFake.length; i++) {
+		headerLangSelectOptionsFake[i].onclick = function() {
+			for (var i = 0; i < headerLangSelectOptionsFake.length; i++) {
+				headerLangSelectOptionsFake[i].classList.remove('active');
+				headerLangPics[i].classList.remove('active');
+			}
+			this.classList.add('active');
+			headerLangSelectFake.innerHTML = this.innerHTML;
+			for (var i = 0; i < headerLangSelectOptionsFake.length; i++) {
+				if (headerLangSelectOptionsFake[i].classList.contains('active')) {
+					headerSelectOptionsReal[i].selected = true;
+					headerLangPics[i].classList.add('active');
+				}
+			}
+			headerLangSelectFake.classList.remove('active');
+			headerFakeOptionsContainer.style.opacity = '';
+			headerFakeOptionsContainer.style.zIndex = '';
+		}
+	}
+
+	var videoSectionPlayButton = document.querySelector('.video-section__play-button');
+	var videoSectionVideoOverlay = document.querySelector('.video-section__video-overlay');
+	var videoSectionVideo = document.querySelector('.video-section__video');
+
+	videoSectionPlayButton.onclick = function() {
+		videoSectionVideoOverlay.style.opacity = '0';
+		videoSectionVideoOverlay.style.zIndex = '-1';
+		videoSectionVideo.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+		this.style.opacity = '0';
+		this.style.zIndex = '-1';
+	}
+
 });//doc.ready end
 
 var cLog = function(n) {

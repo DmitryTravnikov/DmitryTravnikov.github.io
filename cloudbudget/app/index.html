@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/keyframes.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Content Start-->
@@ -33,21 +33,29 @@
           <h3 class="header__logo-text">CloudBudget</h3></a>
         <nav class="header__menu-container">
           <ul class="header__menu">
-            <li class="header__menu-list-item"><a class="predef header__menu-link" href="#">Overview</a></li>
-            <li class="header__menu-list-item"><a class="predef header__menu-link" href="#">Features</a></li>
-            <li class="header__menu-list-item"><a class="predef header__menu-link" href="#">Technology</a></li>
-            <li class="header__menu-list-item"><a class="predef header__menu-link" href="#">Contact</a></li>
-            <li class="header__menu-list-item"><a class="predef header__menu-link" href="#">Sign Up</a></li>
+            <li class="header__menu-list-item"><a class="prevdef header__menu-link" href="#">Overview</a></li>
+            <li class="header__menu-list-item"><a class="prevdef header__menu-link" href="#">Features</a></li>
+            <li class="header__menu-list-item"><a class="prevdef header__menu-link" href="#">Technology</a></li>
+            <li class="header__menu-list-item"><a class="prevdef header__menu-link" href="#">Contact</a></li>
+            <li class="header__menu-list-item"><a class="prevdef header__menu-link" href="#">Sign Up</a></li>
           </ul>
         </nav>
-        <div class="header__select-container">
-          <select class="header__lang-select-real" name="lang">
-            <option class="header__select-option-real" value="en">En</option>
-            <option class="header__select-option-real" value="ru">Ru</option>
-          </select>
-          <output class="header__lang-select-fake">En</output>
-          <output class="header__lang-select-option-fake">En</output>
-          <output class="header__lang-select-option-fake">Ru</output>
+        <div class="header__select-block">
+          <div class="header__lang-pic-container">
+            <div class="header__lang-pic header__lang-pic1 active"></div>
+            <div class="header__lang-pic header__lang-pic2"></div>
+          </div>
+          <div class="header__select-container">
+            <select class="header__lang-select-real" name="lang">
+              <option class="header__select-option-real" value="en">En</option>
+              <option class="header__select-option-real" value="ru">Ru</option>
+            </select>
+            <output class="header__lang-select-fake">En</output>
+            <div class="header__fake-options-container">
+              <output class="header__lang-select-option-fake">En</output>
+              <output class="header__lang-select-option-fake">Ru</output>
+            </div>
+          </div>
         </div>
         <button class="header__login-button">Login</button>
       </div>
@@ -67,7 +75,8 @@
         </div>
         <div class="video-section__block video-section__block2">
           <div class="video-section__video-container">
-            <iframe class="video-section" src="" frameborder="0"></iframe>
+            <div class="video-section__video-overlay"></div>
+            <iframe class="video-section__video" width="901" height="380" src="https://www.youtube.com/embed/WbJjkd4HXLg?autoplay=0&amp;amp;enablejsapi=1&amp;amp;playerapiid=ytplayer;showinfo=0&amp;controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <button class="video-section__play-button"></button>
         </div>
@@ -97,26 +106,24 @@
       </div>
     </section>
     <section class="technology">
+      <h3 class="technology__headline">Technology</h3>
       <div class="technology__wrapper wrapper">
         <div class="technology__block technology__block1">
           <p class="technology__block-icon technology__block-icon1">01</p>
           <h3 class="technology__block-headline">Cloud Storage</h3>
           <p class="technology__block-paragraph">Access your account from anywhere in the world on any device</p>
         </div>
-        <div class="technology__block technology__block2"></div>
-        <div class="technology__block technology__block1">
+        <div class="technology__block technology__block2">
           <p class="technology__block-icon technology__block-icon2">02</p>
           <h3 class="technology__block-headline">Secure</h3>
           <p class="technology__block-paragraph">All your information is stored on secure cloud servers</p>
         </div>
-        <div class="technology__block technology__block3"></div>
-        <div class="technology__block technology__block1">
+        <div class="technology__block technology__block3">
           <p class="technology__block-icon technology__block-icon3">03</p>
           <h3 class="technology__block-headline">PDF Download</h3>
           <p class="technology__block-paragraph">Download any of your reports in PDF format</p>
         </div>
-        <div class="technology__block technology__block4"></div>
-        <div class="technology__block technology__block1">
+        <div class="technology__block technology__block4">
           <p class="technology__block-icon technology__block-icon4">04</p>
           <h3 class="technology__block-headline">CSV Download</h3>
           <p class="technology__block-paragraph">All your information is stored on secure cloud servers</p>
@@ -131,7 +138,7 @@
           <div class="saving-money__platforms-container"><img class="saving-money__platform saving-money__platform1" src="assets/saving-money__icon1.png" alt="pic"><img class="saving-money__platform saving-money__platform2" src="assets/saving-money__icon2.png" alt="pic"><img class="saving-money__platform saving-money__platform3" src="assets/saving-money__icon3.png" alt="pic"></div>
         </div>
         <div class="saving-money__block saving-money__block2">
-          <div class="saving-money__carousel"><img class="saving-money__slide saving-money__slide1" src="http://placekitten.com/445/311" alt="pic"><img class="saving-money__slide saving-money__slide2" src="http://placekitten.com/445/311" alt="pic"><img class="saving-money__slide saving-money__slide3" src="http://placekitten.com/445/311" alt="pic"></div>
+          <div class="saving-money__carousel"><img class="saving-money__slide saving-money__slide1 left" src="http://placekitten.com/445/318" alt="pic"><img class="saving-money__slide saving-money__slide2 center" src="http://placekitten.com/445/311" alt="pic"><img class="saving-money__slide saving-money__slide3 right" src="http://placekitten.com/445/321" alt="pic"></div>
         </div>
       </div>
     </section>
@@ -195,6 +202,13 @@
     <section class="copy">
       <div class="copy__wrapper wrapper"><a class="prevdef copy__link">Copyright 2018 CloudBudget</a></div>
     </section>
+    <div class="modal__overlay"></div>
+    <div class="modal__error-container modal__window">
+      <p class="modal__paragraph">Fill all the inputs, please!</p>
+    </div>
+    <div class="modal__success-container modal__window">
+      <p class="modal__paragraph">We will contact you soon!</p>
+    </div>
     <!-- Content End-->
     <!-- Scripts-->
     <!-- General-->
