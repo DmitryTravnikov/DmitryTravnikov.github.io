@@ -34,7 +34,8 @@
   body {
     background: #59363B; }
   .section {
-    padding-top: .2rem; }
+    padding-top: .2rem;
+    height: 95vh; }
     .section__headline {
       font-size: 1.2rem; }
       .section__headline span {
@@ -49,7 +50,8 @@
   body {
     background: #2B4146; }
   .section {
-    padding-top: .2rem; }
+    padding-top: .2rem;
+    height: 95vh; }
     .section__headline {
       font-size: 1.2rem; }
       .section__headline span {
