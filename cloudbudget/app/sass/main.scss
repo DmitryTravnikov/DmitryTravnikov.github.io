@@ -8,6 +8,7 @@
 body {
 	cursor: default;
 	font-family: $lt;
+	user-select: none;
 }
 
 .wrapper {
@@ -21,6 +22,7 @@ body {
 	position: absolute;
 	top: 0rem;
 	left: 0rem;
+	z-index: 2;
 	&__wrapper{
 		@include flex(row, wrap, flex-start, flex-start);
 	}
@@ -54,6 +56,20 @@ body {
 		margin: 0rem;
 		@include flex(row, wrap, flex-start, flex-start);
 		margin-right: 2rem;
+		position: relative;
+		&::before{
+			content: '';
+			@include size(100%, .2rem);
+			background: #fff;
+			position: absolute;
+			bottom: -0.2rem;
+			left: 0rem;
+			transition: .2s;
+			opacity: 0;
+		}
+		&:hover::before{
+			opacity: 1;
+		}
 		&:last-child{
 			margin-right: 0rem;
 		}
@@ -171,13 +187,26 @@ body {
 }
 
 .main{
-	height: 78.2rem;
-	background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url('../assets/main__bg.jpg') no-repeat center;
+	@include size(100%, 100vh);
+	background: url('../assets/main__bg.jpg') no-repeat center;
 	background-size: cover;
-	@include flex(row, wrap, center, flex-start);
+	background-attachment: fixed;
+	@include flex(row, wrap, center, center);
+	overflow: hidden;
+	&__overlay{
+		@include size(100%, 100%);
+		position: absolute;
+		top: 0rem;
+		left: 0rem;
+		background: linear-gradient(90deg, rgba(#CD1F44, 0.8) 0%, rgba(#E53B1A, 0.8) 100%);
+		z-index: 1;
+	}
 	&__text-container{
-		margin-top: 26rem;
 		@include flex(column, wrap, flex-start, center);
+		position: relative;
+		top: 0rem;
+		left: 0rem;
+		z-index: 2;
 	}
 	&__headline{
 		width: 100%;
@@ -222,6 +251,7 @@ body {
 .video-section{
 	padding-top: 9.5rem;
 	padding-bottom: 9.5rem;
+	overflow: hidden;
 	&__wrapper{
 		@include flex(row, wrap, flex-start, flex-start);
 	}
@@ -231,6 +261,11 @@ body {
 	&__block1{
 		@include flex(column, wrap, flex-start, flex-start);
 		padding-top: 4.5rem;
+		position: relative;
+		top: 0rem;
+		left: -100%;
+		opacity: 0;
+		transition: 0.6s;
 	}
 	&__block2{
 		position: relative;
@@ -238,6 +273,11 @@ body {
 		border-radius: 1.5rem;
 		border-radius: 1.5rem;
 		margin-left: 1.5rem;
+		position: relative;
+		top: 0rem;
+		right: -100%;
+		opacity: 0;
+		transition: 0.6s;
 	}
 	&__headline{
 		width: 100%;
@@ -274,7 +314,7 @@ body {
 		height: 0;
 	}
 	&__video-overlay{
-		@include size(100%, 100%);
+		@include size(101%, 100%);
 		position: absolute;
 		top: 0rem;
 		left: 0rem;
@@ -286,11 +326,11 @@ body {
 	&__video{
 		border: none;
 		position: absolute;
-		width: 100%;
+		width: 101%;
 		height: 100%;
 		top: 0rem;
 		left: 0rem;
-		background: #000;
+		background: #fff;
 		border-radius: 1.5rem;
 	}
 	&__play-button{
@@ -304,7 +344,7 @@ body {
 		position: absolute;
 		top: 50%;
 		left: -3.2rem;
-		transition: 2s;
+		transition: 1s;
 		transform: translateY(-50%);
 		z-index: 10;
 	}
@@ -314,6 +354,7 @@ body {
 	background: #FAFAFA;
 	padding-top: 6.4rem;
 	padding-bottom: 22.8rem;
+	overflow: hidden;
 	&__headline{
 		width: 100%;
 		margin: 0rem;
@@ -321,6 +362,11 @@ body {
 		font-weight: 600;
 		color: #000;
 		text-align: center;
+		position: relative;
+		top: -15rem;
+		left: 0rem;
+		opacity: 0;
+		transition: .3s;
 	}
 	&__wrapper{
 		@include flex(row, wrap, space-between, flex-start);
@@ -329,10 +375,19 @@ body {
 	&__block{
 		@include flex(column, wrap, flex-start, center);
 		position: relative;
+		bottom: -52rem;
+		left: 0rem;
+		opacity: 0;
 	}
-	&__block1{}
-	&__block2{}
-	&__block3{}
+	&__block1{
+		transition: 0.9s;
+	}
+	&__block2{
+		transition: 0.6s;
+	}
+	&__block3{
+		transition: 0.3s;
+	}
 	&__block-img{
 		border-radius: .8rem;
 	}
@@ -384,6 +439,7 @@ body {
 .technology{
 	padding-top: 6.4rem;
 	padding-bottom: 13rem;
+	overflow: hidden;
 	&__headline{
 		width: 100%;
 		margin: 0rem;
@@ -393,6 +449,11 @@ body {
 		line-height: 4.3rem;
 		text-align: center;
 		color: #000000;
+		position: relative;
+		top: -15rem;
+		left: 0rem;
+		opacity: 0;
+		transition: .3s;
 	}
 	&__wrapper{
 		@include flex(row, wrap, space-between, flex-start);
@@ -401,11 +462,23 @@ body {
 	&__block{
 		@include flex(column, wrap, flex-start, center);
 		width: 25.5rem;
+		position: relative;
+		bottom: -52rem;
+		left: 0rem;
+		opacity: 0;
 	}
-	&__block1{}
-	&__block2{}
-	&__block3{}
-	&__block4{}
+	&__block1{
+		transition: 0.3s;
+	}
+	&__block2{
+		transition: 0.6s;
+	}
+	&__block3{
+		transition: 0.9s;
+	}
+	&__block4{
+		transition: 1.2s;
+	}
 	&__block-icon{
 		width: 100%;
 		margin: 0rem;
@@ -471,9 +544,12 @@ body {
 }
 
 .saving-money{
-	background: $pink;
+	background: linear-gradient(90deg, rgba(213, 32, 71, 0.6) 0%, rgba(238, 61, 27, 0.6) 100%), url('../assets/saving-money__bg.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
 	padding-top: 9.4rem;
 	padding-bottom: 9.6rem;
+	overflow: hidden;
 	&__wrapper{
 		@include flex(row, wrap, flex-start, stretch);
 	}
@@ -482,9 +558,17 @@ body {
 	}
 	&__block1{
 		padding-top: 3rem;
+		position: relative;
+		top: 0rem;
+		left: -100%;
+		transition: 0.6s;
 	}
 	&__block2{
 		padding-left: 1.6rem;
+		position: relative;
+		top: 0rem;
+		right: -100%;
+		transition: 0.6s;
 	}
 	&__headline{
 		width: 100%;
@@ -511,13 +595,19 @@ body {
 	}
 	&__platforms-container{
 		margin-top: 4.6rem;
+		@include flex(row, wrap, flex-start, center);
 	}
-	&__platform{
-		margin-right: 2.2rem;
+	&__platform-container{
+		margin-right: 1.9rem;
+		text-decoration: none;
+		cursor: pointer;
+		@include size(3.3rem, 3.2rem);
+		@include flex(row, wrap, center, center);
 		&:last-child{
 			margin-right: 0rem;
 		}
 	}
+	&__platform{}
 	&__platform1{}
 	&__platform2{}
 	&__platform3{}
@@ -529,12 +619,16 @@ body {
 		border-radius: 1.5rem;
 		position: absolute;
 		top: 0rem;
-		transition: opacity .3s;
+		transition: all 0.2s;
+		-ms-transition: opacity 0.2s;
 		&.center{
 			left: 50%;
 			transform: translateX(-50%);
 			opacity: 1;
 			z-index: 3;
+			height: 31.1rem;
+			transition: all 0.5s;
+			-ms-transition: opacity 0.5s;
 		}
 		&.left{
 			left: -4.5rem;
@@ -542,7 +636,8 @@ body {
 			top: 50%;
 			transform: translateY(-50%);
 			width: 86%;
-			opacity: .7;
+			height: 26.7rem;
+			opacity: 0.5;
 		}
 		&.right{
 			left: 10.6rem;
@@ -550,7 +645,8 @@ body {
 			top: 50%;
 			transform: translateY(-50%);
 			width: 86%;
-			opacity: .7;
+			height: 26.7rem;
+			opacity: 0.5;
 		}
 	}
 	&__slide1{}
@@ -559,63 +655,358 @@ body {
 }
 
 .contact{
-	&__wrapper{}
-	&__block{}
-	&__block1{}
-	&__block2{}
-	&__block-headline{}
-	&__block-paragraph{}
-	&__form{}
+	padding-top: 11.6rem;
+	padding-bottom: 11.6rem;
+	overflow: hidden;
+	&__wrapper{
+		@include flex(row, wrap, flex-start, flex-start);
+	}
+	&__block{
+		width: 50%;
+	}
+	&__block1{
+		padding-left: 1rem;
+		position: relative;
+		top: 0rem;
+		left: -100%;
+		opacity: 0;
+		transition: .6s;
+	}
+	&__block2{
+		padding-left: 1.5rem;
+		position: relative;
+		top: 0rem;
+		right: -100%;
+		opacity: 0;
+		transition: .6s;
+	}
+	&__block-headline{
+		width: 100%;
+		margin: 0rem;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 3.6rem;
+		line-height: 4.3rem;
+		color: #000;
+	}
+	&__block-paragraph{
+		width: 100%;
+		margin: 0rem;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.4rem;
+		line-height: 140%;
+		color: #000000;
+		margin-top: 5.3rem;
+		padding-right: 12rem;
+	}
+	&__form{
+		width: 100%;
+	}
 	&__form-row{}
-	&__form-row1{}
-	&__form-row2{}
-	&__input{}
-	&__first-name-input{}
-	&__last-name-input{}
-	&__phone-number-input{}
-	&__select-real{}
+	&__form-row1{
+		@include flex(row, wrap, flex-start, flex-start);
+	}
+	&__form-row2{
+		@include flex(column, wrap, flex-start, flex-start);
+		margin-top: 2.3rem;
+	}
+	&__input{
+		outline: none;
+		border: .1rem solid #333333;
+		border-radius: .6rem;
+		padding: 2rem 3.1rem;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.6rem;
+		line-height: 1.9rem;
+		color: rgba(19, 39, 67, 0.5);
+		&::placeholder{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 1.6rem;
+			line-height: 1.9rem;
+			color: rgba(19, 39, 67, 0.5);
+		}
+	}
+	&__first-name-input{
+		width: 25.5rem;
+		margin-right: 3rem;
+	}
+	&__last-name-input{
+		width: 25.5rem;
+	}
+	&__phone-number-input{
+		width: 54rem;
+	}
+	&__select-real{
+		display: none;
+	}
 	&__select-option-real{}
-	&__select-fake-container{}
-	&__select-fake{}
-	&__select-option-fake{}
-	&__submit-button{}
+	&__select-fake-container{
+		@include flex(column, wrap, flex-start, flex-start);
+		margin-top: 2.3rem;
+		position: relative;
+	}
+	&__select-options-fake-container{
+		@include flex(column, wrap, flex-start, flex-start);
+		background: #fff;
+		transition: 0.1s;
+		position: absolute;
+		top: 100%;
+		left: 0rem;
+		opacity: 0;
+		z-index: -1;
+	}
+	&__select-fake{
+		width: 54rem;
+		border: .1rem solid #333333;
+		border-radius: .6rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		padding-left: 3.1rem;
+		padding-right: 6rem;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.6rem;
+		line-height: 1.9rem;
+		background: #fff;
+		color: rgba(19, 39, 67, 0.5);
+		cursor: pointer;
+		position: relative;
+		&::before{
+			content: '';
+			@include size(1.4rem, .8rem);
+			background: url('../assets/contact__select-bg.png') no-repeat center;
+			position: absolute;
+			top: 50%;
+			right: 2.8rem;
+			transform: translateY(-50%);
+		}
+		&.active::before{
+			transform: rotate(180deg);
+		}
+	}
+	&__select-option-fake{
+		width: 54rem;
+		border: .1rem solid #333333;
+		border-radius: .6rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		padding-left: 3.1rem;
+		padding-right: 6rem;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.6rem;
+		line-height: 1.9rem;
+		color: rgba(19, 39, 67, 0.5);
+		margin-top: .1rem;
+		cursor: pointer;
+		transition: .2s;
+		&.active{
+			background: $pink;
+			color: #fff;
+		}
+	}
+	&__submit-button{
+		outline: none;
+		border: none;
+		cursor: pointer;
+		background: $pink;
+		border-radius: .6rem;
+		padding: 1.6rem 3.5rem;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.4rem;
+		line-height: 1.7rem;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		margin-top: 2.6rem;
+		transition: .2s;
+		&:hover{
+			background: darken($pink, 3%);
+		}
+	}
 }
 
 .footer{
-	&__wrapper{}
-	&__block{}
-	&__block1{}
-	&__block2{}
-	&__block3{}
-	&__block4{}
-	&__block-headline{}
-	&__block-paragraph{}
-	&__address{}
-	&__list{}
-	&__list-item{}
-	&__list-link{}
-	&__email-link{}
-	&__tel-link{}
-	&__socials-container{}
-	&__social-link{}
+	padding-top: 9.3rem;
+	padding-bottom: 9.3rem;
+	overflow: hidden;
+	&__wrapper{
+		@include flex(row, wrap, space-between, flex-start);
+	}
+	&__block{
+		width: calc(100% / 4.4);
+		@include flex(column, wrap, flex-start, flex-start);
+		position: relative;
+		top: -24rem;
+		left: 0rem;
+		opacity: 0;
+	}
+	&__block1{
+		transition: .3s;
+	}
+	&__block2{
+		transition: 0.6s;
+	}
+	&__block3{
+		transition: 0.9s;
+	}
+	&__block4{
+		transition: 1.2s;
+	}
+	&__block-headline{
+		width: 100%;
+		margin: 0rem;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 1.8rem;
+		line-height: 2.2rem;
+		text-align: left;
+		color: #101010;
+	}
+	&__block-paragraph{
+		width: 100%;
+		margin: 0rem;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.2rem;
+		line-height: 150%;
+		color: #101010;
+	}
+	&__address{
+		margin-top: 3.4rem;
+	}
+	&__list{
+		padding: 0rem;
+		margin: 0rem;
+		list-style: none;
+		margin-top: 2.6rem;
+	}
+	&__list-item{
+		padding: 0rem;
+		margin: 0rem;
+	}
+	&__list-link{
+		text-decoration: none;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.2rem;
+		line-height: 160%;
+		color: #000000;
+	}
+	&__email-link{
+		text-decoration: none;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.2rem;
+		line-height: 1.4rem;
+		color: #101010;
+		margin-top: 3.4rem;
+	}
+	&__tel-link{
+		text-decoration: none;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.2rem;
+		line-height: 1.4rem;
+		color: #101010;
+		margin-top: 1.1rem;
+	}
+	&__socials-container{
+		@include flex(row, wrap, center, center);
+		margin-top: 2rem;
+	}
+	&__social-link{
+		text-decoration: none;
+		@include flex(row, wrap, center, center);
+		margin-right: 1.2rem;
+		&:last-child{
+			margin-right: 0rem;
+		}
+		svg{
+			@include size(1.3rem, 1.3rem);
+			path{
+				fill: #000;
+			}
+		}
+	}
 	&__facebook{}
 	&__linkedin{}
 	&__twitter{}
-	&__cards-container{}
+	&__cards-container{
+		margin-top: 3.4rem;
+		padding-left: 0.6rem;
+	}
 	&__cards{}
 }
 
 .copy{
-	&__wrapper{}
-	&__link{}
+	padding-top: 1rem;
+	padding-bottom: 11.4rem;
+	&__wrapper{
+		@include flex(row, wrap, flex-start, flex-start);
+		overflow: hidden;
+	}
+	&__link{
+		text-decoration: none;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.2rem;
+		line-height: 1.4rem;
+		color: #101010;
+		position: relative;
+		top: 0rem;
+		left: -100%;
+		opacity: 0;
+		transition: .6s;
+	}
+}
+
+.to-top-link{
+	@include size(5rem, 5rem);
+	background: url('../assets/header__select-triangle-icon.png') no-repeat center, $orange;
+	transform: rotate(180deg);
+	position: fixed;
+	bottom: 0rem;
+	right: 0rem;
+	opacity: 0;
+	z-index: -1;
 }
 
 .modal{
-	&__overlay{}
-	&__window{}
+	&__overlay{
+		@include size(100%, 100%);
+		background: rgba($space-grey, .9);
+		position: fixed;
+		top: 0rem;
+		left: 0rem;
+		z-index: 999;
+		display: none;
+	}
+	&__window{
+		@include size(31rem, 10rem);
+		background: #000;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		@include flex(row, wrap, center, center);
+		transition: .2s;
+		opacity: 0;
+		z-index: -1;
+	}
 	&__error-container{}
 	&__success-container{}
-	&__paragraph{}
+	&__paragraph{
+		width: 100%;
+		margin: 0rem;
+		font-weight: 400;
+		color: #fff;
+		font-size: 2.2rem;
+		text-align: center;
+	}
 }
 
 // * {

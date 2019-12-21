@@ -37,13 +37,13 @@ html(lang="ru")
 				nav.header__menu-container
 					ul.header__menu
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") Overview
+							a.prevdef.header__menu-link(href="#overview") Overview
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") Features
+							a.prevdef.header__menu-link(href="#features") Features
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") Technology
+							a.prevdef.header__menu-link(href="#technology") Technology
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") Contact
+							a.prevdef.header__menu-link(href="#contact") Contact
 						li.header__menu-list-item
 							a.prevdef.header__menu-link(href="#") Sign Up
 				.header__select-block
@@ -61,14 +61,15 @@ html(lang="ru")
 				button.header__login-button Login
 
 		//- Main Section
-		section.main
+		section.main#home
+			.main__overlay
 			.main__text-container
 				h1.main__headline CloudBudget
 				p.main__paragraph Cloud budget management for everyone. Only €69.95 a Month After a 7 Day Trial of Up to €4.99
 				button.main__sign-up-button Sign Up
 
 		//- Video Section
-		section.video-section
+		section.video-section#overview
 			.video-section__wrapper.wrapper
 				.video-section__block.video-section__block1
 					h3.video-section__headline Easy to Use Cloud Budget Management Software
@@ -77,11 +78,11 @@ html(lang="ru")
 				.video-section__block.video-section__block2
 					.video-section__video-container
 						.video-section__video-overlay
-						iframe.video-section__video(width="901" height="380" src="https://www.youtube.com/embed/WbJjkd4HXLg?autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer;showinfo=0&controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+						iframe.video-section__video(width="901" height="380" src="https://www.youtube.com/embed/Fd3dxjLEfq8?autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer;showinfo=0&controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 					button.video-section__play-button
 
 		//- Features
-		section.features
+		section.features#features
 			h3.features__headline Features
 			.features__wrapper.wrapper
 				.features__block.features__block1
@@ -104,7 +105,7 @@ html(lang="ru")
 						a.prevdef.features__read-more(href="#") Read More
 
 		//- Technology
-		section.technology
+		section.technology#technology
 			h3.technology__headline Technology
 			.technology__wrapper.wrapper
 				.technology__block.technology__block1
@@ -131,17 +132,20 @@ html(lang="ru")
 					h3.saving-money__headline Stay focused on saving money
 					p.saving-money__paragraph It is important to stay focused on saving money in any way you can. We help you monitor your spending habits so you can easily spot and cut any unnecessary expenses. Simply join today to get started!
 					.saving-money__platforms-container
-						img.saving-money__platform.saving-money__platform1(src="assets/saving-money__icon1.png", alt="pic")
-						img.saving-money__platform.saving-money__platform2(src="assets/saving-money__icon2.png", alt="pic")
-						img.saving-money__platform.saving-money__platform3(src="assets/saving-money__icon3.png", alt="pic")
+						a.prevdef.saving-money__platform-container(href="#")
+							img.saving-money__platform.saving-money__platform1(src="assets/saving-money__icon1.png", alt="pic")
+						a.prevdef.saving-money__platform-container(href="#")
+							img.saving-money__platform.saving-money__platform2(src="assets/saving-money__icon2.png", alt="pic")
+						a.prevdef.saving-money__platform-container(href="#")
+							img.saving-money__platform.saving-money__platform3(src="assets/saving-money__icon3.png", alt="pic")
 				.saving-money__block.saving-money__block2
 					.saving-money__carousel
-						img.saving-money__slide.saving-money__slide1.left(src="http://placekitten.com/445/318", alt="pic")
-						img.saving-money__slide.saving-money__slide2.center(src="http://placekitten.com/445/311", alt="pic")
-						img.saving-money__slide.saving-money__slide3.right(src="http://placekitten.com/445/321", alt="pic")
+						img.saving-money__slide.saving-money__slide1.left(src="assets/saving-money__pic1.jpg", alt="pic")
+						img.saving-money__slide.saving-money__slide2.center(src="assets/saving-money__pic2.jpg", alt="pic")
+						img.saving-money__slide.saving-money__slide3.right(src="assets/saving-money__pic3.jpg", alt="pic")
 
 		//- Contact
-		section.contact
+		section.contact#contact
 			.contact__wrapper.wrapper
 				.contact__block.contact__block1
 					h3.contact__block-headline Contact
@@ -159,9 +163,10 @@ html(lang="ru")
 								option.contact__select-option-real(value="service3") Service 3
 							.contact__select-fake-container
 								output.contact__select-fake Select Service
-								output.contact__select-option-fake Service 1
-								output.contact__select-option-fake Service 2
-								output.contact__select-option-fake Service 3
+								.contact__select-options-fake-container
+									output.contact__select-option-fake Service 1
+									output.contact__select-option-fake Service 2
+									output.contact__select-option-fake Service 3
 							button.prevdef.contact__submit-button Submit Now
 
 		//- Footer
@@ -179,11 +184,11 @@ html(lang="ru")
 					h3.footer__block-headline Services
 					ul.footer__list
 						li.footer__list-item
-							a.prevdef.footer__list-link(href="#") Overview
+							a.prevdef.footer__list-link(href="#overview") Overview
 						li.footer__list-item
-							a.prevdef.footer__list-link(href="#") Features
+							a.prevdef.footer__list-link(href="#features") Features
 						li.footer__list-item
-							a.prevdef.footer__list-link(href="#") Technology
+							a.prevdef.footer__list-link(href="#technology") Technology
 						li.footer__list-item
 							a.prevdef.footer__list-link(href="#") Terms & Conditions
 						li.footer__list-item
@@ -194,8 +199,14 @@ html(lang="ru")
 					a.prevdef.footer__tel-link(href="#") +1 844-721-7120
 					.footer__socials-container
 						a.prevdef.footer__social-link.footer__facebook(href="#")
+							svg(aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-facebook-f fa-w-10 fa-2x")
+								path(fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" class="" data-darkreader-inline-fill="" style="--darkreader-inline-fill:currentColor;")
 						a.prevdef.footer__social-link.footer__linkedin(href="#")
+							svg(aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-linkedin-in fa-w-14 fa-3x")
+								path(fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" class="" data-darkreader-inline-fill="" style="--darkreader-inline-fill:currentColor;")
 						a.prevdef.footer__social-link.footer__twitter(href="#")
+							svg(aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-twitter fa-w-16 fa-3x")
+								path(fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" class="" data-darkreader-inline-fill="" style="--darkreader-inline-fill:currentColor;")
 				.footer__block.footer__block4
 					h3.footer__block-headline We Support
 					a.prevdef.footer__cards-container(href="#")
@@ -204,7 +215,10 @@ html(lang="ru")
 		//- Copy
 		section.copy
 			.copy__wrapper.wrapper
-				a.prevdef.copy__link Copyright 2018 CloudBudget
+				a.prevdef.copy__link(href="#") Copyright 2018 CloudBudget
+
+		//- To Top Link
+		a.prevdef.to-top-link(href="#home")
 
 		//- Modals
 		.modal__overlay
