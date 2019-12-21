@@ -2,24 +2,74 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1300px) {
   body {
-    background: #2D1D34; } }
+    background: #2D1D34; }
+  .section {
+    padding-top: .2rem; }
+    .section__headline {
+      font-size: 1.2rem; }
+      .section__headline span {
+        font-size: 1rem; }
+    .section__paragraph {
+      font-size: 1.2rem; }
+    .section__block1-img {
+      margin-top: 1rem; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   body {
-    background: #85552B; } }
+    background: #85552B; }
+  .section {
+    padding-top: .2rem; }
+    .section__headline {
+      font-size: 1.2rem; }
+      .section__headline span {
+        font-size: 1rem; }
+    .section__paragraph {
+      font-size: 1.2rem; }
+    .section__block1-img {
+      margin-top: 1rem; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   body {
-    background: #59363B; } }
+    background: #59363B; }
+  .section {
+    padding-top: .2rem; }
+    .section__headline {
+      font-size: 1.2rem; }
+      .section__headline span {
+        font-size: 1rem; }
+    .section__paragraph {
+      font-size: 1.2rem; }
+    .section__block1-img {
+      margin-top: 1rem; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   body {
-    background: #2B4146; } }
+    background: #2B4146; }
+  .section {
+    padding-top: .2rem; }
+    .section__headline {
+      font-size: 1.2rem; }
+      .section__headline span {
+        font-size: 1rem; }
+    .section__paragraph {
+      font-size: 1.2rem; }
+    .section__block1-img {
+      margin-top: 1rem; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   body {
-    background: #254823; } }
+    background: #254823; }
+  .section {
+    padding-top: .2rem; }
+    .section__headline {
+      font-size: 1.2rem; }
+      .section__headline span {
+        font-size: 1rem; }
+    .section__paragraph {
+      font-size: 1.2rem; }
+    .section__block1-img {
+      margin-top: 1rem; } }

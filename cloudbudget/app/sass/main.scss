@@ -17,6 +17,32 @@ body {
 
 // 1rem === 10px
 
+.preloader{
+	position: fixed;
+	left: 0;
+	top: 0;
+	@include size(100%, 100%);
+	background: darken($space-grey, 5%);
+	z-index: 999;
+	transition: all 1s;
+	opacity: 1;
+	.loader{
+		@include size(7.5rem, 7.5rem);
+		border: 1rem solid white;
+		border-radius: 50%;
+		border-top-color: #C02B6A;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		animation: spin 1s infinite linear;
+	}
+	&.done{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
 .header{
 	width: 100%;
 	position: absolute;
