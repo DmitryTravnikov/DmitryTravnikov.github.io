@@ -215,7 +215,7 @@ body {
 .main{
 	@include size(100%, 100vh);
 	background: url('../assets/main__bg.jpg') no-repeat;
-	background-size: 110%;
+	background-size: 120%;
 	background-attachment: fixed;
 	@include flex(row, wrap, center, center);
 	overflow: hidden;
