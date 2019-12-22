@@ -92,6 +92,32 @@
 				}
 			}
 		}
+		.main{
+			@include size(100%, auto);//
+			background: linear-gradient(90deg, rgba(#CD1F44, 0.8) 0%, rgba(#E53B1A, 0.8) 100%), url('../assets/main__bg.jpg') no-repeat;//
+			background-size: cover;//
+			background-attachment: fixed;
+			@include flex(row, wrap, center, center);//
+			overflow: visible;//
+			padding-bottom: 3rem;//
+			&__overlay{
+				display: none;//
+			}
+			&__text-container{
+				@include flex(column, wrap, flex-start, center);//
+				margin-top: 12rem;//
+			}
+			&__headline{
+				font-size: 3.2rem;//
+			}
+			&__paragraph{
+				font-size: 1.6rem;//
+			}
+			&__sign-up-button{
+				&:hover{
+				}
+			}
+		}
 	}
 }
 /* Medium Devices, Desktops */
@@ -180,6 +206,32 @@
 			&__login-button{
 				margin-left: 0rem;//
 				margin-top: 0rem;//
+				&:hover{
+				}
+			}
+		}
+		.main{
+			@include size(100%, auto);//
+			background: linear-gradient(90deg, rgba(#CD1F44, 0.8) 0%, rgba(#E53B1A, 0.8) 100%), url('../assets/main__bg.jpg') no-repeat;//
+			background-size: cover;//
+			background-attachment: fixed;
+			@include flex(row, wrap, center, center);//
+			overflow: visible;//
+			padding-bottom: 3rem;//
+			&__overlay{
+				display: none;//
+			}
+			&__text-container{
+				@include flex(column, wrap, flex-start, center);//
+				margin-top: 17rem;//
+			}
+			&__headline{
+				font-size: 3.2rem;//
+			}
+			&__paragraph{
+				font-size: 1.6rem;//
+			}
+			&__sign-up-button{
 				&:hover{
 				}
 			}
@@ -276,6 +328,32 @@
 				}
 			}
 		}
+		.main{
+			@include size(100%, auto);//
+			background: linear-gradient(90deg, rgba(#CD1F44, 0.8) 0%, rgba(#E53B1A, 0.8) 100%), url('../assets/main__bg.jpg') no-repeat;//
+			background-size: cover;//
+			background-attachment: fixed;
+			@include flex(row, wrap, center, center);//
+			overflow: visible;//
+			padding-bottom: 3rem;//
+			&__overlay{
+				display: none;//
+			}
+			&__text-container{
+				@include flex(column, wrap, flex-start, center);//
+				margin-top: 24rem;//
+			}
+			&__headline{
+				font-size: 3.2rem;//
+			}
+			&__paragraph{
+				font-size: 1.6rem;//
+			}
+			&__sign-up-button{
+				&:hover{
+				}
+			}
+		}
 	}
 }
 /* Extra Small Devices, Phones */
@@ -368,6 +446,32 @@
 				}
 			}
 		}
+		.main{
+			@include size(100%, auto);//
+			background: linear-gradient(90deg, rgba(#CD1F44, 0.8) 0%, rgba(#E53B1A, 0.8) 100%), url('../assets/main__bg.jpg') no-repeat;//
+			background-size: cover;//
+			background-attachment: fixed;
+			@include flex(row, wrap, center, center);//
+			overflow: visible;//
+			padding-bottom: 3rem;//
+			&__overlay{
+				display: none;//
+			}
+			&__text-container{
+				@include flex(column, wrap, flex-start, center);//
+				margin-top: 35rem;//
+			}
+			&__headline{
+				font-size: 3.2rem;//
+			}
+			&__paragraph{
+				font-size: 1.6rem;//
+			}
+			&__sign-up-button{
+				&:hover{
+				}
+			}
+		}
 	}
 }
 /* Custom, iPhone Retina */
@@ -456,6 +560,32 @@
 			&__login-button{
 				margin-left: 0rem;//
 				margin-top: 3rem;//
+				&:hover{
+				}
+			}
+		}
+		.main{
+			@include size(100%, auto);//
+			background: linear-gradient(90deg, rgba(#CD1F44, 0.8) 0%, rgba(#E53B1A, 0.8) 100%), url('../assets/main__bg.jpg') no-repeat;//
+			background-size: cover;//
+			background-attachment: fixed;
+			@include flex(row, wrap, center, center);//
+			overflow: visible;//
+			padding-bottom: 3rem;//
+			&__overlay{
+				display: none;//
+			}
+			&__text-container{
+				@include flex(column, wrap, flex-start, center);//
+				margin-top: 35rem;//
+			}
+			&__headline{
+				font-size: 3.2rem;//
+			}
+			&__paragraph{
+				font-size: 1.6rem;//
+			}
+			&__sign-up-button{
 				&:hover{
 				}
 			}
