@@ -252,6 +252,59 @@
 			&__block-paragraph{
 			}
 		}
+		.saving-money{
+			padding-top: 2.4rem;//
+			padding-bottom: 2.6rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, stretch);//
+				width: 100%;//
+			}
+			&__block{
+				width: 44.5rem;//
+				margin: 2rem;//
+			}
+			&__block1{
+				left: 0rem;//
+				opacity: 1;//
+			}
+			&__block2{
+				padding-left: 0rem;//
+				right: 0rem;//
+				opacity: 1;//
+			}
+			&__headline{
+				padding-right: 5rem;//
+			}
+			&__paragraph{
+				padding-right: 4rem;//
+			}
+			&__platforms-container{
+				@include flex(row, wrap, flex-start, center);//
+			}
+			&__platform-container{
+				@include flex(row, wrap, center, center);//
+				&:last-child{
+				}
+			}
+			&__platform{}
+			&__platform1{}
+			&__platform2{}
+			&__platform3{}
+			&__carousel{
+				@include size(44.5rem, 31.1rem);//
+			}
+			&__slide{
+				&.center{
+				}
+				&.left{
+				}
+				&.right{
+				}
+			}
+			&__slide1{}
+			&__slide2{}
+			&__slide3{}
+		}
 	}
 }
 /* Medium Devices, Desktops */
@@ -503,6 +556,59 @@
 			}
 			&__block-paragraph{
 			}
+		}
+		.saving-money{
+			padding-top: 2.4rem;//
+			padding-bottom: 2.6rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, stretch);//
+				width: 100%;//
+			}
+			&__block{
+				width: 44.5rem;//
+				margin: 2rem;//
+			}
+			&__block1{
+				left: 0rem;//
+				opacity: 1;//
+			}
+			&__block2{
+				padding-left: 0rem;//
+				right: 0rem;//
+				opacity: 1;//
+			}
+			&__headline{
+				padding-right: 5rem;//
+			}
+			&__paragraph{
+				padding-right: 4rem;//
+			}
+			&__platforms-container{
+				@include flex(row, wrap, flex-start, center);//
+			}
+			&__platform-container{
+				@include flex(row, wrap, center, center);//
+				&:last-child{
+				}
+			}
+			&__platform{}
+			&__platform1{}
+			&__platform2{}
+			&__platform3{}
+			&__carousel{
+				@include size(44.5rem, 31.1rem);//
+			}
+			&__slide{
+				&.center{
+				}
+				&.left{
+				}
+				&.right{
+				}
+			}
+			&__slide1{}
+			&__slide2{}
+			&__slide3{}
 		}
 	}
 }
@@ -756,6 +862,59 @@
 			&__block-paragraph{
 			}
 		}
+		.saving-money{
+			padding-top: 2.4rem;//
+			padding-bottom: 2.6rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, stretch);//
+				width: 100%;//
+			}
+			&__block{
+				width: 44.5rem;//
+				margin: 2rem;//
+			}
+			&__block1{
+				left: 0rem;//
+				opacity: 1;//
+			}
+			&__block2{
+				padding-left: 0rem;//
+				right: 0rem;//
+				opacity: 1;//
+			}
+			&__headline{
+				padding-right: 5rem;//
+			}
+			&__paragraph{
+				padding-right: 4rem;//
+			}
+			&__platforms-container{
+				@include flex(row, wrap, flex-start, center);//
+			}
+			&__platform-container{
+				@include flex(row, wrap, center, center);//
+				&:last-child{
+				}
+			}
+			&__platform{}
+			&__platform1{}
+			&__platform2{}
+			&__platform3{}
+			&__carousel{
+				@include size(44.5rem, 31.1rem);//
+			}
+			&__slide{
+				&.center{
+				}
+				&.left{
+				}
+				&.right{
+				}
+			}
+			&__slide1{}
+			&__slide2{}
+			&__slide3{}
+		}
 	}
 }
 /* Extra Small Devices, Phones */
@@ -1008,6 +1167,59 @@
 			&__block-paragraph{
 			}
 		}
+		.saving-money{
+			padding-top: 2.4rem;//
+			padding-bottom: 2.6rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, stretch);//
+				width: 100%;//
+			}
+			&__block{
+				width: 100%;//
+				margin: 2rem;//
+			}
+			&__block1{
+				left: 0rem;//
+				opacity: 1;//
+			}
+			&__block2{
+				padding-left: 0rem;//
+				right: 0rem;//
+				opacity: 1;//
+			}
+			&__headline{
+				padding-right: 5rem;//
+			}
+			&__paragraph{
+				padding-right: 4rem;//
+			}
+			&__platforms-container{
+				@include flex(row, wrap, flex-start, center);//
+			}
+			&__platform-container{
+				@include flex(row, wrap, center, center);//
+				&:last-child{
+				}
+			}
+			&__platform{}
+			&__platform1{}
+			&__platform2{}
+			&__platform3{}
+			&__carousel{
+				@include size(100%, 31.1rem);//
+			}
+			&__slide{
+				&.center{
+				}
+				&.left{
+				}
+				&.right{
+				}
+			}
+			&__slide1{}
+			&__slide2{}
+			&__slide3{}
+		}
 	}
 }
 /* Custom, iPhone Retina */
@@ -1259,6 +1471,59 @@
 			}
 			&__block-paragraph{
 			}
+		}
+		.saving-money{
+			padding-top: 2.4rem;//
+			padding-bottom: 2.6rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, stretch);//
+				width: 100%;//
+			}
+			&__block{
+				width: 100%;//
+				margin: 2rem;//
+			}
+			&__block1{
+				left: 0rem;//
+				opacity: 1;//
+			}
+			&__block2{
+				padding-left: 0rem;//
+				right: 0rem;//
+				opacity: 1;//
+			}
+			&__headline{
+				padding-right: 5rem;//
+			}
+			&__paragraph{
+				padding-right: 4rem;//
+			}
+			&__platforms-container{
+				@include flex(row, wrap, flex-start, center);//
+			}
+			&__platform-container{
+				@include flex(row, wrap, center, center);//
+				&:last-child{
+				}
+			}
+			&__platform{}
+			&__platform1{}
+			&__platform2{}
+			&__platform3{}
+			&__carousel{
+				@include size(100%, 31.1rem);//
+			}
+			&__slide{
+				&.center{
+				}
+				&.left{
+				}
+				&.right{
+				}
+			}
+			&__slide1{}
+			&__slide2{}
+			&__slide3{}
 		}
 	}
 }
