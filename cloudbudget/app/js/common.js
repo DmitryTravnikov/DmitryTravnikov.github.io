@@ -287,7 +287,7 @@ $(document).ready(function() {
 
 
 
-	//modals
+	//modals contact us
 	var modalOverlay = document.querySelector('.modal__overlay');
 	var modalWindows = document.querySelectorAll('.modal__window');
 	var modalErrorContainer = document.querySelector('.modal__error-container');
@@ -316,11 +316,12 @@ $(document).ready(function() {
 
 		if (contactSelectFake.innerHTML == 'Select Service') {
 			contactSelectFake.style.borderColor = '#ED4C5C';
+			modalErrorShow();
 		} else {
 			contactSelectFake.style.borderColor = '';
 		}
 
-		if (contactFirstNameInput.value && contactLastNameInput.value && contactPhoneNumberInput.value && contactSelectOptionsFake != 'Selected Service') {
+		if (contactFirstNameInput.value && contactLastNameInput.value && contactPhoneNumberInput.value && contactSelectFake.innerHTML != 'Select Service') {
 			modalSuccessShow();
 		}
 	}
@@ -353,6 +354,50 @@ $(document).ready(function() {
 		modalErrorContainer.style.zIndex = '';
 		modalSuccessContainer.style.opacity = '';
 		modalSuccessContainer.style.zIndex = '';
+		modalSignUpNLogin.style.opacity = '';
+		modalSignUpNLogin.style.zIndex = '';
+	}
+
+	//modals sign up & login
+	var modalSignUpNLogin = document.querySelector('.modal__sign-up-n-login');
+	var modalEmailInput = document.querySelector('.modal__email-input');
+	var modalPasswordInput = document.querySelector('.modal__password-input');
+	var modalSignUpButton = document.querySelector('.modal__sign-up-button');
+	var modalLoginButton = document.querySelector('.modal__login-button');
+	var modalCloseButton = document.querySelector('.modal__close-button');
+	var headerLoginButton = document.querySelector('.header__login-button');
+	var mainSignUpButton = document.querySelector('.main__sign-up-button');
+	var headerMenuSignUp = document.querySelector('.header__menu-sign-up');
+	var validationArr2 = [modalEmailInput, modalPasswordInput];
+
+	headerLoginButton.addEventListener('click', modalSignUpNLoginShow);
+	mainSignUpButton.addEventListener('click', modalSignUpNLoginShow);
+	headerMenuSignUp.addEventListener('click', modalSignUpNLoginShow);
+
+	modalSignUpButton.addEventListener('click', validationCheck2);
+	modalLoginButton.addEventListener('click', validationCheck2);
+	modalCloseButton.addEventListener('click', modalsHide);
+
+	function validationCheck2() {
+		for (var i = 0; i < validationArr2.length; i++) {
+			if (!validationArr2[i].value) {
+				validationArr2[i].style.borderColor = '#ED4C5C';
+			} else {
+				validationArr2[i].style.borderColor = '';
+			}
+		}
+
+		if (modalEmailInput.value && modalPasswordInput.value) {
+			for (var i = 0; i < validationArr2.length; i++) {
+				validationArr2[i].value = '';
+			}
+		}
+	}
+
+	function modalSignUpNLoginShow() {
+		modalOverlay.style.display = 'block';
+		modalSignUpNLogin.style.opacity = '1';
+		modalSignUpNLogin.style.zIndex = '999';
 	}
 
 
@@ -362,7 +407,7 @@ $(document).ready(function() {
 	//smooth scroll
 	$('.header__menu-link, .footer__list-link, .to-top-link').mPageScroll2id({
 		offset: 0,
-		scrollSpeed: 200
+		scrollSpeed: 1000
 	});
 
 
@@ -507,8 +552,12 @@ $(document).ready(function() {
 	}
 
 
-
-	
+	//parallax onmousemove
+	$('.main').mousemove(function(e) {
+		var moveX = (e.pageX * -1 / 10);
+		var moveY = (e.pageY * -1 / 10);
+		$(this).css('background-position', moveX + 'px ' + moveY + 'px ');
+	})
 
 });//doc.ready end
 

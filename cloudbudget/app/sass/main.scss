@@ -214,8 +214,8 @@ body {
 
 .main{
 	@include size(100%, 100vh);
-	background: url('../assets/main__bg.jpg') no-repeat center;
-	background-size: cover;
+	background: url('../assets/main__bg.jpg') no-repeat;
+	background-size: 110%;
 	background-attachment: fixed;
 	@include flex(row, wrap, center, center);
 	overflow: hidden;
@@ -1013,7 +1013,7 @@ body {
 	}
 	&__window{
 		@include size(31rem, 10rem);
-		background: #000;
+		background: #fff;
 		position: fixed;
 		top: 50%;
 		left: 50%;
@@ -1029,9 +1029,115 @@ body {
 		width: 100%;
 		margin: 0rem;
 		font-weight: 400;
-		color: #fff;
+		color: $space-grey;
 		font-size: 2.2rem;
 		text-align: center;
+	}
+	&__sign-up-n-login{
+		padding: 3rem 3rem;
+		@include size(40rem, auto);
+		background: #fff;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 999;
+		transition: .2s;
+		opacity: 0;
+		z-index: -1;
+	}
+	&__form{
+		width: 100%;
+		@include flex(column, wrap, flex-start, center);
+	}
+	&__input{
+		outline: none;
+		border: .1rem solid #333333;
+		border-radius: .6rem;
+		padding: 2rem 3.1rem;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.6rem;
+		line-height: 1.9rem;
+		color: rgba(19, 39, 67, 0.5);
+		width: 100%;
+		margin-top: 1rem;
+		&:first-child{
+			margin-top: 0rem;
+		}
+		&::placeholder{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 1.6rem;
+			line-height: 1.9rem;
+			color: rgba(19, 39, 67, 0.5);
+		}
+	}
+	&__email-input{}
+	&__password-input{}
+	&__sign-up-button{
+		outline: none;
+		border: none;
+		cursor: pointer;
+		background: $pink;
+		border-radius: .6rem;
+		padding: 1.6rem 3.5rem;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.4rem;
+		line-height: 1.7rem;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		margin-top: 1rem;
+		transition: .2s;
+		width: 100%;
+		&:hover{
+			background: darken($pink, 3%);
+		}
+	}
+	&__login-button{
+		outline: none;
+		border: none;
+		cursor: pointer;
+		background: $pink;
+		border-radius: .6rem;
+		padding: 1.6rem 3.5rem;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.4rem;
+		line-height: 1.7rem;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		margin-top: 1rem;
+		transition: .2s;
+		width: 100%;
+		&:hover{
+			background: darken($pink, 3%);
+		}
+	}
+	&__close-button{
+		position: absolute;
+		top: -2.8rem;
+		right: -0.8rem;
+		outline: none;
+		border: none;
+		cursor: pointer;
+		background: none;
+		@include size(3rem, 3rem);
+		&::before, &::after{
+			content: '';
+			@include size(0.4rem, 2rem);
+			background: $pink;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+		}
+		&::before{
+			transform: translate(-50%, -50%) rotate(45deg);
+		}
+		&::after{
+			transform: translate(-50%, -50%) rotate(135deg);
+		}
 	}
 }
 

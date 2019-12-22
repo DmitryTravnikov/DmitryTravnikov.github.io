@@ -49,7 +49,7 @@ html(lang="ru")
 						li.header__menu-list-item
 							a.prevdef.header__menu-link(href="#contact") Contact
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") Sign Up
+							a.prevdef.header__menu-link.header__menu-sign-up(href="#") Sign Up
 				.header__select-block
 					.header__lang-pic-container
 						.header__lang-pic.header__lang-pic1.active
@@ -230,6 +230,13 @@ html(lang="ru")
 			p.modal__paragraph Fill all the inputs, please!
 		.modal__success-container.modal__window
 			p.modal__paragraph We will contact you soon!
+		.modal__sign-up-n-login
+			form.modal__form(action="" method="POST")
+				input.modal__email-input.modal__input(type="text" placeholder="Email")
+				input.modal__password-input.modal__input(type="text" placeholder="Password")
+				button.prevdef.modal__sign-up-button Sign Up
+				button.prevdef.modal__login-button Login
+			button.modal__close-button
 
 		// Content End
 		// Scripts
