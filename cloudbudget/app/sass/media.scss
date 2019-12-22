@@ -5,7 +5,6 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1300px) {
 	body {
-		background: $media-purple;
 		.header{
 			&__wrapper{
 				@include flex(row, wrap, space-between, flex-start);//
@@ -93,9 +92,9 @@
 			}
 		}
 		.main{
-			@include size(100%, auto);//
+			@include size(100%, 100vh);//
 			background: linear-gradient(90deg, rgba(#CD1F44, 0.8) 0%, rgba(#E53B1A, 0.8) 100%), url('../assets/main__bg.jpg') no-repeat;//
-			background-size: cover;//
+			background-size: 160%;//
 			background-attachment: fixed;
 			@include flex(row, wrap, center, center);//
 			overflow: visible;//
@@ -108,10 +107,10 @@
 				margin-top: 12rem;//
 			}
 			&__headline{
-				font-size: 3.2rem;//
+				font-size: 5.2rem;//
 			}
 			&__paragraph{
-				font-size: 1.6rem;//
+				font-size: 2.6rem;//
 			}
 			&__sign-up-button{
 				&:hover{
@@ -132,13 +131,13 @@
 			&__block1{
 				@include flex(column, wrap, flex-start, flex-start);//
 				padding-top: 0rem;//
-				left: 0rem;//
-				opacity: 1;//
+				left: -100%;//
+				opacity: 0;//
 			}
 			&__block2{
 				@include size(50%, 31.1rem);//
-				right: 0rem;//
-				opacity: 1;//
+				right: -100%;//
+				opacity: 0;//
 			}
 			&__headline{
 			}
@@ -164,8 +163,8 @@
 			padding-top: 2rem;//
 			padding-bottom: 2rem;//
 			&__headline{
-				top: 0rem;//
-				opacity: 1;//
+				top: -10rem;//
+				opacity: 0;//
 			}
 			&__wrapper{
 				@include flex(row, wrap, center, flex-start);//
@@ -174,8 +173,8 @@
 			}
 			&__block{
 				@include flex(column, wrap, flex-start, center);//
-				bottom: 0rem;//
-				opacity: 1;//
+				bottom: -50rem;//
+				opacity: 0;//
 				margin: 2rem;//
 				width: 28rem;//
 			}
@@ -204,8 +203,8 @@
 			padding-top: 2.4rem;//
 			padding-bottom: 3rem;//
 			&__headline{
-				top: 0rem;//
-				opacity: 1;//
+				top: -15rem;//
+				opacity: 0;//
 			}
 			&__wrapper{
 				@include flex(row, wrap, center, flex-start);//
@@ -215,8 +214,8 @@
 			&__block{
 				@include flex(column, wrap, flex-start, center);//
 				width: 25rem;//
-				bottom: 0rem;//
-				opacity: 1;//
+				bottom: -40rem;//
+				opacity: 0;//
 				margin: 2rem;//
 			}
 			&__block1{
@@ -264,13 +263,13 @@
 				margin: 2rem;//
 			}
 			&__block1{
-				left: 0rem;//
-				opacity: 1;//
+				left: -100%;//
+				opacity: 0;//
 			}
 			&__block2{
 				padding-left: 0rem;//
-				right: 0rem;//
-				opacity: 1;//
+				right: -100%;//
+				opacity: 0;//
 			}
 			&__headline{
 				padding-right: 5rem;//
@@ -318,13 +317,13 @@
 			}
 			&__block1{
 				padding-left: 1rem;//
-				left: 0rem;//
-				opacity: 1;//
+				left: -100%;//
+				opacity: 0;//
 			}
 			&__block2{
 				padding-left: 0rem;//
-				right: 0rem;//
-				opacity: 1;//
+				right: -100%;//
+				opacity: 0;//
 			}
 			&__block-headline{
 			}
@@ -388,12 +387,79 @@
 				}
 			}
 		}
+		.footer{
+			padding-top: 2.3rem;//
+			padding-bottom: 2.3rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__block{
+				width: 18rem;//
+				@include flex(column, wrap, flex-start, flex-start);//
+				top: 0rem;//
+				opacity: 1;//
+				margin: 1rem;//
+			}
+			&__block1{
+			}
+			&__block2{
+			}
+			&__block3{
+			}
+			&__block4{
+			}
+			&__block-headline{
+			}
+			&__block-paragraph{
+			}
+			&__address{
+			}
+			&__list{
+			}
+			&__list-item{
+			}
+			&__list-link{
+			}
+			&__email-link{
+			}
+			&__tel-link{
+			}
+			&__socials-container{
+				@include flex(row, wrap, center, center);//
+			}
+			&__social-link{
+				@include flex(row, wrap, center, center);//
+				&:last-child{
+				}
+				svg{
+					path{
+					}
+				}
+			}
+			&__facebook{}
+			&__linkedin{}
+			&__twitter{}
+			&__cards-container{
+			}
+			&__cards{}
+		}
+		.copy{
+			padding-bottom: 2.4rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__link{
+				left: 0rem;//
+				opacity: 1;//
+			}
+		}
 	}
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
 	body {
-		background: $media-orange;
 		.header{
 			&__wrapper{
 				@include flex(row, wrap, space-between, center);//
@@ -776,12 +842,79 @@
 				}
 			}
 		}
+		.footer{
+			padding-top: 2.3rem;//
+			padding-bottom: 2.3rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__block{
+				width: 30rem;//
+				@include flex(column, wrap, flex-start, flex-start);//
+				top: 0rem;//
+				opacity: 1;//
+				margin: 2rem;//
+			}
+			&__block1{
+			}
+			&__block2{
+			}
+			&__block3{
+			}
+			&__block4{
+			}
+			&__block-headline{
+			}
+			&__block-paragraph{
+			}
+			&__address{
+			}
+			&__list{
+			}
+			&__list-item{
+			}
+			&__list-link{
+			}
+			&__email-link{
+			}
+			&__tel-link{
+			}
+			&__socials-container{
+				@include flex(row, wrap, center, center);//
+			}
+			&__social-link{
+				@include flex(row, wrap, center, center);//
+				&:last-child{
+				}
+				svg{
+					path{
+					}
+				}
+			}
+			&__facebook{}
+			&__linkedin{}
+			&__twitter{}
+			&__cards-container{
+			}
+			&__cards{}
+		}
+		.copy{
+			padding-bottom: 2.4rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__link{
+				left: 0rem;//
+				opacity: 1;//
+			}
+		}
 	}
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
 	body {
-		background: $media-pink;
 		.header{
 			&__wrapper{
 				@include flex(column, wrap, flex-start, center);//
@@ -1164,12 +1297,79 @@
 				}
 			}
 		}
+		.footer{
+			padding-top: 2.3rem;//
+			padding-bottom: 2.3rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__block{
+				width: 30rem;//
+				@include flex(column, wrap, flex-start, flex-start);//
+				top: 0rem;//
+				opacity: 1;//
+				margin: 2rem;//
+			}
+			&__block1{
+			}
+			&__block2{
+			}
+			&__block3{
+			}
+			&__block4{
+			}
+			&__block-headline{
+			}
+			&__block-paragraph{
+			}
+			&__address{
+			}
+			&__list{
+			}
+			&__list-item{
+			}
+			&__list-link{
+			}
+			&__email-link{
+			}
+			&__tel-link{
+			}
+			&__socials-container{
+				@include flex(row, wrap, center, center);//
+			}
+			&__social-link{
+				@include flex(row, wrap, center, center);//
+				&:last-child{
+				}
+				svg{
+					path{
+					}
+				}
+			}
+			&__facebook{}
+			&__linkedin{}
+			&__twitter{}
+			&__cards-container{
+			}
+			&__cards{}
+		}
+		.copy{
+			padding-bottom: 2.4rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__link{
+				left: 0rem;//
+				opacity: 1;//
+			}
+		}
 	}
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
 	body {
-		background: $media-blue;
 		.header{
 			&__wrapper{
 				@include flex(column, wrap, flex-start, center);//
@@ -1552,12 +1752,120 @@
 				}
 			}
 		}
+		.footer{
+			padding-top: 2.3rem;//
+			padding-bottom: 2.3rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__block{
+				width: 30rem;//
+				@include flex(column, wrap, flex-start, flex-start);//
+				top: 0rem;//
+				opacity: 1;//
+				margin: 2rem;//
+			}
+			&__block1{
+			}
+			&__block2{
+			}
+			&__block3{
+			}
+			&__block4{
+			}
+			&__block-headline{
+			}
+			&__block-paragraph{
+			}
+			&__address{
+			}
+			&__list{
+			}
+			&__list-item{
+			}
+			&__list-link{
+			}
+			&__email-link{
+			}
+			&__tel-link{
+			}
+			&__socials-container{
+				@include flex(row, wrap, center, center);//
+			}
+			&__social-link{
+				@include flex(row, wrap, center, center);//
+				&:last-child{
+				}
+				svg{
+					path{
+					}
+				}
+			}
+			&__facebook{}
+			&__linkedin{}
+			&__twitter{}
+			&__cards-container{
+			}
+			&__cards{}
+		}
+		.copy{
+			padding-bottom: 2.4rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__link{
+				left: 0rem;//
+				opacity: 1;//
+			}
+		}
+		.modal{
+			&__overlay{
+			}
+			&__window{
+				@include size(31rem, 10rem);//
+			}
+			&__error-container{}
+			&__success-container{}
+			&__paragraph{
+			}
+			&__sign-up-n-login{
+				@include size(31rem, auto);//
+			}
+			&__form{
+				@include flex(column, wrap, flex-start, center);//
+			}
+			&__input{
+				&:first-child{
+				}
+				&::placeholder{
+				}
+			}
+			&__email-input{}
+			&__password-input{}
+			&__sign-up-button{
+				&:hover{
+				}
+			}
+			&__login-button{
+				&:hover{
+				}
+			}
+			&__close-button{
+				&::before, &::after{
+				}
+				&::before{
+				}
+				&::after{
+				}
+			}
+		}
 	}
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
 	body {
-		background: $media-green;
 		.header{
 			&__wrapper{
 				@include flex(column, wrap, flex-start, center);//
@@ -1937,6 +2245,115 @@
 			}
 			&__submit-button{
 				&:hover{
+				}
+			}
+		}
+		.footer{
+			padding-top: 2.3rem;//
+			padding-bottom: 2.3rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__block{
+				width: 100%;//
+				@include flex(column, wrap, flex-start, flex-start);//
+				top: 0rem;//
+				opacity: 1;//
+				margin: 2rem;//
+			}
+			&__block1{
+			}
+			&__block2{
+			}
+			&__block3{
+			}
+			&__block4{
+			}
+			&__block-headline{
+			}
+			&__block-paragraph{
+			}
+			&__address{
+			}
+			&__list{
+			}
+			&__list-item{
+			}
+			&__list-link{
+			}
+			&__email-link{
+			}
+			&__tel-link{
+			}
+			&__socials-container{
+				@include flex(row, wrap, center, center);//
+			}
+			&__social-link{
+				@include flex(row, wrap, center, center);//
+				&:last-child{
+				}
+				svg{
+					path{
+					}
+				}
+			}
+			&__facebook{}
+			&__linkedin{}
+			&__twitter{}
+			&__cards-container{
+			}
+			&__cards{}
+		}
+		.copy{
+			padding-bottom: 2.4rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__link{
+				left: 0rem;//
+				opacity: 1;//
+			}
+		}
+		.modal{
+			&__overlay{
+			}
+			&__window{
+				@include size(100%, 10rem);//
+			}
+			&__error-container{}
+			&__success-container{}
+			&__paragraph{
+			}
+			&__sign-up-n-login{
+				@include size(100%, auto);//
+			}
+			&__form{
+				@include flex(column, wrap, flex-start, center);//
+			}
+			&__input{
+				&:first-child{
+				}
+				&::placeholder{
+				}
+			}
+			&__email-input{}
+			&__password-input{}
+			&__sign-up-button{
+				&:hover{
+				}
+			}
+			&__login-button{
+				&:hover{
+				}
+			}
+			&__close-button{
+				&::before, &::after{
+				}
+				&::before{
+				}
+				&::after{
 				}
 			}
 		}

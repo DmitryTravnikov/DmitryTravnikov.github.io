@@ -554,10 +554,14 @@ $(document).ready(function() {
 
 	//parallax onmousemove
 	$('.main').mousemove(function(e) {
+		if ($(window).width() > 992) {
 		var moveX = (e.pageX * -1 / 10);
 		var moveY = (e.pageY * -1 / 10);
 		$(this).css('background-position', moveX + 'px ' + moveY + 'px ');
+			
+		}
 	})
+	
 
 });//doc.ready end
 
