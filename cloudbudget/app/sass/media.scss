@@ -305,6 +305,89 @@
 			&__slide2{}
 			&__slide3{}
 		}
+		.contact{
+			padding-top: 2.6rem;//
+			padding-bottom: 2.6rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__block{
+				width: 30rem;//
+				margin: 2rem;//
+			}
+			&__block1{
+				padding-left: 1rem;//
+				left: 0rem;//
+				opacity: 1;//
+			}
+			&__block2{
+				padding-left: 0rem;//
+				right: 0rem;//
+				opacity: 1;//
+			}
+			&__block-headline{
+			}
+			&__block-paragraph{
+				padding-right: 4rem;//
+				margin-top: 1rem;//
+			}
+			&__form{
+			}
+			&__form-row{
+				width: 100%;//
+			}
+			&__form-row1{
+				width: 100%;//
+				@include flex(row, wrap, flex-start, flex-start);//
+			}
+			&__form-row2{
+				width: 100%;//
+				@include flex(column, wrap, flex-start, flex-start);//
+			}
+			&__input{
+				&::placeholder{
+				}
+			}
+			&__first-name-input{
+				width: 100%;//
+				margin-right: 0rem;//
+			}
+			&__last-name-input{
+				width: 100%;//
+				margin-top: 2.3rem;//
+			}
+			&__phone-number-input{
+				width: 100%;//
+			}
+			&__select-real{
+			}
+			&__select-option-real{}
+			&__select-fake-container{
+				@include flex(column, wrap, flex-start, flex-start);//
+				width: 100%;//
+			}
+			&__select-options-fake-container{
+				width: 100%;//
+				@include flex(column, wrap, flex-start, flex-start);//
+			}
+			&__select-fake{
+				width: 100%;//
+				&::before{
+				}
+				&.active::before{
+				}
+			}
+			&__select-option-fake{
+				width: 100%;//
+				&.active{
+				}
+			}
+			&__submit-button{
+				&:hover{
+				}
+			}
+		}
 	}
 }
 /* Medium Devices, Desktops */
@@ -609,6 +692,89 @@
 			&__slide1{}
 			&__slide2{}
 			&__slide3{}
+		}
+		.contact{
+			padding-top: 2.6rem;//
+			padding-bottom: 2.6rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__block{
+				width: 30rem;//
+				margin: 2rem;//
+			}
+			&__block1{
+				padding-left: 1rem;//
+				left: 0rem;//
+				opacity: 1;//
+			}
+			&__block2{
+				padding-left: 0rem;//
+				right: 0rem;//
+				opacity: 1;//
+			}
+			&__block-headline{
+			}
+			&__block-paragraph{
+				padding-right: 4rem;//
+				margin-top: 1rem;//
+			}
+			&__form{
+			}
+			&__form-row{
+				width: 100%;//
+			}
+			&__form-row1{
+				width: 100%;//
+				@include flex(row, wrap, flex-start, flex-start);//
+			}
+			&__form-row2{
+				width: 100%;//
+				@include flex(column, wrap, flex-start, flex-start);//
+			}
+			&__input{
+				&::placeholder{
+				}
+			}
+			&__first-name-input{
+				width: 100%;//
+				margin-right: 0rem;//
+			}
+			&__last-name-input{
+				width: 100%;//
+				margin-top: 2.3rem;//
+			}
+			&__phone-number-input{
+				width: 100%;//
+			}
+			&__select-real{
+			}
+			&__select-option-real{}
+			&__select-fake-container{
+				@include flex(column, wrap, flex-start, flex-start);//
+				width: 100%;//
+			}
+			&__select-options-fake-container{
+				width: 100%;//
+				@include flex(column, wrap, flex-start, flex-start);//
+			}
+			&__select-fake{
+				width: 100%;//
+				&::before{
+				}
+				&.active::before{
+				}
+			}
+			&__select-option-fake{
+				width: 100%;//
+				&.active{
+				}
+			}
+			&__submit-button{
+				&:hover{
+				}
+			}
 		}
 	}
 }
@@ -915,6 +1081,89 @@
 			&__slide2{}
 			&__slide3{}
 		}
+		.contact{
+			padding-top: 2.6rem;//
+			padding-bottom: 2.6rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__block{
+				width: 30rem;//
+				margin: 2rem;//
+			}
+			&__block1{
+				padding-left: 1rem;//
+				left: 0rem;//
+				opacity: 1;//
+			}
+			&__block2{
+				padding-left: 0rem;//
+				right: 0rem;//
+				opacity: 1;//
+			}
+			&__block-headline{
+			}
+			&__block-paragraph{
+				padding-right: 4rem;//
+				margin-top: 1rem;//
+			}
+			&__form{
+			}
+			&__form-row{
+				width: 100%;//
+			}
+			&__form-row1{
+				width: 100%;//
+				@include flex(row, wrap, flex-start, flex-start);//
+			}
+			&__form-row2{
+				width: 100%;//
+				@include flex(column, wrap, flex-start, flex-start);//
+			}
+			&__input{
+				&::placeholder{
+				}
+			}
+			&__first-name-input{
+				width: 100%;//
+				margin-right: 0rem;//
+			}
+			&__last-name-input{
+				width: 100%;//
+				margin-top: 2.3rem;//
+			}
+			&__phone-number-input{
+				width: 100%;//
+			}
+			&__select-real{
+			}
+			&__select-option-real{}
+			&__select-fake-container{
+				@include flex(column, wrap, flex-start, flex-start);//
+				width: 100%;//
+			}
+			&__select-options-fake-container{
+				width: 100%;//
+				@include flex(column, wrap, flex-start, flex-start);//
+			}
+			&__select-fake{
+				width: 100%;//
+				&::before{
+				}
+				&.active::before{
+				}
+			}
+			&__select-option-fake{
+				width: 100%;//
+				&.active{
+				}
+			}
+			&__submit-button{
+				&:hover{
+				}
+			}
+		}
 	}
 }
 /* Extra Small Devices, Phones */
@@ -1220,6 +1469,89 @@
 			&__slide2{}
 			&__slide3{}
 		}
+		.contact{
+			padding-top: 2.6rem;//
+			padding-bottom: 2.6rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__block{
+				width: 30rem;//
+				margin: 2rem;//
+			}
+			&__block1{
+				padding-left: 1rem;//
+				left: 0rem;//
+				opacity: 1;//
+			}
+			&__block2{
+				padding-left: 0rem;//
+				right: 0rem;//
+				opacity: 1;//
+			}
+			&__block-headline{
+			}
+			&__block-paragraph{
+				padding-right: 4rem;//
+				margin-top: 1rem;//
+			}
+			&__form{
+			}
+			&__form-row{
+				width: 100%;//
+			}
+			&__form-row1{
+				width: 100%;//
+				@include flex(row, wrap, flex-start, flex-start);//
+			}
+			&__form-row2{
+				width: 100%;//
+				@include flex(column, wrap, flex-start, flex-start);//
+			}
+			&__input{
+				&::placeholder{
+				}
+			}
+			&__first-name-input{
+				width: 100%;//
+				margin-right: 0rem;//
+			}
+			&__last-name-input{
+				width: 100%;//
+				margin-top: 2.3rem;//
+			}
+			&__phone-number-input{
+				width: 100%;//
+			}
+			&__select-real{
+			}
+			&__select-option-real{}
+			&__select-fake-container{
+				@include flex(column, wrap, flex-start, flex-start);//
+				width: 100%;//
+			}
+			&__select-options-fake-container{
+				width: 100%;//
+				@include flex(column, wrap, flex-start, flex-start);//
+			}
+			&__select-fake{
+				width: 100%;//
+				&::before{
+				}
+				&.active::before{
+				}
+			}
+			&__select-option-fake{
+				width: 100%;//
+				&.active{
+				}
+			}
+			&__submit-button{
+				&:hover{
+				}
+			}
+		}
 	}
 }
 /* Custom, iPhone Retina */
@@ -1524,6 +1856,89 @@
 			&__slide1{}
 			&__slide2{}
 			&__slide3{}
+		}
+		.contact{
+			padding-top: 2.6rem;//
+			padding-bottom: 2.6rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__block{
+				width: 100%;//
+				margin: 2rem;//
+			}
+			&__block1{
+				padding-left: 1rem;//
+				left: 0rem;//
+				opacity: 1;//
+			}
+			&__block2{
+				padding-left: 0rem;//
+				right: 0rem;//
+				opacity: 1;//
+			}
+			&__block-headline{
+			}
+			&__block-paragraph{
+				padding-right: 4rem;//
+				margin-top: 1rem;//
+			}
+			&__form{
+			}
+			&__form-row{
+				width: 100%;//
+			}
+			&__form-row1{
+				width: 100%;//
+				@include flex(row, wrap, flex-start, flex-start);//
+			}
+			&__form-row2{
+				width: 100%;//
+				@include flex(column, wrap, flex-start, flex-start);//
+			}
+			&__input{
+				&::placeholder{
+				}
+			}
+			&__first-name-input{
+				width: 100%;//
+				margin-right: 0rem;//
+			}
+			&__last-name-input{
+				width: 100%;//
+				margin-top: 2.3rem;//
+			}
+			&__phone-number-input{
+				width: 100%;//
+			}
+			&__select-real{
+			}
+			&__select-option-real{}
+			&__select-fake-container{
+				@include flex(column, wrap, flex-start, flex-start);//
+				width: 100%;//
+			}
+			&__select-options-fake-container{
+				width: 100%;//
+				@include flex(column, wrap, flex-start, flex-start);//
+			}
+			&__select-fake{
+				width: 100%;//
+				&::before{
+				}
+				&.active::before{
+				}
+			}
+			&__select-option-fake{
+				width: 100%;//
+				&.active{
+				}
+			}
+			&__submit-button{
+				&:hover{
+				}
+			}
 		}
 	}
 }
