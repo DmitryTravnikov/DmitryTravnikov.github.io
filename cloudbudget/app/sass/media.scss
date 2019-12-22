@@ -200,6 +200,58 @@
 			&__read-more{
 			}
 		}
+		.technology{
+			padding-top: 2.4rem;//
+			padding-bottom: 3rem;//
+			&__headline{
+				top: 0rem;//
+				opacity: 1;//
+			}
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				padding-top: 0rem;//
+				width: 100%;//
+			}
+			&__block{
+				@include flex(column, wrap, flex-start, center);//
+				width: 25rem;//
+				bottom: 0rem;//
+				opacity: 1;//
+				margin: 2rem;//
+			}
+			&__block1{
+			}
+			&__block2{
+			}
+			&__block3{
+			}
+			&__block4{
+			}
+			&__block-icon{
+				&::before{
+				}
+			}
+			&__block-icon1{
+				&::before{
+				}
+			}
+			&__block-icon2{
+				&::before{
+				}
+			}
+			&__block-icon3{
+				&::before{
+				}
+			}
+			&__block-icon4{
+				&::before{
+				}
+			}
+			&__block-headline{
+			}
+			&__block-paragraph{
+			}
+		}
 	}
 }
 /* Medium Devices, Desktops */
@@ -398,6 +450,58 @@
 			&__block-paragraph{
 			}
 			&__read-more{
+			}
+		}
+		.technology{
+			padding-top: 2.4rem;//
+			padding-bottom: 3rem;//
+			&__headline{
+				top: 0rem;//
+				opacity: 1;//
+			}
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				padding-top: 0rem;//
+				width: 100%;//
+			}
+			&__block{
+				@include flex(column, wrap, flex-start, center);//
+				width: 25rem;//
+				bottom: 0rem;//
+				opacity: 1;//
+				margin: 2rem;//
+			}
+			&__block1{
+			}
+			&__block2{
+			}
+			&__block3{
+			}
+			&__block4{
+			}
+			&__block-icon{
+				&::before{
+				}
+			}
+			&__block-icon1{
+				&::before{
+				}
+			}
+			&__block-icon2{
+				&::before{
+				}
+			}
+			&__block-icon3{
+				&::before{
+				}
+			}
+			&__block-icon4{
+				&::before{
+				}
+			}
+			&__block-headline{
+			}
+			&__block-paragraph{
 			}
 		}
 	}
@@ -600,6 +704,58 @@
 			&__read-more{
 			}
 		}
+		.technology{
+			padding-top: 2.4rem;//
+			padding-bottom: 3rem;//
+			&__headline{
+				top: 0rem;//
+				opacity: 1;//
+			}
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				padding-top: 0rem;//
+				width: 100%;//
+			}
+			&__block{
+				@include flex(column, wrap, flex-start, center);//
+				width: 25rem;//
+				bottom: 0rem;//
+				opacity: 1;//
+				margin: 2rem;//
+			}
+			&__block1{
+			}
+			&__block2{
+			}
+			&__block3{
+			}
+			&__block4{
+			}
+			&__block-icon{
+				&::before{
+				}
+			}
+			&__block-icon1{
+				&::before{
+				}
+			}
+			&__block-icon2{
+				&::before{
+				}
+			}
+			&__block-icon3{
+				&::before{
+				}
+			}
+			&__block-icon4{
+				&::before{
+				}
+			}
+			&__block-headline{
+			}
+			&__block-paragraph{
+			}
+		}
 	}
 }
 /* Extra Small Devices, Phones */
@@ -800,6 +956,58 @@
 			&__read-more{
 			}
 		}
+		.technology{
+			padding-top: 2.4rem;//
+			padding-bottom: 3rem;//
+			&__headline{
+				top: 0rem;//
+				opacity: 1;//
+			}
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				padding-top: 0rem;//
+				width: 100%;//
+			}
+			&__block{
+				@include flex(column, wrap, flex-start, center);//
+				width: 25rem;//
+				bottom: 0rem;//
+				opacity: 1;//
+				margin: 2rem;//
+			}
+			&__block1{
+			}
+			&__block2{
+			}
+			&__block3{
+			}
+			&__block4{
+			}
+			&__block-icon{
+				&::before{
+				}
+			}
+			&__block-icon1{
+				&::before{
+				}
+			}
+			&__block-icon2{
+				&::before{
+				}
+			}
+			&__block-icon3{
+				&::before{
+				}
+			}
+			&__block-icon4{
+				&::before{
+				}
+			}
+			&__block-headline{
+			}
+			&__block-paragraph{
+			}
+		}
 	}
 }
 /* Custom, iPhone Retina */
@@ -998,6 +1206,58 @@
 			&__block-paragraph{
 			}
 			&__read-more{
+			}
+		}
+		.technology{
+			padding-top: 2.4rem;//
+			padding-bottom: 3rem;//
+			&__headline{
+				top: 0rem;//
+				opacity: 1;//
+			}
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				padding-top: 0rem;//
+				width: 100%;//
+			}
+			&__block{
+				@include flex(column, wrap, flex-start, center);//
+				width: 100%;//
+				bottom: 0rem;//
+				opacity: 1;//
+				margin: 2rem;//
+			}
+			&__block1{
+			}
+			&__block2{
+			}
+			&__block3{
+			}
+			&__block4{
+			}
+			&__block-icon{
+				&::before{
+				}
+			}
+			&__block-icon1{
+				&::before{
+				}
+			}
+			&__block-icon2{
+				&::before{
+				}
+			}
+			&__block-icon3{
+				&::before{
+				}
+			}
+			&__block-icon4{
+				&::before{
+				}
+			}
+			&__block-headline{
+			}
+			&__block-paragraph{
 			}
 		}
 	}
