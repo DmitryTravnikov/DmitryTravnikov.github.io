@@ -118,6 +118,48 @@
 				}
 			}
 		}
+		.video-section{
+			padding-top: 3.5rem;//
+			padding-bottom: 3.5rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__block{
+				width: 40%;//
+				margin: 2rem;//
+			}
+			&__block1{
+				@include flex(column, wrap, flex-start, flex-start);//
+				padding-top: 0rem;//
+				left: 0rem;//
+				opacity: 1;//
+			}
+			&__block2{
+				@include size(50%, 31.1rem);//
+				right: 0rem;//
+				opacity: 1;//
+			}
+			&__headline{
+			}
+			&__paragraph{
+				margin-top: 2.4rem;//
+				padding-right: 2rem;//
+			}
+			&__learn-more{
+			}
+			&__video-container{
+			}
+			&__video-overlay{
+				border-radius: 1.5rem;//
+			}
+			&__video{
+			}
+			&__play-button{
+				left: 50%;//
+				transform: translate(-50%, -50%);//
+			}
+		}
 	}
 }
 /* Medium Devices, Desktops */
@@ -234,6 +276,48 @@
 			&__sign-up-button{
 				&:hover{
 				}
+			}
+		}
+		.video-section{
+			padding-top: 3.5rem;//
+			padding-bottom: 3.5rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__block{
+				width: 40%;//
+				margin: 2rem;//
+			}
+			&__block1{
+				@include flex(column, wrap, flex-start, flex-start);//
+				padding-top: 0rem;//
+				left: 0rem;//
+				opacity: 1;//
+			}
+			&__block2{
+				@include size(50%, 31.1rem);//
+				right: 0rem;//
+				opacity: 1;//
+			}
+			&__headline{
+			}
+			&__paragraph{
+				margin-top: 2.4rem;//
+				padding-right: 2rem;//
+			}
+			&__learn-more{
+			}
+			&__video-container{
+			}
+			&__video-overlay{
+				border-radius: 1.5rem;//
+			}
+			&__video{
+			}
+			&__play-button{
+				left: 50%;//
+				transform: translate(-50%, -50%);//
 			}
 		}
 	}
@@ -354,6 +438,48 @@
 				}
 			}
 		}
+		.video-section{
+			padding-top: 3.5rem;//
+			padding-bottom: 3.5rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__block{
+				width: 100%;//
+				margin: 2rem;//
+			}
+			&__block1{
+				@include flex(column, wrap, flex-start, flex-start);//
+				padding-top: 0rem;//
+				left: 0rem;//
+				opacity: 1;//
+			}
+			&__block2{
+				@include size(100%, 31.1rem);//
+				right: 0rem;//
+				opacity: 1;//
+			}
+			&__headline{
+			}
+			&__paragraph{
+				margin-top: 2.4rem;//
+				padding-right: 2rem;//
+			}
+			&__learn-more{
+			}
+			&__video-container{
+			}
+			&__video-overlay{
+				border-radius: 1.5rem;//
+			}
+			&__video{
+			}
+			&__play-button{
+				left: 50%;//
+				transform: translate(-50%, -50%);//
+			}
+		}
 	}
 }
 /* Extra Small Devices, Phones */
@@ -472,6 +598,48 @@
 				}
 			}
 		}
+		.video-section{
+			padding-top: 3.5rem;//
+			padding-bottom: 3.5rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__block{
+				width: 100%;//
+				margin: 2rem;//
+			}
+			&__block1{
+				@include flex(column, wrap, flex-start, flex-start);//
+				padding-top: 0rem;//
+				left: 0rem;//
+				opacity: 1;//
+			}
+			&__block2{
+				@include size(100%, 31.1rem);//
+				right: 0rem;//
+				opacity: 1;//
+			}
+			&__headline{
+			}
+			&__paragraph{
+				margin-top: 2.4rem;//
+				padding-right: 2rem;//
+			}
+			&__learn-more{
+			}
+			&__video-container{
+			}
+			&__video-overlay{
+				border-radius: 1.5rem;//
+			}
+			&__video{
+			}
+			&__play-button{
+				left: 50%;//
+				transform: translate(-50%, -50%);//
+			}
+		}
 	}
 }
 /* Custom, iPhone Retina */
@@ -588,6 +756,48 @@
 			&__sign-up-button{
 				&:hover{
 				}
+			}
+		}
+		.video-section{
+			padding-top: 3.5rem;//
+			padding-bottom: 3.5rem;//
+			&__wrapper{
+				@include flex(row, wrap, center, flex-start);//
+				width: 100%;//
+			}
+			&__block{
+				width: 100%;//
+				margin: 2rem;//
+			}
+			&__block1{
+				@include flex(column, wrap, flex-start, flex-start);//
+				padding-top: 0rem;//
+				left: 0rem;//
+				opacity: 1;//
+			}
+			&__block2{
+				@include size(100%, 31.1rem);//
+				right: 0rem;//
+				opacity: 1;//
+			}
+			&__headline{
+			}
+			&__paragraph{
+				margin-top: 2.4rem;//
+				padding-right: 2rem;//
+			}
+			&__learn-more{
+			}
+			&__video-container{
+			}
+			&__video-overlay{
+				border-radius: 1.5rem;//
+			}
+			&__video{
+			}
+			&__play-button{
+				left: 50%;//
+				transform: translate(-50%, -50%);//
 			}
 		}
 	}

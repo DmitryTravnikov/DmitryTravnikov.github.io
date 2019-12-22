@@ -425,7 +425,7 @@ $(document).ready(function() {
 			toTopLink.style.opacity = '';
 			toTopLink.style.zIndex = '';
 		}
-		if ($(window).width() > 960) {
+		if ($(window).width() > 992) {
 			var ypos = window.pageYOffset;
 
 			var elem1 = document.querySelector('.video-section__block1');
