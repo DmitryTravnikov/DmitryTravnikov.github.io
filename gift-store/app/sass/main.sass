@@ -15,6 +15,7 @@ body
 
 .header
 	background: #FAFAFA
+	width: 100%
 	&__wrapper
 		+flex(row, wrap, space-between, flex-start)
 		padding-left: 8rem
@@ -88,10 +89,10 @@ body
 		padding-left: 16.2rem
 	&__block2
 		background: url('../assets/about__pic1.jpg') no-repeat center
-		background-size: cover
+		background-size: 110%
 	&__block3
 		background: url('../assets/about__pic2.jpg') no-repeat center
-		background-size: cover
+		background-size: 110%
 		height: 60rem
 	&__block4
 		height: 60rem
@@ -201,10 +202,15 @@ body
 	&__block:hover &__text-container
 		background: #fff
 		box-shadow: 1rem 1rem 1rem rgba(grey, 0.1)
+	&__block:hover &__img
+		transform: scale(1.3)
 	&__block1
 	&__block2
 	&__block3
 	&__block4
+	&__img-container
+		+size(27rem, 27rem)
+		overflow: hidden
 	&__img
 	&__text-container
 		+size(100%, auto)
@@ -213,6 +219,8 @@ body
 		padding-top: 1.9rem
 		padding-left: 2.4rem
 		padding-bottom: 2.7rem
+		position: relative
+		z-index: 3
 	&__block-headline
 		width: 100%
 		margin: 0rem
@@ -247,17 +255,29 @@ body
 	background: $orange
 	padding-top: 7.3rem
 	padding-bottom: 7.7rem
+	transition: 1s
 	&__wrapper
 		+flex(row, wrap, center, flex-start)
+		overflow: hidden
 	&__block
 		+size(50%, auto)
 	&__block1
 		+flex(column, wrap, flex-start, flex-start)
 		padding-right: 15.9rem
+		position: relative
+		top: 0rem
+		left: -100%
+		opacity: 0
+		transition: 0.6s
 	&__block2
 		+flex(row, wrap, flex-start, flex-start)
 		padding-left: 6.9rem
 		padding-top: 2.3rem
+		position: relative
+		top: 0rem
+		right: -100%
+		opacity: 0
+		transition: 0.6s
 	&__headline
 		width: 100%
 		margin: 0rem
@@ -266,6 +286,7 @@ body
 		line-height: 140.62%
 		color: #000
 		text-align: right
+		transition: 1s
 	&__paragraph
 		width: 100%
 		margin: 0rem
@@ -276,6 +297,7 @@ body
 		position: relative
 		margin-top: 0.2rem
 		left: -1.5rem
+		transition: 1s
 	&__find-gift-now
 		text-decoration: none
 		font-family: $gr
@@ -287,6 +309,7 @@ body
 		border-radius: .5rem
 		border: .1rem solid $space-grey
 		padding: 1.3rem 3.4rem
+		transition: 1s
 	&__how-it-works
 		text-decoration: none
 		font-family: $gr
@@ -299,6 +322,7 @@ body
 		border: .1rem solid #000
 		padding: 1.3rem 3.4rem
 		margin-left: 1.7rem
+		transition: 1s
 
 .blogs
 	background: #fff
@@ -329,16 +353,25 @@ body
 		+size(117rem, auto)
 	&__block1
 		+flex(row, wrap, flex-start, stretch)
+	&__block1:hover &__img
+		transform: scale(1.1)
+	&__block1:hover &__block1-text-container
+		background: darken($orange, 10%)
 	&__block2
 		+flex(row, wrap, space-between, stretch)
 		padding-top: 4rem
+	&__img-container
+		+size(40rem, 37rem)
+		overflow: hidden
 	&__img
+		transition: .3s
 	&__block1-text-container
 		+flex(column, wrap, flex-start, flex-start)
 		width: calc(100% - 40rem)
 		background: $space-grey
 		padding-top: 6rem
 		padding-left: 7.9rem
+		transition: .4s
 	&__author
 		width: 100%
 		margin: 0rem
@@ -492,6 +525,28 @@ body
 		margin-right: 1.9rem
 		&:last-child
 			margin-right: 0rem
+
+.to-top-link
+	+size(5rem, 5rem)
+	background: $blue
+	position: fixed
+	bottom: 0rem
+	right: 0rem
+	z-index: -1
+	opacity: 0
+	&::before, &::after
+		content: ''
+		+size(.2rem, 1.5rem)
+		background: #fff
+		position: absolute
+		top: 1.6rem
+	&::before
+		left: 1.9rem
+		transform: rotate(45deg)
+	&::after
+		right: 1.9rem
+		transform: rotate(-45deg)
+
 
 *
 	// @include outline($blue)

@@ -3,25 +3,1140 @@
 
 /*  Desktop First Method */
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1300px)
+@media only screen and (max-width: 1440px)
 	body
 		background: $media-purple
+
+	.header
+		&__wrapper
+			+flex(row, wrap, space-around, center)//
+			padding-left: 0rem//
+			padding-right: 0rem//
+			width: 80%//
+		&__logo
+		&__menu-container
+		&__menu
+			+flex(row, wrap, flex-start, center)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 2rem//
+			margin-top: 0rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+			&::before
+			&:hover::before
+		&__gift-finder-link
+			&:hover
+			&:active
+
+	.about
+		&__wrapper
+			+flex(row, wrap, center, stretch)//
+			padding-top: 4rem//
+			padding-bottom: 4rem//
+			width: 100%//
+		&__block
+			+size(46rem, 44rem)//
+			+flex(column, wrap, flex-start, flex-start)//
+			margin: 1rem//
+		&__block1
+			padding-top: 2.3rem//
+			padding-left: 3rem//
+			padding-bottom: 2rem//
+			height: 44rem//
+			order: 1//
+		&__block2
+			background-size: cover//
+			order: 2//
+		&__block3
+			background-size: cover//
+			height: 44rem//
+			order: 3//
+		&__block4
+			height: 44rem//
+			padding-top: 2.8rem//
+			padding-left: 2rem//
+			padding-bottom: 2rem//
+			order: 4//
+		&__block1-headline
+			font-size: 3.6rem//
+			line-height: 3.9rem//
+			padding-right: 13rem//
+		&__block1-paragraph
+			margin-top: 6.2rem//
+			padding-right: 15%//
+		&__find-gift-now
+			&:hover
+			&:active
+		&__block4-headline
+		&__block4-paragraph
+			padding-right: 15%//
+		&__learn-more
+			&:hover
+			&:active
+				color: #fff
+
+	.services
+		padding-bottom: 5.6rem//
+		&__headline
+			padding: 0rem 10%//
+		&__paragraph
+			padding: 0rem 10%//
+		&__wrapper
+			+flex(row, wrap, center, stretch)//
+			padding-top: 3.9rem//
+			width: 100%//
+		&__block
+			width: 27rem//
+			margin-right: 0rem//
+			+flex(column, wrap, flex-start, center)//
+			margin: 2rem//
+			&:last-child
+				margin-right: 2rem//
+		&__block:hover &__text-container
+		&__block:hover &__img
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__img-container
+			+size(27rem, 27rem)//
+		&__img
+		&__text-container
+			width: 100%//
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block-headline
+		&__see-more
+			&::before, &::after
+			&::before
+			&::after
+
+	.ready
+		padding-top: 5.3rem//
+		padding-bottom: 5.7rem//
+		&__wrapper
+			+flex(row, wrap, center, flex-start)//
+			width: 70%//
+		&__block
+			+size(50%, auto)//
+		&__block1
+			+flex(column, wrap, flex-start, flex-start)//
+			padding-right: 0rem//
+			left: 0rem//
+			opacity: 1//
+		&__block2
+			+flex(column, wrap, flex-start, flex-end)//
+			padding-left: 0rem//
+			padding-top: 0.7rem//
+			right: 0rem//
+			opacity: 1//
+		&__headline
+			text-align: left//
+		&__paragraph
+			padding: 0rem 0%//
+			text-align: left//
+			left: 0rem//
+			margin-top: 1.5rem//
+		&__find-gift-now
+		&__how-it-works
+			margin-left: 0rem//
+			margin-top: 2rem//
+
+	.blogs
+		padding-top: 5.4rem//
+		padding-bottom: 5rem//
+		&__headline
+			padding: 0rem 10%//
+		&__paragraph
+			padding: 0rem 10%//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			padding-top: 5.6rem//
+			width: 90%//
+		&__block
+			+size(100%, auto)//
+		&__block1
+			+flex(row, wrap, flex-start, stretch)//
+		&__block1:hover &__img
+		&__block1:hover &__block1-text-container
+		&__block2
+			+flex(row, wrap, center, stretch)//
+		&__img-container
+			+size(30rem, auto)//
+		&__img
+			+size(100%, 100%)//
+			background-size: cover//
+		&__block1-text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: calc(100% - 30rem)//
+			padding-left: 1.9rem//
+			padding-bottom: 5rem//
+		&__author
+		&__block1-paragraph
+			line-height: 5.8rem//
+			padding-right: 32%//
+		&__block1-read-more
+		&__item
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 100%//
+			margin: 2rem//
+			&:hover
+		&__item1
+		&__item2
+		&__item-headline
+		&__item-paragraph
+		&__item-read-more
+
+	.footer
+		padding-top: 3rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__logo
+		&__menu-container
+			margin-top: 4rem//
+		&__menu
+			+flex(row, wrap, center, center)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 2rem//
+			margin-top: 1rem//
+			&:nth-child(2)
+				margin-right: 2rem//
+			&:last-child
+		&__menu-link
+		&__separator
+		&__socials-container
+			+flex(row, wrap, center, flex-start)//
+		&__social-link
+			margin-right: 1.5rem//
+			+size(3.74rem, 3.74rem)//
+			+flex(row, wrap, center, center)//
+			&:hover
+			&:last-child
+			svg
+				+flex(row, wrap, center, center)//
+				+size(2rem, 2rem)//
+				path
+		&__facebook
+		&__twitter
+		&__instagram
+		&__youtube
+		&__pinterest
+		&__copy-container
+			+flex(row, wrap, center, flex-start)//
+		&__copy
+			&:last-child
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
 	body
 		background: $media-orange
+
+	.header
+		&__wrapper
+			+flex(row, wrap, space-around, center)//
+			padding-left: 0rem//
+			padding-right: 0rem//
+			width: 100%//
+		&__logo
+		&__menu-container
+		&__menu
+			+flex(row, wrap, flex-start, center)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 2rem//
+			margin-top: 0rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+			&::before
+			&:hover::before
+		&__gift-finder-link
+			&:hover
+			&:active
+
+	.about
+		&__wrapper
+			+flex(row, wrap, center, stretch)//
+			padding-top: 4rem//
+			padding-bottom: 4rem//
+			width: 100%//
+		&__block
+			+size(45%, 40rem)//
+			+flex(column, wrap, flex-start, flex-start)//
+			margin: 1rem//
+		&__block1
+			padding-top: 2.3rem//
+			padding-left: 3rem//
+			padding-bottom: 2rem//
+			height: auto//
+			order: 1//
+		&__block2
+			background-size: cover//
+			order: 2//
+		&__block3
+			background-size: cover//
+			height: 47rem//
+			order: 4//
+		&__block4
+			height: auto//
+			padding-top: 2.8rem//
+			padding-left: 2rem//
+			padding-bottom: 2rem//
+			order: 3//
+		&__block1-headline
+			font-size: 3.6rem//
+			line-height: 3.9rem//
+			padding-right: 0rem//
+		&__block1-paragraph
+			margin-top: 3.2rem//
+			padding-right: 15%//
+		&__find-gift-now
+			&:hover
+			&:active
+		&__block4-headline
+		&__block4-paragraph
+			padding-right: 15%//
+		&__learn-more
+			&:hover
+			&:active
+				color: #fff
+
+	.services
+		padding-bottom: 5.6rem//
+		&__headline
+			padding: 0rem 10%//
+		&__paragraph
+			padding: 0rem 10%//
+		&__wrapper
+			+flex(row, wrap, center, stretch)//
+			padding-top: 3.9rem//
+			width: 100%//
+		&__block
+			width: 27rem//
+			margin-right: 0rem//
+			+flex(column, wrap, flex-start, center)//
+			margin: 2rem//
+			&:last-child
+				margin-right: 2rem//
+		&__block:hover &__text-container
+		&__block:hover &__img
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__img-container
+			+size(27rem, 27rem)//
+		&__img
+		&__text-container
+			width: 100%//
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block-headline
+		&__see-more
+			&::before, &::after
+			&::before
+			&::after
+
+	.ready
+		padding-top: 5.3rem//
+		padding-bottom: 5.7rem//
+		&__wrapper
+			+flex(row, wrap, center, flex-start)//
+			width: 70%//
+		&__block
+			+size(50%, auto)//
+		&__block1
+			+flex(column, wrap, flex-start, flex-start)//
+			padding-right: 0rem//
+			left: 0rem//
+			opacity: 1//
+		&__block2
+			+flex(column, wrap, flex-start, flex-end)//
+			padding-left: 0rem//
+			padding-top: 0.7rem//
+			right: 0rem//
+			opacity: 1//
+		&__headline
+			text-align: left//
+		&__paragraph
+			padding: 0rem 0%//
+			text-align: left//
+			left: 0rem//
+			margin-top: 1.5rem//
+		&__find-gift-now
+		&__how-it-works
+			margin-left: 0rem//
+			margin-top: 2rem//
+
+	.blogs
+		padding-top: 5.4rem//
+		padding-bottom: 5rem//
+		&__headline
+			padding: 0rem 10%//
+		&__paragraph
+			padding: 0rem 10%//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			padding-top: 5.6rem//
+			width: 100%//
+		&__block
+			+size(100%, auto)//
+		&__block1
+			+flex(row, wrap, flex-start, stretch)//
+		&__block1:hover &__img
+		&__block1:hover &__block1-text-container
+		&__block2
+			+flex(row, wrap, center, stretch)//
+		&__img-container
+			+size(30rem, auto)//
+		&__img
+			+size(100%, 100%)//
+			background-size: cover//
+		&__block1-text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: calc(100% - 30rem)//
+			padding-left: 1.9rem//
+			padding-bottom: 5rem//
+		&__author
+		&__block1-paragraph
+			line-height: 5.8rem//
+			padding-right: 32%//
+		&__block1-read-more
+		&__item
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 100%//
+			margin: 2rem//
+			&:hover
+		&__item1
+		&__item2
+		&__item-headline
+		&__item-paragraph
+		&__item-read-more
+
+	.footer
+		padding-top: 3rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__logo
+		&__menu-container
+			margin-top: 4rem//
+		&__menu
+			+flex(row, wrap, center, center)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 2rem//
+			margin-top: 1rem//
+			&:nth-child(2)
+				margin-right: 2rem//
+			&:last-child
+		&__menu-link
+		&__separator
+		&__socials-container
+			+flex(row, wrap, center, flex-start)//
+		&__social-link
+			margin-right: 1.5rem//
+			+size(3.74rem, 3.74rem)//
+			+flex(row, wrap, center, center)//
+			&:hover
+			&:last-child
+			svg
+				+flex(row, wrap, center, center)//
+				+size(2rem, 2rem)//
+				path
+		&__facebook
+		&__twitter
+		&__instagram
+		&__youtube
+		&__pinterest
+		&__copy-container
+			+flex(row, wrap, center, flex-start)//
+		&__copy
+			&:last-child
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
 	body
 		background: $media-pink
+
+	.header
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			padding-left: 0rem//
+			padding-right: 0rem//
+			width: 100%//
+		&__logo
+		&__menu-container
+		&__menu
+			+flex(row, wrap, flex-start, center)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 2rem//
+			margin-top: 0rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+			&::before
+			&:hover::before
+		&__gift-finder-link
+			&:hover
+			&:active
+
+	.about
+		&__wrapper
+			+flex(row, wrap, center, stretch)//
+			padding-top: 4rem//
+			padding-bottom: 4rem//
+			width: 100%//
+		&__block
+			+size(100%, 40rem)//
+			+flex(column, wrap, flex-start, flex-start)//
+			margin: 1rem//
+		&__block1
+			padding-top: 2.3rem//
+			padding-left: 3rem//
+			padding-bottom: 2rem//
+			height: auto//
+			order: 1//
+		&__block2
+			background-size: cover//
+			order: 2//
+		&__block3
+			background-size: cover//
+			height: 40rem//
+			order: 4//
+		&__block4
+			height: auto//
+			padding-top: 2.8rem//
+			padding-left: 2rem//
+			padding-bottom: 2rem//
+			order: 3//
+		&__block1-headline
+			font-size: 3.6rem//
+			line-height: 3.9rem//
+			padding-right: 0rem//
+		&__block1-paragraph
+			margin-top: 3.2rem//
+			padding-right: 15%//
+		&__find-gift-now
+			&:hover
+			&:active
+		&__block4-headline
+		&__block4-paragraph
+			padding-right: 15%//
+		&__learn-more
+			&:hover
+			&:active
+				color: #fff
+
+	.services
+		padding-bottom: 5.6rem//
+		&__headline
+			padding: 0rem 10%//
+		&__paragraph
+			padding: 0rem 10%//
+		&__wrapper
+			+flex(row, wrap, center, stretch)//
+			padding-top: 3.9rem//
+			width: 100%//
+		&__block
+			width: 27rem//
+			margin-right: 0rem//
+			+flex(column, wrap, flex-start, center)//
+			margin: 2rem//
+			&:last-child
+				margin-right: 2rem//
+		&__block:hover &__text-container
+		&__block:hover &__img
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__img-container
+			+size(27rem, 27rem)//
+		&__img
+		&__text-container
+			width: 100%//
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block-headline
+		&__see-more
+			&::before, &::after
+			&::before
+			&::after
+
+	.ready
+		padding-top: 5.3rem//
+		padding-bottom: 5.7rem//
+		&__wrapper
+			+flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__block
+			+size(100%, auto)//
+		&__block1
+			+flex(column, wrap, flex-start, center)//
+			padding-right: 0rem//
+			left: 0rem//
+			opacity: 1//
+		&__block2
+			+flex(column, wrap, flex-start, center)//
+			padding-left: 0rem//
+			right: 0rem//
+			opacity: 1//
+			padding-top: 3rem//
+		&__headline
+			text-align: center//
+		&__paragraph
+			padding: 0rem 10%//
+			text-align: center//
+			left: 0rem//
+			margin-top: 1.5rem//
+		&__find-gift-now
+		&__how-it-works
+			margin-left: 0rem//
+			margin-top: 2rem//
+
+	.blogs
+		padding-top: 5.4rem//
+		padding-bottom: 5rem//
+		&__headline
+			padding: 0rem 10%//
+		&__paragraph
+			padding: 0rem 10%//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			padding-top: 5.6rem//
+			width: 100%//
+		&__block
+			+size(30rem, auto)//
+		&__block1
+			+flex(row, wrap, flex-start, flex-start)//
+		&__block1:hover &__img
+		&__block1:hover &__block1-text-container
+		&__block2
+			+flex(row, wrap, center, stretch)//
+		&__img-container
+			+size(100%, 27.9rem)//
+		&__img
+			+size(100%, 100%)//
+			background-size: cover//
+		&__block1-text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 100%//
+			padding-left: 1.9rem//
+			padding-bottom: 5rem//
+		&__author
+		&__block1-paragraph
+			line-height: 5.8rem//
+			padding-right: 5%//
+		&__block1-read-more
+		&__item
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 100%//
+			margin: 2rem//
+			&:hover
+		&__item1
+		&__item2
+		&__item-headline
+		&__item-paragraph
+		&__item-read-more
+
+	.footer
+		padding-top: 3rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__logo
+		&__menu-container
+			margin-top: 4rem//
+		&__menu
+			+flex(row, wrap, center, center)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 2rem//
+			margin-top: 1rem//
+			&:nth-child(2)
+				margin-right: 2rem//
+			&:last-child
+		&__menu-link
+		&__separator
+		&__socials-container
+			+flex(row, wrap, center, flex-start)//
+		&__social-link
+			margin-right: 1.5rem//
+			+size(3.74rem, 3.74rem)//
+			+flex(row, wrap, center, center)//
+			&:hover
+			&:last-child
+			svg
+				+flex(row, wrap, center, center)//
+				+size(2rem, 2rem)//
+				path
+		&__facebook
+		&__twitter
+		&__instagram
+		&__youtube
+		&__pinterest
+		&__copy-container
+			+flex(row, wrap, center, flex-start)//
+		&__copy
+			&:last-child
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px)
 	body
 		background: $media-blue
+
+	.header
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			padding-left: 0rem//
+			padding-right: 0rem//
+			width: 100%//
+		&__logo
+		&__menu-container
+		&__menu
+			+flex(column, wrap, flex-start, center)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 0rem//
+			margin-top: 2rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+			&::before
+			&:hover::before
+		&__gift-finder-link
+			&:hover
+			&:active
+
+	.about
+		&__wrapper
+			+flex(row, wrap, center, stretch)//
+			padding-top: 4rem//
+			padding-bottom: 4rem//
+			width: 100%//
+		&__block
+			+size(31rem, 40rem)//
+			+flex(column, wrap, flex-start, flex-start)//
+			margin: 1rem//
+		&__block1
+			padding-top: 2.3rem//
+			padding-left: 3rem//
+			padding-bottom: 2rem//
+			height: auto//
+			order: 1//
+		&__block2
+			background-size: cover//
+			order: 2//
+		&__block3
+			background-size: cover//
+			height: 40rem//
+			order: 4//
+		&__block4
+			height: auto//
+			padding-top: 2.8rem//
+			padding-left: 2rem//
+			padding-bottom: 2rem//
+			order: 3//
+		&__block1-headline
+			font-size: 3.6rem//
+			line-height: 3.9rem//
+			padding-right: 0rem//
+		&__block1-paragraph
+			margin-top: 3.2rem//
+			padding-right: 15%//
+		&__find-gift-now
+			&:hover
+			&:active
+		&__block4-headline
+		&__block4-paragraph
+			padding-right: 15%//
+		&__learn-more
+			&:hover
+			&:active
+				color: #fff
+
+	.services
+		padding-bottom: 5.6rem//
+		&__headline
+			padding: 0rem 10%//
+		&__paragraph
+			padding: 0rem 10%//
+		&__wrapper
+			+flex(row, wrap, center, stretch)//
+			padding-top: 3.9rem//
+			width: 100%//
+		&__block
+			width: 27rem//
+			margin-right: 0rem//
+			+flex(column, wrap, flex-start, center)//
+			margin: 2rem//
+			&:last-child
+				margin-right: 2rem//
+		&__block:hover &__text-container
+		&__block:hover &__img
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__img-container
+			+size(27rem, 27rem)//
+		&__img
+		&__text-container
+			width: 100%//
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block-headline
+		&__see-more
+			&::before, &::after
+			&::before
+			&::after
+
+	.ready
+		padding-top: 5.3rem//
+		padding-bottom: 5.7rem//
+		&__wrapper
+			+flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__block
+			+size(100%, auto)//
+		&__block1
+			+flex(column, wrap, flex-start, center)//
+			padding-right: 0rem//
+			left: 0rem//
+			opacity: 1//
+		&__block2
+			+flex(column, wrap, flex-start, center)//
+			padding-left: 0rem//
+			right: 0rem//
+			opacity: 1//
+			padding-top: 3rem//
+		&__headline
+			text-align: center//
+		&__paragraph
+			padding: 0rem 10%//
+			text-align: center//
+			left: 0rem//
+			margin-top: 1.5rem//
+		&__find-gift-now
+		&__how-it-works
+			margin-left: 0rem//
+			margin-top: 2rem//
+
+	.blogs
+		padding-top: 5.4rem//
+		padding-bottom: 5rem//
+		&__headline
+			padding: 0rem 10%//
+		&__paragraph
+			padding: 0rem 10%//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			padding-top: 5.6rem//
+			width: 100%//
+		&__block
+			+size(29rem, auto)//
+		&__block1
+			+flex(row, wrap, flex-start, flex-start)//
+		&__block1:hover &__img
+		&__block1:hover &__block1-text-container
+		&__block2
+			+flex(row, wrap, center, stretch)//
+		&__img-container
+			+size(100%, 27.9rem)//
+		&__img
+			+size(100%, 100%)//
+			background-size: cover//
+		&__block1-text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 100%//
+			padding-left: 1.9rem//
+			padding-bottom: 5rem//
+		&__author
+		&__block1-paragraph
+			line-height: 5.8rem//
+			padding-right: 5%//
+		&__block1-read-more
+		&__item
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 100%//
+			margin: 2rem//
+			&:hover
+		&__item1
+		&__item2
+		&__item-headline
+		&__item-paragraph
+		&__item-read-more
+
+	.footer
+		padding-top: 3rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__logo
+		&__menu-container
+			margin-top: 4rem//
+		&__menu
+			+flex(column, wrap, flex-start, center)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 0rem//
+			margin-top: 1rem//
+			&:nth-child(2)
+				margin-right: 0rem//
+			&:last-child
+		&__menu-link
+		&__separator
+		&__socials-container
+			+flex(row, wrap, center, flex-start)//
+		&__social-link
+			margin-right: 1.5rem//
+			+size(3.74rem, 3.74rem)//
+			+flex(row, wrap, center, center)//
+			&:hover
+			&:last-child
+			svg
+				+flex(row, wrap, center, center)//
+				+size(2rem, 2rem)//
+				path
+		&__facebook
+		&__twitter
+		&__instagram
+		&__youtube
+		&__pinterest
+		&__copy-container
+			+flex(row, wrap, center, flex-start)//
+		&__copy
+			&:last-child
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px)
 	body
 		background: $media-green
+
+	.header
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			padding-left: 0rem//
+			padding-right: 0rem//
+			width: 100%//
+		&__logo
+		&__menu-container
+		&__menu
+			+flex(column, wrap, flex-start, center)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 0rem//
+			margin-top: 2rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__menu-link
+			&::before
+			&:hover::before
+		&__gift-finder-link
+			&:hover
+			&:active
+
+	.about
+		&__wrapper
+			+flex(row, wrap, center, stretch)//
+			padding-top: 4rem//
+			padding-bottom: 4rem//
+			width: 100%//
+		&__block
+			+size(100%, 40rem)//
+			+flex(column, wrap, flex-start, flex-start)//
+			margin: 1rem//
+		&__block1
+			padding-top: 2.3rem//
+			padding-left: 3rem//
+			padding-bottom: 2rem//
+			height: auto//
+			order: 1//
+		&__block2
+			background-size: cover//
+			order: 2//
+		&__block3
+			background-size: cover//
+			height: 40rem//
+			order: 4//
+		&__block4
+			height: auto//
+			padding-top: 2.8rem//
+			padding-left: 2rem//
+			padding-bottom: 2rem//
+			order: 3//
+		&__block1-headline
+			font-size: 3.6rem//
+			line-height: 3.9rem//
+			padding-right: 0rem//
+		&__block1-paragraph
+			margin-top: 3.2rem//
+			padding-right: 15%//
+		&__find-gift-now
+			&:hover
+			&:active
+		&__block4-headline
+		&__block4-paragraph
+			padding-right: 15%//
+		&__learn-more
+			&:hover
+			&:active
+				color: #fff
+
+	.services
+		padding-bottom: 5.6rem//
+		&__headline
+			padding: 0rem 10%//
+		&__paragraph
+			padding: 0rem 10%//
+		&__wrapper
+			+flex(row, wrap, center, stretch)//
+			padding-top: 3.9rem//
+			width: 100%//
+		&__block
+			width: 100%//
+			margin-right: 0rem//
+			+flex(column, wrap, flex-start, center)//
+			margin: 2rem//
+			&:last-child
+				margin-right: 2rem//
+		&__block:hover &__text-container
+		&__block:hover &__img
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__img-container
+			+size(27rem, 27rem)//
+		&__img
+		&__text-container
+			width: 100%//
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block-headline
+		&__see-more
+			&::before, &::after
+			&::before
+			&::after
+
+	.ready
+		padding-top: 5.3rem//
+		padding-bottom: 5.7rem//
+		&__wrapper
+			+flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__block
+			+size(100%, auto)//
+		&__block1
+			+flex(column, wrap, flex-start, center)//
+			padding-right: 0rem//
+			left: 0rem//
+			opacity: 1//
+		&__block2
+			+flex(column, wrap, flex-start, center)//
+			padding-left: 0rem//
+			right: 0rem//
+			opacity: 1//
+			padding-top: 3rem//
+		&__headline
+			text-align: center//
+		&__paragraph
+			padding: 0rem 10%//
+			text-align: center//
+			left: 0rem//
+			margin-top: 1.5rem//
+		&__find-gift-now
+		&__how-it-works
+			margin-left: 0rem//
+			margin-top: 2rem//
+
+	.blogs
+		padding-top: 5.4rem//
+		padding-bottom: 5rem//
+		&__headline
+			padding: 0rem 10%//
+		&__paragraph
+			padding: 0rem 10%//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			padding-top: 5.6rem//
+			width: 100%//
+		&__block
+			+size(100%, auto)//
+		&__block1
+			+flex(row, wrap, flex-start, flex-start)//
+		&__block1:hover &__img
+		&__block1:hover &__block1-text-container
+		&__block2
+			+flex(row, wrap, center, stretch)//
+		&__img-container
+			+size(100%, 27.9rem)//
+		&__img
+			+size(100%, 100%)//
+			background-size: cover//
+		&__block1-text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 100%//
+			padding-left: 1.9rem//
+			padding-bottom: 5rem//
+		&__author
+		&__block1-paragraph
+			line-height: 5.8rem//
+			padding-right: 5%//
+		&__block1-read-more
+		&__item
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 100%//
+			margin: 2rem//
+			&:hover
+		&__item1
+		&__item2
+		&__item-headline
+		&__item-paragraph
+		&__item-read-more
+
+	.footer
+		padding-top: 3rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__logo
+		&__menu-container
+			margin-top: 4rem//
+		&__menu
+			+flex(column, wrap, flex-start, center)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 0rem//
+			margin-top: 1rem//
+			&:nth-child(2)
+				margin-right: 0rem//
+			&:last-child
+		&__menu-link
+		&__separator
+		&__socials-container
+			+flex(row, wrap, center, flex-start)//
+		&__social-link
+			margin-right: 1.5rem//
+			+size(2.64rem, 2.64rem)//
+			+flex(row, wrap, center, center)//
+			&:hover
+			&:last-child
+			svg
+				+flex(row, wrap, center, center)//
+				+size(1.5rem, 1.5rem)//
+				path
+		&__facebook
+		&__twitter
+		&__instagram
+		&__youtube
+		&__pinterest
+		&__copy-container
+			+flex(row, wrap, center, flex-start)//
+		&__copy
+			&:last-child
 // /* Mobile First Method */
 // /* Custom, iPhone Retina */
 // @media only screen and (min-width: 320px)

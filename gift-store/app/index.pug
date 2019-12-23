@@ -29,23 +29,23 @@ html(lang="ru")
 		// Content Start
 
 		//- Header
-		header.header
+		header.header#home
 			.header__wrapper.wrapper
 				a.prevdef.header__logo(href="#") logo
 				nav.header__menu-container
 					ul.header__menu
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") Home
+							a.prevdef.header__menu-link(href="#home") Home
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") About Us
+							a.prevdef.header__menu-link(href="#about") About Us
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") Service
+							a.prevdef.header__menu-link(href="#service") Service
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") Blogs
+							a.prevdef.header__menu-link(href="#blogs") Blogs
 				a.prevdef.header__gift-finder-link(href="#") Gift Finder
 
 		//- About Section
-		section.about
+		section.about#about
 			.about__wrapper.wrapper
 				.about__block.about__block1
 					h3.about__block1-headline Find a gift for your wife or girlfriend
@@ -59,27 +59,31 @@ html(lang="ru")
 					a.prevdef.about__learn-more(href="#") Learn More
 
 		//- Services
-		section.services
+		section.services#service
 			h2.services__headline Gifts for all Occasions
 			p.services__paragraph “Try our web app to find the best gifts for all occasions”
 			.services__wrapper.wrapper
 				.services__block.services__block1
-					img.services__img(src="assets/services__pic1.jpg", alt="pic")
+					.services__img-container
+						img.services__img(src="assets/services__pic1.jpg", alt="pic")
 					.services__text-container
 						h3.services__block-headline Birthday
 						a.prevdef.services__see-more(href="#") See More
 				.services__block.services__block2
-					img.services__img(src="assets/services__pic2.jpg", alt="pic")
+					.services__img-container
+						img.services__img(src="assets/services__pic2.jpg", alt="pic")
 					.services__text-container
 						h3.services__block-headline Anniversary
 						a.prevdef.services__see-more(href="#") See More
 				.services__block.services__block3
-					img.services__img(src="assets/services__pic3.jpg", alt="pic")
+					.services__img-container
+						img.services__img(src="assets/services__pic3.jpg", alt="pic")
 					.services__text-container
 						h3.services__block-headline Valentine's Day
 						a.prevdef.services__see-more(href="#") See More
 				.services__block.services__block4
-					img.services__img(src="assets/services__pic4.jpg", alt="pic")
+					.services__img-container
+						img.services__img(src="assets/services__pic4.jpg", alt="pic")
 					.services__text-container
 						h3.services__block-headline Christmas
 						a.prevdef.services__see-more(href="#") See More
@@ -95,12 +99,13 @@ html(lang="ru")
 					a.prevdef.ready__how-it-works(href="#") How It Works
 
 		//- Blogs
-		section.blogs
+		section.blogs#blogs
 			h2.blogs__headline Our Best Blogs Ever
 			p.blogs__paragraph “Try our blog to find the best tips and tricks to select your gift”
 			.blogs__wrapper.wrapper
 				.blogs__block.blogs__block1
-					img.blogs__img(src="assets/blogs__pic.jpg", alt="pic")
+					.blogs__img-container
+						img.blogs__img(src="assets/blogs__pic.jpg", alt="pic")
 					.blogs__block1-text-container
 						p.blogs__author Mr. John Doe
 						p.blogs__block1-paragraph The best way to wish your wife
@@ -118,17 +123,17 @@ html(lang="ru")
 		//- Footer
 		footer.footer
 			.footer__wrapper.wrapper
-				a.prevdef.footer__logo(href="#") logo
+				a.prevdef.footer__logo(href="#home") logo
 				nav.footer__menu-container
 					ul.footer__menu
 						li.footer__menu-list-item
-							a.prevdef.footer__menu-link(href="#") Home
+							a.prevdef.footer__menu-link(href="#home") Home
 						li.footer__menu-list-item
-							a.prevdef.footer__menu-link(href="#") About
+							a.prevdef.footer__menu-link(href="#about") About
 						li.footer__menu-list-item
-							a.prevdef.footer__menu-link(href="#") Service
+							a.prevdef.footer__menu-link(href="#service") Service
 						li.footer__menu-list-item
-							a.prevdef.footer__menu-link(href="#") Blog
+							a.prevdef.footer__menu-link(href="#blogs") Blog
 				hr.footer__separator
 				.footer__socials-container
 					a.prevdef.footer__social-link.footer__linkedin(href="#")
@@ -149,6 +154,9 @@ html(lang="ru")
 				a.prevdef.footer__copy-container(href="#")
 					p.footer__copy-1.footer__copy &copy; 2010 — 2020
 					p.footer__copy-2.footer__copy Privacy — Terms
+		
+		//- to top link
+		a.prevdef.to-top-link(href="#home")
 
 		// Content End
 		// Scripts
