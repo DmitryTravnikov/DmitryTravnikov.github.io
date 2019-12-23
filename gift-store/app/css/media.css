@@ -130,13 +130,13 @@
         -ms-flex-order: 1;
             order: 1; }
   .about__block2 {
-    background-size: cover;
+    background-size: 140%;
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2; }
   .about__block3 {
-    background-size: cover;
+    background-size: 140%;
     height: 44rem;
     -webkit-box-ordinal-group: 4;
     -webkit-order: 3;
@@ -755,13 +755,13 @@
         -ms-flex-order: 1;
             order: 1; }
   .about__block2 {
-    background-size: cover;
+    background-size: 125%;
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2; }
   .about__block3 {
-    background-size: cover;
+    background-size: 200%;
     height: 47rem;
     -webkit-box-ordinal-group: 5;
     -webkit-order: 4;
@@ -1381,13 +1381,13 @@
         -ms-flex-order: 1;
             order: 1; }
   .about__block2 {
-    background-size: cover;
+    background-size: 110%;
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2; }
   .about__block3 {
-    background-size: cover;
+    background-size: 110%;
     height: 40rem;
     -webkit-box-ordinal-group: 5;
     -webkit-order: 4;
