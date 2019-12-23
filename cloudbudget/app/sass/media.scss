@@ -118,8 +118,8 @@
 			}
 		}
 		.video-section{
-			padding-top: 3.5rem;//
-			padding-bottom: 3.5rem;//
+			padding-top: 9.5rem;//
+			padding-bottom: 9.5rem;//
 			&__wrapper{
 				@include flex(row, wrap, center, flex-start);//
 				width: 100%;//
@@ -160,8 +160,8 @@
 			}
 		}
 		.features{
-			padding-top: 2rem;//
-			padding-bottom: 2rem;//
+			padding-top: 6.4rem;//
+			padding-bottom: 10.8rem;//
 			&__headline{
 				top: -10rem;//
 				opacity: 0;//
@@ -200,8 +200,8 @@
 			}
 		}
 		.technology{
-			padding-top: 2.4rem;//
-			padding-bottom: 3rem;//
+			padding-top: 6.4rem;//
+			padding-bottom: 13rem;//
 			&__headline{
 				top: -15rem;//
 				opacity: 0;//
@@ -252,8 +252,8 @@
 			}
 		}
 		.saving-money{
-			padding-top: 2.4rem;//
-			padding-bottom: 2.6rem;//
+			padding-top: 6.4rem;//
+			padding-bottom: 6.6rem;//
 			&__wrapper{
 				@include flex(row, wrap, center, stretch);//
 				width: 100%;//
@@ -305,8 +305,8 @@
 			&__slide3{}
 		}
 		.contact{
-			padding-top: 2.6rem;//
-			padding-bottom: 2.6rem;//
+			padding-top: 1.6rem;//
+			padding-bottom: 9.6rem;//
 			&__wrapper{
 				@include flex(row, wrap, center, flex-start);//
 				width: 100%;//
@@ -388,8 +388,8 @@
 			}
 		}
 		.footer{
-			padding-top: 2.3rem;//
-			padding-bottom: 2.3rem;//
+			padding-top: 0rem;//
+			padding-bottom: 1.3rem;//
 			&__wrapper{
 				@include flex(row, wrap, center, flex-start);//
 				width: 100%;//
@@ -761,7 +761,7 @@
 		}
 		.contact{
 			padding-top: 2.6rem;//
-			padding-bottom: 2.6rem;//
+			padding-bottom: 9.6rem;//
 			&__wrapper{
 				@include flex(row, wrap, center, flex-start);//
 				width: 100%;//
@@ -1216,7 +1216,7 @@
 		}
 		.contact{
 			padding-top: 2.6rem;//
-			padding-bottom: 2.6rem;//
+			padding-bottom: 9.6rem;//
 			&__wrapper{
 				@include flex(row, wrap, center, flex-start);//
 				width: 100%;//
@@ -1671,7 +1671,7 @@
 		}
 		.contact{
 			padding-top: 2.6rem;//
-			padding-bottom: 2.6rem;//
+			padding-bottom: 9.6rem;//
 			&__wrapper{
 				@include flex(row, wrap, center, flex-start);//
 				width: 100%;//
@@ -2167,7 +2167,7 @@
 		}
 		.contact{
 			padding-top: 2.6rem;//
-			padding-bottom: 2.6rem;//
+			padding-bottom: 9.6rem;//
 			&__wrapper{
 				@include flex(row, wrap, center, flex-start);//
 				width: 100%;//

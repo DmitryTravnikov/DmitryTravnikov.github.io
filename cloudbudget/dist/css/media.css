@@ -235,8 +235,8 @@
     body .main__paragraph {
       font-size: 2.6rem; }
   body .video-section {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem; }
+    padding-top: 9.5rem;
+    padding-bottom: 9.5rem; }
     body .video-section__wrapper {
       display: -webkit-box;
       display: -webkit-flex;
@@ -302,8 +302,8 @@
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
   body .features {
-    padding-top: 2rem;
-    padding-bottom: 2rem; }
+    padding-top: 6.4rem;
+    padding-bottom: 10.8rem; }
     body .features__headline {
       top: -10rem;
       opacity: 0; }
@@ -382,8 +382,8 @@
           -ms-transform: translateX(0%);
               transform: translateX(0%); }
   body .technology {
-    padding-top: 2.4rem;
-    padding-bottom: 3rem; }
+    padding-top: 6.4rem;
+    padding-bottom: 13rem; }
     body .technology__headline {
       top: -15rem;
       opacity: 0; }
@@ -436,8 +436,8 @@
       opacity: 0;
       margin: 2rem; }
   body .saving-money {
-    padding-top: 2.4rem;
-    padding-bottom: 2.6rem; }
+    padding-top: 6.4rem;
+    padding-bottom: 6.6rem; }
     body .saving-money__wrapper {
       display: -webkit-box;
       display: -webkit-flex;
@@ -520,8 +520,8 @@
       width: 44.5rem;
       height: 31.1rem; }
   body .contact {
-    padding-top: 2.6rem;
-    padding-bottom: 2.6rem; }
+    padding-top: 1.6rem;
+    padding-bottom: 9.6rem; }
     body .contact__wrapper {
       display: -webkit-box;
       display: -webkit-flex;
@@ -661,8 +661,8 @@
     body .contact__select-option-fake {
       width: 100%; }
   body .footer {
-    padding-top: 2.3rem;
-    padding-bottom: 2.3rem; }
+    padding-top: 0rem;
+    padding-bottom: 1.3rem; }
     body .footer__wrapper {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1302,7 +1302,7 @@
       height: 31.1rem; }
   body .contact {
     padding-top: 2.6rem;
-    padding-bottom: 2.6rem; }
+    padding-bottom: 9.6rem; }
     body .contact__wrapper {
       display: -webkit-box;
       display: -webkit-flex;
@@ -2083,7 +2083,7 @@
       height: 31.1rem; }
   body .contact {
     padding-top: 2.6rem;
-    padding-bottom: 2.6rem; }
+    padding-bottom: 9.6rem; }
     body .contact__wrapper {
       display: -webkit-box;
       display: -webkit-flex;
@@ -2864,7 +2864,7 @@
       height: 31.1rem; }
   body .contact {
     padding-top: 2.6rem;
-    padding-bottom: 2.6rem; }
+    padding-bottom: 9.6rem; }
     body .contact__wrapper {
       display: -webkit-box;
       display: -webkit-flex;
@@ -3672,7 +3672,7 @@
       height: 31.1rem; }
   body .contact {
     padding-top: 2.6rem;
-    padding-bottom: 2.6rem; }
+    padding-bottom: 9.6rem; }
     body .contact__wrapper {
       display: -webkit-box;
       display: -webkit-flex;
