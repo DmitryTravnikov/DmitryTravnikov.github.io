@@ -6,10 +6,492 @@
 
 body
 	cursor: default
+	user-select: none
 
 .wrapper
+	+wrapper(144rem, auto)
 
 // 1rem === 10px
+
+.header
+	background: #FAFAFA
+	&__wrapper
+		+flex(row, wrap, space-between, flex-start)
+		padding-left: 8rem
+		padding-right: 3.4rem
+		padding-bottom: 3.7rem
+	&__logo
+		text-decoration: none
+		font-family: $ha
+		font-size: 1.8rem
+		color: $space-grey
+		margin-top: 5.1rem
+	&__menu-container
+		margin-top: 4.6rem
+	&__menu
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(row, wrap, flex-start, flex-start)
+	&__menu-list-item
+		padding: 0rem
+		margin: 0rem
+		+flex(row, wrap, flex-start, flex-start)
+		margin-right: 3.1rem
+		&:last-child
+			margin-right: 0rem
+	&__menu-link
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.8rem
+		color: #000
+		position: relative
+		&::before
+			content: ''
+			+size(100%, .2rem)
+			background: #000
+			position: absolute
+			bottom: -0.3rem
+			left: 0rem
+			opacity: 0
+			transition: 0.2s
+		&:hover::before
+			opacity: 1
+	&__gift-finder-link
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.8rem
+		color: $orange
+		border: .1rem solid $orange
+		border-radius: .5rem
+		text-transform: uppercase
+		padding: 1rem 2.4rem
+		margin-top: 3.8rem
+		transition: .2s
+		&:hover
+			background: darken($orange, 5%)
+			color: #fff
+		&:active
+			background: $orange
+			color: #fff
+
+.about
+	&__wrapper
+		+flex(row, wrap, flex-start, flex-start)
+		padding-bottom: 4rem
+	&__block
+		background: #F1F1F2
+		+size(50%, 70rem)
+		+flex(column, wrap, flex-start, flex-start)
+	&__block1
+		padding-top: 14.3rem
+		padding-left: 16.2rem
+	&__block2
+		background: url('../assets/about__pic1.jpg') no-repeat center
+		background-size: cover
+	&__block3
+		background: url('../assets/about__pic2.jpg') no-repeat center
+		background-size: cover
+		height: 60rem
+	&__block4
+		height: 60rem
+		padding-top: 15.8rem
+		padding-left: 11.4rem
+	&__block1-headline
+		width: 100%
+		margin: 0rem
+		font-family: $gsb
+		font-size: 5.6rem
+		line-height: 6.9rem
+		color: #000
+		text-align: left
+		padding-right: 12rem
+	&__block1-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 2rem
+		line-height: 140.62%
+		text-align: left
+		margin-top: 4.2rem
+		padding-right: 14rem
+	&__find-gift-now
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.8rem
+		color: #fff
+		text-transform: uppercase
+		text-align: left
+		background: $orange
+		border-radius: .5rem
+		transition: .2s
+		margin-top: 5.7rem
+		padding: 2rem 3.6rem
+		&:hover
+			background: darken($orange, 5%)
+		&:active
+			background: $orange
+	&__block4-headline
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 3.2rem
+		line-height: 140.62%
+		color: #000
+		text-align: left
+	&__block4-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 2rem
+		line-height: 140.62%
+		color: #000
+		text-align: left
+		margin-top: 2.6rem
+		padding-right: 17rem
+	&__learn-more
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.8rem
+		line-height: 134.77%
+		color: $orange
+		text-transform: uppercase
+		border-radius: .5rem
+		border: .1rem solid $orange
+		margin-top: 4rem
+		padding: 1.7rem 4.5rem
+		transition: .2s
+		&:hover
+			background: darken($orange, 5%)
+			color: #fff
+		&:active
+			background: $orange
+			color: #fff
+
+.services
+	background: #fff
+	padding-top: 5.2rem
+	padding-bottom: 13.6rem
+	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 3.2rem
+		line-height: 3.8rem
+		color: #000
+		text-align: center
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 1.8rem
+		line-height: 135.94%
+		color: #000
+		text-align: center
+		margin-top: 2.4rem
+	&__wrapper
+		+flex(row, wrap, center, stretch)
+		padding-top: 6.9rem
+	&__block
+		width: 27rem
+		transition: .2s
+		margin-right: 3rem
+		&:last-child
+			margin-right: 0rem
+	&__block:hover &__text-container
+		background: #fff
+		box-shadow: 1rem 1rem 1rem rgba(grey, 0.1)
+	&__block1
+	&__block2
+	&__block3
+	&__block4
+	&__img
+	&__text-container
+		+size(100%, auto)
+		+flex(column, wrap, flex-start, flex-start)
+		background: #FAFAFA
+		padding-top: 1.9rem
+		padding-left: 2.4rem
+		padding-bottom: 2.7rem
+	&__block-headline
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 2rem
+		line-height: 2.4rem
+		color: #000
+		text-align: left
+	&__see-more
+		text-decoration: none
+		font-family: $rb
+		font-size: 1.4rem
+		line-height: 1.9rem
+		color: #000
+		text-transform: capitalize
+		position: relative
+		margin-top: 7.5rem
+		&::before, &::after
+			content: ''
+			+size(.1rem, 0.5rem)
+			background: #000
+			position: absolute
+			right: -0.7rem
+		&::before
+			top: 0.6rem
+			transform: rotate(-45deg)
+		&::after
+			bottom: 0.5rem
+			transform: rotate(45deg)
+
+.ready
+	background: $orange
+	padding-top: 7.3rem
+	padding-bottom: 7.7rem
+	&__wrapper
+		+flex(row, wrap, center, flex-start)
+	&__block
+		+size(50%, auto)
+	&__block1
+		+flex(column, wrap, flex-start, flex-start)
+		padding-right: 15.9rem
+	&__block2
+		+flex(row, wrap, flex-start, flex-start)
+		padding-left: 6.9rem
+		padding-top: 2.3rem
+	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $gb
+		font-size: 3.2rem
+		line-height: 140.62%
+		color: #000
+		text-align: right
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 3.2rem
+		line-height: 140.62%
+		text-align: right
+		position: relative
+		margin-top: 0.2rem
+		left: -1.5rem
+	&__find-gift-now
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.8rem
+		line-height: 2.2rem
+		color: #fff
+		text-transform: uppercase
+		background: $space-grey
+		border-radius: .5rem
+		border: .1rem solid $space-grey
+		padding: 1.3rem 3.4rem
+	&__how-it-works
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.8rem
+		line-height: 2.2rem
+		color: #000
+		text-transform: uppercase
+		background: none
+		border-radius: .5rem
+		border: .1rem solid #000
+		padding: 1.3rem 3.4rem
+		margin-left: 1.7rem
+
+.blogs
+	background: #fff
+	padding-top: 8.4rem
+	padding-bottom: 8rem
+	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 3.2rem
+		line-height: 3.8rem
+		color: #000
+		text-transform: capitalize
+		text-align: center
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 1.8rem
+		line-height: 135.94%
+		color: #000
+		text-align: center
+		margin-top: 2.4rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+		padding-top: 7.6rem
+	&__block
+		+size(117rem, auto)
+	&__block1
+		+flex(row, wrap, flex-start, stretch)
+	&__block2
+		+flex(row, wrap, space-between, stretch)
+		padding-top: 4rem
+	&__img
+	&__block1-text-container
+		+flex(column, wrap, flex-start, flex-start)
+		width: calc(100% - 40rem)
+		background: $space-grey
+		padding-top: 6rem
+		padding-left: 7.9rem
+	&__author
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 1.4rem
+		line-height: 140.62%
+		color: #fff
+		text-align: left
+	&__block1-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 4.8rem
+		line-height: 5.8rem
+		color: #fff
+		text-align: left
+		margin-top: 2.2rem
+		padding-right: 13rem
+	&__block1-read-more
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.8rem
+		color: #fff
+		text-transform: capitalize
+		margin-top: 7.6rem
+	&__item
+		+flex(column, wrap, flex-start, flex-start)
+		width: 57rem
+		padding-top: 4.2rem
+		padding-left: 4.8rem
+		padding-bottom: 5rem
+		transition: .2s
+		&:hover
+			box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05)
+	&__item1
+	&__item2
+	&__item-headline
+		width: 100%
+		margin: 0rem
+		font-family: $gb
+		font-size: 2.4rem
+		line-height: 140.62%
+		color: #000
+		text-align: left
+		padding-right: 6rem
+	&__item-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 1.8rem
+		line-height: 140.62%
+		color: #000
+		text-align: left
+		margin-top: 1.9rem
+		padding-right: 5rem
+	&__item-read-more
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.4rem
+		line-height: 140.62%
+		color: #000
+		text-transform: capitalize
+		margin-top: 4rem
+
+.footer
+	background: #FAFAFA
+	padding-top: 11.6rem
+	padding-bottom: 3.9rem
+	&__wrapper
+		position: relative
+		+flex(column, wrap, flex-start, center)
+	&__logo
+		position: absolute
+		top: -0.4rem
+		left: 50.4%
+		transform: translateX(-50%)
+		text-decoration: none
+		font-family: $ha
+		font-size: 1.8rem
+		line-height: 3.9rem
+		color: $orange
+	&__menu-container
+		width: 100%
+	&__menu
+		width: 100%
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(row, wrap, center, flex-start)
+	&__menu-list-item
+		padding: 0rem
+		margin: 0rem
+		+flex(row, wrap, flex-start, flex-start)
+		margin-right: 8.1rem
+		&:nth-child(2)
+			margin-right: 31.3rem
+		&:last-child
+			margin-right: 0rem
+	&__menu-link
+		text-decoration: none
+		font-family: $gb
+		font-size: 1.4rem
+		line-height: 140.62%
+		color: #000
+		text-transform: capitalize
+	&__separator
+		margin: 0rem
+		border: none
+		background: #000
+		width: 69%
+		height: 0.2rem
+		margin-top: 5.6rem
+	&__socials-container
+		width: 100%
+		+flex(row, wrap, center, flex-start)
+		margin-top: 5.6rem
+	&__social-link
+		margin-right: 2.5rem
+		+size(3.84rem, 3.84rem)
+		background: #000
+		border-radius: 50%
+		+flex(row, wrap, center, center)
+		transition: .2s
+		&:hover
+			background: lighten(#000, 10%)
+		&:last-child
+			margin-right: 0rem
+		svg
+			+flex(row, wrap, center, center)
+			+size(2rem, 2rem)
+			path
+				fill: #fff
+	&__facebook
+	&__twitter
+	&__instagram
+	&__youtube
+	&__pinterest
+	&__copy-container
+		text-decoration: none
+		margin-top: 6.9rem
+		width: 100%
+		+flex(row, wrap, center, flex-start)
+	&__copy
+		width: auto
+		margin: 0rem
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.4rem
+		line-height: 140.62%
+		color: #000
+		margin-right: 1.9rem
+		&:last-child
+			margin-right: 0rem
 
 *
 	// @include outline($blue)

@@ -1,40 +1,30 @@
-/* font-family: "RobotoRegular"; */
+/* font-family: "GilroyRegular"; */
 @font-face {
-	font-family: "RobotoRegular";
-	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
-	url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
-	font-style: normal;
+	font-family: 'Gilroy Regular';
+	src: url('../fonts/GilroyRegular/Gilroy-Regular.eot');
+	src: url('../fonts/GilroyRegular/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/GilroyRegular/Gilroy-Regular.woff') format('woff'),
+	url('../fonts/GilroyRegular/Gilroy-Regular.ttf') format('truetype');
 	font-weight: normal;
+	font-style: normal;
 }
-/* font-family: "RobotoLight"; */
+/* font-family: "GilroySemibold"; */
 @font-face {
-	font-family: "RobotoLight";
-	src: url("../fonts/RobotoLight/RobotoLight.eot");
-	src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
-	url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
-	font-style: normal;
+	font-family: 'Gilroy Semibold';
+	src: url('../fonts/GilroySemibold/Gilroy-SemiBold.eot');
+	src: url('../fonts/GilroySemibold/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/GilroySemibold/Gilroy-SemiBold.woff') format('woff'),
+	url('../fonts/GilroySemibold/Gilroy-SemiBold.ttf') format('truetype');
 	font-weight: normal;
+	font-style: normal;
 }
-/* font-family: "RobotoMedium"; */
+/* font-family: "GilroySemibold"; */
 @font-face {
-	font-family: "RobotoMedium";
-	src: url("../fonts/RobotoMedium/RobotoMedium.eot");
-	src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
-	url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
-	font-style: normal;
+	font-family: 'Gilroy Bold';
+	src: url('../fonts/GilroyBold/Gilroy-Bold.eot');
+	src: url('../fonts/GilroyBold/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/GilroyBold/Gilroy-Bold.woff') format('woff'),
+	url('../fonts/GilroyBold/Gilroy-Bold.ttf') format('truetype');
 	font-weight: normal;
-}
-/* font-family: "RobotoBold"; */
-@font-face {
-	font-family: "RobotoBold";
-	src: url("../fonts/RobotoBold/RobotoBold.eot");
-	src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
-	url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
 	font-style: normal;
-	font-weight: normal;
 }
