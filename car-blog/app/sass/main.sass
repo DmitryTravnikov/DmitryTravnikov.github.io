@@ -1052,5 +1052,26 @@ body
 		color: #fff
 		text-align: center
 
+.to-top-link
+	+size(3rem, 3rem)
+	background: darken(#171717, 5%)
+	position: fixed
+	bottom: 0rem
+	right: 0rem
+	opacity: 0
+	z-index: -1
+	&::before, &::after
+		content: ''
+		+size(0.1rem, 1rem)
+		background: #fff
+		position: absolute
+		top: 1.1rem
+	&::before
+		transform: rotate(45deg)
+		left: 1.1rem
+	&::after
+		transform: rotate(-45deg)
+		right: 1.1rem
+
 *
 	// @include outline($blue)

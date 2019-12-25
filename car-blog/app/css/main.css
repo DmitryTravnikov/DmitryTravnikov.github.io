@@ -1980,3 +1980,30 @@ body {
   font-size: 1.8rem;
   color: #fff;
   text-align: center; }
+
+.to-top-link {
+  width: 3rem;
+  height: 3rem;
+  background: #0a0a0a;
+  position: fixed;
+  bottom: 0rem;
+  right: 0rem;
+  opacity: 0;
+  z-index: -1; }
+  .to-top-link::before, .to-top-link::after {
+    content: '';
+    width: 0.1rem;
+    height: 1rem;
+    background: #fff;
+    position: absolute;
+    top: 1.1rem; }
+  .to-top-link::before {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    left: 1.1rem; }
+  .to-top-link::after {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    right: 1.1rem; }

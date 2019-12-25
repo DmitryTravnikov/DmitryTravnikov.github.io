@@ -233,6 +233,24 @@ $(document).ready(function() {
 		modalSuccessContainer.style.zIndex = '';
 	}
 
+	//smooth scroll
+	$('.to-top-link').mPageScroll2id({
+		offset: 0,
+		scrollSpeed: 1000
+	});
+
+	window.onscroll = function() {
+		var ypos = window.pageYOffset;
+		var toTopLink = document.querySelector('.to-top-link');
+		if (ypos > 500) {
+			toTopLink.style.opacity = '1';
+			toTopLink.style.zIndex = '5';
+		} else {
+			toTopLink.style.opacity = '';
+			toTopLink.style.zIndex = '';
+		}
+	}
+
 });//doc.ready end
 
 var cLog = function(n) {
