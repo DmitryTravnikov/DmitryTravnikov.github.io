@@ -14,12 +14,14 @@ body
 
 .header
 	background: #000
-	padding: 1rem 1rem
+	padding-bottom: 2.9rem
 	&__wrapper
 		+flex(row, wrap, space-between, flex-start)
 	&__logo-container
 		text-decoration: none
 		+flex(row, wrap, flex-start, flex-start)
+		margin-top: 3.8rem
+		margin-left: 0.4rem
 	&__logo-paragraph1
 		margin: 0rem
 		font-family: $lt
@@ -37,7 +39,13 @@ body
 		text-align: left
 		border-radius: .3rem
 		background: $blue
+		margin-left: 0.5rem
+		padding: 0.3rem 0.5rem
+		position: relative
+		top: -0.4rem
 	&__menu-container
+		margin-left: 7.7rem
+		margin-top: 3.6rem
 	&__menu
 		padding: 0rem
 		margin: 0rem
@@ -47,6 +55,9 @@ body
 		padding: 0rem
 		margin: 0rem
 		+flex(row, wrap, flex-start, flex-start)
+		margin-right: 3.6rem
+		&:last-child
+			margin-right: 0rem
 	&__menu-link
 		text-decoration: none
 		font-family: $ps
@@ -68,6 +79,7 @@ body
 	&__search-container
 		+flex(row, wrap, flex-start, center)
 		overflow: hidden
+		margin-top: 3rem
 	&__search-input
 		outline: none
 		border: none
@@ -78,18 +90,24 @@ body
 		position: relative
 		top: 0rem
 		right: -100%
-		transition: .2s
+		transition: 0.4s
+		padding: 0rem 0.8rem
 		&::placeholder
 			font-family: $ps
 			font-weight: 400
 			font-size: 1.4rem
 	&__search-button
-		+size(3rem, 3rem)
+		+size(2.5rem, 3rem)
 		border: none
 		outline: none
 		cursor: pointer
 		background: url('../assets/header__search-icon.png') no-repeat center, #000
+		position: relative
+		margin-left: 0.6rem
+		z-index: 3
+
 .main
+	padding-top: 3rem
 	&__wrapper
 		+flex(row, wrap, flex-start, flex-start)
 	&__block
@@ -107,6 +125,7 @@ body
 		border-radius: .3rem
 		overflow: hidden
 		position: relative
+		transition: 0.1s
 		&::before
 			content: ''
 			+size(100%, 70%)
@@ -114,6 +133,8 @@ body
 			position: absolute
 			bottom: 0rem
 			left: 0rem
+	&__item:hover
+		background-size: 120%
 	&__item1
 		+size(100%, 100%)
 		background: url('../assets/main__image1.jpg') no-repeat center
@@ -121,27 +142,27 @@ body
 	&__item2
 		+size(37rem, 26.5rem)
 		background: url('../assets/main__image2.jpg') no-repeat center
-		background-size: cover
+		background-size: 100%
 		margin: 1.5rem
 		margin-top: 0rem
 		margin-left: 2.8rem
 	&__item3
 		+size(37rem, 26.5rem)
 		background: url('../assets/main__image3.jpg') no-repeat center
-		background-size: cover
+		background-size: 100%
 		margin: 1.5rem
 		margin-top: 0rem
 		margin-right: 0rem
 	&__item4
 		+size(37rem, 26.5rem)
 		background: url('../assets/main__image4.jpg') no-repeat center
-		background-size: cover
+		background-size: 100%
 		margin: 1.5rem
 		margin-left: 2.8rem
 	&__item5
 		+size(37rem, 26.5rem)
 		background: url('../assets/main__image5.jpg') no-repeat center
-		background-size: cover
+		background-size: 100%
 		margin: 1.5rem
 		margin-right: 0rem
 	&__vehicle
@@ -154,14 +175,29 @@ body
 		background: $blue
 		border-radius: .3rem
 		position: absolute
-		top: 0rem
-		left: 0rem
-	&__text-container
+		top: 3rem
+		left: 2rem
+		padding: 0.4rem 1.2rem
+	&__item &__text-container
 		text-decoration: none
 		width: 100%
 		position: relative
 		z-index: 2
 		+flex(column, wrap, flex-start, flex-start)
+		padding-left: 2.3rem
+		padding-bottom: 2.3rem
+	&__item &__post-title
+		padding-right: 7rem
+	&__item1 &__post-title
+		padding-right: 0rem
+	&__item1 &__text-container
+		text-decoration: none
+		width: 100%
+		position: relative
+		z-index: 2
+		+flex(column, wrap, flex-start, flex-start)
+		padding-left: 2rem
+		padding-bottom: 2.8rem
 	&__post-info
 		width: 100%
 		margin: 0rem
@@ -172,7 +208,17 @@ body
 		text-align: left
 	&__post-author
 	&__post-date
-	&__post-title
+	&__item &__post-title
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 700
+		font-size: 2rem
+		line-height: 3.2rem
+		color: #fff
+		text-align: left
+		margin-top: 0.6rem
+	&__item1 &__post-title
 		width: 100%
 		margin: 0rem
 		font-family: $ps
@@ -181,8 +227,10 @@ body
 		line-height: 3.6rem
 		color: #fff
 		text-align: left
+		margin-top: 0.6rem
 
 .blog
+	padding-top: 7.5rem
 	&__wrapper
 		+flex(row, wrap, space-between, flex-start)
 	&__center
@@ -192,21 +240,55 @@ body
 		width: 27rem
 	&__center-item
 		+flex(column, wrap, flex-start, flex-start)
+		position: relative
+		margin-top: 17.6rem
+		width: 100%
+	&__center-item:hover &__center-img
+		transform: scale(1.2)
 	&__center-item1
+		margin-top: 0rem
 	&__center-item2
 	&__center-item3
 	&__center-item4
 	&__center-item5
 	&__center-img-container
+		width: 100%
+		height: 44rem
+		overflow: hidden
 	&__center-img
 		border-radius: .3rem
+		+size(100%, 44rem)
+		transition: 0.1s
+	&__center-img1
+		background: url('../assets/blog__center-pic1.jpg') no-repeat center
+		background-size: cover
+	&__center-img2
+		background: url('../assets/blog__center-pic2.jpg') no-repeat center
+		background-size: cover
+	&__center-img3
+		background: url('../assets/blog__center-pic3.jpg') no-repeat center
+		background-size: cover
+	&__center-img4
+		background: url('../assets/blog__center-pic4.jpg') no-repeat center
+		background-size: cover
+	&__center-img5
+		background: url('../assets/blog__center-pic5.jpg') no-repeat center
+		background-size: cover
 	&__center-text-container
 		width: 73rem
 		background: #fff
-		box-shadow: 1rem 1rem 1rem rgba(#000, .8)
-		border-radius: .3s
+		box-shadow: 0.3rem 0.3rem 0.7rem rgba(#222, 0.2)
+		border-radius: .3rem
 		+flex(row, wrap, flex-start, flex-start)
 		text-decoration: none
+		position: absolute
+		bottom: -11.7rem
+		left: 50%
+		transform: translateX(-50%)
+		padding-top: 3rem
+		z-index: 3
+		padding-left: 3.4rem
+		padding-bottom: 3rem
 	&__center-vehicle
 		margin: 0rem
 		font-family: $ps
@@ -216,6 +298,7 @@ body
 		text-align: center
 		background: $blue
 		border-radius: .3rem
+		padding: .4rem 1.2rem
 	&__center-headline
 		width: 100%
 		margin: 0rem
@@ -224,6 +307,7 @@ body
 		font-size: 2.5rem
 		color: #171717
 		text-align: left
+		margin-top: 2rem
 	&__center-post-info
 		width: 100%
 		margin: 0rem
@@ -232,6 +316,7 @@ body
 		font-style: italic
 		color: #666
 		text-align: left
+		margin-top: 1.5rem
 	&__center-post-author
 	&__center-post-date
 	&__center-post
@@ -243,8 +328,12 @@ body
 		line-height: 2.4rem
 		color: #666
 		text-align: left
+		margin-top: 1.4rem
+		padding-right: 8rem
 	&__center-pagination
 		+flex(row, wrap, flex-start, flex-start)
+		margin-top: 19.3rem
+		padding-left: 0.4rem
 	&__center-pagination-prev-button
 		+size(4rem, 4rem)
 		outline: none
@@ -254,20 +343,29 @@ body
 		border-radius: .3rem
 		border: .1rem solid #E5E5E5
 		position: relative
+		margin-right: 0.9rem
 		&:disabled::before, &:disabled::after
 			opacity: 0.4
 		&::before, &::after
 			content: ''
-			+size(.1rem, 1rem)
+			+size(.1rem, 0.6rem)
 			background: #171717
 			position: absolute
-			left: .2rem
+			left: 1.8rem
 		&::before
-			top: .1rem
+			top: 1.4rem
 			transform: rotate(45deg)
 		&::after
-			bottom: .1rem
+			bottom: 1.4rem
 			transform: rotate(-45deg)
+		&:hover
+			background: #000
+		&:hover::before, &:hover::after
+			background: #fff
+		&:disabled:hover
+			background: #fff
+		&:disabled:hover::before, &:disabled:hover::after
+			background: #171717
 	&__center-pagination-list
 		padding: 0rem
 		margin: 0rem
@@ -277,6 +375,9 @@ body
 		padding: 0rem
 		margin: 0rem
 		+flex(row, wrap, flex-start, flex-start)
+		margin-right: 1.1rem
+		&:last-child
+			margin-right: 0rem
 	&__center-pagination-link
 		text-decoration: none
 		color: #171717
@@ -285,8 +386,14 @@ body
 		border: .1rem solid #E5E5E5
 		height: 4rem
 		+flex(row, wrap, center, center)
-		padding: 0rem 1.6rem
+		padding: 0rem 1.4rem
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.6rem
 		transition: .2s
+		&.active
+			background: #000
+			color: #fff
 		&:hover
 			background: #000
 			color: #fff
@@ -299,20 +406,29 @@ body
 		border-radius: .3rem
 		border: .1rem solid #E5E5E5
 		position: relative
+		margin-left: 0.7rem
 		&:disabled::before, &:disabled::after
 			opacity: 0.4
 		&::before, &::after
 			content: ''
-			+size(.1rem, 1rem)
+			+size(.1rem, 0.6rem)
 			background: #171717
 			position: absolute
-			right: .2rem
+			right: 1.8rem
 		&::before
-			top: .1rem
+			top: 1.4rem
 			transform: rotate(-45deg)
 		&::after
-			bottom: .1rem
+			bottom: 1.4rem
 			transform: rotate(45deg)
+		&:hover
+			background: #000
+		&:hover::before, &:hover::after
+			background: #fff
+		&:disabled:hover
+			background: #fff
+		&:disabled:hover::before, &:disabled:hover::after
+			background: #171717
 	&__right-top-post-container
 		width: 100%
 		+flex(column, wrap, flex-start, flex-start)
@@ -326,6 +442,7 @@ body
 		font-size: 1.8rem
 		color: #171717
 		text-align: left
+		margin-top: 1.6rem
 	&__right-top-post-profession
 		width: 100%
 		margin: 0rem
@@ -335,6 +452,7 @@ body
 		font-size: 1.4rem
 		color: #999
 		text-align: left
+		margin-top: 0.8rem
 	&__right-top-post
 		width: 100%
 		margin: 0rem
@@ -344,6 +462,7 @@ body
 		line-height: 2.5rem
 		color: #666
 		text-align: left
+		margin-top: 1.6rem
 	&__right-top-post-continue-reading
 		width: 100%
 		text-decoration: none
@@ -352,12 +471,17 @@ body
 		font-weight: 700
 		font-size: 1.4rem
 		color: #fff
-		padding: 1rem 0rem
+		padding: 1.7rem 0rem
 		border-radius: .3rem
 		text-align: center
+		margin-top: 2.2rem
+		transition: .2s
+		&:hover
+			background: lighten(#232323, 5%)
 	&__right-popular-posts-container
 		+flex(column, wrap, flex-start, flex-start)
 		width: 100%
+		margin-top: 5.7rem
 	&__right-popular-posts-title
 		width: 100%
 		margin: 0rem
@@ -371,6 +495,12 @@ body
 		text-decoration: none
 		width: 100%
 		+flex(column, wrap, flex-start, flex-start)
+		margin-top: 2.4rem
+	&__right-popular-post1
+	&__right-popular-post2
+		margin-top: 4rem
+	&__right-popular-post3
+		margin-top: 4rem
 	&__right-popular-post-img-container
 		+size(100%, 19.5rem)
 		+flex(column, wrap, flex-start, flex-start)
@@ -396,8 +526,9 @@ body
 		background: $blue
 		border-radius: .3rem
 		position: absolute
-		top: 0rem
-		left: 0rem
+		top: 2rem
+		left: 1.8rem
+		padding: 0.4rem 1.2rem
 	&__right-popular-post-headline
 		width: 100%
 		margin: 0rem
@@ -407,6 +538,7 @@ body
 		line-height: 2.8rem
 		color: #171717
 		text-align: left
+		margin-top: 1.7rem
 	&__right-popular-post-info
 		width: 100%
 		margin: 0rem
@@ -416,11 +548,13 @@ body
 		line-height: 1.8rem
 		color: #666
 		text-align: left
+		margin-top: 1rem
 	&__right-popular-post-author
 	&__right-popular-post-date
 	&__right-instagram-container
 		width: 100%
 		+flex(column, wrap, flex-start, flex-start)
+		margin-top: 5.8rem
 	&__right-instagram-headline
 		width: 100%
 		margin: 0rem
@@ -432,6 +566,7 @@ body
 	&__right-instagram-imgs-container
 		width: 100%
 		+flex(row, wrap, flex-start, flex-start)
+		margin-top: 2rem
 	&__right-instagram-img-container
 		text-decoration: none
 		margin: .5rem
@@ -459,17 +594,25 @@ body
 	&__right-view-instagram
 		width: 100%
 		text-decoration: none
-		background: url('../assets/blog__view-instagram-icon.png') no-repeat 6rem center,  #232323
+		background: url('../assets/blog__view-instagram-icon.png') no-repeat 7.1rem center,  #232323
 		border-radius: .3rem
-		padding: 1rem 0rem
+		padding-top: 1.7rem
+		padding-bottom: 1.7rem
+		padding-left: 1.1rem
 		text-align: center
 		font-family: $ps
 		font-weight: 700
 		font-size: 1.4rem
 		color: #fff
+		margin-top: 0.3rem
+		transition: .2s
+		&:hover
+			background: url('../assets/blog__view-instagram-icon.png') no-repeat 7.1rem center, lighten(#232323, 5%)
 	&__right-tags-container
 		width: 100%
 		+flex(column, wrap, flex-start, flex-start)
+		margin-top: 6rem
+		overflow: hidden
 	&__right-tags-title
 		width: 100%
 		margin: 0rem
@@ -479,8 +622,9 @@ body
 		color: #171717
 		text-align: left
 	&__right-tags
-		width: 100%
+		width: 105%
 		+flex(row, wrap, flex-start, flex-start)
+		margin-top: 1.5rem
 	&__right-tag
 		text-decoration: none
 		background: #EBEBEB
@@ -489,9 +633,17 @@ body
 		font-weight: 400
 		font-size: 1.4rem
 		color: #171717
+		padding: 0.6rem 1.5rem
+		margin-right: 1.2rem
+		margin-top: 1.2rem
+		transition: .2s
+		&:hover
+			background: #232323
+			color: #fff
 	&__right-subscribe-container
 		width: 100%
 		+flex(column, wrap, flex-start, flex-start)
+		margin-top: 5.9rem
 	&__right-subscribe-title
 		width: 100%
 		margin: 0rem
@@ -508,20 +660,22 @@ body
 		line-height: 2.4rem
 		color: #666
 		text-align: left
+		margin-top: 1.1rem
+		padding-right: 1rem
 	&__subscribe-form
 		width: 100%
 		+flex(column, wrap, flex-start, flex-start)
+		margin-top: 2.8rem
 	&__subscribe-input
 		outline: none
 		border: .1rem solid #AEB3BB
 		border-radius: .3rem
-		padding: 1rem 1rem
+		padding: 1.6rem 1rem
 		width: 100%
 		font-family: $ps
 		font-weight: 400
 		font-size: 1.4rem
 		color: #AEB3BB
-		border: .1rem solid transparent
 		&::placeholder
 			font-family: $ps
 			font-weight: 400
@@ -529,6 +683,7 @@ body
 			color: #AEB3BB
 	&__subscribe-name-input
 	&__subscribe-email-input
+		margin-top: 0.9rem
 	&__subscribe-submit-button
 		outline: none
 		border: none
@@ -541,20 +696,35 @@ body
 		font-size: 1.4rem
 		color: #fff
 		text-align: center
-		padding: 1rem 0rem
+		padding: 1.7rem 0rem
+		margin-top: 1rem
+		transition: .2s
+		&:hover
+			background: lighten(#232323, 5%)
 
 .most-popular
+	padding-top: 7.9rem
+	padding-bottom: 8rem
 	&__wrapper
 		+flex(column, wrap, flex-start, flex-start)
 	&__headline
 		width: 100%
 		margin: 0rem
+		font-family: $ps
+		font-weight: 700
+		font-size: 3rem
+		color: #171717
+		text-align: left
 	&__items-container
-		+flex(row, wrap, flex-start, flex-start)
+		+flex(row, wrap, space-between, flex-start)
+		width: 100%
+		margin-top: 3.1rem
 	&__item
 		width: 27rem
 		+flex(column, wrap, flex-start, flex-start)
 		text-decoration: none
+	&__item:hover &__img
+		transform: scale(1.2)
 	&__item1
 	&__item2
 	&__item3
@@ -564,8 +734,10 @@ body
 		position: relative
 		overflow: hidden
 		border-radius: .3rem
+		overflow: hidden
 	&__img
 		+size(100%, 100%)
+		transition: .1s
 	&__img1
 		background: url('../assets/most-popular__pic1.jpg')
 		background-size: cover
@@ -581,8 +753,8 @@ body
 	&__vehicle
 		margin: 0rem
 		position: absolute
-		top: 0rem
-		left: 0rem
+		top: 2rem
+		left: 2rem
 		background: $blue
 		border-radius: .3rem
 		font-family: $ps
@@ -590,9 +762,11 @@ body
 		font-size: 1.2rem
 		color: #fff
 		text-transform: uppercase
+		padding: 0.5rem 1.8rem
 	&__post-container
 		width: 100%
 		+flex(column, wrap, flex-start, flex-start)
+		margin-top: 1.8rem
 	&__post-headline
 		width: 100%
 		margin: 0rem
@@ -611,19 +785,27 @@ body
 		font-size: 1.4rem
 		color: #666
 		text-align: left
+		margin-top: 1rem
 	&__post-author
 	&__post-time
 
 .footer
 	background: #171717
+	padding-top: 6.5rem
+	padding-bottom: 4.6rem
 	&__wrapper
 		+flex(row, wrap, flex-start, stretch)
 	&__block
-		width: 25%
+		width: 26%
 		+flex(column, wrap, flex-start, flex-start)
+		margin-right: 9.6rem
+		&:last-child
+			margin-right: 0rem
 	&__block1
+		padding-left: 0.4rem
 	&__block2
 	&__block3
+		padding-right: 3.7rem
 	&__block-logo
 		text-decoration: none
 		+flex(row, wrap, flex-start, flex-start)
@@ -644,6 +826,11 @@ body
 		background: $blue
 		border-radius: .3rem
 		text-transform: uppercase
+		padding: 0.3rem 0.8rem
+		margin-left: 0.7rem
+		position: relative
+		top: -0.3rem
+		left: 0rem
 	&__block1-paragraph
 		width: 100%
 		margin: 0rem
@@ -653,6 +840,8 @@ body
 		line-height: 2.2rem
 		color: #fff
 		text-align: left
+		margin-top: 2.5rem
+		padding-right: 3rem
 	&__keep-in-touch
 		width: 100%
 		margin: 0rem
@@ -661,13 +850,21 @@ body
 		font-size: 2rem
 		color: #fff
 		text-align: left
+		margin-top: 6.5rem
 	&__socials-container
 		+flex(row, wrap, flex-start, flex-start)
+		margin-top: 2.4rem
 	&__social-link
 		+size(3.4rem, 3.4rem)
 		background: #373737
 		+flex(row, wrap, center, center)
 		border-radius: .3rem
+		margin-right: 1.5rem
+		transition: .2s
+		&:hover
+			background: #232323
+		&:last-child
+			margin-right: 0rem
 		svg
 			+size(1.8rem, 1.8rem)
 			+flex(row, wrap, center, center)
@@ -692,6 +889,7 @@ body
 		width: 100%
 		+flex(row, wrap, flex-start, flex-start)
 		text-decoration: none
+		margin-top: 2.6rem
 	&__post-img
 		+size(9.5rem, 9.5rem)
 		border-radius: .3rem
@@ -706,6 +904,8 @@ body
 		background-size: cover
 	&__post-text-container
 		width: calc(100% - 9.5rem)
+		padding-top: 0.6rem
+		padding-left: 2rem
 	&__post-title
 		width: 100%
 		margin: 0rem
@@ -715,6 +915,7 @@ body
 		line-height: 2.6rem
 		color: #fff
 		text-align: left
+		padding-right: 1.2rem
 	&__post-info
 		width: 100%
 		margin: 0rem
@@ -724,6 +925,7 @@ body
 		font-size: 1.4rem
 		color: #CECECE
 		text-align: left
+		margin-top: 0.8rem
 	&__post-author
 	&__post-time
 	&__block3-headline
@@ -736,7 +938,7 @@ body
 		text-align: left
 	&__form
 		width: 100%
-		margin: 0rem
+		margin-top: 3.8rem
 	&__input
 		outline: none
 		border: .1rem solid transparent
@@ -747,6 +949,7 @@ body
 		font-weight: 400
 		font-size: 1.4rem
 		color: #AEB3BB
+		padding: 1.6rem 1.3rem
 		&::placeholder
 			font-family: $ps
 			font-weight: 400
@@ -754,6 +957,7 @@ body
 			color: #AEB3BB
 	&__name-input
 	&__email-input
+		margin-top: 1rem
 	&__subscribe-button
 		outline: none
 		border: none
@@ -766,10 +970,17 @@ body
 		font-weight: 400
 		font-size: 1.4rem
 		color: #fff
-		padding: 1rem 0rem
+		padding: 1.7rem 0rem
+		margin-top: 0.8rem
+		&:hover
+			background: lighten(#232323, 5%)
 
 .copy
 	background: #000
+	padding-top: 3.9rem
+	padding-bottom: 3.8rem
+	padding-left: 0.9rem
+	padding-right: 2.8rem
 	&__wrapper
 		+flex(row, wrap, space-between, flex-start)
 	&__copy-link
@@ -788,15 +999,27 @@ body
 		+flex(row, wrap, flex-start, flex-start)
 		padding: 0rem
 		margin: 0rem
-		margin-right: 1rem
-		&:last-child
-			margin-right: 0rem
+		margin-left: 3.2rem
+		&:first-child
+			margin-left: 0rem
 	&__menu-link
 		text-decoration: none
 		font-family: $ps
 		font-weight: 400
 		font-size: 1.4rem
 		color: #fff
+		transition: .2s
+		position: relative
+		&::before
+			content: ''
+			+size(100%, 0.1rem)
+			background: #fff
+			position: absolute
+			bottom: -.2rem
+			left: 0rem
+			opacity: 0
+		&:hover::before
+			opacity: 1
 
 .modal
 	&__overlay
@@ -806,6 +1029,7 @@ body
 		top: 0rem
 		left: 0rem
 		display: none
+		z-index: 999
 	&__window
 		+size(31rem, 10rem)
 		background: #000

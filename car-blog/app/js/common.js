@@ -146,7 +146,92 @@ $(document).ready(function() {
 	}// prevdef();
 	prevdef();
 
-	
+	var headerSearchButton = document.querySelector('.header__search-button');
+	var headerSearchInput = document.querySelector('.header__search-input');
+	headerSearchButton.addEventListener('click', showSearchInput);
+
+	function showSearchInput() {
+		headerSearchInput.style.right = '0rem';
+		this.removeEventListener('click', showSearchInput);
+	}
+
+	var modalOverlay = document.querySelector('.modal__overlay');
+	var modalWindows = document.querySelectorAll('.modal__window');
+	var modalErrorContainer = document.querySelector('.modal__error-container');
+	var modalSuccessContainer = document.querySelector('.modal__success-container');
+
+	var footerNameInput = document.querySelector('.footer__name-input');
+	var footerEmailInput = document.querySelector('.footer__email-input');
+	var footerSubscribeButton = document.querySelector('.footer__subscribe-button');
+	var validationArr1 = [footerNameInput, footerEmailInput];
+	var blogSubscribeNameInput = document.querySelector('.blog__subscribe-name-input');
+	var blogSubscribeEmailInput = document.querySelector('.blog__subscribe-email-input');
+	var blogSubscribeSubmitButton = document.querySelector('.blog__subscribe-submit-button');
+	var validationArr2 = [blogSubscribeNameInput, blogSubscribeEmailInput];
+
+	footerSubscribeButton.addEventListener('click', validationCheck1);
+	blogSubscribeSubmitButton.addEventListener('click', validationCheck2);
+	modalOverlay.addEventListener('click', modalsHide);
+	for (var i = 0; i < modalWindows.length; i++) {
+		modalWindows[i].addEventListener('click', modalsHide);
+	}
+
+	function validationCheck1() {
+		for (var i = 0; i < validationArr1.length; i++) {
+			if (!validationArr1[i].value) {
+				validationArr1[i].style.borderColor = '#4A90E2';
+				modalErrorShow();
+			} else {
+				validationArr1[i].style.borderColor = '';
+			}
+		}
+
+		if (footerNameInput.value && footerEmailInput.value) {
+			modalSuccessShow();
+		}
+	}
+
+	function validationCheck2() {
+		for (var i = 0; i < validationArr2.length; i++) {
+			if (!validationArr2[i].value) {
+				validationArr2[i].style.borderColor = '#4A90E2';
+				modalErrorShow();
+			} else {
+				validationArr2[i].style.borderColor = '';
+			}
+		}
+
+		if (blogSubscribeNameInput.value && blogSubscribeEmailInput.value) {
+			modalSuccessShow();
+		}
+	}
+
+	function modalErrorShow() {
+		modalOverlay.style.display = 'block';
+		modalErrorContainer.style.opacity = '1';
+		modalErrorContainer.style.zIndex = '999';
+	}
+
+	function modalSuccessShow() {
+		modalOverlay.style.display = 'block';
+		modalSuccessContainer.style.opacity = '1';
+		modalSuccessContainer.style.zIndex = '999';
+
+		for (var i = 0; i < validationArr1.length; i++) {
+			validationArr1[i].value = '';
+			validationArr1[i].style.borderColor = '';
+			validationArr2[i].value = '';
+			validationArr2[i].style.borderColor = '';
+		}
+	}
+
+	function modalsHide() {
+		modalOverlay.style.display = '';
+		modalErrorContainer.style.opacity = '';
+		modalErrorContainer.style.zIndex = '';
+		modalSuccessContainer.style.opacity = '';
+		modalSuccessContainer.style.zIndex = '';
+	}
 
 });//doc.ready end
 
