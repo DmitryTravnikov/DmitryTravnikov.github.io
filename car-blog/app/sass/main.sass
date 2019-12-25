@@ -8,10 +8,825 @@ body
 	cursor: default
 
 .wrapper
+	+wrapper(117rem, auto)
 
 // 1rem === 10px
 
+.header
+	background: #000
+	padding: 1rem 1rem
+	&__wrapper
+		+flex(row, wrap, space-between, flex-start)
+	&__logo-container
+		text-decoration: none
+		+flex(row, wrap, flex-start, flex-start)
+	&__logo-paragraph1
+		margin: 0rem
+		font-family: $lt
+		font-weight: 400
+		font-size: 1.4rem
+		color: #fff
+		text-align: left
+	&__logo-paragraph2
+		margin: 0rem
+		font-family: $lt
+		font-weight: 400
+		font-size: 1.4rem
+		color: #fff
+		text-transform: uppercase
+		text-align: left
+		border-radius: .3rem
+		background: $blue
+	&__menu-container
+	&__menu
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(row, wrap, flex-start, flex-start)
+	&__menu-list-item
+		padding: 0rem
+		margin: 0rem
+		+flex(row, wrap, flex-start, flex-start)
+	&__menu-link
+		text-decoration: none
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.4rem
+		color: #fff
+		transition: .2s
+		position: relative
+		&::before
+			content: ''
+			+size(100%, 0.1rem)
+			background: #fff
+			position: absolute
+			bottom: -.2rem
+			left: 0rem
+			opacity: 0
+		&:hover::before
+			opacity: 1
+	&__search-container
+		+flex(row, wrap, flex-start, center)
+		overflow: hidden
+	&__search-input
+		outline: none
+		border: none
+		border-radius: .3rem
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.4rem
+		position: relative
+		top: 0rem
+		right: -100%
+		transition: .2s
+		&::placeholder
+			font-family: $ps
+			font-weight: 400
+			font-size: 1.4rem
+	&__search-button
+		+size(3rem, 3rem)
+		border: none
+		outline: none
+		cursor: pointer
+		background: url('../assets/header__search-icon.png') no-repeat center, #000
+.main
+	&__wrapper
+		+flex(row, wrap, flex-start, flex-start)
+	&__block
+		height: 56rem
+		+flex(row, wrap, flex-start, flex-start)
+	&__block1
+		width: 37.1rem
+		padding-left: 0.4rem
+	&__block2
+		width: calc(100% - 37.1rem)
+		+flex(row, wrap, flex-start, flex-start)
+		padding-left: 0rem
+	&__item
+		+flex(column, wrap, flex-end, flex-start)
+		border-radius: .3rem
+		overflow: hidden
+		position: relative
+		&::before
+			content: ''
+			+size(100%, 70%)
+			background: linear-gradient(180deg, rgba(0, 0, 0, 7.5e-05) 0%, rgba(0, 0, 0, 0.75) 82.82%)
+			position: absolute
+			bottom: 0rem
+			left: 0rem
+	&__item1
+		+size(100%, 100%)
+		background: url('../assets/main__image1.jpg') no-repeat center
+		background-size: 110%
+	&__item2
+		+size(37rem, 26.5rem)
+		background: url('../assets/main__image2.jpg') no-repeat center
+		background-size: cover
+		margin: 1.5rem
+		margin-top: 0rem
+		margin-left: 2.8rem
+	&__item3
+		+size(37rem, 26.5rem)
+		background: url('../assets/main__image3.jpg') no-repeat center
+		background-size: cover
+		margin: 1.5rem
+		margin-top: 0rem
+		margin-right: 0rem
+	&__item4
+		+size(37rem, 26.5rem)
+		background: url('../assets/main__image4.jpg') no-repeat center
+		background-size: cover
+		margin: 1.5rem
+		margin-left: 2.8rem
+	&__item5
+		+size(37rem, 26.5rem)
+		background: url('../assets/main__image5.jpg') no-repeat center
+		background-size: cover
+		margin: 1.5rem
+		margin-right: 0rem
+	&__vehicle
+		margin: 0rem
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.2rem
+		color: #fff
+		text-align: center
+		background: $blue
+		border-radius: .3rem
+		position: absolute
+		top: 0rem
+		left: 0rem
+	&__text-container
+		text-decoration: none
+		width: 100%
+		position: relative
+		z-index: 2
+		+flex(column, wrap, flex-start, flex-start)
+	&__post-info
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.4rem
+		color: #fff
+		text-align: left
+	&__post-author
+	&__post-date
+	&__post-title
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 700
+		font-size: 2.6rem
+		line-height: 3.6rem
+		color: #fff
+		text-align: left
 
+.blog
+	&__wrapper
+		+flex(row, wrap, space-between, flex-start)
+	&__center
+		width: 77rem
+		+flex(column, wrap, flex-start, flex-start)
+	&__right
+		width: 27rem
+	&__center-item
+		+flex(column, wrap, flex-start, flex-start)
+	&__center-item1
+	&__center-item2
+	&__center-item3
+	&__center-item4
+	&__center-item5
+	&__center-img-container
+	&__center-img
+		border-radius: .3rem
+	&__center-text-container
+		width: 73rem
+		background: #fff
+		box-shadow: 1rem 1rem 1rem rgba(#000, .8)
+		border-radius: .3s
+		+flex(row, wrap, flex-start, flex-start)
+		text-decoration: none
+	&__center-vehicle
+		margin: 0rem
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.2rem
+		color: #fff
+		text-align: center
+		background: $blue
+		border-radius: .3rem
+	&__center-headline
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 700
+		font-size: 2.5rem
+		color: #171717
+		text-align: left
+	&__center-post-info
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 400
+		font-style: italic
+		color: #666
+		text-align: left
+	&__center-post-author
+	&__center-post-date
+	&__center-post
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.4rem
+		line-height: 2.4rem
+		color: #666
+		text-align: left
+	&__center-pagination
+		+flex(row, wrap, flex-start, flex-start)
+	&__center-pagination-prev-button
+		+size(4rem, 4rem)
+		outline: none
+		border: none
+		cursor: pointer
+		background: #fff
+		border-radius: .3rem
+		border: .1rem solid #E5E5E5
+		position: relative
+		&:disabled::before, &:disabled::after
+			opacity: 0.4
+		&::before, &::after
+			content: ''
+			+size(.1rem, 1rem)
+			background: #171717
+			position: absolute
+			left: .2rem
+		&::before
+			top: .1rem
+			transform: rotate(45deg)
+		&::after
+			bottom: .1rem
+			transform: rotate(-45deg)
+	&__center-pagination-list
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(row, wrap, flex-start, flex-start)
+	&__center-pagination-list-item
+		padding: 0rem
+		margin: 0rem
+		+flex(row, wrap, flex-start, flex-start)
+	&__center-pagination-link
+		text-decoration: none
+		color: #171717
+		background: #fff
+		border-radius: .3rem
+		border: .1rem solid #E5E5E5
+		height: 4rem
+		+flex(row, wrap, center, center)
+		padding: 0rem 1.6rem
+		transition: .2s
+		&:hover
+			background: #000
+			color: #fff
+	&__center-pagination-next-button
+		+size(4rem, 4rem)
+		outline: none
+		border: none
+		cursor: pointer
+		background: #fff
+		border-radius: .3rem
+		border: .1rem solid #E5E5E5
+		position: relative
+		&:disabled::before, &:disabled::after
+			opacity: 0.4
+		&::before, &::after
+			content: ''
+			+size(.1rem, 1rem)
+			background: #171717
+			position: absolute
+			right: .2rem
+		&::before
+			top: .1rem
+			transform: rotate(-45deg)
+		&::after
+			bottom: .1rem
+			transform: rotate(45deg)
+	&__right-top-post-container
+		width: 100%
+		+flex(column, wrap, flex-start, flex-start)
+	&__right-top-post-img
+		+size(100%, 20.1rem)
+	&__right-top-post-author
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 700
+		font-size: 1.8rem
+		color: #171717
+		text-align: left
+	&__right-top-post-profession
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 400
+		font-style: italic
+		font-size: 1.4rem
+		color: #999
+		text-align: left
+	&__right-top-post
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.5rem
+		line-height: 2.5rem
+		color: #666
+		text-align: left
+	&__right-top-post-continue-reading
+		width: 100%
+		text-decoration: none
+		background: #232323
+		font-family: $ps
+		font-weight: 700
+		font-size: 1.4rem
+		color: #fff
+		padding: 1rem 0rem
+		border-radius: .3rem
+		text-align: center
+	&__right-popular-posts-container
+		+flex(column, wrap, flex-start, flex-start)
+		width: 100%
+	&__right-popular-posts-title
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 700
+		font-size: 1.8rem
+		line-height: 2.3rem
+		color: #171717
+		text-align: left
+	&__right-popular-post
+		text-decoration: none
+		width: 100%
+		+flex(column, wrap, flex-start, flex-start)
+	&__right-popular-post-img-container
+		+size(100%, 19.5rem)
+		+flex(column, wrap, flex-start, flex-start)
+		position: relative
+	&__right-popular-post-img
+		+size(100%, 19.5rem)
+		border-radius: .3rem
+	&__right-popular-post-img1
+		background: url('../assets/blog__popular-post-img1.jpg') no-repeat center
+		background-size: cover
+	&__right-popular-post-img2
+		background: url('../assets/blog__popular-post-img2.jpg') no-repeat center
+		background-size: cover
+	&__right-popular-post-img3
+		background: url('../assets/blog__popular-post-img3.jpg') no-repeat center
+		background-size: cover
+	&__right-popular-post-vehicle
+		margin: 0rem
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.2rem
+		color: #fff
+		background: $blue
+		border-radius: .3rem
+		position: absolute
+		top: 0rem
+		left: 0rem
+	&__right-popular-post-headline
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 700
+		font-size: 2rem
+		line-height: 2.8rem
+		color: #171717
+		text-align: left
+	&__right-popular-post-info
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 400
+		font-style: italic
+		line-height: 1.8rem
+		color: #666
+		text-align: left
+	&__right-popular-post-author
+	&__right-popular-post-date
+	&__right-instagram-container
+		width: 100%
+		+flex(column, wrap, flex-start, flex-start)
+	&__right-instagram-headline
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 700
+		font-size: 1.8rem
+		color: #171717
+		text-align: left
+	&__right-instagram-imgs-container
+		width: 100%
+		+flex(row, wrap, flex-start, flex-start)
+	&__right-instagram-img-container
+		text-decoration: none
+		margin: .5rem
+		+size(13rem, 13rem)
+		&:first-child
+			margin-left: 0rem
+		&:nth-child(2)
+			margin-right: 0rem
+		&:nth-child(3)
+			margin-left: 0rem
+		&:nth-child(4)
+			margin-right: 0rem
+		&:nth-child(5)
+			margin-left: 0rem
+		&:nth-child(6)
+			margin-right: 0rem
+	&__right-instagram-img
+		border-radius: .3rem
+	&__right-instagram-img1
+	&__right-instagram-img2
+	&__right-instagram-img3
+	&__right-instagram-img4
+	&__right-instagram-img5
+	&__right-instagram-img6
+	&__right-view-instagram
+		width: 100%
+		text-decoration: none
+		background: url('../assets/blog__view-instagram-icon.png') no-repeat 6rem center,  #232323
+		border-radius: .3rem
+		padding: 1rem 0rem
+		text-align: center
+		font-family: $ps
+		font-weight: 700
+		font-size: 1.4rem
+		color: #fff
+	&__right-tags-container
+		width: 100%
+		+flex(column, wrap, flex-start, flex-start)
+	&__right-tags-title
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 700
+		font-size: 1.8rem
+		color: #171717
+		text-align: left
+	&__right-tags
+		width: 100%
+		+flex(row, wrap, flex-start, flex-start)
+	&__right-tag
+		text-decoration: none
+		background: #EBEBEB
+		border-radius: .3rem
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.4rem
+		color: #171717
+	&__right-subscribe-container
+		width: 100%
+		+flex(column, wrap, flex-start, flex-start)
+	&__right-subscribe-title
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 700
+		color: #171717
+		text-align: left
+	&__right-subscribe-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.4rem
+		line-height: 2.4rem
+		color: #666
+		text-align: left
+	&__subscribe-form
+		width: 100%
+		+flex(column, wrap, flex-start, flex-start)
+	&__subscribe-input
+		outline: none
+		border: .1rem solid #AEB3BB
+		border-radius: .3rem
+		padding: 1rem 1rem
+		width: 100%
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.4rem
+		color: #AEB3BB
+		border: .1rem solid transparent
+		&::placeholder
+			font-family: $ps
+			font-weight: 400
+			font-size: 1.4rem
+			color: #AEB3BB
+	&__subscribe-name-input
+	&__subscribe-email-input
+	&__subscribe-submit-button
+		outline: none
+		border: none
+		cursor: pointer
+		background: #232323
+		width: 100%
+		border-radius: .3rem
+		font-family: $ps
+		font-weight: 700
+		font-size: 1.4rem
+		color: #fff
+		text-align: center
+		padding: 1rem 0rem
+
+.most-popular
+	&__wrapper
+		+flex(column, wrap, flex-start, flex-start)
+	&__headline
+		width: 100%
+		margin: 0rem
+	&__items-container
+		+flex(row, wrap, flex-start, flex-start)
+	&__item
+		width: 27rem
+		+flex(column, wrap, flex-start, flex-start)
+		text-decoration: none
+	&__item1
+	&__item2
+	&__item3
+	&__item4
+	&__img-container
+		+size(100%, 19.5rem)
+		position: relative
+		overflow: hidden
+		border-radius: .3rem
+	&__img
+		+size(100%, 100%)
+	&__img1
+		background: url('../assets/most-popular__pic1.jpg')
+		background-size: cover
+	&__img2
+		background: url('../assets/most-popular__pic2.jpg')
+		background-size: cover
+	&__img3
+		background: url('../assets/most-popular__pic3.jpg')
+		background-size: cover
+	&__img4
+		background: url('../assets/most-popular__pic4.jpg')
+		background-size: cover
+	&__vehicle
+		margin: 0rem
+		position: absolute
+		top: 0rem
+		left: 0rem
+		background: $blue
+		border-radius: .3rem
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.2rem
+		color: #fff
+		text-transform: uppercase
+	&__post-container
+		width: 100%
+		+flex(column, wrap, flex-start, flex-start)
+	&__post-headline
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 700
+		font-size: 2rem
+		line-height: 2.8rem
+		color: #171717
+		text-align: left
+	&__post-info
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 400
+		font-style: italic
+		font-size: 1.4rem
+		color: #666
+		text-align: left
+	&__post-author
+	&__post-time
+
+.footer
+	background: #171717
+	&__wrapper
+		+flex(row, wrap, flex-start, stretch)
+	&__block
+		width: 25%
+		+flex(column, wrap, flex-start, flex-start)
+	&__block1
+	&__block2
+	&__block3
+	&__block-logo
+		text-decoration: none
+		+flex(row, wrap, flex-start, flex-start)
+	&__logo-paragraph1
+		margin: 0rem
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.4rem
+		color: #fff
+		text-align: left
+	&__logo-paragraph2
+		margin: 0rem
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.4rem
+		color: #fff
+		text-align: center
+		background: $blue
+		border-radius: .3rem
+		text-transform: uppercase
+	&__block1-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.4rem
+		line-height: 2.2rem
+		color: #fff
+		text-align: left
+	&__keep-in-touch
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 700
+		font-size: 2rem
+		color: #fff
+		text-align: left
+	&__socials-container
+		+flex(row, wrap, flex-start, flex-start)
+	&__social-link
+		+size(3.4rem, 3.4rem)
+		background: #373737
+		+flex(row, wrap, center, center)
+		border-radius: .3rem
+		svg
+			+size(1.8rem, 1.8rem)
+			+flex(row, wrap, center, center)
+			path
+				fill: #fff
+	&__facebook
+	&__twitter
+	&__pinterest
+	&__google-plus
+		svg
+			+size(2.6rem, 2.6rem)
+	&__instagram
+	&__block2-headline
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 700
+		font-size: 2rem
+		color: #fff
+		text-align: left
+	&__post-container
+		width: 100%
+		+flex(row, wrap, flex-start, flex-start)
+		text-decoration: none
+	&__post-img
+		+size(9.5rem, 9.5rem)
+		border-radius: .3rem
+	&__post-img1
+		background: url('../assets/footer__pic1.jpg') no-repeat center
+		background-size: cover
+	&__post-img2
+		background: url('../assets/footer__pic2.jpg') no-repeat center
+		background-size: cover
+	&__post-img3
+		background: url('../assets/footer__pic3.jpg') no-repeat center
+		background-size: cover
+	&__post-text-container
+		width: calc(100% - 9.5rem)
+	&__post-title
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 700
+		font-size: 1.5rem
+		line-height: 2.6rem
+		color: #fff
+		text-align: left
+	&__post-info
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 400
+		font-style: italic
+		font-size: 1.4rem
+		color: #CECECE
+		text-align: left
+	&__post-author
+	&__post-time
+	&__block3-headline
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 700
+		font-size: 2rem
+		color: #fff
+		text-align: left
+	&__form
+		width: 100%
+		margin: 0rem
+	&__input
+		outline: none
+		border: .1rem solid transparent
+		width: 100%
+		background: #373737
+		border-radius: .3rem
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.4rem
+		color: #AEB3BB
+		&::placeholder
+			font-family: $ps
+			font-weight: 400
+			font-size: 1.4rem
+			color: #AEB3BB
+	&__name-input
+	&__email-input
+	&__subscribe-button
+		outline: none
+		border: none
+		cursor: pointer
+		border-radius: .3rem
+		background: #232323
+		width: 100%
+		text-align: center
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.4rem
+		color: #fff
+		padding: 1rem 0rem
+
+.copy
+	background: #000
+	&__wrapper
+		+flex(row, wrap, space-between, flex-start)
+	&__copy-link
+		text-decoration: none
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.4rem
+		color: #fff
+	&__menu-container
+	&__menu
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(row, wrap, flex-start, flex-start)
+	&__menu-list-item
+		+flex(row, wrap, flex-start, flex-start)
+		padding: 0rem
+		margin: 0rem
+		margin-right: 1rem
+		&:last-child
+			margin-right: 0rem
+	&__menu-link
+		text-decoration: none
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.4rem
+		color: #fff
+
+.modal
+	&__overlay
+		+size(100%, 100%)
+		background: rgba($space-grey, .9)
+		position: fixed
+		top: 0rem
+		left: 0rem
+		display: none
+	&__window
+		+size(31rem, 10rem)
+		background: #000
+		position: fixed
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		+flex(row, wrap, center, center)
+		transition: .2s
+		opacity: 0
+		z-index: -1
+	&__error-container
+	&__success-container
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $ps
+		font-weight: 400
+		font-size: 1.8rem
+		color: #fff
+		text-align: center
 
 *
 	// @include outline($blue)
