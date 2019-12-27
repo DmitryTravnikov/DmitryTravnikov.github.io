@@ -4,7 +4,11 @@
   transition: all .2s; }
 
 body {
-  cursor: default; }
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
 
 .wrapper {
   width: 117rem;
@@ -2007,3 +2011,7 @@ body {
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
     right: 1.1rem; }
+
+* {
+  outline: 2px solid rgba(74, 144, 226, 0.6);
+  outline-offset: -2px; }

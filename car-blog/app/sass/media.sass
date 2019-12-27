@@ -6,22 +6,597 @@
 @media only screen and (max-width: 1300px)
 	body
 		background: $media-purple
+
+	.header
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 90%//
+			position: relative//
+		&__logo-container
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-left: 0rem//
+			position: absolute//
+			top: 0rem//
+			left: 2rem//
+			transform: translateX(0%)//
+		&__logo-paragraph1
+		&__logo-paragraph2
+		&__menu-container
+			margin-left: 0rem//
+			margin-top: 3.9rem//
+		&__menu
+			+flex(row, wrap, flex-start, flex-start)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 2rem//
+			margin-top: 0rem//
+			&:last-child
+		&__menu-link
+			&::before
+			&:hover::before
+		&__search-container
+			+flex(row, wrap, center, center)//
+			position: absolute//
+			top: 0rem//
+			right: 2rem//
+			transform: translateX(0%)//
+			width: auto//
+		&__search-input
+			right: 0rem//
+			&::placeholder
+		&__search-button
+
+	.main
+		padding-bottom: 3rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__block
+			width: 100%//
+			height: auto//
+			+flex(row, wrap, flex-start, flex-start)//
+		&__block1
+			width: 50%//
+			padding-left: 0rem//
+		&__block2
+			width: 90%//
+			+flex(row, wrap, center, flex-start)//
+		&__item
+			+flex(column, wrap, flex-end, flex-start)//
+			width: 100%//
+			&::before
+		&__item:hover
+			background-size: cover//
+		&__item1
+			+size(100%, 26.5rem)//
+			background-size: 110%//
+			margin: 1rem//
+			&:hover
+				background-size: 110%//
+		&__item2
+			+size(25rem, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-top: 0rem//
+			margin-left: 0rem//
+			margin: 1rem//
+		&__item3
+			+size(25rem, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-top: 0rem//
+			margin-right: 0rem
+			margin: 1rem//
+		&__item4
+			+size(25rem, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-left: 0rem//
+			margin-top: 0rem//
+			margin: 1rem//
+		&__item5
+			+size(25rem, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-top: 0rem//
+			margin: 1rem//
+		&__vehicle
+		&__item &__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			padding-left: 1rem//
+		&__item &__post-title
+		&__item1 &__post-title
+			padding-right: 7rem//
+		&__item1 &__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			padding-left: 1rem//
+			padding-bottom: 2.3rem//
+		&__post-info
+		&__post-author
+		&__post-date
+		&__item &__post-title
+		&__item1 &__post-title
+			font-size: 2rem//
+			line-height: 3.2rem//
+			color: #fff//
+			text-align: left//
+			margin-top: 0.6rem//
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
 	body
 		background: $media-orange
+
+	.header
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 80%//
+			position: relative//
+		&__logo-container
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-left: 0rem//
+			position: absolute//
+			top: 0rem//
+			left: 2rem//
+			transform: translateX(0%)//
+		&__logo-paragraph1
+		&__logo-paragraph2
+		&__menu-container
+			margin-left: 0rem//
+			margin-top: 9.6rem//
+		&__menu
+			+flex(row, wrap, flex-start, flex-start)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 2rem//
+			margin-top: 0rem//
+			&:last-child
+		&__menu-link
+			&::before
+			&:hover::before
+		&__search-container
+			+flex(row, wrap, center, center)//
+			position: absolute//
+			top: 0rem//
+			right: 2rem//
+			transform: translateX(0%)//
+			width: auto//
+		&__search-input
+			right: 0rem//
+			&::placeholder
+		&__search-button
+
+	.main
+		padding-bottom: 3rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__block
+			width: 31rem//
+			height: auto//
+			+flex(row, wrap, flex-start, flex-start)//
+		&__block1
+			width: 31rem//
+			padding-left: 0rem//
+		&__block2
+			width: 31rem//
+			+flex(row, wrap, flex-start, flex-start)//
+		&__item
+			+flex(column, wrap, flex-end, flex-start)//
+			width: 100%//
+			&::before
+		&__item:hover
+			background-size: cover//
+		&__item1
+			+size(100%, 26.5rem)//
+			background-size: 110%//
+			margin: 1rem//
+			&:hover
+				background-size: 110%//
+		&__item2
+			+size(100%, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-top: 0rem//
+			margin-left: 0rem//
+			margin: 1rem//
+		&__item3
+			+size(100%, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-top: 0rem//
+			margin-right: 0rem
+			margin: 1rem//
+		&__item4
+			+size(100%, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-left: 0rem//
+			margin-top: 0rem//
+			margin: 1rem//
+		&__item5
+			+size(100%, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-top: 0rem//
+			margin: 1rem//
+		&__vehicle
+		&__item &__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			padding-left: 1rem//
+		&__item &__post-title
+		&__item1 &__post-title
+			padding-right: 7rem//
+		&__item1 &__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			padding-left: 1rem//
+			padding-bottom: 2.3rem//
+		&__post-info
+		&__post-author
+		&__post-date
+		&__item &__post-title
+		&__item1 &__post-title
+			font-size: 2rem//
+			line-height: 3.2rem//
+			color: #fff//
+			text-align: left//
+			margin-top: 0.6rem//
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
 	body
 		background: $media-pink
+
+	.header
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+			position: relative//
+		&__logo-container
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-left: 0rem//
+			position: absolute//
+			top: 0rem//
+			left: 2rem//
+			transform: translateX(0%)//
+		&__logo-paragraph1
+		&__logo-paragraph2
+		&__menu-container
+			margin-left: 0rem//
+			margin-top: 9.6rem//
+		&__menu
+			+flex(row, wrap, flex-start, flex-start)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 2rem//
+			margin-top: 0rem//
+			&:last-child
+		&__menu-link
+			&::before
+			&:hover::before
+		&__search-container
+			+flex(row, wrap, center, center)//
+			position: absolute//
+			top: 0rem//
+			right: 2rem//
+			transform: translateX(0%)//
+			width: auto//
+		&__search-input
+			right: 0rem//
+			&::placeholder
+		&__search-button
+
+	.main
+		padding-bottom: 3rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__block
+			width: 31rem//
+			height: auto//
+			+flex(row, wrap, flex-start, flex-start)//
+		&__block1
+			width: 31rem//
+			padding-left: 0rem//
+		&__block2
+			width: 31rem//
+			+flex(row, wrap, flex-start, flex-start)//
+		&__item
+			+flex(column, wrap, flex-end, flex-start)//
+			width: 100%//
+			&::before
+		&__item:hover
+			background-size: cover//
+		&__item1
+			+size(100%, 26.5rem)//
+			background-size: 110%//
+			margin: 1rem//
+			&:hover
+				background-size: 110%//
+		&__item2
+			+size(100%, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-top: 0rem//
+			margin-left: 0rem//
+			margin: 1rem//
+		&__item3
+			+size(100%, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-top: 0rem//
+			margin-right: 0rem
+			margin: 1rem//
+		&__item4
+			+size(100%, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-left: 0rem//
+			margin-top: 0rem//
+			margin: 1rem//
+		&__item5
+			+size(100%, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-top: 0rem//
+			margin: 1rem//
+		&__vehicle
+		&__item &__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			padding-left: 1rem//
+		&__item &__post-title
+		&__item1 &__post-title
+			padding-right: 7rem//
+		&__item1 &__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			padding-left: 1rem//
+			padding-bottom: 2.3rem//
+		&__post-info
+		&__post-author
+		&__post-date
+		&__item &__post-title
+		&__item1 &__post-title
+			font-size: 2rem//
+			line-height: 3.2rem//
+			color: #fff//
+			text-align: left//
+			margin-top: 0.6rem//
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px)
 	body
 		background: $media-blue
+
+	.header
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+			position: relative//
+		&__logo-container
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-left: 0rem//
+			position: absolute//
+			top: 0rem//
+			left: 50%//
+			transform: translateX(-50%)//
+		&__logo-paragraph1
+		&__logo-paragraph2
+		&__menu-container
+			margin-left: 0rem//
+			margin-top: 11.6rem//
+		&__menu
+			+flex(column, wrap, flex-start, center)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 0rem//
+			margin-top: 2rem//
+			&:last-child
+		&__menu-link
+			&::before
+			&:hover::before
+		&__search-container
+			+flex(row, wrap, center, center)//
+			position: absolute//
+			top: 4rem//
+			right: 50%//
+			transform: translateX(50%)//
+			width: 100%//
+		&__search-input
+			right: 0rem//
+			&::placeholder
+		&__search-button
+
+	.main
+		padding-bottom: 3rem//
+		&__wrapper
+			+flex(row, wrap, center, center)//
+			width: 100%//
+		&__block
+			width: 31rem//
+			height: auto//
+			+flex(row, wrap, flex-start, flex-start)//
+		&__block1
+			width: 31rem//
+			padding-left: 0rem//
+		&__block2
+			width: 31rem//
+			+flex(row, wrap, flex-start, flex-start)//
+		&__item
+			+flex(column, wrap, flex-end, flex-start)//
+			width: 100%//
+			&::before
+		&__item:hover
+			background-size: cover//
+		&__item1
+			+size(100%, 26.5rem)//
+			background-size: 110%//
+			margin: 1rem//
+			&:hover
+				background-size: 110%//
+		&__item2
+			+size(100%, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-top: 0rem//
+			margin-left: 0rem//
+			margin: 1rem//
+		&__item3
+			+size(100%, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-top: 0rem//
+			margin-right: 0rem
+			margin: 1rem//
+		&__item4
+			+size(100%, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-left: 0rem//
+			margin-top: 0rem//
+			margin: 1rem//
+		&__item5
+			+size(100%, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-top: 0rem//
+			margin: 1rem//
+		&__vehicle
+		&__item &__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			padding-left: 1rem//
+		&__item &__post-title
+		&__item1 &__post-title
+			padding-right: 7rem//
+		&__item1 &__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			padding-left: 1rem//
+			padding-bottom: 2.3rem//
+		&__post-info
+		&__post-author
+		&__post-date
+		&__item &__post-title
+		&__item1 &__post-title
+			font-size: 2rem//
+			line-height: 3.2rem//
+			color: #fff//
+			text-align: left//
+			margin-top: 0.6rem//
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px)
 	body
 		background: $media-green
+
+	.header
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+			position: relative//
+		&__logo-container
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-left: 0rem//
+			position: absolute//
+			top: 0rem//
+			left: 50%//
+			transform: translateX(-50%)//
+		&__logo-paragraph1
+		&__logo-paragraph2
+		&__menu-container
+			margin-left: 0rem//
+			margin-top: 11.6rem//
+		&__menu
+			+flex(column, wrap, flex-start, center)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 0rem//
+			margin-top: 2rem//
+			&:last-child
+		&__menu-link
+			&::before
+			&:hover::before
+		&__search-container
+			+flex(row, wrap, center, center)//
+			position: absolute//
+			top: 4rem//
+			right: 50%//
+			transform: translateX(50%)//
+			width: 100%//
+		&__search-input
+			right: 0rem//
+			&::placeholder
+		&__search-button
+
+	.main
+		padding-bottom: 3rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__block
+			width: 100%//
+			height: auto//
+			+flex(row, wrap, flex-start, flex-start)//
+		&__block1
+			width: 100%//
+			padding-left: 0rem//
+		&__block2
+			width: 100%//
+			+flex(row, wrap, flex-start, flex-start)//
+		&__item
+			+flex(column, wrap, flex-end, flex-start)//
+			width: 100%//
+			&::before
+		&__item:hover
+			background-size: cover//
+		&__item1
+			+size(100%, 26.5rem)//
+			background-size: 110%//
+			margin: 1rem//
+			&:hover
+				background-size: 110%//
+		&__item2
+			+size(100%, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-top: 0rem//
+			margin-left: 0rem//
+			margin: 1rem//
+		&__item3
+			+size(100%, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-top: 0rem//
+			margin-right: 0rem
+			margin: 1rem//
+		&__item4
+			+size(100%, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-left: 0rem//
+			margin-top: 0rem//
+			margin: 1rem//
+		&__item5
+			+size(100%, 26.5rem)//
+			background-size: cover//
+			margin: 0rem//
+			margin-top: 0rem//
+			margin: 1rem//
+		&__vehicle
+		&__item &__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			padding-left: 1rem//
+		&__item &__post-title
+		&__item1 &__post-title
+			padding-right: 7rem//
+		&__item1 &__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			padding-left: 1rem//
+			padding-bottom: 2.3rem//
+		&__post-info
+		&__post-author
+		&__post-date
+		&__item &__post-title
+		&__item1 &__post-title
+			font-size: 2rem//
+			line-height: 3.2rem//
+			color: #fff//
+			text-align: left//
+			margin-top: 0.6rem//
 // /* Mobile First Method */
 // /* Custom, iPhone Retina */
 // @media only screen and (min-width: 320px)
