@@ -1,0 +1,90 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+	url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "RobotoLight"; */
+@font-face {
+	font-family: "RobotoLight";
+	src: url("../fonts/RobotoLight/RobotoLight.eot");
+	src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+	url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "RobotoMedium"; */
+@font-face {
+	font-family: "RobotoMedium";
+	src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+	src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+	url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+	font-family: "RobotoBold";
+	src: url("../fonts/RobotoBold/RobotoBold.eot");
+	src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+	url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "FuturaDemi"; */
+@font-face {
+	font-family: "Futura Demi";
+	src: url("../fonts/FuturaDemi/FuturaDemiC.eot");
+	src: url("../fonts/FuturaDemi/FuturaDemiC.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/FuturaDemi/FuturaDemiC.woff") format("woff"),
+	url("../fonts/FuturaDemi/FuturaDemiC.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "ProximaNova-Regular"; */
+@font-face {
+	font-family: "ProximaNove-Regular";
+	src: url("../fonts/ProximaNove-Regular/ProximaNove-Regular.eot");
+	src: url("../fonts/ProximaNove-Regular/ProximaNove-Regular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ProximaNove-Regular/ProximaNove-Regular.woff") format("woff"),
+	url("../fonts/ProximaNove-Regular/ProximaNove-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "YesevaOne-Regular"; */
+@font-face {
+	font-family: "YesevaOne-Regular";
+	src: url("../fonts/YesevaOne-Regular/YesevaOne-Regular.eot");
+	src: url("../fonts/YesevaOne-Regular/YesevaOne-Regular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/YesevaOne-Regular/YesevaOne-Regular.woff") format("woff"),
+	url("../fonts/YesevaOne-Regular/YesevaOne-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "FuturaBook"; */
+@font-face {
+	font-family: "Futura Book";
+	src: url("../fonts/FuturaBook/FuturaBookC.eot");
+	src: url("../fonts/FuturaBook/FuturaBookC.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/FuturaBook/FuturaBookC.woff") format("woff"),
+	url("../fonts/FuturaBook/FuturaBookC.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "FuturaMedium"; */
+@font-face {
+	font-family: "Futura Medium";
+	src: url("../fonts/FuturaMedium/FuturaMediumC.eot");
+	src: url("../fonts/FuturaMedium/FuturaMediumC.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/FuturaMedium/FuturaMediumC.woff") format("woff"),
+	url("../fonts/FuturaMedium/FuturaMediumC.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

@@ -18,8 +18,36 @@
 	-ms-flex-direction: column;
 	-o-flex-direction: column;
 	flex-direction: column;
+	justify-content: flex-start;
 	-ms-align-items: center;
 	align-items: center;
+	padding-top: 1rem;
+}
+
+.headline-container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;}
+	.headline-container button {
+		margin-top: 1rem;}
+
+.car-block {
+	width: 100%;
 }
 
 .App-logo {
