@@ -6,10 +6,400 @@
 
 body
 	cursor: default
+	user-select: none
 
 .wrapper
+	+wrapper(144rem, auto)
 
 // 1rem === 10px
+
+.header
+	width: 100%
+	background: #131313
+	position: absolute
+	top: 0rem
+	left: 0rem
+	z-index: 5
+	&__wrapper
+		+flex(row, wrap, flex-start, flex-start)
+		padding-left: 8.4rem
+		padding-top: 2.4rem
+		padding-bottom: 2.1rem
+	&__logo
+		text-decoration: none
+		font-family: $fd
+		font-size: 1.4rem
+		color: $gold
+		text-transform: uppercase
+		text-align: left
+		margin-top: 1.1rem
+		transition: .2s
+		&:hover
+			color: lighten($gold, 5%)
+	&__menu-container
+		margin-left: 9.5rem
+		margin-top: 1.1rem
+	&__menu
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(row, wrap, flex-start, flex-start)
+	&__menu-list-item
+		padding: 0rem
+		margin: 0rem
+		+flex(row, wrap, flex-start, flex-start)
+		margin-right: 4.8rem
+		&:last-child
+			margin-right: 0rem
+	&__menu-link
+		text-decoration: none
+		font-family: $fb
+		font-size: 1.4rem
+		color: #fff
+		text-transform: uppercase
+		transition: .2s
+		&.active
+			color: $gold
+	&__tel
+		text-decoration: none
+		font-family: $fd
+		font-size: 1.4rem
+		color: $gold
+		position: relative
+		margin-left: 7.3rem
+		margin-top: 1.1rem
+		transition: .2s
+		&:hover
+			color: lighten($gold, 5%)
+		&::before
+			content: ''
+			+size(100%, .1rem)
+			background: $gold
+			position: absolute
+			bottom: 0rem
+			left: 0rem
+	&__request-a-call
+		text-decoration: none
+		font-family: $fd
+		font-size: 1.3rem
+		color: #fff
+		text-transform: uppercase
+		border-radius: .2rem
+		background: $gold
+		box-shadow: 0rem .5rem 1.5rem rgba($gold, 0.2)
+		padding: 1.2rem 3.3rem
+		margin-left: 4.5rem
+		transition: .2s
+		&:hover
+			background: darken($gold, 5%)
+
+.main
+	background: #131313
+	padding-top: 8.2rem
+	&__wrapper
+		position: relative
+		padding-left: 8.4rem
+	&__instagram
+		text-decoration: none
+		font-family: $fd
+		font-size: 1.4rem
+		color: $gold
+		text-transform: uppercase
+		transform: rotate(90deg)
+		position: absolute
+		top: 26.5rem
+		left: 0.3rem
+		z-index: 1
+		&::before
+			content: ''
+			+size(5.1rem, .15rem)
+			background: $gold
+			position: absolute
+			top: 50%
+			right: -6.4rem
+			transform: translateY(-50%)
+	&__scroll-down
+		text-decoration: none
+		font-family: $yo
+		font-size: 1.4rem
+		color: #fff
+		text-transform: uppercase
+		background: #131313
+		position: absolute
+		bottom: -4.8rem
+		padding-left: 4.9rem
+		padding-right: 9.7rem
+		padding-top: 4.1rem
+		padding-bottom: 4.1rem
+		left: 0rem
+		z-index: 1
+		&::before
+			content: ''
+			+size(2.9rem, 2.9rem)
+			border: 0.2rem solid $gold
+			border-radius: 50%
+			background: url('../assets/main__scroll-down-icon.png') no-repeat center
+			position: absolute
+			top: 50%
+			right: 4.9rem
+			transform: translateY(-50%)
+	&__content
+		width: 100%
+		background: url('../assets/main__content-bg.jpg') no-repeat center
+		background-size: cover
+		padding-top: 19.2rem
+		padding-left: 5.9rem
+		padding-bottom: 21rem
+		position: relative
+		&::before
+			content: ''
+			+size(100%, 100%)
+			background: rgba(#000, .7)
+			position: absolute
+			top: 0rem
+			left: 0rem
+	&__headline
+		width: 42%
+		margin: 0rem
+		font-family: $yo
+		font-size: 4rem
+		line-height: 5.3rem
+		color: #fff
+		text-transform: uppercase
+		text-align: left
+		position: relative
+		z-index: 1
+		span
+			color: $gold
+	&__paragraph
+		width: 32%
+		margin: 0rem
+		font-family: $fb
+		font-size: 2.2rem
+		line-height: 3rem
+		color: #fff
+		text-align: left
+		margin-top: 1.6rem
+		position: relative
+		z-index: 1
+	&__links-container
+		+flex(row, wrap, flex-start, flex-start)
+		position: relative
+		z-index: 1
+		margin-top: 4.5rem
+	&__calculate-the-cost
+		text-decoration: none
+		font-family: $fd
+		font-size: 1.3rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		background: $gold
+		border: 0.1rem solid $gold
+		border-radius: .2rem
+		box-shadow: 0rem .5rem 1.5rem rgba($gold, 0.3)
+		padding: 1.7rem 4.1rem
+		transition: .2s
+		&:hover
+			background: darken($gold, 5%)
+	&__submit-your-application
+		text-decoration: none
+		font-family: $fd
+		font-size: 1.3rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		background: none
+		border: 0.1rem solid #fff
+		border-radius: 0.2rem
+		padding: 1.7rem 2.2rem
+		margin-left: 2rem
+
+.projects
+	background: #131313
+	padding-top: 10.6rem
+	padding-bottom: 5.2rem
+	&__wrapper
+		position: relative
+		overflow: hidden
+	&__list
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(row, wrap, flex-start, flex-start)
+		position: absolute
+		top: 0rem
+		left: 59.4rem
+		z-index: 3
+	&__list-item
+		padding: 0rem
+		margin: 0rem
+		+flex(row, wrap, flex-start, flex-start)
+		margin-right: 6.2rem
+		&:last-child
+			margin-right: 0rem
+	&__list-link
+		text-decoration: none
+		font-family: $yo
+		font-size: 1.4rem
+		color: #595959
+		text-transform: uppercase
+		transition: .2s
+		position: relative
+		&::before
+			content: ''
+			+size(100%, .1rem)
+			background: $gold
+			position: absolute
+			bottom: -0.8rem
+			left: 0rem
+			transition: 0.4s
+			opacity: 0
+		&.active
+			color: $gold
+		&.active::before
+			opacity: 1
+	&__content
+		+size(100%, 55.2rem)
+		+flex(row, wrap, flex-start, flex-start)
+		position: relative
+	&__block
+	&__block1
+		width: 41%
+		padding-left: 10.2rem
+	&__block2
+		+size(59%, 48.6rem)
+		padding-top: 0.3rem
+	&__switch-button
+		outline: none
+		border: none
+		cursor: pointer
+		+size(5.4rem, 5.4rem)
+		background: $gold
+		border-radius: 50%
+		box-shadow: 0rem 0rem 1.5rem rgba($gold, 0.5)
+		position: absolute
+		top: 30.2rem
+		transform: translateY(-50%)
+		z-index: 3
+		transition: .2s
+		&:hover
+			background: darken($gold, 5%)
+		&::before, &::after
+			content: ''
+			+size(1.2rem, 0.2rem)
+			background: #fff
+			position: absolute
+			left: 2rem
+	&__prev-button
+		right: 74.6rem
+		opacity: 0
+		z-index: -1
+		&::before
+			transform: rotate(-45deg)
+			top: 2.2rem
+		&::after
+			transform: rotate(45deg)
+			bottom: 2.2rem
+	&__next-button
+		right: 4.7rem
+		opacity: 1
+		z-index: 3
+		&::before
+			transform: rotate(45deg)
+			top: 2.2rem
+		&::after
+			transform: rotate(-45deg)
+			bottom: 2.2rem
+	&__slide
+		+size(100%, auto)
+		+flex(row, wrap, flex-start, flex-start)
+		position: absolute
+		top: -100%
+		left: 0rem
+		transition: top 0.6s, opacity 1.2s
+		opacity: 0
+		z-index: -1
+		padding-top: 6.6rem
+		&.active
+			+size(100%, auto)
+			+flex(row, wrap, flex-start, flex-start)
+			position: absolute
+			top: 0rem
+			left: 0rem
+			opacity: 1
+			z-index: 1
+	&__slide1
+	&__slide2
+	&__slide3
+	&__text-container
+		+flex(column, wrap, flex-start, flex-start)
+	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $yo
+		font-size: 2.7rem
+		line-height: 3.7rem
+		color: $gold
+		text-transform: uppercase
+		text-align: left
+		position: relative
+		padding-right: 26rem
+		&::before
+			content: ''
+			+size(9.2rem, .1rem)
+			background: $gold
+			position: absolute
+			bottom: 1.8rem
+			right: 23.5rem
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $fb
+		font-size: 1.8rem
+		line-height: 2.9rem
+		color: #fff
+		text-align: left
+		margin-top: 2.2rem
+		padding-right: 6rem
+	&__characteristics-container
+		width: 100%
+		+flex(row, wrap, flex-start, flex-start)
+		margin-top: 0.7rem
+		padding-right: 10.8rem
+	&__characteristic
+		width: 50%
+		+flex(column, wrap, flex-start, flex-start)
+		margin-top: 4rem
+	&__characteristic1
+	&__characteristic2
+	&__characteristic3
+	&__characteristic4
+	&__characteristic-headline
+		width: 100%
+		margin: 0rem
+		font-family: $yo
+		font-size: 1.8rem
+		color: $gold
+		text-transform: uppercase
+		text-align: left
+	&__characteristic-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $fb
+		font-size: 1.5rem
+		line-height: 2rem
+		color: #fff
+		text-align: left
+		margin-top: 0.8rem
+		padding-right: 9rem
+	&__img
+		+size(100%, 100%)
+		background: url('../assets/projects__img.jpg') no-repeat center
+		background-size: cover
+	&__img1
+	&__img2
+	&__img3
 
 *
 	// @include outline($blue)
