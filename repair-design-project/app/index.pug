@@ -430,6 +430,68 @@ html(lang="en")
 
 		//- Reviews
 		section.reviews
+			.reviews__wrapper.wrapper
+				h3.reviews__headline Our Clients
+				.reviews__separator
+				p.reviews__paragraph 80% of our customers recommend us to their friends and family.
+				.reviews__blocks-container
+					.reviews__block.reviews__block1
+						.reviews__img-n-name-container
+							.reviews__img.reviews__img1
+							h3.reviews__client-name Fedosova Maria Konstantinovna
+						p.reviews__client-review I want to thank guys for their work. We put your shower part in repair. I am very grateful that i referred to the repair as to my own. Great thanks i express the project to georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Qality satisfied. Prices democratic. I recommend these masters.
+						.reviews__works-area-n-time-container
+							p.reviews__works-area 40 m2
+							p.reviews__works-time 48 days
+					.reviews__block.reviews__block2
+						.reviews__img-n-name-container
+							.reviews__img.reviews__img2
+							h3.reviews__client-name Afanasyev Sergey Alexandrovich
+						p.reviews__client-review I want to thank guys for their work. We put your shower part in repair. I am very grateful that i referred to the repair as to my own. Great thanks i express the project to georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Qality satisfied. Prices democratic. I recommend these masters.
+						.reviews__works-area-n-time-container
+							p.reviews__works-area 90 m2
+							p.reviews__works-time 128 days
+					.reviews__block.reviews__block3
+						.reviews__img-n-name-container
+							.reviews__img.reviews__img3
+							h3.reviews__client-name Kiriev Egor Leonidovich
+						p.reviews__client-review I want to thank guys for their work. We put your shower part in repair. I am very grateful that i referred to the repair as to my own. Great thanks i express the project to georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Qality satisfied. Prices democratic. I recommend these masters.
+						.reviews__works-area-n-time-container
+							p.reviews__works-area 56 m2
+							p.reviews__works-time 86 days
+
+		//- Quesrions
+		section.questions
+			.questions__wrapper.wrapper
+				form.questions__form(action="" method="POST")
+					h3.questions__headline Have any questions?
+					.questions__form-row.questions__form-row1
+						label.questions__label Name
+							input.questions__input.questions__name-input(type="text" placeholder="What is your name:")
+						label.questions__label Phone
+							input.questions__input.questions__phone-input(type="text" placeholder="Your phone number:")
+					.questions__form-row.questions__form-row2
+						label.questions__label Question
+							input.questions__input.questions__question-input(type="text" placeholder="I want to know:")
+					label.questions__checkbox-container
+						input.questions__checkbox(type="checkbox")
+						.questions__checkbox-indicator
+						p.questions__checkbox-description I agree to the processing of personal data
+					button.prevdef.questions__submit-button Submit
+
+		//- Contacts
+		footer.contacts
+			.contacts__wrapper.wrapper
+				a.prevdef.contacts__link.contacts__address(href="#") Rostov-on-Don, Nansen St., 239 Shopping Center
+				a.prevdef.contacts__link.contacts__tel(href="#") Decorum Tel +7 (928) 768 32 29
+				.contacts__socials-container
+					a.prevdef.contacts__social-link.contacts__email(href="#")
+						svg(aria-hidden="true" focusable="false" data-prefix="fal" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-envelope fa-w-16 fa-3x")
+							path(fill="currentColor" d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h416c8.8 0 16 7.2 16 16v41.4c-21.9 18.5-53.2 44-150.6 121.3-16.9 13.4-50.2 45.7-73.4 45.3-23.2.4-56.6-31.9-73.4-45.3C85.2 197.4 53.9 171.9 32 153.4V112c0-8.8 7.2-16 16-16zm416 320H48c-8.8 0-16-7.2-16-16V195c22.8 18.7 58.8 47.6 130.7 104.7 20.5 16.4 56.7 52.5 93.3 52.3 36.4.3 72.3-35.5 93.3-52.3 71.9-57.1 107.9-86 130.7-104.7v205c0 8.8-7.2 16-16 16z" class="" data-darkreader-inline-fill="" style="--darkreader-inline-fill:currentColor;")
+					a.prevdef.contacts__social-link.contacts__instagram(href="#")
+						svg(aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-instagram fa-w-14 fa-3x")
+							path(fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" class="" data-darkreader-inline-fill="" style="--darkreader-inline-fill:currentColor;")
+				.contacts__map#contacts__map
 
 		// Content End
 		// Scripts
