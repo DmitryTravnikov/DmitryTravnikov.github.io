@@ -416,12 +416,129 @@ $(document).ready(function() {
 		})();
 	}
 
-
-
-	
-
 });//doc.ready end
 
 var cLog = function(n) {
-	return console.log(n);
+return console.log(n);
 };//console.log
+
+function initMap() {
+	var sw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+	var isDraggable = sw > 1024 ? true : false;
+
+	var map = new google.maps.Map(document.getElementById('contacts__map'), {
+		zoom: 16,
+		center: {lat: 47.244808, lng: 39.721000},
+		draggable: true,
+		dragPanInteraction: true,
+		dragRotateInteraction: true,
+		interactive: true,
+		touchInteraction: true,
+		boxZoomInteraction: true,
+		zoomControl: true,
+		scrollWheel: true,
+		disableDoubleClickZoom: false,
+		styles: [
+			{elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+			{elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+			{elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+			{
+				featureType: 'administrative.locality',
+				elementType: 'labels.text.fill',
+				stylers: [{color: '#d59563'}]
+			},
+			{
+				featureType: 'poi',
+				elementType: 'labels.text.fill',
+				stylers: [{color: '#d59563'}]
+			},
+			{
+				featureType: 'poi.park',
+				elementType: 'geometry',
+				stylers: [{color: '#263c3f'}]
+			},
+			{
+				featureType: 'poi.park',
+				elementType: 'labels.text.fill',
+				stylers: [{color: '#6b9a76'}]
+			},
+			{
+				featureType: 'road',
+				elementType: 'geometry',
+				stylers: [{color: '#38414e'}]
+			},
+			{
+				featureType: 'road',
+				elementType: 'geometry.stroke',
+				stylers: [{color: '#212a37'}]
+			},
+			{
+				featureType: 'road',
+				elementType: 'labels.text.fill',
+				stylers: [{color: '#9ca5b3'}]
+			},
+			{
+				featureType: 'road.highway',
+				elementType: 'geometry',
+				stylers: [{color: '#746855'}]
+			},
+			{
+				featureType: 'road.highway',
+				elementType: 'geometry.stroke',
+				stylers: [{color: '#1f2835'}]
+			},
+			{
+				featureType: 'road.highway',
+				elementType: 'labels.text.fill',
+				stylers: [{color: '#f3d19c'}]
+			},
+			{
+				featureType: 'transit',
+				elementType: 'geometry',
+				stylers: [{color: '#2f3948'}]
+			},
+			{
+				featureType: 'transit.station',
+				elementType: 'labels.text.fill',
+				stylers: [{color: '#d59563'}]
+			},
+			{
+				featureType: 'water',
+				elementType: 'geometry',
+				stylers: [{color: '#17263c'}]
+			},
+			{
+				featureType: 'water',
+				elementType: 'labels.text.fill',
+				stylers: [{color: '#515c6d'}]
+			},
+			{
+				featureType: 'water',
+				elementType: 'labels.text.stroke',
+				stylers: [{color: '#17263c'}]
+			}
+		]
+	});
+
+	// Create an array of alphabetical characters used to label the markers.
+	var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+	// Add some markers to the map.
+	// Note: The code uses the JavaScript Array.prototype.map() method to
+	// create an array of markers based on a given "locations" array.
+	// The map() method here has nothing to do with the Google Maps API.
+	var markers = locations.map(function(location, i) {
+		return new google.maps.Marker({
+			position: location,
+			label: labels[i % labels.length]
+		});
+	});
+
+	// Add a marker clusterer to manage the markers.
+	var markerCluster = new MarkerClusterer(map, markers,
+			{imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+}
+
+var locations = [
+	{lat: 47.244980, lng: 39.720850}
+]

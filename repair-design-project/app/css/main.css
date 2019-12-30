@@ -3097,4 +3097,6 @@ body {
     width: 92.5rem;
     height: 46.5rem;
     margin-top: 4.3rem;
-    background: #2B2B2B; }
+    position: relative;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%); }
