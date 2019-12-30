@@ -110,6 +110,9 @@ body
 		top: 26.5rem
 		left: 0.3rem
 		z-index: 1
+		transition: .2s
+		&:hover
+			color: lighten($gold, 5%)
 		&::before
 			content: ''
 			+size(5.1rem, .15rem)
@@ -218,7 +221,25 @@ body
 .projects
 	background: #131313
 	padding-top: 10.6rem
-	padding-bottom: 5.2rem
+	padding-bottom: 41.5rem
+	position: relative
+	&::before
+		content: ''
+		+size(100%, 100%)
+		background: url('../assets/projects__lines-bg.png') no-repeat center
+		background-size: cover
+		position: absolute
+		top: 0rem
+		left: 0rem
+		opacity: 0.2
+	&::after
+		content: ''
+		+size(100%, 100%)
+		background: url('../assets/projects__city-bg.png') repeat-x 0rem 100%
+		position: absolute
+		top: 0rem
+		left: 0rem
+		opacity: 0.1
 	&__wrapper
 		position: relative
 		overflow: hidden
@@ -395,11 +416,983 @@ body
 		padding-right: 9rem
 	&__img
 		+size(100%, 100%)
-		background: url('../assets/projects__img.jpg') no-repeat center
+	&__img1
+		background: url('../assets/projects__img1.jpg') no-repeat center
 		background-size: cover
+	&__img2
+		background: url('../assets/projects__img2.jpg') no-repeat center
+		background-size: cover
+	&__img3
+		background: url('../assets/projects__img3.jpg') no-repeat center
+		background-size: cover
+
+.online-control
+	+flex(column, wrap, flex-start, center)
+	padding-top: 27rem
+	padding-bottom: 8rem
+	position: relative
+	&::before
+		content: ''
+		+size(100%, 100%)
+		background: url('../assets/lines-bg2.png') no-repeat center
+		background-size: cover
+		position: absolute
+		top: 0rem
+		left: 0rem
+		opacity: 0.2
+	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $yo
+		font-size: 1.9rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		position: absolute
+		top: -32.2rem
+		left: 0rem
+	&__separator1
+		+size(3.3rem, 2.8rem)
+		background: url('../assets/online-control__separator-icon.png') no-repeat center
+		position: absolute
+		top: -28.6rem
+		left: 50%
+		transform: translateX(-50%)
+		&::before, &::after
+			content: ''
+			+size(3.2rem, .15rem)
+			background: $gold
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+		&::before
+			left: -3.9rem
+		&::after
+			right: -4.3rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__video-container
+		+size(81.7rem, 43.4rem)
+		position: relative
+		box-shadow: 0rem 2rem 5rem rgba(#000, 0.15)
+		position: absolute
+		top: -22.6rem
+		left: 50%
+		margin-left: calc(-81.7rem / 2)
+	&__video-overlay
+		+size(100%, 100%)
+		position: absolute
+		top: 0rem
+		left: 0rem
+		background: url('../assets/online-control__video-overlay-bg.jpg') no-repeat center
+		background-size: cover
+		opacity: 1
+		z-index: 5
+		transition: 2.6s
+		&::before
+			content: ''
+			+size(100%, 100%)
+			position: absolute
+			top: 0rem
+			left: 0rem
+			background: rgba(#000, 0.8)
+	&__video-button
+		outline: none
+		border: none
+		cursor: pointer
+		+size(8.5rem, 8.5rem)
+		background: url('../assets/online-control__video-button-icon.png') no-repeat center, $gold
+		border-radius: 50%
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		opacity: 1
+		z-index: 5
+		transition: 2.6s
+		&:hover
+			background: url('../assets/online-control__video-button-icon.png') no-repeat center, darken($gold, 5%)
+	&__video-relation-ratio
+		padding-top: 56.25%
+		height: 0
+	&__video
+		border: none
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		background: #000
+	&__separator2
+		+size(5.5rem, .15rem)
+		background: $gold
+	&__description
+		width: 100%
+		margin: 0rem
+		font-family: $fb
+		font-size: 2rem
+		line-height: 3.4rem
+		color: #363636
+		text-align: center
+		margin-top: 2.6rem
+		padding: 0rem 38rem
+	&__form
+		width: 100%
+		+flex(column, wrap, flex-start, flex-start)
+		margin-top: 9.5rem
+		position: relative
+		top: 0rem
+		left: 0rem
+		z-index: 5
+	&__row
+		width: 100%
+		+flex(row, wrap, center, flex-start)
+	&__row1
+	&__row2
+	&__label
+		width: 23.1rem
+		+flex(column, wrap, flex-start, flex-start)
+		font-family: $fb
+		font-size: 1.5rem
+		color: #9A9A9A
+		margin-right: 5.2rem
+	&__input
+		outline: none
+		border: none
+		border-bottom: .1rem solid #C2C2C2
+		width: 100%
+		font-family: $fb
+		font-size: 1.8rem
+		color: #363636
+		padding: .5rem 0rem
+		&::placeholder
+			font-family: $fb
+			font-size: 1.8rem
+			color: #363636
+	&__name-input
+	&__email-input
+	&__submit-button
+		outline: none
+		border: none
+		cursor: pointer
+		border-radius: .2rem
+		background: $gold
+		box-shadow: 0rem 1.5rem 1.5rem rgba($gold, 0.15)
+		font-family: $fd
+		font-size: 1.5rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		padding: 1.7rem 7.5rem
+		transition: .2s
+		&:hover
+			background: darken($gold, 5%)
+	&__checkbox-container
+		+flex(row, wrap, flex-start, flex-start)
+		margin-top: 3.3rem
+		cursor: pointer
+	&__checkbox
+		display: none
+	&__checkbox:checked + &__checkbox-indicator::before,
+	&__checkbox:checked + &__checkbox-indicator::after
+		opacity: 1
+	&__checkbox-indicator
+		+size(1.8rem, 1.8rem)
+		background: $gold
+		border-radius: .1rem
+		position: relative
+		margin-right: 0.86rem
+		&::before, &::after
+			content: ''
+			height: .2rem
+			background: #fff
+			position: absolute
+			transition: .2s
+			opacity: 0
+		&::before
+			width: .4rem
+			top: 0.9rem
+			left: 0.4rem
+			transform: rotate(45deg)
+		&::after
+			width: 0.8rem
+			top: 0.7rem
+			left: 0.6rem
+			transform: rotate(-45deg)
+	&__checkbox-description
+		width: auto
+		margin: 0rem
+		font-family: $fb
+		font-size: 1.6rem
+		color: #181818
+		text-align: left
+
+.types-of-repair
+	padding-top: 6.8rem
+	padding-bottom: 28.8rem
+	+flex(column, wrap, flex-start, center)
+	position: relative
+	&::before
+		content: ''
+		+size(100%, 100%)
+		background: url('../assets/lines-bg2.png') no-repeat center
+		background-size: cover
+		position: absolute
+		top: 0rem
+		left: 0rem
+		opacity: 0.2
+	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $yo
+		font-size: 2rem
+		color: #181818
+		text-transform: uppercase
+		text-align: center
+	&__separator
+		+size(2.8rem, 2.8rem)
+		background: url('../assets/types-of-repair__separator-icon.png') no-repeat center
+		position: relative
+		margin-top: 1.6rem
+		&::before, &::after
+			content: ''
+			+size(3.2rem, .15rem)
+			background: $gold
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+		&::before
+			left: -4.4rem
+		&::after
+			right: -4.4rem
+	&__wrapper
+		+flex(row, wrap, center, flex-start)
+		padding-top: 3.1rem
+		position: relative
+		top: 0rem
+		left: 0rem
+		z-index: 5
+	&__block
+		width: 39.2rem
+		position: relative
+		margin-right: 2.9rem
+		&:last-child
+			margin-right: 0rem
+	&__block1
+	&__block2
+	&__block3
+	&__img
+		+size(100%, 42.1rem)
+	&__img1
+		background: url('../assets/types-of-repair__block1-img.jpg') no-repeat center
+		background-size: cover
+	&__img2
+		background: url('../assets/types-of-repair__block2-img.jpg') no-repeat center
+		background-size: cover
+	&__img3
+		background: url('../assets/types-of-repair__block3-img.jpg') no-repeat center
+		background-size: cover
+	&__text-container
+		width: 33rem
+		box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.03)
+		background: #fff
+		position: absolute
+		bottom: -16.3rem
+		left: 50%
+		transform: translateX(-50%)
+		padding-top: 2.5rem
+		padding-left: 3.4rem
+		padding-bottom: 6.2rem
+	&__block-headline
+		width: 100%
+		margin: 0rem
+		font-family: $yo
+		font-size: 1.8rem
+		color: #363636
+		text-align: left
+	&__list
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(column, wrap, flex-start, flex-start)
+		margin-top: 1rem
+		padding-left: 1.4rem
+	&__list-item
+		padding: 0rem
+		margin: 0rem
+		font-family: $fb
+		font-size: 1.5rem
+		color: #959595
+		text-align: left
+		position: relative
+		margin-top: 0.9rem
+		&:first-child
+			margin-top: 0rem
+		&::before
+			content: ''
+			+size(.4rem, .4rem)
+			border-radius: 50%
+			background: #959595
+			position: absolute
+			top: 50%
+			left: -1.1rem
+			transform: translateY(-50%)
+	&__price
+		margin: 0rem
+		background: $gold
+		box-shadow: .5rem .5rem 1rem rgba(227, 184, 115, 0.3)
+		padding: 1.7rem 2.4rem
+		font-family: $yo
+		font-size: 1.8rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		margin-top: 3rem
+		position: absolute
+		bottom: -2.4rem
+		left: 0rem
+
+.measurement
+	position: relative
+	padding-top: 7.8rem
+	padding-bottom: 22.2rem
+	&::before
+		content: ''
+		+size(100%, 100%)
+		background: url('../assets/lines-bg2.png') no-repeat center
+		background-size: cover
+		position: absolute
+		top: 0rem
+		left: 0rem
+		opacity: 0.2
+	&__discount
+		width: 25rem
+		text-decoration: none
+		position: absolute
+		bottom: 25.9rem
+		right: 29.7rem
+		font-family: $fd
+		font-size: 2rem
+		color: $gold
+		text-shadow: 0rem .3rem 1rem rgba(227, 184, 115, 0.15)
+		&::before
+			content: ''
+			+size(7.2rem, 7.2rem)
+			background: url('../assets/measurement__discount-icon.png') no-repeat center, $gold
+			position: absolute
+			top: 50%
+			left: -9.7rem
+			transform: translateY(-50%)
+			border-radius: 50%
+	&__wrapper
+		+flex(row, wrap, center, flex-start)
+	&__block
+	&__block1
+		+size(58%, 69.1rem)
+		position: relative
+		background: url('../assets/measurement__block1-bg.png') no-repeat 0rem 0rem, url('../assets/measurement__block1-bg2.png') no-repeat 0rem -5.6rem
+	&__block2
+		width: 42%
+		padding-top: 5.1rem
+	&__block1-paragraph
+		margin: 0rem
+		font-family: $fm
+		font-size: 1.8rem
+		line-height: 2.1rem
+		color: #363636
+		text-align: left
+		position: absolute
+	&__block1-paragraph1
+		width: 41.9rem
+		top: 5.9rem
+		right: 0rem
+	&__block1-paragraph2
+		width: 27rem
+		top: 18rem
+		right: 7.5rem
+	&__block1-paragraph3
+		width: 30rem
+		top: 34.2rem
+		right: 2.2rem
+	&__block1-paragraph4
+		width: 20.1rem
+		top: 49.2rem
+		right: 18.7rem
+	&__form
+		width: 50.6rem
+		+flex(column, wrap, flex-start, flex-end)
+		background: #131313
+		position: relative
+		top: 0rem
+		left: 0rem
+		padding-top: 2.5rem
+		padding-bottom: 2.8rem
+		&::before
+			content: ''
+			+size(100%, 100%)
+			background: url('../assets/measurement__form-bg.png') no-repeat center
+			background-size: cover
+			position: absolute
+			top: 0rem
+			left: 0rem
+			opacity: 0.8
+	&__block2-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $fd
+		font-size: 2rem
+		line-height: 2.5rem
+		color: #fff
+		text-align: center
+		padding: 0rem 12rem
+	&__label
+		+flex(row, wrap, flex-start, flex-start)
+		font-family: $fb
+		font-size: 1.5rem
+		color: #898989
+		text-align: left
+		position: relative
+		top: 0rem
+		left: 0rem
+		z-index: 5
+		width: 100%
+		padding-left: 4.8rem
+		padding-right: 5rem
+	&__label1
+		margin-top: 3.7rem
+	&__label2
+		margin-top: 4.5rem
+	&__label3
+		margin-top: 4.6rem
+	&__input
+		outline: none
+		border: none
+		background: none
+		border-bottom: .1rem solid #363636
+		width: 100%
+		font-family: $fm
+		font-size: 1.8rem
+		color: #fff
+		text-align: left
+		padding: 0.7rem 0rem
+		&::placeholder
+			font-family: $fm
+			font-size: 1.8rem
+			color: #fff
+			text-align: left
+	&__name-input
+	&__phone-input
+	&__email-input
+	&__checkbox-container
+		position: relative
+		top: 0rem
+		left: 0rem
+		z-index: 5
+		+flex(row, wrap, flex-start, flex-start)
+		cursor: pointer
+		margin-top: 1.5rem
+		padding-left: 4.8rem
+		width: 100%
+	&__checkbox
+		display: none
+	&__checkbox:checked + &__checkbox-indicator::before,
+	&__checkbox:checked + &__checkbox-indicator::after
+		opacity: 1
+	&__checkbox-indicator
+		+size(1.8rem, 1.8rem)
+		background: $gold
+		border-radius: .1rem
+		position: relative
+		margin-right: 0.86rem
+		&::before, &::after
+			content: ''
+			height: .2rem
+			background: #fff
+			position: absolute
+			transition: .2s
+			opacity: 0
+		&::before
+			width: .4rem
+			top: 0.9rem
+			left: 0.4rem
+			transform: rotate(45deg)
+		&::after
+			width: 0.8rem
+			top: 0.7rem
+			left: 0.6rem
+			transform: rotate(-45deg)
+	&__checkbox-description
+		width: auto
+		margin: 0rem
+		font-family: $fb
+		font-size: 1.6rem
+		color: #fff
+		text-align: left
+	&__submit-button
+		position: relative
+		top: 0rem
+		left: 0rem
+		z-index: 5
+		outline: none
+		border: none
+		cursor: pointer
+		background: $gold
+		box-shadow: 0rem .5rem 1.5rem rgba($gold, 0.15)
+		padding: 1.8rem 4.8rem
+		font-family: $fd
+		font-size: 1.3rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		transition: .2s
+		margin-top: 3.9rem
+		margin-right: 4.9rem
+		&:hover
+			background: darken($gold, 5%)
+
+.wildest-fantasies
+	background: url('../assets/wild-fantasies__bg.jpg') no-repeat center
+	background-size: cover
+	position: relative
+	padding-top: 13.5rem
+	padding-bottom: 9.8rem
+	&::before
+		content: ''
+		+size(100%, 100%)
+		background: linear-gradient(120.96deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%)
+		position: absolute
+		top: 0rem
+		left: 0rem
+	&__wrapper
+		+flex(row, wrap, flex-start, stretch)
+		position: relative
+		z-index: 5
+	&__block
+	&__block1
+		width: 41%
+		padding-left: 10.1rem
+	&__block2
+		width: 59%
+	&__ajax-section
+		+size(100%, 100%)
+		+flex(row, wrap, flex-start, flex-start)
+	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $yo
+		font-size: 2.7rem
+		line-height: 3.7rem
+		color: $gold
+		text-transform: uppercase
+		text-align: left
+		padding-right: 12rem
+	&__list
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(column, wrap, flex-start, flex-start)
+		margin-top: 4.3rem
+	&__list-item
+		padding: 0rem
+		margin: 0rem
+		+flex(row, wrap, flex-start, flex-start)
+		margin-top: 2.6rem
+		&:first-child
+			margin-top: 0rem
+	&__list-link
+		text-decoration: none
+		font-family: $pn
+		font-size: 2rem
+		color: #fff
+		position: relative
+		transition: .2s
+		&::before
+			content: ''
+			+size(100%, .1rem)
+			background: $gold
+			position: absolute
+			bottom: -0.3rem
+			left: 0rem
+			transition: .2s
+			opacity: 0
+		&.active
+			color: $gold
+		&.active::before
+			opacity: 1
+	&__column
+		+size(46%, 100%)
+		position: relative
+	&__column1
+	&__column2
+	&__img
+		width: 35.4rem
+		position: absolute
+		left: 0rem
+	&__img1
+		height: 55.7rem
+		background: url('../assets/wild-fantasies__block2-img1.jpg') no-repeat center
+		background-size: cover
+		top: -17.6rem
+	&__img2
+		height: 35rem
+		background: url('../assets/wild-fantasies__block2-img2.jpg') no-repeat center
+		background-size: cover
+		bottom: -14rem
+	&__img3
+		height: 27.5rem
+		background: url('../assets/wild-fantasies__block2-img3.jpg') no-repeat center
+		background-size: cover
+		top: -24.8rem
+	&__img4
+		height: 62.5rem
+		background: url('../assets/wild-fantasies__block2-img4.jpg') no-repeat center
+		background-size: cover
+		bottom: -5.9rem
+
+.design-projects
+	padding-top: 15.4rem
+	padding-bottom: 32.7rem
+	&__wrapper
+		position: relative
+		+flex(column, wrap, flex-start, center)
+	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $yo
+		font-size: 2rem
+		color: #181818
+		text-transform: uppercase
+		text-align: center
+	&__separator
+		+size(2.8rem, 2.8rem)
+		background: url('../assets/design-project__separator-icon.png') no-repeat center
+		position: relative
+		margin-top: 1.5rem
+		&::before, &::after
+			content: ''
+			+size(3.2rem, .15rem)
+			background: $gold
+			position: absolute
+			top: 50%
+		&::before
+			left: -4.1rem
+		&::after
+			right: -4.5rem
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $fb
+		font-size: 2rem
+		line-height: 2.7rem
+		color: #363636
+		text-align: center
+		margin-top: 2rem
+		padding: 0rem 39rem
+	&__blocks-container
+		width: 100%
+		+flex(row, wrap, center, flex-start)
+		margin-top: 4.7rem
+		position: absolute
+		left: 0rem
+		z-index: 3
+		bottom: -46.8rem
+	&__block
+		+size(39.2rem, 42.1rem)
+		position: relative
+		margin-right: 2.9rem
+		&:last-child
+			margin-right: 0rem
+	&__block1
+	&__block2
+	&__block3
+	&__block-img
+		+size(100%, 100%)
+	&__block-img1
+		background: url('../assets/types-of-repair__block1-img.jpg') no-repeat center
+		background-size: cover
+	&__block-img2
+		background: url('../assets/types-of-repair__block2-img.jpg') no-repeat center
+		background-size: cover
+	&__block-img3
+		background: url('../assets/types-of-repair__block3-img.jpg') no-repeat center
+		background-size: cover
+	&__text-container
+		background: #fff
+		box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.03)
+		width: 33rem
+		position: absolute
+		top: 29.4rem
+		left: 50%
+		transform: translateX(-50%)
+		padding-top: 2.5rem
+		padding-left: 3.5rem
+		padding-bottom: 6rem
+	&__block-headline
+		width: 100%
+		margin: 0rem
+		font-family: $yo
+		font-size: 1.8rem
+		color: #363636
+		text-align: left
+	&__list
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(column, wrap, flex-start, flex-start)
+		margin-top: 1.2rem
+		padding-left: 1.3rem
+	&__list-item
+		padding: 0rem
+		margin: 0rem
+		+flex(row, wrap, flex-start, flex-start)
+		font-family: $fb
+		font-size: 1.5rem
+		color: #959595
+		text-align: left
+		position: relative
+		margin-top: 0.8rem
+		&:first-child
+			margin-top: 0rem
+		&::before
+			content: ''
+			+size(.4rem, .4rem)
+			background: #959595
+			border-radius: 50%
+			position: absolute
+			top: 50%
+			left: -1rem
+			transform: translateY(-50%)
+	&__price
+		margin: 0rem
+		background: $gold
+		box-shadow: .5rem .5rem 1rem rgba($gold, 0.1)
+		font-family: $yo
+		font-size: 1.8rem
+		color: #fff
+		text-align: center
+		position: absolute
+		bottom: -2.7rem
+		left: 0rem
+		padding: 1.7rem 5.9rem
+
+.working
+	background: #131313
+	position: relative
+	padding-top: 42.6rem
+	padding-bottom: 5.6rem
+	&::before
+		content: ''
+		+size(100%, 100%)
+		background: url('../assets/projects__lines-bg.png') no-repeat center
+		background-size: cover
+		position: absolute
+		top: 0rem
+		left: 0rem
+		opacity: 0.2
+	&__wrapper
+		position: relative
+	&__tabs-list
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(row, wrap, flex-start, flex-start)
+		position: absolute
+		top: 4.9rem
+		left: 57.4rem
+		z-index: 5
+		width: 60%
+	&__tabs-list-item
+		padding: 0rem
+		margin: 0rem
+		+flex(row, wrap, flex-start, flex-start)
+		margin-right: 20.9rem
+		margin-top: 7rem
+		&:nth-child(3n)
+			margin-right: 0rem
+	&__tabs-list-link
+		text-decoration: none
+		font-family: $fb
+		font-size: 1.5rem
+		line-height: 1.8rem
+		color: #595959
+		position: relative
+		width: 12rem
+		transition: .2s
+		&::before
+			font-family: $yo
+			font-size: 1.5rem
+			color: #595959
+			text-transform: uppercase
+			position: absolute
+			top: -3rem
+			left: 0rem
+			transition: .2s
+		&::after
+			content: ''
+			+size(1.8rem, .1rem)
+			background: rgba(227, 184, 115, 0.3)
+			position: absolute
+			top: -1rem
+			left: 0rem
+			transition: .2s
+		&.active
+			color: #fff
+		&.active::before
+			color: #fff
+		&.active::after
+			background: $gold
+	&__tabs-list-item:nth-child(1) &__tabs-list-link::before
+		content: '01'
+	&__tabs-list-item:nth-child(2) &__tabs-list-link::before
+		content: '02'
+	&__tabs-list-item:nth-child(3) &__tabs-list-link::before
+		content: '03'
+	&__tabs-list-item:nth-child(4) &__tabs-list-link::before
+		content: '04'
+	&__tabs-list-item:nth-child(5) &__tabs-list-link::before
+		content: '05'
+	&__tabs-list-item:nth-child(6) &__tabs-list-link::before
+		content: '06'
+	&__content
+		position: relative
+		+size(100%, 68.9rem)
+		z-index: 3
+	&__slide
+		+size(100%, 100%)
+		+flex(row, wrap, center, flex-start)
+		position: absolute
+		top: 0rem
+		left: 0rem
+		opacity: 0
+		z-index: -1
+		overflow: hidden
+		transition: .2s
+		&.active
+			opacity: 1
+			z-index: 3
+	&__slide1
+	&__slide2
+	&__slide3
+	&__slide4
+	&__slide5
+	&__slide6
+	&__text-container
+		width: 33%
+		position: relative
+		top: 0rem
+		left: -100%
+		transition: .2s
+	&__slide.active &__text-container
+		left: 0rem
+	&__headline1
+		width: 100%
+		margin: 0rem
+		font-family: $fd
+		font-size: 1.5rem
+		color: #fff
+		text-transform: uppercase
+		text-align: left
+	&__headline2
+		width: 100%
+		margin: 0rem
+		font-family: $yo
+		font-size: 2.7rem
+		line-height: 3.7rem
+		color: $gold
+		text-transform: uppercase
+		text-align: left
+		position: relative
+		margin-top: 1.6rem
+		padding-right: 28rem
+		&::before
+			content: ''
+			+size(9.2rem, .1rem)
+			background: $gold
+			position: absolute
+			bottom: 1.8rem
+			right: 17.2rem
+	&__counter
+		width: 100%
+		margin: 0rem
+		font-family: $yo
+		font-size: 1.8rem
+		color: #fff
+		text-align: left
+		margin-top: 8.7rem
+	&__headline3
+		width: 100%
+		margin: 0rem
+		font-family: $yo
+		font-size: 1.5rem
+		line-height: 2.3rem
+		color: $gold
+		text-transform: uppercase
+		text-align: left
+		margin-top: 2.2rem
+		padding-right: 26rem
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $fb
+		font-size: 1.5rem
+		line-height: 2.5rem
+		color: #fff
+		text-align: left
+		padding-right: 15rem
+	&__paragraph1
+		margin-top: 0.8rem
+	&__paragraph2
+		margin-top: 1.2rem
+	&__img
+		+size(76.5rem, 37.7rem)
+		background: url('../assets/how-we-work__img.jpg') no-repeat center
+		background-size: cover
+		margin-top: 31.2rem
+		position: relative
+		top: 0rem
+		right: -100%
+		transition: .2s
+	&__slide.active &__img
+		right: 0rem
 	&__img1
 	&__img2
 	&__img3
+	&__img4
+	&__img5
+	&__img6
+	&__pagination-container
+		position: absolute
+		bottom: 9.6rem
+		left: 10rem
+		z-index: 3
+		+flex(row, wrap, flex-start, flex-start)
+	&__switch-button
+		outline: none
+		border: none
+		cursor: pointer
+		+size(4.2rem, 1.4rem)
+	&__prev-button
+		background: url('../assets/pagination-prev-button-icon.png') no-repeat center
+		margin-right: 2.9rem
+	&__next-button
+		background: url('../assets/pagination-next-button-icon.png') no-repeat center
+		margin-left: 2.9rem
+	&__pagination-elem
+		+size(.9rem, .9rem)
+		background: #595959
+		border-radius: 50%
+		cursor: pointer
+		transition: .2s
+		margin-right: 1.8rem
+		&.active
+			background: #fff
+	&__pagination-elem1
+	&__pagination-elem2
+	&__pagination-elem3
+	&__pagination-elem4
+	&__pagination-elem5
+	&__pagination-elem6
+		margin-right: 0rem
 
 *
 	// @include outline($blue)

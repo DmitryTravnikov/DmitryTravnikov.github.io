@@ -3,7 +3,7 @@ doctype html
 // [if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]
 // [if IE 8]><html lang="ru" class="lt-ie9"><![endif]
 // [if gt IE 8]><!
-html(lang="ru")
+html(lang="en")
 	// <![endif]
 	head
 		title Repair Design Project
@@ -133,6 +133,267 @@ html(lang="ru")
 										p.projects__characteristic-paragraph Upon request
 						.projects__block.projects__block2
 							.projects__img.projects__img3
+
+		//- Online control
+		section.online-control
+			h3.online-control__headline Online Control
+			.online-control__separator1
+			.online-control__wrapper.wrapper
+				.online-control__video-container
+					.online-control__video-overlay
+					.online-control__video-button
+					.online-control__video-relation-ratio
+						iframe.online-control__video(width="789" height="444" src="https://www.youtube.com/embed/ZvzNVqpQYsw?autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer;showinfo=0&controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+				.online-control__separator2
+				p.online-control__description At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.
+				form.online-control__form(action="" method="POST")
+					.online-control__row.online-control__row1
+						label.online-control__label Name
+							input.online-control__input.online-control__name-input(type="text" placeholder="What is your name:")
+						label.online-control__label Phone
+							input.online-control__input.online-control__phone-input(type="text" placeholder="Your phone number:")
+						button.prevdef.online-control__submit-button Submit
+					.online-control__row.online-control__row2
+						label.online-control__checkbox-container
+							input.online-control__checkbox(type="checkbox")
+							.online-control__checkbox-indicator
+							p.online-control__checkbox-description I agree to the processing of personal data
+
+		//- Types of repair
+		section.types-of-repair
+			h3.types-of-repair__headline Types of repair
+			.types-of-repair__separator
+			.types-of-repair__wrapper.wrapper
+				.types-of-repair__block.types-of-repair__block1
+					.types-of-repair__img.types-of-repair__img1
+					.types-of-repair__text-container
+						h3.types-of-repair__block-headline Redecorating
+						ul.types-of-repair__list
+							li.types-of-repair__list-item Dismantling of old coatings
+							li.types-of-repair__list-item Wallpapering
+							li.types-of-repair__list-item Painting walls and ceilings
+							li.types-of-repair__list-item Laying flooring
+							li.types-of-repair__list-item Replacing plumbing
+							li.types-of-repair__list-item Replacing sockets and switches
+							li.types-of-repair__list-item Replacing doors
+						p.types-of-repair__price from 900 rub / m2
+				.types-of-repair__block.types-of-repair__block2
+					.types-of-repair__img.types-of-repair__img2
+					.types-of-repair__text-container
+						h3.types-of-repair__block-headline Overhaul
+						ul.types-of-repair__list
+							li.types-of-repair__list-item Dismantling of old coatings
+							li.types-of-repair__list-item Wallpapering
+							li.types-of-repair__list-item Painting walls and ceilings
+							li.types-of-repair__list-item Laying flooring
+							li.types-of-repair__list-item Replacing plumbing
+							li.types-of-repair__list-item Replacing sockets and switches
+							li.types-of-repair__list-item Replacing doors
+						p.types-of-repair__price from 1500 rub / m2
+				.types-of-repair__block.types-of-repair__block3
+					.types-of-repair__img.types-of-repair__img3
+					.types-of-repair__text-container
+						h3.types-of-repair__block-headline Designer Repair
+						ul.types-of-repair__list
+							li.types-of-repair__list-item Dismantling of old coatings
+							li.types-of-repair__list-item Wallpapering
+							li.types-of-repair__list-item Painting walls and ceilings
+							li.types-of-repair__list-item Laying flooring
+							li.types-of-repair__list-item Replacing plumbing
+							li.types-of-repair__list-item Replacing sockets and switches
+							li.types-of-repair__list-item Replacing doors
+						p.types-of-repair__price from 1000 rub / m2
+
+		//- Measurement
+		section.measurement
+			a.prevdef.measurement__discount(href="#") Help save 10 - 20% of the cost of materials
+			.measurement__wrapper.wrapper
+				.measurement__block.measurement__block1
+					p.measurement__block1-paragraph.measurement__block1-paragraph1 Our specialist will arrive for measurements per day contact, or appoint a date convenient for you
+					p.measurement__block1-paragraph.measurement__block1-paragraph2 Free metering
+					p.measurement__block1-paragraph.measurement__block1-paragraph3 Free consultation
+					p.measurement__block1-paragraph.measurement__block1-paragraph4 Get a cost estimate and the timing of your future repairs
+				.measurement__block.measurement__block2
+					form.measurement__form(action="" method="POST")
+						p.measurement__block2-paragraph Leave a request for free departure of the measurer
+						label.measurement__label.measurement__label1 Name
+							input.measurement__input.measurement__name-input(type="text" placeholder="What is your name:")
+						label.measurement__label.measurement__label2 Phone
+							input.measurement__input.measurement__phone-input(type="text" placeholder="Your phone number:")
+						label.measurement__label.measurement__label3 Email
+							input.measurement__input.measurement__email-input(type="text" placeholder="Your email:")
+						label.measurement__checkbox-container
+							input.measurement__checkbox(type="checkbox")
+							.measurement__checkbox-indicator
+							p.measurement__checkbox-description I agree to the processing of personal data
+						button.prevdef.measurement__submit-button Call the measurer
+
+		//- Wildest fantasies
+		section.wildest-fantasies
+			.wildest-fantasies__wrapper.wrapper
+				.wildest-fantasies__block.wildest-fantasies__block1
+					h3.wildest-fantasies__headline We realize your wildest fantasies
+					ul.wildest-fantasies__list
+						li.wildest-fantasies__list-item
+							a.wildest-fantasies__list-link.active(href="index.html") American classic
+						li.wildest-fantasies__list-item
+							a.wildest-fantasies__list-link(href="empire.html") Empire
+						li.wildest-fantasies__list-item
+							a.wildest-fantasies__list-link(href="classical.html") Classical
+						li.wildest-fantasies__list-item
+							a.wildest-fantasies__list-link(href="loft.html") Loft
+						li.wildest-fantasies__list-item
+							a.wildest-fantasies__list-link(href="minimalism.html") Minimalism
+						li.wildest-fantasies__list-item
+							a.wildest-fantasies__list-link(href="provence.html") Provence
+						li.wildest-fantasies__list-item
+							a.wildest-fantasies__list-link(href="romanticism.html") Romanticism
+						li.wildest-fantasies__list-item
+							a.wildest-fantasies__list-link(href="scandinavian-style.html") Scandinavian style
+						li.wildest-fantasies__list-item
+							a.wildest-fantasies__list-link(href="mediterranean-style.html") Mediterranean style
+						li.wildest-fantasies__list-item
+							a.wildest-fantasies__list-link(href="high-tech.html") High tech
+						li.wildest-fantasies__list-item
+							a.wildest-fantasies__list-link(href="eclecticism.html") Eclecticism
+				.wildest-fantasies__block.wildest-fantasies__block2
+					.wildest-fantasies__ajax-section
+						.wildest-fantasies__column.wildest-fantasies__column1
+							.wildest-fantasies__img.wildest-fantasies__img1
+							.wildest-fantasies__img.wildest-fantasies__img2
+						.wildest-fantasies__column.wildest-fantasies__column2
+							.wildest-fantasies__img.wildest-fantasies__img3
+							.wildest-fantasies__img.wildest-fantasies__img4
+
+		//- Design projects
+		section.design-projects
+			.design-projects__wrapper.wrapper
+				h3.design-projects__headline Design Project
+				.design-projects__separator
+				p.design-projects__paragraph Design project not only helps to make the repair of your apartment more modern, but also significantly reduces the cost of materials and reduces the time of repair work.
+				.design-projects__blocks-container
+					.design-projects__block.design-projects__block1
+						.design-projects__block-img.design-projects__block-img1
+						.design-projects__text-container
+							h3.design-projects__block-headline Mini
+							ul.design-projects__list
+								li.design-projects__list-item Measurement drawing
+								li.design-projects__list-item Redevelopment
+								li.design-projects__list-item Layout of furniture
+								li.design-projects__list-item Plumbing plan. equipment
+							p.design-projects__price 150 rub / m2
+					.design-projects__block.design-projects__block2
+						.design-projects__block-img.design-projects__block-img2
+						.design-projects__text-container
+							h3.design-projects__block-headline Standard
+							ul.design-projects__list
+								li.design-projects__list-item Measurement drawing
+								li.design-projects__list-item Redevelopment
+								li.design-projects__list-item Layout of furniture
+								li.design-projects__list-item Plan of ceilings
+								li.design-projects__list-item Floor Plan
+								li.design-projects__list-item Electricians plan
+								li.design-projects__list-item Lighting plan
+							p.design-projects__price 400 rub / m2
+					.design-projects__block.design-projects__block3
+						.design-projects__block-img.design-projects__block-img3
+						.design-projects__text-container
+							h3.design-projects__block-headline Full
+							ul.design-projects__list
+								li.design-projects__list-item Measurement drawing
+								li.design-projects__list-item Redevelopment
+								li.design-projects__list-item Layout of furniture
+								li.design-projects__list-item Plan of ceilings
+								li.design-projects__list-item Floor Plan
+								li.design-projects__list-item Electricians plan
+								li.design-projects__list-item Lighting plan
+								li.design-projects__list-item Wall reamers
+								li.design-projects__list-item 3D visualization
+								li.design-projects__list-item Bill of materials
+								li.design-projects__list-item Departure for a selection of materials
+								li.design-projects__list-item Furniture selection
+							p.design-projects__price 900 rub / m2
+
+		//- How we are working
+		section.working
+			.working__wrapper.wrapper
+				ul.working__tabs-list
+					li.working__tabs-list-item
+						a.prevdef.working__tabs-list-link.active(href="#") Departure to room measurements
+					li.working__tabs-list-item
+						a.prevdef.working__tabs-list-link(href="#") Compilation estimates
+					li.working__tabs-list-item
+						a.prevdef.working__tabs-list-link(href="#") Development project design
+					li.working__tabs-list-item
+						a.prevdef.working__tabs-list-link(href="#") Purchasing Supplies
+					li.working__tabs-list-item
+						a.prevdef.working__tabs-list-link(href="#") Repair finishing work
+					li.working__tabs-list-item
+						a.prevdef.working__tabs-list-link(href="#") Departure to room measurements
+				.working__content
+					.working__slide.working__slide1.active
+						.working__text-container
+							h3.working__headline1 How we are working
+							h3.working__headline2 6 steps to the goal
+							p.working__counter 1/6
+							h3.working__headline3 Departure for measurements premises
+							p.working__paragraph.working__paragraph1 After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room.
+							p.working__paragraph.working__paragraph2 He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.
+						.working__img.working__img1
+					.working__slide.working__slide2
+						.working__text-container
+							h3.working__headline1 How we are working
+							h3.working__headline2 6 steps to the goal
+							p.working__counter 2/6
+							h3.working__headline3 Departure for measurements premises
+							p.working__paragraph.working__paragraph1 After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room.
+							p.working__paragraph.working__paragraph2 He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.
+						.working__img.working__img2
+					.working__slide.working__slide3
+						.working__text-container
+							h3.working__headline1 How we are working
+							h3.working__headline2 6 steps to the goal
+							p.working__counter 3/6
+							h3.working__headline3 Departure for measurements premises
+							p.working__paragraph.working__paragraph1 After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room.
+							p.working__paragraph.working__paragraph2 He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.
+						.working__img.working__img3
+					.working__slide.working__slide4
+						.working__text-container
+							h3.working__headline1 How we are working
+							h3.working__headline2 6 steps to the goal
+							p.working__counter 4/6
+							h3.working__headline3 Departure for measurements premises
+							p.working__paragraph.working__paragraph1 After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room.
+							p.working__paragraph.working__paragraph2 He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.
+						.working__img.working__img4
+					.working__slide.working__slide5
+						.working__text-container
+							h3.working__headline1 How we are working
+							h3.working__headline2 6 steps to the goal
+							p.working__counter 5/6
+							h3.working__headline3 Departure for measurements premises
+							p.working__paragraph.working__paragraph1 After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room.
+							p.working__paragraph.working__paragraph2 He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.
+						.working__img.working__img5
+					.working__slide.working__slide6
+						.working__text-container
+							h3.working__headline1 How we are working
+							h3.working__headline2 6 steps to the goal
+							p.working__counter 6/6
+							h3.working__headline3 Departure for measurements premises
+							p.working__paragraph.working__paragraph1 After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room.
+							p.working__paragraph.working__paragraph2 He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.
+						.working__img.working__img6
+				.working__pagination-container
+					button.working__switch-button.working__prev-button
+					.working__pagination-elem.working__pagination-elem1.active
+					.working__pagination-elem.working__pagination-elem2
+					.working__pagination-elem.working__pagination-elem3
+					.working__pagination-elem.working__pagination-elem4
+					.working__pagination-elem.working__pagination-elem5
+					.working__pagination-elem.working__pagination-elem6
+					button.working__switch-button.working__next-button
 
 		// Content End
 		// Scripts

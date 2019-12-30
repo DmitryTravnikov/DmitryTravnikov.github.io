@@ -234,6 +234,67 @@ $(document).ready(function() {
 		projectsSwitchButtonsStyle();
 	}
 
+
+
+
+	var onlineControlVideoButton = document.querySelector('.online-control__video-button');
+	var onlineControlVideoOverlay = document.querySelector('.online-control__video-overlay');
+	var onlineControlVideo = document.querySelector('.online-control__video');
+
+	onlineControlVideoButton.onclick = function() {
+		onlineControlVideoOverlay.style.opacity = '0';
+		onlineControlVideoOverlay.style.zIndex = '-1';
+		this.style.opacity = '0';
+		this.style.zIndex = '-1';
+
+		onlineControlVideo.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+	}
+
+
+
+
+	var wildestFantasiesListLinks = document.querySelectorAll('.wildest-fantasies__list-link');
+	for (var i = 0; i < wildestFantasiesListLinks.length; i++) {
+		wildestFantasiesListLinks[i].onclick = function() {
+			for (var i = 0; i < wildestFantasiesListLinks.length; i++) {
+				wildestFantasiesListLinks[i].classList.remove('active');
+			}
+			this.classList.add('active');
+		}
+	}
+
+	//AJAX вкладки (анимацию делать на keyframes)
+	$('.wildest-fantasies__list-link').click(function() {
+
+		var info = $(this).attr('href') + ' .wildest-fantasies__ajax-section';//берет href ссылки и задает тот блок, который будет обновляться с помощью ajax при переходе по ссылке
+		$('.wildest-fantasies__ajax-section').hide(0, loadContent());//скрываем содержимое блока #content той страницы, на которой находимся//задать анимацию для содержимого
+		$('#loader').fadeIn('slow');//анимация лоадера
+
+		function loadContent() {//основная функция для загрузки контента
+			$('.wildest-fantasies__ajax-section').load(info, '', function() {//блок, в который мы хотим загрузить новый контент//info подгружает именно тот контент, который нам нужен//'' - различные переменные, дата, опускаем его
+				$('.wildest-fantasies__ajax-section').fadeIn('slow', hideLoader());//показываем наш блок с контентом//скрываем лоадер//задать анимацию для содержимого
+			});
+		}
+
+		function hideLoader() {//функция для скрытия лоадера
+			$('#loader').fadeOut('normal');
+		}
+
+		return false;//чтобы не происходило перехода по ссылке, а только происходила подгрузка контента
+
+	});//ajax вкладки end
+
+
+
+
+	var workingSlides = document.querySelectorAll('.working__slide');
+	var workingTabs = document.querySelectorAll('.working__tabs-list-link');
+	var workingPagipationElems document.querySelectorAll('.working__pagination-elem');
+	var workingPrevButton = document.querySelector('.working__prev-button');
+	var workingNextButton = document.querySelector('.working__next-button');
+
+	
+
 });//doc.ready end
 
 var cLog = function(n) {

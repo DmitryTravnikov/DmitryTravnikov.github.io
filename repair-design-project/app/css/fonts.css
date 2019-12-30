@@ -50,11 +50,11 @@
 }
 /* font-family: "ProximaNova-Regular"; */
 @font-face {
-	font-family: "ProximaNove-Regular";
-	src: url("../fonts/ProximaNove-Regular/ProximaNove-Regular.eot");
-	src: url("../fonts/ProximaNove-Regular/ProximaNove-Regular.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/ProximaNove-Regular/ProximaNove-Regular.woff") format("woff"),
-	url("../fonts/ProximaNove-Regular/ProximaNove-Regular.ttf") format("truetype");
+	font-family: "Proxima Nova Regular";
+	src: url("../fonts/ProximaNova-Regular/ProximaNova-Regular.eot");
+	src: url("../fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff"),
+	url("../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
