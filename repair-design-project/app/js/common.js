@@ -318,11 +318,11 @@ $(document).ready(function() {
 	}
 
 	function workingCounterStatementCheck() {
-		if (workingCounter <= 0) {
-			workingCounter = 0;
-		}
-		if (workingCounter >= workingSlides.length - 1) {
+		if (workingCounter < 0) {
 			workingCounter = workingSlides.length - 1;
+		}
+		if (workingCounter >= workingSlides.length) {
+			workingCounter = 0;
 		}
 		workingSwitchingSlides();
 		workingSwitchingTabs1();
@@ -379,7 +379,7 @@ $(document).ready(function() {
 		workingSwitchingTabs1();
 	}
 
-	(function foo() {
+	var foo = (function() {
 		window.timerId = window.setInterval(function() {
 			workingCounter++;
 			if (workingCounter >= workingSlides.length) {
@@ -418,7 +418,7 @@ $(document).ready(function() {
 
 
 
-
+	
 
 });//doc.ready end
 
