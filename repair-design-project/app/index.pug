@@ -34,25 +34,25 @@ html(lang="en")
 				nav.header__menu-container
 					ul.header__menu
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#").active Home
+							a.prevdef.header__menu-link(href="#home").active Home
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") Projects
+							a.prevdef.header__menu-link(href="#projects") Projects
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") Measurement
+							a.prevdef.header__menu-link(href="#measurement") Measurement
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") Team
+							a.prevdef.header__menu-link(href="#team") Team
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") Reviews
+							a.prevdef.header__menu-link(href="#reviews") Reviews
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") Contacts
+							a.prevdef.header__menu-link(href="#contacts") Contacts
 				a.prevdef.header__tel(href="#") +7 (928) 768-32-39
 				a.prevdef.header__request-a-call(href="#") Request a call
 
 		//- Main Section
-		section.main
+		section.main#home
 			.main__wrapper.wrapper
 				a.prevdef.main__instagram(href="#") Instagram
-				a.prevdef.main__scroll-down(href="#") Scroll down
+				a.prevdef.main__scroll-down(href="#projects") Scroll down
 				.main__content
 					h1.main__headline Turnkey Repair in the city of #[span Rostov-on-Don]
 					p.main__paragraph Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work
@@ -61,7 +61,7 @@ html(lang="en")
 						a.prevdef.main__submit-your-application(href="#") Submit your application
 
 		//- Projects
-		section.projects
+		section.projects#projects
 			.projects__wrapper.wrapper
 				ul.projects__list
 					li.projects__list-item
@@ -165,7 +165,8 @@ html(lang="en")
 			.types-of-repair__separator
 			.types-of-repair__wrapper.wrapper
 				.types-of-repair__block.types-of-repair__block1
-					.types-of-repair__img.types-of-repair__img1
+					.types-of-repair__img-container
+						.types-of-repair__img.types-of-repair__img1
 					.types-of-repair__text-container
 						h3.types-of-repair__block-headline Redecorating
 						ul.types-of-repair__list
@@ -178,7 +179,8 @@ html(lang="en")
 							li.types-of-repair__list-item Replacing doors
 						p.types-of-repair__price from 900 rub / m2
 				.types-of-repair__block.types-of-repair__block2
-					.types-of-repair__img.types-of-repair__img2
+					.types-of-repair__img-container
+						.types-of-repair__img.types-of-repair__img2
 					.types-of-repair__text-container
 						h3.types-of-repair__block-headline Overhaul
 						ul.types-of-repair__list
@@ -191,7 +193,8 @@ html(lang="en")
 							li.types-of-repair__list-item Replacing doors
 						p.types-of-repair__price from 1500 rub / m2
 				.types-of-repair__block.types-of-repair__block3
-					.types-of-repair__img.types-of-repair__img3
+					.types-of-repair__img-container
+						.types-of-repair__img.types-of-repair__img3
 					.types-of-repair__text-container
 						h3.types-of-repair__block-headline Designer Repair
 						ul.types-of-repair__list
@@ -205,7 +208,7 @@ html(lang="en")
 						p.types-of-repair__price from 1000 rub / m2
 
 		//- Measurement
-		section.measurement
+		section.measurement#measurement
 			a.prevdef.measurement__discount(href="#") Help save 10 - 20% of the cost of materials
 			.measurement__wrapper.wrapper
 				.measurement__block.measurement__block1
@@ -259,11 +262,15 @@ html(lang="en")
 				.wildest-fantasies__block.wildest-fantasies__block2
 					.wildest-fantasies__ajax-section
 						.wildest-fantasies__column.wildest-fantasies__column1
-							.wildest-fantasies__img.wildest-fantasies__img1
-							.wildest-fantasies__img.wildest-fantasies__img2
+							.wildest-fantasies__img-container.wildest-fantasies__img-container1
+								.wildest-fantasies__img.wildest-fantasies__img1
+							.wildest-fantasies__img-container.wildest-fantasies__img-container2
+								.wildest-fantasies__img.wildest-fantasies__img2
 						.wildest-fantasies__column.wildest-fantasies__column2
-							.wildest-fantasies__img.wildest-fantasies__img3
-							.wildest-fantasies__img.wildest-fantasies__img4
+							.wildest-fantasies__img-container.wildest-fantasies__img-container3
+								.wildest-fantasies__img.wildest-fantasies__img3
+							.wildest-fantasies__img-container.wildest-fantasies__img-container4
+								.wildest-fantasies__img.wildest-fantasies__img4
 
 		//- Design projects
 		section.design-projects
@@ -273,7 +280,8 @@ html(lang="en")
 				p.design-projects__paragraph Design project not only helps to make the repair of your apartment more modern, but also significantly reduces the cost of materials and reduces the time of repair work.
 				.design-projects__blocks-container
 					.design-projects__block.design-projects__block1
-						.design-projects__block-img.design-projects__block-img1
+						.design-projects__img-container
+							.design-projects__block-img.design-projects__block-img1
 						.design-projects__text-container
 							h3.design-projects__block-headline Mini
 							ul.design-projects__list
@@ -283,7 +291,8 @@ html(lang="en")
 								li.design-projects__list-item Plumbing plan. equipment
 							p.design-projects__price 150 rub / m2
 					.design-projects__block.design-projects__block2
-						.design-projects__block-img.design-projects__block-img2
+						.design-projects__img-container
+							.design-projects__block-img.design-projects__block-img2
 						.design-projects__text-container
 							h3.design-projects__block-headline Standard
 							ul.design-projects__list
@@ -296,7 +305,8 @@ html(lang="en")
 								li.design-projects__list-item Lighting plan
 							p.design-projects__price 400 rub / m2
 					.design-projects__block.design-projects__block3
-						.design-projects__block-img.design-projects__block-img3
+						.design-projects__img-container
+							.design-projects__block-img.design-projects__block-img3
 						.design-projects__text-container
 							h3.design-projects__block-headline Full
 							ul.design-projects__list
@@ -398,27 +408,30 @@ html(lang="en")
 		//- Team
 		section.team
 			.team__wrapper.wrapper
-				h3.team__headline Our Team
+				h3.team__headline#team Our Team
 				.team__separator1
 				p.team__paragraph Our team has helped to become happier for more than 500 families and we are not going to stop
 				.team__blocks-container
 					.team__block.team__block1
 						.team__block-icon.team__block-icon1
-						.team__block-img.team__block-img1
+						.team__img-container
+							.team__block-img.team__block-img1
 						.team__text-container
 							h3.team__employee-name Dmitry Tulyakov
 							p.team__employee-position Project manager
 							p.team__employee-work-exp Work experience 8 years
 					.team__block.team__block2
 						.team__block-icon.team__block-icon2
-						.team__block-img.team__block-img2
+						.team__img-container
+							.team__block-img.team__block-img2
 						.team__text-container
 							h3.team__employee-name Larisa Kotlyarova
 							p.team__employee-position Designer
 							p.team__employee-work-exp Work experience 6 years
 					.team__block.team__block3
 						.team__block-icon.team__block-icon3
-						.team__block-img.team__block-img3
+						.team__img-container
+							.team__block-img.team__block-img3
 						.team__text-container
 							h3.team__employee-name Alexey Efimov
 							p.team__employee-position Foreman
@@ -429,7 +442,7 @@ html(lang="en")
 				.team
 
 		//- Reviews
-		section.reviews
+		section.reviews#reviews
 			.reviews__wrapper.wrapper
 				h3.reviews__headline Our Clients
 				.reviews__separator
@@ -480,7 +493,7 @@ html(lang="en")
 					button.prevdef.questions__submit-button Submit
 
 		//- Contacts
-		footer.contacts
+		footer.contacts#contacts
 			.contacts__wrapper.wrapper
 				a.prevdef.contacts__link.contacts__address(href="#") Rostov-on-Don, Nansen St., 239 Shopping Center
 				a.prevdef.contacts__link.contacts__tel(href="#") Decorum Tel +7 (928) 768 32 29
@@ -492,6 +505,29 @@ html(lang="en")
 						svg(aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-instagram fa-w-14 fa-3x")
 							path(fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" class="" data-darkreader-inline-fill="" style="--darkreader-inline-fill:currentColor;")
 				.contacts__map#contacts__map
+
+		//- To top link
+		a.prevdef.to-top-link(href="#home")
+
+		//- Modal
+		.modal__overlay
+		.modal__success-container
+			p.modal__success-paragraph We will contact you in a couple of minutes!
+		.modal__form-container
+			button.modal__close-button
+			p.modal__paragraph Leave a request and our manager will contact you shortly
+			form.modal__form(action="" method="POST")
+				.modal__label.modal__label1 Name
+					input.modal__input.modal__name-input(type="text" placeholder="What is your name:")
+				.modal__label.modal__label2 Phone
+					input.modal__input.modal__phone-input(type="text" placeholder="Your phone number:")
+				.modal__label.modal__label3 Email
+					input.modal__input.modal__email-input(type="text" placeholder="Your email:")
+				label.modal__checkbox-container
+					input.modal__checkbox(type="checkbox")
+					.modal__checkbox-indicator
+					p.modal__checkbox-description I agree to the processing of personal data
+				button.prevdef.modal__submit-button Submit
 
 		// Content End
 		// Scripts

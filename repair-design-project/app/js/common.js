@@ -146,17 +146,6 @@ $(document).ready(function() {
 	}// prevdef();
 	prevdef();
 
-	var headerMenuLinks = document.querySelectorAll('.header__menu-link');
-
-	for (var i = 0; i < headerMenuLinks.length; i++) {
-		headerMenuLinks[i].onclick = function() {
-			for (var i = 0; i < headerMenuLinks.length; i++) {
-				headerMenuLinks[i].classList.remove('active');
-			}
-			this.classList.add('active');
-		}
-	}
-
 
 
 	var projectsListLinks = document.querySelectorAll('.projects__list-link');
@@ -415,6 +404,156 @@ $(document).ready(function() {
 			}, 3000);
 		})();
 	}
+
+
+
+	
+
+	var headerMenuLinks = document.querySelectorAll('.header__menu-link');
+	var header = document.querySelector('.header');
+	window.onscroll = function() {
+		var ypos = window.pageYOffset;
+		var toTopLink = document.querySelector('.to-top-link');
+		if ($(window).width() > 993) {
+			var ypos = window.pageYOffset;
+			if (ypos >= 100) {
+				header.classList.add('active');
+			} else {
+				header.classList.remove('active');
+			}
+			if (ypos >= 800) {
+				toTopLink.style.opacity = '1';
+				toTopLink.style.zIndex = '20';
+			} else {
+				toTopLink.style.opacity = '';
+				toTopLink.style.zIndex = '';
+			}
+			if (ypos >= 0) {
+				for (var i = 0; i < headerMenuLinks.length; i++) {
+					headerMenuLinks[i].classList.remove('active');
+					headerMenuLinks[0].classList.add('active');
+				}
+			}
+			if (ypos >= 750) {
+				for (var i = 0; i < headerMenuLinks.length; i++) {
+					headerMenuLinks[i].classList.remove('active');
+					headerMenuLinks[1].classList.add('active');
+				}
+			}
+			if (ypos >= 3400) {
+				for (var i = 0; i < headerMenuLinks.length; i++) {
+					headerMenuLinks[i].classList.remove('active');
+					headerMenuLinks[2].classList.add('active');
+				}
+			}
+			if (ypos >= 7000) {
+				for (var i = 0; i < headerMenuLinks.length; i++) {
+					headerMenuLinks[i].classList.remove('active');
+					headerMenuLinks[3].classList.add('active');
+				}
+			}
+			if (ypos >= 8000) {
+				for (var i = 0; i < headerMenuLinks.length; i++) {
+					headerMenuLinks[i].classList.remove('active');
+					headerMenuLinks[4].classList.add('active');
+				}
+			}
+			if (ypos >= 8700) {
+				for (var i = 0; i < headerMenuLinks.length; i++) {
+					headerMenuLinks[i].classList.remove('active');
+					headerMenuLinks[5].classList.add('active');
+				}
+			}
+		}
+	}
+
+
+
+
+
+	$('.header__menu-link, .to-top-link, .main__scroll-down').mPageScroll2id({
+		offset: 0,
+		scrollSpeed: 1000
+	});
+
+
+
+
+
+	$(".online-control__phone-input").mask("+9(999) 999-99-99");
+	$(".measurement__phone-input").mask("+9(999) 999-99-99");
+	$(".questions__phone-input").mask("+9(999) 999-99-99");
+
+
+
+	
+
+	var headerRequestCallButton = document.querySelector('.header__request-a-call');
+	var modalCloseButton = document.querySelector('.modal__close-button');
+	var modalOverlay = document.querySelector('.modal__overlay');
+	var modalSuccessContainer = document.querySelector('.modal__success-container');
+	var modalFormContainer = document.querySelector('.modal__form-container');
+	var modalNameInput = document.querySelector('.modal__name-input');
+	var modalEmailInput = document.querySelector('.modal__email-input');
+	var modalPhoneInput = document.querySelector('.modal__phone-input');
+	var modalCheckbox = document.querySelector('.modal__checkbox');
+	var modalCheckboxContainer = document.querySelector('.modal__checkbox-container');
+	var modalSubmitButton = document.querySelector('.modal__submit-button');
+	var validationArr = [modalNameInput, modalPhoneInput, modalEmailInput];
+
+	headerRequestCallButton.addEventListener('click', showModals);
+
+	modalCloseButton.addEventListener('click', hideModals);
+	modalOverlay.addEventListener('click', hideModals);
+	modalSuccessContainer.addEventListener('click', hideModals);
+
+	modalSubmitButton.addEventListener('click', validationCheck);
+
+	function showModals() {
+		modalOverlay.style.display = 'block';
+		modalFormContainer.style.opacity = '1';
+		modalFormContainer.style.zIndex = '999';
+	}
+	function hideModals() {
+		modalOverlay.style.display = '';
+		modalFormContainer.style.opacity = '';
+		modalFormContainer.style.zIndex = '';
+		modalSuccessContainer.style.opacity = '';
+		modalSuccessContainer.style.zIndex = '';
+	}
+	function validationCheck() {
+		for (var i = 0; i < validationArr.length; i++) {
+			if (!validationArr[i].value) {
+				validationArr[i].style.borderColor = '#E3B873';
+			} else {
+				validationArr[i].style.borderColor = '';
+			}
+		}
+
+		if (!modalCheckbox.checked) {
+			modalCheckboxContainer.style.borderColor = '#E3B873';
+		} else {
+			modalCheckboxContainer.style.borderColor = '';
+		}
+
+		if (modalNameInput.value && modalPhoneInput.value && modalEmailInput.value && modalCheckbox.checked) {
+			modalFormContainer.style.opacity = '0';
+			modalFormContainer.style.zIndex = '-1';
+			modalSuccessContainer.style.opacity = '1';
+			modalSuccessContainer.style.zIndex = '999';
+			clearModalInputsValue();
+		}
+	}
+	function clearModalInputsValue() {
+		for (var i = 0; i < validationArr.length; i++) {
+			validationArr[i].value = '';
+			modalCheckbox.checked = false;
+		}
+	}
+
+
+
+
 
 });//doc.ready end
 
