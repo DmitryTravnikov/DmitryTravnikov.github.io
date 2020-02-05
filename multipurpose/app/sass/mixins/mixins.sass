@@ -1,0 +1,27 @@
+@import 'variables/variables.sass'
+
+@mixin clearfix()
+	&::after
+		content: ''
+		display: table
+		clear: both
+
+@mixin wrapper($width, $height)
+	width: $width
+	height: $height
+	margin: 0 auto
+	
+@mixin flex($flex-direction, $flex-wrap, $justify-content, $align-items)
+	display: flex
+	flex-direction: $flex-direction
+	flex-wrap: $flex-wrap
+	justify-content: $justify-content
+	align-items: $align-items
+
+@mixin outline($color)
+	outline: 2px solid rgba($color, .6)
+	outline-offset: -2px
+
+@mixin size($width, $height)
+	width: $width
+	height: $height

@@ -146,109 +146,16 @@ $(document).ready(function() {
 	}// prevdef();
 	prevdef();
 
+	var header = document.querySelector('.header');
+	var headerToggleButton = document.querySelector('.header__toggle-button');
 
+	headerToggleButton.onclick = function() {
+		this.classList.toggle('active');
+		header.classList.toggle('active');
+	}
 
 });//doc.ready end
 
 var cLog = function(n) {
 	return console.log(n);
 };//console.log
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
