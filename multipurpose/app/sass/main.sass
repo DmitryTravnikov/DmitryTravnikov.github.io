@@ -66,7 +66,11 @@ body
 		margin: 0rem
 		position: relative
 		+flex(row, wrap, flex-start, flex-start)
-		margin-right: 0.9rem
+		padding: 0rem 0.6rem
+		&:first-child
+			padding-left: 0rem
+		&:last-child
+			padding-right: 0rem
 		&:last-child
 			margin-right: 0rem
 		&:last-child::before
@@ -77,7 +81,7 @@ body
 			background: #999
 			position: absolute
 			top: 50%
-			right: -0.6rem
+			right: 0rem
 			transform: translateY(-50%)
 	&__menu-link
 		text-decoration: none
