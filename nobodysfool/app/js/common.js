@@ -146,107 +146,86 @@ $(document).ready(function() {
 	}// prevdef();
 	prevdef();
 
+	//Каруселька
+	//Документация: http://owlgraphic.com/owlcarousel/
+	var mainSlider = $(".section1__slider");
+	mainSlider.owlCarousel({
+		items : 1,
+		autoPlay: 5000,
+		pagination: true,
+		transitionStyle: 'fade',
+		itemsDesktop: [1199,1],
+		itemsDesktopSmall: [979,1],
+		itemsTablet: [768,1],
+		itemsMobile: [479,1]
+	});
 
+	// Toggle Button
+	var headerToggleButton = document.querySelector('.header__toggle-button');
+	var header = document.querySelector('.header');
+	headerToggleButton.onclick = function() {
+		this.classList.toggle('active');
+		header.classList.toggle('active');
+	}
+
+	// Form Validation
+	var modalOverlay = document.querySelector('.modal__overlay');
+	var modalErrorContainer = document.querySelector('.modal__error-container');
+	var modalSuccessContainer = document.querySelector('.modal__success-container');
+	var modalWindows = document.querySelectorAll('.modal__window');
+	var footerSubmitButton = document.querySelector('.footer__submit-button');
+	var footerNameInput = document.querySelector('.footer__name-input');
+	var footerEmailInput = document.querySelector('.footer__email-input');
+	var footerSubjectInput = document.querySelector('.footer__subject-input');
+	var footerMessageInput = document.querySelector('.footer__message-input');
+	var validationArr = [footerNameInput, footerEmailInput, footerSubjectInput, footerMessageInput];
+
+	footerSubmitButton.addEventListener('click', validationCheck);
+	modalOverlay.addEventListener('click', modalsHide);
+	for (var i = 0; i < modalWindows.length; i++) {
+		modalWindows[i].addEventListener('click', modalsHide);
+	}
+
+	function validationCheck() {
+		for (var i = 0; i < validationArr.length; i++) {
+			if (!validationArr[i].value) {
+				validationArr[i].style.borderColor = '#0099FF';
+				modalErrorShow();
+			} else {
+				validationArr[i].style.borderColor = '';
+			}
+		}
+
+		if (footerNameInput.value && footerEmailInput.value && footerSubjectInput.value && footerMessageInput.value) {
+			modalSuccessShow();
+		}
+	}
+
+	function modalErrorShow() {
+		modalOverlay.style.display = 'block';
+		modalErrorContainer.style.opacity = '1';
+		modalErrorContainer.style.zIndex = '999';
+	}
+
+	function modalSuccessShow() {
+		modalOverlay.style.display = 'block';
+		modalSuccessContainer.style.opacity = '1';
+		modalSuccessContainer.style.zIndex = '999';
+		for (var i = 0; i < validationArr.length; i++) {
+			validationArr[i].value = '';
+		}
+	}
+
+	function modalsHide() {
+		modalOverlay.style.display = '';
+		modalErrorContainer.style.opacity = '';
+		modalErrorContainer.style.zIndex = '';
+		modalSuccessContainer.style.opacity = '';
+		modalSuccessContainer.style.zIndex = '';
+	}
 
 });//doc.ready end
 
 var cLog = function(n) {
 	return console.log(n);
 };//console.log
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
