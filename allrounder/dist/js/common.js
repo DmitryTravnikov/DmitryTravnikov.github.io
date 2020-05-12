@@ -146,125 +146,82 @@ $(document).ready(function() {
 	}// prevdef();
 	prevdef();
 
+	//Каруселька
+	//Документация: http://owlgraphic.com/owlcarousel/
+	var mainSlider = $(".section1__slider");
+	mainSlider.owlCarousel({
+		items : 1,
+		autoPlay: 5000,
+		pagination: false,
+		transitionStyle: 'fade',
+		itemsDesktop: [1199,1],
+		itemsDesktopSmall: [979,1],
+		itemsTablet: [768,1],
+		itemsMobile: [479,1]
+	});
+	$(".section1__next-button").click(function(){
+		mainSlider.trigger("owl.next");
+	});
+	$(".section1__prev-button").click(function(){
+		mainSlider.trigger("owl.prev");
+	});//карусель end
 
+	//Validation check
+	var modalOverlay = document.querySelector('.modal__overlay');
+	var modalWindows = document.querySelectorAll('.modal__window');
+	var modalErrorContainer = document.querySelector('.modal__error-container');
+	var modalSuccessContainer = document.querySelector('.modal__success-container');
+	var footerNameInput = document.querySelector('.footer__name-input');
+	var footerEmailInput = document.querySelector('.footer__email-input');
+	var footerSubmitButton = document.querySelector('.footer__submit-button');
+	var validationArr = [footerNameInput, footerEmailInput];
+
+	footerSubmitButton.addEventListener('click', validationCheck);
+	for (var i = 0; i < modalWindows.length; i++) {
+		modalWindows[i].addEventListener('click', modalsHide);
+	}
+	modalOverlay.addEventListener('click', modalsHide);
+
+	function validationCheck() {
+		for (var i = 0; i < validationArr.length; i++) {
+			if (!validationArr[i].value) {
+				validationArr[i].style.borderColor = '#7C9C37';
+				modalErrorShow();
+			} else {
+				validationArr[i].style.borderColor = '';
+			}
+		}
+
+		if (footerNameInput.value && footerEmailInput.value) {
+			modalSuccessShow();
+		}
+	}
+
+	function modalErrorShow() {
+		modalOverlay.style.display = 'block';
+		modalErrorContainer.style.opacity = '1';
+		modalErrorContainer.style.zIndex = '999';
+	}
+
+	function modalSuccessShow() {
+		modalOverlay.style.display = 'block';
+		modalSuccessContainer.style.opacity = '1';
+		modalSuccessContainer.style.zIndex = '999';
+		for (var i = 0; i < validationArr.length; i++) {
+			validationArr[i].value = '';
+		}
+	}
+
+	function modalsHide() {
+		modalOverlay.style.display = '';
+		modalSuccessContainer.style.opacity = '';
+		modalSuccessContainer.style.zIndex = '';
+		modalErrorContainer.style.opacity = '';
+		modalErrorContainer.style.zIndex = '';
+	}
 
 });//doc.ready end
 
 var cLog = function(n) {
 	return console.log(n);
 };//console.log
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var input = document.getElementById('input');
-var output = document.getElementById('output');
-input.focus();
-input.onkeypress = function(event) {
-	if (event.which === 13) {
-		var str = this.value;
-		var arr1 = str.split('');
-		var arr2 = str.split('').reverse();
-		for (var i = 0; i < arr1.length; i++) {
-			if (arr1[i] != arr2[i]) {
-				output.innerHTML = 'no';
-				return;
-			}
-		}
-		output.innerHTML = 'yes';
-		return;
-	}
-}
