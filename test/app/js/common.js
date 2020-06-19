@@ -245,26 +245,3 @@ var cLog = function(n) {
 
 
 
-
-
-
-
-
-var input = document.getElementById('input');
-var output = document.getElementById('output');
-input.focus();
-input.onkeypress = function(event) {
-	if (event.which === 13) {
-		var str = this.value;
-		var arr1 = str.split('');
-		var arr2 = str.split('').reverse();
-		for (var i = 0; i < arr1.length; i++) {
-			if (arr1[i] != arr2[i]) {
-				output.innerHTML = 'no';
-				return;
-			}
-		}
-		output.innerHTML = 'yes';
-		return;
-	}
-}

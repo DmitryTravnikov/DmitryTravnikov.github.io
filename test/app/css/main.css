@@ -36,3 +36,6 @@ td {
   width: 5rem;
   height: 5rem;
   border: .2rem solid orange; }
+
+input {
+  outline: none; }
