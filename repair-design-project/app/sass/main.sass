@@ -1194,83 +1194,435 @@ body
 
 
 .section8
+	position: relative
+	&::before
+		content: ''
+		+size(100%, 100%)
+		background: url('../assets/lines__bg.png') no-repeat center
+		background-size: cover
+		position: absolute
+		top: 0rem
+		left: 0rem
 	&__wrapper
+		+flex(column, wrap, flex-start, center)
 	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $yo
+		font-weight: 900
+		font-size: 2rem
+		line-height: 138%
+		text-transform: uppercase
+		color: #fff
+		text-align: center
 	&__separator
+		+size(3.5rem, 3.5rem)
+		background: url('../assets/section8__separator-icon.png') no-repeat center
+		position: relative
+		&::before, &::after
+			content: ''
+			+size(3.2rem, .2rem)
+			background: $gold
+			position: absolute
+			top: 50%
+		&::before
+			left: 0rem
+		&::after
+			right: 0rem
 	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $fbr
+		font-weight: 400
+		font-size: 2rem
+		line-height: 120%
+		color: #fff
+		text-align: center
 	&__paragraph1
 	&__content
+		width: 100%
+		+flex(row, wrap, space-between, flex-start)
 	&__item
+		+flex(column, wrap, flex-start, center)
+		position: relative
+		&::before
+			content: ''
+			+size(7rem, 7rem)
+			position: absolute
+			top: 0rem
+			left: 0rem
+			box-shadow: 0.4rem 0.4rem 0.4rem rgba($gold, 0.2)
 	&__item1
+		&::before
+			background: url('../assets/section8__item1-icon.png') no-repeat center, $gold
 	&__item2
+		&::before
+			background: url('../assets/section8__item2-icon.png') no-repeat center, $gold
 	&__item3
+		&::before
+			background: url('../assets/section8__item3-icon.png') no-repeat center, $gold
 	&__user-image
+		+size(27.2rem, 35.7rem)
 	&__user-image1
+		background: url('../assets/section8__user1.jpg') no-repeat center
+		background-size: cover
 	&__user-image2
+		background: url('../assets/section8__user2.jpg') no-repeat center
+		background-size: cover
 	&__user-image3
+		background: url('../assets/section8__user3.jpg') no-repeat center
+		background-size: cover
 	&__text-container
+		width: 23.3rem
+		+flex(column, wrap, flex-start, center)
+		box-shadow: 0.4rem 0.4rem 1rem 0.2rem rgba(#000, 0.05)
+		background: #fff
 	&__item-worker-name
+		width: 100%
+		margin: 0rem
+		font-family: $yo
+		font-weight: 900
+		font-size: 1.8rem
+		line-height: 138%
+		color: #181818
+		text-align: center
 	&__item-worker-position
+		width: 100%
+		margin: 0rem
+		font-family: $fbr
+		font-weight: 400
+		font-size: 1.8rem
+		color: #959595
+		text-align: center
 	&__item-worker-experience
+		width: 100%
+		margin: 0rem
+		background: $gold
+		font-family: $yo
+		font-weight: 400
+		font-size: 1.3rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		box-shadow: 0.4rem 0.4rem 0.4rem rgba($gold, 0.2)
 	&__paragraph2
+		color: #363636
+		line-height: 150%
+		position: relative
+		&::before
+			content: ''
+			+size(5.5rem, .2rem)
+			background: $gold
+			position: absolute
+			top: 0rem
+			left: 50%
+			transform: translateX(-50%)
 	&__paragraph3
+		color: #363636
+		line-height: 150%
 
 
 
 
 .section9
+	position: relative
+	&::before
+		content: ''
+		+size(100%, 100%)
+		background: url('../assets/lines__bg.png') no-repeat center
+		background-size: cover
+		position: absolute
+		top: 0rem
+		left: 0rem
 	&__wrapper
+		+flex(column, wrap, flex-start, center)
 	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $yo
+		font-weight: 900
+		font-size: 2rem
+		line-height: 138%
+		color: #181818
+		text-transform: uppercase
+		text-align: center
 	&__separator
+		+size(3.5rem, 3.5rem)
+		background: url('../assets/section9__separator-icon.png') no-repeat center
+		position: relative
+		&::before, &::after
+			content: ''
+			+size(3.2rem, .2rem)
+			background: $gold
+			position: absolute
+			top: 50%
+		&::before
+			left: 0rem
+		&::after
+			right: 0rem
 	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $fbr
+		font-weight: 400
+		font-size: 2rem
+		line-height: 120%
+		color: #363636
+		text-align: center
 	&__content
+		width: 100%
+		+flex(row, wrap, space-between, flex-start)
 	&__item
+		width: 37.6rem
+		+flex(column, wrap, flex-start, flex-start)
+		box-shadow: 0.4rem 0.4rem 1rem 0.2rem rgba(#000, 0.05)
+		position: relative
+		&::before
+			content: '40 m2'
+			+size(8rem, 2rem)
+			background: url('../assets/section9__item-icon1.png') no-repeat 0rem 0rem, $gold
+			box-shadow: 0.4rem 0.4rem 0.4rem rgba($gold, 0.2)
+			font-family: $yo
+			font-weight: 400
+			font-size: 1.7rem
+			color: #fff
+			text-transform: uppercase
+			text-align: left
+			position: absolute
+			bottom: 0rem
+			left: 0rem
+		&::after
+			content: '48 days'
+			+size(8rem, 2rem)
+			background: url('../assets/section9__item-icon2.png') no-repeat 0rem 0rem, $gold
+			box-shadow: 0.4rem 0.4rem 0.4rem rgba($gold, 0.2)
+			font-family: $yo
+			font-weight: 400
+			font-size: 1.7rem
+			color: #fff
+			text-transform: uppercase
+			text-align: left
+			position: absolute
+			bottom: 0rem
+			left: 0rem
 	&__item1
 	&__item2
 	&__item3
 	&__client-pic-n-name-container
+		+flex(row, wrap, flex-start, flex-start)
 	&__client-pic
+		+size(7.6rem, 7.6rem)
+		border-radius: 50%
 	&__client-pic1
+		background: url('../assets/section9__user-pic1.jpg') no-repeat center
 	&__client-pic2
+		background: url('../assets/section9__user-pic2.jpg') no-repeat center
 	&__client-pic3
+		background: url('../assets/section9__user-pic3.jpg') no-repeat center
 	&__item-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $fbr
+		font-weight: 400
+		font-size: 1.5rem
+		line-height: 1.8rem
+		color: #959595
+		text-align: left
 
 
 
 
 .section10
+	background: url('../assets/section10__bg.jpg') no-repeat center
+	background-size: cover
+	position: relative
+	&::before
+		content: ''
+		+size(100%, 100%)
+		background: rgba(#000, 0.85)
+		position: absolute
+		top: 0rem
+		left: 0rem
 	&__wrapper
+		+flex(column, wrap, flex-start, center)
 	&__form
+		position: relative
+		width: 88.3rem
+		+flex(column, wrap, center, center)
+		background: url('../assets/section10__form-bg.png') no-repeat center, $space-grey
+		background-size: cover
+	&__form-row
+		+flex(row, wrap, center, flex-start)
+	&__form-row1
+		+flex(row, wrap, center, flex-start)
+	&__form-row2
+		+flex(row, wrap, center, flex-start)
+	&__form-row3
+		+flex(column, wrap, center, center)
+	&__form-headline
+		width: 100%
+		margin: 0rem
+		font-family: $yo
+		font-weight: 900
+		font-size: 2rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
 	&__input-container
+		+flex(column, wrap, flex-start, flex-start)
+		font-family: $fbr
+		font-weight: 400
+		font-size: 1.5rem
+		color: #8B8B8B
 	&__input
+		outline: none
+		border: none
+		border-bottom: .1rem solid #252525
+		font-family: $fbr
+		font-weight: 400
+		font-size: 1.8rem
+		color: #fff
+		background: none
+		&::placeholder
+			font-family: $fbr
+			font-weight: 400
+			font-size: 1.8rem
+			color: #fff
 	&__name-input
+		width: 23.1rem
 	&__phone-input
+		width: 23.1rem
 	&__question-input
+		width: 51.6rem
 	&__checkbox-container
+		+flex(row, wrap, flex-start, flex-start)
 	&__checkbox
+		display: none
 	&__checkbox-indicator
+		+size(1.8rem, 1.8rem)
+		background: $gold
+		position: relative
+		&::before
+			content: ''
+			+size(.4rem, .1rem)
+			background: #fff
+			position: absolute
+			top: 0rem
+			left: 0rem
+		&::after
+			content: ''
+			+size(0.2rem, .1rem)
+			background: #fff
+			position: absolute
+			top: 0rem
+			left: 0rem
 	&__checkbox-description
+		width: 100%
+		margin: 0rem
+		font-family: $fbr
+		font-weight: 400
+		font-size: 1.6rem
+		color: #181818
+		text-align: left
 	&__submit-button
+		outline: none
+		border: none
+		cursor: pointer
+		font-family: $fdr
+		font-weight: 400
+		font-size: 1.5rem
+		color: #fff
+		text-transform: uppercase
+		background: $gold
+		box-shadow: 0.4rem 0.4rem 0.4rem rgba($gold, 0.2)
+		transition: .2s
+		&:hover
+			background: darken($gold, 5%)
 	&__address
+		width: 100%
+		margin: 0rem
+		font-family: $yo
+		font-weight: 900
+		font-size: 2rem
+		line-height: 138%
+		color: $gold
+		text-transform: uppercase
+		text-align: center
+		position: relative
 	&__socials-container
+		+flex(row, wrap, flex-start, flex-start)
+		position: relative
 	&__social-link
+		+size(2.8rem, 2.8rem)
+		+flex(row, wrap, center, center)
+		background: $gold
+		border-radius: 50%
+		transition: .2s
+		&:hover
+			background: darken($gold, 5%)
 		svg
+			+size(2rem, 2rem)
+			+flex(row, wrap, center, center)
 			path
-	&__email-input
-	&__instagram-input
+				fill: #fff
+	&__email-link
+	&__instagram-link
 	&__map
+		+size(80rem, 40rem)
+		background: $space-grey
 
 
 
 
 .section11
+	background: $space-grey
 	&__wrapper
+		+flex(row, wrap, flex-start, flex-start)
 	&__repair-design-project
+		text-decoration: none
+		font-family: $fdr
+		font-weight: 400
+		font-size: 1.4rem
+		color: $gold
+		text-transform: uppercase
 	&__menu-container
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(row, wrap, flex-start, flex-start)
 	&__menu-list-item
+		padding: 0rem
+		margin: 0rem
+		+flex(row, wrap, flex-start, flex-start)
 	&__menu-link
+		text-decoration: none
+		font-family: $fbr
+		font-weight: 400
+		font-size: 1.4rem
+		color: #fff
+		text-transform: uppercase
+		transition: .2s
+		&:hover
+			color: $gold
 	&__tel-link
+		text-decoration: none
+		font-family: $fdr
+		font-weight: 400
+		font-size: 1.4rem
+		color: $gold
 	&__request-button
+		text-decoration: none
+		font-family: $fdr
+		font-weight: 400
+		font-size: 1.3rem
+		color: #fff
+		text-transform: uppercase
+		background: $gold
+		padding: 1rem 1rem
+		box-shadow: 0.4rem 0.4rem 0.4rem rgba($gold, 0.2)
+		transition: .2s
+		&:hover
+			background: darken($gold, 5%)
 
 
 

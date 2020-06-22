@@ -434,19 +434,19 @@ html(lang="ru")
 						.section8__text-container
 							h3.section8__item-worker-name Dmitry Tulyakov
 							p.section8__item-worker-position Project manager
-							p.section8__item-worker-expirience Work Experience 7 Years
+							p.section8__item-worker-experience Work Experience 7 Years
 					.section8__item.section8__item2
 						.section8__user-image.section8__user-image2
 						.section8__text-container
 							h3.section8__item-worker-name Larisa Kotlyarova
 							p.section8__item-worker-position Designer
-							p.section8__item-worker-expirience Work Experience 6 Years
+							p.section8__item-worker-experience Work Experience 6 Years
 					.section8__item.section8__item3
 						.section8__user-image.section8__user-image3
 						.section8__text-container
 							h3.section8__item-worker-name Alexey Efimov
 							p.section8__item-worker-position Foreman
-							p.section8__item-worker-expirience Work Experience 12 Years
+							p.section8__item-worker-experience Work Experience 12 Years
 				p.section8__paragraph.section8__paragraph2 Each employee of our company is a qualified full-time specialist with work experience of 6 years.
 				p.section8__paragraph.section8__paragraph3 We do not have laborers and guest workers, each employee carries out work corresponding to his specialty.
 
@@ -474,17 +474,21 @@ html(lang="ru")
 		section.section10
 			.section10__wrapper.wrapper
 				form.section10__form(action="" method="POST")
-					label.section10__input-container Name
-						input.section10__input.section10__name-input(type="text" placeholder="What is your name:")
-					label.section10__input-container Phone
-						input.section10__input.section10__phone-input(type="text" placeholder="Your phone number:")
-					label.section10__input-container Question
-						input.section10__input.section10__question-input(type="text" placeholder="I want to know:")
-					label.section10__checkbox-container
-						input.section10__checkbox(type="checkbox")
-						.section10__checkbox-indicator
-						p.section10__checkbox-description I agree to the processing of personal data
-					button.prevdef.section10__submit-button Submit
+					h3.section10__form-headline Have Any Questions?
+					.section10__form-row.section10__form-row1
+						label.section10__input-container Name
+							input.section10__input.section10__name-input(type="text" placeholder="What is your name:")
+						label.section10__input-container Phone
+							input.section10__input.section10__phone-input(type="text" placeholder="Your phone number:")
+					.section10__form-row.section10__form-row2
+						label.section10__input-container Question
+							input.section10__input.section10__question-input(type="text" placeholder="I want to know:")
+					.section10__form-row.section10__form-row3
+						label.section10__checkbox-container
+							input.section10__checkbox(type="checkbox")
+							.section10__checkbox-indicator
+							p.section10__checkbox-description I agree to the processing of personal data
+						button.prevdef.section10__submit-button Submit
 				p.section10__address Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29
 				.section10__socials-container
 					a.prevdef.section10__social-link.section10__email-link(href="#")
@@ -513,7 +517,7 @@ html(lang="ru")
 					li.section11__menu-list-item
 						a.prevdef.section11__menu-link(href="#") Contact
 				a.prevdef.section11__tel-link(href="#") +7 (928) 768-32-39
-				button.section11__request-button Request a Call
+				a.prevdef.section11__request-button(href="#") Request a Call
 
 		// Content End
 		// Scripts
