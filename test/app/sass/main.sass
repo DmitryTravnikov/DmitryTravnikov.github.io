@@ -25,75 +25,7 @@ td
 input
 	outline: none
 
-.slider
-	position: relative
-	+size(60rem, 40rem)
-	margin: 0rem auto
-	margin-top: 1rem
-.slide
-	+size(60rem, 40rem)
-	margin: 0rem auto
-	position: absolute
-	top: 0rem
-	left: 0rem
-	opacity: 0
-	z-index: -1
-	transition: .2s
-	font-size: 20rem
-.slide.active
-	opacity: 1
-	z-index: 10
-.slide1
-	background: grey
-.slide2
-	background: grey
-.slide3
-	background: grey
-.tabs-container
-	padding: 0rem
-	margin: 0rem
-	list-style: none
-	+flex(row, wrap, flex-start, flex-start)
-.tabs-list-item
-	padding: 0rem
-	margin: 0rem
-	+flex(row, wrap, flex-start, flex-start)
-	margin-right: 2rem
-	&:last-child
-		margin-right: 0rem
-.tabs-link
-	padding: 1rem 2rem
-	text-decoration: none
-	text-transform: uppercase
-	font-weight: 900
-	color: #fff
-.tabs-link.active
-	background: $orange
-.pagination-container
-	+flex(row, wrap, flex-start, center)
-	margin-top: 2rem
-.pagination-elem
-	+size(1rem, 1rem)
-	border-radius: 50%
-	background: lightgrey
-	margin-right: 1rem
-	cursor: pointer
-	&:last-child
-		margin-right: 0rem
-.pagination-elem.active
-	background: $green
-.pagination-elem1
-.pagination-elem2
-.pagination-elem3
-.slider-button
-	outline: none
-	border: none
-	cursor: pointer
-	+size(4rem, 2rem)
-.prev-button
-	margin-right: 1rem
-.next-button
-	margin-left: 1rem
+
 
 *
 	// @include outline($blue)
