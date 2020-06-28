@@ -6,7 +6,7 @@ doctype html
 html(lang="ru")
 	// <![endif]
 	head
-		title Gulp Project (Sass)
+		title Repair Design Project
 		meta(charset="UTF-8")
 		meta(name="description" content="")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
@@ -28,24 +28,24 @@ html(lang="ru")
 		// Content Start
 
 		// Header
-		header.header
+		header.header#home
 			.header__wrapper.wrapper
 				a.prevdef.header__logo-container(href="#")
 					h1.header__logo IC "Repair Design Project"
 				nav.header__menu-container
 					ul.header__menu
 						li.header__menu-list-item
-							a.prevdef.header__menu-link.active(href="#") Home
+							a.prevdef.header__menu-link(href="#home") Home
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") Project
+							a.prevdef.header__menu-link(href="#projects") Projects
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") Measurement
+							a.prevdef.header__menu-link(href="#measurement") Measurement
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") Team
+							a.prevdef.header__menu-link(href="#team") Team
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") Reviews
+							a.prevdef.header__menu-link(href="#reviews") Reviews
 						li.header__menu-list-item
-							a.prevdef.header__menu-link(href="#") Contact
+							a.prevdef.header__menu-link(href="#contacts") Contacts
 				a.prevdef.header__tel-link(href="#") +7 (928) 768-32-39
 				a.prevdef.header__request-link(href="#") Request a Call
 
@@ -53,9 +53,9 @@ html(lang="ru")
 		section.main
 			.main__wrapper.wrapper
 				a.prevdef.main__instagram-link(href="#") Instagram
-				a.prevdef.main__scroll-down-container(href="#")
-					p.main__scroll-down Scroll Down
-					.main__scroll-down-icon
+				//- a.prevdef.main__scroll-down-container(href="#")
+				//- 	p.main__scroll-down Scroll Down
+				//- 	.main__scroll-down-icon
 				.main__content
 					.main__text-container
 						h3.main__headline Turnkey Repair in the city of #[span Rostov-on-Don]
@@ -65,7 +65,7 @@ html(lang="ru")
 							a.prevdef.main__submit-your-application-link(href="#") Submit Your Application
 
 		// Section1
-		section.section1
+		section.section1#projects
 			.section1__wrapper.wrapper
 				ul.section1__tabs
 					li.section1__tabs-list-item
@@ -86,7 +86,7 @@ html(lang="ru")
 					.section1__slider
 						.section1__slide.section1__slide1.active
 							.section1__slide-text-container
-								h3.section1__slide-headline Completed Projects
+								h3.section1__slide-headline Completed Projects1
 								p.section1__slide-paragraph Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families
 								.section1__project-characteristics
 									.section1__project-characteristic-container
@@ -104,7 +104,7 @@ html(lang="ru")
 							.section1__slide-image.section1__slide-image1
 						.section1__slide.section1__slide2
 							.section1__slide-text-container
-								h3.section1__slide-headline Completed Projects
+								h3.section1__slide-headline Completed Projects2
 								p.section1__slide-paragraph Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families
 								.section1__project-characteristics
 									.section1__project-characteristic-container
@@ -122,7 +122,7 @@ html(lang="ru")
 							.section1__slide-image.section1__slide-image2
 						.section1__slide.section1__slide3
 							.section1__slide-text-container
-								h3.section1__slide-headline Completed Projects
+								h3.section1__slide-headline Completed Projects3
 								p.section1__slide-paragraph Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families
 								.section1__project-characteristics
 									.section1__project-characteristic-container
@@ -147,12 +147,12 @@ html(lang="ru")
 				.section2__video-container
 					.section2__video-overlay
 						button.section2__video-play-button
-					iframe.section2__video(width="817" height="434" src="https://www.youtube.com/embed/pZ12_E5R3qc?enablejsapi=1&playerapiid=ytplayer&controls=1&showinfo=1&autohide=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+					iframe.section2__video(width="817" height="434" src="https://www.youtube.com/embed/ZvzNVqpQYsw?enablejsapi=1&playerapiid=ytplayer&controls=1&showinfo=1&autohide=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 				p.section2__paragraph At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.
 				form.section2__form(action="" method="POST")
-					label.section2__input-container Name
+					label.section2__input-container
 						input.section2__input.section2__name-input(type="text" placeholder="What is your name:")
-					label.section2__input-container Phone
+					label.section2__input-container
 						input.section2__input.section2__phone-input(type="text" placeholder="Your phone number:")
 					button.prevdef.section2__submit-button Submit
 					label.section2__checkbox-container
@@ -163,66 +163,72 @@ html(lang="ru")
 		// Section3
 		section.section3
 			.section3__wrapper.wrapper
-				.section3__block.section3__block1
-					.section3__block-image.section3__block-image1
-					.section3__text-container.section3__text-container1
-						h3.section3__block-headline Redecoration
-						ul.section3__block-list
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Dismantling of old coatings
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Wallpapering
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Painting walls and ceilings
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Laying flooring
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Replacing plumbing
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Replacing sockets and switches
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Replacing doors
-				.section3__block.section3__block2
-					.section3__block-image.section3__block-image2
-					.section3__text-container.section3__text-container2
-						h3.section3__block-headline Redecoration
-						ul.section3__block-list
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Dismantling of old coatings
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Wallpapering
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Painting walls and ceilings
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Laying flooring
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Replacing plumbing
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Replacing sockets and switches
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Replacing doors
-				.section3__block.section3__block3
-					.section3__block-image.section3__block-image3
-					.section3__text-container.section3__text-container3
-						h3.section3__block-headline Redecoration
-						ul.section3__block-list
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Dismantling of old coatings
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Wallpapering
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Painting walls and ceilings
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Laying flooring
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Replacing plumbing
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Replacing sockets and switches
-							li.section3__block-list-item
-								a.prevdef.section3__block-list-link(href="#") Replacing doors
+				h3.section3__headline Types of Repair
+				.section3__separator
+				.section3__content
+					.section3__block.section3__block1
+						.section3__block-image-container
+							.section3__block-image.section3__block-image1
+						.section3__text-container.section3__text-container1
+							h3.section3__block-headline Redecorating
+							ul.section3__block-list
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Dismantling of old coatings
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Wallpapering
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Painting walls and ceilings
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Laying flooring
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Replacing plumbing
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Replacing sockets and switches
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Replacing doors
+					.section3__block.section3__block2
+						.section3__block-image-container
+							.section3__block-image.section3__block-image2
+						.section3__text-container.section3__text-container2
+							h3.section3__block-headline Overhaul
+							ul.section3__block-list
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Dismantling of old coatings
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Wallpapering
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Painting walls and ceilings
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Laying flooring
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Replacing plumbing
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Replacing sockets and switches
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Replacing doors
+					.section3__block.section3__block3
+						.section3__block-image-container
+							.section3__block-image.section3__block-image3
+						.section3__text-container.section3__text-container3
+							h3.section3__block-headline Designer Repair
+							ul.section3__block-list
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Dismantling of old coatings
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Wallpapering
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Painting walls and ceilings
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Laying flooring
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Replacing plumbing
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Replacing sockets and switches
+								li.section3__block-list-item
+									a.prevdef.section3__block-list-link(href="#") Replacing doors
 
 		// Section4
-		section.section4
+		section.section4#measurement
 			.section4__wrapper.wrapper
 				a.prevdef.section4__discount(href="#") Help save 10 - 20% of the cost of materials
 				.section4__block.section4__block1
@@ -231,19 +237,19 @@ html(lang="ru")
 					p.section4__block1-paragraph.section4__block1-paragraph3 Free consultation
 					p.section4__block1-paragraph.section4__block1-paragraph4 Get a cost estimate and the timing of your future repairs
 				.section4__block.section4__block2
-					.section4__block2-paragraph Leave a request for free departure of the measurer
 					form.section4__form(action="" method="POST")
-						label.section4__input-container Name
+						p.section4__block2-paragraph Leave a request for free departure of the measurer
+						label.section4__input-container.section4__input-container1 Name
 							input.section4__input.section4__name-input(type="text" placeholder="What is your name:")
-						label.section4__input-container Phone
+						label.section4__input-container.section4__input-container2 Phone
 							input.section4__input.section4__phone-input(type="text" placeholder="Your phone number:")
-						label.section4__input-container Email
+						label.section4__input-container.section4__input-container3 Email
 							input.section4__input.section4__email-input(type="text" placeholder="Your email:")
 						label.section4__checkbox-container
 							input.section4__checkbox(type="checkbox")
 							.section4__checkbox-indicator
 							p.section4__checkbox-description I agree to the processing of personal data
-							button.prevdef.section4__submit-button Call the Measurer
+						button.prevdef.section4__submit-button Call the Measurer
 
 		// Section5
 		section.section5
@@ -252,33 +258,37 @@ html(lang="ru")
 					h3.section5__headline We Realize Your Wildest Fantasies
 					ul.section5__list
 						li.section5__list-item
-							a.prevdef.section5__list-link.active(href="#") American classic
+							a.section5__list-link.active(href="index.html") American classic
 						li.section5__list-item
-							a.prevdef.section5__list-link(href="#") Empire
+							a.section5__list-link(href="empire.html") Empire
 						li.section5__list-item
-							a.prevdef.section5__list-link(href="#") Classical
+							a.section5__list-link(href="classical.html") Classical
 						li.section5__list-item
-							a.prevdef.section5__list-link(href="#") Loft
+							a.section5__list-link(href="loft.html") Loft
 						li.section5__list-item
-							a.prevdef.section5__list-link(href="#") Minimalism
+							a.section5__list-link(href="minimalism.html") Minimalism
 						li.section5__list-item
-							a.prevdef.section5__list-link(href="#") Provence
+							a.section5__list-link(href="provence.html") Provence
 						li.section5__list-item
-							a.prevdef.section5__list-link(href="#") Romanticism
+							a.section5__list-link(href="romanticism.html") Romanticism
 						li.section5__list-item
-							a.prevdef.section5__list-link(href="#") Scandinavian style
+							a.section5__list-link(href="scandinavian.html") Scandinavian style
 						li.section5__list-item
-							a.prevdef.section5__list-link(href="#") Mediterranean style
+							a.section5__list-link(href="mediterranean.html") Mediterranean style
 						li.section5__list-item
-							a.prevdef.section5__list-link(href="#") High tech
+							a.section5__list-link(href="high-tech.html") High tech
 						li.section5__list-item
-							a.prevdef.section5__list-link(href="#") Eclecticism
+							a.section5__list-link(href="eclecticism.html") Eclecticism
 				.section5__block.section5__block2
 					.section5__content
-						.section5__item.section5__item1
-						.section5__item.section5__item2
-						.section5__item.section5__item3
-						.section5__item.section5__item4
+						a.prevdef.section5__item-container.section5__item-container1(href="#")
+							.section5__item.section5__item1
+						a.prevdef.section5__item-container.section5__item-container2(href="#")
+							.section5__item.section5__item2
+						a.prevdef.section5__item-container.section5__item-container3(href="#")
+							.section5__item.section5__item3
+						a.prevdef.section5__item-container.section5__item-container4(href="#")
+							.section5__item.section5__item4
 
 		// Section6
 		section.section6
@@ -288,7 +298,8 @@ html(lang="ru")
 				p.section6__paragraph Design project not only helps to make the repair of your apartment more modern, but also significantly reduces the cost of materials and reduces the time of repair work.
 				.section6__content
 					.section6__block.section6__block1
-						.section6__block-image.section6__block-image1
+						.section6__block-image-container.section6__block-image-container1
+							.section6__block-image.section6__block-image1
 						.section6__text-container.section6__text-container1
 							h3.section6__block-headline Mini
 							ul.section6__list
@@ -301,7 +312,8 @@ html(lang="ru")
 								li.section6__list-item
 									a.prevdef.section6__list-link(href="#") Plumbing plan. equipment
 					.section6__block.section6__block2
-						.section6__block-image.section6__block-image2
+						.section6__block-image-container.section6__block-image-container2
+							.section6__block-image.section6__block-image2
 						.section6__text-container.section6__text-container2
 							h3.section6__block-headline Standard
 							ul.section6__list
@@ -320,7 +332,8 @@ html(lang="ru")
 								li.section6__list-item
 									a.prevdef.section6__list-link(href="#") Lighting plan
 					.section6__block.section6__block3
-						.section6__block-image.section6__block-image3
+						.section6__block-image-container.section6__block-image-container3
+							.section6__block-image.section6__block-image3
 						.section6__text-container.section6__text-container3
 							h3.section6__block-headline Full
 							ul.section6__list
@@ -423,26 +436,29 @@ html(lang="ru")
 							.section7__slide-image.section7__slide-image6
 
 		// Section8
-		section.section8
+		section.section8#team
 			.section8__wrapper.wrapper
 				h3.section8__headline Our Team
 				.section8__separator
 				p.section8__paragraph.section8__paragraph1 Our team has helped to become happier for more than 500 families and we are not going to stop
 				.section8__content
 					.section8__item.section8__item1
-						.section8__user-image.section8__user-image1
+						.section8__user-image-container.section8__user-image-container1
+							.section8__user-image.section8__user-image1
 						.section8__text-container
 							h3.section8__item-worker-name Dmitry Tulyakov
 							p.section8__item-worker-position Project manager
 							p.section8__item-worker-experience Work Experience 7 Years
 					.section8__item.section8__item2
-						.section8__user-image.section8__user-image2
+						.section8__user-image-container.section8__user-image-container2
+							.section8__user-image.section8__user-image2
 						.section8__text-container
 							h3.section8__item-worker-name Larisa Kotlyarova
 							p.section8__item-worker-position Designer
 							p.section8__item-worker-experience Work Experience 6 Years
 					.section8__item.section8__item3
-						.section8__user-image.section8__user-image3
+						.section8__user-image-container.section8__user-image-container3
+							.section8__user-image.section8__user-image3
 						.section8__text-container
 							h3.section8__item-worker-name Alexey Efimov
 							p.section8__item-worker-position Foreman
@@ -451,7 +467,7 @@ html(lang="ru")
 				p.section8__paragraph.section8__paragraph3 We do not have laborers and guest workers, each employee carries out work corresponding to his specialty.
 
 		// Section9
-		section.section9
+		section.section9#reviews
 			.section9__wrapper.wrapper
 				h3.section9__headline Our Clients
 				.section9__separator
@@ -460,28 +476,31 @@ html(lang="ru")
 					.section9__item.section9__item1
 						.section9__client-pic-n-name-container
 							.section9__client-pic.section9__client-pic1
+							h3.section9__client-name Fedorova Maria Konstantinovna
 						p.section9__item-paragraph I want to thank the guys for their work. We put your shower part in repair. I am very grateful that i referred to the repair as to my own. Great thanks i express the project to georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
 					.section9__item.section9__item2
 						.section9__client-pic-n-name-container
 							.section9__client-pic.section9__client-pic2
+							h3.section9__client-name Afanasyev Sergey Alexandrovich
 						p.section9__item-paragraph I want to thank the guys for their work. We put your shower part in repair. I am very grateful that i referred to the repair as to my own. Great thanks i express the project to georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
 					.section9__item.section9__item3
 						.section9__client-pic-n-name-container
 							.section9__client-pic.section9__client-pic3
+							h3.section9__client-name Kiriev Egor Leonidovich
 						p.section9__item-paragraph I want to thank the guys for their work. We put your shower part in repair. I am very grateful that i referred to the repair as to my own. Great thanks i express the project to georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
 
 		// Section10
-		section.section10
+		section.section10#contacts
 			.section10__wrapper.wrapper
 				form.section10__form(action="" method="POST")
 					h3.section10__form-headline Have Any Questions?
 					.section10__form-row.section10__form-row1
-						label.section10__input-container Name
+						label.section10__input-container.section10__input-container1
 							input.section10__input.section10__name-input(type="text" placeholder="What is your name:")
-						label.section10__input-container Phone
+						label.section10__input-container.section10__input-container2
 							input.section10__input.section10__phone-input(type="text" placeholder="Your phone number:")
 					.section10__form-row.section10__form-row2
-						label.section10__input-container Question
+						label.section10__input-container.section10__input-container3
 							input.section10__input.section10__question-input(type="text" placeholder="I want to know:")
 					.section10__form-row.section10__form-row3
 						label.section10__checkbox-container
@@ -505,19 +524,46 @@ html(lang="ru")
 				a.prevdef.section11__repair-design-project(href="#") IC "Repair Design Project"
 				nav.section11__menu-container
 					li.section11__menu-list-item
-						a.prevdef.section11__menu-link(href="#") Home
+						a.prevdef.section11__menu-link(href="#home") Home
 					li.section11__menu-list-item
-						a.prevdef.section11__menu-link(href="#") Project
+						a.prevdef.section11__menu-link(href="#projects") Projects
 					li.section11__menu-list-item
-						a.prevdef.section11__menu-link(href="#") Measurement
+						a.prevdef.section11__menu-link(href="#measurement") Measurement
 					li.section11__menu-list-item
-						a.prevdef.section11__menu-link(href="#") Team
+						a.prevdef.section11__menu-link(href="#team") Team
 					li.section11__menu-list-item
-						a.prevdef.section11__menu-link(href="#") Reviews
+						a.prevdef.section11__menu-link(href="#reviews") Reviews
 					li.section11__menu-list-item
-						a.prevdef.section11__menu-link(href="#") Contact
+						a.prevdef.section11__menu-link(href="#contacts") Contacts
 				a.prevdef.section11__tel-link(href="#") +7 (928) 768-32-39
 				a.prevdef.section11__request-button(href="#") Request a Call
+
+		// Modals
+		.modal__overlay
+		.modal__success-container
+			button.modal__close-button
+			p.modal__success-paragraph Our customers will contact you soon!
+		.request__container
+			button.request__close-button
+			h3.request__headline Leave a request and our manager will contact you shortly
+			form.request__form(action="" method="POST")
+				label.request__input-container.request__input-container1
+					input.request__input.request__name-input(type="text" placeholder="What is your name:")
+				label.request__input-container.request__input-container2
+					input.request__input.request__number-input(type="text" placeholder="Your phone number:")
+				label.request__input-container.request__input-container3
+					input.request__input.request__email-input(type="text" placeholder="Your email:")
+				label.request__checkbox-container
+					input.request__checkbox(type="checkbox")
+					.request__checkbox-indicator
+					p.request__checkbox-description I agree to the processing of personal data
+				button.prevdef.request__submit-button Submit
+
+		// To top button
+		a.prevdef.to-top-link(href="#home")
+			
+		// Map
+		script(src="https://api-maps.yandex.ru/2.1/?lang=en_GB" type="text/javascript")
 
 		// Content End
 		// Scripts
