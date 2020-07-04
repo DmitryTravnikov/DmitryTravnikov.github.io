@@ -1,0 +1,25 @@
+/*  Desktop First Method */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1300px) {
+  * {
+    outline-color: #2D1D34; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  * {
+    outline-color: #85552B; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  * {
+    outline-color: #59363B; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  * {
+    outline-color: #2B4146; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  * {
+    outline-color: #254823; } }

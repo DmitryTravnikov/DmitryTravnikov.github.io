@@ -29,6 +29,9 @@ body {
   font-size: 1.8rem;
   overflow: visible; }
 
+.active {
+  background: #178CC6; }
+
 td {
   width: 5rem;
   height: 5rem;
