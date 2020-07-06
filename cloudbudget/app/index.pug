@@ -3,7 +3,7 @@ doctype html
 // [if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]
 // [if IE 8]><html lang="ru" class="lt-ie9"><![endif]
 // [if gt IE 8]><!
-html(lang="ru")
+html(lang="en")
 	// <![endif]
 	head
 		title CloudBudget
@@ -28,7 +28,7 @@ html(lang="ru")
 	body
 		// Content Start
 
-		Preloader
+		// Preloader
 		.preloader#preloader
 			.loader
 
@@ -82,7 +82,7 @@ html(lang="ru")
 				.video-section__block.video-section__block2
 					.video-section__video-container
 						.video-section__video-overlay
-						iframe.video-section__video(width="901" height="380" src="https://www.youtube.com/embed/Fd3dxjLEfq8?autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer;showinfo=0&controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+						iframe.video-section__video(width="901" height="380" src="https://www.youtube.com/embed/Fd3dxjLEfq8?autoplay=0&amp;enablejsapi=1&amp;playerapiid=ytplayer;showinfo=0&controls=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 					button.video-section__play-button
 
 		//- Features
@@ -155,7 +155,7 @@ html(lang="ru")
 					h3.contact__block-headline Contact
 					p.contact__block-paragraph Questions or concerns? Just fill out the form below and our support team will get back to you within 24 hours
 				.contact__block.contact__block2
-					form.contact__form(action="" method="POST")
+					form.contact__form(action="#" method="POST")
 						.contact__form-row.contact__form-row1
 							input.contact__input.contact__first-name-input(type="text" placeholder="First Name")
 							input.contact__input.contact__last-name-input(type="text" placeholder="Last Name")
@@ -217,7 +217,7 @@ html(lang="ru")
 						img.footer__cards(src="assets/footer__credit-cards.png", alt="pic")
 
 		//- Copy
-		section.copy
+		.copy
 			.copy__wrapper.wrapper
 				a.prevdef.copy__link(href="#") Copyright 2018 CloudBudget
 
@@ -231,7 +231,7 @@ html(lang="ru")
 		.modal__success-container.modal__window
 			p.modal__paragraph We will contact you soon!
 		.modal__sign-up-n-login
-			form.modal__form(action="" method="POST")
+			form.modal__form(action="#" method="POST")
 				input.modal__email-input.modal__input(type="text" placeholder="Email")
 				input.modal__password-input.modal__input(type="text" placeholder="Password")
 				button.prevdef.modal__sign-up-button Sign Up
