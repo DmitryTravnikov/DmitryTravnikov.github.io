@@ -950,8 +950,10 @@ body {
   display: none; }
 
 .modal__video {
-  position: relative;
-  border: none; }
+  position: relative; }
+
+.modal__video iframe {
+  border: 0; }
 
 .modal__close-button {
   position: absolute;
