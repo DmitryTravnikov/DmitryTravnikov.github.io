@@ -3,7 +3,7 @@ doctype html
 // [if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]
 // [if IE 8]><html lang="ru" class="lt-ie9"><![endif]
 // [if gt IE 8]><!
-html(lang="ru")
+html(lang="en")
 	// <![endif]
 	head
 		title Repair Design Project
@@ -50,7 +50,7 @@ html(lang="ru")
 				a.prevdef.header__request-link(href="#") Request a Call
 
 		// Main Section
-		section.main
+		.main
 			.main__wrapper.wrapper
 				a.prevdef.main__instagram-link(href="#") Instagram
 				//- a.prevdef.main__scroll-down-container(href="#")
@@ -65,7 +65,7 @@ html(lang="ru")
 							a.prevdef.main__submit-your-application-link(href="#") Submit Your Application
 
 		// Section1
-		section.section1#projects
+		.section1#projects
 			.section1__wrapper.wrapper
 				ul.section1__tabs
 					li.section1__tabs-list-item
@@ -140,16 +140,16 @@ html(lang="ru")
 							.section1__slide-image.section1__slide-image3
 
 		// Section2
-		section.section2
+		.section2
 			.section2__wrapper.wrapper
 				h3.section2__headline Online Control
 				.section2__separator
 				.section2__video-container
 					.section2__video-overlay
 						button.section2__video-play-button
-					iframe.section2__video(width="817" height="434" src="https://www.youtube.com/embed/ZvzNVqpQYsw?enablejsapi=1&playerapiid=ytplayer&controls=1&showinfo=1&autohide=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+					iframe.section2__video(width="817" height="434" src="https://www.youtube.com/embed/ZvzNVqpQYsw?enablejsapi=1&playerapiid=ytplayer&controls=1&showinfo=1&autohide=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 				p.section2__paragraph At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.
-				form.section2__form(action="" method="POST")
+				form.section2__form(action="#" method="POST")
 					label.section2__input-container
 						input.section2__input.section2__name-input(type="text" placeholder="What is your name:")
 					label.section2__input-container
@@ -157,11 +157,11 @@ html(lang="ru")
 					button.prevdef.section2__submit-button Submit
 					label.section2__checkbox-container
 						input.section2__checkbox(type="checkbox")
-						.section2__checkbox-indicator
-						p.section2__checkbox-description I agree to the processing of personal data
+						span.section2__checkbox-indicator
+						span.section2__checkbox-description I agree to the processing of personal data
 
 		// Section3
-		section.section3
+		.section3
 			.section3__wrapper.wrapper
 				h3.section3__headline Types of Repair
 				.section3__separator
@@ -228,7 +228,7 @@ html(lang="ru")
 									a.prevdef.section3__block-list-link(href="#") Replacing doors
 
 		// Section4
-		section.section4#measurement
+		.section4#measurement
 			.section4__wrapper.wrapper
 				a.prevdef.section4__discount(href="#") Help save 10 - 20% of the cost of materials
 				.section4__block.section4__block1
@@ -237,7 +237,7 @@ html(lang="ru")
 					p.section4__block1-paragraph.section4__block1-paragraph3 Free consultation
 					p.section4__block1-paragraph.section4__block1-paragraph4 Get a cost estimate and the timing of your future repairs
 				.section4__block.section4__block2
-					form.section4__form(action="" method="POST")
+					form.section4__form(action="#" method="POST")
 						p.section4__block2-paragraph Leave a request for free departure of the measurer
 						label.section4__input-container.section4__input-container1 Name
 							input.section4__input.section4__name-input(type="text" placeholder="What is your name:")
@@ -247,12 +247,12 @@ html(lang="ru")
 							input.section4__input.section4__email-input(type="text" placeholder="Your email:")
 						label.section4__checkbox-container
 							input.section4__checkbox(type="checkbox")
-							.section4__checkbox-indicator
-							p.section4__checkbox-description I agree to the processing of personal data
+							span.section4__checkbox-indicator
+							span.section4__checkbox-description I agree to the processing of personal data
 						button.prevdef.section4__submit-button Call the Measurer
 
 		// Section5
-		section.section5
+		.section5
 			.section5__wrapper.wrapper
 				.section5__block.section5__block1
 					h3.section5__headline We Realize Your Wildest Fantasies
@@ -291,7 +291,7 @@ html(lang="ru")
 							.section5__item.section5__item4
 
 		// Section6
-		section.section6
+		.section6
 			.section6__wrapper.wrapper
 				h3.section6__headline Design Project
 				.section6__separator
@@ -363,7 +363,7 @@ html(lang="ru")
 									a.prevdef.section6__list-link(href="#") Furniture selection
 
 		// Section7
-		section.section7
+		.section7
 			.section7__wrapper.wrapper
 				h3.section7__headline How We Are Working
 				ul.section7__list
@@ -436,7 +436,7 @@ html(lang="ru")
 							.section7__slide-image.section7__slide-image6
 
 		// Section8
-		section.section8#team
+		.section8#team
 			.section8__wrapper.wrapper
 				h3.section8__headline Our Team
 				.section8__separator
@@ -467,7 +467,7 @@ html(lang="ru")
 				p.section8__paragraph.section8__paragraph3 We do not have laborers and guest workers, each employee carries out work corresponding to his specialty.
 
 		// Section9
-		section.section9#reviews
+		.section9#reviews
 			.section9__wrapper.wrapper
 				h3.section9__headline Our Clients
 				.section9__separator
@@ -490,9 +490,9 @@ html(lang="ru")
 						p.section9__item-paragraph I want to thank the guys for their work. We put your shower part in repair. I am very grateful that i referred to the repair as to my own. Great thanks i express the project to georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
 
 		// Section10
-		section.section10#contacts
+		.section10#contacts
 			.section10__wrapper.wrapper
-				form.section10__form(action="" method="POST")
+				form.section10__form(action="#" method="POST")
 					h3.section10__form-headline Have Any Questions?
 					.section10__form-row.section10__form-row1
 						label.section10__input-container.section10__input-container1
@@ -505,8 +505,8 @@ html(lang="ru")
 					.section10__form-row.section10__form-row3
 						label.section10__checkbox-container
 							input.section10__checkbox(type="checkbox")
-							.section10__checkbox-indicator
-							p.section10__checkbox-description I agree to the processing of personal data
+							span.section10__checkbox-indicator
+							span.section10__checkbox-description I agree to the processing of personal data
 						button.prevdef.section10__submit-button Submit
 				p.section10__address Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29
 				.section10__socials-container
@@ -519,10 +519,10 @@ html(lang="ru")
 				.section10__map#section10__map
 
 		// Section11
-		section.section11
+		.section11
 			.section11__wrapper.wrapper
 				a.prevdef.section11__repair-design-project(href="#") IC "Repair Design Project"
-				nav.section11__menu-container
+				ul.section11__menu-container
 					li.section11__menu-list-item
 						a.prevdef.section11__menu-link(href="#home") Home
 					li.section11__menu-list-item
@@ -546,7 +546,7 @@ html(lang="ru")
 		.request__container
 			button.request__close-button
 			h3.request__headline Leave a request and our manager will contact you shortly
-			form.request__form(action="" method="POST")
+			form.request__form(action="#" method="POST")
 				label.request__input-container.request__input-container1
 					input.request__input.request__name-input(type="text" placeholder="What is your name:")
 				label.request__input-container.request__input-container2
@@ -555,15 +555,15 @@ html(lang="ru")
 					input.request__input.request__email-input(type="text" placeholder="Your email:")
 				label.request__checkbox-container
 					input.request__checkbox(type="checkbox")
-					.request__checkbox-indicator
-					p.request__checkbox-description I agree to the processing of personal data
+					span.request__checkbox-indicator
+					span.request__checkbox-description I agree to the processing of personal data
 				button.prevdef.request__submit-button Submit
 
 		// To top button
 		a.prevdef.to-top-link(href="#home")
 			
 		// Map
-		script(src="https://api-maps.yandex.ru/2.1/?lang=en_GB" type="text/javascript")
+		script(src="https://api-maps.yandex.ru/2.1/?lang=en_GB")
 
 		// Content End
 		// Scripts
