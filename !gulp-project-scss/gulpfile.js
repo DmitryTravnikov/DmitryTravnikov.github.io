@@ -8,6 +8,9 @@ const del = require('del');
 const cache = require('gulp-cache');
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify-es').default;
+const cleanCSS = require('gulp-clean-css');
 
 
 function sassCompile() {
@@ -15,6 +18,7 @@ function sassCompile() {
 		.pipe(sass())
 		.on("error", notify.onError())
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+		.pipe(cleanCSS())
 		.pipe(gulp.dest('app/css'))
 		.pipe(browserSync.stream());
 }
@@ -22,7 +26,7 @@ function sassCompile() {
 function pugCompile() {
 	return gulp.src('app/*.pug')
 		.pipe(pug({
-			pretty: true
+			pretty: false
 		}))
 		.on('error', function (err) {
 			process.stderr.write(err.message + '\n');
@@ -37,7 +41,9 @@ function watch() {
 	browserSync.init({
 		server: {
 			baseDir: 'app'
-		}, notify: false
+		}, 
+		notify: false,
+		online: true,
 	});
 	gulp.watch('app/sass/*.+(scss|sass)', sassCompile);
 	gulp.watch('app/*.pug', pugCompile);
@@ -61,7 +67,7 @@ function imagesMinification() {
 				{removeUselessStrokeAndFill: false},
 				{interlaced: false},
 				{progessive: false},
-				{optimizationLevel: 0}
+				{optimizationLevel: 3}
 			],
 			use: [pngquant()]
 		})))
@@ -69,7 +75,6 @@ function imagesMinification() {
 }
 
 function build() {
-
 	deleteDist();
 	imagesMinification();
 
