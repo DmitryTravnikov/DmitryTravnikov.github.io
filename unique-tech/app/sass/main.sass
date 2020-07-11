@@ -1,0 +1,648 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+*
+	// transition: all .2s
+
+body
+	cursor: default
+
+.wrapper
+	+wrapper(90%, auto)
+
+// 1rem === 10px
+
+.header
+	background: $yellow
+	padding-top: 2rem
+	padding-bottom: 3rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__logo-container
+		text-decoration: none
+		+flex(row, wrap, flex-start, center)
+	&__logo-part1
+		width: auto
+		margin: 0rem
+		font-family: $rbl
+		font-size: 2.6rem
+		color: #fff
+		text-transform: uppercase
+		text-align: left
+		border: .3rem solid #FFF200
+		padding: .2rem 1rem
+	&__logo-part2
+		width: auto
+		margin: 0rem
+		font-family: $rbl
+		font-size: 2.6rem
+		color: $space-grey
+		text-transform: uppercase
+		text-align: left
+		margin-left: .5rem
+	&__menu-container
+		margin-top: 3rem
+	&__menu
+		padding: 0rem
+		margin: 0rem
+		+flex(column, wrap, flex-start, center)
+	&__menu-link
+		text-decoration: none
+		font-family: $rb
+		font-size: 1.4rem
+		color: $space-grey
+		text-transform: uppercase
+		position: relative
+		margin-top: 1.2rem
+		&:first-child
+			margin-top: 0rem
+		&:last-child
+			padding-bottom: 1.6rem
+		&:last-child::before
+			content: '(+966- 322 322)'
+			+size(8.9rem, auto)
+			font-family: $rbl
+			font-size: 1.2rem
+			color: $space-grey
+			position: absolute
+			bottom: 0.2rem
+			left: 50%
+			transform: translateX(-50%)
+
+.main
+	background: $yellow
+	padding-bottom: 3rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__slider
+		.owl-outer, .owl-wrapper
+			padding: 0rem
+			margin: 0rem
+		.owl-pagination
+			padding: 0rem
+			margin: 0rem
+			position: absolute
+			bottom: -1.2rem
+			left: 50%
+			transform: translateX(-50%)
+			.owl-page span
+				opacity: 1
+				+size(1.1rem, 1.1rem)
+				background: $space-grey
+				border-radius: 50%
+				margin: 0rem
+				margin-right: .4rem
+			.owl-page:last-child span
+				margin-right: 0rem
+			.owl-page.active span
+				background: #fff
+	&__slide
+		+flex(column, wrap, flex-start, center)
+		padding-bottom: 1rem
+		padding-top: 1rem
+	&__slide1
+	&__slide2
+	&__slide3
+	&__headline
+		width: 90%
+		margin: 0rem
+		font-family: $rb
+		font-size: 2.2rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+	&__paragraph
+		width: 90%
+		margin: 0rem
+		font-family: $rl
+		font-size: 1.6rem
+		line-height: 3rem
+		color: #fff
+		text-align: center
+		margin-top: 1rem
+	&__view-more-link
+		text-decoration: none
+		font-family: $rr
+		font-size: 1.6rem
+		color: #fff
+		background: url('../assets/main__view-more-link-icon.png') no-repeat 11rem 1.6rem, $space-grey
+		border-radius: .3rem
+		box-shadow: $bsh
+		padding: 1.8rem 5.1rem 1.8rem 2.4rem
+		transition: .2s
+		margin-top: 1rem
+		&:hover
+			background: url('../assets/main__view-more-link-icon.png') no-repeat 11rem 1.6rem, darken($space-grey, 5%)
+
+.what-we-do
+	padding-top: 3rem
+	padding-bottom: 3rem
+	background: #fff
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__headline
+		+headlineStyle()
+	&__content
+		+flex(column, wrap, flex-start, center)
+		margin-top: 3rem
+	&__block
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+		margin-top: 4rem
+		&:first-child
+			margin-top: 0rem
+	&__block1
+	&__block2
+	&__block3
+	&__block-image
+	&__text-container
+		+flex(column, wrap, flex-start, center)
+	&__block-headline
+		width: 90%
+		margin: 0rem
+		font-family: $rb
+		font-size: 1.8rem
+		color: #252525
+		text-transform: uppercase
+		text-align: center
+		margin-top: 1rem
+	&__block-paragraph
+		width: 90%
+		margin: 0rem
+		font-family: $rl
+		font-size: 1.4rem
+		line-height: 2.2rem
+		color: #363636
+		text-align: center
+		margin-top: 1rem
+	&__block-paragraph1
+	&__block-paragraph2
+	&__view-more-link
+		text-decoration: none
+		font-family: $osb
+		font-size: 1.2rem
+		color: $space-grey
+		text-transform: uppercase
+		background: $yellow
+		border-radius: .3rem
+		box-shadow: $bsh
+		padding: 2rem 3.9rem
+		transition: .2s
+		margin-top: 1rem
+		&:hover
+			background: darken($yellow, 5%)
+
+.how-we-work
+	display: none
+	&__wrapper
+	&__headline
+
+.our-features
+	padding-top: 3rem
+	padding-bottom: 3rem
+	background: #fff
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__headline
+		+headlineStyle()
+	&__content
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+		margin-top: 4rem
+	&__item
+		width: 80%
+		transition: .2s
+		padding-top: 2rem
+		padding-left: 7rem
+		padding-bottom: 1.5rem
+	&__item1
+		background: url('../assets/our-features__icon1-black.png') no-repeat 1.5rem 2.2rem, #fff
+		&:hover
+			background: url('../assets/our-features__icon1-white.png') no-repeat 1.5rem 2.2rem, #FBC73A
+	&__item2
+		background: url('../assets/our-features__icon2-black.png') no-repeat 1.3rem 2.2rem, #fff
+		&:hover
+			background: url('../assets/our-features__icon2-white.png') no-repeat 1.3rem 2.2rem, #FBC73A
+	&__item3
+		background: url('../assets/our-features__icon3-black.png') no-repeat 0.9rem 2.2rem, #fff
+		&:hover
+			background: url('../assets/our-features__icon3-white.png') no-repeat 0.9rem 2.2rem, #FBC73A
+	&__item4
+		background: url('../assets/our-features__icon4-black.png') no-repeat 1.2rem 2.2rem, #fff
+		&:hover
+			background: url('../assets/our-features__icon4-white.png') no-repeat 1.2rem 2.2rem, #FBC73A
+	&__item5
+		background: url('../assets/our-features__icon5-black.png') no-repeat 1.1rem 2.2rem, #fff
+		&:hover
+			background: url('../assets/our-features__icon5-white.png') no-repeat 1.1rem 2.2rem, #FBC73A
+	&__item6
+		background: url('../assets/our-features__icon6-black.png') no-repeat 1.2rem 2.2rem, #fff
+		&:hover
+			background: url('../assets/our-features__icon6-white.png') no-repeat 1.2rem 2.2rem, #FBC73A
+	&__item7
+		background: url('../assets/our-features__icon7-black.png') no-repeat 1rem 2.2rem, #fff
+		&:hover
+			background: url('../assets/our-features__icon7-white.png') no-repeat 1rem 2.2rem, #FBC73A
+	&__item8
+		background: url('../assets/our-features__icon8-black.png') no-repeat 1rem 2.2rem, #fff
+		&:hover
+			background: url('../assets/our-features__icon8-white.png') no-repeat 1rem 2.2rem, #FBC73A
+	&__item9
+		background: url('../assets/our-features__icon9-black.png') no-repeat 1.2rem 2.2rem, #fff
+		&:hover
+			background: url('../assets/our-features__icon9-white.png') no-repeat 1.2rem 2.2rem, #FBC73A
+	&__item10
+		background: url('../assets/our-features__icon10-black.png') no-repeat 1.3rem 2.2rem, #fff
+		&:hover
+			background: url('../assets/our-features__icon10-white.png') no-repeat 1.3rem 2.2rem, #FBC73A
+	&__item11
+		background: url('../assets/our-features__icon11-black.png') no-repeat 1rem 2.2rem, #fff
+		&:hover
+			background: url('../assets/our-features__icon11-white.png') no-repeat 1rem 2.2rem, #FBC73A
+	&__item12
+		background: url('../assets/our-features__icon12-black.png') no-repeat 1.4rem 2.2rem, #fff
+		&:hover
+			background: url('../assets/our-features__icon12-white.png') no-repeat 1.4rem 2.2rem, #FBC73A
+	&__item-headline
+		width: 100%
+		margin: 0rem
+		font-family: $rr
+		font-size: 1.8rem
+		color: #3A3A3A
+		text-align: left
+	&__item-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $rl
+		font-size: 1.4rem
+		line-height: 2.5rem
+		color: #3A3A3A
+		text-align: left
+		padding-right: 1rem
+
+.our-packages
+	padding-top: 3rem
+	padding-bottom: 3rem
+	background: #fff
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__headline
+		+headlineStyle()
+	&__content
+		+flex(column, wrap, flex-start, center)
+	&__block
+		+flex(column, wrap, flex-start, center)
+		margin-top: 4rem
+	&__block1
+	&__block2
+	&__block3
+	&__tariff-name
+		width: 100%
+		margin: 0rem
+		font-family: $rr
+		font-size: 3.2rem
+		color: darken(#F26C4F, 17%)
+		text-align: center
+	&__tariff-name1
+	&__tariff-name2
+	&__tariff-name3
+	&__tariff-option
+		width: 100%
+		margin: 0rem
+		font-family: $rm
+		font-size: 1.8rem
+		color: #363636
+		text-align: center
+		margin-top: 0.8rem
+	&__tariff-option1
+	&__tariff-option2
+	&__tariff-option3
+	&__tariff-option4
+	&__tariff-price
+		width: 100%
+		margin: 0rem
+		font-family: $rm
+		font-size: 3rem
+		color: darken(#F26C4F, 17%)
+		text-align: center
+		margin-top: 1rem
+	&__tariff-price1
+	&__tariff-price2
+	&__tariff-price3
+	&__order-link
+		text-decoration: none
+		font-family: $rb
+		font-size: 1.5rem
+		color: #fff
+		background: #464646
+		border-radius: .3rem
+		box-shadow: $bsh
+		padding: 1.7rem 5.1rem
+		margin-top: 1rem
+		transition: .2s
+		&:hover
+			background: darken(#F26C4F, 5%)
+	&__order-link1
+	&__order-link2
+	&__order-link3
+
+.our-history
+	padding-top: 3rem
+	padding-bottom: 3rem
+	background: url('../assets/pattern.jpg') repeat center
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__text-container
+		+flex(column, wrap, flex-start, center)
+		width: 80%
+	&__headline
+		width: 100%
+		margin: 0rem
+		+headlineStyle()
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $rl
+		font-size: 1.6rem
+		line-height: 3rem
+		color: #363636
+		text-align: center
+		margin-top: 2rem
+	&__browse-our-story-link
+		text-decoration: none
+		font-family: $osb
+		font-size: 1.2rem
+		color: $space-grey
+		text-transform: uppercase
+		background: $yellow
+		border-radius: .3rem
+		box-shadow: $bsh
+		padding: 2rem 3.9rem
+		transition: .2s
+		margin-top: 1rem
+		&:hover
+			background: darken($yellow, 5%)
+
+.related-projects
+	padding-top: 3rem
+	padding-bottom: 3rem
+	background: #fff
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__headline
+		+headlineStyle()
+	&__content
+		width: 100%
+		background: #F4F4F4
+		+flex(row, wrap, center, center)
+		margin-top: 3rem
+		padding-top: 3rem
+		padding-bottom: 3rem
+	&__item
+		+size(19.4rem, 17rem)
+		+flex(column, wrap, flex-end, center)
+		margin: 0.6rem
+	&__item1
+		background: url('../assets/related-projects__icons1.jpg') no-repeat 0.9rem 0rem
+	&__item2
+		background: url('../assets/related-projects__icons1.jpg') no-repeat -20.5rem 0rem
+	&__item3
+		background: url('../assets/related-projects__icons1.jpg') no-repeat -42rem 0rem
+	&__item4
+		background: url('../assets/related-projects__icons1.jpg') no-repeat -63rem 0rem
+	&__item5
+		background: url('../assets/related-projects__icons2.jpg') no-repeat 4.3rem 0rem
+		display: none
+	&__item6
+		background: url('../assets/related-projects__icons2.jpg') no-repeat -16.7rem 0rem
+		display: none
+	&__item7
+		background: url('../assets/related-projects__icons2.jpg') no-repeat -37.7rem 0rem
+		display: none
+	&__item8
+		background: url('../assets/related-projects__icons2.jpg') no-repeat -58rem 0rem
+		display: none
+	&__item-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $rb
+		font-size: 1.6rem
+		color: #6A6A6A
+		text-transform: uppercase
+		text-align: center
+
+.our-team
+	background: $yellow
+	padding-top: 3rem
+	padding-bottom: 3rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__headline
+		+headlineStyle()
+	&__content
+		width: 100%
+		+flex(row, wrap, center, center)
+		margin-top: 2rem
+	&__item
+		+flex(column, wrap, flex-start, center)
+		margin: 1rem
+	&__item1
+	&__item2
+	&__item3
+	&__item4
+	&__item5
+	&__worker-pic
+		+size(12.5rem, 12.5rem)
+		border-radius: 50%
+	&__worker-pic1
+		background: url('../assets/our-team__user-pic1.jpg') no-repeat center
+	&__worker-pic2
+		background: url('../assets/our-team__user-pic2.jpg') no-repeat center
+	&__worker-pic3
+		background: url('../assets/our-team__user-pic3.jpg') no-repeat center
+	&__worker-pic4
+		background: url('../assets/our-team__user-pic4.jpg') no-repeat center
+	&__worker-pic5
+		background: url('../assets/our-team__user-pic5.jpg') no-repeat center
+	&__worker-name
+		width: 100%
+		margin: 0rem
+		font-family: $rb
+		font-size: 1.6rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		margin-top: 1rem
+	&__worker-position
+		width: 100%
+		margin: 0rem
+		font-family: $rth
+		font-size: 1.6rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		margin-top: 0.4rem
+
+.updates
+	background: #fff
+	padding-top: 3rem
+	padding-bottom: 3rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__headline
+		+headlineStyle()
+	&__content
+		margin-top: 2rem
+	&__text-container
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $rl
+		font-size: 1.6rem
+		line-height: 2.8rem
+		color: #363636
+		text-align: center
+	&__support-center-link
+		text-decoration: none
+		font-family: $osb
+		font-size: 1.2rem
+		color: $space-grey
+		text-transform: uppercase
+		background: $yellow
+		border-radius: .3rem
+		box-shadow: $bsh
+		padding: 2rem 3.9rem
+		transition: .2s
+		margin-top: 1rem
+		&:hover
+			background: darken($yellow, 5%)
+
+.hire-us
+	background: #fff
+	padding-top: 3rem
+	padding-bottom: 3rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__content
+		+flex(column, wrap, flex-end, center)
+		+size(100%, 40rem)
+		background: url('../assets/hire-us__bg.jpg') no-repeat center
+		position: relative
+		&::before
+			content: ''
+			+size(100%, 100%)
+			background: rgba($yellow, .5)
+			position: absolute
+			top: 0rem
+			left: 0rem
+	&__text-container
+		background: $yellow
+		+flex(column, wrap, flex-start, center)
+		padding-top: 2rem
+		padding-bottom: 2rem
+		position: relative
+		width: 100%
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $osb
+		font-size: 2.2rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+	&__hire-us-link
+		text-decoration: none
+		font-family: $osb
+		font-size: 2rem
+		color: $space-grey
+		text-transform: uppercase
+		background: #FFFFFF
+		border-radius: .3rem
+		box-shadow: $bsh
+		padding: 2rem 3.9rem
+		transition: .2s
+		margin-top: 1.6rem
+		&:hover
+			background: darken($space-grey, 5%)
+			color: #fff
+
+.footer
+	display: none
+	&__wrapper
+	&__block
+	&__block1
+	&__block2
+	&__block3
+	&__block4
+	&__block-headline
+	&__list
+	&__list-item
+		&:first-child
+	&__list-link
+
+.copy
+	background: #363636
+	padding-top: 3rem
+	padding-bottom: 3rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__socials-container
+		+flex(row, wrap, center, flex-start)
+	&__social-link
+		+size(4rem, 4rem)
+		border-radius: .3rem
+		background: $yellow
+		margin-right: .4rem
+		+flex(row, wrap, center, center)
+		transition: .2s
+		&:hover
+			background: darken($yellow, 5%)
+		&:last-child
+			margin-right: 0rem
+		svg
+			+size(1.4rem, 1.4rem)
+			path
+				fill: #fff
+	&__facebook
+	&__twitter
+	&__google-plus
+		svg
+			+size(1.9rem, 1.9rem)
+	&__linkedin
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $rl
+		font-size: 1.6rem
+		color: #AAB2BD
+		text-align: center
+		margin-top: 1.4rem
+
+.to-top-link
+	text-decoration: none
+	+size(5rem, 5rem)
+	background: $orange
+	position: fixed
+	bottom: 0rem
+	right: 0rem
+	transition: .2s
+	opacity: 0
+	z-index: -1
+	&:hover
+		background: darken($orange, 5%)
+	&::before
+		content: ''
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 0 0.7rem 1rem 0.7rem
+		border-color: transparent transparent #fff transparent
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+
+*
+	// @include outline($blue)
