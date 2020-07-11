@@ -19,6 +19,64 @@ body
 .wrapper
 	+wrapper(90%, auto)
 
+
+/* font-family: "OpenSans-Bold"; */
+@font-face
+	font-family: "OpenSans-Bold"
+	src: url("../fonts/OpenSans-Bold/OpenSans-Bold.woff2") format("woff2")
+	font-style: normal
+	font-weight: normal
+	font-display: swap
+/* font-family: "Roboto-Black"; */
+@font-face
+	font-family: "Roboto-Black"
+	src: url("../fonts/Roboto-Black/Roboto-Black.woff2") format("woff2")
+	font-style: normal
+	font-weight: normal
+	font-display: swap
+/* font-family: "Roboto-Bold"; */
+@font-face
+	font-family: "Roboto-Bold"
+	src: url("../fonts/Roboto-Bold/Roboto-Bold.woff2") format("woff2")
+	font-style: normal
+	font-weight: normal
+	font-display: swap
+/* font-family: "Roboto-Light"; */
+@font-face
+	font-family: "Roboto-Light"
+	src: url("../fonts/Roboto-Light/Roboto-Light.woff2") format("woff2")
+	font-style: normal
+	font-weight: normal
+	font-display: swap
+/* font-family: "Roboto-Medium"; */
+@font-face
+	font-family: "Roboto-Medium"
+	src: url("../fonts/Roboto-Medium/Roboto-Medium.woff2") format("woff2")
+	font-style: normal
+	font-weight: normal
+	font-display: swap
+/* font-family: "Roboto-Regular"; */
+@font-face
+	font-family: "Roboto-Regular"
+	src: url("../fonts/Roboto-Regular/Roboto-Regular.woff2") format("woff2")
+	font-style: normal
+	font-weight: normal
+	font-display: swap
+/* font-family: "Roboto-Thin"; */
+@font-face
+	font-family: "Roboto-Thin"
+	src: url("../fonts/Roboto-Thin/Roboto-Thin.woff2") format("woff2")
+	font-style: normal
+	font-weight: normal
+	font-display: swap
+/* font-family: "SourceSansPro-Bold"; */
+@font-face
+	font-family: "SourceSansPro-Bold"
+	src: url("../fonts/SourceSansPro-Bold/SourceSansPro-Bold.woff2") format("woff2")
+	font-style: normal
+	font-weight: normal
+	font-display: swap
+
 // 1rem === 10px
 
 .header
@@ -649,6 +707,1075 @@ body
 		top: 50%
 		left: 50%
 		transform: translate(-50%, -50%)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile First Method */
+/* Custom, iPhone Retina (SM) */
+@media only screen and (min-width: 576px)
+	body
+
+	.header
+		&__wrapper
+		&__logo-container
+		&__logo-part1
+		&__logo-part2
+		&__menu-container
+			+flex(row, wrap, center, flex-start)
+		&__menu-link
+			margin-top: 0rem
+			margin-right: 1rem
+			&:first-child
+			&:last-child
+				margin-right: 0rem
+			&:last-child::before
+
+	.main
+		&__wrapper
+		&__slider
+			.owl-outer, .owl-wrapper
+			.owl-pagination
+				.owl-page span
+				.owl-page:last-child span
+				.owl-page.active span
+		&__slide
+		&__slide1
+		&__slide2
+		&__slide3
+		&__headline
+			font-size: 4.2rem
+		&__paragraph
+		&__view-more-link
+			&:hover
+
+	.what-we-do
+		&__wrapper
+		&__headline
+			font-size: 2.6rem
+		&__content
+		&__block
+			width: 44rem
+			&:first-child
+		&__block1
+		&__block2
+		&__block3
+		&__block-image
+		&__text-container
+		&__block-headline
+		&__block-paragraph
+		&__block-paragraph1
+		&__block-paragraph2
+		&__view-more-link
+			&:hover
+
+	.our-features
+		&__wrapper
+		&__headline
+			font-size: 2.6rem
+		&__content
+		&__item
+			width: 38rem
+		&__item1
+			&:hover
+		&__item2
+			&:hover
+		&__item3
+			&:hover
+		&__item4
+			&:hover
+		&__item5
+			&:hover
+		&__item6
+			&:hover
+		&__item7
+			&:hover
+		&__item8
+			&:hover
+		&__item9
+			&:hover
+		&__item10
+			&:hover
+		&__item11
+			&:hover
+		&__item12
+			&:hover
+		&__item-headline
+		&__item-paragraph
+
+	.our-packages
+		&__wrapper
+		&__headline
+			font-size: 2.6rem
+		&__content
+		&__block
+		&__block1
+		&__block2
+		&__block3
+		&__tariff-name
+		&__tariff-name1
+		&__tariff-name2
+		&__tariff-name3
+		&__tariff-option
+		&__tariff-option1
+		&__tariff-option2
+		&__tariff-option3
+		&__tariff-option4
+		&__tariff-price
+		&__tariff-price1
+		&__tariff-price2
+		&__tariff-price3
+		&__order-link
+			&:hover
+		&__order-link1
+		&__order-link2
+		&__order-link3
+
+	.our-history
+		&__wrapper
+		&__text-container
+		&__headline
+			font-size: 2.6rem
+		&__paragraph
+		&__browse-our-story-link
+			&:hover
+
+	.related-projects
+		&__wrapper
+		&__headline
+			font-size: 2.6rem
+		&__content
+			+flex(row, wrap, center, flex-start)
+			padding-top: 0rem
+			width: 50rem
+		&__item
+			+size(20rem, 22rem)
+			margin: 1rem
+		&__item1
+			background: url('../assets/related-projects__icons1.jpg') no-repeat 1.2rem 4rem
+		&__item2
+			background: url('../assets/related-projects__icons1.jpg') no-repeat -20.3rem 6rem
+		&__item3
+			background: url('../assets/related-projects__icons1.jpg') no-repeat -42rem 5.4rem
+		&__item4
+			background: url('../assets/related-projects__icons1.jpg') no-repeat -62.7rem 5rem
+		&__item5
+			background: url('../assets/related-projects__icons2.jpg') no-repeat 4.6rem 3.2rem
+			display: flex
+		&__item6
+			background: url('../assets/related-projects__icons2.jpg') no-repeat -16.7rem 2.2rem
+			display: flex
+		&__item7
+			background: url('../assets/related-projects__icons2.jpg') no-repeat -37.7rem 3.8rem
+			display: flex
+		&__item8
+			background: url('../assets/related-projects__icons2.jpg') no-repeat -57.7rem 2.6rem
+			display: flex
+		&__item-paragraph
+
+	.our-team
+		&__wrapper
+		&__headline
+			font-size: 2.6rem
+		&__content
+			width: 50rem
+			+flex(row, wrap, center, center)
+		&__item
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item5
+		&__worker-pic
+		&__worker-pic1
+		&__worker-pic2
+		&__worker-pic3
+		&__worker-pic4
+		&__worker-pic5
+		&__worker-name
+		&__worker-position
+
+	.updates
+		&__wrapper
+		&__headline
+			font-size: 2.6rem
+		&__content
+			width: 80%
+		&__text-container
+		&__paragraph
+		&__support-center-link
+			&:hover
+
+	.hire-us
+		&__wrapper
+		&__content
+			&::before
+		&__text-container
+			+flex(row, wrap, space-around, center)
+		&__paragraph
+			width: auto
+		&__hire-us-link
+			margin-top: 0rem
+			&:hover
+
+	.footer
+		background: #363636
+		display: block
+		padding-top: 3rem
+		padding-bottom: 3rem
+		&__wrapper
+			+flex(row, wrap, space-around, flex-start)
+		&__block
+			+flex(column, wrap, flex-start, center)
+			margin: 1rem
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-headline
+			width: 100%
+			margin: 0rem
+			font-family: $rm
+			font-weight: 400
+			font-size: 1.8rem
+			color: #fff
+			text-transform: uppercase
+			text-align: left
+		&__list
+			padding: 0rem
+			margin: 0rem
+			+flex(column, wrap, flex-start, flex-start)
+			margin-top: 1rem
+		&__list-item
+			padding: 0rem
+			margin: 0rem
+			+flex(row, wrap, flex-start, flex-start)
+			margin-top: 1rem
+			&:first-child
+				margin-top: 0rem
+		&__list-link
+			text-decoration: none
+			font-family: $rl
+			font-size: 1.6rem
+			color: #AAB2BD
+/* Extra Small Devices, Phones (MD) */
+@media only screen and (min-width: 768px)
+	body
+
+	.header
+		&__wrapper
+			+flex(row, wrap, space-between, flex-start)
+		&__logo-container
+		&__logo-part1
+		&__logo-part2
+		&__menu-container
+			margin-top: 0.8rem
+		&__menu-link
+			&:first-child
+			&:last-child
+			&:last-child::before
+
+	.main
+		&__wrapper
+		&__slider
+			.owl-outer, .owl-wrapper
+			.owl-pagination
+				.owl-page span
+				.owl-page:last-child span
+				.owl-page.active span
+		&__slide
+		&__slide1
+		&__slide2
+		&__slide3
+		&__headline
+			font-size: 4.1rem
+		&__paragraph
+		&__view-more-link
+			&:hover
+
+	.what-we-do
+		&__headline
+			font-size: 2.6rem
+
+	.our-features
+		&__wrapper
+		&__headline
+		&__content
+			+flex(row, wrap, center, center)
+		&__item
+			width: 30rem
+			margin: 0.6rem
+		&__item1
+			&:hover
+		&__item2
+			&:hover
+		&__item3
+			&:hover
+		&__item4
+			&:hover
+		&__item5
+			&:hover
+		&__item6
+			&:hover
+		&__item7
+			&:hover
+		&__item8
+			&:hover
+		&__item9
+			&:hover
+		&__item10
+			&:hover
+		&__item11
+			&:hover
+		&__item12
+			&:hover
+		&__item-headline
+		&__item-paragraph
+
+	.our-packages
+		&__wrapper
+		&__headline
+		&__content
+			+flex(row, wrap, space-between, flex-start)
+			margin-top: 2rem
+		&__block
+			width: 20rem
+			margin: 1rem
+		&__block1
+		&__block2
+		&__block3
+		&__tariff-name
+		&__tariff-name1
+		&__tariff-name2
+		&__tariff-name3
+		&__tariff-option
+		&__tariff-option1
+		&__tariff-option2
+		&__tariff-option3
+		&__tariff-option4
+		&__tariff-price
+		&__tariff-price1
+		&__tariff-price2
+		&__tariff-price3
+		&__order-link
+			&:hover
+		&__order-link1
+		&__order-link2
+		&__order-link3
+
+	.our-team
+		&__wrapper
+		&__headline
+		&__content
+			width: 50rem
+		&__item
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item5
+		&__worker-pic
+		&__worker-pic1
+		&__worker-pic2
+		&__worker-pic3
+		&__worker-pic4
+		&__worker-pic5
+		&__worker-name
+		&__worker-position
+/* Small Devices, Tablets (LG) */
+@media only screen and (min-width: 992px)
+	body
+
+	.header
+		&__wrapper
+		&__logo-container
+		&__logo-part1
+		&__logo-part2
+		&__menu-container
+		&__menu-link
+			margin-right: 3rem
+			&:first-child
+			&:last-child
+			&:last-child::before
+
+	.what-we-do
+		&__wrapper
+		&__headline
+		&__content
+			+flex(row, wrap, space-between, flex-start)
+		&__block
+			width: calc(100% / 3.2)
+			margin-top: 0rem
+			&:first-child
+		&__block1
+		&__block2
+		&__block3
+		&__block-image
+		&__text-container
+		&__block-headline
+		&__block-paragraph
+		&__block-paragraph1
+		&__block-paragraph2
+		&__view-more-link
+			&:hover
+
+	.how-we-work
+		display: block
+		padding-top: 3rem
+		height: 100rem
+		background: url('../assets/how-we-work__bg2.png') no-repeat center 11rem, url('../assets/pattern.jpg') repeat center
+		&__wrapper
+			+flex(column, wrap, center, center)
+		&__headline
+			+headlineStyle()
+			font-size: 2.2rem
+
+	.our-features
+		&__wrapper
+		&__headline
+		&__content
+			+flex(row, wrap, center, center)
+		&__item
+			width: 30%
+			margin: 0.6rem
+		&__item1
+			&:hover
+		&__item2
+			&:hover
+		&__item3
+			&:hover
+		&__item4
+			&:hover
+		&__item5
+			&:hover
+		&__item6
+			&:hover
+		&__item7
+			&:hover
+		&__item8
+			&:hover
+		&__item9
+			&:hover
+		&__item10
+			&:hover
+		&__item11
+			&:hover
+		&__item12
+			&:hover
+		&__item-headline
+		&__item-paragraph
+
+	.our-packages
+		&__wrapper
+		&__headline
+		&__content
+		&__block
+			margin-left: 2rem
+			margin-right: 2rem
+		&__block1
+		&__block2
+		&__block3
+		&__tariff-name
+		&__tariff-name1
+		&__tariff-name2
+		&__tariff-name3
+		&__tariff-option
+		&__tariff-option1
+		&__tariff-option2
+		&__tariff-option3
+		&__tariff-option4
+		&__tariff-price
+		&__tariff-price1
+		&__tariff-price2
+		&__tariff-price3
+		&__order-link
+			&:hover
+		&__order-link1
+		&__order-link2
+		&__order-link3
+
+	.our-history
+		background: url('../assets/pattern.jpg') repeat center
+		&__wrapper
+			+flex(row, wrap, flex-end, flex-start)
+		&__text-container
+			width: 55rem
+			+flex(row, wrap, flex-start, flex-start)
+			position: relative
+			&::before
+				content: ''
+				+size(50.3rem, 46.3rem)
+				background: url('../assets/our-history__image.jpg') no-repeat 0rem 0rem
+				position: absolute
+				top: 0rem
+				left: -52rem
+		&__headline
+		&__paragraph
+			text-align: left
+			padding-right: 0rem
+		&__browse-our-story-link
+			&:hover
+
+	.related-projects
+		&__wrapper
+		&__headline
+		&__content
+			width: 86rem
+		&__item
+			margin: 0rem
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item5
+		&__item6
+		&__item7
+		&__item8
+		&__item-paragraph
+
+	.our-team
+		&__wrapper
+		&__headline
+		&__content
+			width: 86rem
+		&__item
+			margin: 2rem
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item5
+		&__worker-pic
+		&__worker-pic1
+		&__worker-pic2
+		&__worker-pic3
+		&__worker-pic4
+		&__worker-pic5
+		&__worker-name
+		&__worker-position
+
+	.hire-us
+		&__wrapper
+		&__content
+			+size(100%, 60rem)
+			background-size: cover
+			&::before
+		&__text-container
+			+flex(row, wrap, space-between, center)
+			padding-left: 3rem
+			padding-right: 3rem
+		&__paragraph
+		&__hire-us-link
+			&:hover
+/* Medium Devices, Desktops (XL) */
+@media only screen and (min-width: 1200px)
+	body
+
+	.wrapper
+		+wrapper(117rem, auto)
+
+	.header
+		padding-top: 7.5rem
+		&__wrapper
+			+flex(row, wrap, space-between, flex-start)
+		&__logo-container
+			margin-left: 8.4rem
+		&__logo-part1
+		&__logo-part2
+		&__menu-container
+			margin-top: 1.1rem
+			margin-right: 7.9rem
+		&__menu-link
+			margin-right: 3.3rem
+			&:first-child
+			&:last-child
+			&:last-child::before
+				bottom: -0.4rem
+
+	.main
+		background: $yellow
+		padding-bottom: 3.8rem
+		&__wrapper
+		&__slider
+			margin-top: 2.8rem
+			.owl-outer, .owl-wrapper
+			.owl-pagination
+				bottom: 3.4rem
+				left: 79.7rem
+				.owl-page span
+				.owl-page:last-child span
+				.owl-page.active span
+		&__slide
+			+flex(column, wrap, flex-start, flex-start)
+			padding-left: 8.6rem
+		&__slide1
+		&__slide2
+		&__slide3
+		&__headline
+			font-size: 4.2rem
+			text-align: left
+			position: relative
+			width: 40rem
+			&::before
+				content: ''
+				+size(39.3rem, 5.1rem)
+				background: url('../assets/main__arrow.png') no-repeat center
+				position: absolute
+				top: -0.9rem
+				right: -28.2rem
+		&__paragraph
+			text-align: left
+			width: 40rem
+			margin-top: 3.1rem
+			padding-right: 5rem
+			position: relative
+			&::before
+				content: ''
+				+size(62rem, 36.5rem)
+				background: url('../assets/main__devices.png') no-repeat 0rem 0rem
+				position: absolute
+				top: -7.1rem
+				right: -60.1rem
+		&__view-more-link
+			margin-top: 2.4rem
+			padding: 1.6rem 5.1rem 1.6rem 2.4rem
+			&:hover
+
+	.what-we-do
+		padding-top: 14.1rem
+		padding-bottom: 13rem
+		&__wrapper
+			+flex(column, wrap, flex-start, center)
+		&__headline
+			+arrowRight()
+		&__content
+			+flex(column, wrap, flex-start, center)
+			margin-top: 17.5rem
+		&__block
+			width: 100%
+			+flex(row, wrap, center, flex-start)
+			&:first-child
+		&__block1
+		&__block2
+			margin-top: 19.3rem
+		&__block3
+			margin-top: 19.6rem
+		&__block2 &__block-image
+			order: 2
+		&__block2 &__text-container
+			order: 1
+		&__block-image
+			margin-top: 1rem
+		&__text-container
+			width: 52.2rem
+			+flex(column, wrap, flex-start, flex-start)
+			margin-left: 6.4rem
+		&__block-headline
+			text-align: left
+		&__block-paragraph
+			text-align: left
+		&__block-paragraph1
+		&__block-paragraph2
+			margin-top: 0rem
+		&__view-more-link
+			padding: 1.9rem 4.3rem
+			margin-top: 1.4rem
+			&:hover
+
+	.how-we-work
+		display: block
+		padding-top: 9.1rem
+		height: 125.6rem
+		background: url('../assets/how-we-work__bg2.png') no-repeat center 29.1rem, url('../assets/pattern.jpg') repeat center
+		&__wrapper
+			+flex(column, wrap, center, center)
+		&__headline
+			+headlineStyle()
+			font-size: 2.6rem
+			+arrowLeft()
+
+	.our-features
+		padding-top: 13.6rem
+		padding-bottom: 7rem
+		&__wrapper
+		&__headline
+			+arrowRight()
+		&__content
+			margin-top: 10.7rem
+		&__item
+			width: 31.7rem
+			margin: 1.3rem
+			padding-top: 1.9rem
+			padding-left: 5rem
+			padding-bottom: 1.1rem
+			margin-top: 4.2rem
+		&__item1
+			background: url('../assets/our-features__icon1-black.png') no-repeat 1.5rem 2.2rem, #fff
+			&:hover
+				background: url('../assets/our-features__icon1-white.png') no-repeat 1.5rem 2.2rem, #FBC73A
+		&__item2
+			background: url('../assets/our-features__icon2-black.png') no-repeat 1.5rem 2.2rem, #fff
+			&:hover
+				background: url('../assets/our-features__icon2-white.png') no-repeat 1.5rem 2.2rem, #FBC73A
+		&__item3
+			background: url('../assets/our-features__icon3-black.png') no-repeat 0.9rem 2.2rem, #fff
+			&:hover
+				background: url('../assets/our-features__icon3-white.png') no-repeat 0.9rem 2.2rem, #FBC73A
+		&__item4
+			background: url('../assets/our-features__icon4-black.png') no-repeat 1.2rem 2.2rem, #fff
+			&:hover
+				background: url('../assets/our-features__icon4-white.png') no-repeat 1.2rem 2.2rem, #FBC73A
+		&__item5
+			background: url('../assets/our-features__icon5-black.png') no-repeat 1.1rem 2.2rem, #fff
+			&:hover
+				background: url('../assets/our-features__icon5-white.png') no-repeat 1.1rem 2.2rem, #FBC73A
+		&__item6
+			background: url('../assets/our-features__icon6-black.png') no-repeat 1.2rem 2.2rem, #fff
+			&:hover
+				background: url('../assets/our-features__icon6-white.png') no-repeat 1.2rem 2.2rem, #FBC73A
+		&__item7
+			background: url('../assets/our-features__icon7-black.png') no-repeat 1rem 2.2rem, #fff
+			&:hover
+				background: url('../assets/our-features__icon7-white.png') no-repeat 1rem 2.2rem, #FBC73A
+		&__item8
+			background: url('../assets/our-features__icon8-black.png') no-repeat 1rem 2.2rem, #fff
+			&:hover
+				background: url('../assets/our-features__icon8-white.png') no-repeat 1rem 2.2rem, #FBC73A
+		&__item9
+			background: url('../assets/our-features__icon9-black.png') no-repeat 1.2rem 2.2rem, #fff
+			&:hover
+				background: url('../assets/our-features__icon9-white.png') no-repeat 1.2rem 2.2rem, #FBC73A
+		&__item10
+			background: url('../assets/our-features__icon10-black.png') no-repeat 1.3rem 2.2rem, #fff
+			&:hover
+				background: url('../assets/our-features__icon10-white.png') no-repeat 1.3rem 2.2rem, #FBC73A
+		&__item11
+			background: url('../assets/our-features__icon11-black.png') no-repeat 1rem 2.2rem, #fff
+			&:hover
+				background: url('../assets/our-features__icon11-white.png') no-repeat 1rem 2.2rem, #FBC73A
+		&__item12
+			background: url('../assets/our-features__icon12-black.png') no-repeat 1.4rem 2.2rem, #fff
+			&:hover
+				background: url('../assets/our-features__icon12-white.png') no-repeat 1.4rem 2.2rem, #FBC73A
+		&__item-headline
+		&__item-paragraph
+
+	.our-packages
+		padding-top: 7.6rem
+		padding-bottom: 16.6rem
+		&__wrapper
+		&__headline
+			+arrowLeft()
+		&__content
+			margin-top: 17.8rem
+		&__block
+			position: relative
+			margin: 0rem
+			+size(26.2rem, auto)
+			&::before
+				content: ''
+				+size(.1rem, 73%)
+				background: #FFBF37
+				position: absolute
+				top: 2.2rem
+				right: 0rem
+		&__block1
+		&__block2
+			+size(30.9rem, auto)
+		&__block3
+			&::before
+				content: none
+		&__tariff-name
+			width: 100%
+			margin: 0rem
+			font-family: $rr
+			font-size: 2.2rem
+			color: #8D8D8D
+			text-align: center
+		&__tariff-name1
+			margin-top: 1.5rem
+		&__tariff-name2
+			font-size: 2.7rem
+			color: #F26C4F
+		&__tariff-name3
+			color: #FBC73A
+			margin-top: 1.5rem
+		&__tariff-option
+			width: 100%
+			margin: 0rem
+			font-family: $rm
+			font-size: 1.6rem
+			color: #B3B3B3
+			text-align: center
+			position: relative
+			margin-top: 1.9rem
+			padding-bottom: 1rem
+			&::before
+				content: ''
+				+size(100%, .1rem)
+				background: #FBC73A
+				position: absolute
+				bottom: 0rem
+				left: 0rem
+			&.black
+				font-size: 1.8rem
+				color: #363636
+				margin-top: 1.8rem
+				padding-bottom: 0.9rem
+		&__tariff-option1
+			margin-top: 4.7rem
+			&.black
+				margin-top: 5.5rem
+		&__tariff-option2
+		&__tariff-option3
+		&__tariff-option4
+		&__tariff-price
+			width: 100%
+			margin: 0rem
+			font-family: $rm
+			font-size: 3.8rem
+			color: #A5A5A5
+			text-align: center
+			margin-top: 5.6rem
+			span
+				font-size: 2.4rem
+		&__tariff-price1
+		&__tariff-price2
+			font-size: 6.8rem
+			margin-top: 3.5rem
+			color: #F26C4F
+		&__tariff-price3
+			color: #EFB415
+		&__order-link
+			text-decoration: none
+			font-family: $rb
+			font-size: 1.5rem
+			color: #fff
+			background: #A5A5A5
+			border-radius: .3rem
+			box-shadow: $bsh
+			transition: .2s
+			text-transform: uppercase
+			margin-top: 4.4rem
+			padding: 1.4rem 5.3rem
+			&:hover
+				background: darken(#A5A5A5, 5%)
+		&__order-link1
+		&__order-link2
+			margin-top: 3rem
+			padding: 1.8rem 5.4rem
+			font-size: 1.7rem
+			color: #fff
+			background: #F26C4F
+			&:hover
+				background: darken(#F26C4F, 5%)
+		&__order-link3
+			background: #FFC038
+			&:hover
+				background: darken(#FFC038, 5%)
+
+	.our-history
+		padding-top: 6.7rem
+		padding-bottom: 6.3rem
+		&__wrapper
+		&__text-container
+			width: 57rem
+			&::before
+				left: -52.4rem
+		&__headline
+			padding: 1.3rem 2.1rem
+			letter-spacing: 0.2rem
+		&__paragraph
+			margin-top: 1.7rem
+			padding-right: 5rem
+		&__browse-our-story-link
+			&:hover
+
+	.related-projects
+		padding-top: 14.9rem
+		padding-bottom: 6rem
+		&__wrapper
+		&__headline
+			padding: 1.3rem 2.4rem
+			+arrowRight()
+		&__content
+			margin-top: 13.3rem
+			width: 99.9rem
+			padding-bottom: 8.3rem
+			+flex(row, wrap, center, flex-start)
+		&__item
+			width: 19.4rem
+			margin-left: 1rem
+			margin-right: 1rem
+		&__item1
+			margin-top: 5.3rem
+			background: url('../assets/related-projects__icons1.jpg') no-repeat 1.5rem 3.7rem
+		&__item2
+			margin-top: 5.3rem
+			background: url('../assets/related-projects__icons1.jpg') no-repeat -19.9rem 3.7rem
+		&__item3
+			margin-top: 5.3rem
+			background: url('../assets/related-projects__icons1.jpg') no-repeat -41.3rem 3.7rem
+		&__item4
+			margin-top: 5.3rem
+			background: url('../assets/related-projects__icons1.jpg') no-repeat -62.7rem 3.7rem
+		&__item5
+			margin-top: 2.7rem
+			background: url('../assets/related-projects__icons2.jpg') no-repeat 3.7rem 1.2rem
+		&__item6
+			margin-top: 2.7rem
+			background: url('../assets/related-projects__icons2.jpg') no-repeat -17.7rem 1.2rem
+		&__item7
+			margin-top: 2.7rem
+			background: url('../assets/related-projects__icons2.jpg') no-repeat -39.1rem 1.2rem
+		&__item8
+			margin-top: 2.7rem
+			background: url('../assets/related-projects__icons2.jpg') no-repeat -60.5rem 1.2rem
+		&__item-paragraph
+
+	.our-team
+		padding-top: 5.6rem
+		padding-bottom: 6.7rem
+		background: #fff
+		position: relative
+		&::before
+			content: ''
+			+size(100%, 27.4rem)
+			background: $yellow
+			position: absolute
+			top: 25.1rem
+			left: 0rem
+		&__wrapper
+		&__headline
+			+arrowLeft()
+		&__content
+			width: 100%
+			margin-top: 14rem
+			padding-top: 4.1rem
+			padding-bottom: 0.3rem
+			position: relative
+		&__item
+			margin-left: 2.6rem
+			margin-right: 2.6rem
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item5
+		&__worker-pic
+		&__worker-pic1
+		&__worker-pic2
+		&__worker-pic3
+		&__worker-pic4
+		&__worker-pic5
+		&__worker-name
+			margin-top: 1.6rem
+		&__worker-position
+			margin-top: 1.3rem
+
+	.updates
+		padding-top: 6.3rem
+		padding-bottom: 7.3rem
+		&__wrapper
+		&__headline
+			+arrowRight()
+		&__content
+			width: 100%
+			margin-top: 15.1rem
+		&__text-container
+			+flex(column, wrap, flex-start, flex-start)
+			width: 54rem
+			padding-left: 8.6rem
+			position: relative
+			&::before
+				content: ''
+				+size(51.9rem, 29.7rem)
+				background: url('../assets/updates__notebook.png') no-repeat center
+				position: absolute
+				top: 1.1rem
+				right: -53.9rem
+		&__paragraph
+			text-align: left
+		&__support-center-link
+			margin-top: 1.7rem
+			padding: 1.7rem 4.2rem
+			&:hover
+
+	.hire-us
+		padding-top: 8rem
+		padding-bottom: 13.9rem
+		&__wrapper
+		&__content
+			+size(101rem, 50.7rem)
+			&::before
+		&__text-container
+			padding-top: 2.5rem
+			padding-left: 4.8rem
+			+flex(row, wrap, space-between, center)
+		&__paragraph
+		&__hire-us-link
+			padding: 1.2rem 4rem
+			margin-top: 0rem
+			&:hover
+
+	.footer
+		padding-top: 4.4rem
+		&__wrapper
+			+flex(row, wrap, space-around, flex-start)
+			+wrapper(101rem, auto)
+		&__block
+			margin: 0rem
+			+flex(row, wrap, flex-start, flex-start)
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__block-headline
+		&__list
+			margin-top: 3.4rem
+		&__list-item
+			margin-top: 1.4rem
+			&:first-child
+		&__list-link
+
+	.copy
+		padding-top: 1.8rem
+		padding-bottom: 3.2rem
+		&__wrapper
+		&__socials-container
+		&__social-link
+			margin-right: 0.6rem
+			&:hover
+			&:last-child
+			svg
+				+size(1.4rem, 1.4rem)
+				path
+		&__facebook
+		&__twitter
+		&__google-plus
+			svg
+				+size(1.9rem, 1.9rem)
+		&__linkedin
+		&__paragraph
+			margin-top: 2.6rem
+/* Large Devices, Wide Screens (XXL) */
+@media only screen and (min-width: 1400px)
+	body
 
 *
 	// @include outline($blue)
