@@ -61,13 +61,14 @@ function imagesMinification() {
 		.pipe(cache(imagemin({
 			interlaced: true,
 			progressive: true,
+			optimizationLevel: 5,
 			svgoPlugins: [
 				{removeViewBox: false},
 				{cleanupIDs: false},
 				{removeUselessStrokeAndFill: false},
 				{interlaced: false},
 				{progessive: false},
-				{optimizationLevel: 3}
+				{optimizationLevel: 0}
 			],
 			use: [pngquant()]
 		})))
