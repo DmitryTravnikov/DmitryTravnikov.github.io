@@ -57,7 +57,7 @@ function deleteDist() {
 }
 
 function imagesMinification() {
-	return gulp.src(['app/assets/**/*', '!app/assets/*.svg'])
+	return gulp.src(['app/assets/**/*', '!app/assets/*.svg', '!app/assets/*.webp'])
 		.pipe(cache(imagemin({
 			interlaced: true,
 			progressive: true,
@@ -68,7 +68,7 @@ function imagesMinification() {
 				{removeUselessStrokeAndFill: false},
 				{interlaced: false},
 				{progessive: false},
-				{optimizationLevel: 0}
+				{optimizationLevel: 3}
 			],
 			use: [pngquant()]
 		})))
@@ -89,6 +89,9 @@ function build() {
 	.pipe(gulp.dest('dist/css'));
 
 	var buildSVGs = gulp.src('app/assets/*.svg')
+	.pipe(gulp.dest('dist/assets'))
+
+	var buildWEBPs = gulp.src('app/assets/*.webp')
 	.pipe(gulp.dest('dist/assets'))
 
 	var buildFonts = gulp.src('app/fonts/!Fonts/**')
