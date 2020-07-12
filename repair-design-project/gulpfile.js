@@ -68,7 +68,7 @@ function imagesMinification() {
 				{removeUselessStrokeAndFill: false},
 				{interlaced: false},
 				{progessive: false},
-				{optimizationLevel: 3}
+				{optimizationLevel: 0}
 			],
 			use: [pngquant()]
 		})))
