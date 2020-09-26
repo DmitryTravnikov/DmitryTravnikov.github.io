@@ -150,6 +150,6 @@ $(document).ready(function() {
 
 });//doc.ready end
 
-var cLog = function(n) {
+let cLog = function(n) {
 	return console.log(n);
 };//console.log

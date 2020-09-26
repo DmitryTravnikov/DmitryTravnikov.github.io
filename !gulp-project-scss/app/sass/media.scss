@@ -1,65 +1,59 @@
 @import 'mixins/mixins';
 @import 'variables/variables';
 
-/*  Desktop First Method */
-/* Large Devices, Wide Screens */
-@media only screen and (max-width: 1300px) {
-	body {
-		background: $media-purple;
-	}
-}
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-	body {
-		background: $media-orange;
-	}
-}
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-	body {
-		background: $media-pink;
-	}
-}
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-	body {
-		background: $media-blue;
-	}
-}
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-	body {
-		background: $media-green;
-	}
-}
-// /* Mobile First Method */
-// /* Custom, iPhone Retina */
-// @media only screen and (min-width: 320px) {
-// 	body {
-// 		background: $media-green;
-// 	}
-// }
-// /* Extra Small Devices, Phones */
-// @media only screen and (min-width: 480px) {
-// 	body {
-// 		background: $media-blue;
-// 	}
-// }
-// /* Small Devices, Tablets */
-// @media only screen and (min-width: 768px) {
-// 	body {
-// 		background: $media-pink;
-// 	}
-// }
-// /* Medium Devices, Desktops */
-// @media only screen and (min-width: 992px) {
-// 	body {
-// 		background: $media-orange;
-// 	}
-// }
+// /*  Desktop First Method */
 // /* Large Devices, Wide Screens */
-// @media only screen and (min-width: 1300px) {
+// @media only screen and (max-width: 1300px) {
 // 	body {
 // 		background: $media-purple;
 // 	}
 // }
+// /* Medium Devices, Desktops */
+// @media only screen and (max-width: 992px) {
+// 	body {
+// 		background: $media-orange;
+// 	}
+// }
+// /* Small Devices, Tablets */
+// @media only screen and (max-width: 768px) {
+// 	body {
+// 		background: $media-pink;
+// 	}
+// }
+// /* Extra Small Devices, Phones */
+// @media only screen and (max-width: 480px) {
+// 	body {
+// 		background: $media-blue;
+// 	}
+// }
+// /* Custom, iPhone Retina */
+// @media only screen and (max-width: 320px) {
+// 	body {
+// 		background: $media-green;
+// 	}
+// }
+/* Mobile First Method */
+/* Extra Small Devices, Phones (SM) */
+@media only screen and (min-width: 576px) {
+	body {
+		background: $media-blue;
+	}
+}
+/* Small Devices, Tablets (MD) */
+@media only screen and (min-width: 768px) {
+	body {
+		background: $media-pink;
+	}
+}
+/* Medium Devices, Desktops (LG) */
+@media only screen and (min-width: 992px) {
+	body {
+		background: $media-orange;
+	}
+}
+/* Large Devices, Wide Screens (XL) */
+@media only screen and (min-width: 1200px) {
+	body {
+		background: $media-purple;
+	}
+}
