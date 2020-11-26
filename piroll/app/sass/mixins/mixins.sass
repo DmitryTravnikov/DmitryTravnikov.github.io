@@ -25,3 +25,32 @@
 @mixin size($width, $height)
 	width: $width
 	height: $height
+
+@mixin headlineStyle()
+	width: auto
+	margin: 0rem
+	font-family: $mm
+	font-size: 3rem
+	color: $space-grey
+	text-align: center
+
+@mixin paragraphStyle()
+	width: auto
+	margin: 0rem
+	font-family: $nsr
+	font-size: 1.6rem
+	line-height: 2.4rem
+	color: $light-grey
+	text-align: center
+
+@mixin linkStyle()
+	text-decoration: none
+	font-family: $mm
+	font-size: 1.2rem
+	color: #fff
+	text-transform: uppercase
+	background: $blue
+	transition: .2s
+	padding: 2rem 5rem
+	&:hover
+		background: darken($blue, 3%)
