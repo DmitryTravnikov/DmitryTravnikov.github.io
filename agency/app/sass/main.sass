@@ -1,0 +1,591 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+*
+
+body
+	cursor: default
+	overflow-x: hidden
+
+.wrapper
+	+wrapper(90%, auto)
+
+// 1rem === 10px
+
+.header
+	padding: 3rem 0rem
+	background: #F6F2F2
+	&__wrapper
+	&__menu
+		background: #313030
+		+flex(column, wrap, flex-start, center)
+	&__menu-link
+		text-decoration: none
+		font-family: $osb
+		font-size: 1.4rem
+		color: #E0E0E0
+		text-transform: uppercase
+		text-align: center
+		transition: .2s
+		width: 100%
+		padding: 2rem 0rem
+		&:hover
+			background: $red
+
+.main
+	background: #F6F2F2
+	padding: 3rem 0rem 7rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__left
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+	&__right
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+	&__text-container
+		+flex(column, wrap, flex-start, center)
+		width: 100%
+	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $oseb
+		font-size: 4rem
+		line-height: 5.2rem
+		color: #000
+		text-transform: uppercase
+		text-align: center
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $osr
+		font-size: 1.6rem
+		line-height: 2.8rem
+		color: #494848
+		text-align: center
+		margin-top: 1.6rem
+	&__contact-us-link
+		text-decoration: none
+		font-family: $osb
+		font-size: 1.8rem
+		color: #fff
+		background: $red
+		transition: .2s
+		padding: 2.1rem 6.3rem
+		border-radius: .3rem
+		margin-top: 1.6rem
+		&:hover
+			background: darken($red, 3%)
+	&__video-container
+		position: relative
+		z-index: 60
+		+size(100%, 35.6rem)
+		overflow: hidden
+		margin-top: 3rem
+		box-shadow: 1.4rem 0rem 7.3rem rgba(#000, .3)
+	&__video-overlay
+		background: #C4C0B1
+		+size(102%, 102%)
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		opacity: 1
+		+flex(column, wrap, center, center)
+		transition: 1s
+		z-index: 2
+	&__video-play-button
+		+size(7rem, 7rem)
+		border-radius: 50%
+		border: 0.7rem solid #fff
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 59%
+			transform: translate(-50%, -50%)
+			display: inline-block
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 1.6rem 0 1.6rem 2.6rem
+			border-color: transparent transparent transparent #fff
+	&__video
+		+size(100%, 100%)
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		z-index: 1
+
+.we-do
+	background: #fff
+	padding: 3rem 0rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__left
+		+flex(column, wrap, flex-start, center)
+	&__right
+		+flex(column, wrap, flex-start, center)
+		margin-top: 2.6rem
+	&__headline
+		+headlineStyle()
+	&__paragraph
+		+paragraphStyle()
+		margin-top: 1.6rem
+	&__learn-more-link
+		text-decoration: none
+		font-family: $osb
+		font-size: 1.8rem
+		color: $red
+		border-radius: .3rem
+		background: #fff
+		border: .2rem solid $red
+		transition: .2s
+		padding: 1.6rem 5.8rem
+		margin-top: 1.6rem
+		&:hover
+			background: $red
+			color: #fff
+	&__item
+		padding-top: 6rem
+		margin-top: 1.6rem
+		width: 70%
+		&:first-child
+			margin-top: 0rem
+	&__item1
+		background: url('../assets/we-do__icon1.webp') no-repeat center 0rem
+	&__item2
+		background: url('../assets/we-do__icon2.webp') no-repeat center 0rem
+	&__item3
+		background: url('../assets/we-do__icon3.webp') no-repeat center 0rem
+	&__item4
+		background: url('../assets/we-do__icon4.webp') no-repeat center 0rem
+	&__item-headline
+		width: 100%
+		margin: 0rem
+		font-family: $ossb
+		font-size: 2.4rem
+		color: #4C4C4C
+		text-align: center
+	&__item-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $osr
+		font-size: 1.6rem
+		line-height: 2.8rem
+		color: #4C4C4C
+		text-align: center
+		margin-top: 1.6rem
+
+.products
+	background: #fff
+	padding: 3rem 0rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__headline
+		+headlineStyle()
+	&__paragraph
+		+paragraphStyle()
+		margin-top: 1.6rem
+	&__splitter
+		outline: none
+		border: none
+		+size(13.2rem, .2rem)
+		background: $red
+		margin: 0rem auto
+		margin-top: 1.6rem
+	&__menu
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		margin-top: 1.6rem
+		+flex(row, wrap, center, flex-start)
+	&__menu-list-item
+		padding: 0rem
+		margin: 1rem
+	&__menu-link
+		text-decoration: none
+		font-family: $ossb
+		font-size: 2.2rem
+		color: #4C4C4C
+		text-transform: uppercase
+		transition: .2s
+		&.active
+			color: $red
+	&__content-container
+		margin-top: 1rem
+		+size(100%, 120rem)
+	&__content
+		+flex(column, wrap, flex-start, center)
+		+size(100%, 120rem)
+	&__item
+		+size(100%, 29rem)
+		background: url('http://source.unsplash.com/400x400') no-repeat center
+		background-size: cover
+		position: relative
+		margin-top: 1rem
+		&:first-child
+			margin-top: 0rem
+		&::before
+			content: ''
+			+size(100%, 100%)
+			background: linear-gradient(45deg, rgba($red, .3), rgba($blue, .3))
+			position: absolute
+			top: 0rem
+			left: 0rem
+			opacity: 1
+			transition: .2s
+		&:hover::before
+			opacity: 0
+	&__item1
+	&__item2
+	&__item3
+	&__item4
+	&__item5
+		display: none
+	&__item6
+		display: none
+	&__item7
+		display: none
+	&__item8
+		display: none
+
+.m-team
+	padding: 3rem 0rem
+	background: #fff
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__headline
+		+headlineStyle()
+	&__paragraph
+		+paragraphStyle()
+		margin-top: 1.6rem
+	&__splitter
+		outline: none
+		border: none
+		+size(13.2rem, .2rem)
+		background: $red
+		margin-top: 1.6rem
+	&__content
+		margin-top: 1.6rem
+		width: 100%
+	&__worker
+		+flex(column, wrap, flex-start, center)
+		margin-top: 5rem
+		&:first-child
+			margin-top: 0rem
+	&__worker1
+	&__worker2
+	&__worker3
+	&__worker4
+	&__worker-pic
+	&__worker-name
+		width: 100%
+		margin: 0rem
+		font-family: $ossb
+		font-size: 3rem
+		color: #333
+		text-transform: uppercase
+		text-align: center
+		margin-top: 1rem
+	&__worker-description
+		width: 100%
+		margin: 0rem
+		font-family: $osr
+		font-size: 1.6rem
+		line-height: 2.8rem
+		color: #737373
+		text-align: center
+		margin-top: 1rem
+	&__worker-socials
+		+flex(row, wrap, center, flex-start)
+		margin-top: 0.4rem
+	&__worker-social-link
+		text-decoration: none
+		font-family: $osi
+		font-size: 1.8rem
+		color: #333
+		margin-right: 1rem
+		margin-top: 1rem
+		&:last-child
+			margin-right: 0rem
+
+.d-team
+	display: none
+	&__wrapper
+	&__headline
+	&__paragraph
+	&__splitter
+	&__content
+	&__block
+	&__description
+	&__description1
+	&__description2
+	&__description3
+	&__description4
+	&__worker-name
+	&__worker-info
+	&__worker-socials
+	&__worker-social-link
+	&__big-image
+	&__workers
+	&__worker-image
+
+.subscribe
+	background: darken(#F5F0DD, 15%)
+	padding: 3rem 0rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $osb
+		font-size: 4.2rem
+		color: #fff
+		text-align: center
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $osr
+		font-size: 1.6rem
+		color: #fff
+		text-align: center
+		margin-top: 1.6rem
+	&__form
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+		margin-top: 2.3rem
+	&__email-input
+		outline: none
+		border: .1rem solid transparent
+		border-radius: 0.5rem
+		background: #fff
+		font-family: $osr
+		font-size: 1.6rem
+		color: #6B6B6B
+		padding: 3.2rem 3.6rem
+		width: 100%
+		&::placeholder
+			font-family: $osr
+			font-size: 1.6rem
+			color: #6B6B6B
+	&__button
+		outline: none
+		border: none
+		border-radius: 0.5rem
+		background: $red
+		font-family: $osb
+		font-size: 1.8rem
+		color: #fff
+		text-transform: uppercase
+		transition: .2s
+		cursor: pointer
+		padding: 3.2rem 5.8rem
+		margin-top: 1.6rem
+		&:hover
+			background: darken($red, 3%)
+
+.contact
+	background: #fff
+	padding: 3rem 0rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__headline
+		+headlineStyle()
+	&__paragraph
+		+paragraphStyle()
+		margin-top: 1.6rem
+	&__splitter
+		outline: none
+		border: none
+		+size(13.2rem, .2rem)
+		background: $red
+		margin: 0rem auto
+		margin-top: 2.6rem
+	&__form
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+		margin-top: 2.6rem
+	&__form-row
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+	&__input
+		outline: none
+		border: .1rem solid transparent
+		resize: none
+		background: #E5E5E5
+		border-radius: 0.7rem
+		font-family: $osr
+		font-size: 1.6rem
+		color: #444
+		padding: 2.8rem 5.4rem
+		width: 100%
+		margin-top: 1.6rem
+		&::placeholder
+			font-family: $osr
+			font-size: 1.6rem
+			color: #444
+	&__name-input
+		margin-top: 0rem
+	&__email-input
+	&__message-input
+		height: 24rem
+	&__send-message-button
+		outline: none
+		border: none
+		cursor: pointer
+		border-radius: .4rem
+		font-family: $osb
+		font-size: 1.8rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		background: $red
+		transition: .2s
+		width: 100%
+		margin-top: 1.6rem
+		padding: 3rem 0rem
+		&:hover
+			background: darken($red, 5%)
+	&__info
+		background: #2D2D2D
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+		padding: 3rem 3rem
+		margin-top: 1.6rem
+	&__info-headline
+		width: 100%
+		margin: 0rem
+		font-family: $osb
+		font-size: 1.8rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+	&__address
+		text-decoration: none
+		font-family: $osr
+		font-size: 1.6rem
+		color: #D5D5D5
+		text-align: center
+		margin-top: 1.6rem
+	&__email
+		text-decoration: none
+		font-family: $osr
+		font-size: 1.6rem
+		line-height: 2.8rem
+		color: #D5D5D5
+		text-align: center
+		margin-top: 1.6rem
+	&__phone
+		text-decoration: none
+		font-family: $osr
+		font-size: 1.6rem
+		color: #D5D5D5
+		text-align: center
+		margin-top: 1.6rem
+
+.copy
+	background: #313030
+	padding: 3rem 0rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__link
+		width: auto
+		margin: 0rem
+		text-decoration: none
+		font-family: $osr
+		font-size: 1.6rem
+		line-height: 2.4rem
+		color: #B8B8B8
+		text-align: center
+	&__socials
+		+flex(row, wrap, center, flex-start)
+		margin-top: 1.8rem
+	&__social-link
+		+size(3.3rem, 3.3rem)
+		border-radius: 50%
+		background: #EBEBEB
+		+flex(row, wrap, center, center)
+		margin-right: 0.8rem
+		transition: .2s
+		&:hover
+			background: darken(#EBEBEB, 8%)
+		&:last-child
+			margin-right: 0rem
+		svg
+			+size(1.8rem, 1.8rem)
+			path
+				fill: #313030
+	&__twitter
+	&__linked-in
+		svg
+			+size(1.9rem, 1.9rem)
+	&__google-plus
+		svg
+			+size(2.6rem, 2.6rem)
+	&__facebook
+		svg
+			+size(1.9rem, 1.9rem)
+
+.modal
+	&__overlay
+		+size(100%, 100%)
+		background: rgba(#000, .9)
+		position: fixed
+		top: 0rem
+		left: 0rem
+		z-index: 999
+		display: none
+	&__window
+		+size(100%, 20rem)
+		background: #000
+		position: fixed
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		z-index: -1
+		opacity: -1
+		+flex(row, wrap, center, center)
+	&__subscribe-success
+	&__error-container
+	&__success-container
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $osr
+		font-size: 2rem
+		color: #fff
+		text-align: center
+	&__subscribe-paragraph
+	&__error-paragraph
+	&__success-paragraph
+
+.to-top
+	+size(5rem, 5rem)
+	background: $red
+	position: fixed
+	bottom: 0rem
+	right: 0rem
+	opacity: 1
+	z-index: 995
+	transition: .2s
+	&::before, &::after
+		content: ''
+		+size(1.6rem, .2rem)
+		background: #fff
+		position: absolute
+		top: 2.6rem
+	&::before
+		left: 1.3rem
+		transform: rotate(-60deg)
+	&::after
+		right: 1.3rem
+		transform: rotate(60deg)
+	&.mPS2id-highlight
+		opacity: 0
+		z-index: -1
+
+*
+	// +outline($blue)
