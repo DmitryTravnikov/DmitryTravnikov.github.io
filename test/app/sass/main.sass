@@ -15,8 +15,8 @@ body
 	font-size: 1.8rem
 	overflow: visible
 
-.active
-	background: $blue
+// .active
+// 	background: $blue
 
 td
 	@include size(5rem, 5rem)
@@ -24,8 +24,92 @@ td
 
 input
 	outline: none
+	border: .1rem solid transparent
 
+.first-section
+	+size(100%, 40rem)
+	background: darken($blue, 20%)
+.last-section
+	+size(100%, 40rem)
+	background: darken($green, 32%)
 
+.main
+	+flex(column, wrap, flex-start, center)
+	&__section-name
+	&__headline
+	&__splitter
+		margin: 0rem auto
+		border: none
+		+size(18rem, .4rem)
+		background: $yellow
+	&__paragraph
+	&__list
+		list-style: none
+		+flex(row, wrap, flex-start, flex-start)
+	&__list-item
+		margin-right: 1rem
+	&__list-link
+		text-decoration: none
+		color: #fff
+		&.active
+			color: $blue
+	&__content-container
+		+flex(column, wrap, flex-start, center)
+		width: 100%
+		height: 89.5rem
+		+outline($red)
+	&__content
+		+flex(column, wrap, flex-start, center)
+		width: 100%
+	&__block
+	&__image
+		+size(60rem, 40rem)
+		background: url('http://source.unsplash.com/400x400') no-repeat center
+		background-size: cover
+	&__block-text
+	&__block-headline
+	&__block-paragraph
+	&__pics-container
+		+size(100%, auto)
+		display: none
+		&.active
+			+flex(row, wrap, flex-start, flex-start)
+	&__pics-container1
+	&__pics-container2
+	&__pic
+		+size(calc(100% / 6), 20rem)
+		+outline($blue)
+		background: url('http://source.unsplash.com/400x400') no-repeat center
+		background-size: cover
+		text-decoration: none
+	&__pic1
+	&__pic2
+	&__pic3
+	&__pic4
+	&__pic5
+	&__pic6
+	&__pic7
+	&__pic8
+	&__pic9
+	&__pic10
+	&__pic11
+	&__pic12
+	&__pic-text
+		display: none
+		background: darken($blue, 20%)
+		+size(100%, 100%)
+		color: #fff
+		text-align: center
+	&__pic:hover &__pic-text
+		+flex(column, wrap, center, center)
+	&__pic-headline
+	&__pic-paragraph
+	&__show-more-link
+		text-decoration: none
+		+size(10rem, 10rem)
+		+outline($red)
+		color: #fff
+		+flex(column, wrap, center, center)
 
 *
 	// +outline($blue)

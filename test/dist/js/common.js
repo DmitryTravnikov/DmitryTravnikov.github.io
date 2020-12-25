@@ -146,7 +146,48 @@ $(document).ready(function() {
 	}// prevdef();
 	prevdef();
 
-	
+	let mainListLinks = document.querySelectorAll('.main__list-link');
+	for (let i = 0; i < mainListLinks.length; i++) {
+		mainListLinks[i].onclick = function() {
+			for (let i = 0; i < mainListLinks.length; i++) {
+				mainListLinks[i].classList.remove('active');
+			}
+			this.classList.add('active');
+		}
+	}
+
+	//AJAX вкладки (анимацию делать на keyframes)
+	$('.main__list-link').click(function() {
+
+		var info = $(this).attr('href') + ' .main__content';//берет href ссылки и задает тот блок, который будет обновляться с помощью ajax при переходе по ссылке
+		$('.main__content').hide(0, loadContent());//скрываем содержимое блока .main__content той страницы, на которой находимся//задать анимацию для содержимого
+		$('#loader').fadeIn('slow');//анимация лоадера
+
+		function loadContent() {//основная функция для загрузки контента
+			$('.main__content').load(info, '', function() {//блок, в который мы хотим загрузить новый контент//info подгружает именно тот контент, который нам нужен//'' - различные переменные, дата, опускаем его
+				$('.main__content').show('fast', hideLoader());//показываем наш блок с контентом//скрываем лоадер//задать анимацию для содержимого
+			});
+		}
+
+		function hideLoader() {//функция для скрытия лоадера
+			$('#loader').fadeOut('normal');
+		}
+
+		return false;//чтобы не происходило перехода по ссылке, а только происходила подгрузка контента
+
+	});//ajax вкладки end
+
+	let mainPicsContainers = document.querySelectorAll('.main__pics-container');
+	let picsContainersCounter = 0;
+	let mainShowMoreLink = document.querySelector('.main__show-more-link');
+	mainShowMoreLink.addEventListener('click', foo);
+	function foo() {
+		picsContainersCounter++;
+		mainPicsContainers[picsContainersCounter].classList.add('active');
+		if (picsContainersCounter >= mainPicsContainers.length - 1) {
+			mainShowMoreLink.removeEventListener('click', foo);
+		}
+	}
 
 });//doc.ready end
 
