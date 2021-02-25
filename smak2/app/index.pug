@@ -6,7 +6,7 @@ doctype html
 html(lang="ru")
 	// <![endif]
 	head
-		title test
+		title Smak2
 		meta(charset="UTF-8")
 		meta(name="description" content="")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
@@ -26,12 +26,31 @@ html(lang="ru")
 		link(rel="stylesheet", href="css/media.css")
 	body
 		// Content Start
-		.block
-			
+
+		// Header
+		header.header
+			.header__wrapper.wrapper
+				a.prevdef.header__logo-container(href="#")
+					img.header__logo(src="assets/header__logo.webp", alt="pic")
+				nav.header__menu
+					a.prevdef.header__menu-link(href="#") Home
+					a.prevdef.header__menu-link(href="#") Services
+					a.prevdef.header__menu-link(href="#") Work
+					a.prevdef.header__menu-link(href="#") About
+					a.prevdef.header__menu-link(href="#") Clients
+					a.prevdef.header__menu-link(href="#") Contact
+
+		// Main
+		.main
+			.main__text-container
+				h1.main__headline Branding Have Another Definition
+				a.prevdef.main__buy-link(href="#") Buy This Theme
+			a.prevdef.main__scroll-down-link(href="#")
+
 		// Content End
 		// Scripts
 		// General
-		script(src="libs/jquery/jquery-3.5.1.min.js")
+		script(src="libs/jquery/jquery-3.3.1.min.js")
 		script(src="js/common.js")
 		// Masked Input
 		script(src="libs/masked-input/jquery.maskedinput.min.js")

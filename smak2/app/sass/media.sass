@@ -1,0 +1,158 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+/* Mobile First Method */
+/* Extra Small Devices, Phones (SM) */
+@media only screen and (min-width: 576px)
+	body
+		background: $media-blue
+	*
+		outline-color: $media-blue
+
+	.header
+		&__wrapper
+		&__logo-container
+		&__logo
+		&__menu
+			+flex(row, wrap, space-between, flex-start)
+		&__menu-link
+			margin-top: 0rem
+			margin-right: 4rem
+			position: relative
+			&::before
+				content: ''
+				+size(.5rem, .5rem)
+				background: $yellow
+				position: absolute
+				top: 50%
+				right: -2.3rem
+				transform: translateY(-50%)
+			&:last-child
+				margin-right: 0rem
+			&:last-child::before
+				content: none
+			&:first-child
+			&:hover
+/* Small Devices, Tablets (MD) */
+@media only screen and (min-width: 768px)
+	body
+		background: $media-pink
+	*
+		outline-color: $media-pink
+
+	.header
+		&__wrapper
+			+flex(row, wrap, space-between, center)
+		&__logo-container
+		&__logo
+		&__menu
+			margin-top: 1.6rem
+		&__menu-link
+			&::before
+			&:last-child
+			&:last-child::before
+			&:first-child
+			&:hover
+
+	.main
+		&__text-container
+		&__headline
+			width: 50%
+		&__buy-link
+		&__scroll-down-link
+			&:hover
+/* Medium Devices, Desktops (LG) */
+@media only screen and (min-width: 992px)
+	body
+		background: $media-orange
+	*
+		outline-color: $media-orange
+
+	.header
+		position: absolute
+		top: 0rem
+		left: 0rem
+		width: 100%
+		&__wrapper
+		&__logo-container
+		&__logo
+		&__menu
+		&__menu-link
+			&::before
+			&:last-child
+			&:last-child::before
+			&:first-child
+			&:hover
+
+	.main
+		padding: 0rem
+		height: 100vh
+		+flex(column, wrap, flex-end, center)
+		&__text-container
+			padding-top: 5.6rem
+			padding-bottom: 6.5rem
+			position: absolute
+			top: 50%
+			left: 0rem
+			width: 100%
+			transform: translateY(-50%)
+		&__headline
+			font-size: 6.4rem
+			width: 70%
+		&__buy-link
+			margin-top: 4.7rem
+		&__scroll-down-link
+			margin-top: 0rem
+			&:hover
+/* Large Devices, Wide Screens (XL) */
+@media only screen and (min-width: 1200px)
+	body
+		background: $media-purple
+	*
+		outline-color: $media-purple
+
+	.wrapper
+		+size(117.1rem, auto)
+
+	.header
+		padding-top: 1.6rem
+		padding-bottom: 2.2rem
+		position: absolute
+		top: 0rem
+		left: 0rem
+		width: 100%
+		&__wrapper
+		&__logo-container
+		&__logo
+		&__menu
+			margin-top: 0.2rem
+			margin-right: 0.9rem
+		&__menu-link
+			margin-right: 5.2rem
+			&::before
+				right: -2.9rem
+			&:last-child
+			&:last-child::before
+			&:first-child
+			&:hover
+
+	.main
+		padding: 0rem
+		height: 100vh
+		+flex(column, wrap, flex-end, center)
+		&__text-container
+			padding-top: 5.6rem
+			padding-bottom: 6.5rem
+			position: absolute
+			top: 50%
+			left: 0rem
+			width: 100%
+			transform: translateY(-50%)
+		&__headline
+			font-size: 6.4rem
+			width: 50%
+		&__buy-link
+			margin-top: 4.7rem
+		&__scroll-down-link
+			margin-top: 0rem
+			&:hover

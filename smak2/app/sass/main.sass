@@ -1,0 +1,68 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+*
+	user-select: none
+
+body
+	overflow-x: hidden
+
+.wrapper
+	+wrapper(90%, auto)
+
+// 1rem === 10px
+
+.header
+	background: $green
+	padding: 4rem 0rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__logo-container
+	&__logo
+	&__menu
+		+flex(column, wrap, flex-start, center)
+		margin-top: 3.6rem
+	&__menu-link
+		text-decoration: none
+		font-family: $ob
+		font-size: 1.4rem
+		color: #fff
+		text-transform: uppercase
+		margin-top: 2rem
+		transition: .2s
+		&:first-child
+			margin-top: 0rem
+		&:hover
+			color: $yellow
+
+.main
+	background: $l-green
+	padding: 3rem 0rem 0rem
+	+flex(column, wrap, flex-start, center)
+	&__text-container
+		width: 100%
+		background: $green
+		+flex(column, wrap, flex-start, center)
+		padding: 3rem 0rem
+		position: static
+	&__headline
+		width: 90%
+		margin: 0rem
+		font-family: $ob
+		font-size: 4.4rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+	&__buy-link
+		+linkStyle()
+		margin-top: 2.6rem
+	&__scroll-down-link
+		+size(6rem, 6rem)
+		background: $yellow url('../assets/main__arrow-icon.webp') no-repeat center
+		margin-top: 2.6rem
+		transition: .2s
+		&:hover
+			background: darken($yellow, 2%) url('../assets/main__arrow-icon.webp') no-repeat center
+
+*
+	// +outline($blue)
