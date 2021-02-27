@@ -205,7 +205,62 @@
 		&__facebook
 		&__twitter
 
+	.clients
+		&__wrapper
+		&__section-name
+		&__headline
+		&__splitter
+		&__paragraph
+		&__content
+		&__slider
+		&__slide
+			+flex(row, wrap, center, flex-start)
+		&__slide1
+		&__slide2
+		&__slide3
+		&__item
+			margin: 0.2rem
+			&:first-child
+				margin: 0.2rem
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item5
+		&__item6
+		&__slider-buttons-container
+		&__slider-button
+		&__slider-prev-button
+			&:hover
+		&__slider-next-button
+			&:hover
 
+	.form-section
+		&__wrapper
+		&__headline
+		&__paragraph
+		&__form
+			width: 44rem
+		&__row
+		&__row1
+		&__row2
+		&__input
+			&::placeholder
+		&__name-input
+		&__mail-input
+		&__subject-input
+		&__message-input
+		&__submit-button
+
+	.modal
+		&__overlay
+		&__window
+			+size(40rem, auto)
+		&__paragraph
+		&__error-container
+		&__success-container
+		&__error-paragraph
+		&__success-paragraph
 /* Small Devices, Tablets (MD) */
 @media only screen and (min-width: 768px)
 	body
@@ -358,6 +413,72 @@
 		&__item-headline
 		&__item-paragraph
 
+	.clients
+		&__wrapper
+		&__section-name
+		&__headline
+		&__splitter
+		&__paragraph
+		&__content
+		&__slider
+		&__slide
+		&__slide1
+		&__slide2
+		&__slide3
+		&__item
+			&:first-child
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+			display: block
+		&__item5
+		&__item6
+		&__slider-buttons-container
+		&__slider-button
+		&__slider-prev-button
+			&:hover
+		&__slider-next-button
+			&:hover
+
+	.review
+		&__wrapper
+		&__slider
+			.owl-wrapper-outer
+				.owl-wrapper
+			.owl-controls
+				.owl-pagination
+					.owl-page
+					.owl-page span
+					.owl-page:last-child span
+					.owl-page.active span
+		&__slide
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide4
+		&__quote
+			width: 60%
+		&__splitter
+		&__quote-author
+
+	.contact
+		&__wrapper
+		&__section-name
+		&__headline
+		&__splitter
+		&__paragraph
+		&__content
+			+flex(row, wrap, space-between, stretch)
+			width: 100%
+		&__item
+			width: calc(100% / 3.5)
+		&__item1
+		&__item2
+		&__item3
+		&__item-headline
+		&__item-paragraph
+
 
 /* Medium Devices, Desktops (LG) */
 @media only screen and (min-width: 992px)
@@ -401,6 +522,7 @@
 			margin-top: 4.7rem
 		&__scroll-down-link
 			margin-top: 0rem
+			display: block
 			&:hover
 
 	.services
@@ -522,7 +644,55 @@
 		&__item-headline
 		&__item-paragraph
 
+	.clients
+		&__wrapper
+		&__section-name
+		&__headline
+		&__splitter
+		&__paragraph
+		&__content
+		&__slider
+		&__slide
+		&__slide1
+		&__slide2
+		&__slide3
+		&__item
+			&:first-child
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item5
+			display: block
+		&__item6
+		&__slider-buttons-container
+		&__slider-button
+		&__slider-prev-button
+			&:hover
+		&__slider-next-button
+			&:hover
 
+	.form-section
+		&__wrapper
+		&__headline
+		&__paragraph
+		&__form
+			width: 100%
+		&__row
+			width: 100%
+		&__row1
+			+flex(row, wrap, space-between, flex-start)
+		&__row2
+		&__input
+			width: 32%
+			&::placeholder
+		&__name-input
+		&__mail-input
+		&__subject-input
+		&__message-input
+			width: 100%
+			height: 20rem
+		&__submit-button
 /* Large Devices, Wide Screens (XL) */
 @media only screen and (min-width: 1200px)
 	body
@@ -794,6 +964,14 @@
 	.team
 		padding-top: 6.7rem
 		padding-bottom: 0rem
+		position: relative
+		&::before
+			content: ''
+			+size(100%, 30rem)
+			background: $space-grey
+			position: absolute
+			bottom: 0rem
+			left: 0rem
 		&__wrapper
 		&__headline
 		&__paragraph
@@ -898,3 +1076,143 @@
 		&__facebook
 		&__twitter
 			margin-left: 2.4rem
+
+	.skills
+		padding-top: 6.3rem
+		padding-bottom: 6.3rem
+		&__wrapper
+		&__headline
+		&__paragraph
+		&__content
+			margin-top: 5.8rem
+			+flex(row, wrap, space-around, stretch)
+		&__item
+			margin: 0rem
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__icon
+			&::before
+		&__icon1
+			&::before
+		&__icon2
+			&::before
+		&__icon3
+			&::before
+		&__icon4
+			&::before
+		&__item-headline
+			margin-top: 2.3rem
+
+	.clients
+		padding-top: 6.2rem
+		padding-bottom: 5.9rem
+		&__wrapper
+			+flex(column, wrap, center, center)
+		&__section-name
+		&__headline
+		&__splitter
+			margin-top: 2.4rem
+		&__paragraph
+			margin-top: 2rem
+			width: 84%
+		&__content
+			margin-top: 7.9rem
+		&__slider
+		&__slide
+			+flex(row, wrap, space-between, center)
+		&__slide1
+		&__slide2
+		&__slide3
+		&__item
+			margin: 0rem
+			&:first-child
+				margin: 0rem
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item5
+		&__item6
+			display: block
+		&__slider-buttons-container
+			margin-top: 7.2rem
+		&__slider-button
+		&__slider-prev-button
+			&:hover
+		&__slider-next-button
+			margin-left: 4rem
+			&:hover
+
+	.review
+		padding-top: 6.3rem
+		padding-bottom: 9.8rem
+		&__wrapper
+		&__slider
+			.owl-wrapper-outer
+				.owl-wrapper
+			.owl-controls
+				bottom: -3.2rem
+				.owl-pagination
+					.owl-page
+					.owl-page span
+					.owl-page:last-child span
+					.owl-page.active span
+		&__slide
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide4
+		&__quote
+			width: 49%
+		&__splitter
+			margin-top: 2.3rem
+		&__quote-author
+			margin-top: 2.1rem
+
+	.contact
+		padding-top: 6.1rem
+		padding-bottom: 6.3rem
+		&__wrapper
+		&__section-name
+		&__headline
+		&__splitter
+			margin-top: 2.3rem
+		&__paragraph
+			margin-top: 2rem
+			width: 85%
+		&__content
+			margin-top: 4.1rem
+		&__item
+		&__item1
+		&__item2
+		&__item3
+		&__item-headline
+		&__item-paragraph
+			margin-top: 2.3rem
+
+	.form-section
+		padding-top: 6.2rem
+		padding-bottom: 7rem
+		&__wrapper
+		&__headline
+		&__paragraph
+		&__form
+			margin-top: 4.4rem
+		&__row
+		&__row1
+		&__row2
+			margin-top: 1.2rem
+		&__input
+			padding: 2rem 2rem
+			width: 32%
+			&::placeholder
+		&__name-input
+		&__mail-input
+		&__subject-input
+		&__message-input
+			width: 100%
+			height: 22.1rem
+		&__submit-button
+			margin-top: 2.6rem

@@ -316,6 +316,121 @@ $(document).ready(function() {
 		}
 	}
 
+
+
+
+
+
+
+	 //Каруселька
+	 //Документация: http://owlgraphic.com/owlcarousel/
+	 var clientsSlider = $(".clients__slider");
+	 clientsSlider.owlCarousel({
+		 items : 1,
+		 autoPlay: 5000,
+		 pagination: false,
+		 transitionStyle: 'fade',
+		 itemsDesktop: [1199,1],
+		 itemsDesktopSmall: [979,1],
+		 itemsTablet: [768,1],
+		 itemsMobile: [479,1]
+	 });
+	 $(".clients__slider-next-button").click(function(){
+		 clientsSlider.trigger("owl.next");
+	 });
+	 $(".clients__slider-prev-button").click(function(){
+		 clientsSlider.trigger("owl.prev");
+	 });//карусель end
+
+	 //Каруселька
+	 //Документация: http://owlgraphic.com/owlcarousel/
+	 var reviewSlider = $(".review__slider");
+	 reviewSlider.owlCarousel({
+		 items : 1,
+		 autoPlay: 5000,
+		 pagination: true,
+		 transitionStyle: 'fade',
+		 itemsDesktop: [1199,1],
+		 itemsDesktopSmall: [979,1],
+		 itemsTablet: [768,1],
+		 itemsMobile: [479,1]
+	 });
+
+
+
+
+
+
+
+
+	let modalOverlay = document.querySelector('.modal__overlay');
+	let modalErrorContainer = document.querySelector('.modal__error-container');
+	let modalSuccessContainer = document.querySelector('.modal__success-container');
+	let modalWindows = document.querySelectorAll('.modal__window');
+
+	let formSectionNameInput = document.querySelector('.form-section__name-input');
+	let formSectionMailInput = document.querySelector('.form-section__mail-input');
+	let formSectionSubjectInput = document.querySelector('.form-section__subject-input');
+	let formSectionMessageInput = document.querySelector('.form-section__message-input');
+	let formSectionSubmitButton = document.querySelector('.form-section__submit-button');
+
+	let formSectionValidationArray = [formSectionNameInput, formSectionMailInput, formSectionSubjectInput, formSectionMessageInput];
+
+	formSectionSubmitButton.addEventListener('click', formSectionValidationCheck);
+
+	modalOverlay.addEventListener('click', modalsHide);
+	for (let i = 0; i < modalWindows.length; i++) {
+		modalWindows[i].addEventListener('click', modalsHide);
+	}
+
+	function formSectionValidationCheck() {
+		for (let i = 0; i < formSectionValidationArray.length; i++) {
+			if (!formSectionValidationArray[i].value) {
+				formSectionValidationArray[i].style.borderColor = '#FFE600';
+				modalErrorShow();
+			} else {
+				formSectionValidationArray[i].style.borderColor = '';
+			}
+		}
+
+		if (formSectionNameInput.value && formSectionMailInput.value && formSectionSubjectInput.value && formSectionMessageInput.value) {
+			modalSuccessShow();
+		}
+	}
+
+	function modalErrorShow() {
+		modalOverlay.style.display = 'block';
+		modalErrorContainer.style.opacity = '1';
+		modalErrorContainer.style.zIndex = '999';
+	}
+
+	function modalSuccessShow() {
+		modalOverlay.style.display = 'block';
+		modalSuccessContainer.style.opacity = '1';
+		modalSuccessContainer.style.zIndex = '999';
+
+		for (let i = 0; i < formSectionValidationArray.length; i++) {
+			formSectionValidationArray[i].style.border = '';
+			formSectionValidationArray[i].value = '';
+		}
+	}
+
+	function modalsHide() {
+		modalOverlay.style.display = 'none';
+		modalErrorContainer.style.opacity = '0';
+		modalErrorContainer.style.zIndex = '-1';
+		modalSuccessContainer.style.opacity = '0';
+		modalSuccessContainer.style.zIndex = '-1';
+	}
+
+
+
+
+
+
+
+	
+
 });//doc.ready end
 
 var cLog = function(n) {

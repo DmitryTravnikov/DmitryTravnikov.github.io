@@ -61,6 +61,7 @@ body
 		background: $yellow url('../assets/main__arrow-icon.webp') no-repeat center
 		margin-top: 2.6rem
 		transition: .2s
+		display: none
 		&:hover
 			background: darken($yellow, 2%) url('../assets/main__arrow-icon.webp') no-repeat center
 
@@ -522,6 +523,369 @@ body
 	&__social-link
 	&__facebook
 	&__twitter
+
+.skills
+	background: $d-green
+	padding: 3rem 0rem
+	&__wrapper
+	&__headline
+		+headlineStyle()
+		color: #fff
+	&__paragraph
+		+paragraphStyle()
+		color: #fff
+		margin-top: 1.6rem
+	&__content
+		width: 100%
+		+flex(row, wrap, center, center)
+		margin-top: 1.6rem
+	&__item
+		+flex(column, wrap, flex-start, center)
+		margin: 2rem
+	&__item1
+	&__item2
+	&__item3
+	&__item4
+	&__icon
+		position: relative
+		+size(14.4rem, 14.4rem)
+		&::before
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			font-family: $ol
+			font-size: 3.5rem
+			color: $yellow
+			text-transform: uppercase
+			text-align: center
+	&__icon1
+		background: url('../assets/skills__icon1.webp') no-repeat center
+		&::before
+			content: '90%'
+	&__icon2
+		background: url('../assets/skills__icon2.webp') no-repeat center
+		&::before
+			content: '96%'
+	&__icon3
+		background: url('../assets/skills__icon3.webp') no-repeat center
+		&::before
+			content: '85%'
+	&__icon4
+		background: url('../assets/skills__icon4.webp') no-repeat center
+		&::before
+			content: '94%'
+	&__item-headline
+		width: 100%
+		margin: 0rem
+		font-family: $or
+		font-size: 2rem
+		font-weight: 400
+		color: $yellow
+		text-transform: uppercase
+		text-align: center
+		margin-top: 1.6rem
+
+.clients
+	background: #fff
+	padding: 3rem 0rem
+	&__wrapper
+	&__section-name
+		+sectionNameStyle()
+	&__headline
+		+headlineStyle()
+		margin-top: 1.6rem
+	&__splitter
+		+splitterStyle()
+		margin-top: 1.6rem
+	&__paragraph
+		+paragraphStyle()
+		margin-top: 1.6rem
+	&__content
+		width: 100%
+		margin-top: 2.6rem
+		+flex(column, wrap, center, center)
+	&__slider
+		width: 100%
+	&__slide
+		width: 100%
+		+flex(column, wrap, center, center)
+	&__slide1
+	&__slide2
+	&__slide3
+	&__item
+		+size(16.4rem, 5.2rem)
+		display: none
+		margin-top: 2rem
+		&:first-child
+			margin-top: 0rem
+	&__item1
+		background: url('../assets/clients__icon1.webp') no-repeat center
+		display: block
+	&__item2
+		background: url('../assets/clients__icon2.webp') no-repeat center
+		display: block
+	&__item3
+		background: url('../assets/clients__icon3.webp') no-repeat center
+		display: block
+	&__item4
+		background: url('../assets/clients__icon4.webp') no-repeat center
+	&__item5
+		background: url('../assets/clients__icon5.webp') no-repeat center
+	&__item6
+		background: url('../assets/clients__icon1.webp') no-repeat center
+	&__slider-buttons-container
+		margin-top: 3.6rem
+	&__slider-button
+		outline: none
+		border: none
+		+size(3.2rem, 3.2rem)
+		transition: .2s
+		cursor: pointer
+	&__slider-prev-button
+		background: url('../assets/clients__slider-prev-icon.webp') no-repeat center $yellow
+		&:hover
+			background: url('../assets/clients__slider-prev-icon.webp') no-repeat center darken($yellow, 3%)
+	&__slider-next-button
+		background: url('../assets/clients__slider-next-icon.webp') no-repeat center $yellow
+		margin-left: 2rem
+		&:hover
+			background: url('../assets/clients__slider-next-icon.webp') no-repeat center darken($yellow, 3%)
+
+.review
+	background: $d-green
+	padding: 3rem 0rem 5rem
+	&__wrapper
+		position: relative
+	&__slider
+		width: 100%
+		.owl-wrapper-outer
+			padding: 0rem
+			margin: 0rem
+			.owl-wrapper
+				padding: 0rem
+				margin: 0rem
+		.owl-controls
+			padding: 0rem
+			margin: 0rem
+			position: absolute
+			bottom: -3rem
+			left: 50%
+			transform: translateX(-50%)
+			.owl-pagination
+				padding: 0rem
+				margin: 0rem
+				.owl-page
+				padding: 0rem
+				margin: 0rem
+				.owl-page span
+					opacity: 1
+					margin: 0rem
+					+size(.5rem, .5rem)
+					background: #fff
+					border-radius: 0rem
+					margin-right: .7rem
+				.owl-page:last-child span
+					margin-right: 0rem
+				.owl-page.active span
+					background: $yellow
+	&__slide
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+	&__slide1
+	&__slide2
+	&__slide3
+	&__slide4
+	&__quote
+		width: 100%
+		margin: 0rem
+		font-family: $or
+		font-size: 2rem
+		line-height: 2.5rem
+		color: #fff
+		text-align: center
+	&__splitter
+		outline: none
+		border: none
+		+size(17.1rem, .2rem)
+		background: $yellow
+		margin: 0rem auto
+		margin-top: 1.6rem
+	&__quote-author
+		width: 100%
+		margin: 0rem
+		font-family: $or
+		font-size: 1.6rem
+		color: #fff
+		text-align: center
+		margin-top: 1.6rem
+
+.contact
+	background: #fff
+	padding: 3rem 0rem
+	&__wrapper
+		+flex(column, wrap, center, center)
+	&__section-name
+		+sectionNameStyle()
+	&__headline
+		+headlineStyle()
+		margin-top: 1.6rem
+	&__splitter
+		+splitterStyle()
+		margin-top: 1.6rem
+	&__paragraph
+		+paragraphStyle()
+		margin-top: 1.6rem
+	&__content
+		width: 100%
+		+flex(column, wrap, center, center)
+		margin-top: 1.6rem
+	&__item
+		width: 100%
+		margin-top: 2.6rem
+		padding-top: 5rem
+	&__item1
+		background: url('../assets/contact__icon1.webp') no-repeat center 0rem
+	&__item2
+		background: url('../assets/contact__icon2.webp') no-repeat center 0rem
+	&__item3
+		background: url('../assets/contact__icon3.webp') no-repeat center 0rem
+	&__item-headline
+		width: 100%
+		margin: 0rem
+		font-family: $or
+		font-size: 2rem
+		color: #131316
+		text-transform: uppercase
+		text-align: center
+	&__item-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $ol
+		font-size: 2rem
+		color: #515151
+		text-align: center
+		margin-top: 0.6rem
+
+.form-section
+	background: $d-green
+	padding: 3rem 0rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__headline
+		+headlineStyle()
+		color: #fff
+	&__paragraph
+		+paragraphStyle()
+		color: #fff
+		margin-top: 1.6rem
+	&__form
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+		margin-top: 1.6rem
+	&__row
+		width: 100%
+	&__row1
+	&__row2
+	&__input
+		outline: none
+		border: none
+		resize: none
+		border: .1rem solid #fff
+		background: none
+		width: 100%
+		font-family: $ol
+		font-size: 1.5rem
+		color: #fff
+		padding: 2.4rem 2rem
+		margin-top: 1.6rem
+		&::placeholder
+			font-family: $ol
+			font-size: 1.5rem
+			color: #fff
+	&__name-input
+	&__mail-input
+	&__subject-input
+	&__message-input
+	&__submit-button
+		outline: none
+		border: none
+		cursor: pointer
+		+linkStyle()
+		color: #161F32
+		margin-top: 1.6rem
+
+.footer
+	background: $space-grey
+	padding-top: 2.2rem
+	padding-bottom: 2.2rem
+	&__wrapper
+	&__copy-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $ol
+		font-size: 1.7rem
+		color: #fff
+		text-align: center
+		span
+			color: $yellow
+	&__socials-container
+		+flex(row, wrap, center, center)
+		margin-top: 1.9rem
+	&__social-link
+		+size(2.4rem, 2.4rem)
+		+flex(row, wrap, center, center)
+		margin-right: 1.8rem
+		&:last-child
+			margin-right: 0rem
+		svg
+			+size(1.7rem, 1.7rem)
+			+flex(row, wrap, center, center)
+			path
+				fill: #fff
+	&__facebook
+	&__dribble
+		svg
+			+size(1.8rem, 1.8rem)
+	&__twitter
+		svg
+			+size(1.9rem, 1.9rem)
+	&__google-plus
+		svg
+			+size(2.4rem, 2.4rem)
+
+.modal
+	&__overlay
+		+size(100%, 100%)
+		position: fixed
+		top: 0rem
+		left: 0rem
+		background: rgba(#000, .98)
+		z-index: 999
+		display: none
+	&__window
+		+size(100%, auto)
+		background: darken($space-grey, 3%)
+		position: fixed
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		+flex(row, wrap, center, center)
+		padding: 8rem 0rem
+		z-index: -1
+		opacity: 0
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $ol
+		font-size: 2rem
+		line-height: 2.5rem
+		color: #fff
+		text-align: center
+	&__error-container
+	&__success-container
+	&__error-paragraph
+	&__success-paragraph
 
 
 
