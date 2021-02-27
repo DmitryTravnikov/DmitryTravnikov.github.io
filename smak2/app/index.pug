@@ -28,27 +28,27 @@ html(lang="ru")
 		// Content Start
 
 		// Header
-		header.header
+		header.header#home
 			.header__wrapper.wrapper
 				a.prevdef.header__logo-container(href="#")
 					img.header__logo(src="assets/header__logo.webp", alt="pic")
 				nav.header__menu
-					a.prevdef.header__menu-link(href="#") Home
-					a.prevdef.header__menu-link(href="#") Services
-					a.prevdef.header__menu-link(href="#") Work
-					a.prevdef.header__menu-link(href="#") About
-					a.prevdef.header__menu-link(href="#") Clients
-					a.prevdef.header__menu-link(href="#") Contact
+					a.prevdef.header__menu-link(href="#home") Home
+					a.prevdef.header__menu-link(href="#services") Services
+					a.prevdef.header__menu-link(href="#work") Work
+					a.prevdef.header__menu-link(href="#about") About
+					a.prevdef.header__menu-link(href="#clients") Clients
+					a.prevdef.header__menu-link(href="#contact") Contact
 
 		// Main
 		.main
 			.main__text-container
 				h1.main__headline Branding Have Another Definition
 				a.prevdef.main__buy-link(href="#") Buy This Theme
-			a.prevdef.main__scroll-down-link(href="#")
+			a.prevdef.main__scroll-down-link(href="#services")
 
 		// Services
-		.services
+		.services#services
 			.services__wrapper.wrapper
 				h4.services__section-name Our Services
 				h3.services__headline What We Love To Do
@@ -104,7 +104,7 @@ html(lang="ru")
 						p.we-do__item-paragraph Vivamus suscipit tortor eget felis porttitor volutpat. Cur est bitur.
 
 		// Works
-		.works
+		.works#work
 			h4.works__section-name Our Works
 			h3.works__headline What We Done So Far
 			hr.works__splitter
@@ -229,7 +229,7 @@ html(lang="ru")
 					a.prevdef.works__show-more-link(href="#")
 			h3.works__bottom-headline Do You Like Our Portfolio?
 			p.works__bottom-paragraph Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere.
-			a.prevdef.works__contact-us-link(href="#") Contact Us
+			a.prevdef.works__contact-us-link(href="#contact") Contact Us
 
 		// Statistics
 		.statistics
@@ -251,7 +251,7 @@ html(lang="ru")
 						p.statistics__item-paragraph Coffee Drinks
 
 		// About
-		.about
+		.about#about
 			.about__wrapper.wrapper
 				h4.about__section-name About Us
 				h3.about__headline Who We Are
@@ -355,7 +355,7 @@ html(lang="ru")
 						h3.skills__item-headline Photography
 
 		// Clients
-		.clients
+		.clients#clients
 			.clients__wrapper.wrapper
 				h4.clients__section-name Our Clients
 				h3.clients__headline Who Love To Work With Us
@@ -410,7 +410,7 @@ html(lang="ru")
 						p.review__quote-author Daniel J. Boorstin
 
 		// Contact
-		.contact
+		.contact#contact
 			.contact__wrapper.wrapper
 				h4.contact__section-name Contact Us
 				h3.contact__headline Where You Can Find Us
@@ -466,7 +466,7 @@ html(lang="ru")
 		.modal__window.modal__success-container
 			p.modal__paragraph.modal__success-paragraph Our customers will contact you soon!
 
-		
+		a.prevdef.to-top-link(href="#home")
 
 		// Content End
 		// Scripts

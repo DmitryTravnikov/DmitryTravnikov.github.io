@@ -887,6 +887,33 @@ body
 	&__error-paragraph
 	&__success-paragraph
 
+.to-top-link
+	+size(5rem, 5rem)
+	position: fixed
+	bottom: 0rem
+	right: 0rem
+	background: darken($yellow, 3%)
+	opacity: 1
+	z-index: 5
+	transition: .2s
+	&:hover
+		background: darken($yellow, 5%)
+	&::before, &::after
+		content: ''
+		+size(0.3rem, 2rem)
+		background: #fff
+		position: absolute
+		top: 1.6rem
+	&::before
+		transform: rotate(30deg)
+		left: 1.9rem
+	&::after
+		transform: rotate(-30deg)
+		right: 1.9rem
+	&.mPS2id-highlight
+		opacity: 0
+		z-index: -1
+
 
 
 *
