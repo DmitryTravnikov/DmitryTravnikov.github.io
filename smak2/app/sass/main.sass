@@ -64,5 +64,466 @@ body
 		&:hover
 			background: darken($yellow, 2%) url('../assets/main__arrow-icon.webp') no-repeat center
 
+.services
+	padding: 3rem 0rem
+	background: #fff
+	&__wrapper
+	&__section-name
+		+sectionNameStyle()
+	&__headline
+		+headlineStyle()
+		margin-top: 1.6rem
+	&__splitter
+		+splitterStyle()
+		margin-top: 1.6rem
+	&__paragraph
+		+paragraphStyle()
+		margin-top: 1.6rem
+	&__content
+		width: 100%
+		margin-top: 3rem
+	&__item
+		cursor: pointer
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+		margin-top: 3.6rem
+		text-decoration: none
+	&__item1
+		margin: 0rem
+	&__item2
+	&__item3
+	&__item4
+	&__item1:hover &__item-icon1
+		background: #fff url('../assets/services__y-icon1.webp') no-repeat center
+		border: .1rem solid #242427
+	&__item2:hover &__item-icon2
+		background: #fff url('../assets/services__y-icon2.webp') no-repeat center
+		border: .1rem solid #242427
+	&__item3:hover &__item-icon3
+		background: #fff url('../assets/services__y-icon3.webp') no-repeat center
+		border: .1rem solid #242427
+	&__item4:hover &__item-icon4
+		background: #fff url('../assets/services__y-icon4.webp') no-repeat center
+		border: .1rem solid #242427
+	&__item-icon
+		+size(10.6rem, 10.6rem)
+		border-radius: 50%
+		border: .1rem solid $yellow
+		transition: .2s
+	&__item-icon1
+		background: $yellow url('../assets/services__w-icon1.webp') no-repeat center
+	&__item-icon2
+		background: $yellow url('../assets/services__w-icon2.webp') no-repeat center
+	&__item-icon3
+		background: $yellow url('../assets/services__w-icon3.webp') no-repeat center
+	&__item-icon4
+		background: $yellow url('../assets/services__w-icon4.webp') no-repeat center
+	&__item-headline
+		width: 100%
+		margin: 0rem
+		font-family: $ob
+		font-size: 2rem
+		color: #131316
+		text-transform: uppercase
+		text-align: center
+		margin-top: 1.6rem
+	&__item-paragraph
+		width: 80%
+		margin: 0rem
+		font-family: $ol
+		font-size: 1.6rem
+		line-height: 2.5rem
+		color: #707070
+		text-align: center
+		margin-top: 0.6rem
+
+.we-do
+	background: $d-green
+	padding: 3rem 0rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__headline
+		+headlineStyle()
+		color: $yellow
+	&__paragraph
+		+paragraphStyle()
+		color: #fff
+		margin-top: 1.6rem
+		width: 64%
+	&__content
+		+flex(column, wrap, flex-start, center)
+		width: 100%
+		margin-top: 1.6rem
+	&__item
+		+flex(column, wrap, flex-start, center)
+		width: 100%
+		margin-top: 2rem
+		width: 18rem
+	&__item1
+	&__item2
+	&__item3
+	&__item4
+	&__icon
+		+size(4.6rem, 4.6rem)
+	&__icon1
+		background: url('../assets/we-do__icon1.webp') no-repeat center
+	&__icon2
+		background: url('../assets/we-do__icon2.webp') no-repeat center
+	&__icon3
+		background: url('../assets/we-do__icon3.webp') no-repeat center
+	&__icon4
+		background: url('../assets/we-do__icon4.webp') no-repeat center
+	&__icon5
+		background: url('../assets/we-do__icon5.webp') no-repeat center
+	&__icon6
+		background: url('../assets/we-do__icon6.webp') no-repeat center
+	&__item-headline
+		width: 100%
+		margin: 0rem
+		font-family: $ob
+		font-size: 2rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		margin-top: 1.6rem
+	&__item-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $ol
+		font-size: 1.6rem
+		line-height: 2rem
+		color: #fff
+		text-align: center
+		margin-top: 1.6rem
+
+.works
+	+flex(column, wrap, flex-start, center)
+	padding: 3rem 0rem
+	background: #fff
+	&__section-name
+		+sectionNameStyle()
+	&__headline
+		+headlineStyle()
+		margin-top: 1.6rem
+	&__splitter
+		+splitterStyle()
+		margin-top: 1.6rem
+	&__paragraph
+		+paragraphStyle()
+		margin-top: 1.6rem
+		width: 80%
+	&__menu
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(row, wrap, center, center)
+		margin-top: 1.6rem
+	&__menu-list-item
+		padding: 0rem
+		margin: 0rem
+		+flex(row, wrap, center, center)
+		margin: 0.6rem
+	&__menu-link
+		text-decoration: none
+		font-family: $or
+		font-size: 1.6rem
+		color: #515151
+		text-transform: uppercase
+		transition: .2s
+		&.active
+			color: $yellow
+	&__content-container
+		width: 100%
+		height: 134rem
+		margin-top: 1.6rem
+	&__content
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+	&__block
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+	&__image
+	&__block-text-container
+		+flex(column, wrap, flex-start, center)
+		margin-top: 1.6rem
+	&__block-headline
+		width: 100%
+		margin: 0rem
+		font-family: $or
+		font-size: 2.5rem
+		color: #515151
+		text-align: center
+	&__block-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $ol
+		font-size: 1.6rem
+		line-height: 2.5rem
+		color: #707070
+		text-align: center
+		margin-top: 1.6rem
+	&__view-live-link
+		+linkStyle()
+		color: #fff
+		margin-top: 1.6rem
+		margin-bottom: 1.6rem
+	&__pics-container
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+	&__pics-container1
+	&__pics-container2
+		display: none
+	&__pic
+		+size(100%, 30rem)
+		display: none
+		text-decoration: none
+		&:nth-child(odd)
+			background: url('http://source.unsplash.com/600x600') no-repeat center
+			background-size: cover
+		&:nth-child(even)
+			background: url('http://source.unsplash.com/500x500') no-repeat center
+			background-size: cover
+	&__pic:hover &__pic-text-container
+		opacity: 1
+	&__pic1
+		+flex(column, wrap, flex-start, center)
+	&__pic2
+		+flex(column, wrap, flex-start, center)
+	&__pic3
+	&__pic4
+	&__pic5
+	&__pic6
+	&__pic7
+	&__pic8
+	&__pic9
+	&__pic10
+	&__pic11
+	&__pic12
+	&__pic-text-container
+		+size(100%, 100%)
+		background: #CFC20C
+		opacity: 0
+		transition: .2s
+		+flex(column, wrap, center, center)
+	&__pic-headline
+		width: 100%
+		margin: 0rem
+		font-family: $ob
+		font-size: 2.5rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+	&__pic-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $or
+		font-size: 1.6rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		margin-top: 0.6rem
+	&__show-more-link
+		+size(6rem, 6rem)
+		background: $yellow url('../assets/main__arrow-icon.webp') no-repeat center
+		margin-top: 1.6rem
+		transition: .2s
+		&:hover
+			background: darken($yellow, 2%) url('../assets/main__arrow-icon.webp') no-repeat center
+	&__bottom-headline
+		width: 100%
+		margin: 0rem
+		font-family: $ob
+		font-size: 3rem
+		color: #000
+		text-transform: uppercase
+		text-align: center
+		margin-top: 1.6rem
+	&__bottom-paragraph
+		width: 80%
+		margin: 0rem
+		font-family: $ol
+		font-size: 1.6rem
+		line-height: 2.5rem
+		color: #707070
+		text-align: center
+		margin-top: 1.6rem
+	&__contact-us-link
+		+linkStyle()
+		color: #fff
+		margin-top: 1.6rem
+
+.statistics
+	background: $d-green
+	padding: 3rem 0rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__headline
+		+headlineStyle()
+		color: #fff
+	&__paragraph
+		+paragraphStyle()
+		color: #fff
+		margin-top: 1.6rem
+	&__content
+		width: 100%
+		margin-top: 1.6rem
+	&__item
+		border: .1rem solid $yellow
+		margin-top: 1.6rem
+		padding: 3rem 0rem
+		width: 100%
+		&:first-child
+			margin-top: 0rem
+	&__item1
+	&__item2
+	&__item3
+	&__item4
+	&__item-headline
+		width: 100%
+		margin: 0rem
+		font-family: $ob
+		font-size: 4rem
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+	&__item-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $or
+		font-size: 1.6rem
+		color: $yellow
+		text-transform: uppercase
+		text-align: center
+		margin-top: .6rem
+
+.about
+	background: #fff
+	padding: 3rem 0rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__section-name
+		+sectionNameStyle()
+	&__headline
+		+headlineStyle()
+		margin-top: 1.6rem
+	&__splitter
+		+splitterStyle()
+		margin-top: 1.6rem
+	&__paragraph
+		+paragraphStyle()
+		margin-top: 1.6rem
+	&__content
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+		margin-top: 2.6rem
+	&__item
+		position: relative
+		margin-top: 2.6rem
+		padding-left: 9rem
+		padding-right: 2rem
+		&:first-child
+			margin-top: 0rem
+		&::before
+			content: ''
+			+size(7.1rem, 7.1rem)
+			border-radius: 50%
+			position: absolute
+			top: 0.6rem
+			left: 0rem
+	&__item1
+		&::before
+			background: $yellow url('../assets/about__icon1.webp') no-repeat center
+	&__item2
+		&::before
+			background: $yellow url('../assets/about__icon2.webp') no-repeat center
+	&__item3
+		&::before
+			background: $yellow url('../assets/about__icon3.webp') no-repeat center
+	&__item4
+		&::before
+			background: $yellow url('../assets/about__icon4.webp') no-repeat center
+	&__item-headline
+		width: 100%
+		margin: 0rem
+		font-family: $or
+		font-size: 1.6rem
+		color: #515151
+		text-transform: uppercase
+		text-align: left
+	&__item-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $ol
+		font-size: 1.6rem
+		line-height: 2.5rem
+		color: #707070
+		text-align: left
+		margin-top: 0.4rem
+
+.team
+	background: #FBFBFB
+	padding: 3rem 0rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__headline
+		+headlineStyle()
+	&__paragraph
+		+paragraphStyle()
+		margin-top: 1.6rem
+		width: 90%
+	&__items-container
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+		margin-top: 1.6rem
+	&__item
+		text-decoration: none
+		+flex(column, wrap, flex-start, center)
+		background: #fff
+		width: 100%
+		margin-top: 2rem
+		&:first-child
+			margin-top: 0rem
+	&__item1
+	&__item2
+	&__item3
+	&__item4
+	&__worker-pic
+		+size(100%, 25rem)
+		background: url('http://source.unsplash.com/500x500') no-repeat center
+		background-size: cover
+	&__worker-pic1
+	&__worker-pic2
+	&__worker-pic3
+	&__worker-pic4
+	&__worker-name
+		width: 100%
+		margin: 0rem
+		font-family: $or
+		font-size: 2rem
+		color: $yellow
+		text-transform: uppercase
+		text-align: center
+		margin-top: 0.8rem
+	&__worker-position
+		width: 100%
+		margin: 0rem
+		font-family: $or
+		font-size: 1.6rem
+		color: #707070
+		text-transform: uppercase
+		text-align: center
+		margin-top: 0.6rem
+	&__workers-info-container
+		display: none
+	&__worker-info
+	&__worker-info-name
+	&__worker-info-description
+	&__socials
+	&__social-link
+	&__facebook
+	&__twitter
+
+
+
 *
 	// +outline($blue)

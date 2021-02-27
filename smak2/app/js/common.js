@@ -75,7 +75,246 @@ $(document).ready(function() {
 	}// prevdef();
 	prevdef();
 
-	
+	if ($(window).width() > 0 && $(window).width() < 575) {
+		(function() {
+			let worksMenuLinks = document.querySelectorAll('.works__menu-link');
+			let worksContentContainer = document.querySelector('.works__content-container');
+			let worksShowMoreLink = document.querySelector('.works__show-more-link');
+			let worksCounter = 0;
+			let worksPicsContainers = document.querySelectorAll('.works__pics-container');
+
+			for (let i = 0; i < worksMenuLinks.length; i++) {
+				worksMenuLinks[i].onclick = function() {
+					for (let i = 0; i < worksMenuLinks.length; i++) {
+						worksMenuLinks[i].classList.remove('active');
+					}
+					this.classList.add('active');
+					worksContentContainer.style.height = '134rem';
+
+					for (let i = 0; i < worksPicsContainers.length; i++) {
+						worksPicsContainers[i].style.display = 'none';
+						worksPicsContainers[0].style.display = 'flex';
+					}
+					worksShowMoreLink.addEventListener('click', showMoreWorks);
+				}
+			}
+
+			worksShowMoreLink.addEventListener('click', showMoreWorks);
+			function showMoreWorks() {
+				worksCounter++;
+				for (let i = 0; i < worksPicsContainers.length; i++) {
+					worksPicsContainers[worksCounter].style.display = 'flex';
+				}
+				worksContentContainer.style.height = parseInt(getComputedStyle(worksContentContainer).height) + parseInt(getComputedStyle(worksPicsContainers[0]).height) + 'px';
+				if (worksCounter >= worksPicsContainers.length) {
+					worksCounter = 0;
+					this.removeEventListener('click', showMoreWorks);
+				}
+			}
+		})();
+	}
+
+	if ($(window).width() > 576 && $(window).width() < 767) {
+		(function() {
+			let worksMenuLinks = document.querySelectorAll('.works__menu-link');
+			let worksContentContainer = document.querySelector('.works__content-container');
+			let worksShowMoreLink = document.querySelector('.works__show-more-link');
+			let worksCounter = 0;
+			let worksPicsContainers = document.querySelectorAll('.works__pics-container');
+
+			for (let i = 0; i < worksMenuLinks.length; i++) {
+				worksMenuLinks[i].onclick = function() {
+					for (let i = 0; i < worksMenuLinks.length; i++) {
+						worksMenuLinks[i].classList.remove('active');
+					}
+					this.classList.add('active');
+					worksContentContainer.style.height = '131rem';
+
+					for (let i = 0; i < worksPicsContainers.length; i++) {
+						worksPicsContainers[i].style.display = 'none';
+						worksPicsContainers[0].style.display = 'flex';
+					}
+					worksShowMoreLink.addEventListener('click', showMoreWorks);
+				}
+			}
+
+			worksShowMoreLink.addEventListener('click', showMoreWorks);
+			function showMoreWorks() {
+				worksCounter++;
+				for (let i = 0; i < worksPicsContainers.length; i++) {
+					worksPicsContainers[worksCounter].style.display = 'flex';
+				}
+				worksContentContainer.style.height = parseInt(getComputedStyle(worksContentContainer).height) + parseInt(getComputedStyle(worksPicsContainers[0]).height) + 'px';
+				if (worksCounter >= worksPicsContainers.length) {
+					worksCounter = 0;
+					this.removeEventListener('click', showMoreWorks);
+				}
+			}
+		})();
+	}
+
+	if ($(window).width() >= 768 && $(window).width() < 991) {
+		(function() {
+			let worksMenuLinks = document.querySelectorAll('.works__menu-link');
+			let worksContentContainer = document.querySelector('.works__content-container');
+			let worksShowMoreLink = document.querySelector('.works__show-more-link');
+			let worksCounter = 0;
+			let worksPicsContainers = document.querySelectorAll('.works__pics-container');
+
+			for (let i = 0; i < worksMenuLinks.length; i++) {
+				worksMenuLinks[i].onclick = function() {
+					for (let i = 0; i < worksMenuLinks.length; i++) {
+						worksMenuLinks[i].classList.remove('active');
+					}
+					this.classList.add('active');
+					worksContentContainer.style.height = '134rem';
+
+					for (let i = 0; i < worksPicsContainers.length; i++) {
+						worksPicsContainers[i].style.display = 'none';
+						worksPicsContainers[0].style.display = 'flex';
+					}
+					worksShowMoreLink.addEventListener('click', showMoreWorks);
+				}
+			}
+
+			worksShowMoreLink.addEventListener('click', showMoreWorks);
+			function showMoreWorks() {
+				worksCounter++;
+				for (let i = 0; i < worksPicsContainers.length; i++) {
+					worksPicsContainers[worksCounter].style.display = 'flex';
+				}
+				worksContentContainer.style.height = parseInt(getComputedStyle(worksContentContainer).height) + parseInt(getComputedStyle(worksPicsContainers[0]).height) + 'px';
+				if (worksCounter >= worksPicsContainers.length) {
+					worksCounter = 0;
+					this.removeEventListener('click', showMoreWorks);
+				}
+			}
+		})();
+	}
+
+	if ($(window).width() >= 992 && $(window).width() < 1199) {
+		(function() {
+			let worksMenuLinks = document.querySelectorAll('.works__menu-link');
+			let worksContentContainer = document.querySelector('.works__content-container');
+			let worksShowMoreLink = document.querySelector('.works__show-more-link');
+			let worksCounter = 0;
+			let worksPicsContainers = document.querySelectorAll('.works__pics-container');
+
+			for (let i = 0; i < worksMenuLinks.length; i++) {
+				worksMenuLinks[i].onclick = function() {
+					for (let i = 0; i < worksMenuLinks.length; i++) {
+						worksMenuLinks[i].classList.remove('active');
+					}
+					this.classList.add('active');
+					worksContentContainer.style.height = '105rem';
+
+					for (let i = 0; i < worksPicsContainers.length; i++) {
+						worksPicsContainers[i].style.display = 'none';
+						worksPicsContainers[0].style.display = 'flex';
+					}
+					worksShowMoreLink.addEventListener('click', showMoreWorks);
+				}
+			}
+
+			worksShowMoreLink.addEventListener('click', showMoreWorks);
+			function showMoreWorks() {
+				worksCounter++;
+				for (let i = 0; i < worksPicsContainers.length; i++) {
+					worksPicsContainers[worksCounter].style.display = 'flex';
+				}
+				worksContentContainer.style.height = parseInt(getComputedStyle(worksContentContainer).height) + parseInt(getComputedStyle(worksPicsContainers[0]).height) + 'px';
+				if (worksCounter >= worksPicsContainers.length) {
+					worksCounter = 0;
+					this.removeEventListener('click', showMoreWorks);
+				}
+			}
+		})();
+	}
+
+	if ($(window).width() >= 1200) {
+		(function() {
+			let worksMenuLinks = document.querySelectorAll('.works__menu-link');
+			let worksContentContainer = document.querySelector('.works__content-container');
+			let worksShowMoreLink = document.querySelector('.works__show-more-link');
+			let worksCounter = 0;
+			let worksPicsContainers = document.querySelectorAll('.works__pics-container');
+
+			for (let i = 0; i < worksMenuLinks.length; i++) {
+				worksMenuLinks[i].onclick = function() {
+					for (let i = 0; i < worksMenuLinks.length; i++) {
+						worksMenuLinks[i].classList.remove('active');
+					}
+					this.classList.add('active');
+					worksContentContainer.style.height = '115rem';
+
+					for (let i = 0; i < worksPicsContainers.length; i++) {
+						worksPicsContainers[i].style.display = 'none';
+						worksPicsContainers[0].style.display = 'flex';
+					}
+					worksShowMoreLink.addEventListener('click', showMoreWorks);
+				}
+			}
+
+			worksShowMoreLink.addEventListener('click', showMoreWorks);
+			function showMoreWorks() {
+				worksCounter++;
+				for (let i = 0; i < worksPicsContainers.length; i++) {
+					worksPicsContainers[worksCounter].style.display = 'flex';
+				}
+				worksContentContainer.style.height = parseInt(getComputedStyle(worksContentContainer).height) + parseInt(getComputedStyle(worksPicsContainers[0]).height) + 'px';
+				if (worksCounter >= worksPicsContainers.length) {
+					worksCounter = 0;
+					this.removeEventListener('click', showMoreWorks);
+				}
+			}
+		})();
+	}
+
+	//AJAX вкладки (анимацию делать на keyframes)
+	$('.works__menu-link').click(function() {
+
+		var info = $(this).attr('href') + ' .works__content';//берет href ссылки и задает тот блок, который будет обновляться с помощью ajax при переходе по ссылке
+		$('.works__content').hide(0, loadContent());//скрываем содержимое блока .works__content той страницы, на которой находимся//задать анимацию для содержимого
+		$('#loader').fadeIn('slow');//анимация лоадера
+
+		function loadContent() {//основная функция для загрузки контента
+			$('.works__content').load(info, '', function() {//блок, в который мы хотим загрузить новый контент//info подгружает именно тот контент, который нам нужен//'' - различные переменные, дата, опускаем его
+				$('.works__content').fadeIn('slow', hideLoader());//показываем наш блок с контентом//скрываем лоадер//задать анимацию для содержимого
+			});
+		}
+
+		function hideLoader() {//функция для скрытия лоадера
+			$('#loader').fadeOut('normal');
+		}
+
+		return false;//чтобы не происходило перехода по ссылке, а только происходила подгрузка контента
+
+	});//ajax вкладки end
+
+
+
+
+
+
+
+
+
+	let teamItems = document.querySelectorAll('.team__item');
+	let teamWorkerInfos = document.querySelectorAll('.team__worker-info');
+	for (let i = 0; i < teamItems.length; i++) {
+		teamItems[i].onclick = function() {
+			for (let i = 0; i < teamItems.length; i++) {
+				teamItems[i].classList.remove('active');
+				teamWorkerInfos[i].classList.remove('active');
+			}
+			this.classList.add('active');
+			for (let i = 0; i < teamItems.length; i++) {
+				if (teamItems[i].classList.contains('active')) {
+					teamWorkerInfos[i].classList.add('active');
+				}
+			}
+		}
+	}
 
 });//doc.ready end
 

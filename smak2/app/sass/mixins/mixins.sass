@@ -37,3 +37,37 @@
 	transition: .2s
 	&:hover
 		background: darken($yellow, 2%)
+
+@mixin sectionNameStyle()
+	width: 100%
+	margin: 0rem
+	font-family: $or
+	font-size: 1.6rem
+	color: #515151
+	text-transform: uppercase
+	text-align: center
+
+@mixin headlineStyle()
+	width: 100%
+	margin: 0rem
+	font-family: $ob
+	font-size: 3rem
+	color: #000
+	text-transform: uppercase
+	text-align: center
+
+@mixin splitterStyle()
+	background: none
+	border: none
+	+size(17rem, .3rem)
+	background: $yellow
+	margin: 0rem auto
+
+@mixin paragraphStyle()
+	width: 100%
+	margin: 0rem
+	font-family: $ol
+	font-size: 1.6rem
+	line-height: 2.5rem
+	color: #707070
+	text-align: center
