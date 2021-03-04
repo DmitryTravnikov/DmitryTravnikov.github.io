@@ -38,7 +38,36 @@
 			margin-top: 0rem
 			margin-left: 1.6rem
 
-
+	.footer
+		&__wrapper
+		&__logo-container
+		&__logo
+		&__menu
+		&__menu-link
+			&:last-child
+		&__splitter
+		&__socials-container
+		&__social-link
+			&:hover
+			&:last-child
+			svg
+				path
+		&__facebook
+			svg
+		&__twitter
+			svg
+		&__instagram
+			svg
+		&__youtube
+			svg
+		&__pinterest
+			svg
+		&__paragraphs-container
+			+flex(row, wrap, center, center)
+		&__copy-link
+		&__privacy-link
+			margin: 0rem
+			margin-left: 2rem
 /* Small Devices, Tablets (MD) */
 @media only screen and (min-width: 768px)
 	body
@@ -110,6 +139,44 @@
 		&__secondary-content-headline
 		&__secondary-content-paragraph
 		&__secondary-content-read-more
+
+	.footer
+		&__wrapper
+			position: relative
+		&__logo-container
+			position: absolute
+			top: 1.6rem
+			left: 50%
+			transform: translateX(-50%)
+		&__logo
+		&__menu
+		&__menu-link
+			margin-right: 2rem
+			&:last-child
+				margin-right: 0rem
+			&:nth-child(2)
+				margin-right: 12rem
+		&__splitter
+			margin-top: 3rem
+		&__socials-container
+		&__social-link
+			&:hover
+			&:last-child
+			svg
+				path
+		&__facebook
+			svg
+		&__twitter
+			svg
+		&__instagram
+			svg
+		&__youtube
+			svg
+		&__pinterest
+			svg
+		&__paragraphs-container
+		&__copy-link
+		&__privacy-link
 /* Medium Devices, Desktops (LG) */
 @media only screen and (min-width: 992px)
 	body
@@ -464,3 +531,42 @@
 			margin-top: 1.8rem
 		&__secondary-content-read-more
 			margin-top: 4.1rem
+
+	.footer
+		padding-top: 9.7rem
+		padding-bottom: 4.1rem
+		&__wrapper
+		&__logo-container
+			top: 2.1rem
+		&__logo
+		&__menu
+		&__menu-link
+			margin-right: 8.4rem
+			&:last-child
+			&:nth-child(2)
+				margin-right: 30.9rem
+		&__splitter
+			margin-top: 5.7rem
+			width: 69%
+		&__socials-container
+			margin-top: 5.5rem
+		&__social-link
+			margin-right: 2.6rem
+			&:hover
+			&:last-child
+			svg
+				path
+		&__facebook
+			svg
+		&__twitter
+			svg
+		&__instagram
+			svg
+		&__youtube
+			svg
+		&__pinterest
+			svg
+		&__paragraphs-container
+			margin-top: 7.1rem
+		&__copy-link
+		&__privacy-link

@@ -378,5 +378,92 @@ body
 		color: #000
 		margin-top: 1.6rem
 
+
+
+
+
+.footer
+	background: #FAFAFA
+	padding: 3rem 0rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__logo-container
+		text-decoration: none
+	&__logo
+		width: 100%
+		margin: 0rem
+		font-family: $hmar
+		font-size: 1.8rem
+		color: $orange
+		text-transform: lowercase
+	&__menu
+		margin-top: 1.6rem
+	&__menu-link
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.4rem
+		color: #000
+		margin-right: 2rem
+		&:last-child
+			margin-right: 0rem
+	&__splitter
+		background: none
+		outline: none
+		margin: 0rem auto
+		background: #000
+		+size(70%, .1rem)
+		margin-top: 1.6rem
+	&__socials-container
+		+flex(row, wrap, center, center)
+		margin-top: 1.6rem
+	&__social-link
+		text-decoration: none
+		+size(3.8rem, 3.8rem)
+		border-radius: 50%
+		background: #000
+		+flex(row, wrap, center, center)
+		margin-right: 1rem
+		transition: .2s
+		&:hover
+			background: $space-grey
+		&:last-child
+			margin-right: 0rem
+		svg
+			+flex(row, wrap, center, center)
+			path
+				fill: #fff
+	&__facebook
+		svg
+			+size(2.1rem, 2.1rem)
+	&__twitter
+		svg
+			+size(2rem, 2rem)
+	&__instagram
+		svg
+			+size(2rem, 2rem)
+	&__youtube
+		svg
+			+size(2rem, 2rem)
+	&__pinterest
+		svg
+			+size(2rem, 2rem)
+	&__paragraphs-container
+		width: 100%
+		+flex(column, wrap, center, center)
+		margin-top: 1.6rem
+	&__copy-link
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.4rem
+		color: #000
+	&__privacy-link
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.4rem
+		color: #000
+		margin-top: 0.6rem
+
+
+
 *
 	// +outline($blue)
