@@ -25,6 +25,19 @@
 			margin-top: 3rem
 			&:hover
 
+	.contact
+		&__wrapper
+		&__text-container
+		&__headline
+		&__paragraph
+		&__links-container
+			+flex(row, wrap, center, center)
+		&__find-gift-link
+			margin-top: 0rem
+		&__how-it-works-link
+			margin-top: 0rem
+			margin-left: 1.6rem
+
 
 /* Small Devices, Tablets (MD) */
 @media only screen and (min-width: 768px)
@@ -46,6 +59,57 @@
 		&__gift-finder-link
 			margin-top: 0rem
 			&:hover
+
+	.gifts
+		&__wrapper
+		&__headline
+		&__paragraph
+		&__content
+			+flex(row, wrap, center, stretch)
+		&__item
+			+size(27rem, auto)
+			margin: 2rem
+			padding-top: 0rem
+			&:hover
+				background: #fff
+				box-shadow: 0.4rem 0.4rem 1.4rem rgba(#000, 0.1)
+			&:first-child
+				margin: 2rem
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item-pic
+		&__item-pic1
+		&__item-pic2
+		&__item-pic3
+		&__item-pic4
+		&__text-container
+		&__item-headline
+		&__item-paragraph
+
+	.blogs
+		&__wrapper
+		&__headline
+		&__paragraph
+		&__main-content
+		&__main-content-pic
+		&__main-content-text-container
+		&__main-content-author
+		&__main-content-paragraph
+		&__main-content-read-more-link
+		&__secondary-content
+			+flex(row, wrap, center, stretch)
+		&__secondary-block
+			padding: 2rem 2rem
+			width: 45%
+			margin: 1rem
+			&:hover
+		&__secondary-block1
+		&__secondary-block2
+		&__secondary-content-headline
+		&__secondary-content-paragraph
+		&__secondary-content-read-more
 /* Medium Devices, Desktops (LG) */
 @media only screen and (min-width: 992px)
 	body
@@ -73,8 +137,159 @@
 		&__block4-paragraph
 		&__block4-link
 			&:hover
+
+	.contact
+		&__wrapper
+			+flex(row, wrap, space-between, center)
+		&__text-container
+		&__headline
+		&__paragraph
+		&__links-container
+		&__find-gift-link
+		&__how-it-works-link
+
+	.blogs
+		&__wrapper
+		&__headline
+		&__paragraph
+		&__main-content
+			+flex(row, wrap, space-around, stretch)
+			margin-top: 4rem
+		&__main-content-pic
+		&__main-content-text-container
+			width: 50%
+			margin-top: 0rem
+			+flex(column, wrap, center, center)
+		&__main-content-author
+		&__main-content-paragraph
+		&__main-content-read-more-link
+		&__secondary-content
+			+flex(row, wrap, space-around, stretch)
+		&__secondary-block
+			+flex(column, wrap, flex-start, flex-start)
+			margin: 0rem
+			&:hover
+		&__secondary-block1
+			width: 40rem
+		&__secondary-block2
+			width: 50%
+		&__secondary-content-headline
+			text-align: left
+		&__secondary-content-paragraph
+			text-align: left
+		&__secondary-content-read-more
 /* Large Devices, Wide Screens (XL) */
 @media only screen and (min-width: 1200px)
+	body
+		background: $media-purple
+	*
+		outline-color: $media-purple
+
+	.wrapper
+		+wrapper(110rem, auto)
+
+	.header
+		padding: 0rem
+		&__wrapper
+			padding-top: 3.8rem
+			padding-right: 3.3rem
+			padding-left: 8.1rem
+			padding-bottom: 3.7rem
+			+flex(row, wrap, space-between, flex-start)
+		&__logo-container
+			margin-top: 1.2rem
+		&__logo
+		&__menu
+			margin-top: 0.9rem
+		&__menu-link
+			margin-right: 3.1rem
+			&:last-child
+		&__gift-finder-link
+			padding: 0.8rem 1.6rem
+			&:hover
+
+	.main
+		padding: 0rem
+		&__wrapper
+		&__block
+			+size(50%, 70rem)
+			padding: 0rem
+			+flex(column, wrap, flex-start, flex-start)
+		&__block1
+			padding-top: 14.4rem
+			padding-left: 16.6rem
+			padding-right: 10rem
+		&__block2
+		&__block3
+			+size(50%, 60rem)
+		&__block4
+			+size(50%, 60rem)
+			padding-top: 16.1rem
+			padding-left: 11.3rem
+		&__block1-headline
+			font-size: 5.6rem
+			line-height: 6.8rem
+		&__block1-paragraph
+			margin-top: 4.4rem
+			padding-right: 3rem
+		&__block1-link
+			margin-top: 5.7rem
+			padding: 1.9rem 3.4rem
+			&:hover
+		&__block4-headline
+		&__block4-paragraph
+			margin-top: 3rem
+			padding-right: 16rem
+		&__block4-link
+			margin-top: 4.1rem
+			padding: 1.9rem 4.5rem
+			&:hover
+
+	.gifts
+		padding-top: 9.3rem
+		padding-bottom: 11.4rem
+		&__wrapper
+		&__headline
+		&__paragraph
+			margin-top: 2.7rem
+		&__content
+			margin-top: 7.1rem
+		&__item
+			margin: 0rem
+			margin-left: 1.5rem
+			margin-right: 1.5rem
+			width: 20rem
+			&:hover
+			&:first-child
+				margin: 0rem
+				margin-left: 1.5rem
+				margin-right: 1.5rem
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item-pic
+			width: 20rem
+		&__item-pic1
+		&__item-pic2
+		&__item-pic3
+		&__item-pic4
+		&__text-container
+			+flex(column, wrap, flex-start, flex-start)
+			padding-top: 2.2rem
+			padding-left: 2.5rem
+			padding-bottom: 3rem
+		&__item-headline
+			text-align: left
+			margin: 0rem
+		&__item-paragraph
+			text-align: left
+			margin: 0rem
+			margin-top: 7.8rem
+
+
+/* Large Devices, Wide Screens (XL) */
+@media only screen and (min-width: 1400px)
 	body
 		background: $media-purple
 	*
@@ -139,3 +354,113 @@
 			margin-top: 4.1rem
 			padding: 1.9rem 4.5rem
 			&:hover
+
+	.gifts
+		padding-top: 9.3rem
+		padding-bottom: 11.4rem
+		&__wrapper
+		&__headline
+		&__paragraph
+			margin-top: 2.7rem
+		&__content
+			margin-top: 7.1rem
+		&__item
+			margin: 0rem
+			margin-left: 1.5rem
+			margin-right: 1.5rem
+			width: 27rem
+			&:hover
+			&:first-child
+				margin: 0rem
+				margin-left: 1.5rem
+				margin-right: 1.5rem
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item-pic
+			width: 27rem
+		&__item-pic1
+		&__item-pic2
+		&__item-pic3
+		&__item-pic4
+		&__text-container
+			+flex(column, wrap, flex-start, flex-start)
+			padding-top: 2.2rem
+			padding-left: 2.5rem
+			padding-bottom: 3rem
+		&__item-headline
+			text-align: left
+			margin: 0rem
+		&__item-paragraph
+			text-align: left
+			margin: 0rem
+			margin-top: 7.8rem
+
+	.contact
+		padding: 0rem
+		&__wrapper
+			+flex(row, wrap, space-between, flex-start)
+			padding-top: 7.9rem
+			padding-left: 22.9rem
+			padding-right: 23.5rem
+			padding-bottom: 8.1rem
+		&__text-container
+		&__headline
+			margin-left: 0.5rem
+		&__paragraph
+			margin-top: 0.8rem
+		&__links-container
+			+flex(row, wrap, center, flex-start)
+		&__find-gift-link
+			padding: 1.5rem 3.4rem
+		&__how-it-works-link
+			padding: 1.5rem 3.4rem
+
+	.blogs
+		padding: 0rem
+		&__wrapper
+			padding-top: 8.5rem
+			padding-bottom: 7rem
+			+flex(column, wrap, flex-start, center)
+		&__headline
+		&__paragraph
+			margin-top: 2.7rem
+		&__main-content
+			margin-top: 7.8rem
+			padding-left: 13.5rem
+			+flex(row, wrap, flex-start, stretch)
+		&__main-content-pic
+		&__main-content-text-container
+			width: 59%
+			+flex(column, wrap, flex-start, flex-start)
+			padding-top: 6.1rem
+			padding-left: 7.9rem
+		&__main-content-author
+			text-align: left
+		&__main-content-paragraph
+			text-align: left
+			margin-top: 2.6rem
+			padding-right: 11rem
+			line-height: 5.7rem
+		&__main-content-read-more-link
+			margin-top: 7.6rem
+		&__secondary-content
+			margin-top: 3rem
+			width: 115rem
+			+flex(row, wrap, space-betwen, stretch)
+		&__secondary-block
+			width: 48%
+			margin: 0rem
+			padding-top: 5.3rem
+			padding-left: 2.7rem
+			padding-right: 6rem
+			padding-bottom: 5rem
+			&:hover
+		&__secondary-block1
+		&__secondary-block2
+		&__secondary-content-headline
+		&__secondary-content-paragraph
+			margin-top: 1.8rem
+		&__secondary-content-read-more
+			margin-top: 4.1rem

@@ -113,6 +113,7 @@ body
 		margin: 0rem
 		font-family: $gr
 		font-size: 3.2rem
+		font-weight: 400
 		color: #000
 		text-align: left
 	&__block4-paragraph
@@ -144,7 +145,238 @@ body
 
 
 
+.gifts
+	padding: 3rem 0rem
+	background: #fff
+	&__wrapper
+	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 3.2rem
+		color: #000
+		text-align: center
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 1.8rem
+		color: #000
+		text-align: center
+		margin-top: 1.6rem
+	&__content
+		width: 100%
+		margin-top: 3.6rem
+	&__item
+		+flex(column, wrap, flex-start, center)
+		transition: .2s
+		text-decoration: none
+		width: 100%
+		margin-top: 1.6rem
+		padding: 2rem 0rem
+		background: #FAFAFA
+		transition: .2s
+		&:hover
+			background: #fff
+		&:first-child
+			margin-top: 0rem
+	&__item1
+	&__item2
+	&__item3
+	&__item4
+	&__item-pic
+		+size(27rem, 27rem)
+	&__item-pic1
+		background: url('../assets/gifts__item-pic1.webp') no-repeat center
+		background-size: cover
+	&__item-pic2
+		background: url('../assets/gifts__item-pic2.webp') no-repeat center
+		background-size: cover
+	&__item-pic3
+		background: url('../assets/gifts__item-pic3.webp') no-repeat center
+		background-size: cover
+	&__item-pic4
+		background: url('../assets/gifts__item-pic4.webp') no-repeat center
+		background-size: cover
+	&__text-container
+		+flex(column, wrap, flex-start, center)
+		width: 100%
+	&__item-headline
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		color: #000
+		font-size: 2rem
+		text-align: center
+		margin-top: 1rem
+	&__item-paragraph
+		width: auto
+		margin: 0rem
+		font-family: $rr
+		font-size: 1.4rem
+		color: #000
+		text-align: center
+		margin-top: 0.6rem
+		position: relative
+		&::before, &::after
+			content: ''
+			+size(.1rem, 0.4rem)
+			background: $space-grey
+			position: absolute
+		&::before
+			top: 0.7rem
+			right: -0.6rem
+			transform: rotate(45deg)
+		&::after
+			bottom: 0.7rem
+			right: -0.6rem
+			transform: rotate(-45deg)
 
+
+
+
+
+.contact
+	background: $orange
+	padding: 3rem 0rem
+	&__wrapper
+	&__text-container
+	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 3.2rem
+		color: #000
+		text-align: center
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 3.2rem
+		text-align: center
+		margin-top: 1.6rem
+	&__links-container
+		+flex(column, wrap, flex-start, center)
+		margin-top: 1.6rem
+	&__find-gift-link
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.8rem
+		color: #fff
+		background: $space-grey
+		text-transform: uppercase
+		border-radius: .5rem
+		border: .1rem solid $space-grey
+		transition: .2s
+		padding: 1.8rem 2.4rem
+	&__how-it-works-link
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.8rem
+		color: #000
+		background: transparent
+		text-transform: uppercase
+		border-radius: .5rem
+		border: .1rem solid $space-grey
+		transition: .2s
+		padding: 1.8rem 2.4rem
+		margin-top: 1.6rem
+
+
+
+
+
+.blogs
+	padding: 3rem 0rem
+	background: #fff
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 3.2rem
+		color: #000
+		text-align: center
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 1.8rem
+		color: #000
+		text-align: center
+		margin-top: 1.6rem
+	&__main-content
+		width: 100%
+		margin-top: 1.6rem
+		+flex(column, wrap, flex-start, center)
+	&__main-content-pic
+	&__main-content-text-container
+		background: $space-grey
+		margin-top: 1.6rem
+		+flex(column, wrap, flex-start, center)
+		padding: 3rem 2rem
+	&__main-content-author
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 1.4rem
+		color: #fff
+		text-align: center
+	&__main-content-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 4.8rem
+		line-height: 4.7rem
+		color: #fff
+		text-align: center
+		margin-top: 1.6rem
+	&__main-content-read-more-link
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.8rem
+		color: #fff
+		text-align: left
+		margin-top: 1.6rem
+	&__secondary-content
+		width: 100%
+		margin-top: 1.6rem
+		+flex(column, wrap, flex-start, center)
+	&__secondary-block
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+		text-decoration: none
+		transition: .2s
+		padding: 2rem 0rem
+		&:hover
+			box-shadow: 0.4rem 0.4rem 1rem rgba(#000, .1)
+	&__secondary-block1
+	&__secondary-block2
+		margin-top: 1.6rem
+	&__secondary-content-headline
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 2.4rem
+		line-height: 3.3rem
+		color: #000
+		text-align: center
+	&__secondary-content-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 1.8rem
+		line-height: 2.5rem
+		color: #000
+		text-align: center
+		margin-top: 1.6rem
+	&__secondary-content-read-more
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.4rem
+		color: #000
+		margin-top: 1.6rem
 
 *
 	// +outline($blue)
