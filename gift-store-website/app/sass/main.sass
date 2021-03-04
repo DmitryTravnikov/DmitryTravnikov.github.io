@@ -1,0 +1,150 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+*
+	transition: all .2s
+
+body
+	cursor: default
+
+.wrapper
+	+wrapper(90%, auto)
+
+// 1rem === 10px
+
+
+// Header
+.header
+	background: #FAFAFA
+	padding: 3rem 0rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__logo-container
+		text-decoration: none
+	&__logo
+		width: 100%
+		margin: 0rem
+		font-family: $hmar
+		font-size: 1.8rem
+		color: $space-grey
+		text-align: left
+		text-transform: lowercase
+	&__menu
+		margin-top: 2.6rem
+		+flex(column, wrap, flex-start, center)
+	&__menu-link
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.8rem
+		color: #000
+		margin-top: 1.6rem
+	&__gift-finder-link
+		text-decoration: none
+		font-family: $gr
+		font-size: 2.1rem
+		color: $orange
+		text-transform: uppercase
+		border: .1rem solid $orange
+		border-radius: .5rem
+		padding: 1.1rem 2.4rem
+		margin-top: 3rem
+		transition: .2s
+		&:hover
+			background: $orange
+			color: #fff
+
+
+
+
+
+// Main
+.main
+	background: #F1F1F2
+	padding: 3rem 0rem
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__block
+		+flex(column, wrap, space-around, flex-start)
+		width: 100%
+		min-height: 40rem
+		padding: 7%
+	&__block1
+	&__block2
+		background: url('../assets/main__block2-bg.webp') no-repeat center
+		background-size: cover
+	&__block3
+		background: url('../assets/main__block3-bg.webp') no-repeat center
+		background-size: cover
+		order: 4
+	&__block4
+		order: 3
+	&__block1-headline
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 4.6rem
+		line-height: 4.8rem
+		color: #000
+		text-align: left
+	&__block1-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 2rem
+		line-height: 2.8rem
+		color: #000
+		text-align: left
+	&__block1-link
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.8rem
+		color: #fff
+		text-transform: uppercase
+		background: $orange
+		border: .1rem solid $orange
+		border-radius: .5rem
+		transition: .2s
+		padding: 1.8rem 2.4rem
+		&:hover
+			background: lighten($orange, 5%)
+			border-color: lighten($orange, 5%)
+	&__block4-headline
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 3.2rem
+		color: #000
+		text-align: left
+	&__block4-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $gr
+		font-size: 2rem
+		line-height: 2.8rem
+		color: #000
+		text-align: left
+	&__block4-link
+		text-decoration: none
+		font-family: $gr
+		font-size: 1.8rem
+		color: $orange
+		text-transform: uppercase
+		background: transparent
+		border: .1rem solid $orange
+		border-radius: .5rem
+		transition: .2s
+		padding: 1.8rem 2.4rem
+		margin-top: 2rem
+		&:hover
+			background: lighten($orange, 5%)
+			border-color: lighten($orange, 5%)
+			color: #fff
+
+
+
+
+
+
+
+*
+	// +outline($blue)

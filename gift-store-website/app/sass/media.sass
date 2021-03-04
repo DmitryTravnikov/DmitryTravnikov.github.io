@@ -1,0 +1,141 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+/* Mobile First Method */
+/* Extra Small Devices, Phones (SM) */
+@media only screen and (min-width: 576px)
+	body
+		background: $media-blue
+	*
+		outline-color: $media-blue
+
+	.header
+		&__wrapper
+		&__logo-container
+		&__logo
+		&__menu
+			+flex(row, wrap, flex-start, center)
+			margin-top: 3rem
+		&__menu-link
+			margin-top: 0rem
+			margin-right: 1.6rem
+			&:last-child
+				margin-right: 0rem
+		&__gift-finder-link
+			margin-top: 3rem
+			&:hover
+
+
+/* Small Devices, Tablets (MD) */
+@media only screen and (min-width: 768px)
+	body
+		background: $media-pink
+	*
+		outline-color: $media-pink
+
+	.header
+		&__wrapper
+			+flex(row, wrap, space-between, center)
+		&__logo-container
+		&__logo
+		&__menu
+			margin-top: 0rem
+		&__menu-link
+			margin-right: 2.4rem
+			&:last-child
+		&__gift-finder-link
+			margin-top: 0rem
+			&:hover
+/* Medium Devices, Desktops (LG) */
+@media only screen and (min-width: 992px)
+	body
+		background: $media-orange
+	*
+		outline-color: $media-orange
+
+	.main
+		&__wrapper
+			+flex(row, wrap, center, center)
+		&__block
+			+size(50%, 48rem)
+			padding: 5%
+		&__block1
+		&__block2
+		&__block3
+			order: 3
+		&__block4
+			order: 4
+		&__block1-headline
+		&__block1-paragraph
+		&__block1-link
+			&:hover
+		&__block4-headline
+		&__block4-paragraph
+		&__block4-link
+			&:hover
+/* Large Devices, Wide Screens (XL) */
+@media only screen and (min-width: 1200px)
+	body
+		background: $media-purple
+	*
+		outline-color: $media-purple
+
+	.wrapper
+		+wrapper(144rem, auto)
+
+	.header
+		padding: 0rem
+		&__wrapper
+			padding-top: 3.8rem
+			padding-right: 3.3rem
+			padding-left: 8.1rem
+			padding-bottom: 3.7rem
+			+flex(row, wrap, space-between, flex-start)
+		&__logo-container
+			margin-top: 1.2rem
+		&__logo
+		&__menu
+			margin-top: 0.9rem
+		&__menu-link
+			margin-right: 3.1rem
+			&:last-child
+		&__gift-finder-link
+			padding: 0.8rem 1.6rem
+			&:hover
+
+	.main
+		padding: 0rem
+		&__wrapper
+		&__block
+			+size(50%, 70rem)
+			padding: 0rem
+			+flex(column, wrap, flex-start, flex-start)
+		&__block1
+			padding-top: 14.4rem
+			padding-left: 16.6rem
+			padding-right: 10rem
+		&__block2
+		&__block3
+			+size(50%, 60rem)
+		&__block4
+			+size(50%, 60rem)
+			padding-top: 16.1rem
+			padding-left: 11.3rem
+		&__block1-headline
+			font-size: 5.6rem
+			line-height: 6.8rem
+		&__block1-paragraph
+			margin-top: 4.4rem
+			padding-right: 3rem
+		&__block1-link
+			margin-top: 5.7rem
+			padding: 1.9rem 3.4rem
+			&:hover
+		&__block4-headline
+		&__block4-paragraph
+			margin-top: 3rem
+			padding-right: 16rem
+		&__block4-link
+			margin-top: 4.1rem
+			padding: 1.9rem 4.5rem
+			&:hover
