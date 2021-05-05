@@ -1,0 +1,461 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+.wrapper
+	+wrapper(90%, auto)
+
+// 1rem === 10px
+
+.header
+	background: #fff
+	&__wrapper
+	&__left
+		background: $orange
+		+flex(row, wrap, center, center)
+		padding: 2rem 0rem
+		position: relative
+	&__hamburger
+		+size(2.2rem, 1.5rem)
+		position: relative
+		cursor: pointer
+	&__hamburger-elem
+		+size(2.2rem, .2rem)
+		background: #fff
+		position: absolute
+		top: 50%
+		left: 0rem
+		transform: translateY(-50%)
+		transition: .2s
+		&::before, &::after
+			content: ''
+			background: #fff
+			position: absolute
+			left: 0rem
+			transition: .2s
+		&::before
+			+size(2.2rem, .2rem)
+			top: -.6rem
+		&::after
+			+size(1.6rem, .2rem)
+			top: .6rem
+	&__hamburger.active &__hamburger-elem
+		background: transparent
+	&__hamburger.active &__hamburger-elem::before
+		top: 0rem
+		transform: rotate(45deg)
+	&__hamburger.active &__hamburger-elem::after
+		+size(2.2rem, .2rem)
+		top: 0rem
+		transform: rotate(-45deg)
+	&__logo
+		text-decoration: none
+		font-family: $abl
+		font-size: 2.3rem
+		color: #fff
+		margin-left: 2rem
+	&__menu
+		background: $orange
+		width: 100%
+		+flex(column, wrap, flex-start, center)
+		position: absolute
+		bottom: -22.5rem
+		left: 0rem
+		padding: 3rem 0rem
+		opacity: 0
+		z-index: -1
+		transition: 0.2s
+	&__menu.active
+		opacity: 1
+		z-index: 3
+	&__menu-link
+		text-decoration: none
+		font-family: $rr
+		font-size: 1.5rem
+		color: #fff
+		margin-top: 2rem
+		&:first-child
+			margin-top: 0rem
+	&__right
+		+flex(column, wrap, flex-start, center)
+		padding: 2rem 0rem
+	&__address
+		text-decoration: none
+		font-family: $rm
+		font-size: 1.4rem
+		color: #A3ABB6
+	&__socials-container
+		+flex(row, wrap, center, flex-start)
+		margin-top: 1rem
+	&__social-link
+		text-decoration: none
+		+flex(row, wrap, center, center)
+		+size(2.6rem, 2.6rem)
+		margin-right: 0.4rem
+		&:last-child
+			margin-right: 0rem
+		svg
+			+size(2rem, 2rem)
+			+flex(row, wrap, center, center)
+			path
+				fill: #B3B7BD
+				transition: .2s
+	&__social-link:hover svg path
+		fill: darken(#B3B7BD, 5%)
+	&__facebook
+		svg
+			+size(1.8rem, 1.8rem)
+	&__google-plus
+		svg
+			+size(2.4rem, 2.4rem)
+	&__twitter
+		svg
+			+size(1.8rem, 1.8rem)
+	&__behance
+		svg
+			+size(2rem, 2rem)
+
+.main
+	padding: 3rem 0rem
+	background: #fff
+	&__wrapper
+	&__left
+	&__sky-paragraph
+		width: auto
+		margin: 0rem
+		font-family: $rbl
+		font-size: 2.5rem
+		color: #A3A9B7
+		text-transform: uppercase
+		display: none
+	&__paragraph
+		width: auto
+		margin: 0rem
+	&__paragraph1
+		font-family: $abl
+		font-size: 8rem
+		color: #A3ABB6
+	&__paragraph2
+		font-family: $rr
+		font-size: 4.5rem
+		color: #A3ABB6
+	&__right
+		margin-top: 3rem
+	&__slider
+		.owl-wrapper-outer
+			padding: 0rem
+			margin: 0rem
+		.owl-controls
+			padding: 0rem
+			margin: 0rem
+			position: relative
+			top: 1.2rem
+			.owl-pagination
+				padding: 0rem
+				margin: 0rem
+				.owl-page span
+					padding: 0rem
+					margin: 0rem
+					opacity: 1
+					margin-right: 1rem
+					+size(.7rem, .7rem)
+					background: #C4C4C4
+					transition: .2s
+					border-radius: 0rem
+				.owl-page.active span
+					+size(2.4rem, .7rem)
+					background: $orange
+				.owl-page:last-child span
+					margin-right: 0rem
+	&__slide
+		+size(100%, 36rem)
+		position: relative
+		padding-top: 2%
+		padding-left: 2%
+	&__slide1
+		background: url('http://source.unsplash.com/1600x600') no-repeat center
+		background-size: cover
+	&__slide2
+		background: url('http://source.unsplash.com/1610x600') no-repeat center
+		background-size: cover
+	&__slide3
+		background: url('http://source.unsplash.com/1590x600') no-repeat center
+		background-size: cover
+	&__project-description
+	&__project-name
+		width: 100%
+		margin: 0rem
+		font-family: $rb
+		font-size: 2.8rem
+		color: #fff
+		text-shadow: .1rem .1rem 0rem rgba(#000, .6)
+	&__project-link
+		text-decoration: none
+		font-family: $rb
+		font-size: 1.2rem
+		color: #fff
+		text-shadow: .1rem .1rem 0rem rgba(#000, .6)
+	&__project-counter
+		width: auto
+		margin: 0rem
+		font-family: $rb
+		font-size: 3rem
+		color: #fff
+		text-shadow: .1rem .1rem 0rem rgba(#000, .6)
+		position: absolute
+		bottom: 3%
+		right: 5%
+		span
+			font-size: 2rem
+
+.about
+	padding: 3rem 0rem
+	background: #fff
+	&__wrapper
+		+flex(column, wrap, flex-start, center)
+	&__image
+	&__text-container
+		+flex(column, wrap, flex-start, center)
+		margin-top: 3rem
+	&__section-name
+		width: 100%
+		margin: 0rem
+		font-family: $rb
+		font-size: 1.6rem
+		color: rgba(#000, .5)
+		text-transform: uppercase
+		text-align: center
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		text-align: center
+		margin-top: 0.4rem
+	&__paragraph1
+		font-family: $rb
+		font-size: 3rem
+		color: #000
+	&__paragraph2
+		font-family: $rr
+		font-size: 1.4rem
+		color: rgba(#000, .5)
+		margin-top: 1.2rem
+	&__experience-container
+		+flex(column, wrap, flex-start, center)
+		margin-top: 2.4rem
+	&__experience-years
+		width: auto
+		margin: 0rem
+		font-family: $abl
+		font-size: 6.6rem
+		color: #000
+		border: .3rem solid #000
+		position: relative
+		padding-left: .4rem
+		padding-right: .4rem
+		padding-bottom: 2.4rem
+		&::before
+			content: ''
+			+size(6.4rem, .3rem)
+			background: #000
+			position: absolute
+			top: 8rem
+			right: -3rem
+	&__experience-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $rr
+		font-size: 2.2rem
+		color: #000
+		margin-top: 1rem
+
+.projects
+	background: #fff
+	padding: 3rem 0rem
+	&__wrapper
+		+flex(column, wrap, flex-start, flex-start)
+	&__section-name
+		width: auto
+		margin: 0rem
+		font-family: $rm
+		font-size: 3.2rem
+		font-weight: 400
+		color: #000
+	&__tabs-container
+		+flex(row, wrap, flex-start, flex-start)
+		margin-top: 1.6rem
+	&__tab
+		text-decoration: none
+		font-family: $rm
+		font-size: 1.3rem
+		color: rgba(#000, .7)
+		transition: .2s
+		margin-right: 1.2rem
+		margin-top: 1rem
+		&:last-child
+			margin-right: 0rem
+		&.active
+			color: $orange
+	&__tab.ajax
+	&__see-all-link
+	&__content-container
+		margin-top: 1.6rem
+		width: 100%
+		height: 93rem
+		margin-top: 4rem
+		position: relative
+	&__content
+		width: 100%
+	&__slider
+		width: 100%
+		.owl-wrapper-outer
+			padding: 0rem
+			margin: 0rem
+		.owl-controls
+			padding: 0rem
+			margin: 0rem
+			position: absolute
+			top: -3rem
+			left: 0rem
+			.owl-pagination
+				padding: 0rem
+				margin: 0rem
+				.owl-page span
+					padding: 0rem
+					margin: 0rem
+					opacity: 1
+					margin-right: 1rem
+					+size(.7rem, .7rem)
+					background: #C4C4C4
+					transition: .2s
+					border-radius: 0rem
+				.owl-page.active span
+					+size(2.4rem, .7rem)
+					background: $orange
+				.owl-page:last-child span
+					margin-right: 0rem
+	&__slide
+		width: 100%
+	&__slide1
+	&__slide2
+	&__slide3
+	&__item
+	&__item1
+	&__item2
+	&__item3
+		display: none
+	&__item4
+		display: none
+	&__item5
+	&__item6
+	&__item7
+		display: none
+	&__item8
+		display: none
+	&__item9
+	&__item10
+	&__item11
+		display: none
+	&__item12
+		display: none
+	&__pic
+		+size(100%, 40rem)
+	&__pic1
+		background: url('http://source.unsplash.com/555x500') no-repeat center
+		background-size: cover
+	&__pic2
+		background: url('http://source.unsplash.com/642x500') no-repeat center
+		background-size: cover
+	&__pic3
+		background: url('http://source.unsplash.com/674x500') no-repeat center
+		background-size: cover
+	&__pic4
+		background: url('http://source.unsplash.com/691x500') no-repeat center
+		background-size: cover
+	&__pic5
+		background: url('http://source.unsplash.com/340x500') no-repeat center
+		background-size: cover
+	&__pic6
+		background: url('http://source.unsplash.com/350x500') no-repeat center
+		background-size: cover
+	&__pic7
+		background: url('http://source.unsplash.com/360x500') no-repeat center
+		background-size: cover
+	&__pic8
+		background: url('http://source.unsplash.com/370x500') no-repeat center
+		background-size: cover
+	&__pic9
+		background: url('http://source.unsplash.com/380x500') no-repeat center
+		background-size: cover
+	&__pic10
+		background: url('http://source.unsplash.com/390x500') no-repeat center
+		background-size: cover
+	&__pic11
+		background: url('http://source.unsplash.com/400x500') no-repeat center
+		background-size: cover
+	&__pic12
+		background: url('http://source.unsplash.com/290x500') no-repeat center
+		background-size: cover
+	&__text-container
+		background: #C4C4C4
+		+flex(column, wrap, flex-start, flex-start)
+		+size(100%, 100%)
+		opacity: 0
+		z-index: -1
+		transition: .2s
+		padding-top: 2rem
+		padding-left: 2rem
+		position: relative
+	&__pic:hover &__text-container
+		opacity: 1
+		z-index: 1
+	&__pic:hover + &__project-name
+		color: #000
+	&__paragraph
+	&__paragraph1
+		width: 100%
+		margin: 0rem
+		font-family: $rb
+		font-size: 2.4rem
+		color: #fff
+		margin-top: 1.6rem
+	&__paragraph2
+		width: 100%
+		margin: 0rem
+		font-family: $rr
+		font-size: 1.4rem
+		color: #fff
+		margin-top: 1.6rem
+	&__paragraph3
+		width: 50%
+		margin: 0rem
+		font-family: $rr
+		font-size: 1.2rem
+		color: #fff
+		margin-top: 1.6rem
+	&__see-project-link
+		text-decoration: none
+		font-family: $rr
+		font-size: 1.2rem
+		color: #fff
+		position: absolute
+		bottom: 2rem
+		left: 2rem
+	&__project-name
+		text-decoration: none
+		font-family: $rm
+		font-size: 2rem
+		color: #A3A9B7
+		position: relative
+		padding-left: 6rem
+		&::before
+			content: ''
+			+size(4.8rem, .4rem)
+			background: #A3A9B7
+			position: absolute
+			top: 50%
+			left: 0rem
+			transform: translateY(-50%)
+
+
+
+*
+	// +outline($blue)

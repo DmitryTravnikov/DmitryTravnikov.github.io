@@ -74,7 +74,7 @@
 // 	 }, 800);
 // 	 return false;
 //  });//кнопка "наверх" end
-	
+
 //  //Аякс отправка форм
 //  //Документация: http://api.jquery.com/jquery.ajax/
 //  $("form").submit(function() {
@@ -114,15 +114,15 @@
 
 // 	// Аккордеон
 // 	$(document).ready(function() {
-		
+
 // 	 $('.service2>.wrapper>.block-2>article').not(':first-of-type').hide();
-	 
-		
+
+
 // 		$('.service2>.wrapper>.block-2>.headline').click(function() {
-			
+
 // 			var findArticle = $(this).next();
 // 			var findWrapper = $(this).closest('.block-2');
-			
+
 // 			if (findArticle.is(':visible')) {
 // 				findArticle.slideUp(50);
 // 			}
@@ -138,6 +138,10 @@
 
 $(document).ready(function() {
 
+	var cLog = function(n) {
+		return console.log(n);
+	};//console.log
+
 	//prevent default
 	function prevdef() {
 		$('.prevdef').click(function(event) {
@@ -149,7 +153,3 @@ $(document).ready(function() {
 	
 
 });//doc.ready end
-
-let cLog = function(n) {
-	return console.log(n);
-};//console.log
