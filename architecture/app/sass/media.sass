@@ -91,6 +91,60 @@
 		&__see-project-link
 		&__project-name
 			&::before
+
+	.we-do
+		&__wrapper
+		&__text-container
+		&__section-name
+			width: 45rem
+		&__paragraph
+			width: 45rem
+		&__paragraph1
+		&__paragraph2
+		&__options-container
+		&__option
+		&__option1
+		&__option2
+		&__option3
+		&__option4
+		&__option-name
+		&__see-more-link
+		&__image
+
+	.clients
+		padding: 3rem 0rem
+		&__wrapper
+		&__section-name
+		&__slider-container
+		&__slider
+			.owl-wrapper-outer
+			.owl-controls
+				.owl-pagination
+					.owl-page span
+					.owl-page.active span
+					.owl-page:last-child span
+		&__slide
+		&__slide1
+		&__slide2
+		&__slide3
+		&__client-pic
+		&__client-pic1
+		&__client-pic2
+		&__client-pic3
+		&__text-container
+			width: 100%
+		&__client-name
+		&__company-name
+		&__client-review
+			width: 40rem
+		&__brands
+			+flex(row, wrap, center, center)
+			width: 100%
+		&__brand
+		&__brand1
+		&__brand2
+		&__brand3
+		&__brand4
 /* Small Devices, Tablets (MD) */
 @media only screen and (min-width: 768px)
 	body
@@ -188,6 +242,56 @@
 		&__see-project-link
 		&__project-name
 			&::before
+
+	.we-do
+		&__wrapper
+		&__text-container
+		&__section-name
+		&__paragraph
+		&__paragraph1
+		&__paragraph2
+		&__options-container
+			+flex(row, wrap, center, center)
+			width: 50rem
+			margin-top: 3rem
+		&__option
+			+size(50%, auto)
+			position: relative
+		&__option1
+			&::before
+				content: ''
+				+size(.1rem, 100%)
+				background: #B3B3B3
+				position: absolute
+				top: 0rem
+				right: 0rem
+		&__option2
+			&::before
+				content: ''
+				+size(100%, .1rem)
+				background: #B3B3B3
+				position: absolute
+				bottom: 0rem
+				left: 0rem
+		&__option3
+			&::before
+				content: ''
+				+size(100%, .1rem)
+				background: #B3B3B3
+				position: absolute
+				top: -0.1rem
+				right: 0rem
+		&__option4
+			&::before
+				content: ''
+				+size(.1rem, 100%)
+				background: #B3B3B3
+				position: absolute
+				top: 0rem
+				left: -0.1rem
+		&__option-name
+		&__see-more-link
+		&__image
 /* Medium Devices, Desktops (LG) */
 @media only screen and (min-width: 992px)
 	body
@@ -252,6 +356,85 @@
 		&__experience-years
 			&::before
 		&__experience-paragraph
+
+	.we-do
+		&__wrapper
+			+flex(row, wrap, center, stretch)
+		&__text-container
+			margin: 2rem
+		&__section-name
+			margin-top: 0rem
+		&__paragraph
+		&__paragraph1
+		&__paragraph2
+		&__options-container
+		&__option
+		&__option1
+			&::before
+		&__option2
+			&::before
+		&__option3
+			&::before
+		&__option4
+			&::before
+		&__option-name
+		&__see-more-link
+		&__image
+			margin: 2rem
+
+	.clients
+		padding: 3rem 0rem
+		&__wrapper
+			+flex(column, wrap, flex-start, center)
+		&__section-name
+		&__slider-container
+			position: relative
+			margin-top: 4rem
+			width: 90rem
+		&__slider
+			.owl-wrapper-outer
+			.owl-controls
+				position: absolute
+				top: 27.4rem
+				left: 27.2rem
+				.owl-pagination
+					.owl-page span
+					.owl-page.active span
+					.owl-page:last-child span
+		&__slide
+			+flex(row, wrap, center, stretch)
+		&__slide1
+		&__slide2
+		&__slide3
+		&__client-pic
+		&__client-pic1
+		&__client-pic2
+		&__client-pic3
+		&__text-container
+			width: 70%
+			+flex(column, wrap, flex-start, flex-start)
+			padding-left: 3rem
+		&__client-name
+			text-align: left
+			margin-top: 0rem
+		&__company-name
+			text-align: left
+			margin-top: 3rem
+		&__client-review
+			text-align: left
+			margin-top: 3rem
+			padding-left: 5.4rem
+			padding-top: .4rem
+			background: url('../assets/clients__quote.webp') no-repeat 0rem 0rem
+		&__brands
+			margin-top: 4rem
+			width: auto
+		&__brand
+		&__brand1
+			margin-left: 0rem
+		&__brand2
+		&__brand3
+		&__brand4
 /* Large Devices, Wide Screens (XL) */
 @media only screen and (min-width: 1200px)
 	body
@@ -373,6 +556,32 @@
 		&__see-project-link
 		&__project-name
 			&::before
+
+	.we-do
+		&__wrapper
+		&__text-container
+			+flex(column, wrap, flex-start, flex-start)
+		&__section-name
+			text-align: left
+		&__paragraph
+			text-align: left
+		&__paragraph1
+		&__paragraph2
+		&__options-container
+		&__option
+		&__option1
+			&::before
+		&__option2
+			&::before
+		&__option3
+			&::before
+		&__option4
+			&::before
+		&__option-name
+		&__see-more-link
+		&__image
+
+
 /* Large Devices, Wide Screens (XL) */
 @media only screen and (min-width: 1443px)
 	body
@@ -615,3 +824,128 @@
 			margin-left: 0.9rem
 			&::before
 
+	.we-do
+		padding-top: 4.2rem
+		padding-bottom: 13rem
+		&__wrapper
+		&__text-container
+			width: 56.7rem
+			margin: 0rem
+			position: relative
+			&::before
+				content: ''
+				+size(25.7rem, 25.4rem)
+				background: url('../assets/dots1.webp') no-repeat center
+				position: absolute
+				bottom: -7rem
+				right: -20rem
+		&__section-name
+			letter-spacing: .1rem
+		&__paragraph
+		&__paragraph1
+			width: 21rem
+		&__paragraph2
+			width: 47rem
+			margin-top: 4.3rem
+		&__options-container
+			margin-top: 4.9rem
+		&__option
+			+size(22.7rem, 8.1rem)
+			padding: 0rem
+			position: relative
+			left: -2.7rem
+		&__option1
+			padding: 1.6rem 0rem 0rem 8rem
+			background: url('../assets/we-do__option-pic1.webp') no-repeat -0.6rem -1rem
+			&::before
+		&__option2
+			padding: 1.6rem 0rem 0rem 12.5rem
+			background: url('../assets/we-do__option-pic2.webp') no-repeat 3.9rem -1rem
+			&::before
+		&__option3
+			padding: 4.6rem 0rem 0rem 7.9rem
+			background: url('../assets/we-do__option-pic3.webp') no-repeat 0rem 1.5rem
+			&::before
+				+size(95%, .1rem)
+		&__option4
+			padding: 3.4rem 0rem 0rem 12.5rem
+			background: url('../assets/we-do__option-pic4.webp') no-repeat 3.9rem 0.9rem
+			&::before
+		&__option-name
+		&__see-more-link
+			margin-top: 3.7rem
+			margin-left: .1rem
+		&__image
+			margin: 0rem
+			position: relative
+
+	.clients
+		padding-top: 7rem
+		padding-bottom: 11.2rem
+		&__wrapper
+			+flex(row, wrap, flex-start, flex-start)
+			position: relative
+			&::before
+				content: ''
+				+size(25.7rem, 25.4rem)
+				background: url('../assets/dots2.webp') no-repeat center
+				position: absolute
+				bottom: -3rem
+				left: 24rem
+		&__section-name
+			text-align: left
+			margin-left: 25rem
+			letter-spacing: .2rem
+		&__slider-container
+			margin: 0rem auto
+			margin-top: 3.6rem
+			width: 80%
+		&__slider
+			.owl-wrapper-outer
+			.owl-controls
+				top: 28.4rem
+				left: 42.8rem
+				.owl-pagination
+					.owl-page span
+					.owl-page.active span
+					.owl-page:last-child span
+		&__slide
+			+flex(row, wrap, flex-start, flex-start)
+			padding-left: 10.1rem
+		&__slide1
+		&__slide2
+		&__slide3
+		&__client-pic
+			margin-top: 0.9rem
+		&__client-pic1
+		&__client-pic2
+		&__client-pic3
+		&__text-container
+			padding-top: 0rem
+			padding-left: 8.3rem
+			padding-right: 0rem
+			width: auto
+		&__client-name
+			letter-spacing: 0.3rem
+		&__company-name
+			margin-top: 2.8rem
+			margin-left: 0rem
+		&__client-review
+			margin-top: 2.8rem
+			padding-left: 4.6rem
+			width: 40rem
+			background: url('../assets/clients__quote.webp') no-repeat 0rem 0.2rem
+		&__brands
+			width: auto
+			margin-top: 3.4rem
+			margin-left: 2rem
+			+flex(row, wrap, center, center)
+		&__brand
+			margin: 0rem
+			margin-right: 2.7rem
+			&:last-child
+				margin-right: 0rem
+		&__brand1
+		&__brand2
+		&__brand3
+		&__brand4

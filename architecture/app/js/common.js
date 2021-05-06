@@ -171,6 +171,24 @@ $(document).ready(function() {
 
 	
 
+
+
+
+	// Clients
+	//Каруселька
+	//Документация: http://owlgraphic.com/owlcarousel/
+	var clientsSlider = $(".clients__slider");
+	clientsSlider.owlCarousel({
+		items : 1,
+		autoPlay: 5000,
+		pagination: true,
+		transitionStyle: 'fade',
+		itemsDesktop: [1199,1],
+		itemsDesktopSmall: [979,1],
+		itemsTablet: [768,1],
+		itemsMobile: [479,1]
+	});
+
 });//doc.ready end
 
 var cLog = function(n) {
