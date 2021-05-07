@@ -189,6 +189,15 @@ $(document).ready(function() {
 		itemsMobile: [479,1]
 	});
 
+
+
+
+
+
+
+
+	
+
 });//doc.ready end
 
 var cLog = function(n) {
