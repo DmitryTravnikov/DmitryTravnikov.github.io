@@ -168,6 +168,8 @@
 		&__image3
 		&__paragraph
 			&::before
+
+
 /* Small Devices, Tablets (MD) */
 @media only screen and (min-width: 768px)
 	body
@@ -461,7 +463,66 @@
 		&__brand3
 		&__brand4
 
-
+	.footer
+		&__wrapper
+			+flex(row, wrap, center, stretch)
+		&__block
+			width: 20%
+			+flex(column, wrap, flex-start, center)
+			margin: 0rem
+			&:first-child
+				margin: 0rem
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+			+flex(column, wrap, flex-start, flex-start)
+		&__logo
+		&__copy
+			text-align: center
+		&__list
+			+flex(column, wrap, flex-start, center)
+			margin: 0rem
+		&__list-item
+			&:first-child
+		&__list-link
+			&:hover
+		&__menu
+			+flex(column, wrap, flex-start, center)
+			margin: 0rem
+		&__menu-list-item
+			&:first-child
+		&__menu-link
+			&:hover
+		&__select-container
+			margin: 0rem
+		&__select
+		&__option
+		&__select-paragraph
+		&__fake-select-container
+		&__fake-select
+			&::before
+			&.active::before
+		&__fake-options-container
+			&.active
+		&__fake-option
+			&.active
+		&__socials-container
+			margin-top: 1.6rem
+		&__social-link
+			margin-right: 0.6rem
+			&:last-child
+				margin-right: 0rem
+			svg
+				path
+		&__facebook
+			svg
+		&__google-plus
+			svg
+		&__twitter
+			svg
+		&__behance
+			svg
 /* Large Devices, Wide Screens (XL) */
 @media only screen and (min-width: 1200px)
 	body
@@ -1046,3 +1107,61 @@
 			letter-spacing: 0.2rem
 			&::before
 				top: 1.3rem
+
+	.footer
+		&__wrapper
+			+flex(row, wrap, center, flex-start)
+		&__block
+			+flex(column, wrap, flex-start, flex-start)
+			margin: 3rem
+			width: 13%
+			&:first-child
+				margin: 3rem
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__logo
+			text-align: left
+		&__copy
+			text-align: left
+		&__list
+			+flex(column, wrap, flex-start, flex-start)
+		&__list-item
+			&:first-child
+		&__list-link
+			&:hover
+		&__menu
+			+flex(column, wrap, flex-start, flex-start)
+		&__menu-list-item
+			&:first-child
+		&__menu-link
+			&:hover
+		&__select-container
+		&__select
+		&__option
+		&__select-paragraph
+		&__fake-select-container
+		&__fake-select
+			&::before
+			&.active::before
+		&__fake-options-container
+			&.active
+		&__fake-option
+			&.active
+		&__socials-container
+			position: relative
+			left: -1rem
+		&__social-link
+			&:last-child
+			svg
+				path
+		&__facebook
+			svg
+		&__google-plus
+			svg
+		&__twitter
+			svg
+		&__behance
+			svg
+

@@ -196,7 +196,39 @@ $(document).ready(function() {
 
 
 
-	
+	// Footer
+	let footerSelectOptions = document.querySelectorAll('.footer__option');
+	let footerFakeSelect = document.querySelector('.footer__fake-select');
+	let footerFakeOptions = document.querySelectorAll('.footer__fake-option');
+	let footerFakeOptionsContainer = document.querySelector('.footer__fake-options-container');
+
+	footerFakeSelect.addEventListener('click', showfFOC);
+	for (let i = 0; i < footerFakeOptions.length; i++) {
+		footerFakeOptions[i].addEventListener('click', choosefFO);
+	}
+
+	function showfFOC() {
+		footerFakeOptionsContainer.classList.toggle('active');
+		this.classList.toggle('active');
+	}
+
+	function choosefFO() {
+		for (let i = 0; i < footerFakeOptions.length; i++) {
+			footerFakeOptions[i].classList.remove('active');
+		}
+
+		this.classList.add('active');
+		footerFakeSelect.innerHTML = this.innerHTML;
+
+		footerFakeOptionsContainer.classList.remove('active');
+		footerFakeSelect.classList.remove('active');
+
+		for (let i = 0; i < footerFakeOptions.length; i++) {
+			if (footerFakeOptions[i].classList.contains('active')) {
+				footerSelectOptions[i].selected = true;
+			}
+		}
+	}
 
 });//doc.ready end
 
