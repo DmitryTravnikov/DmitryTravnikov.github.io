@@ -58,7 +58,7 @@
 		width: 100%
 		+flex(column, wrap, flex-start, center)
 		position: absolute
-		bottom: -22.5rem
+		bottom: -18.8rem
 		left: 0rem
 		padding: 3rem 0rem
 		opacity: 0
@@ -812,6 +812,8 @@
 			+flex(row, wrap, center, center)
 			path
 				fill: #B3B7BD
+	&__social-link:hover svg path
+		fill: darken(#B3B7BD, 5%)
 	&__facebook
 		svg
 			+size(1.8rem, 1.8rem)
@@ -824,6 +826,29 @@
 	&__behance
 		svg
 			+size(2rem, 2rem)
+
+.top
+	display: block
+	+size(4rem, 4rem)
+	position: fixed
+	bottom: 0rem
+	right: 0rem
+	background: $orange
+	opacity: 0
+	z-index: -1
+	transition: .2s
+	&::before, &::after
+		content: ''
+		+size(1.6rem, 0.2rem)
+		background: #fff
+		position: absolute
+		top: 50%
+	&::before
+		left: 0.8rem
+		transform: rotate(-60deg)
+	&::after
+		right: 0.8rem
+		transform: rotate(60deg)
 
 
 
