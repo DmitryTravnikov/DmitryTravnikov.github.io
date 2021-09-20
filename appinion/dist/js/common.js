@@ -347,7 +347,6 @@ $(document).ready(function() {
 	headerLogInButton.addEventListener('click', registrationFormShow);
 
 	function registrationFormShow() {
-		cLog('eyeofewof');
 		modalOverlay.style.display = 'block';
 		modalRegistrationFormContainer.style.opacity = '1';
 		modalRegistrationFormContainer.style.zIndex = '999';
