@@ -151,7 +151,15 @@ body
 		color: $green
 		font-size: 3rem
 		position: relative
-		top: 1rem
+		top: 1.2rem
+		left: .2rem
+		&::before
+			content: ''
+			+size(0.4rem, 0.4rem)
+			background: $green
+			position: absolute
+			top: -0.3rem
+			left: 2.1rem
 
 *
 	// +outline($blue)
