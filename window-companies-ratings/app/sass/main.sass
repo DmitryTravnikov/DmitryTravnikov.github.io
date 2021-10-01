@@ -1,0 +1,719 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+.wrapper
+	+wrapper(90%, auto)
+	padding-left: 2rem
+
+// 1rem === 10px
+
+// Header
+.header
+	background: #fff
+	&__wrapper
+		position: relative
+		padding-top: 1.7rem
+		padding-left: 2rem
+		padding-right: 2rem
+		padding-bottom: 1.4rem
+		+flex(row, wrap, space-between, center)
+	&__logo
+		text-decoration: none
+		font-family: $lbl
+		font-size: 1.2rem
+		color: #333
+		text-transform: uppercase
+		padding-top: 1rem
+		padding-bottom: 1rem
+		padding-left: 4rem
+		background: url('../assets/logo.webp') no-repeat 0rem 0.1rem
+		background-size: 11%
+	&__cities-select
+		display: none
+	&__cities-option
+	&__menu-n-fake-select-container
+		width: 100%
+		position: absolute
+		top: 100%
+		left: 0rem
+		+flex(column, wrap, flex-start, flex-start)
+		padding-top: 2.8rem
+		padding-left: 1.9rem
+		padding-bottom: 4.4rem
+		opacity: 0
+		z-index: -1
+		transition: .2s
+		background: #fff
+		&.active
+			opacity: 1
+			z-index: 1
+	&__fake-select
+		font-family: $lr
+		font-size: 1.4rem
+		color: #818181
+		order: 2
+		margin-top: 4rem
+		border: .1rem solid #E3E3E3
+		padding: 1.3rem 4.8rem 1.3rem 1.7rem
+		border-radius: 5rem
+		position: relative
+		cursor: pointer
+		&::before, &::after
+			content: ''
+			+size(0.4rem, .1rem)
+			background: #A4A4A4
+			position: absolute
+			top: 2rem
+			transition: .2s
+		&::before
+			right: 1.9rem
+			transform: rotate(45deg)
+		&::after
+			right: 1.7rem
+			transform: rotate(-45deg)
+		&.active::before
+			transform: rotate(-45deg)
+		&.active::after
+			transform: rotate(45deg)
+	&__menu
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		order: 1
+	&__menu-list-item
+		padding: 0rem
+		margin: 0rem
+		position: relative
+		margin-top: 1.3rem
+		&:first-child
+			margin-top: 0rem
+	&__menu-list-item.active &__submenu
+		position: static
+		+flex(column, wrap, flex-start, flex-start)
+	&__menu-list-item.active &__has-submenu::after
+		background: url('../assets/arrow_up.webp') no-repeat center
+	&__menu-list-item.active &__menu-link::before
+		opacity: 0
+		z-index: -1
+	&__menu-link
+		text-decoration: none
+		font-size: 2.4rem
+		color: $space-grey
+		font-family: $lb
+		position: relative
+		padding-bottom: 0.2rem
+		&::before
+			content: ''
+			+size(100%, .1rem)
+			background: #E5E5E1
+			position: absolute
+			bottom: 0rem
+			left: 0rem
+			transition: .2s
+			opacity: 1
+			z-index: 1
+	&__has-submenu
+		&::after
+			content: ''
+			+size(0.7rem, 0.4rem)
+			background: url('../assets/arrow_down.webp') no-repeat center
+			position: absolute
+			top: 50%
+			right: -2.3rem
+			transform: translateY(-50%)
+	&__submenu
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		position: absolute
+		top: 0rem
+		left: 0rem
+		display: none
+		margin-top: 1.9rem
+		padding-right: 11rem
+	&__submenu-list-item
+		padding: 0rem
+		margin: 0rem
+		margin-top: 1.5rem
+		&:first-child
+			margin-top: 0rem
+	&__submenu-link
+		text-decoration: none
+		font-size: 1.4rem
+		color: $grey
+		transition: .2s
+		font-family: $lr
+		&:hover
+			color: $space-grey
+	&__counters-container
+		display: none
+	&__counter-container
+	&__companies-counter
+	&__reviews-counter
+	&__counter-name
+	&__hamburger
+		+size(1.6rem, 1.2rem)
+		background: none
+		cursor: pointer
+		position: relative
+	&__hamburger.active &__hamburger-elem
+		background: transparent
+	&__hamburger.active &__hamburger-elem::before
+		top: 0rem
+		transform: rotate(45deg)
+	&__hamburger.active &__hamburger-elem::after
+		top: 0rem
+		transform: rotate(-45deg)
+	&__hamburger-elem
+		+size(100%, .2rem)
+		background: $space-grey
+		position: absolute
+		top: 50%
+		left: 0rem
+		transform: translateY(-50%)
+		transition: .2s
+		&::before, &::after
+			content: ''
+			+size(100%, .2rem)
+			background: $space-grey
+			position: absolute
+			left: 0rem
+			transition: .2s
+		&::before
+			top: -0.5rem
+		&::after
+			top: 0.5rem
+
+
+
+
+
+
+
+
+
+
+
+
+// Main
+.main
+	background: #F9FAFD
+	&__wrapper
+		padding-top: 2.6rem
+		+flex(column, wrap, flex-start, flex-start)
+	&__headline
+		width: auto
+		margin: 0rem
+		font-family: $lbl
+		font-size: 2.4rem
+		line-height: 3.2rem
+		color: $space-grey
+		text-align: left
+		padding-right: 1rem
+	&__paragraph
+		width: auto
+		margin: 0rem
+		font-family: $lr
+		font-size: 1.4rem
+		line-height: 2rem
+		color: $grey
+		text-align: left
+		margin-top: 0.9rem
+		padding-right: 2rem
+	&__paragraph1
+		margin-top: 1rem
+	&__paragraph2
+	&__paragraph3
+	&__update-date
+		width: auto
+		margin: 0rem
+		font-family: $lr
+		font-size: 1.4rem
+		color: #818181
+		background: #F3F4F7
+		border-radius: 1rem
+		padding: 1rem 1.9rem 1.1rem 1.8rem
+		text-align: center
+		margin-top: 1.6rem
+	&__sort-container
+		font-family: $lr
+		font-size: 1.4rem
+		color: $space-grey
+		margin-top: 1.3rem
+		+flex(row, wrap, flex-start, center)
+	&__sort-select
+		display: none
+	&__sort-option
+	&__fake-select-container
+		position: relative
+		margin-left: 1.3rem
+	&__fake-select
+		font-family: $lr
+		font-size: 1.4rem
+		color: #818181
+		border: .1rem solid #E3E3E3
+		border-radius: 1rem
+		padding: 1rem 3.9rem 1.1rem 1.8rem
+		min-width: 15.6rem
+		cursor: pointer
+		position: relative
+		user-select: none
+		&::before, &::after
+			content: ''
+			+size(0.4rem, .1rem)
+			background: #A4A4A4
+			position: absolute
+			top: 1.7rem
+			transition: .2s
+		&::before
+			right: 1.6rem
+			transform: rotate(45deg)
+		&::after
+			right: 1.4rem
+			transform: rotate(-45deg)
+		&.active::before
+			transform: rotate(-45deg)
+		&.active::after
+			transform: rotate(45deg)
+	&__fake-options-container
+		background: #fff
+		position: absolute
+		top: 100%
+		left: 0rem
+		width: 100%
+		border: .1rem solid #E3E3E3
+		border-radius: 1rem
+		padding: 1.4rem 1rem
+		+flex(column, wrap, flex-start, flex-start)
+		opacity: 0
+		z-index: -1
+		transition: .2s
+		margin-top: 0.4rem
+		&.active
+			opacity: 1
+			z-index: 1
+	&__fake-option
+		font-family: $lr
+		font-size: 1.4rem
+		color: #818181
+		transition: .2s
+		padding: 0.8rem
+		border-radius: 0.4rem
+		cursor: pointer
+		width: 100%
+		user-select: none
+		&.active
+			background: #818181
+			color: #fff
+	&__items-container
+		+flex(column, wrap, flex-start, flex-start)
+		width: 100%
+		margin-top: 1.2rem
+	&__item
+		width: 100%
+		position: relative
+		background: #fff
+		+flex(column, wrap, flex-start, flex-start)
+		border-radius: 1rem
+		padding-top: 2.1rem
+		padding-bottom: 2rem
+		padding-left: 2.1rem
+		padding-right: 2.1rem
+		overflow: hidden
+		&::before
+			content: 'Реклама'
+			width: 20rem
+			background: #F5F6F8
+			font-family: $lr
+			font-size: 1rem
+			color: #C2C2C2
+			text-align: center
+			text-transform: uppercase
+			position: absolute
+			top: 1.3rem
+			right: -3.8rem
+			padding: .9rem 0rem 1rem
+			transform: rotate(33deg)
+	&__item1
+	&__item2
+		margin-top: 2rem
+	&__item-company-logo
+	&__item-company-image
+	&__item-company-name-container
+		width: 100%
+		+flex(column, wrap, flex-start, flex-start)
+	&__item-company-name-span
+		font-family: $lr
+		font-size: 1.4rem
+		color: $grey
+		margin-top: 1.8rem
+	&__item-company-name
+		text-decoration: none
+		font-family: $lsb
+		font-size: 1.6rem
+		line-height: 2.2rem
+		color: $space-grey
+		text-decoration: underline
+		text-decoration-color: #E5E5E1
+		margin-top: 0.3rem
+		width: 70%
+	&__item-reviews-n-ratings-container
+		width: 100%
+		margin-top: 2rem
+		+flex(row, wrap, flex-start, flex-start)
+	&__item-reviews-container
+	&__item-reviews
+		width: auto
+		margin: 0rem
+		font-family: $lr
+		font-size: 1.4rem
+		color: $grey
+		text-align: left
+	&__item-reviews-ammount
+		width: auto
+		margin: 0rem
+		font-family: $lsb
+		font-size: 1.6rem
+		color: $space-grey
+		margin-top: 0.4rem
+	&__item-ratings-container
+		margin-left: 3.7rem
+	&__item-ratings
+		width: auto
+		margin: 0rem
+		font-family: $lr
+		font-size: 1.4rem
+		color: $grey
+	&__item-ratings-value
+		width: auto
+		margin: 0rem
+		font-family: $lsb
+		color: $space-grey
+		padding-left: 1.9rem
+		background: url('../assets/main__star.webp') no-repeat 0rem center
+		margin-top: 0.4rem
+		margin-left: 0.1rem
+	&__collapsed-block
+		display: none
+		width: 100%
+		&.active
+			+flex(column, wrap, flex-start, flex-start)
+	&__testimonials-container
+		position: relative
+		margin-top: 2.9rem
+		+flex(column, wrap, flex-start, flex-start)
+		width: 100%
+		&::before
+			content: ''
+			+size(90%, .1rem)
+			background: #F0F0F0
+			position: absolute
+			top: 0rem
+			left: 50%
+			transform: translateX(-50%)
+	&__testimonials-paragraph
+		width: auto
+		margin: 0rem
+		font-family: $lsb
+		font-size: 1.6rem
+		color: $space-grey
+		text-align: left
+		margin-top: 3.2rem
+		span
+			font-family: $lr
+			font-size: 1.4rem
+			color: $grey
+			margin-left: 0.3rem
+	&__testimonials-brands-container
+		width: 100%
+		+flex(row, wrap, space-between, flex-start)
+		margin-top: 1.1rem
+	&__testimonials-brand
+		text-decoration: none
+		width: 48%
+		border: .1rem solid #EFF0F3
+		border-radius: 1rem
+		margin-top: 1rem
+		padding-top: 5rem
+		padding-bottom: 1.5rem
+	&__testimonials-brand1
+		background: url('../assets/main__brand-image1.webp') no-repeat center 1.6rem
+	&__testimonials-brand2
+		background: url('../assets/main__brand-image2.webp') no-repeat center 1.3rem
+	&__testimonials-brand3
+		background: url('../assets/main__brand-image3.webp') no-repeat center 1.8rem
+	&__testimonials-brand4
+		background: url('../assets/main__brand-image4.webp') no-repeat center 1.7rem
+	&__testimonials-brand-rating
+		width: auto
+		margin: 0rem
+		font-family: $lr
+		font-size: 1.2rem
+		line-height: 2rem
+		color: $grey
+		text-align: center
+		span
+			font-family: $lsb
+			font-size: 1.2rem
+			color: $space-grey
+	&__slider-container
+		width: 100%
+		margin-top: 1rem
+		+flex(column, wrap, center, center)
+		border: .1rem solid #EFF0F3
+		border-radius: 1rem
+		padding-top: 5.8rem
+		background: url('../assets/main__quote.webp') no-repeat 2.6rem 2.8rem
+		position: relative
+		padding-bottom: 2rem
+	&__slider
+		width: 100%
+		+flex(column, wrap, center, center)
+		.owl-wrapper-outer
+			padding: 0rem
+			margin: 0rem
+		.owl-controls
+			padding: 0rem
+			margin: 0rem
+			position: absolute
+			bottom: -4.7rem
+			left: 50%
+			transform: translateX(-50%)
+			.owl-pagination
+				padding: 0rem
+				margin: 0rem
+				+flex(row, wrap, flex-start, center)
+				.owl-page
+					padding: 0rem
+					margin: 0rem
+					span
+						padding: 0rem
+						margin: 0rem
+						+size(.8rem, .8rem)
+						border: .2rem solid #FFC023
+						margin-right: 1rem
+						background: transparent
+						opacity: 1
+				.owl-page:last-child
+					span
+						margin-right: 0rem
+				.owl-page.active
+					span
+						+size(1.2rem, 1.2rem)
+						background: #FFC023
+	&__slide
+		width: 100%
+		+flex(column, wrap, center, center)
+	&__slide1
+	&__slide2
+	&__slide3
+	&__slide-content
+		width: 100%
+		+flex(column, wrap, flex-start, flex-start)
+		&:last-child
+			display: none
+	&__slide-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $lr
+		font-size: 1.4rem
+		line-height: 2rem
+		color: $space-grey
+		text-align: left
+		padding-right: 4rem
+		padding-left: 2.4rem
+	&__additional-info
+		width: 100%
+		margin-top: 2.1rem
+		position: relative
+		+flex(row, wrap, space-between, flex-start)
+		padding-left: 2.5rem
+		padding-top: 1.8rem
+		&::before
+			content: ''
+			+size(83%, .1rem)
+			background: #EFF0F3
+			position: absolute
+			top: 0rem
+			left: 50%
+			transform: translateX(-50%)
+	&__author-container
+	&__additional-info-span
+		width: auto
+		margin: 0rem
+		font-family: $lr
+		font-size: 1.2rem
+		color: $grey
+	&__additional-info-author
+		width: auto
+		margin: 0rem
+		font-family: $lsb
+		font-size: 1.6rem
+		color: $space-grey
+		text-transform: capitalize
+	&__additional-info-ratings-container
+		margin-top: 1.3rem
+	&__stars-container
+		+flex(row, wrap, flex-start, flex-start)
+		margin-top: 0.5rem
+	&__star
+		+size(1.2rem, 1.2rem)
+		transition: .2s
+		margin-right: 0.4rem
+	&__star1
+		background: url('../assets/main__testimonials-filled-star.webp') no-repeat center
+	&__star2
+		background: url('../assets/main__testimonials-filled-star.webp') no-repeat center
+	&__star3
+		background: url('../assets/main__testimonials-filled-star.webp') no-repeat center
+	&__star4
+		background: url('../assets/main__testimonials-filled-star.webp') no-repeat center
+	&__star5
+		background: url('../assets/main__testimonials-empty-start.webp') no-repeat center
+	&__additional-info-brand
+		text-decoration: none
+		margin-top: 5.4rem
+		margin-right: 4.9rem
+	&__additional-info-brand-image
+	&__slider-button
+		outline: none
+		border: none
+		background: #fff
+		+size(2.2rem, 2.2rem)
+		border-radius: 50%
+		position: absolute
+		top: 47.6%
+		transform: translateY(-50%)
+		box-shadow: 0rem .4rem .4rem rgba(#000, .05)
+		cursor: pointer
+		&::before, &::after
+			content: ''
+			+size(0.4rem, .1rem)
+			background: #A7A7A7
+			position: absolute
+	&__prev-button
+		left: -1.1rem
+		&::before
+			transform: rotate(-45deg)
+			left: 0.9rem
+			top: 0.9rem
+		&::after
+			transform: rotate(45deg)
+			left: 0.9rem
+			bottom: 0.9rem
+	&__next-button
+		right: -1.1rem
+		&::before
+			transform: rotate(45deg)
+			right: 0.9rem
+			top: 0.9rem
+		&::after
+			transform: rotate(-45deg)
+			right: 0.9rem
+			bottom: 0.9rem
+	&__show-more-button
+		display: none
+	&__prices-container
+		width: 100%
+		padding-top: 4.8rem
+	&__prices-paragraph
+		width: auto
+		margin: 0rem
+		font-family: $lsb
+		font-size: 1.6rem
+		color: $space-grey
+		text-align: left
+	&__prices-items-container
+		width: 100%
+		+flex(row, wrap, space-between, flex-start)
+		margin-top: 0.9rem
+	&__prices-item
+		text-decoration: none
+		width: 48%
+		border-radius: 1rem
+		border: .1rem solid #EFF0F3
+		padding-top: 1.5rem
+		padding-left: 1.6rem
+		padding-right: 3rem
+		padding-bottom: 1.4rem
+		margin-top: 1rem
+	&__prices-item1
+	&__prices-item2
+	&__prices-item3
+	&__prices-item4
+	&__prices-item5
+	&__prices-item6
+	&__prices-item7
+	&__prices-item8
+	&__prices-item9
+	&__prices-item10
+	&__prices-item11
+	&__prices-service-name
+		width: auto
+		margin: 0rem
+		font-family: $lr
+		font-size: 1.2rem
+		line-height: 1.6rem
+		color: $grey
+	&__prices-service-cost
+		width: auto
+		margin: 0rem
+		font-family: $lsb
+		font-size: 1.2rem
+		color: $space-grey
+		text-align: left
+		margin-top: 0.5rem
+		sup
+	&__collapse-button
+		text-decoration: none
+		background: #F2F3F6
+		+flex(row, wrap, center, center)
+		border-radius: 1rem
+		padding: 1.4rem 0rem 1.5rem
+		width: 93.5%
+		margin-top: 3rem
+	&__collapse-button-text
+		width: auto
+		margin: 0rem
+		font-family: $lr
+		font-size: 1.4rem
+		color: #818181
+		position: relative
+		left: -1rem
+		&::before, &::after
+			content: ''
+			+size(.5rem, .1rem)
+			background: #B4B4B4
+			position: absolute
+			top: 50%
+			transition: .2s
+		&::before
+			transform: rotate(45deg)
+			right: -1.2rem
+		&::after
+			transform: rotate(-45deg)
+			right: -1.5rem
+	&__collapse-button.active &__collapse-button-text::before
+			transform: rotate(-45deg)
+	&__collapse-button.active &__collapse-button-text::after
+			transform: rotate(45deg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main__item2 .main__collapsed-block
+	// +flex(column, wrap, flex-start, flex-start)
+*
+	// +outline($red)

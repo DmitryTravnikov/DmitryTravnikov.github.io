@@ -1,0 +1,268 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+/* Mobile First Method */
+/* Extra Small Devices, Phones (SM) */
+@media only screen and (min-width: 576px)
+	body
+		background: $media-blue
+	*
+		outline-color: $media-blue
+
+	.header
+		&__wrapper
+		&__logo
+		&__cities-select
+		&__cities-option
+		&__menu-n-fake-select-container
+			&.active
+		&__fake-select
+			&::before, &::after
+			&::before
+			&::after
+			&.active::before
+			&.active::after
+		&__menu
+		&__menu-list-item
+			&:first-child
+		&__menu-list-item.active &__submenu
+		&__menu-list-item.active &__has-submenu::after
+		&__menu-list-item.active &__menu-link::before
+		&__menu-link
+			&::before
+		&__has-submenu
+			&::after
+		&__submenu
+			width: 40rem
+		&__submenu-list-item
+			&:first-child
+		&__submenu-link
+			&:hover
+		&__counters-container
+		&__counter-container
+		&__companies-counter
+		&__reviews-counter
+		&__counter-name
+		&__hamburger
+		&__hamburger.active &__hamburger-elem
+		&__hamburger.active &__hamburger-elem::before
+		&__hamburger.active &__hamburger-elem::after
+		&__hamburger-elem
+			&::before, &::after
+			&::before
+			&::after
+
+
+/* Small Devices, Tablets (MD) */
+@media only screen and (min-width: 768px)
+	body
+		background: $media-pink
+	*
+		outline-color: $media-pink
+/* Medium Devices, Desktops (LG) */
+@media only screen and (min-width: 992px)
+	body
+		background: $media-orange
+	*
+		outline-color: $media-orange
+
+	.header
+		&__wrapper
+			+flex(row, wrap, space-between, center)
+		&__logo
+		&__cities-select
+		&__cities-option
+		&__menu-n-fake-select-container
+			position: static
+			width: auto
+			padding-top: 0rem
+			+flex(row, wrap, flex-start, center)
+			opacity: 1
+			z-index: 1
+			padding-bottom: 0rem
+			position: relative
+			top: -0.2rem
+			&.active
+		&__fake-select
+			margin-top: 0rem
+			order: 2
+			&::before, &::after
+			&::before
+			&::after
+			&.active::before
+			&.active::after
+		&__menu
+			+flex(row, wrap, flex-start, flex-start)
+			margin-top: 0rem
+			order: 1
+			margin-right: 3rem
+		&__menu-list-item
+			margin: 0rem
+			margin-right: 4rem
+			&:last-child
+				margin-right: 0rem
+			&:first-child
+		&__menu-list-item.active &__submenu
+			position: absolute
+			left: -2rem
+			top: 100%
+		&__menu-list-item.active &__has-submenu::after
+			right: -1.3rem
+		&__menu-list-item.active &__menu-link::before
+		&__menu-link
+			font-family: $lr
+			font-size: 1.4rem
+			&::before
+		&__has-submenu
+			&::after
+				right: -1.3rem
+		&__submenu
+			width: 30rem
+			background: #fff
+			padding-left: 2rem
+			padding-top: 0rem
+			padding-bottom: 2rem
+		&__submenu-list-item
+			&:first-child
+		&__submenu-link
+			&:hover
+		&__counters-container
+		&__counter-container
+		&__companies-counter
+		&__reviews-counter
+		&__counter-name
+		&__hamburger
+			display: none
+		&__hamburger.active &__hamburger-elem
+		&__hamburger.active &__hamburger-elem::before
+		&__hamburger.active &__hamburger-elem::after
+		&__hamburger-elem
+			&::before, &::after
+			&::before
+			&::after
+/* Large Devices, Wide Screens (XL) */
+@media only screen and (min-width: 1200px)
+	body
+		background: $media-purple
+	*
+		outline-color: $media-purple
+
+	.wrapper
+		+wrapper(120rem, auto)
+
+	.header
+		&__wrapper
+			padding: 0rem
+			padding-top: 2.2rem
+			padding-left: 1.5rem
+			padding-bottom: 2.2rem
+			+flex(row, wrap, flex-start, flex-start)
+		&__logo
+			font-family: $lbl
+			font-size: 1.6rem
+			color: $space-grey
+			text-transform: uppercase
+			text-align: left
+			background-size: auto
+			padding-top: 1.4rem
+			padding-bottom: 1.4rem
+			padding-left: 5.2rem
+		&__cities-select
+		&__cities-option
+		&__menu-n-fake-select-container
+			+flex(row, wrap, flex-start, flex-start)
+			padding-left: 3.1rem
+			top: 0rem
+			&.active
+		&__fake-select
+			order: 1
+			margin-top: 0.2rem
+			padding: 1rem 5rem 1rem 1.7rem
+			margin-right: 3.5rem
+			&::before, &::after
+				top: 1.9rem
+			&::before
+				right: 2rem
+			&::after
+				right: 1.8rem
+			&.active::before
+				transform: rotate(-45deg)
+			&.active::after
+				transform: rotate(45deg)
+		&__menu
+			order: 2
+			margin-top: 1rem
+			margin-left: 1rem
+		&__menu-list-item
+			margin-right: 3.6rem
+			&:last-child
+			&:first-child
+				margin-right: 4.8rem
+		&__menu-list-item.active &__submenu
+		&__menu-list-item.active &__has-submenu::after
+		&__menu-list-item.active &__menu-link::before
+		&__menu-link
+			&::before
+		&__has-submenu
+			&::after
+		&__submenu
+			width: 50rem
+			padding-top: 1.2rem
+			padding-right: 0rem
+			padding-left: 0rem
+			margin-top: 1.2rem
+			display: none
+		&__submenu-list-item
+			width: 100%
+			+flex(column, wrap, flex-start, flex-start)
+			margin-top: 0rem
+			&:first-child
+		&__submenu-link
+			padding-top: 0.8rem
+			padding-bottom: 0.8rem
+			padding-left: 2rem
+			width: 100%
+			&:hover
+				background: #F9FAFD
+		&__counters-container
+			+flex(row, wrap, flex-start, flex-start)
+			margin-top: 1.1rem
+			margin-left: 2.1rem
+		&__counter-container
+			+flex(row, wrap, flex-start, center)
+			text-decoration: none
+		&__companies-counter
+			width: auto
+			margin: 0rem
+			font-family: $lb
+			font-size: 1.2rem
+			color: #fff
+			background: #3D68FE
+			border-radius: .5rem
+			padding: 0.5rem 0.5rem 0.3rem
+		&__reviews-counter
+			width: auto
+			margin: 0rem
+			font-family: $lb
+			font-size: 1.2rem
+			color: #fff
+			background: #FFC023
+			border-radius: .5rem
+			padding: 0.5rem 0.5rem 0.3rem
+			margin-left: 1.6rem
+		&__counter-name
+			width: auto
+			margin: 0rem
+			font-family: $lr
+			font-size: 1.4rem
+			color: $grey
+			text-align: left
+			margin-left: 0.5rem
+		&__hamburger
+		&__hamburger.active &__hamburger-elem
+		&__hamburger.active &__hamburger-elem::before
+		&__hamburger.active &__hamburger-elem::after
+		&__hamburger-elem
+			&::before, &::after
+			&::before
+			&::after

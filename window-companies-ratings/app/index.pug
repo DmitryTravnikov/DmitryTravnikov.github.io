@@ -1,0 +1,514 @@
+doctype html
+// [if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]
+// [if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]
+// [if IE 8]><html lang="ru" class="lt-ie9"><![endif]
+// [if gt IE 8]><!
+html(lang="ru")
+	// <![endif]
+	head
+		title Рейтинг оконных компаний
+		meta(charset="UTF-8")
+		meta(name="description" content="")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		// OwlCarousel
+		link(rel="stylesheet", href="libs/owl-carousel/owl.carousel.css")
+		link(rel="stylesheet", href="libs/owl-carousel/owl.theme.css")
+		link(rel="stylesheet", href="libs/owl-carousel/owl.transitions.css")
+		// Bootstrap
+		//- link(rel="stylesheet", href="libs/bootstrap/css/bootstrap.min.css")
+		// General
+		link(rel="shortcut icon" href="assets/!js.png" type="image/x-icon")
+		link(rel="stylesheet", href="css/normalize.css")
+		link(rel="stylesheet", href="css/fonts.css")
+		link(rel="stylesheet", href="css/keyframes.css")
+		link(rel="stylesheet" href="css/main.css")
+		link(rel="stylesheet", href="css/media.css")
+	body
+		// Content Start
+
+		// Header
+		header.header
+			.header__wrapper.wrapper
+				a.prevdef.header__logo(href="#") Рейтинг оконных компаний
+				select.header__cities-select(name="cities")
+					option.header__cities-option(value="city" selected) Москва
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+					option.header__cities-option(value="city") Краснознаменск
+				.header__menu-n-fake-select-container
+					.header__fake-select Москва
+					ul.header__menu
+						li.header__menu-list-item
+							a.prevdef.header__menu-link.header__has-submenu(href="#") Рейтинги
+							ul.header__submenu
+								li.header__submenu-list-item
+									a.prevdef.header__submenu-link(href="#") Производители пластиковых окон
+								li.header__submenu-list-item
+									a.prevdef.header__submenu-link(href="#") Производители деревянных окон
+								li.header__submenu-list-item
+									a.prevdef.header__submenu-link(href="#") Производители алюминиевых окон
+								li.header__submenu-list-item
+									a.prevdef.header__submenu-link(href="#") Компании по остеклению, отделке и утеплению балконов/лоджий
+								li.header__submenu-list-item
+									a.prevdef.header__submenu-link(href="#") Оконные компании Rehau
+								li.header__submenu-list-item
+									a.prevdef.header__submenu-link(href="#") Оконные компании KBE
+								li.header__submenu-list-item
+									a.prevdef.header__submenu-link(href="#") Оконные компании Veka
+								li.header__submenu-list-item
+									a.prevdef.header__submenu-link(href="#") Оконные компании Brusbox
+						li.header__menu-list-item
+							a.prevdef.header__menu-link(href="#") На карте
+						li.header__menu-list-item
+							a.prevdef.header__menu-link(href="#") Отзывы
+						li.header__menu-list-item
+							a.prevdef.header__menu-link(href="#") Вопрос-ответ
+				.header__counters-container
+					a.prevdef.header__counter-container(href="#")
+						p.header__companies-counter 126
+						p.header__counter-name компаний
+					a.prevdef.header__counter-container(href="#")
+						p.header__reviews-counter 134567
+						p.header__counter-name отзывов
+				.header__hamburger
+					.header__hamburger-elem
+
+		// Main
+		.main
+			.main__wrapper.wrapper
+				h1.main__headline Рейтинг оконных компаний в Москве 2021 года
+				p.main__paragraph.main__paragraph1 Рейтинг оконных компаний в Москве 2021 года - это 126 лучших компаний и 134567 отзывов о них. Фирмы из рейтинга являются заводами производителями (изготовителями), продавцами (официальными дилерами) и установщиками окон под ключ.
+				p.main__paragraph.main__paragraph2 В рейтинге используется закрытая и автоматизированная формула ранжирования компаний, основанная на ряде коэффициентов, описывающих каждую оконную организацию. Рекламные позиции в рейтинге отмечаются соответствующей пометкой.
+				p.main__paragraph.main__paragraph3 Сделайте осознанный и взвешенный выбор по любому критерию: цена/качество, надежность, оценка покупателей.
+				p.main__update-date Обновлено: 08 сентября 2021 г.
+				.main__sort-container Сортировать:
+					select.main__sort-select(name="sort-select")
+						option.main__sort-option(value="default") По умолчанию
+						option.main__sort-option(value="date") По дате
+						option.main__sort-option(value="name") По названию
+					.main__fake-select-container
+						.main__fake-select По умолчанию
+						.main__fake-options-container
+							.main__fake-option.active По умолчанию
+							.main__fake-option По дате
+							.main__fake-option По названию
+				.main__items-container
+					.main__item.main__item1
+						a.prevdef.main__item-company-logo(href="#")
+							img.main__item-company-image(src="assets/main__item-company-logo.webp", alt="pic")
+						.main__item-company-name-container
+							span.main__item-company-name-span Название
+							a.prevdef.main__item-company-name(href="#") ФенстерХаус, официальный дилер Rehau
+						.main__item-reviews-n-ratings-container
+							.main__item-reviews-container
+								p.main__item-reviews Отзывы
+								p.main__item-reviews-ammount 54
+							.main__item-ratings-container
+								p.main__item-ratings Рейтинг
+								p.main__item-ratings-value 7.3 / 10
+						.main__collapsed-block
+							.main__testimonials-container
+								p.main__testimonials-paragraph Отзывы #[span 54]
+								.main__testimonials-brands-container
+									a.prevdef.main__testimonials-brand.main__testimonials-brand1(href="#")
+										p.main__testimonials-brand-rating Средняя оценка 
+											|
+											br
+											| #[span 4.4 (67 отзывов)]
+									a.prevdef.main__testimonials-brand.main__testimonials-brand2(href="#")
+										p.main__testimonials-brand-rating Средняя оценка 
+											|
+											br
+											| #[span 4.6 (13 отзывов)]
+									a.prevdef.main__testimonials-brand.main__testimonials-brand3(href="#")
+										p.main__testimonials-brand-rating Средняя оценка 
+											|
+											br
+											| #[span 4.4 (67 отзывов)]
+									a.prevdef.main__testimonials-brand.main__testimonials-brand4(href="#")
+										p.main__testimonials-brand-rating Средняя оценка 
+											|
+											br
+											| #[span 4.6 (13 отзывов)]
+								.main__slider-container
+									.main__slider
+										.main__slide.main__slide1
+											.main__slide-content
+												p.main__slide-paragraph Не однократно заказывал окна Арка. Очень доволен! Большое спасибо за вежливое , профессиональное обслуживание менеджера Ксении. Индивидуальный подход к каждому клиенту! Отличное качество.Профессиональная установка.
+												.main__additional-info
+													.main__author-container
+														span.main__additional-info-span Автор
+														p.main__additional-info-author Игорь Воронин
+														.main__additional-info-ratings-container
+															span.main__additional-info-span Оценка
+															.main__stars-container
+																.main__star.main__star1
+																.main__star.main__star2
+																.main__star.main__star3
+																.main__star.main__star4
+																.main__star.main__star5
+													a.prevdef.main__additional-info-brand(href="#")
+														img.main__additional-info-brand-image(src="assets/main__testimonials-slide-brand-image.webp", alt="pic")
+											.main__slide-content
+												p.main__slide-paragraph Не однократно заказывал окна Арка. Очень доволен! Большое спасибо за вежливое , профессиональное обслуживание менеджера Ксении. Индивидуальный подход к каждому клиенту! Отличное качество.Профессиональная установка.
+												.main__additional-info
+													.main__author-container
+														span.main__additional-info-span Автор
+														p.main__additional-info-author Игорь Воронин
+														.main__additional-info-ratings-container
+															span.main__additional-info-span Оценка
+															.main__stars-container
+																.main__star.main__star1
+																.main__star.main__star2
+																.main__star.main__star3
+																.main__star.main__star4
+																.main__star.main__star5
+													a.prevdef.main__additional-info-brand(href="#")
+														img.main__additional-info-brand-image(src="assets/main__testimonials-slide-brand-image.webp", alt="pic")
+										.main__slide.main__slide2
+											.main__slide-content
+												p.main__slide-paragraph Не однократно заказывал окна Арка. Очень доволен! Большое спасибо за вежливое , профессиональное обслуживание менеджера Ксении. Индивидуальный подход к каждому клиенту! Отличное качество.Профессиональная установка.
+												.main__additional-info
+													.main__author-container
+														span.main__additional-info-span Автор
+														p.main__additional-info-author Игорь Воронин
+														.main__additional-info-ratings-container
+															span.main__additional-info-span Оценка
+															.main__stars-container
+																.main__star.main__star1
+																.main__star.main__star2
+																.main__star.main__star3
+																.main__star.main__star4
+																.main__star.main__star5
+													a.prevdef.main__additional-info-brand(href="#")
+														img.main__additional-info-brand-image(src="assets/main__testimonials-slide-brand-image.webp", alt="pic")
+											.main__slide-content
+												p.main__slide-paragraph Не однократно заказывал окна Арка. Очень доволен! Большое спасибо за вежливое , профессиональное обслуживание менеджера Ксении. Индивидуальный подход к каждому клиенту! Отличное качество.Профессиональная установка.
+												.main__additional-info
+													.main__author-container
+														span.main__additional-info-span Автор
+														p.main__additional-info-author Игорь Воронин
+														.main__additional-info-ratings-container
+															span.main__additional-info-span Оценка
+															.main__stars-container
+																.main__star.main__star1
+																.main__star.main__star2
+																.main__star.main__star3
+																.main__star.main__star4
+																.main__star.main__star5
+													a.prevdef.main__additional-info-brand(href="#")
+														img.main__additional-info-brand-image(src="assets/main__testimonials-slide-brand-image.webp", alt="pic")
+										.main__slide.main__slide3
+											.main__slide-content
+												p.main__slide-paragraph Не однократно заказывал окна Арка. Очень доволен! Большое спасибо за вежливое , профессиональное обслуживание менеджера Ксении. Индивидуальный подход к каждому клиенту! Отличное качество.Профессиональная установка.
+												.main__additional-info
+													.main__author-container
+														span.main__additional-info-span Автор
+														p.main__additional-info-author Игорь Воронин
+														.main__additional-info-ratings-container
+															span.main__additional-info-span Оценка
+															.main__stars-container
+																.main__star.main__star1
+																.main__star.main__star2
+																.main__star.main__star3
+																.main__star.main__star4
+																.main__star.main__star5
+													a.prevdef.main__additional-info-brand(href="#")
+														img.main__additional-info-brand-image(src="assets/main__testimonials-slide-brand-image.webp", alt="pic")
+											.main__slide-content
+												p.main__slide-paragraph Не однократно заказывал окна Арка. Очень доволен! Большое спасибо за вежливое , профессиональное обслуживание менеджера Ксении. Индивидуальный подход к каждому клиенту! Отличное качество.Профессиональная установка.
+												.main__additional-info
+													.main__author-container
+														span.main__additional-info-span Автор
+														p.main__additional-info-author Игорь Воронин
+														.main__additional-info-ratings-container
+															span.main__additional-info-span Оценка
+															.main__stars-container
+																.main__star.main__star1
+																.main__star.main__star2
+																.main__star.main__star3
+																.main__star.main__star4
+																.main__star.main__star5
+													a.prevdef.main__additional-info-brand(href="#")
+														img.main__additional-info-brand-image(src="assets/main__testimonials-slide-brand-image.webp", alt="pic")
+									.main__slider-buttons-container
+										button.main__slider-button.main__prev-button
+										button.main__slider-button.main__next-button
+									a.prevdef.main__show-more-button(href="#") Показать еще
+							.main__prices-container
+								p.main__prices-paragraph Услуги и цены
+								.main__prices-items-container
+									a.prevdef.main__prices-item.main__prices-item1(href="#")
+										p.main__prices-service-name Пластиковые окна
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item2(href="#")
+										p.main__prices-service-name Остекление балконов
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item3(href="#")
+										p.main__prices-service-name Пластиковые окна
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item4(href="#")
+										p.main__prices-service-name Остекление балконов
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item5(href="#")
+										p.main__prices-service-name Пластиковые окна
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item6(href="#")
+										p.main__prices-service-name Остекление балконов
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item7(href="#")
+										p.main__prices-service-name Пластиковые окна
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item8(href="#")
+										p.main__prices-service-name Остекление балконов
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item9(href="#")
+										p.main__prices-service-name Пластиковые окна
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item10(href="#")
+										p.main__prices-service-name Остекление балконов
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item11(href="#")
+										p.main__prices-service-name Пластиковые окна
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+						a.prevdef.main__collapse-button(href="#")
+							p.main__collapse-button-text Развернуть
+					.main__item.main__item2
+						a.prevdef.main__item-company-logo(href="#")
+							img.main__item-company-image(src="assets/main__item-company-logo.webp", alt="pic")
+						.main__item-company-name-container
+							span.main__item-company-name-span Название
+							a.prevdef.main__item-company-name(href="#") ФенстерХаус, официальный дилер Rehau
+						.main__item-reviews-n-ratings-container
+							.main__item-reviews-container
+								p.main__item-reviews Отзывы
+								p.main__item-reviews-ammount 54
+							.main__item-ratings-container
+								p.main__item-ratings Рейтинг
+								p.main__item-ratings-value 7.3 / 10
+						.main__collapsed-block
+							.main__testimonials-container
+								p.main__testimonials-paragraph Отзывы #[span 54]
+								.main__testimonials-brands-container
+									a.prevdef.main__testimonials-brand.main__testimonials-brand1(href="#")
+										p.main__testimonials-brand-rating Средняя оценка 
+											|
+											br
+											| #[span 4.4 (67 отзывов)]
+									a.prevdef.main__testimonials-brand.main__testimonials-brand2(href="#")
+										p.main__testimonials-brand-rating Средняя оценка 
+											|
+											br
+											| #[span 4.6 (13 отзывов)]
+									a.prevdef.main__testimonials-brand.main__testimonials-brand3(href="#")
+										p.main__testimonials-brand-rating Средняя оценка 
+											|
+											br
+											| #[span 4.4 (67 отзывов)]
+									a.prevdef.main__testimonials-brand.main__testimonials-brand4(href="#")
+										p.main__testimonials-brand-rating Средняя оценка 
+											|
+											br
+											| #[span 4.6 (13 отзывов)]
+								.main__slider-container
+									.main__slider
+										.main__slide.main__slide1
+											.main__slide-content
+												p.main__slide-paragraph Не однократно заказывал окна Арка. Очень доволен! Большое спасибо за вежливое , профессиональное обслуживание менеджера Ксении. Индивидуальный подход к каждому клиенту! Отличное качество.Профессиональная установка.
+												.main__additional-info
+													.main__author-container
+														span.main__additional-info-span Автор
+														p.main__additional-info-author Игорь Воронин
+														.main__additional-info-ratings-container
+															span.main__additional-info-span Оценка
+															.main__stars-container
+																.main__star.main__star1
+																.main__star.main__star2
+																.main__star.main__star3
+																.main__star.main__star4
+																.main__star.main__star5
+													a.prevdef.main__additional-info-brand(href="#")
+														img.main__additional-info-brand-image(src="assets/main__testimonials-slide-brand-image.webp", alt="pic")
+											.main__slide-content
+												p.main__slide-paragraph Не однократно заказывал окна Арка. Очень доволен! Большое спасибо за вежливое , профессиональное обслуживание менеджера Ксении. Индивидуальный подход к каждому клиенту! Отличное качество.Профессиональная установка.
+												.main__additional-info
+													.main__author-container
+														span.main__additional-info-span Автор
+														p.main__additional-info-author Игорь Воронин
+														.main__additional-info-ratings-container
+															span.main__additional-info-span Оценка
+															.main__stars-container
+																.main__star.main__star1
+																.main__star.main__star2
+																.main__star.main__star3
+																.main__star.main__star4
+																.main__star.main__star5
+													a.prevdef.main__additional-info-brand(href="#")
+														img.main__additional-info-brand-image(src="assets/main__testimonials-slide-brand-image.webp", alt="pic")
+										.main__slide.main__slide2
+											.main__slide-content
+												p.main__slide-paragraph Не однократно заказывал окна Арка. Очень доволен! Большое спасибо за вежливое , профессиональное обслуживание менеджера Ксении. Индивидуальный подход к каждому клиенту! Отличное качество.Профессиональная установка.
+												.main__additional-info
+													.main__author-container
+														span.main__additional-info-span Автор
+														p.main__additional-info-author Игорь Воронин
+														.main__additional-info-ratings-container
+															span.main__additional-info-span Оценка
+															.main__stars-container
+																.main__star.main__star1
+																.main__star.main__star2
+																.main__star.main__star3
+																.main__star.main__star4
+																.main__star.main__star5
+													a.prevdef.main__additional-info-brand(href="#")
+														img.main__additional-info-brand-image(src="assets/main__testimonials-slide-brand-image.webp", alt="pic")
+											.main__slide-content
+												p.main__slide-paragraph Не однократно заказывал окна Арка. Очень доволен! Большое спасибо за вежливое , профессиональное обслуживание менеджера Ксении. Индивидуальный подход к каждому клиенту! Отличное качество.Профессиональная установка.
+												.main__additional-info
+													.main__author-container
+														span.main__additional-info-span Автор
+														p.main__additional-info-author Игорь Воронин
+														.main__additional-info-ratings-container
+															span.main__additional-info-span Оценка
+															.main__stars-container
+																.main__star.main__star1
+																.main__star.main__star2
+																.main__star.main__star3
+																.main__star.main__star4
+																.main__star.main__star5
+													a.prevdef.main__additional-info-brand(href="#")
+														img.main__additional-info-brand-image(src="assets/main__testimonials-slide-brand-image.webp", alt="pic")
+										.main__slide.main__slide3
+											.main__slide-content
+												p.main__slide-paragraph Не однократно заказывал окна Арка. Очень доволен! Большое спасибо за вежливое , профессиональное обслуживание менеджера Ксении. Индивидуальный подход к каждому клиенту! Отличное качество.Профессиональная установка.
+												.main__additional-info
+													.main__author-container
+														span.main__additional-info-span Автор
+														p.main__additional-info-author Игорь Воронин
+														.main__additional-info-ratings-container
+															span.main__additional-info-span Оценка
+															.main__stars-container
+																.main__star.main__star1
+																.main__star.main__star2
+																.main__star.main__star3
+																.main__star.main__star4
+																.main__star.main__star5
+													a.prevdef.main__additional-info-brand(href="#")
+														img.main__additional-info-brand-image(src="assets/main__testimonials-slide-brand-image.webp", alt="pic")
+											.main__slide-content
+												p.main__slide-paragraph Не однократно заказывал окна Арка. Очень доволен! Большое спасибо за вежливое , профессиональное обслуживание менеджера Ксении. Индивидуальный подход к каждому клиенту! Отличное качество.Профессиональная установка.
+												.main__additional-info
+													.main__author-container
+														span.main__additional-info-span Автор
+														p.main__additional-info-author Игорь Воронин
+														.main__additional-info-ratings-container
+															span.main__additional-info-span Оценка
+															.main__stars-container
+																.main__star.main__star1
+																.main__star.main__star2
+																.main__star.main__star3
+																.main__star.main__star4
+																.main__star.main__star5
+													a.prevdef.main__additional-info-brand(href="#")
+														img.main__additional-info-brand-image(src="assets/main__testimonials-slide-brand-image.webp", alt="pic")
+									button.main__slider-button.main__prev-button
+									button.main__slider-button.main__next-button
+									a.prevdef.main__show-more-button(href="#") Показать еще
+							.main__prices-container
+								p.main__prices-paragraph Услуги и цены
+								.main__prices-items-container
+									a.prevdef.main__prices-item.main__prices-item1(href="#")
+										p.main__prices-service-name Пластиковые окна
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item2(href="#")
+										p.main__prices-service-name Остекление балконов
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item3(href="#")
+										p.main__prices-service-name Пластиковые окна
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item4(href="#")
+										p.main__prices-service-name Остекление балконов
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item5(href="#")
+										p.main__prices-service-name Пластиковые окна
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item6(href="#")
+										p.main__prices-service-name Остекление балконов
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item7(href="#")
+										p.main__prices-service-name Пластиковые окна
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item8(href="#")
+										p.main__prices-service-name Остекление балконов
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item9(href="#")
+										p.main__prices-service-name Пластиковые окна
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item10(href="#")
+										p.main__prices-service-name Остекление балконов
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+									a.prevdef.main__prices-item.main__prices-item11(href="#")
+										p.main__prices-service-name Пластиковые окна
+										p.main__prices-service-cost от 5045 руб./м#[sup 2]
+						a.prevdef.main__collapse-button(href="#")
+							p.main__collapse-button-text Развернуть
+
+		
+
+		// Content End
+		// Scripts
+		// General
+		script(src="libs/jquery/jquery-3.3.1.min.js")
+		script(src="js/common.js")
+		// Bootstrap
+		//- script(src="libs/bootstrap/js/bootstrap.min.js")
+		// Masked Input
+		script(src="libs/masked-input/jquery.maskedinput.min.js")
+		// PageScroll2id
+		script(src="libs/pagescroll2id/jquery.malihu.PageScroll2id.min.js")
+		// OwlCarousel
+		script(src="libs/owl-carousel/owl.carousel.min.js")
+		//  
+				[if lt IE 9]>
+				<script src="libs/html5shiv/es5-shim.min.js"></script>
+				<script src="libs/html5shiv/html5shiv.min.js"></script>
+				<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+				<script src="libs/respond/respond.min.js"></script>
+				<![endif]
