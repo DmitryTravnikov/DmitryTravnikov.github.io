@@ -398,6 +398,28 @@ $(document).ready(function() {
 	      'Самые качественные окна у нас! Приходите по адресу: Cофийская набережная, 16, Москва, 190000',
 	      '</div>'
 	    ]
+	  },
+	  {
+	    latitude: 55.746197,
+	    longitude: 37.6179999,
+	    hintContent: '<div class="map__hint">Cофийская набережная, 16, Москва, 190000</div>',
+	    balloonContent: [
+	      '<div class="map__balloon">',
+	      '<img class="map__burger" src="assets/windows-map-pin.webp" alt"Бургер"/>',
+	      'Самые качественные окна у нас! Приходите по адресу: Cофийская набережная, 16, Москва, 190000',
+	      '</div>'
+	    ]
+	  },
+	  {
+	    latitude: 55.746199,
+	    longitude: 37.61999999,
+	    hintContent: '<div class="map__hint">Cофийская набережная, 16, Москва, 190000</div>',
+	    balloonContent: [
+	      '<div class="map__balloon">',
+	      '<img class="map__burger" src="assets/windows-map-pin.webp" alt"Бургер"/>',
+	      'Самые качественные окна у нас! Приходите по адресу: Cофийская набережная, 16, Москва, 190000',
+	      '</div>'
+	    ]
 	  }
 	],
 	  geoObjects = [];//var placemarks end

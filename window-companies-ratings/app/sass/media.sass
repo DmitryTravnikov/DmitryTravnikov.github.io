@@ -246,6 +246,24 @@
 			&.active::after
 		&__paragraph
 			&::before
+
+	.footer
+		&__wrapper
+		&__text-container
+			width: 40rem
+		&__copy-paragraph
+		&__site
+		&__describe
+		&__email
+		&__lists-container
+			width: 40rem
+		&__list
+		&__list1
+		&__list2
+		&__list3
+		&__list-item
+			&:first-child
+		&__list-link
 /* Small Devices, Tablets (MD) */
 @media only screen and (min-width: 768px)
 	body
@@ -451,6 +469,25 @@
 			&.active::after
 		&__paragraph
 			&::before
+
+	.footer
+		&__wrapper
+		&__text-container
+			width: 60rem
+		&__copy-paragraph
+		&__site
+		&__describe
+			padding-right: 18rem
+		&__email
+		&__lists-container
+			width: 60rem
+		&__list
+		&__list1
+		&__list2
+		&__list3
+		&__list-item
+			&:first-child
+		&__list-link
 /* Medium Devices, Desktops (LG) */
 @media only screen and (min-width: 992px)
 	body
@@ -870,6 +907,8 @@
 		&__container
 			width: 100%
 		&__panel
+			padding-right: 2%
+			padding-left: 2%
 			&:first-child
 		&__panel-headline
 			&::before, &::after
@@ -879,6 +918,33 @@
 			&.active::after
 		&__paragraph
 			&::before
+
+	.footer
+		&__wrapper
+			+flex(row, wrap, space-between, flex-start)
+		&__text-container
+			width: 100%
+			width: 30%
+		&__copy-paragraph
+		&__site
+		&__describe
+			padding-right: 0rem
+		&__email
+		&__lists-container
+			width: 66%
+			+flex(row, wrap, space-between, flex-start)
+			margin-top: 0rem
+		&__list
+			width: calc(100% / 3.4)
+		&__list1
+			margin-top: 0rem
+		&__list2
+			margin-top: 0rem
+		&__list3
+			margin-top: 0rem
+		&__list-item
+			&:first-child
+		&__list-link
 /* Large Devices, Wide Screens (XL) */
 @media only screen and (min-width: 1200px)
 	body
@@ -1350,3 +1416,26 @@
 			padding-right: 3rem
 			&::before
 
+	.footer
+		&__wrapper
+			padding-top: 5.5rem
+			padding-bottom: 5.4rem
+		&__text-container
+			width: 28%
+		&__copy-paragraph
+		&__site
+			margin-top: 0.7rem
+		&__describe
+			padding-right: 2rem
+		&__email
+		&__lists-container
+			width: 69%
+		&__list
+			width: 28%
+		&__list1
+		&__list2
+		&__list3
+		&__list-item
+			&:first-child
+		&__list-link
+			font-size: 1.4rem

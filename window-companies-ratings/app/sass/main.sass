@@ -3,7 +3,6 @@
 
 .wrapper
 	+wrapper(90%, auto)
-	padding-left: 2rem
 
 // 1rem === 10px
 
@@ -1039,7 +1038,110 @@
 
 
 
-.main__item2 .main__collapsed-block
-	+flex(column, wrap, flex-start, flex-start)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Footer
+.footer
+	background: #fff
+	&__wrapper
+		padding-top: 3.4rem
+		padding-bottom: 3.1rem
+		+flex(column, wrap, flex-start, center)
+	&__text-container
+	&__copy-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $lr
+		font-size: 1.6rem
+		color: $space-grey
+		text-align: left
+	&__site
+		width: 100%
+		margin: 0rem
+		font-family: $lr
+		font-size: 1.6rem
+		color: $space-grey
+		text-align: left
+		margin-top: 0.7rem
+	&__describe
+		width: 100%
+		margin: 0rem
+		font-family: $lr
+		font-size: 1.4rem
+		line-height: 2rem
+		color: $grey
+		text-align: left
+		margin-top: 1rem
+	&__email
+		width: 100%
+		margin: 0rem
+		font-family: $lsb
+		font-size: 1.4rem
+		color: $space-grey
+		text-align: left
+		padding-left: 2.2rem
+		background: url('../assets/footer__email-icon.webp') no-repeat 0rem center
+		margin-top: 1rem
+	&__lists-container
+		width: 100%
+		margin-top: 1.2rem
+	&__list
+		width: 100%
+		padding: 0rem
+		margin: 0rem
+		list-style: none
+		+flex(column, wrap, flex-start, flex-start)
+	&__list1
+		margin-top: 0.7rem
+	&__list2
+		margin-top: 0.7rem
+	&__list3
+		margin-top: 0.7rem
+	&__list-item
+		padding: 0rem
+		margin: 0rem
+		+flex(column, wrap, flex-start, flex-start)
+		margin-top: 0.7rem
+		&:first-child
+			margin-top: 0rem
+	&__list-link
+		text-decoration: none
+		font-family: $lr
+		font-size: 1.2rem
+		line-height: 1.8rem
+		color: $grey
+		text-align: left
+		text-decoration: underline
+		transition: .2s
+		&:hover
+			color: lighten($grey, 19%)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 *
 	// +outline($red)
