@@ -52,13 +52,405 @@
 			&::before
 			&::after
 
+	.main
+		&__wrapper
+			+flex(column, wrap, flex-start, center)
+		&__headline
+			width: 40rem
+		&__paragraph
+			width: 40rem
+		&__paragraph1
+		&__paragraph2
+		&__paragraph3
+		&__update-n-sort-container
+			width: 40rem
+		&__update-date
+		&__sort-container
+		&__sort-select
+		&__sort-option
+		&__fake-select-container
+		&__fake-select
+			&::before, &::after
+			&::before
+			&::after
+			&.active::before
+			&.active::after
+		&__fake-options-container
+			&.active
+		&__fake-option
+			&.active
+		&__items-container
+			width: 40rem
+		&__item
+			&::before
+		&__item1
+		&__item2
+		&__item-company-logo
+		&__item-company-image
+		&__item-company-name-container
+		&__item-company-name-span
+		&__item-company-name
+		&__item-reviews-n-ratings-container
+		&__item-reviews-container
+		&__item-reviews
+		&__item-reviews-ammount
+		&__item-ratings-container
+		&__item-ratings
+		&__item-ratings-value
+		&__collapsed-block
+			&.active
+		&__testimonials-container
+			&::before
+		&__testimonials-paragraph
+			span
+		&__testimonials-brands-container
+		&__testimonials-brand
+		&__testimonials-brand1
+		&__testimonials-brand2
+		&__testimonials-brand3
+		&__testimonials-brand4
+		&__testimonials-brand-rating
+			span
+		&__slider-container
+		&__slider
+			.owl-wrapper-outer
+			.owl-controls
+				.owl-pagination
+					.owl-page
+						span
+					.owl-page:last-child
+						span
+					.owl-page.active
+						span
+		&__slide
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide-content
+			&:last-child
+		&__slide-paragraph
+		&__additional-info
+			&::before
+		&__author-container
+		&__author-n-ratings-container
+		&__additional-info-span
+		&__additional-info-author
+		&__additional-info-ratings-container
+		&__stars-container
+		&__star
+		&__star1
+		&__star2
+		&__star3
+		&__star4
+		&__star5
+		&__additional-info-brand
+		&__additional-info-brand-image
+		&__slider-button
+			&::before, &::after
+		&__prev-button
+			&::before
+			&::after
+		&__next-button
+			&::before
+			&::after
+		&__show-more-button
+		&__prices-container
+		&__prices-paragraph
+		&__prices-items-container
+		&__prices-item
+		&__prices-item1
+		&__prices-item2
+		&__prices-item3
+		&__prices-item4
+		&__prices-item5
+		&__prices-item6
+		&__prices-item7
+		&__prices-item8
+		&__prices-item9
+		&__prices-item10
+		&__prices-item11
+		&__prices-service-name
+		&__prices-service-cost
+			sup
+		&__collapse-button
+		&__collapse-button-text
+			&::before, &::after
+			&::before
+			&::after
+		&__collapse-button.active &__collapse-button-text::before
+		&__collapse-button.active &__collapse-button-text::after
 
+	.testimonials
+		&__wrapper
+		&__headline
+			width: 40rem
+		&__slider-container
+			width: 40rem
+		&__slider
+			.owl-wrapper-outer
+			.owl-controls
+				.owl-pagination
+					.owl-page
+						span
+					.owl-page:last-child
+						span
+					.owl-page.active
+						span
+		&__slide
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide-content
+			&:nth-child(2)
+			&:nth-child(3)
+			&:last-child
+		&__slide-paragraph
+		&__additional-info
+			&::before
+		&__slide-content:last-child &__additional-info
+		&__author-n-ratings-container
+		&__author-container
+		&__additional-info-span
+		&__additional-info-author
+		&__additional-info-ratings-container
+		&__stars-container
+		&__star
+		&__star1
+		&__star2
+		&__star3
+		&__star4
+		&__star5
+		&__slider-button
+			&::before, &::after
+		&__prev-button
+			&::before
+			&::after
+		&__next-button
+			&::before
+			&::after
+		&__show-more-button
+
+	.accordion
+		&__wrapper
+		&__headline
+			width: 40rem
+		&__container
+			width: 40rem
+		&__panel
+			&:first-child
+		&__panel-headline
+			&::before, &::after
+			&::before
+			&::after
+			&.active::before
+			&.active::after
+		&__paragraph
+			&::before
 /* Small Devices, Tablets (MD) */
 @media only screen and (min-width: 768px)
 	body
 		background: $media-pink
 	*
 		outline-color: $media-pink
+
+	.main
+		&__wrapper
+		&__headline
+			width: 60rem
+		&__paragraph
+			width: 60rem
+		&__paragraph1
+		&__paragraph2
+		&__paragraph3
+		&__update-n-sort-container
+			width: 60rem
+		&__update-date
+		&__sort-container
+		&__sort-select
+		&__sort-option
+		&__fake-select-container
+		&__fake-select
+			&::before, &::after
+			&::before
+			&::after
+			&.active::before
+			&.active::after
+		&__fake-options-container
+			&.active
+		&__fake-option
+			&.active
+		&__items-container
+			width: 60rem
+		&__item
+			&::before
+		&__item1
+		&__item2
+		&__item-company-logo
+		&__item-company-image
+		&__item-company-name-container
+		&__item-company-name-span
+		&__item-company-name
+		&__item-reviews-n-ratings-container
+		&__item-reviews-container
+		&__item-reviews
+		&__item-reviews-ammount
+		&__item-ratings-container
+		&__item-ratings
+		&__item-ratings-value
+		&__collapsed-block
+			&.active
+		&__testimonials-container
+			&::before
+		&__testimonials-paragraph
+			span
+		&__testimonials-brands-container
+		&__testimonials-brand
+		&__testimonials-brand1
+		&__testimonials-brand2
+		&__testimonials-brand3
+		&__testimonials-brand4
+		&__testimonials-brand-rating
+			span
+		&__slider-container
+		&__slider
+			.owl-wrapper-outer
+			.owl-controls
+				.owl-pagination
+					.owl-page
+						span
+					.owl-page:last-child
+						span
+					.owl-page.active
+						span
+		&__slide
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide-content
+			&:last-child
+		&__slide-paragraph
+		&__additional-info
+			&::before
+		&__author-n-ratings-container
+		&__author-container
+		&__additional-info-span
+		&__additional-info-author
+		&__additional-info-ratings-container
+		&__stars-container
+		&__star
+		&__star1
+		&__star2
+		&__star3
+		&__star4
+		&__star5
+		&__additional-info-brand
+		&__additional-info-brand-image
+		&__slider-button
+			&::before, &::after
+		&__prev-button
+			&::before
+			&::after
+		&__next-button
+			&::before
+			&::after
+		&__show-more-button
+		&__prices-container
+		&__prices-paragraph
+		&__prices-items-container
+			+flex(row, wrap, flex-start, stretch)
+		&__prices-item
+			width: 32%
+			margin-right: 2%
+			&:nth-child(3n)
+				margin-right: 0rem
+		&__prices-item1
+		&__prices-item2
+		&__prices-item3
+		&__prices-item4
+		&__prices-item5
+		&__prices-item6
+		&__prices-item7
+		&__prices-item8
+		&__prices-item9
+		&__prices-item10
+		&__prices-item11
+		&__prices-service-name
+		&__prices-service-cost
+			sup
+		&__collapse-button
+		&__collapse-button-text
+			&::before, &::after
+			&::before
+			&::after
+		&__collapse-button.active &__collapse-button-text::before
+		&__collapse-button.active &__collapse-button-text::after
+
+	.testimonials
+		&__wrapper
+		&__headline
+			width: 60rem
+		&__slider-container
+			width: 60rem
+		&__slider
+			.owl-wrapper-outer
+			.owl-controls
+				.owl-pagination
+					.owl-page
+						span
+					.owl-page:last-child
+						span
+					.owl-page.active
+						span
+		&__slide
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide-content
+			&:nth-child(2)
+			&:nth-child(3)
+			&:last-child
+		&__slide-paragraph
+		&__additional-info
+			&::before
+		&__slide-content:last-child &__additional-info
+		&__author-n-ratings-container
+		&__author-container
+		&__additional-info-span
+		&__additional-info-author
+		&__additional-info-ratings-container
+		&__stars-container
+		&__star
+		&__star1
+		&__star2
+		&__star3
+		&__star4
+		&__star5
+		&__slider-button
+			&::before, &::after
+		&__prev-button
+			&::before
+			&::after
+		&__next-button
+			&::before
+			&::after
+		&__show-more-button
+
+	.accordion
+		&__wrapper
+		&__headline
+			width: 60rem
+		&__container
+			width: 60rem
+		&__panel
+			&:first-child
+		&__panel-headline
+			&::before, &::after
+			&::before
+			&::after
+			&.active::before
+			&.active::after
+		&__paragraph
+			&::before
 /* Medium Devices, Desktops (LG) */
 @media only screen and (min-width: 992px)
 	body
@@ -140,6 +532,353 @@
 			&::before, &::after
 			&::before
 			&::after
+
+	.main
+		&__wrapper
+		&__headline
+			width: 100%
+		&__paragraph
+			width: 100%
+		&__paragraph1
+		&__paragraph2
+		&__paragraph3
+		&__update-n-sort-container
+			width: 100%
+			+flex(row, wrap, flex-start, center)
+		&__update-date
+			order: 2
+		&__sort-container
+			margin-top: 0rem
+			order: 1
+			margin-right: 1rem
+		&__sort-select
+		&__sort-option
+		&__fake-select-container
+		&__fake-select
+			&::before, &::after
+			&::before
+			&::after
+			&.active::before
+			&.active::after
+		&__fake-options-container
+			&.active
+		&__fake-option
+			&.active
+		&__items-container
+			width: 100%
+		&__item
+			+flex(row, wrap, space-around, flex-start)
+			overflow: visible
+			position: relative
+			&::before
+				width: 5.9rem
+				top: 2.1rem
+				right: -4.5rem
+				transform: rotate(90deg)
+				background: #F9FAFD
+		&__item1
+		&__item2
+		&__item-company-logo
+		&__item-company-image
+		&__item-company-name-container
+			width: auto
+		&__item-company-name-span
+			margin-top: 0rem
+		&__item-company-name
+		&__item-reviews-n-ratings-container
+			width: auto
+			margin-top: 0rem
+		&__item-reviews-container
+			margin-top: 0rem
+		&__item-reviews
+		&__item-reviews-ammount
+		&__item-ratings-container
+			margin-right: 4rem
+		&__item-ratings
+		&__item-ratings-value
+		&__collapsed-block
+			&.active
+		&__testimonials-container
+			width: 100%
+			&::before
+		&__testimonials-paragraph
+			span
+		&__testimonials-brands-container
+			+flex(row, wrap, space-between, flex-start)
+			margin-top: 1.8rem
+		&__testimonials-brand
+			margin: 0rem
+			width: calc(100% / 4.2)
+			+flex(row, wrap, flex-start, center)
+			padding: 3rem 0rem 3rem 1.2rem
+		&__testimonials-brand1
+			background-position: 93% center
+			background-size: 20%
+		&__testimonials-brand2
+			background-position: 93% center
+			background-size: 30%
+		&__testimonials-brand3
+			background-position: 93% center
+			background-size: 27%
+		&__testimonials-brand4
+			background-position: 91% center
+			background-size: 30%
+		&__testimonials-brand-rating
+			span
+		&__slider-container
+			+flex(column, wrap, flex-start, flex-start)
+			border: none
+			width: 100%
+		&__slider
+			width: 100%
+			.owl-wrapper-outer
+			.owl-controls
+				.owl-pagination
+					.owl-page
+						span
+					.owl-page:last-child
+						span
+					.owl-page.active
+						span
+		&__slide
+			width: 100%
+			display: none
+			&.active
+				+flex(row, wrap, space-between, flex-start)
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide-content
+			width: 49%
+			margin-right: 2%
+			margin-top: 1.4rem
+			background-position: 2rem 2rem
+			border: .1rem solid #EFF0F3
+			border-radius: 1rem
+			padding-right: 9%
+			padding-left: 9%
+			background-position: 19.5% 2rem
+			&:last-child
+				+flex(column, wrap, flex-start, flex-start)
+				margin-right: 0%
+				margin-top: 1.4rem
+		&__slide-paragraph
+			padding-left: 0rem
+			padding-right: 0rem
+		&__additional-info
+			padding-bottom: 1.8rem
+			padding-left: 0rem
+			background-position: 100% 74%
+			&::before
+				width: 100%
+		&__slide-content:last-child &__additional-info
+			background-position: 100% 74%
+		&__author-n-ratings-container
+			+flex(column, wrap, flex-start, flex-start)
+		&__author-container
+			+flex(column, wrap, flex-start, flex-start)
+		&__additional-info-span
+		&__additional-info-author
+		&__additional-info-ratings-container
+			+flex(column, wrap, flex-start, flex-start)
+			margin-top: 1.2rem
+		&__stars-container
+		&__star
+		&__star1
+		&__star2
+		&__star3
+		&__star4
+		&__star5
+		&__additional-info-brand
+			margin-top: 0rem
+			margin-left: 0rem
+			margin-right: 0rem
+		&__additional-info-brand-image
+		&__slider-button
+			display: none
+			&::before, &::after
+		&__prev-button
+			&::before
+			&::after
+		&__next-button
+			&::before
+			&::after
+		&__show-more-button
+			display: block
+			text-decoration: none
+			font-family: $lr
+			font-size: 1.4rem
+			color: $grey
+			background: #EFEFEF
+			border-radius: 1rem
+			padding: 1.3rem 2.8rem
+			transition: .2s
+			margin-top: 1.6rem
+			&:hover
+				background: darken(#EFEFEF, 1%)
+		&__prices-container
+			width: 100%
+			padding-top: 0rem
+			margin-top: 0.4rem
+		&__prices-paragraph
+		&__prices-items-container
+		&__prices-item
+			width: 22%
+			margin-right: 4%
+			&:nth-child(3n)
+				margin-right: 4%
+			&:nth-child(4n)
+				margin-right: 0rem
+		&__prices-item1
+		&__prices-item2
+		&__prices-item3
+		&__prices-item4
+		&__prices-item5
+		&__prices-item6
+		&__prices-item7
+		&__prices-item8
+		&__prices-item9
+		&__prices-item10
+		&__prices-item11
+		&__prices-service-name
+		&__prices-service-cost
+			sup
+		&__collapse-button
+			position: absolute
+			top: 1.6rem
+			right: 1.6rem
+			width: auto
+			+size(4.8rem, 4.8rem)
+			margin-top: 0rem
+		&__collapse-button-text
+			&::before, &::after
+			&::before
+			&::after
+		&__collapse-button.active &__collapse-button-text::before
+		&__collapse-button.active &__collapse-button-text::after
+
+	.windows-map-container
+		.windows-map-wrapper
+		.windows-map-headline
+			font-size: 2.4rem
+		.windows-map-container
+			border-radius: 1rem
+			overflow: hidden
+			margin-top: 2.4rem
+			width: 100%
+		.windows-map
+			+size(100%, 33.7rem)
+			margin-top: 0rem
+
+	.testimonials
+		&__wrapper
+		&__headline
+			width: 100%
+			text-align: left
+		&__slider-container
+			width: 100%
+			+flex(column, wrap, flex-start, flex-start)
+			border: none
+			background: #F9FAFD
+		&__slider
+			+flex(row, wrap, space-between, flex-start)
+			.owl-wrapper-outer
+			.owl-controls
+				.owl-pagination
+					.owl-page
+						span
+					.owl-page:last-child
+						span
+					.owl-page.active
+						span
+		&__slide
+			width: 100%
+			display: none
+			background: #F9FAFD
+			&.active
+				+flex(row, wrap, flex-start, flex-start)
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide-content
+			width: 49%
+			margin-right: 2%
+			border-radius: 1rem
+			margin-top: 1rem
+			background: url('../assets/main__quote.webp') no-repeat 19.5% 2rem, #fff
+			padding-bottom: 1.6rem
+			&:nth-child(2n)
+				margin-right: 0rem
+			&:nth-child(2)
+				display: block
+			&:nth-child(3)
+				display: block
+			&:last-child
+				display: block
+		&__slide-paragraph
+		&__additional-info
+			background-position: 90% 90%
+			&::before
+		&__slide-content:nth-child(2) &__additional-info
+			background: url('../assets/main__testimonials-slide-brand-image2.webp') no-repeat
+			background-position: 90% 90%
+		&__slide-content:nth-child(3) &__additional-info
+			background: url('../assets/main__testimonials-slide-brand-image3.webp') no-repeat
+			background-position: 90% 90%
+		&__slide-content:last-child &__additional-info
+			background: url('../assets/main__testimonials-slide-brand-image4.webp') no-repeat
+			background-position: 90% 90%
+		&__author-n-ratings-container
+		&__author-container
+		&__additional-info-span
+		&__additional-info-author
+		&__additional-info-ratings-container
+		&__stars-container
+		&__star
+		&__star1
+		&__star2
+		&__star3
+		&__star4
+		&__star5
+		&__slider-button
+			display: none
+			&::before, &::after
+		&__prev-button
+			&::before
+			&::after
+		&__next-button
+			&::before
+			&::after
+		&__show-more-button
+			display: block
+			text-decoration: none
+			font-family: $lr
+			font-size: 1.4rem
+			color: $grey
+			background: #EFEFEF
+			border-radius: 1rem
+			padding: 1.3rem 2.8rem
+			transition: .2s
+			margin-top: 1.6rem
+			&:hover
+				background: darken(#EFEFEF, 1%)
+
+	.accordion
+		&__wrapper
+		&__headline
+			width: 100%
+		&__container
+			width: 100%
+		&__panel
+			&:first-child
+		&__panel-headline
+			&::before, &::after
+			&::before
+			&::after
+			&.active::before
+			&.active::after
+		&__paragraph
+			&::before
 /* Large Devices, Wide Screens (XL) */
 @media only screen and (min-width: 1200px)
 	body
@@ -266,3 +1005,348 @@
 			&::before, &::after
 			&::before
 			&::after
+
+	.main
+		&__wrapper
+			padding-top: 5.1rem
+		&__headline
+			font-size: 3rem
+		&__paragraph
+			margin-top: 2.1rem
+		&__paragraph1
+		&__paragraph2
+			margin-top: 1.4rem
+		&__paragraph3
+			margin-top: 1.4rem
+		&__update-n-sort-container
+			margin-top: 3rem
+		&__update-date
+		&__sort-container
+		&__sort-select
+		&__sort-option
+		&__fake-select-container
+		&__fake-select
+			&::before, &::after
+			&::before
+			&::after
+			&.active::before
+			&.active::after
+		&__fake-options-container
+			&.active
+		&__fake-option
+			&.active
+		&__items-container
+		&__item
+			+flex(row, wrap, flex-start, flex-start)
+			padding-top: 2.7rem
+			padding-left: 2.5rem
+			padding-bottom: 2rem
+			margin-top: 1.2rem
+			&::before
+				font-size: 1.2rem
+				right: -4.6rem
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item5
+		&__item6
+		&__item-company-logo
+		&__item-company-image
+		&__item-company-name-container
+			margin-left: 6rem
+			position: relative
+			padding-right: 0rem
+			&::before
+				content: ''
+				+size(.1rem, 4.6rem)
+				background: #DFDFDF
+				position: absolute
+				top: -0.2rem
+				left: -3rem
+		&__item-company-name-span
+		&__item-company-name
+			padding-right: 0rem
+			width: auto
+			font-size: 1.8rem
+		&__item-reviews-n-ratings-container
+			margin-left: 32.6rem
+		&__item-reviews-container
+			position: relative
+			&::before
+				content: ''
+				+size(.1rem, 4.6rem)
+				background: #DFDFDF
+				position: absolute
+				top: -0.2rem
+				right: -4.2rem
+		&__item-reviews
+			font-size: 1.4rem
+		&__item-reviews-ammount
+			font-size: 1.8rem
+		&__item-ratings-container
+			margin-left: 8.4rem
+		&__item-ratings
+			font-size: 1.4rem
+		&__item-ratings-value
+			font-size: 1.8rem
+		&__collapsed-block
+			&.active
+		&__testimonials-container
+			margin-top: 1.5rem
+			&::before
+				content: none
+		&__testimonials-paragraph
+			font-size: 1.8rem
+			span
+				font-size: 1.6rem
+		&__testimonials-brands-container
+			margin-top: 1.8rem
+		&__testimonials-brand
+			padding-top: 2.1rem
+			padding-left: 2rem
+			padding-bottom: 2rem
+		&__testimonials-brand1
+			background-size: auto
+			background-position: 88% 2.8rem
+		&__testimonials-brand2
+			background-size: auto
+			background-position: 88% 2.3rem
+		&__testimonials-brand3
+			background-size: auto
+			background-position: 88% 3.1rem
+		&__testimonials-brand4
+			background-size: auto
+			background-position: 88% 3rem
+		&__testimonials-brand-rating
+			text-align: left
+			font-size: 1.4rem
+			span
+				font-size: 1.6rem
+		&__slider-container
+			margin-top: 0.2rem
+		&__slider
+			.owl-wrapper-outer
+			.owl-controls
+				.owl-pagination
+					.owl-page
+						span
+					.owl-page:last-child
+						span
+					.owl-page.active
+						span
+		&__slide
+			&.active
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide-content
+			padding-top: 5.4rem
+			padding-left: 2.3%
+			padding-right: 2.3%
+			width: 49.2%
+			margin-right: 1.6%
+			background-position: 2.5rem 2.5rem
+			&:last-child
+		&__slide-paragraph
+			padding-right: 1rem
+		&__additional-info
+			+flex(row, wrap, flex-start, flex-start)
+			padding-top: 2.2rem
+			background-position: 100% 52%
+			&::before
+		&__slide-content:last-child &__additional-info
+			background-position: 100% 52%
+		&__author-n-ratings-container
+			+flex(row, wrap, flex-start, flex-start)
+		&__author-container
+		&__additional-info-span
+		&__additional-info-author
+		&__additional-info-ratings-container
+			margin-left: 16.9rem
+			margin-top: 0rem
+		&__stars-container
+		&__star
+		&__star1
+		&__star2
+		&__star3
+		&__star4
+		&__star5
+		&__additional-info-brand
+			margin-left: 8.1rem
+		&__additional-info-brand-image
+		&__slider-button
+			&::before, &::after
+		&__prev-button
+			&::before
+			&::after
+		&__next-button
+			&::before
+			&::after
+		&__show-more-button
+			margin-top: 2.4rem
+		&__prices-container
+			margin-top: 1rem
+		&__prices-paragraph
+			font-size: 1.8rem
+		&__prices-items-container
+			margin-top: 0.4rem
+		&__prices-item
+			width: calc(100%/4.3)
+			margin-right: 2.6rem
+			padding-top: 2rem
+			padding-left: 2rem
+			padding-bottom: 2rem
+			margin-top: 1.7rem
+			&:nth-child(3n)
+				margin-right: 2.4rem
+			&:nth-child(4n)
+				margin-right: 0rem
+		&__prices-item1
+		&__prices-item2
+		&__prices-item3
+		&__prices-item4
+		&__prices-item5
+		&__prices-item6
+		&__prices-item7
+		&__prices-item8
+		&__prices-item9
+		&__prices-item10
+		&__prices-item11
+		&__prices-service-name
+			text-align: left
+			font-size: 1.4rem
+		&__prices-service-cost
+			font-size: 1.8rem
+			sup
+		&__collapse-button
+		&__collapse-button-text
+			&::before, &::after
+				+size(0.8rem, 0.2rem)
+			&::before
+				right: -1.2rem
+			&::after
+				right: -1.7rem
+		&__collapse-button.active &__collapse-button-text::before
+		&__collapse-button.active &__collapse-button-text::after
+
+	.windows-map-container
+		.windows-map-wrapper
+		.windows-map-headline
+			font-size: 2.4rem
+		.windows-map-container
+			border-radius: 1rem
+			overflow: hidden
+			margin-top: 2.4rem
+			width: 100%
+		.windows-map
+			+size(100%, 33.7rem)
+			margin-top: 0rem
+
+	.testimonials
+		&__wrapper
+			padding-top: 4.3rem
+		&__headline
+			font-size: 2.4rem
+		&__slider-container
+			margin-top: 0rem
+		&__slider
+			.owl-wrapper-outer
+			.owl-controls
+				.owl-pagination
+					.owl-page
+						span
+					.owl-page:last-child
+						span
+					.owl-page.active
+						span
+		&__slide
+			&.active
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide-content
+			background-position: 2rem 2.8rem
+			margin-top: 2rem
+			width: 49%
+			margin-right: 2%
+			padding-right: 2%
+			padding-left: 2%
+			background-position: 3.8% 2.8rem
+			&:nth-child(2n)
+			&:nth-child(2)
+			&:nth-child(3)
+			&:last-child
+		&__slide-paragraph
+			margin-top: 0rem
+		&__additional-info
+			+flex(row, wrap, flex-start, flex-start)
+			width: 100%
+			background-position: 100% 80%
+			&::before
+		&__slide-content:nth-child(2) &__additional-info
+			background-position: 100% 85%
+		&__slide-content:nth-child(3) &__additional-info
+			background-position: 100% 70%
+		&__slide-content:last-child &__additional-info
+			background-position: 100% 72%
+		&__author-n-ratings-container
+			width: 100%
+			+flex(row, wrap, flex-start, flex-start)
+		&__author-container
+		&__additional-info-span
+		&__additional-info-author
+		&__additional-info-ratings-container
+			margin-top: 0rem
+			margin-left: 19.6rem
+		&__stars-container
+			margin-top: 0.5rem
+			order: 2
+		&__star
+		&__star1
+		&__star2
+		&__star3
+		&__star4
+		&__star5
+		&__slider-button
+			&::before, &::after
+		&__prev-button
+			&::before
+			&::after
+		&__next-button
+			&::before
+			&::after
+		&__show-more-button
+			margin-top: 2.5rem
+			&:hover
+
+	.accordion
+		&__wrapper
+			padding-top: 2.5rem
+			padding-bottom: 5rem
+		&__headline
+			font-size: 2.4rem
+		&__container
+		&__panel
+			padding-left: 1.2%
+			padding-right: 1.2%
+			margin-top: 0.9rem
+			&:first-child
+		&__panel-headline
+			padding-top: 2.5rem
+			background: url('../assets/accordion__question-icon.webp') no-repeat 0.6rem 2.6rem
+			padding-bottom: 2.5rem
+			&::before, &::after
+				top: 3.6rem
+			&::before
+				right: 0.4rem
+			&::after
+				right: 0rem
+			&.active::before
+			&.active::after
+		&__paragraph
+			padding-top: 2.2rem
+			padding-left: 0.8rem
+			padding-right: 3rem
+			&::before
+

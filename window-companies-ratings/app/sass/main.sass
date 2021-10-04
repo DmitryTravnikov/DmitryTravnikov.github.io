@@ -224,6 +224,10 @@
 		margin-top: 1rem
 	&__paragraph2
 	&__paragraph3
+	&__update-n-sort-container
+		+flex(column, wrap, flex-start, flex-start)
+		width: 100%
+		margin-top: 1.6rem
 	&__update-date
 		width: auto
 		margin: 0rem
@@ -234,7 +238,6 @@
 		border-radius: 1rem
 		padding: 1rem 1.9rem 1.1rem 1.8rem
 		text-align: center
-		margin-top: 1.6rem
 	&__sort-container
 		font-family: $lr
 		font-size: 1.4rem
@@ -309,6 +312,7 @@
 		+flex(column, wrap, flex-start, flex-start)
 		width: 100%
 		margin-top: 1.2rem
+		padding-bottom: 2.2rem
 	&__item
 		width: 100%
 		position: relative
@@ -317,9 +321,12 @@
 		border-radius: 1rem
 		padding-top: 2.1rem
 		padding-bottom: 2rem
-		padding-left: 2.1rem
-		padding-right: 2.1rem
+		padding-left: 5%
+		padding-right: 5%
 		overflow: hidden
+		margin-top: 2rem
+		&:first-child
+			margin-top: 0rem
 		&::before
 			content: 'Реклама'
 			width: 20rem
@@ -336,7 +343,6 @@
 			transform: rotate(33deg)
 	&__item1
 	&__item2
-		margin-top: 2rem
 	&__item-company-logo
 	&__item-company-image
 	&__item-company-name-container
@@ -405,7 +411,7 @@
 		width: 100%
 		&::before
 			content: ''
-			+size(90%, .1rem)
+			+size(100%, .1rem)
 			background: #F0F0F0
 			position: absolute
 			top: 0rem
@@ -462,8 +468,6 @@
 		+flex(column, wrap, center, center)
 		border: .1rem solid #EFF0F3
 		border-radius: 1rem
-		padding-top: 5.8rem
-		background: url('../assets/main__quote.webp') no-repeat 2.6rem 2.8rem
 		position: relative
 		padding-bottom: 2rem
 	&__slider
@@ -510,6 +514,10 @@
 	&__slide-content
 		width: 100%
 		+flex(column, wrap, flex-start, flex-start)
+		padding-top: 5.8rem
+		background: url('../assets/main__quote.webp') no-repeat 8% 2.9rem
+		padding-right: 7%
+		padding-left: 7%
 		&:last-child
 			display: none
 	&__slide-paragraph
@@ -521,23 +529,28 @@
 		color: $space-grey
 		text-align: left
 		padding-right: 4rem
-		padding-left: 2.4rem
 	&__additional-info
 		width: 100%
 		margin-top: 2.1rem
 		position: relative
 		+flex(row, wrap, space-between, flex-start)
-		padding-left: 2.5rem
-		padding-top: 1.8rem
+		padding-top: 2.3rem
+		padding-bottom: 0.6rem
+		background: url('../assets/main__testimonials-slide-brand-image.webp') no-repeat 81% 95%
 		&::before
 			content: ''
-			+size(83%, .1rem)
+			+size(100%, .1rem)
 			background: #EFF0F3
 			position: absolute
 			top: 0rem
 			left: 50%
 			transform: translateX(-50%)
+	&__slide-content:last-child &__additional-info
+		background: url('../assets/main__testimonials-slide-brand-image2.webp') no-repeat 81% 95%
+	&__author-n-ratings-container
+		+flex(column, wrap, flex-start, flex-start)
 	&__author-container
+		+flex(column, wrap, flex-start, flex-start)
 	&__additional-info-span
 		width: auto
 		margin: 0rem
@@ -572,8 +585,8 @@
 		background: url('../assets/main__testimonials-empty-start.webp') no-repeat center
 	&__additional-info-brand
 		text-decoration: none
-		margin-top: 5.4rem
-		margin-right: 4.9rem
+		margin-top: 4.9rem
+		margin-right: 4.7rem
 	&__additional-info-brand-image
 	&__slider-button
 		outline: none
@@ -672,6 +685,9 @@
 		padding: 1.4rem 0rem 1.5rem
 		width: 93.5%
 		margin-top: 3rem
+		transition: .2s
+		&:hover
+			background: darken(#EFEFEF, 1%)
 	&__collapse-button-text
 		width: auto
 		margin: 0rem
@@ -709,11 +725,321 @@
 
 
 
+// Windows Map
+.windows-map-container
+	background: #F9FAFD
+	overflow: hidden
+	.windows-map-wrapper
+		padding-top: 1.4rem
+	.windows-map-headline
+		width: 100%
+		margin: 0rem
+		font-family: $lbl
+		font-size: 2rem
+		line-height: 2.8rem
+		color: $space-grey
+		text-align: left
+		padding-right: 0rem
+	.windows-map
+		+size(100%, 34rem)
+		margin-top: 1.2rem
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Testimonials
+.testimonials
+	background: #F9FAFD
+	&__wrapper
+		padding-top: 4rem
+		+flex(column, wrap, center, center)
+	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $lbl
+		font-size: 2rem
+		color: $space-grey
+		text-align: left
+	&__slider-container
+		width: 100%
+		margin-top: 1.6rem
+		+flex(column, wrap, center, center)
+		border: .1rem solid #EFF0F3
+		border-radius: 1rem
+		position: relative
+		padding-bottom: 2rem
+		background: #fff
+	&__slider
+		width: 100%
+		+flex(column, wrap, center, center)
+		.owl-wrapper-outer
+			padding: 0rem
+			margin: 0rem
+		.owl-controls
+			padding: 0rem
+			margin: 0rem
+			position: absolute
+			bottom: -4.7rem
+			left: 50%
+			transform: translateX(-50%)
+			.owl-pagination
+				padding: 0rem
+				margin: 0rem
+				+flex(row, wrap, flex-start, center)
+				.owl-page
+					padding: 0rem
+					margin: 0rem
+					span
+						padding: 0rem
+						margin: 0rem
+						+size(.8rem, .8rem)
+						border: .2rem solid #FFC023
+						margin-right: 1rem
+						background: transparent
+						opacity: 1
+				.owl-page:last-child
+					span
+						margin-right: 0rem
+				.owl-page.active
+					span
+						+size(1.2rem, 1.2rem)
+						background: #FFC023
+	&__slide
+		width: 100%
+		+flex(column, wrap, center, center)
+	&__slide1
+	&__slide2
+	&__slide3
+	&__slide-content
+		width: 100%
+		+flex(column, wrap, flex-start, flex-start)
+		padding-top: 5.8rem
+		background: url('../assets/main__quote.webp') no-repeat 9% 2.4rem
+		padding-left: 9%
+		padding-right: 9%
+		&:nth-child(2)
+			display: none
+		&:nth-child(3)
+			display: none
+		&:last-child
+			display: none
+	&__slide-paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $lr
+		font-size: 1.4rem
+		line-height: 2rem
+		color: $space-grey
+		text-align: left
+	&__additional-info
+		width: 100%
+		margin-top: 2.1rem
+		position: relative
+		+flex(row, wrap, space-between, flex-start)
+		padding-top: 1.9rem
+		padding-bottom: 0.6rem
+		background: url('../assets/main__testimonials-slide-brand-image.webp') no-repeat 74% 93%
+		&::before
+			content: ''
+			+size(100%, .1rem)
+			background: #EFF0F3
+			position: absolute
+			top: 0rem
+			left: 50%
+			transform: translateX(-50%)
+	&__slide-content:last-child &__additional-info
+		background: url('../assets/main__testimonials-slide-brand-image.webp') no-repeat 70% 93%
+	&__author-n-ratings-container
+		+flex(column, wrap, flex-start, flex-start)
+	&__author-container
+		+flex(column, wrap, flex-start, flex-start)
+	&__additional-info-span
+		width: auto
+		margin: 0rem
+		font-family: $lr
+		font-size: 1.2rem
+		color: $grey
+		margin-top: 0.6rem
+		order: 2
+	&__additional-info-author
+		width: auto
+		margin: 0rem
+		font-family: $lsb
+		font-size: 1.6rem
+		color: $space-grey
+		text-transform: capitalize
+	&__additional-info-ratings-container
+		margin-top: 2.3rem
+		+flex(column, wrap, flex-start, flex-start)
+		margin-top: 0.9rem
+	&__stars-container
+		+flex(row, wrap, flex-start, flex-start)
+		margin-top: 0.5rem
+		order: 1
+	&__star
+		+size(1.2rem, 1.2rem)
+		transition: .2s
+		margin-right: 0.4rem
+	&__star1
+		background: url('../assets/main__testimonials-filled-star.webp') no-repeat center
+	&__star2
+		background: url('../assets/main__testimonials-filled-star.webp') no-repeat center
+	&__star3
+		background: url('../assets/main__testimonials-filled-star.webp') no-repeat center
+	&__star4
+		background: url('../assets/main__testimonials-filled-star.webp') no-repeat center
+	&__star5
+		background: url('../assets/main__testimonials-empty-start.webp') no-repeat center
+	&__slider-button
+		outline: none
+		border: none
+		background: #fff
+		+size(2.2rem, 2.2rem)
+		border-radius: 50%
+		position: absolute
+		top: 47.6%
+		transform: translateY(-50%)
+		box-shadow: 0rem .4rem .4rem rgba(#000, .05)
+		cursor: pointer
+		&::before, &::after
+			content: ''
+			+size(0.4rem, .1rem)
+			background: #A7A7A7
+			position: absolute
+	&__prev-button
+		left: -1.1rem
+		&::before
+			transform: rotate(-45deg)
+			left: 0.9rem
+			top: 0.9rem
+		&::after
+			transform: rotate(45deg)
+			left: 0.9rem
+			bottom: 0.9rem
+	&__next-button
+		right: -1.1rem
+		&::before
+			transform: rotate(45deg)
+			right: 0.9rem
+			top: 0.9rem
+		&::after
+			transform: rotate(-45deg)
+			right: 0.9rem
+			bottom: 0.9rem
+	&__show-more-button
+		display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Accordion
+.accordion
+	background: #F9FAFD
+	&__wrapper
+		padding-top: 6.9rem
+		padding-bottom: 3.6rem
+		+flex(column, wrap, flex-start, center)
+	&__headline
+		width: 100%
+		margin: 0rem
+		font-family: $lbl
+		font-size: 2rem
+		color: $space-grey
+		text-align: left
+	&__container
+		width: 100%
+		margin-top: 2rem
+	&__panel
+		width: 100%
+		background: #fff
+		padding-right: 8%
+		padding-left: 8%
+		border-radius: 1rem
+		margin-top: 1.9rem
+		&:first-child
+			margin-top: 0rem
+	&__panel-headline
+		width: 100%
+		margin: 0rem
+		cursor: pointer
+		font-family: $lsb
+		font-size: 1.6rem
+		line-height: 2.3rem
+		color: $space-grey
+		text-align: left
+		padding: 1.3rem 5rem 2rem 3.7rem
+		background: url('../assets/accordion__question-icon.webp') no-repeat 0rem 47%
+		position: relative
+		&::before, &::after
+			content: ''
+			+size(0.6rem, 0.1rem)
+			background: #A4A4A4
+			position: absolute
+			top: 47%
+			transition: .2s
+		&::before
+			transform: rotate(45deg)
+			right: 3rem
+		&::after
+			transform: rotate(-45deg)
+			right: 2.6rem
+		&.active::before
+			transform: rotate(-45deg)
+		&.active::after
+			transform: rotate(45deg)
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-family: $lr
+		font-size: 1.4rem
+		line-height: 2rem
+		color: $grey
+		text-align: left
+		padding: 1.8rem 2rem 2.5rem 0rem
+		transition: .2s
+		opacity: 0
+		z-index: -1
+		position: absolute
+		bottom: 0rem
+		left: 0rem
+		&::before
+			content: ''
+			+size(100%, 0.1rem)
+			background: #EFF0F3
+			position: absolute
+			top: 0rem
+			left: 50%
+			transform: translateX(-50%)
+	&__panel-headline.active + &__paragraph
+		opacity: 1
+		z-index: 1
+		position: relative
 
 
 
 .main__item2 .main__collapsed-block
-	// +flex(column, wrap, flex-start, flex-start)
+	+flex(column, wrap, flex-start, flex-start)
 *
 	// +outline($red)
