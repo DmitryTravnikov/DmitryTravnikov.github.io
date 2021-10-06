@@ -4,7 +4,14 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 		meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
 		title Email-Project (Sass)
 		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;0,600;1,200&display=swap")
 		style.
+			* {
+				//- outline: .2rem solid rgba(0, 120, 255, 0.6);
+				//- outline-offset: -2px;
+			}
 			body {
 				width: 100% !important;
 				-webkit-text-size-adjust: 100%;
@@ -32,51 +39,104 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 				mso-table-lspace: 0pt;
 				mso-table-rspace: 0pt;
 			}
-			.menu a {
-				color: #ffffff;
-				font-size: 14px;
-				font-weight: 400;
-				letter-spacing: 0.28px;
+
+			.header {
+				padding-top: 35px;
+				padding-bottom: 35px;
+			}
+			.header__menu td {
+				padding-right: 32px;
+			}
+			.header__menu td:last-child {
+				padding-right: 0px;
+			}
+			.header__menu a {
 				text-decoration: none;
-			}
-			.menu td {
-				padding-left: 30px;
-			}
-			.header-td {
-				padding-top: 40px;
-				padding-bottom: 40px;
-			}
-			.features-td {
-				padding-top: 100px;
-				padding-bottom: 100px;
-			}
-			.features-td p {
-				color: #8c8c8c;
-				font-size: 14px;
+				font-family: 'Raleway';
 				font-weight: 400;
-				line-height: 26px;
-				letter-spacing: 0.28px;
-				margin-top: 2rem;
+				font-size: 14px;
+				color: #6C6C6C;
+				line-height: 30px;
+				letter-spacing: 0.30px;
 			}
-			.features-td a {
+			
+			.features__item {
+				padding-top: 102px;
+				padding-bottom: 110px;
+			}
+			.features p {
+				font-family: 'Raleway';
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 26px;
+				letter-spacing: 0.30px;
+				color: #8C8C8C;
+				margin-top: 34px;
+			}
+			.features a {
 				display: block;
-				margin-top: 1rem;
+				margin-top: 34px;
+			}
+
+			.people {
+				background: #ffffff;
+			}
+			.people__item {
+				width: 280px;
+				padding-top: 75px;
+				padding-bottom: 78px;
+			}
+			.people__item1 {
+				padding-right: 20px;
+			}
+			.people__item2 {
+				padding-left: 20px;
+			}
+			.people__quote {
+				border-top: 1px solid #E6E6E6;
+				border-right: 1px solid #E6E6E6;
+				border-bottom: 1px solid #E6E6E6;
+				border-left: 1px solid #E6E6E6;
+				font-family: 'Raleway';
+				font-size: 14px;
+				line-height: 30px;
+				letter-spacing: 0.28px;
+				color: #8C8C8C;
+				padding-top: 31px;
+				padding-bottom: 32px;
+			}
+			.people__author-info {
+				padding-top: 12px;
+			}
+			.people__author-name {
+				font-family: 'Raleway';
+				font-size: 15px;
+				font-weight: 700;
+				letter-spacing: 0.28px;
+				color: #686868;
+				padding-top: 3px;
+			}
+			.people__author-position {
+				font-family: 'Raleway';
+				font-size: 14px;
+				color: #8C8C8C;
 			}
 	body(style='margin: 0; padding: 0;' bgcolor="#191919")
 		div(style='font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;') Тестовое письмо
 		table(cellpadding='0' cellspacing='0' width='100%')
 			tr
 				td
-					table.main.table-850(cellpadding='0' cellspacing='0' width="850" align="center" bgcolor='#191919')
+					table.main.table-850(cellpadding='0' cellspacing='0' width="850" align="center" bgcolor='#191919' style="font-family: Arial, Helvetica, sans-serif, 'Raleway';")
 						tr
 							td(height="30" width="850")
 						tr.section
-							td.header-td(bgcolor="#2E2E2E")
+							td.header(bgcolor="#ffffff")
 								table.table-600(cellpadding='0' cellspacing='0' width="600" align="center")
 									tr
-										td.logo(align="left")
-											img(src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/!email-project-sass/app/assets/logo.png?raw=true", alt="logo")
-										td.menu(align="right")
+										td.header__logo(align="left")
+											a(href="#")
+												img(src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/!email-project-sass/app/assets/logo.png?raw=true", alt="pic")
+										td.header__menu(align="right")
 											table(cellpadding='0' cellspacing='0')
 												tr
 													td
@@ -88,14 +148,14 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 													td
 														a(href="#" style="font-family: Arial, Helvetica, sans-serif, 'Raleway';") Contact
 						tr.section
-							td.banner-td
+							td.main
 								a(href="#")
 									img(src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/!email-project-sass/app/assets/banner.png?raw=true", alt="banner")
 						tr.section
-							td.features-td(bgcolor="#ffffff")
+							td.features(bgcolor="#ffffff")
 								table.table-600(cellpadding='0' cellspacing='0' width="600" align="center")
 									tr
-										td(align="center")
+										td.features__item.features__item1(align="center")
 											img(src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/!email-project-sass/app/assets/item-image1.png?raw=true", alt="item-pic")
 											p(style="font-family: Arial, Helvetica, sans-serif, 'Raleway';") phoncus ut, imperdiet vel
 												|
@@ -106,9 +166,9 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 												br
 												| pretium massa.
 											a(href="#")
-												img(src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/!email-project-sass/app/assets/read-more.png?raw=true", alt="read-more")
-										td(align="center")
-											img(src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/!email-project-sass/app/assets/item-image2.png?raw=true", alt="item-pic")
+												img(src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/!email-project-sass/app/assets/read-more.png?raw=true", alt="pic")
+										td.features__item.features__item2(align="center")
+											img(src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/!email-project-sass/app/assets/item-image2.png?raw=true", alt="pic")
 											p(style="font-family: Arial, Helvetica, sans-serif, 'Raleway';") phoncus ut, imperdiet vel
 												|
 												br
@@ -118,9 +178,9 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 												br
 												| pretium massa.
 											a(href="#")
-												img(src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/!email-project-sass/app/assets/read-more.png?raw=true", alt="read-more")
-										td(align="center")
-											img(src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/!email-project-sass/app/assets/item-image3.png?raw=true", alt="item-pic")
+												img(src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/!email-project-sass/app/assets/read-more.png?raw=true", alt="pic")
+										td.features__item.features__item3(align="center")
+											img(src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/!email-project-sass/app/assets/item-image3.png?raw=true", alt="pic")
 											p(style="font-family: Arial, Helvetica, sans-serif, 'Raleway';") phoncus ut, imperdiet vel
 												|
 												br
@@ -130,42 +190,48 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 												br
 												| pretium massa.
 											a(href="#")
-												img(src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/!email-project-sass/app/assets/read-more.png?raw=true", alt="read-more")
+												img(src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/!email-project-sass/app/assets/read-more.png?raw=true", alt="pic")
 						tr.section
-							td.blockquote-td(bgcolor="#2E2E2E")
-								table(cellpadding='0' cellspacing='0' width="600" align="center")
+							td.people
+								table.table-600(cellpadding='0' cellspacing='0' width="600" align="center")
 									tr
-										td.block-td(align="center" style="padding-right: 20px;")
-											table.block-table(cellpadding='0' cellspacing='0' align="center" width="280")
+										td.people__item.people__item1(align="center")
+											p.people__quote(style="font-family: Arial, Helvetica, sans-serif, 'Raleway';") Donec quam felis ultricies nec pellen
+												|
+												br
+												| tesque pretium quis sem massa quis 
+												br
+												| enim. Donec pede justo fringilla vel
+												br
+												| aliquet nec vulputate eget magnis 
+												br
+												| montes ligula eget.
+											table
 												tr
-													td(align="center")
-														p Donec quam felis ultricies nec pel-
-															|
-															br
-															| lentesque pretium quis sem massa
-															br
-															| quis enim. Donec pede justo fring-
-															br
-															| illa vel aliquet nec vulputate eget
-															br
-															| magnis montes ligula eget.
-										td.block-td(align="center" style="padding-left: 20px;")
-											table.block-table(cellpadding='0' cellspacing='0' align="center" width="280")
+													td.people__author-info(align="center")
+														img.people__author-image(src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/!email-project-sass/app/assets/author1.png?raw=true", alt="author-pic")
+														p.people__author-name(style="font-family: Arial, Helvetica, sans-serif, 'Raleway';") Alexander Doe
+														p.people__author-position(style="font-family: Arial, Helvetica, sans-serif, 'Raleway';") Senior UX Developer
+										td.people__item.people__item2(align="center")
+											p.people__quote(style="font-family: Arial, Helvetica, sans-serif, 'Raleway';") Donec quam felis ultricies nec pellen
+												|
+												br
+												| tesque pretium quis sem massa quis 
+												br
+												| enim. Donec pede justo fringilla vel
+												br
+												| aliquet nec vulputate eget magnis 
+												br
+												| montes ligula eget.
+											table
 												tr
-													td(align="center")
-														p Donec quam felis ultricies nec pel-
-															|
-															br
-															| lentesque pretium quis sem massa
-															br
-															| quis enim. Donec pede justo fring-
-															br
-															| illa vel aliquet nec vulputate eget
-															br
-															| magnis montes ligula eget.
-
+													td.people__author-info(align="center")
+														img.people__author-image(src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/!email-project-sass/app/assets/author2.png?raw=true", alt="author-pic")
+														p.people__author-name(style="font-family: Arial, Helvetica, sans-serif, 'Raleway';") Laurie Doe
+														p.people__author-position(style="font-family: Arial, Helvetica, sans-serif, 'Raleway';") Marketing Expert
 						tr.section
-							td.author(align="center")
-								img(src="", alt="author")
-							td.author(align="center")
-								img(src="", alt="author")
+							td.footer
+								table.table-600(cellpadding='0' cellspacing='0' width="600" align="center")
+									tr
+										td.footer__logo
+											
