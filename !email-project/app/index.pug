@@ -2,7 +2,7 @@ doctype transitional
 html(xmlns='http://www.w3.org/1999/xhtml')
 	head
 		meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
-		title Email-Project (Sass)
+		title Email-Project
 		meta(name='viewport' content='width=device-width, initial-scale=1.0')
 		link(rel="preconnect" href="https://fonts.googleapis.com")
 		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
@@ -43,6 +43,7 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 			.header {
 				padding-top: 35px;
 				padding-bottom: 35px;
+				background: #fff;
 			}
 			.header__menu td {
 				padding-right: 32px;
@@ -121,12 +122,143 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 				font-size: 14px;
 				color: #8C8C8C;
 			}
+
+			.footer {
+				background: #38404B;
+				padding-top: 80px;
+				padding-bottom: 68px;
+			}
+			.footer__menu {
+				padding-top: 60px;
+			}
+			.footer__menu td {
+				padding-right: 32px;
+			}
+			.footer__menu td:last-child {
+				padding-right: 0px;
+			}
+			.footer__menu a {
+				text-decoration: none;
+				font-family: 'Raleway';
+				font-weight: 400;
+				font-size: 14px;
+				letter-spacing: 0.28px;
+				color: #BCC9DD;
+			}
+			.footer__copy {
+				padding-top: 17px;
+			}
+			.footer__copy p {
+				font-family: 'Raleway';
+				color: #BCC9DD;
+				font-size: 13px;
+				font-weight: 400;
+			}
+			.footer__copy p span {
+				font-weight: 700;
+			}
+
+			@media only screen and (max-width: 870px) {
+				.table-850 {
+					width: 600px !important;
+				}
+				.table-600 {
+					width: 500px !important;
+				}
+
+				.header__logo {
+					display: block !important;
+					margin: 0 auto !important;
+				}
+				.header__logo a img {
+					display: block !important;
+					margin: 0 auto !important;
+				}
+				.header__menu {
+					display: block !important;
+					margin: 0 auto !important;
+					padding-top: 22px !important;
+				}
+				.header__menu > table {
+					margin: 0 auto !important;
+				}
+
+				.features__item {
+					display: block !important;
+					padding-top: 70px !important;
+					padding-bottom: 0px !important;
+					margin: 0 auto !important;
+				}
+
+				.people {
+					padding-top: 50px !important;
+					padding-bottom: 50px !important;
+				}
+				.people__item {
+					display: block !important;
+					margin: 0 auto !important;
+					padding-top: 0px !important;
+					padding-bottom: 0px !important;
+					padding-right: 0px !important;
+					padding-left: 0px !important;
+				}
+			}
+
+			@media only screen and (max-width: 520px) {
+				.table-850 {
+					width: 500px !important;
+				}
+				.table-600 {
+					width: 340px !important;
+				}
+
+				.header__menu {
+					padding-bottom: 12px !important;
+				}
+				.header__menu td {
+					display: block !important;
+					padding: 0px !important;
+					padding-top: 20px !important;
+				}
+				.header__menu a {
+					display: block !important;
+					margin: 0 auto !important;
+					text-align: center !important;
+					font-size: 25px !important;
+				}
+				
+				.footer__menu {
+					padding-top: 24px !important;
+					padding-bottom: 24px !important;
+				}
+				.footer__menu td {
+					display: block !important;
+					padding: 0px !important;
+					padding-top: 32px !important;
+				}
+				.footer__menu a {
+					display: block !important;
+					margin: 0 auto;
+					text-align: center !important;
+					font-size: 25px !important;
+				}
+			}
+
+			@media only screen and (max-width: 320px) {
+				.table-850 {
+					width: 100% !important;
+				}
+				.table-600 {
+					width: 100% !important;
+				}
+			}
+			
 	body(style='margin: 0; padding: 0;' bgcolor="#191919")
 		div(style='font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;') Тестовое письмо
 		table(cellpadding='0' cellspacing='0' width='100%')
 			tr
 				td
-					table.main.table-850(cellpadding='0' cellspacing='0' width="850" align="center" bgcolor='#191919' style="font-family: Arial, Helvetica, sans-serif, 'Raleway';")
+					table.main.table-850(cellpadding='0' cellspacing='0' width="850" align="center" bgcolor='transparent' style="font-family: Arial, Helvetica, sans-serif, 'Raleway';")
 						tr
 							td(height="30" width="850")
 						tr.section
@@ -233,5 +365,23 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 							td.footer
 								table.table-600(cellpadding='0' cellspacing='0' width="600" align="center")
 									tr
-										td.footer__logo
-											
+										td.footer__logo(align="center")
+											a(href="#")
+												img(src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/!email-project-sass/app/assets/logo2.png?raw=true", alt="logo")
+									tr
+										td.footer__menu(align="center")
+											table
+												tr
+													td
+														a(href="#" style="font-family: Arial, Helvetica, sans-serif, 'Raleway';") About Us
+													td
+														a(href="#" style="font-family: Arial, Helvetica, sans-serif, 'Raleway';") Team
+													td
+														a(href="#" style="font-family: Arial, Helvetica, sans-serif, 'Raleway';") News
+													td
+														a(href="#" style="font-family: Arial, Helvetica, sans-serif, 'Raleway';") Contact Us
+									tr
+										td.footer__copy(align="center")
+											p(style="font-family: Arial, Helvetica, sans-serif, 'Raleway';") &copy; 2014 #[span pixelhint.com]. All Rights Reserved
+						tr
+							td(height="30" width="850")
