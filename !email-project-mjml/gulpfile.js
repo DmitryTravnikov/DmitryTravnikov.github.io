@@ -5,19 +5,32 @@ const browserSync = require('browser-sync').create();
 const del = require('del');
 const rename = require('gulp-rename');
 const mjml = require('gulp-mjml');
+const htmlmin = require('gulp-htmlmin');
+
+const cleanCSS = require('gulp-clean-css');
+const sass = require('gulp-sass');
+
+function sassCompile() {
+	return gulp.src('app/sass/*.+(scss|sass)')
+		.pipe(sass())
+		.on("error", notify.onError())
+		.pipe(cleanCSS())
+		.pipe(gulp.dest('app/css'))
+		.pipe(browserSync.stream());
+}
 
 function pugCompile() {
 	return gulp.src('app/*.pug')
 		.pipe(pug({
-			pretty: true
+			pretty: false
 		}))
 		.on('error', function (err) {
 			process.stderr.write(err.message + '\n');
 			this.emit('end');
 		})
 		.on("error", notify.onError())
-		.pipe(rename("index.mjml"))
 		.pipe(mjml())
+		.pipe(htmlmin({ collapseWhitespace: true }))
 		.pipe(gulp.dest('app/'))
 		.pipe(browserSync.stream());
 }
@@ -30,6 +43,8 @@ function watch() {
 		notify: false,
 		online: true,
 	});
+	gulp.watch('app/sass/*.+(scss|sass)', sassCompile);
+	gulp.watch('app/sass/*.+(scss|sass)', pugCompile);
 	gulp.watch('app/*.pug', pugCompile);
 	gulp.watch('app/*.html').on('change', browserSync.reload);
 }

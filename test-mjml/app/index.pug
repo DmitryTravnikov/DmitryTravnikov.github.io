@@ -1,7 +1,35 @@
 mjml
+	mj-head
+		mj-title mjml-test
+		mj-preview Email Preview
+		mj-attributes
+			mj-text(padding="0" font-size="16px" color="#222222")
+			mj-section(background-color="#222222" padding="0")
+			mj-image(padding="0")
+			mj-column(padding="0")
+		mj-font(name="Raleway" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap")
+		mj-style
+			include css/main.css
 	mj-body(background-color="#191919")
+		mj-spacer(height="30px")
+		// Code Start
+
+		mj-section(padding-top="4px" padding-bottom="34px" padding-right="16px" padding-left="16px" background-color="#ffffff")
+			mj-column(padding="0" vertical-align="middle" width="33.333333%")
+				mj-text(href="http://google.com" font-family="Raleway" color="#6C6C6C" padding="0" font-size="30px" font-weight="500" width="20%" align="center" padding-top="30px") Bella
+			mj-column(padding="0" vertical-align="middle" width="66.666666%")
+				mj-text(align="center" padding-top="30px")
+					a(href="http://google.com" target="_blank" class="header__menu-link") Team
+					| &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+					a(href="http://google.com" target="_blank" class="header__menu-link") Features
+					| &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+					a(href="http://google.com" target="_blank" class="header__menu-link") Pricing
+					| &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+					a(href="http://google.com" target="_blank" class="header__menu-link") Contact
+
 		mj-section
 			mj-column
-				mj-image(width='100px' src='assets/logo-small.png')
-				mj-divider(border-color='#F45E43')
-				mj-text(font-size='20px' color='#F45E43' font-family='helvetica') Hello World
+				mj-image(href="http://google.com" src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/!email-project/app/assets/banner.png?raw=true")
+
+		// Code End
+		mj-spacer(height="30px")

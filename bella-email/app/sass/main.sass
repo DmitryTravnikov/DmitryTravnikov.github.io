@@ -1,0 +1,210 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+*
+	transition: all .2s
+
+// CSS Template
+body
+	width: 100% !important
+	-webkit-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+	margin: 0
+	padding: 0
+	line-height: 100%
+	background: #222222
+
+[style*="Raleway"]
+	font-family: 'Raleway', arial, sans-serif !important;
+
+img
+	outline: none
+	text-decoration: none
+	border:none
+	-ms-interpolation-mode: bicubic
+	max-width: 100%!important
+	margin: 0
+	padding: 0
+	display: block
+
+table td
+	border-collapse: collapse
+
+table
+	border-collapse: collapse
+	mso-table-lspace: 0pt
+	mso-table-rspace: 0pt
+
+// CSS Start
+// 1rem === 10px
+
+.header
+	padding-top: 35px
+	padding-bottom: 35px
+	background: #ffffff
+.header__menu td
+	padding-right: 32px
+.header__menu td:last-child
+	padding-right: 0px
+.header__menu a 
+	text-decoration: none
+	font-family: 'Raleway'
+	font-weight: 400
+	font-size: 14px
+	color: #6C6C6C
+	line-height: 30px
+	letter-spacing: 0.30px
+
+.features__item
+	padding-top: 102px
+	padding-bottom: 110px
+.features p
+	font-family: 'Raleway'
+	font-weight: 400
+	font-size: 14px
+	line-height: 26px
+	letter-spacing: 0.30px
+	color: #8C8C8C
+	margin-top: 34px
+.features a 
+	display: block
+	margin-top: 34px
+
+.people 
+	background: #ffffff
+.people__item
+	width: 280px
+	padding-top: 75px
+	padding-bottom: 78px
+.people__item1
+	padding-right: 20px
+.people__item2
+	padding-left: 20px
+.people__quote
+	border-top: 1px solid #E6E6E6
+	border-right: 1px solid #E6E6E6
+	border-bottom: 1px solid #E6E6E6
+	border-left: 1px solid #E6E6E6
+	font-family: 'Raleway'
+	font-size: 14px
+	line-height: 30px
+	letter-spacing: 0.28px
+	color: #8C8C8C
+	padding-top: 31px
+	padding-bottom: 32px
+.people__author-info
+	padding-top: 12px
+.people__author-name
+	font-family: 'Raleway'
+	font-size: 15px
+	font-weight: 700
+	letter-spacing: 0.28px
+	color: #686868
+	padding-top: 3px
+.people__author-position
+	font-family: 'Raleway'
+	font-size: 14px
+	color: #8C8C8C
+
+.footer 
+	background: #38404B
+	padding-top: 80px
+	padding-bottom: 68px
+.footer__menu
+	padding-top: 60px
+.footer__menu td
+	padding-right: 32px
+.footer__menu td:last-child
+	padding-right: 0px
+.footer__menu a
+	text-decoration: none
+	font-family: 'Raleway'
+	font-weight: 400
+	font-size: 14px
+	letter-spacing: 0.28px
+	color: #BCC9DD
+.footer__copy
+	padding-top: 17px
+.footer__copy p
+	font-family: 'Raleway'
+	color: #BCC9DD
+	font-size: 13px
+	font-weight: 400
+.footer__copy p span
+	font-weight: 700
+
+@media only screen and (max-width: 870px)
+	.table-850
+		width: 600px !important
+	.table-600
+		width: 500px !important
+
+	.header__logo
+		display: block !important
+		margin: 0 auto !important
+	.header__logo a img
+		display: block !important
+		margin: 0 auto !important
+	.header__menu
+		display: block !important
+		margin: 0 auto !important
+		padding-top: 22px !important
+	.header__menu > table
+		margin: 0 auto !important
+
+	.features__item
+		display: block !important
+		padding-top: 70px !important
+		padding-bottom: 0px !important
+		margin: 0 auto !important
+
+	.people
+		padding-top: 50px !important
+		padding-bottom: 50px !important
+	.people__item
+		display: block !important
+		margin: 0 auto !important
+		padding-top: 0px !important
+		padding-bottom: 0px !important
+		padding-right: 0px !important
+		padding-left: 0px !important
+
+@media only screen and (max-width: 520px)
+	.table-850
+		width: 500px !important
+	.table-600
+		width: 340px !important
+
+	.header__menu
+		padding-bottom: 12px !important
+	.header__menu td
+		display: block !important
+		padding: 0px !important
+		padding-top: 20px !important
+	.header__menu a
+		display: block !important
+		margin: 0 auto !important
+		text-align: center !important
+		font-size: 25px !important
+	
+	.footer__menu
+		padding-top: 24px !important
+		padding-bottom: 24px !important
+	.footer__menu td
+		display: block !important
+		padding: 0px !important
+		padding-top: 32px !important
+	.footer__menu a
+		display: block !important
+		margin: 0 auto
+		text-align: center !important
+		font-size: 25px !important
+
+@media only screen and (max-width: 320px)
+	.table-850
+		width: 100% !important
+	.table-600
+		width: 100% !important
+
+*
+	// +outline($blue)

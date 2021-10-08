@@ -1,7 +1,19 @@
 mjml
-	mj-body(background-color="#191919")
+	mj-head
+		mj-title mjml-test
+		mj-preview Email Preview
+		mj-attributes
+			mj-text(padding="0" font-size="30px" color="#ffffff")
+			mj-section(background-color="#222222" padding="20px")
+		mj-style
+			include css/main.css
+	mj-body
+		mj-spacer(height="30px")
+		// Code Start
+		
 		mj-section
 			mj-column
-				mj-image(width='100px' src='assets/logo-small.png')
-				mj-divider(border-color='#F45E43')
-				mj-text(font-size='20px' color='#F45E43' font-family='helvetica') Hello World
+				mj-text Hello World!
+
+		// Code End
+		mj-spacer(height="30px")
