@@ -2,7 +2,7 @@
 @import 'variables/variables.sass'
 
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:ital@1&family=Pathway+Gothic+One&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito&family=Pathway+Gothic+One&display=swap')
 
 [style*="Inter"]
 	font-family: 'Inter', arial, sans-serif !important
@@ -19,12 +19,26 @@ body
 	margin: 0
 	padding: 0
 	line-height: 100%
+	background-color: #f6f9fc
 	background: #222222
 
 .wrapper
-	background: #3B3B3B
 	width: 100%
 	table-layout: fixed
+	padding-top: 30px
+	padding-bottom: 30px
+	background-color: #f6f9fc
+	background: 
+
+.webkit
+	max-width: 600px
+	background-color: #ffffff
+
+.table-600
+	Margin: 0 auto
+	width: 100%
+	max-width: 600px
+	color: #4a4a4a
 
 img
 	outline: none
@@ -46,10 +60,31 @@ table
 
 // CSS Start
 
-.header .table-90 td
+.header
 	padding-top: 32px
 	padding-bottom: 32px
 
+.header__beyonce-paragraph
+	width: auto
+	margin: 0rem
+	font-size: 36px
+	line-height: 44px
+	font-weight: 700
+	text-align: center
+	color: #1A2028
+
+.header__cta-link
+	text-decoration: none !important
+	font-size: 14px
+	font-weight: 600
+	color: #fff
+	background: $blue
+	border-radius: 2px
+	padding-top: 12px
+	padding-right: 24px
+	padding-bottom: 12px
+	padding-left: 24px
+	display: inline-block
 
 // Media Start
 @media only screen and (max-width: 600px)

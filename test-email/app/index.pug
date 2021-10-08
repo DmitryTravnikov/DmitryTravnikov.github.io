@@ -3,6 +3,7 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 	head
 		meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
 		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
 		title test-email
 		link(rel="preconnect" href="https://fonts.googleapis.com")
 		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
@@ -11,20 +12,32 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 	body(style='margin: 0; padding: 0;')
 		div(style='font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;') Тестовое письмо
 		center.wrapper
-			table(cellpadding='0' cellspacing='0' width='100%')
-				tr
-					td
-						table.main.table-600(cellpadding='0' cellspacing='0' width="600" align="center" bgcolor='transparent' style="font-family: Arial, Helvetica, sans-serif, 'Raleway';")
-							tr
-								td(height="30" width="100%")
-							// HTML Start
-							tr.section
-								td.header
-									table.table-90(cellpadding='0' cellspacing='0' width="90%" align="center" bgcolor="#1B54DD")
-										tr
-											td(align="center")
-												a(href="http://google.com" target="_blank")
-													img(src="assets/logo.png", alt="logo")
-							// HTML End
-							tr
-								td(height="30" width="100%")
+			.webkit
+				table(cellpadding='0' cellspacing='0' width='100%')
+					tr
+						td
+							table.main.table-600(cellpadding='0' cellspacing='0' width="600" align="center" bgcolor='transparent' style="font-family: Arial, Helvetica, sans-serif, 'Raleway';")
+
+								// HTML Start
+
+								// Header
+								tr.section
+									td.header(bgcolor="#1B54DD" align="center")
+										table(cellpadding='0' cellspacing='0' width="100%" align="center")
+											tr
+												td(align="center")
+													a(href="http://google.com")
+														img(src="https://github.com/DmitryTravnikov/DmitryTravnikov.github.io/blob/master/test-email/app/assets/logo.png?raw=true", alt="logo")
+								
+								// Main
+								tr.section
+									td.main(bgcolor="#ffffff")
+										table(cellpadding='0' cellspacing='0' width="100%" align="center")
+											tr
+												td(style="padding-top: 32px;" align="center")
+													p.header__beyonce-paragraph(style="font-family: Arial, Helvetica, sans-serif, 'Inter';") I am Beyoncé always.
+											tr
+												td(style="padding-top: 32px;" align="center")
+													a.header__cta-link(href="http://google.com" style="font-family: Arial, Helvetica, sans-serif, 'Inter';") CTA Text
+
+								// HTML End
