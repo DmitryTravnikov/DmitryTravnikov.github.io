@@ -41,6 +41,7 @@ function watch() {
 		online: true,
 	});
 	gulp.watch('app/sass/*.+(scss|sass)', sassCompile);
+	gulp.watch('app/sass/*.+(scss|sass)', pugCompile);
 	gulp.watch('app/*.pug', pugCompile);
 	gulp.watch('app/*.html').on('change', browserSync.reload);
 	gulp.watch('app/css/*.css').on('change', browserSync.reload);
