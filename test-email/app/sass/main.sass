@@ -60,60 +60,45 @@ table
 
 // CSS Start
 
-// Header
-.header
-	padding-top: 32px
-	padding-bottom: 32px
+.main
+	padding-top: 20px
+	padding-bottom: 20px
+	padding-right: 5%
+	padding-left: 5%
 
-// Main
-.main__beyonce-paragraph
-	width: auto
-	margin: 0rem
-	font-size: 36px
-	line-height: 44px
-	font-weight: 700
-	text-align: center
-	color: #1A2028
-.main__cta-link
-	text-decoration: none !important
-	font-size: 14px
-	font-weight: 600
-	color: #fff
+.main__link-container
+	padding-top: 20px
+a
 	background: $blue
-	border-radius: 2px
-	padding-top: 12px
-	padding-right: 24px
-	padding-bottom: 12px
-	padding-left: 24px
+	padding-top: 10px
+	padding-right: 20px
+	padding-bottom: 10px
+	padding-left: 20px
+	color: #fff !important
+	text-decoration: none !important
+	text-transform: uppercase
 	display: inline-block
-.main__paragraph
-	width: auto
-	margin: 0rem
-	font-size: 14px
-	font-weight: 400
-	line-height: 17px
-	color: #1A2028
-	text-align: center
-	padding-right: 60px
-	padding-left: 60px
-
-// Footer
-.footer__socials-container
-	padding-top: 26px
-.footer__social-link
-	vertical-align: middle
-	padding-right: 16px
-	padding-left: 16px
-.footer__twitter
-.footer__facebook
-.footer__instagram
+	box-shadow: 0 10px 10px rgba(#000000, 0.5)
+.main__paragraph-container
+	padding-left: 2%
+	padding-right: 2%
+	display: inline-block
+	min-width: 26%
+	max-width: 100%
+	width: calc((480px - 100%) * 480)
+	p
+		text-align: left !important
 
 
 // Media Start
 @media only screen and (max-width: 600px)
 	body
-@media only screen and (max-width: 400px)
+@media only screen and (max-width: 480px)
 	body
+
+	.main__paragraph-container
+		mso-display: block
+		mso-width: 100%
 
 *
 	// +outline($blue)

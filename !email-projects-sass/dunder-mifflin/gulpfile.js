@@ -7,7 +7,6 @@ const autoprefixer = require('gulp-autoprefixer');
 const del = require('del');
 const cleanCSS = require('gulp-clean-css');
 
-
 function sassCompile() {
 	return gulp.src('app/sass/*.+(scss|sass)')
 		.pipe(sass())
@@ -41,6 +40,7 @@ function watch() {
 		online: true,
 	});
 	gulp.watch('app/sass/*.+(scss|sass)', sassCompile);
+	gulp.watch('app/sass/*.+(scss|sass)', pugCompile);
 	gulp.watch('app/*.pug', pugCompile);
 	gulp.watch('app/*.html').on('change', browserSync.reload);
 	gulp.watch('app/css/*.css').on('change', browserSync.reload);

@@ -1,0 +1,163 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito&family=Pathway+Gothic+One&display=swap')
+
+[style*="Inter"]
+	font-family: 'Inter', arial, sans-serif !important
+[style*="Nunito"]
+	font-family: 'Nunito', arial, sans-serif !important
+[style*="Pathway Gothic One"]
+	font-family: 'Pathway Gothic One', arial, sans-serif !important
+
+// CSS Template
+body
+	width: 100% !important
+	-webkit-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+	margin: 0
+	padding: 0
+	line-height: 100%
+	background-color: #f6f9fc
+	background-color: #222222 !important
+
+.wrapper
+	width: 100%
+	table-layout: fixed
+	padding-top: 30px
+	padding-bottom: 30px
+	background-color: #f6f9fc
+	background-color: #222222 !important
+
+.webkit
+	max-width: 600px
+	background-color: #ffffff
+
+.table-600
+	Margin: 0 auto
+	width: 100%
+	max-width: 600px
+	color: #4a4a4a
+
+img
+	outline: none
+	text-decoration: none
+	border:none
+	-ms-interpolation-mode: bicubic
+	max-width: 100%!important
+	margin: 0
+	padding: 0
+	display: block
+
+table td
+	border-collapse: collapse
+
+table
+	border-collapse: collapse
+	mso-table-lspace: 0pt
+	mso-table-rspace: 0pt
+
+// CSS Start
+// Colors
+$blue: #1B54DD
+
+// Header
+.header
+	background: $blue
+	padding-top: 32px
+	padding-bottom: 32px
+	&__logo-container
+	&__logo-image
+		min-width: 100px
+		height: 66px
+
+// Main
+.main
+	padding-top: 32px
+	padding-bottom: 32px
+	&__headline-container
+	&__headline
+		width: auto
+		margin: 0
+		font-size: 36px
+		font-weight: 700
+		line-height: 44px
+		color: #1A2028
+		text-align: center
+	&__cta-link-container
+		padding-top: 32px
+	&__cta-link
+		text-decoration: none !important
+		color: #fff !important
+		background: $blue
+		border-radius: 2px
+		font-size: 14px
+		font-weight: 600
+		border-top: 12px solid $blue
+		border-right: 24px solid $blue
+		border-bottom: 12px solid $blue
+		border-left: 24px solid $blue
+		display: inline-block
+	&__banner-container
+		padding-top: 32px
+	&__banner-image
+	&__paragraph-container
+		padding-top: 32px
+		padding-left: 8%
+		padding-right: 8%
+	&__paragraph
+		width: auto
+		margin: 0
+		font-size: 14px
+		line-height: 17px
+		letter-spacing: 0.28px
+		font-weight: 400
+		color: #1A2028
+		text-align: center
+
+// Footer
+.footer
+	background: #E8E8E8
+	padding-top: 26px
+	padding-bottom: 26px
+	&__socials-container
+	&__social-link-container
+		padding-right: 16px
+		padding-left: 16px
+	&__social-link
+	&__twitter
+	&__facebook
+	&__instagram
+	&__site-link-container
+		padding-top: 16px
+	&__site-link
+		text-decoration: none !important
+		font-size: 14px
+		font-weight: 400
+		color: #262626
+		text-align: center
+	&__copy-container
+		padding-top: 8px
+	&__copy
+		width: auto
+		margin: 0
+		font-size: 10px
+		font-weight: 400
+		line-height: 16px
+		color: #262626
+		text-align: center
+		padding-right: 5%
+		padding-left: 5%
+	&__logo-container
+		padding-top: 16px
+	&__logo-image
+
+// Media Start
+@media only screen and (max-width: 600px)
+	body
+@media only screen and (max-width: 480px)
+	body
+
+*
+	// +outline($blue)

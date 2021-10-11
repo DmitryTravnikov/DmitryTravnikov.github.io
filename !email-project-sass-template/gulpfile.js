@@ -7,6 +7,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const del = require('del');
 const cleanCSS = require('gulp-clean-css');
 
+
 function sassCompile() {
 	return gulp.src('app/sass/*.+(scss|sass)')
 		.pipe(sass())
