@@ -704,29 +704,27 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 10px !important;
     font-weight: 500 !important; }
 
-.footer__headline {
-  font-size: 18px;
-  font-weight: 600;
-  color: #0C1014; }
-
-.footer__paragraph {
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #515759; }
-
-.footer__social-link {
-  vertical-align: middle !important;
-  display: inline-block;
-  padding-right: 27px !important; }
-
-.footer__phone {
-  font-size: 11px;
-  font-weight: 600;
-  color: #515759; }
-
-.footer__support-link {
-  display: block;
-  font-size: 11px;
-  font-weight: 400;
-  color: #1890FF; }
+.footer {
+  border-radius: 8px !important; }
+  .footer__headline {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0C1014; }
+  .footer__paragraph {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #515759; }
+  .footer__social-link {
+    vertical-align: middle !important;
+    display: inline-block;
+    padding-right: 27px !important; }
+  .footer__phone {
+    font-size: 11px;
+    font-weight: 600;
+    color: #515759; }
+  .footer__support-link {
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    color: #1890FF; }
