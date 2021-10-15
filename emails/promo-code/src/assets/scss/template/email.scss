@@ -1,0 +1,111 @@
+// Reset
+h1,h2,h3,h4,h5,h6,p {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+// Colors
+$blue: #1890FF;
+
+// CSS Start
+.headline {
+	font-size: 24px;
+	font-weight: 700;
+	color: #0C1014;
+}
+
+// Header
+.header {
+	background: #ffffff !important;
+	border-top-right-radius: 8px !important;
+	border-top-left-radius: 8px !important;
+}
+
+// Main
+.main {
+	background: #ffffff !important;
+	&__paragraph {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22px;
+		color: #515759;
+		a {
+			color: $blue !important;
+		}
+	}
+	&__button {}
+	&__button {
+		padding-top: 17px !important;
+		padding-bottom: 17px !important;
+		padding-right: 35px !important;
+		padding-left: 35px !important;
+		border-radius: 8px;
+		font-size: 18px;
+		font-weight: 700;
+	}
+	&__button-grey {
+		background: #F1F1F1 !important;
+		color: #0C1014 !important;
+	}
+	&__button-blue {
+		background: $blue !important;
+		color: #fff !important;
+	}
+	&__additional-info {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+		color: #B6B6B6;
+	}
+}
+
+// Shop
+.shop {
+	background: #ffffff !important;
+	border-bottom-right-radius: 8px !important;
+	border-bottom-left-radius: 8px !important;
+	&__discover-link {
+		font-size: 15px;
+		font-weight: 600;
+		color: #51ACFF;
+	}
+	&__item-headline {
+		font-size: 10px;
+		font-weight: 600;
+		line-height: 12px;
+		color: #0C1014;
+	}
+	&__item-price {
+		font-size: 10px;
+		font-weight: 500;
+		color: #515759;
+	}
+}
+
+// Footer
+.footer {
+	background: #F3F3F3 !important;
+	&__paragraph {
+		font-size: 14px;
+		font-weight: 400;
+		color: #B6B6B6;
+	}
+	&__follow-link {
+		text-decoration: underline;
+		font-size: 14px;
+		font-weight: 600;
+		color: $blue;
+		margin: 0 auto !important;
+	}
+	&__unsubscribe-link {
+		text-decoration: underline;
+		font-size: 12px;
+		font-weight: 400;
+		color: #B6B6B6;
+		margin: 0 auto !important;
+	}
+}
+
+// Outline
+.columns {
+  // border: 1px solid lightblue !important;
+}
