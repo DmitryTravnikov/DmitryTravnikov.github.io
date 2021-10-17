@@ -230,8 +230,7 @@ p.text-right {
   .small-text-center {
     text-align: center !important; } }
 
-img.float-center,
-img.text-center {
+img.float-center {
   margin: 0 auto;
   Margin: 0 auto;
   float: none;
@@ -575,48 +574,47 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0 !important; }
 
 .body {
-  background-color: #219A55 !important; }
+  background: #219A55 !important; }
 
-.header {
-  background-color: #fff !important;
-  background: #fff !important; }
-  .header__menu-link {
-    padding-right: 8px !important;
-    padding-left: 8px !important; }
-  .header__menu-link a {
-    font-family: "Roboto", Helvetica, Arial, sans-serif !important;
-    font-weight: 500;
-    font-size: 15px;
-    color: #000 !important; }
-  .header .divider {
-    border: none !important;
-    height: 2px !important;
-    background: #219A55 !important; }
+.header__menu-link {
+  padding-right: 8px !important;
+  padding-left: 8px !important; }
 
-.main {
-  background-color: #fff !important;
-  background: #fff !important; }
-  .main__headline {
-    font-family: "Roboto", Helvetica, Arial, sans-serif !important;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 29px;
-    color: #333; }
-  .main__paragraph {
-    font-family: "Roboto", Helvetica, Arial, sans-serif !important;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 29px;
-    color: #949494; }
-  .main__black {
-    font-weight: 700;
-    color: #000; }
-  .main__green {
-    font-weight: 700;
-    color: #fff;
-    background: #219A55;
-    padding-left: 3px;
-    padding-right: 3px; }
+.header__menu-link a {
+  font-family: "Roboto", Helvetica, Arial, sans-serif !important;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000 !important; }
+
+.header .divider {
+  border: none !important;
+  height: 2px !important;
+  background: #219A55 !important; }
+
+.main__headline {
+  font-family: "Roboto", Helvetica, Arial, sans-serif !important;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333; }
+
+.main__paragraph {
+  font-family: "Roboto", Helvetica, Arial, sans-serif !important;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #949494; }
+
+.main__black {
+  font-weight: 700;
+  color: #000; }
+
+.main__green {
+  font-weight: 700;
+  color: #fff;
+  background: #219A55;
+  padding-left: 4px;
+  padding-right: 4px; }
 
 .shop__starting {
   font-family: "Roboto", Helvetica, Arial, sans-serif !important;
@@ -627,7 +625,7 @@ h1, h2, h3, h4, h5, h6, p {
 .shop__rs {
   font-family: "Roboto", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 24px;
   color: #000; }
 
 .shop__until {
@@ -654,8 +652,8 @@ h1, h2, h3, h4, h5, h6, p {
 .pre-footer__paragraph {
   font-family: "Roboto", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
-  font-size: 13px;
-  line-height: 19px;
+  font-size: 14px;
+  line-height: 24px;
   color: #fff; }
 
 .footer__menu-container {
@@ -664,7 +662,7 @@ h1, h2, h3, h4, h5, h6, p {
 .footer__menu-link {
   font-family: "Roboto", Helvetica, Arial, sans-serif !important;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   color: #fff; }
 
 .footer__social-link {
@@ -680,5 +678,5 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Roboto", Helvetica, Arial, sans-serif !important;
   font-style: italic;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   color: #fff; }

@@ -15,13 +15,11 @@ $green: #219A55;
 
 // CSS Start
 .body {
-	background-color: $green !important;
+	background: $green !important;
 }
 
 // Header
 .header {
-	background-color: #fff !important;
-	background: #fff !important;
 	&__menu-link {
 		padding-right: 8px !important;
 		padding-left: 8px !important;
@@ -29,7 +27,7 @@ $green: #219A55;
 	&__menu-link a {
 		font-family: $rb;
 		font-weight: 500;
-		font-size: 15px;
+		font-size: 16px;
 		color: #000 !important;
 	}
 	.divider {
@@ -41,20 +39,18 @@ $green: #219A55;
 
 // Main
 .main {
-	background-color: #fff !important;
-	background: #fff !important;
 	&__headline {
 		font-family: $rb;
 		font-weight: 500;
 		font-size: 18px;
-		line-height: 29px;
+		line-height: 28px;
 		color: #333;
 	}
 	&__paragraph {
 		font-family: $rb;
 		font-weight: 500;
 		font-size: 18px;
-		line-height: 29px;
+		line-height: 30px;
 		color: #949494;
 	}
 	&__black {
@@ -65,8 +61,8 @@ $green: #219A55;
 		font-weight: 700;
 		color: #fff;
 		background: $green;
-		padding-left: 3px;
-		padding-right: 3px;
+		padding-left: 4px;
+		padding-right: 4px;
 	}
 }
 
@@ -81,7 +77,7 @@ $green: #219A55;
 	&__rs {
 		font-family: $rb;
 		font-weight: 500;
-		font-size: 25px;
+		font-size: 24px;
 		color: #000;
 	}
 	&__until {
@@ -116,8 +112,8 @@ $green: #219A55;
 	&__paragraph {
 		font-family: $rb;
 		font-weight: 500;
-		font-size: 13px;
-		line-height: 19px;
+		font-size: 14px;
+		line-height: 24px;
 		color: #fff;
 	}
 }
@@ -130,7 +126,7 @@ $green: #219A55;
 	&__menu-link {
 		font-family: $rb;
 		font-weight: 400;
-		font-size: 15px;
+		font-size: 16px;
 		color: #fff;
 	}
 	&__social-link {
@@ -146,7 +142,7 @@ $green: #219A55;
 		font-family: $rb;
 		font-style: italic;
 		font-weight: 400;
-		font-size: 13px;
+		font-size: 14px;
 		color: #fff;
 	}
 }
