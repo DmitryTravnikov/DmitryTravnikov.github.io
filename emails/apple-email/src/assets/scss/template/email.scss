@@ -6,7 +6,6 @@ h1,h2,h3,h4,h5,h6,p {
 
 // Header
 .header {
-  background: #fff !important;
   border-top-right-radius: 8px !important;
   border-top-left-radius: 8px !important;
 }
@@ -119,7 +118,6 @@ h1,h2,h3,h4,h5,h6,p {
   &__social-link {
     vertical-align: middle !important;
     display: inline-block;
-    padding-right: 27px !important;
   }
   &__social-link a {}
   &__phone {

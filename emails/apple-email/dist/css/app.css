@@ -98,17 +98,6 @@ th.columns table {
     th.columns table.button.expand {
       width: 100%; }
 
-th.large-1 {
-  width: 32.33333px;
-  padding-left: 8px;
-  padding-right: 8px; }
-
-th.large-1.first {
-  padding-left: 16px; }
-
-th.large-1.last {
-  padding-right: 16px; }
-
 th.large-2 {
   width: 80.66667px;
   padding-left: 8px;
@@ -143,6 +132,9 @@ th.large-5 {
   width: 225.66667px;
   padding-left: 8px;
   padding-right: 8px; }
+
+th.large-5.first {
+  padding-left: 16px; }
 
 th.large-5.last {
   padding-right: 16px; }
@@ -629,7 +621,6 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0 !important; }
 
 .header {
-  background: #fff !important;
   border-top-right-radius: 8px !important;
   border-top-left-radius: 8px !important; }
 
@@ -717,8 +708,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: #515759; }
   .footer__social-link {
     vertical-align: middle !important;
-    display: inline-block;
-    padding-right: 27px !important; }
+    display: inline-block; }
   .footer__phone {
     font-size: 11px;
     font-weight: 600;
