@@ -1,103 +1,88 @@
-.wrapper-inner {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-.container {
-  padding: 0 !important;
-}
-h1,h2,h3,h4,h5,h6 {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-p {
-  padding: 0 !important;
-  margin: 0 !important;
+// Reset
+h1,h2,h3,h4,h5,h6,p {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
 }
 
-// Header
-.header {
-  background: #F6F6F6 !important;
-  th {
-    padding: 0;
-  }
-}
+// Colors
+$blue: #3498DB;
 
+//CSS Start
 // Main
 .main {
-  background: #FFFFFF !important;
   &__headline {
-    font-size: 36px;
     font-weight: 300;
-    line-height: 43px;
+    font-size: 36px;
+    line-height: 44px;
     color: #222;
   }
   &__item-headline {
-    font-size: 14px;
     font-weight: 700;
-    line-height: 17px;
+    font-size: 14px;
+    line-height: 18px;
     color: #222;
   }
   &__item-paragraph {
-    font-size: 14px;
     font-weight: 400;
-    line-height: 17px;
+    font-size: 14px;
+    line-height: 18px;
     color: #222;
   }
   &__item-price {
-    font-size: 14px;
     font-weight: 400;
-    color: #C0392B;
-    vertical-align: middle;
-  }
-  &__discount {
     font-size: 22px;
-    font-weight: 400;
+    line-height: 26px;
     color: #9B59B6;
     vertical-align: middle;
-    padding-left: 3px;
+    span {
+      font-size: 14px;
+      color: #C0392B;
+      vertical-align: middle;
+    }
   }
-  &__filled-button {
-    font-size: 14px;
-    font-weight: 400;
+  &__item-button a {
+    font-weight: 400 !important;
+    font-size: 14px !important;
     color: #fff;
   }
-  &__filled-button td {
-  }
-  &__filled-button a {
-    background: #3498DB !important;
-    padding-top: 13px !important;
-    padding-right: 24px !important;
-    padding-bottom: 13px !important;
-    padding-left: 24px !important;
-  }
-  &__section-name {
-    font-weight: 400;
-    font-size: 28px;
-    color: #222;
-  }
-  &__bottom-paragraph {
-    font-size: 14px;
-    font-weight: 400;
-    color: #222;
+  &__filled-button {}
+  &__empty-button {
+    background: transparent !important;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 12px 24px 12px 24px;
+    border: 1px solid $blue;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    color: $blue;
   }
 }
 
 // Footer
 .footer {
-  background: #F6F6F6 !important;
   &__address {
-    font-size: 12px;
     font-weight: 400;
+    font-size: 12px;
     line-height: 18px;
     color: #999;
   }
   &__unsubscribe-link {
-    text-decoration: none;
-    color: #C0392B;
+    color: #C0392B !important;
   }
-  &__powered-by-link {
-    font-size: 12px;
+  &__powered-by {
     font-weight: 400;
+    font-size: 12px;
     color: #999;
   }
+}
+
+// Outline
+.columns {
+  // border: 1px solid lightblue;
 }

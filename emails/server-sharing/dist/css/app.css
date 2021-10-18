@@ -664,8 +664,7 @@ h1, h2, h3, h4, h5, h6, p {
 .header {
   background-image: url("https://i.ibb.co/jWzSW6r/background-image.png") !important;
   background-repeat: no-repeat !important;
-  background-position: 100% 46px !important;
-  background: #F3F3F3 !important; }
+  background-position: 100% 46px !important; }
   .header__logo {
     display: inline-block !important; }
   .header__visit-link {
@@ -692,36 +691,36 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 500 !important;
     color: #fff; }
 
-.main {
-  background: #F3F3F3 !important; }
-  .main__item-headline {
-    font-size: 18px;
-    font-weight: 700;
-    color: #0C1014; }
-  .main__item-paragraph {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    color: #515759; }
-  .main__explore-button a {
-    padding-top: 12px !important;
-    padding-bottom: 12px !important;
-    background: #1890FF !important;
-    font-size: 18px !important;
-    font-weight: 500 !important;
-    color: #fff; }
+.main__item-headline {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0C1014; }
 
-.footer {
-  background: #F3F3F3 !important; }
-  .footer__paragraph {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 23px;
-    color: #B1BCC0; }
-  .footer__unsubscribe-link {
-    color: #1890FF; }
-  .footer__social-link {
-    display: inline-block !important;
-    vertical-align: middle !important;
-    padding-right: 16px !important;
-    padding-left: 16px !important; }
+.main__item-paragraph {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #515759; }
+
+.main__explore-button a {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  background: #1890FF !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  color: #fff; }
+
+.footer__paragraph {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #B1BCC0; }
+
+.footer__unsubscribe-link {
+  color: #1890FF; }
+
+.footer__social-link {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  padding-right: 16px !important;
+  padding-left: 16px !important; }

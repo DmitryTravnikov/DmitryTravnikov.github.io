@@ -98,11 +98,6 @@ th.columns table {
     th.columns table.button.expand {
       width: 100%; }
 
-th.large-2 {
-  width: 80.66667px;
-  padding-left: 8px;
-  padding-right: 8px; }
-
 th.large-3 {
   width: 129px;
   padding-left: 8px;
@@ -132,9 +127,6 @@ th.large-5 {
   width: 225.66667px;
   padding-left: 8px;
   padding-right: 8px; }
-
-th.large-5.first {
-  padding-left: 16px; }
 
 th.large-5.last {
   padding-right: 16px; }

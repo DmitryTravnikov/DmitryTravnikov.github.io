@@ -98,6 +98,20 @@ th.columns table {
     th.columns table.button.expand {
       width: 100%; }
 
+th.large-1 {
+  width: 32.33333px;
+  padding-left: 8px;
+  padding-right: 8px; }
+
+th.large-1.first {
+  padding-left: 16px; }
+
+th.large-1.last {
+  padding-right: 16px; }
+
+.body .columns th.large-1 {
+  width: 8.33333%; }
+
 th.large-3 {
   width: 129px;
   padding-left: 8px;
@@ -181,6 +195,14 @@ th.large-8.first {
 
 th.large-8.last {
   padding-right: 16px; }
+
+th.large-10 {
+  width: 467.33333px;
+  padding-left: 8px;
+  padding-right: 8px; }
+
+.body .columns th.large-10 {
+  width: 83.33333%; }
 
 th.large-12 {
   width: 564px;
@@ -571,30 +593,26 @@ h1, h2, h3, h4, h5, h6, p, a {
   padding: 0 !important;
   margin: 0 !important; }
 
-.header {
-  background: #313131 !important; }
-
 .main {
   background-image: url("https://i.ibb.co/tB5n11N/main-bg-wide.png") !important;
   background-repeat: no-repeat !important;
-  background-position: center center !important;
-  background: #1C1C1C !important; }
+  background-position: center center !important; }
   .main__product-name {
     font-size: 16px;
-    color: #ffffff !important; }
+    color: #ffffff; }
   .main__top-panel-menu {
     display: inline !important;
     margin: 0 auto !important; }
   .main__menu1-item {
-    font-size: 9px !important;
+    font-size: 10px !important;
     color: #ffffff !important; }
   .main__menu1-item a {
-    font-size: 9px !important;
+    font-size: 10px !important;
     color: #ffffff !important; }
   .main__headline {
     font-size: 48px;
     font-weight: 700;
-    color: #fff !important;
+    color: #fff;
     line-height: 58px; }
   .main__middle-links-container {
     display: inline !important;
@@ -602,7 +620,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   .main__middle-link {
     text-decoration: none !important;
     color: #51ACFF !important;
-    font-size: 15px !important;
+    font-size: 16px !important;
     font-weight: 500 !important; }
   .main__list1 {
     padding: 0 !important;
@@ -613,56 +631,58 @@ h1, h2, h3, h4, h5, h6, p, a {
   .main__list1-item {
     font-size: 24px !important;
     font-weight: 700;
-    line-height: 29px;
-    color: #fff !important;
+    line-height: 30px;
+    color: #fff;
     padding-left: 24px !important;
     border-left: 4px solid #FCA878 !important; }
   .main__up-to {
     font-size: 10px;
     font-weight: 400;
-    color: #fff !important; }
+    color: #fff; }
   .main__count {
     font-size: 36px;
     font-weight: 600;
-    color: #fff !important; }
+    color: #fff; }
   .main__what-else {
     font-size: 10px;
     font-weight: 400;
-    color: #fff !important; }
+    color: #fff; }
 
-.footer {
-  background: #313131 !important;
-  background-color: #313131 !important; }
-  .footer__socials-container {
-    display: inline !important;
-    margin: 0 auto !important; }
-  .footer__social-link {
-    display: inline-block;
-    vertical-align: middle;
-    padding-right: 15px;
-    padding-left: 15px; }
-  .footer__copy-paragraph {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
+.footer__socials-container {
+  display: inline !important;
+  margin: 0 auto !important; }
+
+.footer__social-link {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 14px;
+  padding-left: 14px; }
+
+.footer__copy-paragraph {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #7D7D7D; }
+
+.footer__unsubscribe {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #7D7D7D;
+  width: 80% !important; }
+  .footer__unsubscribe span {
     color: #7D7D7D !important; }
-  .footer__unsubscribe {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    color: #7D7D7D !important;
-    width: 80% !important; }
-    .footer__unsubscribe span {
-      color: #7D7D7D !important; }
-    .footer__unsubscribe a {
-      color: #51ACFF !important;
-      text-decoration: none !important; }
-  .footer__menu-link {
-    padding-right: 5px !important;
-    padding-left: 5px !important;
-    border-right: 1px solid #7D7D7D;
-    font-size: 12px;
-    font-weight: 400;
-    color: #fff !important; }
-  .footer__menu-link.no-divider {
-    border-right: none !important; }
+  .footer__unsubscribe a {
+    color: #51ACFF !important;
+    text-decoration: none !important; }
+
+.footer__menu-link {
+  padding-right: 4px !important;
+  padding-left: 4px !important;
+  border-right: 1px solid #7D7D7D;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff; }
+
+.footer__menu-link.no-divider {
+  border-right: none !important; }

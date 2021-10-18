@@ -7,30 +7,27 @@ h1,h2,h3,h4,h5,h6,p,a {
 $space-grey: #313131;
 
 // Header
-.header {
-  background: $space-grey !important;
-}
+.header {}
 
 // Main
 .main {
   background-image: url('https://i.ibb.co/tB5n11N/main-bg-wide.png') !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
-  background: #1C1C1C!important;
   &__product-name {
     font-size: 16px;
-    color: #ffffff !important;
+    color: #ffffff;
   }
   &__top-panel-menu {
     display: inline !important;
     margin: 0 auto !important;
   }
   &__menu1-item {
-    font-size: 9px !important;
+    font-size: 10px !important;
     color: #ffffff !important;
   }
   &__menu1-item a {
-    font-size: 9px !important;
+    font-size: 10px !important;
     color: #ffffff !important;
   }
   &__free-trial {
@@ -44,7 +41,7 @@ $space-grey: #313131;
   &__headline {
     font-size: 48px;
     font-weight: 700;
-    color: #fff !important;
+    color: #fff;
     line-height: 58px;
   }
   &__middle-links-container {
@@ -54,7 +51,7 @@ $space-grey: #313131;
   &__middle-link {
     text-decoration: none !important;
     color: #51ACFF !important;
-    font-size: 15px !important;
+    font-size: 16px !important;
     font-weight: 500 !important;
   }
 
@@ -68,32 +65,30 @@ $space-grey: #313131;
   &__list1-item {
     font-size: 24px !important;
     font-weight: 700;
-    line-height: 29px;
-    color: #fff !important;
+    line-height: 30px;
+    color: #fff;
     padding-left: 24px !important;
     border-left: 4px solid #FCA878 !important;
   }
   &__up-to {
     font-size: 10px;
     font-weight: 400;
-    color: #fff !important;
+    color: #fff;
   }
   &__count {
     font-size: 36px;
     font-weight: 600;
-    color: #fff !important;
+    color: #fff;
   }
   &__what-else {
     font-size: 10px;
     font-weight: 400;
-    color: #fff !important;
+    color: #fff;
   }
 }
 
 // Footer
 .footer {
-  background: #313131 !important;
-  background-color: #313131 !important;
   &__socials-container {
     display: inline !important;
     margin: 0 auto !important;
@@ -101,20 +96,20 @@ $space-grey: #313131;
   &__social-link {
     display: inline-block;
     vertical-align: middle;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 14px;
+    padding-left: 14px;
   }
   &__copy-paragraph {
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
-    color: #7D7D7D !important;
+    color: #7D7D7D;
   }
   &__unsubscribe {
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
-    color: #7D7D7D !important;
+    color: #7D7D7D;
     width: 80% !important;
     span {
       color: #7D7D7D !important;
@@ -126,12 +121,12 @@ $space-grey: #313131;
   }
   &__menu {}
   &__menu-link {
-    padding-right: 5px !important;
-    padding-left: 5px !important;
+    padding-right: 4px !important;
+    padding-left: 4px !important;
     border-right: 1px solid #7D7D7D;
     font-size: 12px;
     font-weight: 400;
-    color: #fff !important;
+    color: #fff;
   }
   &__menu-link.no-divider {
     border-right: none !important;
