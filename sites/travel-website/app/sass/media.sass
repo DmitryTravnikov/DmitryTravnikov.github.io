@@ -1,0 +1,587 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+/* Mobile First Method */
+/* Extra Small Devices, Phones (SM) */
+@media only screen and (min-width: 576px)
+	body
+		background: $media-blue
+	*
+		outline-color: $media-blue
+
+	.header
+		&__container
+		&__row
+		&__row1
+		&__row2
+		&__faq
+		&__logo
+		&__links-container
+		&__right-side-link
+		&__sign-up-link
+		&__my-cart-link
+		&__menu
+		&__menu-link
+			margin-top: 0rem
+			&:hover
+			&:first-child
+			&:last-child
+
+	.section2
+		&__container
+		&__row
+		&__block
+		&__block1
+		&__block2
+		&__item
+			padding: 5rem 15%
+		&__item1
+		&__item2
+		&__item3
+		&__block-headline
+		&__block-paragraph
+		&__learn-more
+
+	.section3
+		&__container
+		&__row
+		&__block
+			padding: 5rem 15%
+		&__block1
+		&__block2
+			padding-bottom: 12rem
+		&__block-headline
+		&__block-paragraph
+		&__block-paragraph1
+		&__block-paragraph2
+		&__learn-more
+		&__text-container
+		&__author-image
+		&__author
+		&__quote
+		&__more-about
+
+	.section4
+		padding-bottom: 6.6rem
+		&__container
+		&__row
+		&__block
+		&__block1
+			padding-right: 15%
+			padding-left: 15%
+		&__block2
+		&__author-container
+		&__author-image
+		&__author-quote
+			&::before
+		&__text-container
+		&__title
+		&__read-more
+		&__item
+		&__item1
+		&__item2
+			padding-right: 15%
+			padding-left: 15%
+		&__elem
+		&__elem1
+			padding-right: 15%
+			padding-left: 15%
+		&__elem2
+			padding-right: 15%
+			padding-left: 15%
+		&__item2-author
+		&__about
+		&__item2-paragraph
+
+	.section5
+		&__container
+		&__row
+		&__headline
+		&__content
+		&__item
+			width: 36.8rem
+		&__item1
+		&__item2
+		&__item3
+		&__item-image
+		&__date
+		&__item-paragraph
+
+	.section6
+		&__container
+		&__row
+		&__headline
+		&__content
+			width: 100%
+			padding-right: 15%
+			padding-left: 15%
+		&__block
+		&__block1
+		&__block2
+		&__author-image
+		&__text-container
+		&__quote
+			&::before
+		&__author-name
+		&__company-name
+
+	.section7
+		&__container
+		&__row
+		&__headline
+		&__form
+			padding-left: 10%
+			padding-right: 10%
+		&__email-input
+			width: 70%
+			&::placeholder
+		&__subscribe-button
+			width: 30%
+
+	.modal
+		&__overlay
+		&__window
+			+size(40rem, auto)
+		&__success-container
+		&__paragraph
+		&__success-paragraph
+		&__error-paragraph
+/* Small Devices, Tablets (MD) */
+@media only screen and (min-width: 768px)
+	body
+		background: $media-pink
+	*
+		outline-color: $media-pink
+
+	.header
+		padding-top: 5rem
+		padding-bottom: 6.6rem
+		&__container
+		&__row
+		&__row1
+		&__row2
+			margin-top: 6.6rem
+		&__faq
+			margin-top: 0rem
+		&__logo
+			margin-top: 0rem
+		&__links-container
+			margin-top: 0rem
+		&__right-side-link
+		&__sign-up-link
+		&__my-cart-link
+		&__menu
+		&__menu-link
+			&:hover
+			&:first-child
+			&:last-child
+
+	.section2
+		&__container
+		&__row
+		&__block
+		&__block1
+		&__block2
+		&__item
+			padding: 5rem 20%
+		&__item1
+		&__item2
+		&__item3
+		&__block-headline
+		&__block-paragraph
+		&__learn-more
+
+	.section3
+		&__container
+		&__row
+		&__block
+			padding: 5rem 20%
+		&__block1
+		&__block2
+			padding-bottom: 12rem
+		&__block-headline
+		&__block-paragraph
+		&__block-paragraph1
+		&__block-paragraph2
+		&__learn-more
+		&__text-container
+		&__author-image
+		&__author
+		&__quote
+		&__more-about
+
+	.section4
+		&__container
+		&__row
+		&__block
+		&__block1
+			padding-right: 20%
+			padding-left: 20%
+		&__block2
+		&__author-container
+		&__author-image
+		&__author-quote
+			padding-right: 10%
+			&::before
+		&__text-container
+		&__title
+		&__read-more
+		&__item
+		&__item1
+		&__item2
+			padding-right: 20%
+			padding-left: 20%
+		&__elem
+		&__elem1
+			padding-right: 20%
+			padding-left: 20%
+		&__elem2
+			padding-right: 20%
+			padding-left: 20%
+		&__item2-author
+		&__about
+		&__item2-paragraph
+
+	.section5
+		&__container
+		&__row
+		&__headline
+		&__content
+			margin-top: 3.2rem
+		&__item
+			width: calc((100% / 3.6rem) - 3)
+			margin-top: 0rem
+			&:not(:nth-child(3n))
+				margin-right: 3.6rem
+		&__item1
+		&__item2
+		&__item3
+		&__item-image
+		&__date
+		&__item-paragraph
+
+	.section7
+		&__container
+		&__row
+		&__headline
+		&__form
+			padding-left: 15%
+			padding-right: 15%
+		&__email-input
+			&::placeholder
+		&__subscribe-button
+/* Medium Devices, Desktops (LG) */
+@media only screen and (min-width: 992px)
+	body
+		background: $media-orange
+	*
+		outline-color: $media-orange
+
+	.section2
+		&__container
+		&__row
+		&__block
+		&__block1
+			width: 50%
+		&__block2
+			width: 50%
+		&__item
+			padding: 2% 5%
+		&__item1
+			height: 50rem
+		&__item2
+			height: 25rem
+		&__item3
+			height: 25rem
+		&__block-headline
+		&__block-paragraph
+			padding-right: 10%
+		&__learn-more
+
+	.section3
+		padding-top: 9.8rem
+		&__container
+		&__row
+		&__block
+			padding: 5rem	5%
+		&__block1
+			width: 60%
+		&__block2
+			width: 40%
+			padding-top: 10rem
+		&__block-headline
+		&__block-paragraph
+			max-height: 12rem
+		&__block-paragraph1
+		&__block-paragraph2
+		&__learn-more
+		&__text-container
+			background: #fff
+			padding: 8rem 7% 4rem 7%
+		&__author-image
+		&__author
+		&__quote
+			max-height: 14.6rem
+		&__more-about
+
+	.section4
+		padding-top: 9.8rem
+		padding-bottom: 9.8rem
+		&__container
+		&__row
+		&__block
+			width: 50%
+		&__block1
+			height: 50rem
+			padding: 0
+			padding-top: 2rem
+			padding-left: 2rem
+			padding-right: 2rem
+			padding-bottom: 2rem
+		&__block2
+		&__author-container
+			top: -9rem
+		&__author-image
+		&__author-quote
+			padding-right: 0rem
+			&::before
+		&__text-container
+		&__title
+		&__read-more
+		&__item
+			padding: 0
+			min-height: 50%
+		&__item1
+		&__item2
+			padding-top: 2rem
+			padding-left: 2rem
+			padding-right: 2rem
+			padding-bottom: 2rem
+			background: lighten(#BDBDBD, 10%)
+		&__elem
+			padding: 0
+			padding-top: 2rem
+			padding-left: 2rem
+			padding-right: 2rem
+			padding-bottom: 2rem
+			height: 100%
+		&__elem1
+			padding-bottom: 0rem
+		&__elem2
+			padding-top: 0
+		&__item2-author
+		&__about
+			margin-top: 0rem
+		&__item2-paragraph
+
+	.section6
+		&__container
+		&__row
+		&__headline
+		&__content
+			padding-right: 20%
+			padding-left: 20%
+		&__block
+		&__block1
+		&__block2
+		&__author-image
+		&__text-container
+		&__quote
+			&::before
+		&__author-name
+		&__company-name
+
+	.section7
+		&__container
+		&__row
+			padding-left: 2%
+			padding-right: 2%
+		&__headline
+			width: 50%
+		&__form
+			margin-top: 0rem
+			width: 50%
+			padding-left: 0rem
+			padding-right: 0rem
+		&__email-input
+			margin-right: 0rem
+			&::placeholder
+		&__subscribe-button
+
+	.footer
+		padding: 8rem 0rem
+		&__container
+		&__row
+		&__copy-paragraph
+			margin-top: 0rem
+		&__socials-container
+			margin-top: 0rem
+		&__social-link
+			&:not(&:last-child)
+			&:hover
+			i
+		&__twitter
+		&__facebook
+		&__instagram
+		&__dribbble
+		&__designed-by
+			margin-top: 0rem
+/* Large Devices, Wide Screens (XL) */
+@media only screen and (min-width: 1200px)
+	body
+		background: $media-purple
+	*
+		outline-color: $media-purple
+
+	.section2
+		&__container
+		&__row
+		&__block
+		&__block1
+			width: 60%
+		&__block2
+			width: 40%
+		&__item
+			padding-top: 2.9rem
+			padding-left: 3rem
+			padding-bottom: 3.2rem
+			padding-right: 15%
+		&__item1
+			height: 53rem
+		&__item2
+			height: calc(53rem / 2)
+		&__item3
+			height: calc(53rem / 2)
+		&__block-headline
+		&__block-paragraph
+		&__learn-more
+
+	.section3
+		&__container
+		&__row
+		&__block
+		&__block1
+			padding-top: 3.1rem
+			padding-bottom: 4.8rem
+			padding-left: 4.7rem
+			padding-right: 1.5rem
+			width: 56%
+		&__block2
+			padding-top: 8.1rem
+			padding-left: 1.5rem
+			padding-right: 5.1rem
+			width: 34%
+		&__block-headline
+		&__block-paragraph
+		&__block-paragraph1
+			margin-top: 4rem
+		&__block-paragraph2
+			margin-top: 3rem
+		&__learn-more
+			margin-top: 4rem
+		&__text-container
+			padding-top: 7.4rem
+			padding-bottom: 4rem
+			padding-left: 2.6rem
+			padding-right: 2.7rem
+		&__author-image
+		&__author
+		&__quote
+		&__more-about
+
+	.section4
+		&__container
+		&__row
+		&__block
+			width: 46%
+		&__block1
+			margin-top: 10rem
+			height: 46.5rem
+		&__block2
+			height: 51.4rem
+		&__author-container
+			left: -2.7rem
+		&__author-image
+		&__author-quote
+			&::before
+		&__text-container
+		&__title
+		&__read-more
+			margin-top: 3.3rem
+		&__item
+			height: 25.2rem
+		&__item1
+		&__item2
+			margin-top: 5rem
+		&__elem
+			width: 50%
+			height: 100%
+		&__elem1
+			background: #E0E0E0
+			padding-top: 2rem
+			padding-left: 2rem
+			padding-right: 2rem
+			padding-bottom: 2rem
+		&__elem2
+			background: #F5F5F5
+			padding-top: 2rem
+			padding-left: 2rem
+			padding-right: 2rem
+			padding-bottom: 2rem
+		&__item2-author
+			color: #fff
+		&__about
+		&__item2-paragraph
+
+	.section5
+		padding-top: 5.9rem
+		padding-bottom: 7.2rem
+		&__container
+		&__row
+		&__headline
+		&__content
+		&__item
+			width: calc((100% / 3.7rem) - 3)
+			margin-top: 0rem
+			&:not(:nth-child(3n))
+				margin-right: 3.7rem
+		&__item1
+		&__item2
+		&__item3
+		&__item-image
+		&__date
+		&__item-paragraph
+
+	.section6
+		padding-bottom: 10.9rem
+		&__container
+		&__row
+		&__headline
+		&__content
+			width: 100%
+			padding-right: 0
+			padding-left: 0
+			margin-top: 5.9rem
+		&__block
+			width: 47%
+			margin-top: 0rem
+		&__block1
+		&__block2
+		&__author-image
+		&__text-container
+		&__quote
+			&::before
+		&__author-name
+		&__company-name
+
+	.section7
+		&__container
+		&__row
+			padding-top: 2.4rem
+			padding-bottom: 2.4rem
+		&__headline
+		&__form
+		&__email-input
+			&::placeholder
+		&__subscribe-button
+
