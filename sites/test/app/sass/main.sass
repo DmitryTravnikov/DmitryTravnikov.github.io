@@ -1,12 +1,15 @@
-@import 'mixins/mixins.sass'
-@import 'variables/variables.sass'
+// Import components
+@import 'components/normalize.sass'
+@import 'components/fonts.sass'
+@import 'components/variables.sass'
+@import 'components/mixins.sass'
+@import 'components/animations.sass'
 
-/* 1rem === 10px */
-
+// 1rem === 10px
+// Global CSS
 body
 	color: #fff
 	font-size: 1.6rem
-	font-family: $rl
 	background: $space-grey
 	cursor: default
 
@@ -26,12 +29,21 @@ input
 	outline: none
 	border: .1rem solid transparent
 	border-radius: 0rem
+	margin-top: .4rem
+
+output
+	margin-top: 1rem
+
+button
+	margin-top: 1rem
+	padding: 0.6rem 2.2rem
+	cursor: pointer
 
 .wrapper
 	+wrapper(90%, auto)
 
-img
-	width: 70rem
+// Import sections
+@import 'sections/section.sass'
 
 *
-	+outline($blue)
+	// +outline($blue)

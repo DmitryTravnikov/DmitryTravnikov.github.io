@@ -80,11 +80,7 @@ function build() {
 	imagesMinification();
 
 	var buildCss = gulp.src([
-		'app/css/main.css',
-		'app/css/media.css',
-		'app/css/keyframes.css',
-		'app/css/fonts.css',
-		'app/css/normalize.css'
+		'app/css/main.css'
 	])
 	.pipe(gulp.dest('dist/css'));
 
@@ -94,7 +90,7 @@ function build() {
 	var buildWEBPs = gulp.src('app/assets/*.webp')
 	.pipe(gulp.dest('dist/assets'))
 
-	var buildFonts = gulp.src('app/fonts/!Fonts/**')
+	var buildFonts = gulp.src('app/fonts/**')
 	.pipe(gulp.dest('dist/fonts'))
 
 	var buildLibs = gulp.src('app/libs/!Libs/**')

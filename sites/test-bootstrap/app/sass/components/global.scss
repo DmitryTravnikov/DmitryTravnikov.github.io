@@ -1,0 +1,27 @@
+body {
+	background: #222;
+	color: #fff;
+}
+
+html {
+	font-size: 22px;
+	@include media-breakpoint-up(sm) {
+		font-size: 20px;
+	}
+	@include media-breakpoint-up(md) {
+		font-size: 18px;
+	}
+	@include media-breakpoint-up(lg) {
+		font-size: 16px;
+	}
+	@include media-breakpoint-up(xl) {
+		font-size: 16px;
+	}
+	@include media-breakpoint-up(xxl) {
+		font-size: 16px;
+	}
+}
+
+.wrapper {
+	@include wrapper(90%, auto);
+}

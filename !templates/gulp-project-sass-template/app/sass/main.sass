@@ -1,15 +1,21 @@
-@import 'mixins/mixins.sass'
-@import 'variables/variables.sass'
-
-*
-	transition: all .2s
-
-body
-	cursor: default
-
-.wrapper
+// Import components
+@import 'components/normalize.sass'
+@import 'components/fonts.sass'
+@import 'components/variables.sass'
+@import 'components/mixins.sass'
+@import 'components/animations.sass'
 
 // 1rem === 10px
+// Global CSS
+body
+	background: #222
+	color: #fff
+
+.wrapper
+	+wrapper(90%, auto)
+
+// Import sections
+@import 'sections/section.sass'
 
 *
 	// +outline($blue)
