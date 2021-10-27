@@ -90,7 +90,9 @@ $blue: #1890FF;
   &__unsubscribe-link {
     color: $blue;
   }
-  &__socials-container {}
+  &__socials-container {
+    margin: 0 auto !important;
+  }
   &__social-link {
     display: inline-block !important;
     vertical-align: middle !important;

@@ -719,6 +719,9 @@ h1, h2, h3, h4, h5, h6, p {
 .footer__unsubscribe-link {
   color: #1890FF; }
 
+.footer__socials-container {
+  margin: 0 auto !important; }
+
 .footer__social-link {
   display: inline-block !important;
   vertical-align: middle !important;
