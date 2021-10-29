@@ -12,9 +12,10 @@ body
 	font-size: 1.6rem
 	background: $space-grey
 	cursor: default
+	font-family: $ibmr
 
 .block
-	@include flex(column, wrap, center, center)
+	+flex(column, wrap, center, center)
 	font-size: 1.8rem
 	overflow: visible
 
@@ -22,7 +23,7 @@ body
 	background: $blue
 
 td
-	@include size(5rem, 5rem)
+	+size(5rem, 5rem)
 	border: .2rem solid orange
 
 input

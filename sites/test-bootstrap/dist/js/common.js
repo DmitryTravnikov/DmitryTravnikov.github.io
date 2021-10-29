@@ -75,6 +75,8 @@ $(document).ready(function() {
 	}// prevdef();
 	prevdef();
 
+	
+
 });//doc.ready end
 
 var cLog = function(n) {

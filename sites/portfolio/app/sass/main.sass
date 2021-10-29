@@ -25,7 +25,7 @@ body
 		left: 0rem
 
 .header
-	+size(100%, 100vh)
+	+size(100%, auto)
 	position: relative
 	top: 0rem
 	left: 0rem
@@ -64,14 +64,15 @@ body
 	position: relative
 	z-index: 1
 	padding: 3rem 0rem
+	font-family: $ibm
 	&__wrapper
 		+flex(column, wrap, flex-start, flex-start)
 		padding: 3rem
-		background: $sexy-purple
+		background: rgba($sexy-purple, 0.85)
 	&__paragraph
 		width: 100%
 		margin: 0rem
-		font-size: 1.4rem
+		font-size: 2.6rem
 		line-height: 5rem
 	&__list
 		list-style: square
@@ -79,6 +80,7 @@ body
 		padding: 0rem
 		margin-top: 4rem
 		padding-left: 2rem
+		font-size: 2rem
 	&__list-item
 		padding: 0rem
 		margin: 0rem
@@ -94,7 +96,7 @@ body
 	&__wrapper
 		+flex(column, wrap, center, center)
 		padding: 3rem
-		background: $sexy-purple
+		background: rgba($sexy-purple, 0.85)
 	&__item
 		text-decoration: none
 		color: #fff
@@ -108,15 +110,16 @@ body
 	position: relative
 	z-index: 1
 	padding: 3rem 0rem
+	font-family: $ibm
 	&__wrapper
-		background: $sexy-purple
+		background: rgba($sexy-purple, 0.85)
 		+flex(column, wrap, center, center)
 		padding: 10rem 3rem
 	&__contact-link
 		text-decoration: none
 		color: #fff
 		transition: .2s
-		font-size: 3rem
+		font-size: 4rem
 		width: auto
 		margin: 0rem
 		text-align: center
@@ -124,7 +127,7 @@ body
 		&:hover
 			color: $green
 		span
-			font-size: 1.4rem
+			font-size: 2.4rem
 	&__telegram
 	&__discord
 		margin-top: 5rem
