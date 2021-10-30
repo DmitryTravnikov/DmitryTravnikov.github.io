@@ -75,7 +75,7 @@ function imagesMinification() {
 		.pipe(gulp.dest('dist/assets'));
 }
 
-function build() {
+function build(done) {
 	deleteDist();
 	imagesMinification();
 
@@ -104,6 +104,8 @@ function build() {
 
 	var robotsTXT = gulp.src('app/robots.txt')
 	.pipe(gulp.dest('dist'));
+
+	done();
 }
 
 exports.watch = watch;
