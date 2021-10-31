@@ -93,7 +93,7 @@ function build(done) {
 	var buildFonts = gulp.src('app/fonts/**')
 	.pipe(gulp.dest('dist/fonts'))
 
-	var buildLibs = gulp.src('app/libs/!Libs/**')
+	var buildLibs = gulp.src('app/libs/**')
 	.pipe(gulp.dest('dist/libs'))
 
 	var buildJs = gulp.src('app/js/**/*')

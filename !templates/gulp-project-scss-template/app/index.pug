@@ -2,10 +2,13 @@
 include pug-includes/variables.pug
 
 // Import Head
-include pug-includes/head.pug
+doctype html
+html(lang="en")
+	include pug-includes/head.pug
 
-// Import Sections
-include pug-includes/include.pug
+	// Import Sections
+	body
+		include pug-includes/include.pug
 
-// Import Scripts
-include pug-includes/scripts.pug
+		// Import Scripts
+		include pug-includes/scripts.pug

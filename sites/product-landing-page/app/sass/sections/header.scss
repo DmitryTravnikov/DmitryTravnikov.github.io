@@ -1,0 +1,66 @@
+// Section CSS
+.header {
+	&__container {
+		padding-bottom: 5px;
+	}
+	&__logo-container {}
+	&__logo-image {}
+	&__toggler-n-link-container {
+		margin-top: 6px;
+		padding-bottom: 28px;
+		@include media-breakpoint-up(md) {
+			margin-top: 0;
+			padding-bottom: 0;
+		}
+	}
+	&__menu-container {
+		padding-bottom: 20px;
+		width: 100%;
+		@include media-breakpoint-up(lg) {
+			padding-bottom: 0;
+			width: auto;
+		}
+	}
+	&__navbar-toggler {
+		box-shadow: none !important;
+		margin-left: 27px;
+	}
+	&__navbar-toggler-icon {
+		@include size(44px, 26px);
+		background: url('../assets/header__hamburger-icon.webp') no-repeat center !important;
+	}
+	&__sign-up {
+		box-shadow: none;
+	}
+	&__navbar {
+		width: 100%;
+	}
+	&__nav-item {
+		@include media-breakpoint-up(sm) {
+			margin-right: 24px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		@include media-breakpoint-up(lg) {
+			margin-right: 31px;
+		}
+	}
+	&__nav-link {
+		color: rgba($white, 0.6);
+		font-family: $pr;
+		font-size: 0.9375rem;
+		line-height: 1.6875rem;
+		&:hover {
+			color: rgba($white, 0.6);
+		}
+		&:visited, &:active {
+			color: $white;
+		}
+		&.active {
+			color: $white;
+		}
+	}
+}
+
+// * {@include outline($blue)}

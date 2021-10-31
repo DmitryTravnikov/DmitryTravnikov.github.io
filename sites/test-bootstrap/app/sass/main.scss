@@ -11,11 +11,10 @@
 // Import global CSS
 @import 'components/global';
 
+// Import extends
+@import 'components/extends';
+
 // Import sections
 @import 'sections/section';
-@import 'sections/header';
-@import 'sections/travel';
-@import 'sections/about';
-@import 'sections/lifestyle';
 
 // * {@include outline($blue)}
