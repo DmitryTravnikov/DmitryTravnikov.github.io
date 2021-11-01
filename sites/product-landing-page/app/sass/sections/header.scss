@@ -51,12 +51,7 @@
 		font-family: $pr;
 		font-size: 0.9375rem;
 		line-height: 1.6875rem;
-		&:hover {
-			color: rgba($white, 0.6);
-		}
-		&:visited, &:active {
-			color: $white;
-		}
+		transition: .2s;
 		&.active {
 			color: $white;
 		}
