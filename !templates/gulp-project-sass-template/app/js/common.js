@@ -1,16 +1,6 @@
 'use strict';
 
-var cLog = function(n) {
-	return console.log(n);
-};//console.log
-
-$(document).ready(function() {
-
-	function prevdef() {
-		$('.prevdef').click(function(event) {
-			event.preventDefault();
-		});
-	}// prevdef;
-	prevdef();
-
-});//doc.ready
+// Import Modules
+import './js-modules/include.js';
+import './js-modules/global.js';
+import {cLog} from './js-modules/global.js';

@@ -1,0 +1,2 @@
+(()=>{var e={12:()=>{$(document).ready((function(){$(".slider").owlCarousel({items:1,autoPlay:2e3,pagination:!0,transitionStyle:"fade",itemsDesktop:[1199,1],itemsDesktopSmall:[979,1],itemsTablet:[768,1],itemsMobile:[479,1]})}))}},t={};function r(o){var i=t[o];if(void 0!==i)return i.exports;var n=t[o]={exports:{}};return e[o](n,n.exports,r),n.exports}(()=>{"use strict";!function(){let e=document.querySelectorAll(".prevdef");for(let t=0;t<e.length;t++)e[t].addEventListener("click",(function(e){e.preventDefault()}))}(),r(12)})()})();
+//# sourceMappingURL=bundle.js.map

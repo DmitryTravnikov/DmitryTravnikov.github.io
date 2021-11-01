@@ -11,7 +11,16 @@ const pngquant = require('imagemin-pngquant');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify-es').default;
 const cleanCSS = require('gulp-clean-css');
+const webpack = require('webpack');
+const webpackStream = require('webpack-stream');
+const webpackConfig = require('./webpack.config.js');
 
+function jsBundling(done) {
+	return gulp.src('app/js/common.js')
+		.pipe(webpackStream(webpackConfig), webpack)
+		.pipe(gulp.dest('dist/js/'));
+		done();
+}
 
 function sassCompile() {
 	return gulp.src('app/sass/*.+(scss|sass)')
@@ -26,7 +35,7 @@ function sassCompile() {
 function pugCompile() {
 	return gulp.src('app/*.pug')
 		.pipe(pug({
-			pretty: false
+			pretty: true
 		}))
 		.on('error', function (err) {
 			process.stderr.write(err.message + '\n');
@@ -78,6 +87,7 @@ function imagesMinification() {
 function build(done) {
 	deleteDist();
 	imagesMinification();
+	jsBundling();
 
 	var buildCss = gulp.src([
 		'app/css/main.css'
@@ -93,11 +103,8 @@ function build(done) {
 	var buildFonts = gulp.src('app/fonts/**')
 	.pipe(gulp.dest('dist/fonts'))
 
-	var buildLibs = gulp.src('app/libs/**')
-	.pipe(gulp.dest('dist/libs'))
-
-	var buildJs = gulp.src('app/js/**/*')
-	.pipe(gulp.dest('dist/js'))
+	var buildLibs = gulp.src(['app/libs/jquery/**/*', 'app/libs/owl-carousel/**/*'],  {base: './app/'})
+	.pipe(gulp.dest('dist'))
 
 	var buildHtml = gulp.src('app/*.html')
 	.pipe(gulp.dest('dist'))
@@ -108,5 +115,5 @@ function build(done) {
 	done();
 }
 
-exports.watch = watch;
+exports.start = watch;
 exports.build = build;

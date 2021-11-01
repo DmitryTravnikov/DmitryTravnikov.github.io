@@ -1,16 +1,8 @@
 'use strict';
 
-var cLog = function(n) {
-	return console.log(n);
-};//console.log
+// Import Modules
+import './js-modules/include.js';
+import './js-modules/global.js';
 
-$(document).ready(function() {
-
-	function prevdef() {
-		$('.prevdef').click(function(event) {
-			event.preventDefault();
-		});
-	}// prevdef;
-	prevdef();
-
-});//doc.ready
+// Import Settings
+import './js-modules/owl-carousel-settings.js';
