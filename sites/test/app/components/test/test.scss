@@ -1,0 +1,39 @@
+// Section CSS
+input {
+	margin-top: 4px;
+	outline: none;
+	border: .1rem solid transparent;
+	border-radius: 0rem;
+}
+output {
+	margin-top: 4px;
+}
+button {
+	cursor: pointer;
+	margin-top: 4px;
+	padding: 6px 32px;
+}
+.active {
+	background: $blue;
+}
+
+td {
+	@include size(50px, 50px);
+	border: 2px solid $orange;
+}
+
+// Bootstrap Media Queries
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(xxl) {}
+
+// Media Queries
+@media only screen and (min-width: 576px) {}
+@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1400px) {}
+
+// * {@include outline($blue)}

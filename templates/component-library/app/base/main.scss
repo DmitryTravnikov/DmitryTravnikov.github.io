@@ -1,0 +1,22 @@
+// // Import components
+@import 'base-partials/normalize';
+@import 'base-partials/fonts';
+@import 'base-partials/variables';
+@import 'base-partials/mixins';
+@import 'base-partials/animations';
+
+// Import Bootstrap Components
+@import 'base-partials/bootstrap-components';
+
+// Import global CSS
+@import 'base-partials/global';
+
+// Import extends
+@import 'base-partials/extends';
+
+// Import Components
+@import '../components/test/test';
+@import '../components/owl-carousel/owl-carousel';
+@import '../components/pagescroll2id/pagescroll2id';
+
+// * {@include outline($blue)}

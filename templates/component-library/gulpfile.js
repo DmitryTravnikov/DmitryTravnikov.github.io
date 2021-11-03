@@ -36,7 +36,7 @@ function sassCompile() {
 function pugCompile() {
 	return gulp.src(['app/*.pug', '!app/theming-kit.pug'])
 		.pipe(pug({
-			pretty: false
+			pretty: true
 		}))
 		.on('error', function (err) {
 			process.stderr.write(err.message + '\n');
