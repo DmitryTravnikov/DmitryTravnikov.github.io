@@ -1,9 +1,12 @@
 @import 'bootstrap/bootstrap';
 
 body {
+	background: darken(#222, 10%);
+}
+.container {
 	background: #222;
 	color: #fff;
-	background: url('!js.png');
+	// background: url('assets/picture.jpg');
 	a {
 		color: orange;
 		text-decoration: none;

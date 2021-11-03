@@ -15,18 +15,46 @@ module.exports = {
 	module: {
 		rules: [
 			{
-        test: /\.s[ac]ss$/i,
-        use: [
-        	// Creates CSS file for compiling
-        	MiniCssExtractPlugin.loader,
-          // Creates `style` nodes from JS strings
-          // "style-loader",
-          // Translates CSS into CommonJS
-          "css-loader",
-          // Compiles Sass to CSS
-          "sass-loader",
-        ],
-      },
+				test: /\.s[ac]ss$/i,
+				use: [
+					// Creates CSS file for compiling
+					MiniCssExtractPlugin.loader,
+					// Creates `style` nodes from JS strings
+					// "style-loader",
+					// Translates CSS into CommonJS
+					"css-loader",
+					// Compiles Sass to CSS
+					"sass-loader",
+				],
+			},
+			{
+				test: /\.(png|jpe?g|gif|webp|svg)$/i,
+				use: [
+					{
+						loader: 'url-loader',
+						options: {
+							limit: 8192,
+						},
+					},
+					{
+						loader: 'file-loader',
+						options: {
+							name: '[name].[ext]',
+							outputPath: './',
+							useRelativePath: true
+						},
+					},
+					{
+						loader: 'image-webpack-loader',
+						options: {
+							mozjpeg: {
+								progressive: true,
+								quality: 70
+							},
+						},
+					},
+				],
+			},
 		],
 	},
 	plugins: [
@@ -43,19 +71,19 @@ module.exports = {
 			'window.jQuery': 'jquery'
 		})
 	],
-  optimization: {
-  	minimize: true,
-    minimizer: [
-      new CssMinimizerPlugin({
-        minimizerOptions: {
-          preset: [
-            "default",
-            {
-              discardComments: { removeAll: true },
-            },
-          ],
-        },
-      }),
-    ],
-  },
+	optimization: {
+		minimize: true,
+		minimizer: [
+			new CssMinimizerPlugin({
+				minimizerOptions: {
+					preset: [
+						"default",
+						{
+							discardComments: { removeAll: true },
+						},
+					],
+				},
+			}),
+		],
+	},
 }
