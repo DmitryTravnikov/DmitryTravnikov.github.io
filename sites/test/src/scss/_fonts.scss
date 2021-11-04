@@ -17,7 +17,7 @@ $font-path: '../fonts/';
 			 url('#{$font-path}OpenSans-Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
+	// font-display: swap;
 }
 
 @font-face {
@@ -26,7 +26,7 @@ $font-path: '../fonts/';
 			 url('#{$font-path}OpenSans-Bold.woff') format('woff');
 	font-weight: bold;
 	font-style: normal;
-	font-display: swap;
+	// font-display: swap;
 }
 
 @font-face {
@@ -35,5 +35,5 @@ $font-path: '../fonts/';
 			 url('#{$font-path}OpenSans-Italic.woff') format('woff');
 	font-weight: normal;
 	font-style: italic;
-	font-display: swap;
+	// font-display: swap;
 }

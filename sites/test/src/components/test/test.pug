@@ -1,12 +1,28 @@
 mixin test(props = {})
 	- const { message } = props;
+	- const { sectionNumber } = props;
 
 	.test__section.wrapper
 		h3.test__headline!= message
 		.test__ajax-menu
-			a(href="index.html") index
-			a(href="second.html") second
-			a(href="third.html") third
+			a.test__ajax-link(href="index.html") index
+			a.test__ajax-link(href="second.html") second
+			a.test__ajax-link(href="third.html") third
 		.test__ajax-container
-			h1 first section
-			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, tempora, consequatur. Qui, voluptatibus expedita labore blanditiis magnam repellat dolorum commodi?
+			h1!= sectionNumber
+			p #{sectionNumber} dolor sit amet, consectetur adipisicing elit. Debitis, tempora, consequatur. Qui, voluptatibus expedita labore blanditiis magnam repellat dolorum commodi?
+		.test__slider-container.w-50
+			#carouselExampleControls.carousel.slide.w-auto(data-bs-ride='carousel')
+				.carousel-inner.w-auto
+					.carousel-item.active
+						img(src='http://placekitten.com/800/600' alt='http://placekitten.com/800/600')
+					.carousel-item
+						img(src='http://placekitten.com/900/600' alt='http://placekitten.com/800/600')
+					.carousel-item
+						img(src='http://placekitten.com/1000/600' alt='http://placekitten.com/800/600')
+				button.carousel-control-prev(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='prev')
+					span.carousel-control-prev-icon(aria-hidden='true')
+					span.visually-hidden Previous
+				button.carousel-control-next(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='next')
+					span.carousel-control-next-icon(aria-hidden='true')
+					span.visually-hidden Next
