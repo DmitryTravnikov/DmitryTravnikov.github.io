@@ -2,7 +2,7 @@ export const loadImages = () => ({
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|gif|svg|webp)$/,
+        test: /\.(png|jpe?g|gif|svg|webp|m4v|mp4)$/,
         exclude: /fonts/,
         use: [
           {
