@@ -1,0 +1,53 @@
+@import '../../scss/mixins';
+
+.test {
+	&__section {
+		padding-left: 2rem;
+		a {
+			color: #fff !important;
+			margin-right: 1rem;
+		}
+	}
+	&__headline {
+		color: $blue;
+		font-size: 50px;
+		text-align: center;
+	}
+	&__bootstrap-slider-container {
+		@include size(800px, 600px);
+	}
+	&__section {
+		@include size(100%, 900px);
+	}
+	&__section1 {
+		background: $blue;
+	}
+	&__section2 {
+		background: $green;
+	}
+	&__section3 {
+		background: $orange;
+	}
+	&__section4 {
+		background: $purple;
+	}
+	&__section5 {
+		background: $pink;
+	}
+}
+
+// Bootstrap Media Queries
+// @include media-breakpoint-up(sm) {}
+// @include media-breakpoint-up(md) {}
+// @include media-breakpoint-up(lg) {}
+// @include media-breakpoint-up(xl) {}
+// @include media-breakpoint-up(xxl) {}
+
+// Media Queries
+@media only screen and (min-width: 576px) {}
+@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1400px) {}
+
+// * {@include outline()}

@@ -1,5 +1,5 @@
 {
-  "name": "webpack-project",
+  "name": "pug-starter-kit",
   "version": "1.0.0",
   "description": "Шаблон проекта для быстрого старта с webpack, pug, scss и jQuery",
   "private": true,
@@ -23,7 +23,7 @@
     "scss",
     "jQuery"
   ],
-  "author": "Dmitry Travnikov",
+  "author": "Dima Tsoy <dimktsoy@yahoo.com> (https://github.com/dimktsoy)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dimktsoy/pug-starter-kit/issues"
@@ -60,10 +60,7 @@
     "webpack-merge": "^5.1.1"
   },
   "dependencies": {
-    "@popperjs/core": "^2.10.2",
-    "bootstrap": "^5.1.3",
     "jquery": "^3.5.1",
-    "normalize.css": "^8.0.1",
-    "page-scroll-to-id": "^1.6.8"
+    "normalize.css": "^8.0.1"
   }
 }

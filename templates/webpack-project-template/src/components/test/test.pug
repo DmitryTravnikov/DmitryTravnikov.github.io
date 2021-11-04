@@ -1,0 +1,5 @@
+mixin test(props = {})
+	- const { message } = props;
+
+	.test__section.wrapper
+		h3.test__headline!= message

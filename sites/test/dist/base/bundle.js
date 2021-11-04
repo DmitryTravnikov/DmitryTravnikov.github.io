@@ -1,2 +1,0 @@
-(()=>{"use strict";let e=function(e){return console.log(e)};!function(){let e=document.querySelectorAll(".prevdef");for(let t=0;t<e.length;t++)e[t].addEventListener("click",(function(e){e.preventDefault()}))}(),e("Hello World!"),$(document).ready((function(){$(".slider").owlCarousel({items:1,autoPlay:2e3,pagination:!0,transitionStyle:"fade",itemsDesktop:[1199,1],itemsDesktopSmall:[979,1],itemsTablet:[768,1],itemsMobile:[479,1]})})),e("Second Section")})();
-//# sourceMappingURL=bundle.js.map

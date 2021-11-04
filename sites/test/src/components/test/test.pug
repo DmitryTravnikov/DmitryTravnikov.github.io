@@ -1,0 +1,12 @@
+mixin test(props = {})
+	- const { message } = props;
+
+	.test__section.wrapper
+		h3.test__headline!= message
+		.test__ajax-menu
+			a(href="index.html") index
+			a(href="second.html") second
+			a(href="third.html") third
+		.test__ajax-container
+			h1 first section
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, tempora, consequatur. Qui, voluptatibus expedita labore blanditiis magnam repellat dolorum commodi?
