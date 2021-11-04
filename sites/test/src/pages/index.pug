@@ -1,5 +1,6 @@
 extends ../templates/page/page
 include ../components/test/test
+include ../components/map/map
 
 block head
 	- const pageTitle = "Главная";
@@ -11,3 +12,6 @@ block content
 		message: 'Hello World!',
 		sectionNumber: 'Index Page'
 	})
+	+map
+
+	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")

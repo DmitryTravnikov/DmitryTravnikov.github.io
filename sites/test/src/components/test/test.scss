@@ -1,8 +1,14 @@
 @import '../../scss/mixins';
 
 .test {
+	&__section-container-yea {
+		
+		@include outline($green);
+	}
 	&__section {
-		padding-left: 2rem;
+		// @include wrapper(50% !important, auto !important);
+		// @include wrapper(90% !important, auto !important);
+		@include outline($red);
 		a {
 			color: #fff !important;
 			margin-right: 1rem;
@@ -12,6 +18,7 @@
 		color: $blue;
 		font-size: 50px;
 		text-align: center;
+		font-family: $fr;
 	}
 	&__bootstrap-slider-container {
 		@include size(800px, 600px);
@@ -33,6 +40,17 @@
 	}
 	&__section5 {
 		background: $pink;
+	}
+	&__mmm-container {
+		height: 200px;
+		padding-top: 2rem;
+		@include outline();
+		h1 {
+			font-family: $fr;
+		}
+	}
+	&__slider-container {
+		padding-top: 2rem;
 	}
 }
 

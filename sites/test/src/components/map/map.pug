@@ -1,0 +1,13 @@
+mixin map(props = {})
+	- const { message } = props;
+
+	.map-section
+		.portfolio-vid
+			.portfolio-vid__video-section
+				.portfolio-vid__video-container
+					.portfolio-vid__video-overlay
+						a.prevdef.portfolio-vid__video-play-button(href="#")
+						p.portfolio-vid__video-paragraph Watch our story
+					iframe.portfolio-vid__video(width="560" height="315" src="https://www.youtube.com/embed/pZ12_E5R3qc?enablejsapi=1&playerapiid=ytplayer&controls=1&showinfo=1&autohide=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+		.elem#elem
+		.map#map

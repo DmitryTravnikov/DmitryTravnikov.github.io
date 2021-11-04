@@ -1,6 +1,6 @@
 @import '../variables';
 
-@mixin wrapper($width: 90%, $height: auto) {
+@mixin wrapper($width: 90% !important, $height: auto !important) {
 	width: $width;
 	height: $height;
 	margin: 0 auto;
