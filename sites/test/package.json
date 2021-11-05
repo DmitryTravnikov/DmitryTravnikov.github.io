@@ -11,8 +11,7 @@
     "serve": "serve \"./dist\" -s"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dimktsoy/pug-starter-kit.git"
+    "type": "git"
   },
   "keywords": [
     "html",
@@ -25,10 +24,6 @@
   ],
   "author": "Dmitry Travnikov",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dimktsoy/pug-starter-kit/issues"
-  },
-  "homepage": "https://github.com/dimktsoy/pug-starter-kit#readme",
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
@@ -64,6 +59,6 @@
     "bootstrap": "^5.1.3",
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
-    "page-scroll-to-id": "^1.6.8"
+    "owl.carousel": "^2.3.4"
   }
 }

@@ -1,0 +1,10 @@
+include ./../logo/logo
+include ./../navbar/navbar
+
+mixin page-header(props = {})
+  - const { logo } = props;
+
+  header.page-header(role="banner")
+    .page-header__inner
+      +logo(logo)
+      +navbar

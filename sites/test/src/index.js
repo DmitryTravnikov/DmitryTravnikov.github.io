@@ -1,7 +1,8 @@
-import $ from 'jquery';
+// import $ from 'jquery';
 import 'bootstrap';
 import '@popperjs/core';
-import 'page-scroll-to-id';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel';
 import './favicons/favicons';
 import 'normalize.css';
 import './scss/main.scss';

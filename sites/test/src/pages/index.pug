@@ -1,6 +1,6 @@
 extends ../templates/page/page
 include ../components/test/test
-include ../components/map/map
+include ../components/owl-carousel/owl-carousel
 
 block head
 	- const pageTitle = "Главная";
@@ -9,9 +9,6 @@ block head
 
 block content
 	+test({
-		message: 'Hello World!',
-		sectionNumber: 'Index Page'
+		message: 'Hello World! It\'s test section!'
 	})
-	+map
-
-	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+	+owl-carousel
