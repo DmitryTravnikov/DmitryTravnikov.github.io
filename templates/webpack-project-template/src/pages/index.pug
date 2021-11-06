@@ -1,5 +1,5 @@
 extends ../templates/page/page
-include ../components/test/test
+include ../components/welcome/welcome
 
 block head
 	- const pageTitle = "Главная";
@@ -7,6 +7,6 @@ block head
 	- const pageKeywords = "webpack, pug, scss";
 
 block content
-	+test({
-		message: 'Hello World!'
+	+welcome({
+		message: 'Welcome! <br/> Happy coding!'
 	})

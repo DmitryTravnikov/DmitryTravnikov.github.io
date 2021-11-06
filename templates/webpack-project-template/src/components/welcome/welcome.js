@@ -1,2 +1,3 @@
 import {cLog} from '../../index.js';
-cLog('Hello world!');
+
+cLog('JavaScript is working!');
