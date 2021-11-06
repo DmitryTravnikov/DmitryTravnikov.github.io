@@ -20,7 +20,7 @@ export const loadJavaScript = () => ({
       $: 'jquery',
       jQuery: 'jquery',
       'window.$': 'jquery',
-      'window.jQuery': 'jquery'
+      'window.jQuery': 'jquery',
     }),
   ],
 });

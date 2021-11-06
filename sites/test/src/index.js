@@ -1,8 +1,5 @@
-// import $ from 'jquery';
-import 'bootstrap';
-import '@popperjs/core';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel';
+// import 'bootstrap';
+// import '@popperjs/core';
 import './favicons/favicons';
 import 'normalize.css';
 import './scss/main.scss';

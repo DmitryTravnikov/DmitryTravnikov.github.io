@@ -1,6 +1,5 @@
 extends ../templates/page/page
 include ../components/test/test
-include ../components/owl-carousel/owl-carousel
 
 block head
 	- const pageTitle = "Главная";
@@ -9,6 +8,5 @@ block head
 
 block content
 	+test({
-		message: 'Hello World! It\'s test section!'
+		message: 'Hello World!'
 	})
-	+owl-carousel
