@@ -1,5 +1,6 @@
 extends ../templates/page/page
 include ../components/welcome/welcome
+include ../components/test/test
 
 block head
 	- const pageTitle = "test";
@@ -10,3 +11,4 @@ block content
 	+welcome({
 		message: 'Welcome! <br/> Happy coding!'
 	})
+	+test

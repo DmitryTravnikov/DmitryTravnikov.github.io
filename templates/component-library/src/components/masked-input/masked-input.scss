@@ -2,23 +2,10 @@
 @import '../../scss/mixins';
 // @import '~bootstrap/scss/bootstrap-reboot';
 
-.welcome {height: auto;padding-top: 3%;@media only screen and (min-width: 768px){@include flex(row, wrap, center, center);padding-top: 0;}&__content{@include flex(column, wrap, flex-start, center);}&__headline{width: auto;margin: 0;text-align: center;margin-top: 1rem;font-size: 1.8rem;@media only screen and (min-width: 768px){font-size: 3rem;}}}
-
-.block {
+.masked-input__container {
 	@include flex(column, wrap, flex-start, center);
 	input {
-		margin-top: 0.2rem;
-	}
-	output {
-		margin-top: .2rem;
-	}
-	button {
-		margin-top: .2rem;
-	}
-	table tr td {
-		@include size(3.6rem, 3.6rem);
-		@include outline(orange);
-		text-align: center;
+		margin-top: 4px;
 	}
 }
 
