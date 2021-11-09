@@ -1,0 +1,102 @@
+@import '../../scss/variables';
+@import '../../scss/extends';
+@import '../../scss/mixins';
+
+// Component Styles
+.general {
+	@extend .global-gradient-diagonal;
+	&__wrapper {
+		@include flex(column, wrap, flex-start, center);
+		padding-top: toRem(47);
+		padding-bottom: toRem(50);
+		@media only screen and (min-width: 768px) {
+			padding-top: toRem(150);
+		}
+		@media only screen and (min-width: 1200px) {
+			padding-top: toRem(120);
+			padding-bottom: toRem(40);
+		}
+	}
+	&__headline {
+		@extend .global-h2;
+		padding-right: 7%;
+		padding-left: 7%;
+		@media only screen and (min-width: 576px) {
+			padding-right: 10%;
+			padding-left: 10%;
+		}
+		@media only screen and (min-width: 1200px) {
+			font-family: $pbl;
+			font-size: toRem(55);
+			line-height: toRem(65);
+			letter-spacing: toRem(.2);
+		}
+	}
+	&__subheading {
+		@extend .global-h3;
+		text-align: center;
+		margin-top: toRem(29);
+		padding-right: 15%;
+		padding-left: 15%;
+		@media only screen and (min-width: 576px) {
+			padding-right: 20%;
+			padding-left: 20%;
+		}
+		@media only screen and (min-width: 1200px) {
+			color: $white;
+		}
+	}
+	&__links-container {
+		@include flex(column, wrap, flex-start, center);
+		margin-top: toRem(54);
+		width: 50%;
+		@media only screen and (min-width: 576px) {
+			width: toRem(300);
+		}
+		@media only screen and (min-width: 1200px) {
+			width: auto;
+			@include flex(row, wrap, flex-start, center);
+			margin-top: toRem(67);
+		}
+	}
+	&__link {
+		@extend .global-link;
+		width: 100%;
+		text-align: center;
+		@media only screen and (min-width: 1200px) {
+			width: auto;
+			padding-right: toRem(45);
+			padding-left: toRem(45);
+		}
+	}
+	&__get-started {
+		color: $dark-blue;
+		background: $white;
+		&:hover {
+			color: $white;
+		}
+	}
+	&__try-for-free {
+		margin-top: toRem(11);
+		@media only screen and (min-width: 1200px) {
+			margin-top: 0;
+			margin-left: toRem(13);
+		}
+	}
+	&__image {
+		width: 75%;
+		margin-top: toRem(62);
+		@media only screen and (min-width: 1200px) {
+			width: 91%;
+		}
+	}
+}
+
+// Media Queries
+@media only screen and (min-width: 576px) {}
+@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1400px) {}
+
+// * {@include outline()}

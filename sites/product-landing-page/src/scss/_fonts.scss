@@ -1,0 +1,46 @@
+$font-path: '../fonts/';
+
+@font-face {
+	font-family: 'Poppins-Black';
+	src: url('#{$font-path}Poppins-Black.woff2') format('woff2'),
+			 url('#{$font-path}Poppins-Black.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins-Bold';
+	src: url('#{$font-path}Poppins-Bold.woff2') format('woff2'),
+			 url('#{$font-path}Poppins-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins-Medium';
+	src: url('#{$font-path}Poppins-Medium.woff2') format('woff2'),
+			 url('#{$font-path}Poppins-Medium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins-Regular';
+	src: url('#{$font-path}Poppins-Regular.woff2') format('woff2'),
+			 url('#{$font-path}Poppins-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url('#{$font-path}Roboto-Bold.woff2') format('woff2'),
+			 url('#{$font-path}Roboto-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

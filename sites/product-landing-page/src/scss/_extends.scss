@@ -1,0 +1,74 @@
+// Import Bootstrap Media Queries
+// @import '~bootstrap/scss/mixins/breakpoints';
+// @import '~bootstrap/scss/functions';
+// @import '~bootstrap/scss/variables';
+
+@import '../scss/variables';
+@import '../scss/mixins';
+
+.clearfix {
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+.global-gradient-diagonal {
+	background: linear-gradient(45deg, #38BDA7, #CA1CE8);
+}
+
+.global-gradient-horizontal {
+	background: linear-gradient(90deg, #8E5ECD, #CA1CE8);
+}
+
+.global-link {
+	border-radius: toRem(50);
+	border: 1px solid $white;
+	box-shadow: 0px 0px 20px 4px rgba($black, .075);
+	color: $white;
+	font-family: $pm;
+	font-size: toRem(16);
+	letter-spacing: toRem(.25);
+	line-height: toRem(16);
+	padding: toRem(18) toRem(29);
+	text-decoration: none;
+	transition: .2s;
+	&:hover {
+		background: $mint;
+		border-color: $mint;
+	}
+}
+
+.global-h2 {
+	color: $white;
+	font-family: $pr;
+	font-size: toRem(46);
+	letter-spacing: toRem(.2);
+	line-height: toRem(57);
+	margin: 0;
+	text-align: center;
+	width: auto;
+}
+
+.global-h3 {
+	color: $grey;
+	font-family: $pb;
+	font-size: toRem(16);
+	letter-spacing: toRem(.2);
+	line-height: toRem(20);
+	margin: 0;
+	text-align: left;
+	width: auto;
+}
+
+.global-p {
+	color: $grey;
+	font-family: $pr;
+	font-size: toRem(18);
+	letter-spacing: toRem(.2);
+	line-height: toRem(27);
+	margin: 0;
+	text-align: center;
+	width: auto;
+}

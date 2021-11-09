@@ -5,7 +5,24 @@
 	@return $remValue;
 }
 
-@mixin wrapper($width: 90% !important, $height: auto !important) {
+@mixin centerer($axis: "both"){
+	position:absolute;
+	@if $axis == "y"{
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	@if $axis == "x"{
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	@if $axis == "both"{
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+}
+
+@mixin wrapper($width: 90%, $height: auto) {
 	width: $width;
 	height: $height;
 	margin: 0 auto;
@@ -24,7 +41,7 @@
 	outline-offset: -2px;
 }
 
-@mixin size($width: 100px, $height: 100px) {
+@mixin size($width: auto, $height: auto) {
 	width: $width;
 	height: $height;
 }

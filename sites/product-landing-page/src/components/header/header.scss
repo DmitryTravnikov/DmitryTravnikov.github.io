@@ -1,0 +1,143 @@
+@import '../../scss/variables';
+@import '../../scss/extends';
+@import '../../scss/mixins';
+
+// Component Styles
+.header {
+	@extend .global-gradient-horizontal;
+	position: relative;
+	&__wrapper {
+		@include flex(column, wrap, flex-start, center);
+		padding-top: toRem(21);
+		padding-bottom: toRem(28);
+		@media only screen and (min-width: 576px) {
+			@include flex(row, wrap, space-between, center);
+		}
+		@media only screen and (min-width: 1200px) {
+			padding-top: toRem(28);
+			padding-bottom: toRem(36);
+		}
+	}
+	&__menu {
+		@extend .global-gradient-horizontal;
+		@include flex(column, wrap, center, center);
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		padding-top: toRem(60);
+		padding-bottom: toRem(60);
+		transition: .2s;
+		opacity: 0;
+		z-index: -1;
+		&.active {
+			opacity: 1;
+			z-index: 1;
+		}
+		@media only screen and (min-width: 576px) {
+			@include flex(column, wrap, flex-start, flex-start);
+			padding-right: 5%;
+			padding-left: 5%;
+		}
+		@media only screen and (min-width: 992px) {
+			@include flex(row, wrap, flex-start, center);
+		}
+		@media only screen and (min-width: 1200px) {
+			padding: 0;
+			position: static;
+			opacity: 1;
+			z-index: 1;
+			background: none;
+			width: auto;
+		}
+	}
+	&__menu-link {
+		text-decoration: none;
+		color: rgba($white, 0.8);
+		font-family: $pr;
+		font-size: toRem(15);
+		line-height: toRem(27);
+		letter-spacing: toRem(0.2);
+		text-transform: capitalize;
+		margin-top: toRem(30);
+		transition: .2s;
+		&:first-child {
+			margin-top: 0;
+		}
+		&:hover {
+			color: $white;
+		}
+		@media only screen and (min-width: 992px) {
+			margin-top: 0;
+			margin-right: toRem(53);
+		}
+	}
+	&__sign-up-n-hamburger-container {
+		@include flex(row, wrap, flex-start, center);
+		margin-top: toRem(8);
+		@media only screen and (min-width: 576px) {
+			margin-top: 0;
+		}
+	}
+	&__sign-up {
+		@extend .global-link;
+		@media only screen and (min-width: 1200px) {
+			padding-right: toRem(44);
+			padding-left: toRem(44);
+		}
+	}
+	&__hamburger {
+		@include size(toRem(44), toRem(28));
+		position: relative;
+		cursor: pointer;
+		margin-left: toRem(16);
+		overflow: hidden;
+		@media only screen and (min-width: 1200px) {
+			display: none;
+		}
+	}
+	&__hamburger-elem {
+		height: toRem(4);
+		background: #fff;
+		position: absolute;
+		right: 0;
+		transition: width .2s;
+	}
+	&__hamburger-elem1 {
+		width: 100%;
+		top: 0;
+	}
+	&__hamburger-elem2 {
+		width: toRem(33);
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&__hamburger-elem3 {
+		width: toRem(19);
+		top: calc(100% - toRem(4));
+	}
+	&__hamburger.active &__hamburger-elem1 {
+		width: toRem(30);
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+	&__hamburger.active &__hamburger-elem2 {
+		background: transparent;
+	}
+	&__hamburger.active &__hamburger-elem3 {
+		width: toRem(30);
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(-45deg);
+	}
+}
+
+// Media Queries
+@media only screen and (min-width: 576px) {}
+@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1400px) {}
+
+// * {@include outline()}
