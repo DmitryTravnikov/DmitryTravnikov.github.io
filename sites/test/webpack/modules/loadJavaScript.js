@@ -1,4 +1,5 @@
 import webpack from 'webpack';
+import {Dotenv} from '../constans.js';
 
 export const loadJavaScript = () => ({
   module: {
@@ -22,5 +23,6 @@ export const loadJavaScript = () => ({
       'window.$': 'jquery',
       'window.jQuery': 'jquery',
     }),
+    new Dotenv()
   ],
 });
