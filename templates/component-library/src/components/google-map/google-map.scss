@@ -3,9 +3,9 @@
 
 // Component Styles
 .google-map {
-	width: 100%;
-	height: toRem(700);
+	@include size(100%, 100vh);
 	background: #192450;
+	color: #000;
 }
 
 // Media Queries
