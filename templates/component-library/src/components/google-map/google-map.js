@@ -1,5 +1,6 @@
 import { Loader } from '@googlemaps/js-api-loader';
 import MarkerClusterer from '@google/markerclustererplus';
+<<<<<<< HEAD
 const googleMapApi = process.env.GOOGLE_MAP_API;
 
 
@@ -7,6 +8,12 @@ const apiOptions = {
 	apiKey: googleMapApi
 }
 
+=======
+
+const apiOptions = {
+	apiKey: "AIzaSyCQ17IieSU6qpZwOwIfGvdyb5xSc1wTjdc"
+}
+>>>>>>> 430c788b7ea7a45697015a505edafb2d3afff5c1
 const loader = new Loader(apiOptions);
 
 loader.load().then(() => {
@@ -43,7 +50,11 @@ function addMarkers(map) {
 		kingStreetWharf: { lat: -33.8665445, lng: 151.1989808 },
 		aquarium: { lat: -33.869627, lng: 151.202146 },
 		darlingHarbour: { lat: -33.87488, lng: 151.1987113 },
+<<<<<<< HEAD
 		barangaroo: { lat: -33.8605523, lng: 151.1972205 },
+=======
+		barangaroo: { lat: - 33.8605523, lng: 151.1972205 }
+>>>>>>> 430c788b7ea7a45697015a505edafb2d3afff5c1
 	}
 	const markers = [];
 	for (const location in locations) {
