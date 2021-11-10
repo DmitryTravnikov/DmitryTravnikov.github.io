@@ -5,6 +5,18 @@ mixin for-you()
 		.for-you__wrapper.wrapper
 			h2.for-you__headline FigmaLand was Built Specifically for You
 			.for-you__content
-				+for-you__item('Management', 'Slate helps you see how many more days you need to work to reach your financial goal for the month and year.')
-				+for-you__item('Customer Support', 'Slate helps you see how many more days you need to work to reach your financial goal for the month and year.')
-				+for-you__item('Collaborative', 'Slate helps you see how many more days you need to work to reach your financial goal for the month and year.')
+				+for-you__item({
+					headlineText: 'Management',
+					paragraphText: 'Slate helps you see how many more days you need to work to reach your financial goal for the month and year.',
+					linkHref: '#'
+				})
+				+for-you__item({
+					headlineText: 'Customer Support',
+					paragraphText: 'Slate helps you see how many more days you need to work to reach your financial goal for the month and year.',
+					linkHref: '#'
+				})
+				+for-you__item({
+					headlineText: 'Collaborative',
+					paragraphText: 'Slate helps you see how many more days you need to work to reach your financial goal for the month and year.',
+					linkHref: '#'
+				})

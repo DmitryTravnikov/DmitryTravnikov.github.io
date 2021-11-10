@@ -4,14 +4,150 @@
 
 // Component Styles
 .for-you {
-	&__wrapper {}
-	&__headline {}
-	&__content {}
-	&__item {}
-	&__item-icon {}
-	&__item-headline {}
-	&__item-paragraph {}
-	&__learn-more {}
+	background: $white;
+	&__wrapper {
+		padding-top: toRem(114);
+		padding-bottom: toRem(97);
+		@include flex(column, wrap, flex-start, center);
+		@media only screen and (min-width: 1200px) {
+			padding-bottom: toRem(137);
+		}
+	}
+	&__headline {
+		@extend .global-h2;
+		padding-right: 5%;
+		padding-left: 5%;
+		@media only screen and (min-width: 576px) {
+			width: 500px;
+			padding-right: 0;
+			padding-left: 0;
+		}
+		@media only screen and (min-width: 1200px) {
+			width: 65%;
+		}
+	}
+	&__content {
+		margin-top: toRem(100);
+		@include flex(column, wrap, flex-start, center);
+		margin-top: toRem(80);
+		@media only screen and (min-width: 576px) {
+			width: 500px;
+		}
+		@media only screen and (min-width: 992px) {
+			width: 100%;
+			@include flex(row, wrap, flex-start, flex-start);
+		}
+		@media only screen and (min-width: 1200px) {
+			margin-top: toRem(103);
+		}
+	}
+	&__item {
+		width: 100%;
+		transition: .2s;
+		border-radius: 10px;
+		box-shadow: 0px 0px 10px 10px rgba($black, 0.05);
+		margin-top: toRem(64);
+		transition: .2s;
+		@include flex(column, wrap, flex-start, center);
+		padding-top: toRem(62);
+		padding-bottom: toRem(50);
+		padding-right: toRem(66);
+		padding-left: toRem(66);
+		&:first-child {
+			margin-top: 0;
+		}
+		@media only screen and (min-width: 992px) {
+			padding-right: toRem(30);
+			padding-left: toRem(30);
+			margin-top: 0;
+			min-height: toRem(485);
+			width: calc((100% - calc(toRem(30) * 2)) / 3);
+				&:not(:nth-child(3n)) {
+					margin-right: toRem(30);
+				}
+		}
+		@media only screen and (min-width: 1200px) {
+			@include flex(column, wrap, flex-start, flex-start);
+			padding-top: toRem(49);
+			min-height: toRem(380);
+			padding-left: toRem(50);
+		}
+	}
+	&__item-icon {
+		@include size(70px, 70px);
+		transition: .2s;
+	}
+	&__item-headline {
+		width: 100%;
+		margin: 0;
+		font-family: $pb;
+		font-size: toRem(20);
+		line-height: toRem(33);
+		letter-spacing: toRem(.1);
+		text-align: center;
+		color: $black;
+		transition: .2s;
+		margin-top: toRem(20);
+		@media only screen and (min-width: 576px) {
+			font-size: toRem(30);
+		}
+		@media only screen and (min-width: 1200px) {
+			text-align: left;
+			margin-top: toRem(37);
+		}
+	}
+	&__item-paragraph {
+		@extend .global-p;
+		transition: .2s;
+		margin-top: toRem(30);
+		@media only screen and (min-width: 1200px) {
+			text-align: left;
+		}
+	}
+	&__learn-more {
+		text-decoration: none;
+		font-family: $pr;
+		font-size: toRem(15);
+		line-height: toRem(27);
+		letter-spacing: toRem(.2);
+		color: $blue;
+		transition: .2s;
+		margin-top: toRem(20);
+		@media only screen and (min-width: 1200px) {
+			margin-top: toRem(30);
+		}
+	}
+	&__item:hover {
+		@extend .global-gradient-diagonal;
+		box-shadow: none;
+	}
+	&__item:nth-child(1) > &__item-icon {
+		background: url('./img/for-you__icon1.webp') no-repeat center;
+	}
+	&__item:nth-child(2) > &__item-icon {
+		background: url('./img/for-you__icon2.webp') no-repeat center;
+	}
+	&__item:nth-child(3) > &__item-icon {
+		background: url('./img/for-you__icon3.webp') no-repeat center;
+	}
+	&__item:nth-child(1):hover > &__item-icon {
+		background: url('./img/for-you__icon1-hover.webp') no-repeat center;
+	}
+	&__item:nth-child(2):hover > &__item-icon {
+		background: url('./img/for-you__icon2-hover.webp') no-repeat center;
+	}
+	&__item:nth-child(3):hover > &__item-icon {
+		background: url('./img/for-you__icon3-hover.webp') no-repeat center;
+	}
+	&__item:hover > &__item-headline {
+		color: $white;
+	}
+	&__item:hover > &__item-paragraph {
+		color: $white;
+	}
+	&__item:hover > &__learn-more {
+		color: $white;
+	}
 }
 
 // Media Queries
