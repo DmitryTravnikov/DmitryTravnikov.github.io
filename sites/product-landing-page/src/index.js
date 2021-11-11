@@ -3,6 +3,10 @@
 import './favicons/favicons';
 import 'normalize.css';
 import './scss/main.scss';
+import WOW from 'wow.js';
+import 'animate.css';
+
+new WOW().init()
 
 // Console Log
 export let cLog = function(n) {
