@@ -56,10 +56,21 @@ function addMarkers(map) {
 			title: 'Hello world!',
 			content: locations[location].popup,
 			position: locations[location],
-			icon: require('./img/google-pin.webp')
+			icon: {
+				url: require('./img/yellow-pin.png'),
+				scaledSize: new google.maps.Size(50, 50)
+			},
+			animation: google.maps.Animation.DROP
 		}
 		const marker = new google.maps.Marker(markerOptions);
 		markers.push(marker);
+		marker.addListener("click", toggleBounce);
+		function toggleBounce() {
+			marker.setAnimation(google.maps.Animation.BOUNCE);
+			window.timerId = window.setInterval(function() {
+				marker.setAnimation(null);
+			}, 3000);
+		}
 	}
 	return markers;
 }
