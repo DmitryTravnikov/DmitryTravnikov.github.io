@@ -2,7 +2,6 @@ import { Loader } from '@googlemaps/js-api-loader';
 import MarkerClusterer from '@google/markerclustererplus';
 import {googleMapTheme} from './google-map-theme.js';
 
-
 const apiOptions = {
 	apiKey: process.env.GOOGLE_MAP_API
 }
@@ -34,27 +33,28 @@ function displayMap() {
 
 function addMarkers(map) {
 	const locations = {
-		operaHouse: { lat: -33.8567844, lng: 151.213108 },
-		tarongaZoo: { lat: -33.8472767, lng: 151.2188164 },
-		manlyBeach: { lat: -33.8209738, lng: 151.2563253 },
-		hyderPark: { lat: -33.8690081, lng: 151.2052393 },
-		theRocks: { lat: -33.8587568, lng: 151.2058246 },
-		circularQuay: { lat: -33.858761, lng: 151.2055688 },
-		harbourBridge: { lat: -33.852228, lng: 151.2038374 },
-		kingsCross: { lat: -33.8737375, lng: 151.222569 },
-		botanicGardens: { lat: -33.864167, lng: 151.216387 },
-		museumOfSydney: { lat: -33.8636005, lng: 151.2092542 },
-		maritimeMuseum: { lat: -33.869395, lng: 151.198648 },
-		kingStreetWharf: { lat: -33.8665445, lng: 151.1989808 },
-		aquarium: { lat: -33.869627, lng: 151.202146 },
-		darlingHarbour: { lat: -33.87488, lng: 151.1987113 },
-		barangaroo: { lat: -33.8605523, lng: 151.1972205 },
+		operaHouse: { lat: -33.8567844, lng: 151.213108, popup: '<div class="google-map__pop-up"><h1 class="google-map__pop-up-headline">This is Opera House</h1><p class="google-map__pop-up-paragraph">This is description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veniam molestias assumenda excepturi. Quidem maiores architecto eum illo, est, rerum at adipisci facilis tenetur esse debitis velit quae ipsam hic.</p></div>' },
+		tarongaZoo: { lat: -33.8472767, lng: 151.2188164, popup: '<div class="google-map__pop-up"><h1 class="google-map__pop-up-headline">This is Taronga Zoo</h1><p class="google-map__pop-up-paragraph">This is description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veniam molestias assumenda excepturi. Quidem maiores architecto eum illo, est, rerum at adipisci facilis tenetur esse debitis velit quae ipsam hic.</p></div>' },
+		manlyBeach: { lat: -33.8209738, lng: 151.2563253, popup: '<div class="google-map__pop-up"><h1 class="google-map__pop-up-headline">This is Manly Beach</h1><p class="google-map__pop-up-paragraph">This is description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veniam molestias assumenda excepturi. Quidem maiores architecto eum illo, est, rerum at adipisci facilis tenetur esse debitis velit quae ipsam hic.</p></div>' },
+		hyderPark: { lat: -33.8690081, lng: 151.2052393, popup: '<div class="google-map__pop-up"><h1 class="google-map__pop-up-headline">This is Hyder Park</h1><p class="google-map__pop-up-paragraph">This is description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veniam molestias assumenda excepturi. Quidem maiores architecto eum illo, est, rerum at adipisci facilis tenetur esse debitis velit quae ipsam hic.</p></div>' },
+		theRocks: { lat: -33.8587568, lng: 151.2058246, popup: '<div class="google-map__pop-up"><h1 class="google-map__pop-up-headline">This is the Rocks</h1><p class="google-map__pop-up-paragraph">This is description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veniam molestias assumenda excepturi. Quidem maiores architecto eum illo, est, rerum at adipisci facilis tenetur esse debitis velit quae ipsam hic.</p></div>' },
+		circularQuay: { lat: -33.858761, lng: 151.2055688, popup: '<div class="google-map__pop-up"><h1 class="google-map__pop-up-headline">This is Circular Quay</h1><p class="google-map__pop-up-paragraph">This is description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veniam molestias assumenda excepturi. Quidem maiores architecto eum illo, est, rerum at adipisci facilis tenetur esse debitis velit quae ipsam hic.</p></div>' },
+		harbourBridge: { lat: -33.852228, lng: 151.2038374, popup: '<div class="google-map__pop-up"><h1 class="google-map__pop-up-headline">This is Harbour Bridge</h1><p class="google-map__pop-up-paragraph">This is description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veniam molestias assumenda excepturi. Quidem maiores architecto eum illo, est, rerum at adipisci facilis tenetur esse debitis velit quae ipsam hic.</p></div>' },
+		kingsCross: { lat: -33.8737375, lng: 151.222569, popup: '<div class="google-map__pop-up"><h1 class="google-map__pop-up-headline">This is Kings Cross</h1><p class="google-map__pop-up-paragraph">This is description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veniam molestias assumenda excepturi. Quidem maiores architecto eum illo, est, rerum at adipisci facilis tenetur esse debitis velit quae ipsam hic.</p></div>' },
+		botanicGardens: { lat: -33.864167, lng: 151.216387, popup: '<div class="google-map__pop-up"><h1 class="google-map__pop-up-headline">This is Botanic Gardens</h1><p class="google-map__pop-up-paragraph">This is description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veniam molestias assumenda excepturi. Quidem maiores architecto eum illo, est, rerum at adipisci facilis tenetur esse debitis velit quae ipsam hic.</p></div>' },
+		museumOfSydney: { lat: -33.8636005, lng: 151.2092542, popup: '<div class="google-map__pop-up"><h1 class="google-map__pop-up-headline">This is Museum of Sydney</h1><p class="google-map__pop-up-paragraph">This is description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veniam molestias assumenda excepturi. Quidem maiores architecto eum illo, est, rerum at adipisci facilis tenetur esse debitis velit quae ipsam hic.</p></div>' },
+		maritimeMuseum: { lat: -33.869395, lng: 151.198648, popup: '<div class="google-map__pop-up"><h1 class="google-map__pop-up-headline">This is Maritime Museum</h1><p class="google-map__pop-up-paragraph">This is description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veniam molestias assumenda excepturi. Quidem maiores architecto eum illo, est, rerum at adipisci facilis tenetur esse debitis velit quae ipsam hic.</p></div>' },
+		kingStreetWharf: { lat: -33.8665445, lng: 151.1989808, popup: '<div class="google-map__pop-up"><h1 class="google-map__pop-up-headline">This is King Street Wharf</h1><p class="google-map__pop-up-paragraph">This is description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veniam molestias assumenda excepturi. Quidem maiores architecto eum illo, est, rerum at adipisci facilis tenetur esse debitis velit quae ipsam hic.</p></div>' },
+		aquarium: { lat: -33.869627, lng: 151.202146, popup: '<div class="google-map__pop-up"><h1 class="google-map__pop-up-headline">This is Aquarium</h1><p class="google-map__pop-up-paragraph">This is description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veniam molestias assumenda excepturi. Quidem maiores architecto eum illo, est, rerum at adipisci facilis tenetur esse debitis velit quae ipsam hic.</p></div>' },
+		darlingHarbour: { lat: -33.87488, lng: 151.1987113, popup: '<div class="google-map__pop-up"><h1 class="google-map__pop-up-headline">This is Darling Harbour</h1><p class="google-map__pop-up-paragraph">This is description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veniam molestias assumenda excepturi. Quidem maiores architecto eum illo, est, rerum at adipisci facilis tenetur esse debitis velit quae ipsam hic.</p></div>' },
+		barangaroo: { lat: -33.8605523, lng: 151.1972205, popup: '<div class="google-map__pop-up"><h1 class="google-map__pop-up-headline">This is Barangaroo</h1><p class="google-map__pop-up-paragraph">This is description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veniam molestias assumenda excepturi. Quidem maiores architecto eum illo, est, rerum at adipisci facilis tenetur esse debitis velit quae ipsam hic.</p></div>' },
 	}
 	const markers = [];
 	for (const location in locations) {
 		const markerOptions = {
 			map: map,
 			title: 'Hello world!',
+			content: locations[location].popup,
 			position: locations[location],
 			icon: require('./img/google-pin.webp')
 		}
@@ -124,30 +124,8 @@ function addPanToMarker(map, markers) {
 
 			map.panTo(location);
 
-			const contentString =
-			'<div id="content">' +
-			'<div id="siteNotice">' +
-			"</div>" +
-			'<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-			'<div id="bodyContent">' +
-			"<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
-			"sandstone rock formation in the southern part of the " +
-			"Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
-			"south west of the nearest large town, Alice Springs; 450&#160;km " +
-			"(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
-			"features of the Uluru - Kata Tjuta National Park. Uluru is " +
-			"sacred to the Pitjantjatjara and Yankunytjatjara, the " +
-			"Aboriginal people of the area. It has many springs, waterholes, " +
-			"rock caves and ancient paintings. Uluru is listed as a World " +
-			"Heritage Site.</p>" +
-			'<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-			"https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
-			"(last visited June 22, 2009).</p>" +
-			"</div>" +
-			"</div>";
-
 			const infowindow = new google.maps.InfoWindow({
-				content: contentString,
+				content: marker.content,
 			});
 
 			infowindow.open({
@@ -155,6 +133,9 @@ function addPanToMarker(map, markers) {
 				map,
 				shouldFocus: false,
 			});
+
+			console.log('It\'s marker\'s position: ' + marker.position);
+			console.log('It\'s marker\'s pop-up content: ' + marker.content);
 
 		});
 	});
