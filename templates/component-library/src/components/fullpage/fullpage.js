@@ -10,10 +10,9 @@ jQuery(document).ready(function($) {
 		$('#fullPage').fullpage({
 			css3: true,
 			navigation: true,
-			// responsiveWidth: 992, // Точка, начиная от которой работает плагин
+			// responsiveWidth: 992,
 			// anchors: ['home', 'about-us', 'contact'],
 			// parallax: true
 		})
 	}
 });
-let input = document.getElementById('input');

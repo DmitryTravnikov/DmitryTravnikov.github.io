@@ -22,9 +22,9 @@
 		}
 	}
 	&__section2 &__headline {
-		position: relative;
 		background: #000;
 		padding: 20px 0;
+		position: relative;
 	}
 	&__section3 {
 		background: darken($blue, 20%);
@@ -36,14 +36,14 @@
 		background: darken($purple, 10%);
 	}
 	&__headline {
-		text-align: center;
 		font-size: toRem(60);
+		text-align: center;
 	}
 	.fp-tableCell {
-		vertical-align: top;
-		padding-top: toRem(50);
-		padding-right: 5%;
 		padding-left: 5%;
+		padding-right: 5%;
+		padding-top: toRem(50);
+		vertical-align: top;
 	}
 }
 
