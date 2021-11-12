@@ -1,4 +1,4 @@
-import WOW from 'wow.js';
-import 'animate.css';
+// import WOW from 'wow.js';
+// import 'animate.css';
 
-new WOW().init()
+// new WOW().init()

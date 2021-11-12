@@ -1,0 +1,42 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
+// Component Styles
+.masonry {
+	&__container {
+		width: 100%;
+	}
+	&__item {
+		width: 100%;
+		@media only screen and (min-width: 576px) {
+			width: calc((100% - calc(toRem(6) * 2)) / 2);
+			&:not(:nth-child(2n)) {
+				margin-right: toRem(6);
+			}
+		}
+		@media only screen and (min-width: 768px) {
+			width: calc((100% - calc(toRem(6) * 3)) / 3);
+			&:not(:nth-child(3n)) {
+				margin-right: toRem(6);
+			}
+		}
+		@media only screen and (min-width: 998px) {
+			width: calc((100% - calc(toRem(6) * 4)) / 4);
+			&:not(:nth-child(4n)) {
+				margin-right: toRem(6);
+			}
+		}
+	}
+	&__image {
+		width: 100%;
+	}
+}
+
+// Media Queries
+@media only screen and (min-width: 576px) {}
+@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1400px) {}
+
+// * {@include outline()}
