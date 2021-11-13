@@ -9,6 +9,7 @@ include ../components/masonry/masonry
 include ../components/fullpage/fullpage
 include ../components/smooth-scrollbar/smooth-scrollbar
 include ../components/lazyload/lazyload
+include ../components/ajax/ajax
 
 block head
 	- const pageTitle = "Component Library";
@@ -27,4 +28,5 @@ block content
 	//- +masonry
 	//- +fullpage
 	//- +smooth-scrollbar
-	+lazyload
+	//- +lazyload
+	+ajax

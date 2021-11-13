@@ -31,13 +31,17 @@
 		visibility: hidden;
 	}
 	// Lazy background
-	&__background {
+	&__lazy-background {
 		display: block;
 		width: 100%;
 		min-height: 400px;
 	}
+	// Lazy iframe
+	&__lazy-iframe {
+		width: 100%;
+		min-height: 400px;
+	}
 }
-
 
 // Media Queries
 @media only screen and (min-width: 576px) {}
