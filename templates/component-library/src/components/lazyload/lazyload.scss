@@ -3,7 +3,40 @@
 
 // Component Styles
 .lazyload {
-
+	&__container {
+		padding: toRem(20);
+	}
+	&__headline {
+		width: auto;
+		margin: 0;
+		margin-top: toRem(50);
+		margin-bottom: toRem(70);
+	}
+	img {
+		display: block;
+		border: 0;
+		width: 100%;
+		min-height: 400px;
+	}
+	img.lazy {
+		opacity: 0;
+	}
+	img:not(.initial) {
+		transition: opacity 1s;
+	}
+	img.initial,
+	img.loaded,
+	img.error {
+		opacity: 1;
+	}
+	img:not([src]) {
+		visibility: hidden;
+	}
+	&__background {
+		display: block;
+		width: 100%;
+		min-height: 500px;
+	}
 }
 
 
