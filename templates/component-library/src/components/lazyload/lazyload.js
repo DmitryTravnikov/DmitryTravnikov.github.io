@@ -1,5 +1,4 @@
-const lazyImages = document.querySelectorAll('img[data-src], source[data-srcset]');
-const loadMapBlock = document.querySelector('.__load-map');
-const windowHeight = document.documentElement.clientHeight;
+import LazyLoad from "vanilla-lazyload";
 
-let lazyImagesPositions = [];
+const lazyLoadOptions = {/* your options here */};
+const pageLazyLoad = new LazyLoad(lazyLoadOptions);

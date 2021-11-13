@@ -1,38 +1,25 @@
 mixin lazyload(props = {})
-	- const { message } = props;
+	- const {  } = props;
 
 	.lazyload
-		.lazyload__lazyelem-container
-			img.lazyload__image(data-src=require("../components/lazyload/img/1.jpg") src=require("../components/lazyload/img/1x1.png") alt="picture")
-		.lazyload__lazyelem-container
-			picture
-				source(data-src=require("../components/lazyload/img/2.webp") srcset=require("../components/lazyload/img/1x1.png") tyle="image/webp")
-				img.lazyload__image(data-src=require("../components/lazyload/img/2.jpg") src=require("../components/lazyload/img/1x1.png") alt="picture")
-		.lazyload__lazyelem-container
-			img.lazyload__image(data-src=require("../components/lazyload/img/3.jpg") src=require("../components/lazyload/img/1x1.png") alt="picture")
-		.lazyload__lazyelem-container
-			img.lazyload__image(data-src=require("../components/lazyload/img/4.jpg") src=require("../components/lazyload/img/1x1.png") alt="picture")
-		.lazyload__lazyelem-container
-			img.lazyload__image(data-src=require("../components/lazyload/img/5.jpg") src=require("../components/lazyload/img/1x1.png") alt="picture")
-		.lazyload__lazyelem-container
-			img.lazyload__image(data-src=require("../components/lazyload/img/6.jpg") src=require("../components/lazyload/img/1x1.png") alt="picture")
-		.lazyload__lazyelem-container
-			img.lazyload__image(data-src=require("../components/lazyload/img/7.jpg") src=require("../components/lazyload/img/1x1.png") alt="picture")
-		.lazyload__lazyelem-container
-			img.lazyload__image(data-src=require("../components/lazyload/img/8.jpg") src=require("../components/lazyload/img/1x1.png") alt="picture")
-		.lazyload__lazyelem-container
-			img.lazyload__image(data-src=require("../components/lazyload/img/9.jpg") src=require("../components/lazyload/img/1x1.png") alt="picture")
-		.lazyload__lazyelem-container
-			img.lazyload__image(data-src=require("../components/lazyload/img/10.jpg") src=require("../components/lazyload/img/1x1.png") alt="picture")
-		.lazyload__lazyelem-container
-			img.lazyload__image(data-src=require("../components/lazyload/img/11.jpg") src=require("../components/lazyload/img/1x1.png") alt="picture")
-		.lazyload__lazyelem-container
-			img.lazyload__image(data-src=require("../components/lazyload/img/12.jpg") src=require("../components/lazyload/img/1x1.png") alt="picture")
-		.lazyload__lazyelem-container
-			img.lazyload__image(data-src=require("../components/lazyload/img/13.jpg") src=require("../components/lazyload/img/1x1.png") alt="picture")
-		.lazyload__lazyelem-container
-			img.lazyload__image(data-src=require("../components/lazyload/img/14.jpg") src=require("../components/lazyload/img/1x1.png") alt="picture")
-		.lazyload__lazyelem-container
-			img.lazyload__image(data-src=require("../components/lazyload/img/15.jpg") src=require("../components/lazyload/img/1x1.png") alt="picture")
+		img.lazy(src=require("../components/lazyload/img/lazy-1x1.png"), alt="A lazy image", data-src=require("../components/lazyload/img/lazy-1.jpg"))
 
-		.lazyload__lazymap-container.__load-map(style="width: 100%" data-map="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&t=&z=14&ie=UTF8&iwloc=B&output=embed")
+		picture
+			//- Если ширина экрана меньше 600px и устройство поддерживает webp и имеет стандартную плотность пикселей, то грузится webp формат. Если ретина, то изображение 2x
+			source(media="(max-width: 600px)", srcset=require("../components/lazyload/img/lazy-1x1.png"), data-srcset=require("../components/lazyload/img/lazy-2.webp") + " 1x, " + require("../components/lazyload/img/lazy-2@2x.webp") + " 2x", type="image/webp")
+			//- Грузится по умолчанию
+			img.lazy(alt='A lazy image' src=require("../components/lazyload/img/lazy-1x1.png") data-src=require("../components/lazyload/img/lazy-2.jpg"))
+
+		img.lazy(src=require("../components/lazyload/img/lazy-1x1.png"), alt="A lazy image", data-src=require("../components/lazyload/img/lazy-3.jpg"))
+		img.lazy(src=require("../components/lazyload/img/lazy-1x1.png"), alt="A lazy image", data-src=require("../components/lazyload/img/lazy-4.jpg"))
+		img.lazy(src=require("../components/lazyload/img/lazy-1x1.png"), alt="A lazy image", data-src=require("../components/lazyload/img/lazy-5.jpg"))
+		img.lazy(src=require("../components/lazyload/img/lazy-1x1.png"), alt="A lazy image", data-src=require("../components/lazyload/img/lazy-6.jpg"))
+		img.lazy(src=require("../components/lazyload/img/lazy-1x1.png"), alt="A lazy image", data-src=require("../components/lazyload/img/lazy-7.jpg"))
+		img.lazy(src=require("../components/lazyload/img/lazy-1x1.png"), alt="A lazy image", data-src=require("../components/lazyload/img/lazy-8.jpg"))
+		img.lazy(src=require("../components/lazyload/img/lazy-1x1.png"), alt="A lazy image", data-src=require("../components/lazyload/img/lazy-9.jpg"))
+		img.lazy(src=require("../components/lazyload/img/lazy-1x1.png"), alt="A lazy image", data-src=require("../components/lazyload/img/lazy-10.jpg"))
+		img.lazy(src=require("../components/lazyload/img/lazy-1x1.png"), alt="A lazy image", data-src=require("../components/lazyload/img/lazy-11.jpg"))
+		img.lazy(src=require("../components/lazyload/img/lazy-1x1.png"), alt="A lazy image", data-src=require("../components/lazyload/img/lazy-12.jpg"))
+		img.lazy(src=require("../components/lazyload/img/lazy-1x1.png"), alt="A lazy image", data-src=require("../components/lazyload/img/lazy-13.jpg"))
+		img.lazy(src=require("../components/lazyload/img/lazy-1x1.png"), alt="A lazy image", data-src=require("../components/lazyload/img/lazy-14.jpg"))
+		img.lazy(src=require("../components/lazyload/img/lazy-1x1.png"), alt="A lazy image", data-src=require("../components/lazyload/img/lazy-15.jpg"))
