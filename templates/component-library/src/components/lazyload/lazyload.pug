@@ -1,7 +1,7 @@
 mixin lazyload(props = {})
 	- const {  } = props;
 
-	.lazyload__container
+	.lazyload
 		h1.lazyload__headline Headline
 
 		img.lazy.lazyload__lazy-image(src=require("../components/lazyload/img/lazy-1x1.png"), alt="A lazy image", data-src=require("../components/lazyload/img/lazy-1.jpg"))
@@ -69,3 +69,6 @@ mixin lazyload(props = {})
 
 
 		p.lazyload__paragraph Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem impedit placeat neque eaque, excepturi optio deserunt expedita animi a eveniet ipsam, veniam praesentium fugiat! Modi ex consequatur nulla dolorum magnam quae, nemo cupiditate facere amet aliquid voluptate eaque atque, nobis voluptatem saepe excepturi harum labore minus tempora odit itaque. Officiis quibusdam aliquid laboriosam velit placeat perspiciatis at a nisi voluptates doloribus veritatis, minima pariatur eos harum cumque delectus nesciunt rerum! Dolor unde optio distinctio consequatur asperiores inventore nam expedita, consectetur aliquid porro odit veniam corrupti repellendus esse earum sequi at enim libero quos eaque ut? Voluptas amet rerum nostrum perferendis distinctio. Ut laboriosam nisi earum facere omnis molestias obcaecati veritatis deserunt reiciendis. Odit voluptate iure cumque ipsam, harum minima sit, ipsum rerum autem distinctio, hic accusamus sequi quidem laborum commodi nam corrupti? Sit, quae nisi officiis voluptatibus est quo neque quisquam fugiat rerum, illum, magnam ex error id. Inventore magni voluptas optio recusandae pariatur. Minima voluptas eius, quibusdam voluptatibus animi porro aliquam distinctio nulla temporibus officiis quod? Culpa voluptatibus qui porro quisquam impedit beatae quasi vel nisi nemo illo! Architecto nesciunt officia tenetur, aliquid quas accusamus et illo obcaecati esse corporis a. Dolorum nulla deserunt provident facere consectetur eveniet alias exercitationem quis iste nihil fugit impedit assumenda a omnis quidem totam nostrum dolore ad distinctio consequuntur, odit temporibus rerum sunt. Eligendi dolores possimus dolore voluptas similique deserunt explicabo nesciunt quo! Similique, magnam facilis beatae, laudantium iste sed voluptatem dolorum est rem, doloremque ullam? Id suscipit similique sequi! Dolores, vero possimus eveniet ducimus velit architecto tenetur rerum ad iste quos hic dicta. Voluptas inventore, omnis, ex ab id nam vero delectus aliquid, fugit nobis blanditiis corrupti hic quos porro rerum voluptatum ea necessitatibus reiciendis. Amet libero eos cupiditate omnis delectus eveniet beatae repudiandae dolore, porro voluptatibus doloribus vero, asperiores ipsum autem?
+
+		//- Lazy iframe
+		iframe.lazy.lazyload__lazy-iframe(width='100%' height='600' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' data-src='https://maps.google.com/maps?width=100%25&height=600&hl=en&q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&t=&z=14&ie=UTF8&iwloc=B&output=embed')

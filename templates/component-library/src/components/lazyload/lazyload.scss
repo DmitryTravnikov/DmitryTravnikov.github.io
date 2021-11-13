@@ -3,20 +3,18 @@
 
 // Component Styles
 .lazyload {
-	&__container {
-		padding: toRem(20);
-	}
+	padding: toRem(20);
 	&__headline {
 		width: auto;
 		margin: 0;
 		margin-top: toRem(50);
 		margin-bottom: toRem(70);
 	}
+	// Fade effect on load for images
 	img {
 		display: block;
 		border: 0;
 		width: 100%;
-		min-height: 400px;
 	}
 	img.lazy {
 		opacity: 0;
@@ -32,10 +30,11 @@
 	img:not([src]) {
 		visibility: hidden;
 	}
+	// Lazy background
 	&__background {
 		display: block;
 		width: 100%;
-		min-height: 500px;
+		min-height: 400px;
 	}
 }
 
