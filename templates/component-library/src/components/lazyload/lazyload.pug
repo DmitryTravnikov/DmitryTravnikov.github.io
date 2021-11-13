@@ -5,9 +5,9 @@ mixin lazyload(props = {})
 		img.lazy(src=require("../components/lazyload/img/lazy-1x1.png"), alt="A lazy image", data-src=require("../components/lazyload/img/lazy-1.jpg"))
 
 		picture
-			//- Если ширина экрана меньше 600px и устройство поддерживает webp и имеет стандартную плотность пикселей, то грузится webp формат. Если ретина, то изображение 2x
+			//- Если ширина экрана меньше 600px и устройство поддерживает webp и имеет стандартную плотность пикселей, то грузится 1x. Если ретина, то грузится 2x
 			source(media="(max-width: 600px)", srcset=require("../components/lazyload/img/lazy-1x1.png"), data-srcset=require("../components/lazyload/img/lazy-2.webp") + " 1x, " + require("../components/lazyload/img/lazy-2@2x.webp") + " 2x", type="image/webp")
-			//- Грузится по умолчанию
+			//- Грузится по умолчанию, если ни одно из условий, указанных выше, не соблюдено
 			img.lazy(alt='A lazy image' src=require("../components/lazyload/img/lazy-1x1.png") data-src=require("../components/lazyload/img/lazy-2.jpg"))
 
 		img.lazy(src=require("../components/lazyload/img/lazy-1x1.png"), alt="A lazy image", data-src=require("../components/lazyload/img/lazy-3.jpg"))
