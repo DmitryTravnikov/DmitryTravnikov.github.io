@@ -1,4 +1,5 @@
-mixin logo()
+mixin logo(props = {})
+	- const {  } = props;
 
-	a.prevdef.logo-container(href="#")
-		img.logo(src=require('../components/logo/img/logo.webp'), alt="logo")
+	a.prevdef.logo__container(href="#")
+		img.logo__image(src=require('../components/logo/img/logo.png') alt="logo")

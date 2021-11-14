@@ -1,11 +1,13 @@
 // Fonts
-$pbl: 'Poppins-Black';
-$pb: 'Poppins-Bold';
+$pb: 'Poppins-Black';
+$pbl: 'Poppins-Bold';
 $pm: 'Poppins-Medium';
 $pr: 'Poppins-Regular';
 $rb: 'Roboto-Bold';
+$ls: toRem(0.2);
 
 // Base typography
+
 $font-size: 1rem;
 
 $font-size-h1: 2.5rem;
@@ -23,14 +25,12 @@ $font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu'
 // Semantic colors
 $text-color: #08090a;
 $link-color: #3b49df;
-$white: #fff;
-$black: #000;
 
 // Colors
 $blue: #03D6F3;
+$grey: #5C5C5C;
 $mint: #30D7BA;
 $dark-blue: #112D57;
-$grey: #5C5C5C;
 
 $space-grey: #222222;
 $pink: #E65B70;

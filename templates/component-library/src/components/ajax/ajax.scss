@@ -10,13 +10,22 @@
 		padding: 0;
 		margin: 0;
 		list-style: none;
-		@include flex();
+		@include flex(column, wrap, flex-start, flex-start);
+		@media only screen and (min-width: 576px) {
+			@include flex();
+		}
 	}
 	&__menu-item {
 		padding: 0;
 		margin: 0;
-		margin-right: toRem(30);
+		margin-top: toRem(20);
 		@include flex();
+		@media only screen and (min-width: 576px) {
+			margin-right: toRem(40);
+			&:last-child {
+				margin-right: 0;
+			}
+		}
 	}
 	&__link {
 		text-decoration: none;
@@ -30,6 +39,9 @@
 		@include flex(column, wrap, flex-start, flex-start);
 		margin-top: toRem(40);
 		min-height: toRem(320);
+		@media only screen and (min-width: 768px) {
+			width: 760px;
+		}
 	}
 	&__content {
 		@include flex(column, wrap, flex-start, flex-start);

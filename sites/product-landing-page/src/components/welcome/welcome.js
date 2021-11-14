@@ -1,3 +1,3 @@
-import {cLog} from '../../index.js';
+// import {cLog} from '../../index.js';
 
-cLog('JavaScript is working!');
+// cLog('JavaScript is working!');

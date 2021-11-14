@@ -1,10 +1,4 @@
-// Import Bootstrap Media Queries
-// @import '~bootstrap/scss/mixins/breakpoints';
-// @import '~bootstrap/scss/functions';
-// @import '~bootstrap/scss/variables';
-
-@import '../scss/variables';
-@import '../scss/mixins';
+@import 'mixins.scss';
 
 .clearfix {
 	&::after {
@@ -15,25 +9,28 @@
 }
 
 .global-gradient-diagonal {
-	background: linear-gradient(45deg, #38BDA7, #CA1CE8);
+	background: linear-gradient(45deg, #37BDA6, #CB1BE8);
 }
 
 .global-gradient-horizontal {
-	background: linear-gradient(90deg, #8E5ECD, #CA1CE8);
+	background: linear-gradient(90deg, #37BDA6, #CB1BE8);
 }
 
-.global-link {
-	border-radius: toRem(50);
-	border: 1px solid $white;
-	box-shadow: 0px 0px 20px 4px rgba($black, .075);
-	color: $white;
+.global-a {
+	display: inline-block;
+	text-decoration: none;
+	background: $blue;
 	font-family: $pm;
 	font-size: toRem(16);
-	letter-spacing: toRem(.25);
 	line-height: toRem(16);
-	padding: toRem(18) toRem(29);
-	text-decoration: none;
-	transition: .2s;
+	letter-spacing: $ls;
+	color: #fff;
+	padding: toRem(18) toRem(45);
+	border: 1px solid $blue;
+	box-shadow: 0px 4px 37px 10px rgba(#000, .05);
+	text-transform: lowercase;
+	border-radius: toRem(50);
+	transition: 0.2s;
 	&:hover {
 		background: $mint;
 		border-color: $mint;
@@ -41,34 +38,33 @@
 }
 
 .global-h2 {
-	color: $black;
-	font-family: $pr;
-	font-size: toRem(46);
-	letter-spacing: toRem(.2);
-	line-height: toRem(57);
-	margin: 0;
-	text-align: center;
 	width: auto;
+	margin: 0;
+	font-family: $pm;
+	font-size: toRem(46);
+	line-height: toRem(57);
+	letter-spacing: $ls;
+	color: #000;
+	text-align: center;
 }
 
 .global-h3 {
-	color: $grey;
+	width: auto;
+	margin: 0;
 	font-family: $pb;
 	font-size: toRem(16);
-	letter-spacing: toRem(.2);
 	line-height: toRem(20);
-	margin: 0;
+	letter-spacing: $ls;
+	color: $grey;
 	text-align: left;
-	width: auto;
 }
 
 .global-p {
-	color: $grey;
+	width: auto;
+	margin: 0;
 	font-family: $pr;
 	font-size: toRem(18);
-	letter-spacing: toRem(.2);
 	line-height: toRem(27);
-	margin: 0;
-	text-align: center;
-	width: auto;
+	letter-spacing: toRem(0.2);
+	color: $grey;
 }

@@ -73,9 +73,6 @@ button:not(:disabled) {
 
 .wrapper {
 	@include wrapper();
-	@media only screen and (min-width: 1200px) {
-		@include wrapper(1200px, auto);
-	}
 }
 
 table, th, tr, td {
