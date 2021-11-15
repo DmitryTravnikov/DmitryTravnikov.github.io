@@ -1,0 +1,35 @@
+/* font-family: "FuturaBookC-Regular"; */
+@font-face {
+	font-family: "FuturaBookC-Regular";
+	src: url("../fonts/FuturaBookC-Regular/FuturaBookC-Regular.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "FuturaDemiC-Italic"; */
+@font-face {
+	font-family: "FuturaDemiC-Italic";
+	src: url("../fonts/FuturaDemiC-Italic/FuturaDemiC-Italic.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "FuturaDemiC-Regular"; */
+@font-face {
+	font-family: "FuturaDemiC-Regular";
+	src: url("../fonts/FuturaDemiC-Regular/FuturaDemiC-Regular.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "FuturaMediumC-Regular"; */
+@font-face {
+	font-family: "FuturaMediumC-Regular";
+	src: url("../fonts/FuturaMediumC-Regular/FuturaMediumC-Regular.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "ProximaNova-Regular"; */
+@font-face {
+	font-family: "ProximaNova-Regular";
+	src: url("../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}

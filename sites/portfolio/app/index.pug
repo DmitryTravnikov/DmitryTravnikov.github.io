@@ -1,0 +1,106 @@
+doctype html
+// [if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]
+// [if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]
+// [if IE 8]><html lang="ru" class="lt-ie9"><![endif]
+// [if gt IE 8]><!
+html(lang="ru")
+	// <![endif]
+	head
+		title Web Development
+		meta(charset="UTF-8")
+		meta(name="description" content="")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		// OwlCarousel
+		link(rel="stylesheet", href="libs/owl-carousel/owl.carousel.css")
+		link(rel="stylesheet", href="libs/owl-carousel/owl.theme.css")
+		link(rel="stylesheet", href="libs/owl-carousel/owl.transitions.css")
+		// Bootstrap
+		//- link(rel="stylesheet", href="libs/bootstrap/css/bootstrap.min.css")
+		// General
+		link(rel="shortcut icon" href="assets/!js.png" type="image/x-icon")
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet")
+		link(rel="stylesheet", href="css/normalize.css")
+		link(rel="stylesheet", href="css/fonts.css")
+		link(rel="stylesheet", href="css/keyframes.css")
+		link(rel="stylesheet" href="css/main.css")
+		link(rel="stylesheet", href="css/media.css")
+	body
+		// Content Start
+
+		// Background
+		.background
+
+		// Header
+		header.header#top
+			nav.header__menu
+				a.prevdef.header__menu-link(href="#about") about me
+				a.prevdef.header__menu-link(href="#projects") projects
+				a.prevdef.header__menu-link(href="#contacts") contacts
+
+		// About
+		.about#about
+			.about__wrapper.wrapper
+				p.about__paragraph Hello! I specialize in HTML/CSS coding, my experience is 2+ years. I'm committed to deliver high quality services and to make sure that the clients' requirements are met at the best possible level. Here is the list of my skills:
+				ul.about__list
+					li.about__list-item HTML (advanced)
+					li.about__list-item CSS (advanced)
+					li.about__list-item Bootstrap
+					li.about__list-item JavaScript (basic)
+					li.about__list-item BEM
+					li.about__list-item Gulp
+					li.about__list-item Pug
+					li.about__list-item Sass
+					li.about__list-item Adaptive & Responsive
+					li.about__list-item Flexbox / Grid / Block / Table
+					li.about__list-item GitHub
+
+		// Projects
+		.projects#projects
+			.projects__wrapper.wrapper
+				a.projects__item.projects__item1(href="https://dmitrytravnikov.github.io/sites/appinion/dist/index.html" target="_blank") project1
+				a.projects__item.projects__item2(href="https://dmitrytravnikov.github.io/sites/architecture/dist/index.html" target="_blank") project2
+				a.projects__item.projects__item3(href="https://dmitrytravnikov.github.io/sites/repair-design-project/dist/index.html" target="_blank") project3
+				a.projects__item.projects__item4(href="https://dmitrytravnikov.github.io/sites/cloudbudget/dist/index.html" target="_blank") project4
+				a.projects__item.projects__item5(href="https://dmitrytravnikov.github.io/sites/xtina/index.html" target="_blank") project5
+				a.projects__item.projects__item6(href="https://dmitrytravnikov.github.io/sites/life-calculator/index.html" target="_blank") project6
+				a.projects__item.projects__item7(href="https://dmitrytravnikov.github.io/sites/axit/dist/index.html" target="_blank") project7
+				a.projects__item.projects__item8(href="https://dmitrytravnikov.github.io/sites/global/dist/index.html" target="_blank") project8
+
+		// Contacts
+		.contacts#contacts
+			.contacts__wrapper.wrapper
+				a.contacts__contact-link.contacts__telegram(href="https://t.me/dmitrytravnikov" target="_blank") Telegram: 
+					|
+					br
+					| #[span @DmitryTravnikov]
+				p.contacts__contact-link.contacts__discord Discord: 
+					|
+					br
+					| #[span travnikov#6305]
+
+		a.top(href="#top")
+			p.top__arrow ^
+
+		// Content End
+		// Scripts
+		// General
+		script(src="libs/jquery/jquery-3.3.1.min.js")
+		script(src="js/common.js")
+		// Bootstrap
+		//- script(src="libs/bootstrap/js/bootstrap.min.js")
+		// Masked Input
+		script(src="libs/masked-input/jquery.maskedinput.min.js")
+		// PageScroll2id
+		script(src="libs/pagescroll2id/jquery.malihu.PageScroll2id.min.js")
+		// OwlCarousel
+		script(src="libs/owl-carousel/owl.carousel.min.js")
+		//  
+				[if lt IE 9]>
+				<script src="libs/html5shiv/es5-shim.min.js"></script>
+				<script src="libs/html5shiv/html5shiv.min.js"></script>
+				<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+				<script src="libs/respond/respond.min.js"></script>
+				<![endif]

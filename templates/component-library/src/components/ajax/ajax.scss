@@ -1,0 +1,62 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
+// Component Styles
+.ajax {
+	&__container {
+		padding: toRem(40);
+	}
+	&__menu {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		@include flex(column, wrap, flex-start, flex-start);
+		@media only screen and (min-width: 576px) {
+			@include flex();
+		}
+	}
+	&__menu-item {
+		padding: 0;
+		margin: 0;
+		margin-top: toRem(20);
+		@include flex();
+		@media only screen and (min-width: 576px) {
+			margin-right: toRem(40);
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	&__link {
+		text-decoration: none;
+		color: #fff;
+		transition: 0.2s;
+		&.active {
+			color: $blue;
+		}
+	}
+	&__content-container {
+		@include flex(column, wrap, flex-start, flex-start);
+		margin-top: toRem(40);
+		min-height: toRem(320);
+		@media only screen and (min-width: 768px) {
+			width: 760px;
+		}
+	}
+	&__content {
+		@include flex(column, wrap, flex-start, flex-start);
+		@include size(100%, 100%);
+	}
+	&__headline {
+		font-size: toRem(30);
+	}
+}
+
+// Media Queries
+@media only screen and (min-width: 576px) {}
+@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1400px) {}
+
+// * {@include outline()}

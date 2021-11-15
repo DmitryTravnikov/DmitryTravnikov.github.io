@@ -1,0 +1,168 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+body
+	font-family: $ps2pr
+	color: #fff
+	background: $sexy-purple
+
+.wrapper
+	+wrapper(90%, auto)
+
+// 1rem === 10px
+
+.background
+	+size(100%, 100%)
+	background: url('../assets/main__bg.gif') no-repeat 0rem 0rem
+	background-size: cover
+	position: fixed
+	&::before
+		content: ''
+		+size(100%, 100%)
+		background: rgba(darken($purple, 20%), 0.85)
+		position: absolute
+		top: 0rem
+		left: 0rem
+
+.header
+	+size(100%, auto)
+	position: relative
+	top: 0rem
+	left: 0rem
+	z-index: 1
+	padding: 2rem 0rem
+	+flex(column, wrap, center, center)
+	&__menu
+		+flex(column, wrap, center, center)
+		+size(auto, auto)
+		position: relative
+		top: -10%
+	&__menu-link
+		text-decoration: none
+		font-size: 2rem
+		color: #fff
+		margin: 2rem
+		transition: .2s
+		padding-bottom: 1rem
+		position: relative
+		&::before
+			content: ''
+			+size(100%, 0.4rem)
+			background: $green
+			position: absolute
+			bottom: 0rem
+			left: 0rem
+			opacity: 0
+			transition: .2s
+		&:hover::before
+			opacity: 1
+		&:hover
+			color: $green
+
+.about
+	+size(100%, auto)
+	position: relative
+	z-index: 1
+	padding: 3rem 0rem
+	font-family: $ibm
+	&__wrapper
+		+flex(column, wrap, flex-start, flex-start)
+		padding: 3rem
+		background: rgba($sexy-purple, 0.85)
+	&__paragraph
+		width: 100%
+		margin: 0rem
+		font-size: 2.6rem
+		line-height: 5rem
+	&__list
+		list-style: square
+		margin: 0rem
+		padding: 0rem
+		margin-top: 4rem
+		padding-left: 2rem
+		font-size: 2rem
+	&__list-item
+		padding: 0rem
+		margin: 0rem
+		margin-top: 1em
+		line-height: 3.5rem
+		padding-left: 0.6rem
+
+.projects
+	+size(100%, auto)
+	position: relative
+	+flex(column, wrap, center, center)
+	padding: 3rem 0rem
+	&__wrapper
+		+flex(column, wrap, center, center)
+		padding: 3rem
+		background: rgba($sexy-purple, 0.85)
+	&__item
+		text-decoration: none
+		color: #fff
+		font-size: 3rem
+		margin: 2rem
+		transition: .2s
+		&:hover
+			color: $green
+
+.contacts
+	position: relative
+	z-index: 1
+	padding: 3rem 0rem
+	font-family: $ibm
+	&__wrapper
+		background: rgba($sexy-purple, 0.85)
+		+flex(column, wrap, center, center)
+		padding: 10rem 3rem
+	&__contact-link
+		text-decoration: none
+		color: #fff
+		transition: .2s
+		font-size: 4rem
+		width: auto
+		margin: 0rem
+		text-align: center
+		cursor: pointer
+		&:hover
+			color: $green
+		span
+			font-size: 2.4rem
+	&__telegram
+	&__discord
+		margin-top: 5rem
+
+.top
+	bottom: 2rem
+	right: 1rem
+	width: 5rem
+	height: 5rem
+	background: $sexy-purple
+	position: fixed
+	cursor: pointer
+	text-decoration: none
+	+flex(column, wrap, center, center)
+	opacity: 1
+	z-index: 999
+	transition: .2s
+	&.mPS2id-highlight
+		display: none
+	&__arrow
+		width: 100%
+		margin: 0rem
+		text-align: center
+		color: $green
+		font-size: 3rem
+		position: relative
+		top: 1.2rem
+		left: .2rem
+		&::before
+			content: ''
+			+size(0.4rem, 0.4rem)
+			background: $green
+			position: absolute
+			top: -0.3rem
+			left: 2.1rem
+
+*
+	// +outline($blue)

@@ -1,0 +1,2917 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+/*  Desktop First Method */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1300px)
+	body
+		background: $media-purple
+	*
+		outline-color: $media-purple
+
+	.header
+		padding-bottom: 3.2rem//
+		&__wrapper
+			+wrapper(80%, auto)//
+			+flex(row, wrap, space-between, flex-start)//
+		&__logo-container
+			+flex(row, wrap, flex-start, flex-start)//
+		&__logo
+			font-size: 1.4rem//
+		&__menu-container
+			margin-top: 3.6rem//
+			margin-left: 0rem//
+			display: block//
+		&__menu
+			+flex(row, wrap, flex-start, flex-start)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-top: 0rem//
+			margin-right: 1.2rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+				margin-right: 0rem//
+		&__menu-link
+			&:hover
+		&__tel-link
+			font-size: 1.4rem//
+			margin-top: 3.5rem//
+			margin-left: 0rem//
+			color: #fff//
+			&::before
+				content: none//
+		&__request-link
+			margin-top: 2.4rem//
+			margin-left: 4.5rem//
+			display: none//
+			&:hover
+
+	.main
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			+wrapper(100%, auto)//
+		&__instagram-link
+			display: block//
+			top: 10rem//
+			left: 0rem//
+			&::before
+		&__content
+			+size(100%, auto)//
+			margin-right: 0rem//
+			padding-left: 10%//
+			+flex(column, wrap, flex-start, flex-start)//
+			padding-bottom: 5rem//
+			&::before
+		&__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 37.5rem//
+			margin-top: 4.1rem//
+		&__headline
+			font-size: 2.8rem//
+			text-align: left//
+			margin-left: 0rem//
+			padding-right: 0rem//
+			margin-top: 2.3rem//
+			span
+		&__paragraph
+			font-size: 2.2rem//
+			margin-left: 0rem//
+			padding-right: 0rem//
+		&__links-container
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-left: 0rem//
+		&__calculate-the-cost-link
+			width: 100%//
+			text-align: center//
+			&:hover
+		&__submit-your-application-link
+			width: 100%//
+			margin-left: 0rem//
+			text-align: center//
+			margin-top: 2rem//
+
+	.section1
+		background: $space-grey//
+		padding-bottom: 0rem//
+		&::before
+			content: none//
+		&__wrapper
+			+wrapper(100%, auto)//
+		&__tabs
+			+flex(row, wrap, center, flex-start)//
+			position: absolute//
+			width: 100%//
+			top: 56rem//
+			left: 50%//
+			display: flex//
+			transform: translateX(-50%)//
+		&__tabs-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 3rem//
+			&:last-child
+		&__tabs-link
+			&::before
+		&__tabs-link.active
+			&::before
+		&__slider-container
+			padding-top: 4.4rem//
+			height: 61rem//
+			+flex(column, wrap, flex-start, center)//
+		&__slider-button
+			position: absolute//
+			top: 54.7rem//
+			left: 0rem//
+			bottom: -3.2rem//
+			display: block//
+		&__prev-button
+			left: 5%//
+		&__next-button
+			left: calc(95% - 4rem)//
+		&__slider-button-icon
+		&__slider-prev-icon
+			&::before, &::after
+			&::before
+			&::after
+		&__slider-next-icon
+			&::before
+			&::after
+		&__pagination-container
+			bottom: -1.8rem//
+			left: 50%//
+			transform: translateX(-50%)//
+			display: none//
+		&__pagination-elem
+			&:last-child
+		&__pagination-elem.active
+		&__pagination-elem1
+		&__pagination-elem2
+		&__pagination-elem3
+		&__slider
+			+flex(column, wrap, flex-start, center)//
+		&__slide
+			+flex(row, wrap, center, stretch)//
+			&.active
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide-text-container
+			width: 36rem//
+			+flex(column, wrap, flex-start, center)//
+		&__slide-headline
+			width: 100%//
+			text-align: left//
+			padding-right: 4rem//
+			&::before
+				content: none//
+		&__slide-paragraph
+			width: 100%//
+			text-align: left//
+			padding-right: 4rem//
+		&__project-characteristics
+			width: 100%//
+			+flex(row, wrap, flex-start, stretch)//
+		&__project-characteristic-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 42%//
+			margin: 0.4rem//
+			&:nth-child(3)
+				margin-top: 1rem//
+			&:nth-child(4)
+				margin-top: 1rem//
+		&__project-characteristic1
+			width: 100%//
+		&__project-characteristic2
+			width: 100%//
+		&__slide-image
+			+size(60rem, 48.2rem)//
+			margin-top: 0rem//
+		&__slide-image1
+		&__slide-image2
+		&__slide-image3
+
+	.section2
+		background: $space-grey//
+		padding-bottom: 4.6rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			+wrapper(90%, auto)//
+		&__headline
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: none//
+			margin-top: 1rem//
+		&__separator
+			position: relative//
+			top: 0rem//
+			left: 0rem//
+			transform: none//
+			margin-top: 2.2rem//
+			&::before, &::after
+			&::before
+			&::after
+		&__video-container
+			+size(80rem, 40rem)//
+			position: relative//
+			top: 0rem//
+			left: 0rem//
+			transform: none//
+			margin-top: 2.2rem//
+		&__video-overlay
+			&::before
+		&__video-play-button
+			+size(5.7rem, 5.7rem)//
+			&:hover
+			&::before
+				left: 55%//
+				border-width: 1.1rem 0 1.1rem 1.8rem//
+		&__video
+			width: 100%//
+			height: 100%//
+		&__paragraph
+			width: 40rem//
+			font-size: 1.4rem//
+			color: #fff//
+			margin-top: 6rem//
+			&::before
+		&__form
+			width: 100%//
+			+flex(column, wrap, flex-start, center)//
+			margin-top: 2.3rem//
+			position: relative//
+		&__input-container
+			+flex(column, wrap, flex-start, flex-start)//
+			margin-top: 4.8rem//
+			width: 40rem//
+			&:nth-child(1)
+				margin-right: 0rem//
+				&::before
+			&:nth-child(2)
+				&::before
+		&__input
+			width: 100%//
+			color: #fff//
+			&::placeholder
+				color: #fff//
+		&__name-input
+		&__email-input
+		&__submit-button
+			width: 30rem//
+			margin-left: 0rem//
+			position: absolute//
+			bottom: -7rem//
+			left: 50%//
+			transform: translateX(-50%)//
+			&:hover
+		&__checkbox-container
+			+flex(row, wrap, flex-start, center)//
+			margin-left: 0rem//
+		&__checkbox
+		&__checkbox:checked + &__checkbox-indicator::before
+		&__checkbox:checked + &__checkbox-indicator::after
+		&__checkbox-indicator
+			&::before
+			&::after
+		&__checkbox-description
+			font-size: 1.4rem//
+			color: #fff//
+
+	.section3
+		background: #fff//
+		padding-top: 6.1rem//
+		padding-bottom: 22rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+		&__headline
+		&__separator
+			&::before, &::after
+			&::before
+			&::after
+		&__content
+			+flex(row, wrap, space-around, center)//
+			width: 100%//
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			margin-right: 0rem//
+			width: calc(100% / 3.4)//
+			margin-top: 0rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__block1
+		&__block2
+		&__block3
+		&__block-image-container
+			+size(100%, 42.1rem)//
+		&__block-image-container:hover &__block-image
+		&__block-image
+			+size(100%, 42.1rem)//
+		&__block-image1
+		&__block-image2
+		&__block-image3
+		&__text-container
+			+size(86%, auto)//
+			+flex(column, wrap, flex-start, flex-start)//
+			left: 0rem//
+			transform: translateX(0rem)//
+			&::before
+		&__text-container1
+			&::before
+		&__text-container2
+			&::before
+		&__text-container3
+			&::before
+		&__block-headline
+		&__block-list
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block-list-item
+			&:first-child
+			&::before
+		&__block-list-link
+
+	.section4
+		display: none//
+
+	.section5
+		display: none//
+
+	.section6
+		padding-top: 3.4rem
+		padding-bottom: 32.6rem//
+		background: $space-grey//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__headline
+			color: $gold//
+		&__separator
+			&::before, &::after
+			&::before
+			&::after
+		&__paragraph
+			width: 80%//
+			color: #fff//
+			padding: 0rem 0rem//
+		&__content
+			width: 100%//
+			+flex(row, wrap, space-around, center)//
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			margin-right: 0rem//
+			width: calc(100% / 3.4)//
+			&:last-child
+		&__block1
+			margin-top: 0rem//
+		&__block2
+			margin-top: 0rem//
+		&__block3
+			margin-top: 0rem//
+		&__block-image-container
+			+size(100%, 42.1rem)//
+		&__block-image-container:hover &__block-image
+		&__block-image
+			+size(100%, 42.1rem)//
+			&::before
+		&__block-image1
+		&__block-image2
+		&__block-image3
+		&__text-container
+			+size(90%, auto)//
+			+flex(column, wrap, flex-start, flex-start)//
+			position: absolute//
+			top: 29rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+			margin-top: 0rem//
+			&::before
+		&__text-container1
+			&::before
+		&__text-container2
+			&::before
+		&__text-container3
+			&::before
+		&__block-headline
+		&__list
+			+flex(column, wrap, flex-start, flex-start)//
+		&__list-item
+			+flex(column, wrap, flex-start, flex-start)//
+			&:first-child
+			&::before
+		&__list-link
+
+	.section7
+		display: none//
+
+	.section8
+		background: $space-grey//
+		padding-top: 3rem//
+		padding-bottom: 11rem//
+		&::before
+			background: none//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			+wrapper(100%, auto)//
+		&__headline
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+		&__separator
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+			margin-top: 1.4rem//
+			&::before, &::after
+			&::before
+			&::after
+		&__paragraph
+			width: 80%//
+		&__paragraph1
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			padding: 0rem 0rem//
+			margin-top: 2rem//
+		&__content
+			width: 100%//
+			+flex(row, wrap, space-around, center)//
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+		&__item
+			+flex(column, wrap, flex-start, center)//
+			width: calc(100% / 3.6)//
+			&::before
+				top: 0rem//
+				left: 0rem//
+		&__item1
+			margin-top: 3rem//
+			&::before
+		&__item2
+			margin-top: 3rem//
+			&::before
+		&__item3
+			margin-top: 3rem//
+			&::before
+		&__user-image-container
+			+size(100%, 35.7rem)//
+		&__user-image-container:hover &__user-image
+		&__user-image
+			+size(100%, 35.7rem)//
+		&__user-image1
+		&__user-image2
+		&__user-image3
+		&__text-container
+			width: 90%//
+			+flex(column, wrap, flex-start, center)//
+			position: absolute//
+			top: 30rem//
+			left: 50%//
+			transform: translateX(-50%)//
+		&__item-worker-name
+		&__item-worker-position
+		&__item-worker-experience
+		&__paragraph2
+			padding: 0rem 0rem//
+			display: none//
+			&::before
+		&__paragraph3
+			padding: 0rem 0rem//
+			display: none//
+
+	.section9
+		display: none//
+
+	.section10
+		background: $space-grey//
+		padding-bottom: 2.6rem//
+		+flex(column, wrap, flex-start, center)//
+		&::before
+			content: none//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__form
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+			width: 80rem//
+			+flex(column, wrap, center, center)//
+			background: $space-grey//
+			padding: 0rem 0rem//
+			padding-bottom: 1.3rem//
+			order: 1//
+		&__form-row
+			+flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__form-row1
+			+flex(row, wrap, center, flex-start)//
+		&__form-row2
+			+flex(row, wrap, center, flex-start)//
+			margin-top: 3.5rem//
+		&__form-row3
+			+flex(column, wrap, center, center)//
+		&__form-headline
+		&__input-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 90%//
+			&::before
+		&__input-container1
+			margin-top: 1rem//
+			&::before
+		&__input-container2
+			margin-left: 0rem//
+			margin-top: 4rem//
+			&::before
+		&__input-container3
+			margin-top: 4rem//
+			&::before
+		&__input
+			width: 100%//
+			&::placeholder
+		&__name-input
+			width: 100%//
+		&__phone-input
+			width: 100%//
+		&__question-input
+			width: 100%//
+		&__checkbox-container
+			+flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__checkbox
+		&__checkbox:checked + &__checkbox-indicator::before,
+		&__checkbox:checked + &__checkbox-indicator::after
+		&__checkbox-indicator
+			&::before
+			&::after
+		&__checkbox-description
+		&__submit-button
+			width: 26rem//
+			&:hover
+		&__address
+			width: 60rem//
+			margin-top: 4.3rem//
+			order: 3//
+		&__socials-container
+			+flex(row, wrap, flex-start, flex-start)//
+			order: 4//
+		&__social-link
+			+flex(row, wrap, center, center)//
+			&:last-child
+			&:hover
+			svg
+				+flex(row, wrap, center, center)//
+				path
+		&__email-link
+		&__instagram-link
+		&__map
+			+size(92%, 46.5rem)//
+			order: 2//
+
+	.section11
+		display: none//
+
+	.to-top-link
+		display: block//
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+	body
+		background: $media-orange
+	*
+		outline-color: $media-orange
+
+	.header
+		padding-bottom: 3.2rem//
+		&__wrapper
+			+wrapper(80%, auto)//
+			+flex(row, wrap, space-between, flex-start)//
+		&__logo-container
+			+flex(row, wrap, flex-start, flex-start)//
+		&__logo
+			font-size: 1.4rem//
+		&__menu-container
+			margin-top: 3.5rem//
+			margin-left: 9.5rem//
+			display: none//
+		&__menu
+			+flex(row, wrap, flex-start, flex-start)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-top: 1rem//
+			margin-right: 4.8rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+				margin-right: 0rem//
+		&__menu-link
+			&:hover
+		&__tel-link
+			font-size: 1.4rem//
+			margin-top: 3.5rem//
+			margin-left: 0rem//
+			color: #fff//
+			&::before
+				content: none//
+		&__request-link
+			margin-top: 2.4rem//
+			margin-left: 4.5rem//
+			display: none//
+			&:hover
+
+	.main
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			+wrapper(100%, auto)//
+		&__instagram-link
+			display: block//
+			top: 10rem//
+			left: 0rem//
+			&::before
+		&__content
+			+size(100%, auto)//
+			margin-right: 0rem//
+			padding-left: 10%//
+			+flex(column, wrap, flex-start, flex-start)//
+			padding-bottom: 5rem//
+			&::before
+		&__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 37.5rem//
+			margin-top: 4.1rem//
+		&__headline
+			font-size: 2.8rem//
+			text-align: left//
+			margin-left: 0rem//
+			padding-right: 0rem//
+			margin-top: 2.3rem//
+			span
+		&__paragraph
+			font-size: 2.2rem//
+			margin-left: 0rem//
+			padding-right: 0rem//
+		&__links-container
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-left: 0rem//
+		&__calculate-the-cost-link
+			width: 100%//
+			text-align: center//
+			&:hover
+		&__submit-your-application-link
+			width: 100%//
+			margin-left: 0rem//
+			text-align: center//
+			margin-top: 2rem//
+
+	.section1
+		background: $space-grey//
+		padding-bottom: 0rem//
+		&::before
+			content: none//
+		&__wrapper
+			+wrapper(100%, auto)//
+		&__tabs
+			+flex(row, wrap, center, flex-start)//
+			position: absolute//
+			width: 100%//
+			top: 56rem//
+			left: 50%//
+			display: flex//
+			transform: translateX(-50%)//
+		&__tabs-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-right: 3rem//
+			&:last-child
+		&__tabs-link
+			&::before
+		&__tabs-link.active
+			&::before
+		&__slider-container
+			padding-top: 4.4rem//
+			height: 61rem//
+			+flex(column, wrap, flex-start, center)//
+		&__slider-button
+			position: absolute//
+			top: 54.7rem//
+			left: 0rem//
+			bottom: -3.2rem//
+			display: block//
+		&__prev-button
+			left: 5%//
+		&__next-button
+			left: calc(95% - 4rem)//
+		&__slider-button-icon
+		&__slider-prev-icon
+			&::before, &::after
+			&::before
+			&::after
+		&__slider-next-icon
+			&::before
+			&::after
+		&__pagination-container
+			bottom: -1.8rem//
+			left: 50%//
+			transform: translateX(-50%)//
+			display: none//
+		&__pagination-elem
+			&:last-child
+		&__pagination-elem.active
+		&__pagination-elem1
+		&__pagination-elem2
+		&__pagination-elem3
+		&__slider
+			+flex(column, wrap, flex-start, center)//
+		&__slide
+			+flex(row, wrap, center, stretch)//
+			&.active
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide-text-container
+			width: 36rem//
+			+flex(column, wrap, flex-start, center)//
+		&__slide-headline
+			width: 100%//
+			text-align: left//
+			padding-right: 4rem//
+			&::before
+				content: none//
+		&__slide-paragraph
+			width: 100%//
+			text-align: left//
+			padding-right: 4rem//
+		&__project-characteristics
+			width: 100%//
+			+flex(row, wrap, flex-start, stretch)//
+		&__project-characteristic-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 42%//
+			margin: 0.4rem//
+			&:nth-child(3)
+				margin-top: 1rem//
+			&:nth-child(4)
+				margin-top: 1rem//
+		&__project-characteristic1
+			width: 100%//
+		&__project-characteristic2
+			width: 100%//
+		&__slide-image
+			+size(36rem, 48.2rem)//
+			margin-top: 0rem//
+		&__slide-image1
+		&__slide-image2
+		&__slide-image3
+
+	.section2
+		background: $space-grey//
+		padding-bottom: 4.6rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			+wrapper(90%, auto)//
+		&__headline
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: none//
+			margin-top: 1rem//
+		&__separator
+			position: relative//
+			top: 0rem//
+			left: 0rem//
+			transform: none//
+			margin-top: 2.2rem//
+			&::before, &::after
+			&::before
+			&::after
+		&__video-container
+			+size(100%, 40rem)//
+			position: relative//
+			top: 0rem//
+			left: 0rem//
+			transform: none//
+			margin-top: 2.2rem//
+		&__video-overlay
+			&::before
+		&__video-play-button
+			+size(5.7rem, 5.7rem)//
+			&:hover
+			&::before
+				left: 55%//
+				border-width: 1.1rem 0 1.1rem 1.8rem//
+		&__video
+			width: 100%//
+			height: 100%//
+		&__paragraph
+			width: 40rem//
+			font-size: 1.4rem//
+			color: #fff//
+			margin-top: 6rem//
+			&::before
+		&__form
+			width: 100%//
+			+flex(column, wrap, flex-start, center)//
+			margin-top: 2.3rem//
+			position: relative//
+		&__input-container
+			+flex(column, wrap, flex-start, flex-start)//
+			margin-top: 4.8rem//
+			width: 40rem//
+			&:nth-child(1)
+				margin-right: 0rem//
+				&::before
+			&:nth-child(2)
+				&::before
+		&__input
+			width: 100%//
+			color: #fff//
+			&::placeholder
+				color: #fff//
+		&__name-input
+		&__email-input
+		&__submit-button
+			width: 30rem//
+			margin-left: 0rem//
+			position: absolute//
+			bottom: -7rem//
+			left: 50%//
+			transform: translateX(-50%)//
+			&:hover
+		&__checkbox-container
+			+flex(row, wrap, flex-start, center)//
+			margin-left: 0rem//
+		&__checkbox
+		&__checkbox:checked + &__checkbox-indicator::before
+		&__checkbox:checked + &__checkbox-indicator::after
+		&__checkbox-indicator
+			&::before
+			&::after
+		&__checkbox-description
+			font-size: 1.4rem//
+			color: #fff//
+
+	.section3
+		background: #fff//
+		padding-top: 6.1rem//
+		padding-bottom: 22rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+		&__headline
+		&__separator
+			&::before, &::after
+			&::before
+			&::after
+		&__content
+			+flex(row, wrap, space-around, center)//
+			width: 100%//
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			margin-right: 0rem//
+			width: calc(100% / 3.4)//
+			margin-top: 0rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__block1
+		&__block2
+		&__block3
+		&__block-image-container
+			+size(100%, 42.1rem)//
+		&__block-image-container:hover &__block-image
+		&__block-image
+			+size(100%, 42.1rem)//
+		&__block-image1
+		&__block-image2
+		&__block-image3
+		&__text-container
+			+size(86%, auto)//
+			+flex(column, wrap, flex-start, flex-start)//
+			left: 0rem//
+			transform: translateX(0rem)//
+			&::before
+		&__text-container1
+			&::before
+		&__text-container2
+			&::before
+		&__text-container3
+			&::before
+		&__block-headline
+		&__block-list
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block-list-item
+			&:first-child
+			&::before
+		&__block-list-link
+
+	.section4
+		display: none//
+
+	.section5
+		display: none//
+
+	.section6
+		padding-top: 3.4rem
+		padding-bottom: 32.6rem//
+		background: $space-grey//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__headline
+			color: $gold//
+		&__separator
+			&::before, &::after
+			&::before
+			&::after
+		&__paragraph
+			width: 80%//
+			color: #fff//
+			padding: 0rem 0rem//
+		&__content
+			width: 100%//
+			+flex(row, wrap, space-around, center)//
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			margin-right: 0rem//
+			width: calc(100% / 3.4)//
+			&:last-child
+		&__block1
+			margin-top: 0rem//
+		&__block2
+			margin-top: 0rem//
+		&__block3
+			margin-top: 0rem//
+		&__block-image-container
+			+size(100%, 42.1rem)//
+		&__block-image-container:hover &__block-image
+		&__block-image
+			+size(100%, 42.1rem)//
+			&::before
+		&__block-image1
+		&__block-image2
+		&__block-image3
+		&__text-container
+			+size(90%, auto)//
+			+flex(column, wrap, flex-start, flex-start)//
+			position: absolute//
+			top: 29rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+			margin-top: 0rem//
+			&::before
+		&__text-container1
+			&::before
+		&__text-container2
+			&::before
+		&__text-container3
+			&::before
+		&__block-headline
+		&__list
+			+flex(column, wrap, flex-start, flex-start)//
+		&__list-item
+			+flex(column, wrap, flex-start, flex-start)//
+			&:first-child
+			&::before
+		&__list-link
+
+	.section7
+		display: none//
+
+	.section8
+		background: $space-grey//
+		padding-top: 3rem//
+		padding-bottom: 11rem//
+		&::before
+			background: none//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			+wrapper(100%, auto)//
+		&__headline
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+		&__separator
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+			margin-top: 1.4rem//
+			&::before, &::after
+			&::before
+			&::after
+		&__paragraph
+			width: 80%//
+		&__paragraph1
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			padding: 0rem 0rem//
+			margin-top: 2rem//
+		&__content
+			width: 100%//
+			+flex(row, wrap, space-around, center)//
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+		&__item
+			+flex(column, wrap, flex-start, center)//
+			width: calc(100% / 3.2)//
+			&::before
+				top: 0rem//
+				left: 0rem//
+		&__item1
+			margin-top: 3rem//
+			&::before
+		&__item2
+			margin-top: 3rem//
+			&::before
+		&__item3
+			margin-top: 3rem//
+			&::before
+		&__user-image-container
+			+size(100%, 35.7rem)//
+		&__user-image-container:hover &__user-image
+		&__user-image
+			+size(100%, 35.7rem)//
+		&__user-image1
+		&__user-image2
+		&__user-image3
+		&__text-container
+			width: 90%//
+			+flex(column, wrap, flex-start, center)//
+			position: absolute//
+			top: 30rem//
+			left: 50%//
+			transform: translateX(-50%)//
+		&__item-worker-name
+		&__item-worker-position
+		&__item-worker-experience
+		&__paragraph2
+			padding: 0rem 0rem//
+			display: none//
+			&::before
+		&__paragraph3
+			padding: 0rem 0rem//
+			display: none//
+
+	.section9
+		display: none//
+
+	.section10
+		background: $space-grey//
+		padding-bottom: 2.6rem//
+		+flex(column, wrap, flex-start, center)//
+		&::before
+			content: none//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__form
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+			width: 50rem//
+			+flex(column, wrap, center, center)//
+			background: $space-grey//
+			padding: 0rem 0rem//
+			padding-bottom: 1.3rem//
+			order: 1//
+		&__form-row
+			+flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__form-row1
+			+flex(row, wrap, center, flex-start)//
+		&__form-row2
+			+flex(row, wrap, center, flex-start)//
+			margin-top: 3.5rem//
+		&__form-row3
+			+flex(column, wrap, center, center)//
+		&__form-headline
+		&__input-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 90%//
+			&::before
+		&__input-container1
+			margin-top: 1rem//
+			&::before
+		&__input-container2
+			margin-left: 0rem//
+			margin-top: 4rem//
+			&::before
+		&__input-container3
+			margin-top: 4rem//
+			&::before
+		&__input
+			width: 100%//
+			&::placeholder
+		&__name-input
+			width: 100%//
+		&__phone-input
+			width: 100%//
+		&__question-input
+			width: 100%//
+		&__checkbox-container
+			+flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__checkbox
+		&__checkbox:checked + &__checkbox-indicator::before,
+		&__checkbox:checked + &__checkbox-indicator::after
+		&__checkbox-indicator
+			&::before
+			&::after
+		&__checkbox-description
+		&__submit-button
+			width: 26rem//
+			&:hover
+		&__address
+			width: 60rem//
+			margin-top: 4.3rem//
+			order: 3//
+		&__socials-container
+			+flex(row, wrap, flex-start, flex-start)//
+			order: 4//
+		&__social-link
+			+flex(row, wrap, center, center)//
+			&:last-child
+			&:hover
+			svg
+				+flex(row, wrap, center, center)//
+				path
+		&__email-link
+		&__instagram-link
+		&__map
+			+size(92%, 46.5rem)//
+			order: 2//
+
+	.section11
+		display: none//
+
+	.to-top-link
+		display: block//
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+	body
+		background: $media-pink
+	*
+		outline-color: $media-pink
+
+	.header
+		padding-bottom: 3.2rem//
+		&__wrapper
+			+wrapper(80%, auto)//
+			+flex(row, wrap, space-between, flex-start)//
+		&__logo-container
+			+flex(row, wrap, flex-start, flex-start)//
+		&__logo
+			font-size: 1.4rem//
+		&__menu-container
+			margin-top: 3.5rem//
+			margin-left: 9.5rem//
+			display: none//
+		&__menu
+			+flex(row, wrap, flex-start, flex-start)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-top: 1rem//
+			margin-right: 4.8rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+				margin-right: 0rem//
+		&__menu-link
+			&:hover
+		&__tel-link
+			font-size: 1.4rem//
+			margin-top: 3.5rem//
+			margin-left: 0rem//
+			color: #fff//
+			&::before
+				content: none//
+		&__request-link
+			margin-top: 2.4rem//
+			margin-left: 4.5rem//
+			display: none//
+			&:hover
+
+	.main
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			+wrapper(100%, auto)//
+		&__instagram-link
+			top: 10rem//
+			left: -1.2rem//
+			display: block//
+			&::before
+		&__content
+			+size(100%, auto)//
+			margin-right: 0rem//
+			padding-left: 0rem//
+			+flex(column, wrap, flex-start, center)//
+			padding-bottom: 5rem//
+			&::before
+		&__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 37.5rem//
+			margin-top: 4.1rem//
+		&__headline
+			font-size: 2.8rem//
+			text-align: left//
+			margin-left: 0rem//
+			padding-right: 0rem//
+			margin-top: 2.3rem//
+			span
+		&__paragraph
+			font-size: 2.2rem//
+			margin-left: 0rem//
+			padding-right: 0rem//
+		&__links-container
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-left: 0rem//
+		&__calculate-the-cost-link
+			width: 100%//
+			text-align: center//
+			&:hover
+		&__submit-your-application-link
+			width: 100%//
+			margin-left: 0rem//
+			text-align: center//
+			margin-top: 2rem//
+
+	.section1
+		background: $space-grey//
+		padding-bottom: 0rem//
+		&::before
+			content: none//
+		&__wrapper
+			+wrapper(100%, auto)//
+		&__tabs
+			+flex(row, wrap, flex-start, flex-start)//
+			top: 0rem//
+			left: 0rem//
+			display: none//
+		&__tabs-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			&:last-child
+		&__tabs-link
+			&::before
+		&__tabs-link.active
+			&::before
+		&__slider-container
+			padding-top: 4.4rem//
+			height: 92rem//
+			+flex(column, wrap, flex-start, center)//
+		&__slider-button
+			bottom: -3.2rem//
+			display: none//
+		&__prev-button
+			left: 10%//
+		&__next-button
+			left: calc(90% - 4rem)//
+		&__slider-button-icon
+		&__slider-prev-icon
+			&::before, &::after
+			&::before
+			&::after
+		&__slider-next-icon
+			&::before
+			&::after
+		&__pagination-container
+			bottom: -1.8rem//
+			left: 50%//
+			transform: translateX(-50%)//
+			display: none//
+		&__pagination-elem
+			&:last-child
+		&__pagination-elem.active
+		&__pagination-elem1
+		&__pagination-elem2
+		&__pagination-elem3
+		&__slider
+			+flex(column, wrap, flex-start, center)//
+		&__slide
+			+flex(column, wrap, flex-start, center)//
+			&.active
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide-text-container
+			width: 100%//
+			+flex(column, wrap, flex-start, center)//
+		&__slide-headline
+			width: 44rem//
+			text-align: center//
+			padding-right: 0rem//
+			&::before
+				content: none//
+		&__slide-paragraph
+			width: 44rem//
+			text-align: center//
+			padding-right: 0rem//
+		&__project-characteristics
+			width: 44rem//
+			+flex(row, wrap, center, stretch)//
+		&__project-characteristic-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 42%//
+			margin: 1rem//
+			&:nth-child(3)
+				margin-top: 1rem//
+			&:nth-child(4)
+				margin-top: 1rem//
+		&__project-characteristic1
+			width: 100%//
+		&__project-characteristic2
+			width: 100%//
+		&__slide-image
+			+size(90%, 48.2rem)//
+			margin-top: 3rem//
+		&__slide-image1
+		&__slide-image2
+		&__slide-image3
+
+	.section2
+		background: $space-grey//
+		padding-bottom: 4.6rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			+wrapper(90%, auto)//
+		&__headline
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: none//
+			margin-top: 1rem//
+		&__separator
+			position: relative//
+			top: 0rem//
+			left: 0rem//
+			transform: none//
+			margin-top: 2.2rem//
+			&::before, &::after
+			&::before
+			&::after
+		&__video-container
+			+size(100%, 32rem)//
+			position: relative//
+			top: 0rem//
+			left: 0rem//
+			transform: none//
+			margin-top: 2.2rem//
+		&__video-overlay
+			&::before
+		&__video-play-button
+			+size(5.7rem, 5.7rem)//
+			&:hover
+			&::before
+				left: 55%//
+				border-width: 1.1rem 0 1.1rem 1.8rem//
+		&__video
+			width: 100%//
+			height: 100%//
+		&__paragraph
+			width: 40rem//
+			font-size: 1.4rem//
+			color: #fff//
+			margin-top: 6rem//
+			&::before
+		&__form
+			width: 100%//
+			+flex(column, wrap, flex-start, center)//
+			margin-top: 2.3rem//
+			position: relative//
+		&__input-container
+			+flex(column, wrap, flex-start, flex-start)//
+			margin-top: 4.8rem//
+			width: 40rem//
+			&:nth-child(1)
+				margin-right: 0rem//
+				&::before
+			&:nth-child(2)
+				&::before
+		&__input
+			width: 100%//
+			color: #fff//
+			&::placeholder
+				color: #fff//
+		&__name-input
+		&__email-input
+		&__submit-button
+			width: 30rem//
+			margin-left: 0rem//
+			position: absolute//
+			bottom: -7rem//
+			left: 50%//
+			transform: translateX(-50%)//
+			&:hover
+		&__checkbox-container
+			+flex(row, wrap, flex-start, center)//
+			margin-left: 0rem//
+		&__checkbox
+		&__checkbox:checked + &__checkbox-indicator::before
+		&__checkbox:checked + &__checkbox-indicator::after
+		&__checkbox-indicator
+			&::before
+			&::after
+		&__checkbox-description
+			font-size: 1.4rem//
+			color: #fff//
+
+	.section3
+		background: #fff//
+		padding-top: 6.1rem//
+		padding-bottom: 22rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+		&__headline
+		&__separator
+			&::before, &::after
+			&::before
+			&::after
+		&__content
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			margin-right: 0rem//
+			width: 36rem//
+			margin-top: 25rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__block1
+		&__block2
+		&__block3
+		&__block-image-container
+			+size(100%, 42.1rem)//
+		&__block-image-container:hover &__block-image
+		&__block-image
+			+size(100%, 42.1rem)//
+		&__block-image1
+		&__block-image2
+		&__block-image3
+		&__text-container
+			+size(86%, auto)//
+			+flex(column, wrap, flex-start, flex-start)//
+			left: 0rem//
+			transform: translateX(0rem)//
+			&::before
+		&__text-container1
+			&::before
+		&__text-container2
+			&::before
+		&__text-container3
+			&::before
+		&__block-headline
+		&__block-list
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block-list-item
+			&:first-child
+			&::before
+		&__block-list-link
+
+	.section4
+		display: none//
+
+	.section5
+		display: none//
+
+	.section6
+		padding-top: 3.4rem
+		padding-bottom: 32.6rem//
+		background: $space-grey//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__headline
+			color: $gold//
+		&__separator
+			&::before, &::after
+			&::before
+			&::after
+		&__paragraph
+			width: 80%//
+			color: #fff//
+			padding: 0rem 0rem//
+		&__content
+			width: 100%//
+			+flex(column, wrap, center, center)//
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			margin-right: 0rem//
+			width: 36rem//
+			&:last-child
+		&__block1
+			margin-top: 0rem//
+		&__block2
+			margin-top: 14rem//
+		&__block3
+			margin-top: 21.6rem//
+		&__block-image-container
+			+size(100%, 42.1rem)//
+		&__block-image-container:hover &__block-image
+		&__block-image
+			+size(100%, 42.1rem)//
+			&::before
+		&__block-image1
+		&__block-image2
+		&__block-image3
+		&__text-container
+			+size(90%, auto)//
+			+flex(column, wrap, flex-start, flex-start)//
+			position: absolute//
+			top: 29rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+			margin-top: 0rem//
+			&::before
+		&__text-container1
+			&::before
+		&__text-container2
+			&::before
+		&__text-container3
+			&::before
+		&__block-headline
+		&__list
+			+flex(column, wrap, flex-start, flex-start)//
+		&__list-item
+			+flex(column, wrap, flex-start, flex-start)//
+			&:first-child
+			&::before
+		&__list-link
+
+	.section7
+		display: none//
+
+	.section8
+		background: $space-grey//
+		padding-top: 3rem//
+		padding-bottom: 11rem//
+		&::before
+			background: none//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			+wrapper(100%, auto)//
+		&__headline
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+		&__separator
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+			margin-top: 1.4rem//
+			&::before, &::after
+			&::before
+			&::after
+		&__paragraph
+			width: 80%//
+		&__paragraph1
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			padding: 0rem 0rem//
+			margin-top: 2rem//
+		&__content
+			width: 100%//
+			+flex(column, wrap, flex-start, center)//
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+		&__item
+			+flex(column, wrap, flex-start, center)//
+			width: 26rem//
+			&::before
+				top: -3.2rem//
+				left: -3.2rem//
+		&__item1
+			margin-top: 6rem//
+			&::before
+		&__item2
+			margin-top: 13rem//
+			&::before
+		&__item3
+			margin-top: 13rem//
+			&::before
+		&__user-image-container
+			+size(100%, 35.7rem)//
+		&__user-image-container:hover &__user-image
+		&__user-image
+			+size(100%, 35.7rem)//
+		&__user-image1
+		&__user-image2
+		&__user-image3
+		&__text-container
+			width: 90%//
+			+flex(column, wrap, flex-start, center)//
+			position: absolute//
+			top: 30rem//
+			left: 50%//
+			transform: translateX(-50%)//
+		&__item-worker-name
+		&__item-worker-position
+		&__item-worker-experience
+		&__paragraph2
+			padding: 0rem 0rem//
+			display: none//
+			&::before
+		&__paragraph3
+			padding: 0rem 0rem//
+			display: none//
+
+	.section9
+		display: none//
+
+	.section10
+		background: $space-grey//
+		padding-bottom: 2.6rem//
+		+flex(column, wrap, flex-start, center)//
+		&::before
+			content: none//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__form
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+			width: 37rem//
+			+flex(column, wrap, center, center)//
+			background: $space-grey//
+			padding: 0rem 0rem//
+			padding-bottom: 1.3rem//
+			order: 1//
+		&__form-row
+			+flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__form-row1
+			+flex(row, wrap, center, flex-start)//
+		&__form-row2
+			+flex(row, wrap, center, flex-start)//
+			margin-top: 3.5rem//
+		&__form-row3
+			+flex(column, wrap, center, center)//
+		&__form-headline
+		&__input-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 90%//
+			&::before
+		&__input-container1
+			margin-top: 1rem//
+			&::before
+		&__input-container2
+			margin-left: 0rem//
+			margin-top: 4rem//
+			&::before
+		&__input-container3
+			margin-top: 4rem//
+			&::before
+		&__input
+			width: 100%//
+			&::placeholder
+		&__name-input
+			width: 100%//
+		&__phone-input
+			width: 100%//
+		&__question-input
+			width: 100%//
+		&__checkbox-container
+			+flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__checkbox
+		&__checkbox:checked + &__checkbox-indicator::before,
+		&__checkbox:checked + &__checkbox-indicator::after
+		&__checkbox-indicator
+			&::before
+			&::after
+		&__checkbox-description
+		&__submit-button
+			width: 26rem//
+			&:hover
+		&__address
+			width: 80%//
+			margin-top: 4.3rem//
+			order: 3//
+		&__socials-container
+			+flex(row, wrap, flex-start, flex-start)//
+			order: 4//
+		&__social-link
+			+flex(row, wrap, center, center)//
+			&:last-child
+			&:hover
+			svg
+				+flex(row, wrap, center, center)//
+				path
+		&__email-link
+		&__instagram-link
+		&__map
+			+size(92%, 46.5rem)//
+			order: 2//
+
+	.section11
+		display: none//
+
+	.to-top-link
+		display: none//
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+	body
+		background: $media-blue
+	*
+		outline-color: $media-blue
+
+	.header
+		padding-bottom: 3.2rem//
+		&__wrapper
+			+wrapper(85%, auto)//
+			+flex(row, wrap, space-between, flex-start)//
+		&__logo-container
+			+flex(row, wrap, flex-start, flex-start)//
+		&__logo
+			font-size: 1.2rem//
+		&__menu-container
+			margin-top: 3.5rem//
+			margin-left: 9.5rem//
+			display: none//
+		&__menu
+			+flex(row, wrap, flex-start, flex-start)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-top: 1rem//
+			margin-right: 4.8rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+				margin-right: 0rem//
+		&__menu-link
+			&:hover
+		&__tel-link
+			font-size: 1.2rem//
+			margin-top: 3.5rem//
+			margin-left: 0rem//
+			color: #fff//
+			&::before
+				content: none//
+		&__request-link
+			margin-top: 2.4rem//
+			margin-left: 4.5rem//
+			display: none//
+			&:hover
+
+	.main
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			+wrapper(100%, auto)//
+		&__instagram-link
+			display: none//
+			&::before
+		&__content
+			+size(100%, auto)//
+			margin-right: 0rem//
+			padding-left: 0rem//
+			+flex(column, wrap, flex-start, center)//
+			padding-bottom: 5rem//
+			&::before
+		&__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 28rem//
+			margin-top: 4.1rem//
+		&__headline
+			font-size: 3rem//
+			text-align: left//
+			margin-left: 0rem//
+			padding-right: 0rem//
+			margin-top: 2.3rem//
+			span
+		&__paragraph
+			font-size: 2rem//
+			margin-left: 0rem//
+			padding-right: 0rem//
+		&__links-container
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-left: 0rem//
+		&__calculate-the-cost-link
+			width: 100%//
+			text-align: center//
+			&:hover
+		&__submit-your-application-link
+			width: 100%//
+			margin-left: 0rem//
+			text-align: center//
+			margin-top: 2rem//
+
+	.section1
+		background: $space-grey//
+		padding-bottom: 0rem//
+		&::before
+			content: none//
+		&__wrapper
+			+wrapper(100%, auto)//
+		&__tabs
+			+flex(row, wrap, flex-start, flex-start)//
+			top: 0rem//
+			left: 0rem//
+			display: none//
+		&__tabs-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			&:last-child
+		&__tabs-link
+			&::before
+		&__tabs-link.active
+			&::before
+		&__slider-container
+			padding-top: 4.4rem//
+			height: 105rem//
+			+flex(column, wrap, flex-start, center)//
+		&__slider-button
+			bottom: -3.2rem//
+			display: none//
+		&__prev-button
+			left: 10%//
+		&__next-button
+			left: calc(90% - 4rem)//
+		&__slider-button-icon
+		&__slider-prev-icon
+			&::before, &::after
+			&::before
+			&::after
+		&__slider-next-icon
+			&::before
+			&::after
+		&__pagination-container
+			bottom: -1.8rem//
+			left: 50%//
+			transform: translateX(-50%)//
+			display: none//
+		&__pagination-elem
+			&:last-child
+		&__pagination-elem.active
+		&__pagination-elem1
+		&__pagination-elem2
+		&__pagination-elem3
+		&__slider
+			+flex(column, wrap, flex-start, center)//
+		&__slide
+			+flex(column, wrap, flex-start, center)//
+			&.active
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide-text-container
+			width: 100%//
+			+flex(column, wrap, flex-start, center)//
+		&__slide-headline
+			width: 29rem//
+			text-align: center//
+			padding-right: 0rem//
+			&::before
+				content: none//
+		&__slide-paragraph
+			width: 29rem//
+			text-align: center//
+			padding-right: 0rem//
+		&__project-characteristics
+			width: 29rem//
+			+flex(row, wrap, center, stretch)//
+		&__project-characteristic-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 42%//
+			margin: 1rem//
+			&:nth-child(3)
+				margin-top: 1rem//
+			&:nth-child(4)
+				margin-top: 1rem//
+		&__project-characteristic1
+			width: 100%//
+		&__project-characteristic2
+			width: 100%//
+		&__slide-image
+			+size(90%, 48.2rem)//
+			margin-top: 3rem//
+		&__slide-image1
+		&__slide-image2
+		&__slide-image3
+
+	.section2
+		background: $space-grey//
+		padding-bottom: 4.6rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			+wrapper(90%, auto)//
+		&__headline
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: none//
+			margin-top: 1rem//
+		&__separator
+			position: relative//
+			top: 0rem//
+			left: 0rem//
+			transform: none//
+			margin-top: 2.2rem//
+			&::before, &::after
+			&::before
+			&::after
+		&__video-container
+			+size(100%, 20rem)//
+			position: relative//
+			top: 0rem//
+			left: 0rem//
+			transform: none//
+			margin-top: 2.2rem//
+		&__video-overlay
+			&::before
+		&__video-play-button
+			+size(3.7rem, 3.7rem)//
+			&:hover
+			&::before
+				left: 50%//
+				border-width: 0.7rem 0 0.7rem 1.2rem//
+		&__video
+			width: 100%//
+			height: 100%//
+		&__paragraph
+			width: 96%//
+			font-size: 1.4rem//
+			color: #fff//
+			margin-top: 6rem//
+			&::before
+		&__form
+			width: 100%//
+			+flex(column, wrap, flex-start, flex-start)//
+			margin-top: 2.3rem//
+			position: relative//
+		&__input-container
+			+flex(column, wrap, flex-start, flex-start)//
+			margin-top: 4.8rem//
+			width: 100%//
+			&:nth-child(1)
+				margin-right: 0rem//
+				&::before
+			&:nth-child(2)
+				&::before
+		&__input
+			width: 100%//
+			color: #fff//
+			&::placeholder
+				color: #fff//
+		&__name-input
+		&__email-input
+		&__submit-button
+			width: 90%//
+			margin-left: 0rem//
+			position: absolute//
+			bottom: -7rem//
+			left: 50%//
+			transform: translateX(-50%)//
+			&:hover
+		&__checkbox-container
+			+flex(row, wrap, flex-start, center)//
+			margin-left: 0rem//
+		&__checkbox
+		&__checkbox:checked + &__checkbox-indicator::before
+		&__checkbox:checked + &__checkbox-indicator::after
+		&__checkbox-indicator
+			&::before
+			&::after
+		&__checkbox-description
+			font-size: 1.4rem//
+			color: #fff//
+
+	.section3
+		background: #fff//
+		padding-top: 6.1rem//
+		padding-bottom: 22rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+		&__headline
+		&__separator
+			&::before, &::after
+			&::before
+			&::after
+		&__content
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			margin-right: 0rem//
+			width: 94%//
+			margin-top: 25rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__block1
+		&__block2
+		&__block3
+		&__block-image-container
+			+size(100%, 42.1rem)//
+		&__block-image-container:hover &__block-image
+		&__block-image
+			+size(100%, 42.1rem)//
+		&__block-image1
+		&__block-image2
+		&__block-image3
+		&__text-container
+			+size(86%, auto)//
+			+flex(column, wrap, flex-start, flex-start)//
+			left: 0rem//
+			transform: translateX(0rem)//
+			&::before
+		&__text-container1
+			&::before
+		&__text-container2
+			&::before
+		&__text-container3
+			&::before
+		&__block-headline
+		&__block-list
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block-list-item
+			&:first-child
+			&::before
+		&__block-list-link
+
+	.section4
+		display: none//
+
+	.section5
+		display: none//
+
+	.section6
+		padding-top: 3.4rem
+		padding-bottom: 32.6rem//
+		background: $space-grey//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__headline
+			color: $gold//
+		&__separator
+			&::before, &::after
+			&::before
+			&::after
+		&__paragraph
+			width: 80%//
+			color: #fff//
+			padding: 0rem 0rem//
+		&__content
+			width: 100%//
+			+flex(column, wrap, center, center)//
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			margin-right: 0rem//
+			width: 92%//
+			&:last-child
+		&__block1
+			margin-top: 0rem//
+		&__block2
+			margin-top: 14rem//
+		&__block3
+			margin-top: 21.6rem//
+		&__block-image-container
+			+size(100%, 42.1rem)//
+		&__block-image-container:hover &__block-image
+		&__block-image
+			+size(100%, 42.1rem)//
+			&::before
+		&__block-image1
+		&__block-image2
+		&__block-image3
+		&__text-container
+			+size(90%, auto)//
+			+flex(column, wrap, flex-start, flex-start)//
+			position: absolute//
+			top: 29rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+			margin-top: 0rem//
+			&::before
+		&__text-container1
+			&::before
+		&__text-container2
+			&::before
+		&__text-container3
+			&::before
+		&__block-headline
+		&__list
+			+flex(column, wrap, flex-start, flex-start)//
+		&__list-item
+			+flex(column, wrap, flex-start, flex-start)//
+			&:first-child
+			&::before
+		&__list-link
+
+	.section7
+		display: none//
+
+	.section8
+		background: $space-grey//
+		padding-top: 3rem//
+		padding-bottom: 11rem//
+		&::before
+			background: none//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			+wrapper(100%, auto)//
+		&__headline
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+		&__separator
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+			margin-top: 1.4rem//
+			&::before, &::after
+			&::before
+			&::after
+		&__paragraph
+			width: 80%//
+		&__paragraph1
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			padding: 0rem 0rem//
+			margin-top: 2rem//
+		&__content
+			width: 100%//
+			+flex(column, wrap, flex-start, center)//
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+		&__item
+			+flex(column, wrap, flex-start, center)//
+			width: 26rem//
+			&::before
+				top: -1rem//
+				left: -2.2rem//
+		&__item1
+			margin-top: 3rem//
+			&::before
+		&__item2
+			margin-top: 11rem//
+			&::before
+		&__item3
+			margin-top: 11rem//
+			&::before
+		&__user-image-container
+			+size(100%, 35.7rem)//
+		&__user-image-container:hover &__user-image
+		&__user-image
+			+size(100%, 35.7rem)//
+		&__user-image1
+		&__user-image2
+		&__user-image3
+		&__text-container
+			width: 90%//
+			+flex(column, wrap, flex-start, center)//
+			position: absolute//
+			top: 30rem//
+			left: 50%//
+			transform: translateX(-50%)//
+		&__item-worker-name
+		&__item-worker-position
+		&__item-worker-experience
+		&__paragraph2
+			padding: 0rem 0rem//
+			display: none//
+			&::before
+		&__paragraph3
+			padding: 0rem 0rem//
+			display: none//
+
+	.section9
+		display: none//
+
+	.section10
+		background: $space-grey//
+		padding-bottom: 2.6rem//
+		+flex(column, wrap, flex-start, center)//
+		&::before
+			content: none//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__form
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+			width: 100%//
+			+flex(column, wrap, center, center)//
+			background: $space-grey//
+			padding: 0rem 0rem//
+			padding-bottom: 1.3rem//
+			order: 1//
+		&__form-row
+			+flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__form-row1
+			+flex(row, wrap, center, flex-start)//
+		&__form-row2
+			+flex(row, wrap, center, flex-start)//
+			margin-top: 3.5rem//
+		&__form-row3
+			+flex(column, wrap, center, center)//
+		&__form-headline
+		&__input-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 90%//
+			&::before
+		&__input-container1
+			margin-top: 1rem//
+			&::before
+		&__input-container2
+			margin-left: 0rem//
+			margin-top: 4rem//
+			&::before
+		&__input-container3
+			margin-top: 4rem//
+			&::before
+		&__input
+			width: 100%//
+			&::placeholder
+		&__name-input
+			width: 100%//
+		&__phone-input
+			width: 100%//
+		&__question-input
+			width: 100%//
+		&__checkbox-container
+			+flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__checkbox
+		&__checkbox:checked + &__checkbox-indicator::before,
+		&__checkbox:checked + &__checkbox-indicator::after
+		&__checkbox-indicator
+			&::before
+			&::after
+		&__checkbox-description
+		&__submit-button
+			width: 100%//
+			&:hover
+		&__address
+			width: 100%//
+			margin-top: 4.3rem//
+			order: 3//
+		&__socials-container
+			+flex(row, wrap, flex-start, flex-start)//
+			order: 4//
+		&__social-link
+			+flex(row, wrap, center, center)//
+			&:last-child
+			&:hover
+			svg
+				+flex(row, wrap, center, center)//
+				path
+		&__email-link
+		&__instagram-link
+		&__map
+			+size(100%, 46.5rem)//
+			order: 2//
+
+	.section11
+		display: none//
+
+	.modal
+		&__overlay
+		&__success-container
+			+size(29rem, auto)//
+			&::before
+		&__close-button
+			&::before, &::after
+			&::before
+			&::after
+		&__success-paragraph
+
+	.to-top-link
+		display: none//
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+	body
+		background: $media-green
+	*
+		outline-color: $media-green
+
+	.header
+		padding-bottom: 3.2rem//
+		&__wrapper
+			+wrapper(90%, auto)//
+			+flex(row, wrap, space-between, flex-start)//
+		&__logo-container
+			+flex(row, wrap, flex-start, flex-start)//
+		&__logo
+			font-size: 1.2rem//
+		&__menu-container
+			margin-top: 3.5rem//
+			margin-left: 9.5rem//
+			display: none//
+		&__menu
+			+flex(row, wrap, flex-start, flex-start)//
+		&__menu-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-top: 1rem//
+			margin-right: 4.8rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+				margin-right: 0rem//
+		&__menu-link
+			&:hover
+		&__tel-link
+			font-size: 1.2rem//
+			margin-top: 3.5rem//
+			margin-left: 0rem//
+			color: #fff//
+			&::before
+				content: none//
+		&__request-link
+			margin-top: 2.4rem//
+			margin-left: 4.5rem//
+			display: none//
+			&:hover
+
+	.main
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			+wrapper(100%, auto)//
+		&__instagram-link
+			display: none//
+			&::before
+		&__content
+			+size(100%, auto)//
+			margin-right: 0rem//
+			padding-left: 0rem//
+			+flex(column, wrap, flex-start, center)//
+			padding-bottom: 5rem//
+			&::before
+		&__text-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 90%//
+			margin-top: 4.1rem//
+		&__headline
+			font-size: 3rem//
+			text-align: left//
+			margin-left: 0rem//
+			padding-right: 0rem//
+			margin-top: 2.3rem//
+			span
+		&__paragraph
+			font-size: 2rem//
+			margin-left: 0rem//
+			padding-right: 0rem//
+		&__links-container
+			+flex(row, wrap, flex-start, flex-start)//
+			margin-left: 0rem//
+		&__calculate-the-cost-link
+			width: 100%//
+			text-align: center//
+			&:hover
+		&__submit-your-application-link
+			width: 100%//
+			margin-left: 0rem//
+			text-align: center//
+			margin-top: 2rem//
+
+	.section1
+		background: $space-grey//
+		padding-bottom: 0rem//
+		&::before
+			content: none//
+		&__wrapper
+			+wrapper(100%, auto)//
+		&__tabs
+			+flex(row, wrap, flex-start, flex-start)//
+			top: 0rem//
+			left: 0rem//
+			display: none//
+		&__tabs-list-item
+			+flex(row, wrap, flex-start, flex-start)//
+			&:last-child
+		&__tabs-link
+			&::before
+		&__tabs-link.active
+			&::before
+		&__slider-container
+			padding-top: 4.4rem//
+			height: 108rem//
+			+flex(column, wrap, flex-start, center)//
+		&__slider-button
+			bottom: -3.2rem//
+			display: none//
+		&__prev-button
+			left: 10%//
+		&__next-button
+			left: calc(90% - 4rem)//
+		&__slider-button-icon
+		&__slider-prev-icon
+			&::before, &::after
+			&::before
+			&::after
+		&__slider-next-icon
+			&::before
+			&::after
+		&__pagination-container
+			bottom: -1.8rem//
+			left: 50%//
+			transform: translateX(-50%)//
+			display: none//
+		&__pagination-elem
+			&:last-child
+		&__pagination-elem.active
+		&__pagination-elem1
+		&__pagination-elem2
+		&__pagination-elem3
+		&__slider
+			+flex(column, wrap, flex-start, center)//
+		&__slide
+			+flex(column, wrap, flex-start, center)//
+			&.active
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide-text-container
+			width: 100%//
+			+flex(column, wrap, flex-start, center)//
+		&__slide-headline
+			width: 60%//
+			text-align: center//
+			padding-right: 0rem//
+			&::before
+				content: none//
+		&__slide-paragraph
+			width: 80%//
+			text-align: center//
+			padding-right: 0rem//
+		&__project-characteristics
+			width: 90%//
+			+flex(row, wrap, center, stretch)//
+		&__project-characteristic-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 42%//
+			margin: 1rem//
+			&:nth-child(3)
+				margin-top: 1rem//
+			&:nth-child(4)
+				margin-top: 1rem//
+		&__project-characteristic1
+			width: 100%//
+		&__project-characteristic2
+			width: 100%//
+		&__slide-image
+			+size(90%, 48.2rem)//
+			margin-top: 3rem//
+		&__slide-image1
+		&__slide-image2
+		&__slide-image3
+
+	.section2
+		background: $space-grey//
+		padding-bottom: 4.6rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			+wrapper(90%, auto)//
+		&__headline
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: none//
+			margin-top: 1rem//
+		&__separator
+			position: relative//
+			top: 0rem//
+			left: 0rem//
+			transform: none//
+			margin-top: 2.2rem//
+			&::before, &::after
+			&::before
+			&::after
+		&__video-container
+			+size(100%, 20rem)//
+			position: relative//
+			top: 0rem//
+			left: 0rem//
+			transform: none//
+			margin-top: 2.2rem//
+		&__video-overlay
+			&::before
+		&__video-play-button
+			+size(3.7rem, 3.7rem)//
+			&:hover
+			&::before
+				left: 50%//
+				border-width: 0.7rem 0 0.7rem 1.2rem//
+		&__video
+			width: 100%//
+			height: 100%//
+		&__paragraph
+			width: 96%//
+			font-size: 1.4rem//
+			color: #fff//
+			margin-top: 6rem//
+			&::before
+		&__form
+			width: 100%//
+			+flex(column, wrap, flex-start, flex-start)//
+			margin-top: 2.3rem//
+			position: relative//
+		&__input-container
+			+flex(column, wrap, flex-start, flex-start)//
+			margin-top: 4.8rem//
+			width: 100%//
+			&:nth-child(1)
+				margin-right: 0rem//
+				&::before
+			&:nth-child(2)
+				&::before
+		&__input
+			width: 100%//
+			color: #fff//
+			&::placeholder
+				color: #fff//
+		&__name-input
+		&__email-input
+		&__submit-button
+			width: 90%//
+			margin-left: 0rem//
+			position: absolute//
+			bottom: -7rem//
+			left: 50%//
+			transform: translateX(-50%)//
+			&:hover
+		&__checkbox-container
+			+flex(row, wrap, flex-start, center)//
+			margin-left: 0rem//
+		&__checkbox
+		&__checkbox:checked + &__checkbox-indicator::before
+		&__checkbox:checked + &__checkbox-indicator::after
+		&__checkbox-indicator
+			&::before
+			&::after
+		&__checkbox-description
+			font-size: 1.4rem//
+			color: #fff//
+
+	.section3
+		background: #fff//
+		padding-top: 6.1rem//
+		padding-bottom: 22rem//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+		&__headline
+		&__separator
+			&::before, &::after
+			&::before
+			&::after
+		&__content
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			margin-right: 0rem//
+			width: 94%//
+			margin-top: 25rem//
+			&:first-child
+				margin-top: 0rem//
+			&:last-child
+		&__block1
+		&__block2
+		&__block3
+		&__block-image-container
+			+size(100%, 42.1rem)//
+		&__block-image-container:hover &__block-image
+		&__block-image
+			+size(100%, 42.1rem)//
+		&__block-image1
+		&__block-image2
+		&__block-image3
+		&__text-container
+			+size(90%, auto)//
+			+flex(column, wrap, flex-start, flex-start)//
+			left: 0rem//
+			transform: translateX(0rem)//
+			&::before
+		&__text-container1
+			&::before
+		&__text-container2
+			&::before
+		&__text-container3
+			&::before
+		&__block-headline
+		&__block-list
+			+flex(column, wrap, flex-start, flex-start)//
+		&__block-list-item
+			&:first-child
+			&::before
+		&__block-list-link
+
+	.section4
+		display: none//
+
+	.section5
+		display: none//
+
+	.section6
+		padding-top: 3.4rem
+		padding-bottom: 32.6rem//
+		background: $space-grey//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__headline
+			color: $gold//
+		&__separator
+			&::before, &::after
+			&::before
+			&::after
+		&__paragraph
+			width: 80%//
+			color: #fff//
+			padding: 0rem 0rem//
+		&__content
+			width: 100%//
+			+flex(column, wrap, center, center)//
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+		&__block
+			+flex(column, wrap, flex-start, center)//
+			margin-right: 0rem//
+			width: 100%//
+			&:last-child
+		&__block1
+			margin-top: 0rem//
+		&__block2
+			margin-top: 14rem//
+		&__block3
+			margin-top: 21.6rem//
+		&__block-image-container
+			+size(100%, 42.1rem)//
+		&__block-image-container:hover &__block-image
+		&__block-image
+			+size(100%, 42.1rem)//
+			&::before
+		&__block-image1
+		&__block-image2
+		&__block-image3
+		&__text-container
+			+size(90%, auto)//
+			+flex(column, wrap, flex-start, flex-start)//
+			position: absolute//
+			top: 29rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+			margin-top: 0rem//
+			&::before
+		&__text-container1
+			&::before
+		&__text-container2
+			&::before
+		&__text-container3
+			&::before
+		&__block-headline
+		&__list
+			+flex(column, wrap, flex-start, flex-start)//
+		&__list-item
+			+flex(column, wrap, flex-start, flex-start)//
+			&:first-child
+			&::before
+		&__list-link
+
+	.section7
+		display: none//
+
+	.section8
+		background: $space-grey//
+		padding-top: 3rem//
+		padding-bottom: 11rem//
+		&::before
+			background: none//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			+wrapper(100%, auto)//
+		&__headline
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+		&__separator
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+			margin-top: 1.4rem//
+			&::before, &::after
+			&::before
+			&::after
+		&__paragraph
+			width: 80%//
+		&__paragraph1
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			padding: 0rem 0rem//
+			margin-top: 2rem//
+		&__content
+			width: 100%//
+			+flex(column, wrap, flex-start, center)//
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+		&__item
+			+flex(column, wrap, flex-start, center)//
+			width: 92%//
+			&::before
+				top: -1rem//
+				left: -1rem//
+		&__item1
+			margin-top: 3rem//
+			&::before
+		&__item2
+			margin-top: 11rem//
+			&::before
+		&__item3
+			margin-top: 11rem//
+			&::before
+		&__user-image-container
+			+size(100%, 35.7rem)//
+		&__user-image-container:hover &__user-image
+		&__user-image
+			+size(100%, 35.7rem)//
+		&__user-image1
+		&__user-image2
+		&__user-image3
+		&__text-container
+			width: 90%//
+			+flex(column, wrap, flex-start, center)//
+			position: absolute//
+			top: 30rem//
+			left: 50%//
+			transform: translateX(-50%)//
+		&__item-worker-name
+		&__item-worker-position
+		&__item-worker-experience
+		&__paragraph2
+			padding: 0rem 0rem//
+			display: none//
+			&::before
+		&__paragraph3
+			padding: 0rem 0rem//
+			display: none//
+
+	.section9
+		display: none//
+
+	.section10
+		background: $space-grey//
+		padding-bottom: 2.6rem//
+		+flex(column, wrap, flex-start, center)//
+		&::before
+			content: none//
+		&__wrapper
+			+flex(column, wrap, flex-start, center)//
+			width: 100%//
+		&__form
+			position: static//
+			top: 0rem//
+			left: 0rem//
+			transform: translateX(0rem)//
+			width: 100%//
+			+flex(column, wrap, center, center)//
+			background: $space-grey//
+			padding: 0rem 0rem//
+			padding-bottom: 1.3rem//
+			order: 1//
+		&__form-row
+			+flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__form-row1
+			+flex(row, wrap, center, flex-start)//
+		&__form-row2
+			+flex(row, wrap, center, flex-start)//
+			margin-top: 3.5rem//
+		&__form-row3
+			+flex(column, wrap, center, center)//
+		&__form-headline
+		&__input-container
+			+flex(column, wrap, flex-start, flex-start)//
+			width: 90%//
+			&::before
+		&__input-container1
+			margin-top: 1rem//
+			&::before
+		&__input-container2
+			margin-left: 0rem//
+			margin-top: 4rem//
+			&::before
+		&__input-container3
+			margin-top: 4rem//
+			&::before
+		&__input
+			width: 100%//
+			&::placeholder
+		&__name-input
+			width: 100%//
+		&__phone-input
+			width: 100%//
+		&__question-input
+			width: 100%//
+		&__checkbox-container
+			+flex(row, wrap, center, flex-start)//
+			width: 100%//
+		&__checkbox
+		&__checkbox:checked + &__checkbox-indicator::before,
+		&__checkbox:checked + &__checkbox-indicator::after
+		&__checkbox-indicator
+			&::before
+			&::after
+		&__checkbox-description
+		&__submit-button
+			width: 100%//
+			&:hover
+		&__address
+			width: 100%//
+			margin-top: 4.3rem//
+			order: 3//
+		&__socials-container
+			+flex(row, wrap, flex-start, flex-start)//
+			order: 4//
+		&__social-link
+			+flex(row, wrap, center, center)//
+			&:last-child
+			&:hover
+			svg
+				+flex(row, wrap, center, center)//
+				path
+		&__email-link
+		&__instagram-link
+		&__map
+			+size(100%, 46.5rem)//
+			order: 2//
+
+	.section11
+		display: none//
+
+	.modal
+		&__overlay
+		&__success-container
+			+size(100%, auto)//
+			&::before
+		&__close-button
+			&::before, &::after
+			&::before
+			&::after
+		&__success-paragraph
+
+	.to-top-link
+		display: none//
+// /* Mobile First Method */
+// /* Custom, iPhone Retina */
+// @media only screen and (min-width: 320px)
+// 	body
+// 		background: $media-green
+// /* Extra Small Devices, Phones */
+// @media only screen and (min-width: 480px)
+// 	body
+// 		background: $media-blue
+// /* Small Devices, Tablets */
+// @media only screen and (min-width: 768px)
+// 	body
+// 		background: $media-pink
+// /* Medium Devices, Desktops */
+// @media only screen and (min-width: 992px)
+// 	body
+// 		background: $media-orange
+// /* Large Devices, Wide Screens */
+// @media only screen and (min-width: 1300px)
+// 	body
+// 		background: $media-purple

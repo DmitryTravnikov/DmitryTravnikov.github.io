@@ -1,0 +1,73 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+/* Mobile First Method */
+/* Extra Small Devices, Phones (SM) */
+@media only screen and (min-width: 576px)
+	body
+	*
+		outline-color: $media-blue
+
+
+/* Small Devices, Tablets (MD) */
+@media only screen and (min-width: 768px)
+	body
+	*
+		outline-color: $media-pink
+
+	.projects
+		&__wrapper
+			+flex(row, wrap, center, center)
+		&__item
+			&:hover
+/* Medium Devices, Desktops (LG) */
+@media only screen and (min-width: 992px)
+	body
+	*
+		outline-color: $media-orange
+
+	.background
+		background: url('../assets/main__bg.gif') no-repeat center
+		background-size: cover
+		&::before
+
+	.header
+		+flex(row, wrap, center, flex-start)
+		&__menu
+			+flex(row, wrap, center, flex-start)
+			top: 0rem
+		&__menu-link
+			padding: 1rem 0rem
+			margin-right: 4rem
+			&::after
+				content: ''
+				+size(0.6rem, 0.6rem)
+				background: $green
+				position: absolute
+				top: 50%
+				right: -3.2rem
+				transform: translateY(-50%)
+			&::before
+			&:hover::before
+			&:hover
+			&:last-child::after
+				content: none
+
+	.projects
+		&__wrapper
+			+flex(row, wrap, center, center)
+		&__item
+			font-size: 4rem
+			&:hover
+/* Large Devices, Wide Screens (XL) */
+@media only screen and (min-width: 1200px)
+	body
+	*
+		outline-color: $media-purple
+
+	.projects
+		&__wrapper
+		&__item
+			width: 31%
+			text-align: center
+			&:hover

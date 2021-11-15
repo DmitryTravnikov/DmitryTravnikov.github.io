@@ -1,0 +1,234 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+/*  Desktop First Method */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1599px)
+	body
+	.stub
+		display: none
+
+	.content
+		&__main-slider
+			.owl-controls
+				.owl-page
+					@include flex(column, wrap, flex-start, center)//
+					&:first-child
+				.owl-page span
+					@include size(5rem, 2rem)
+					border-radius: 0
+					background: none
+					opacity: 1
+					margin: 0rem
+					margin-left: 0
+					transition: all 0.5s
+					position: relative
+				.owl-page span::before
+				.owl-page:first-child span::before
+				.owl-page:nth-child(2) span::before
+				.owl-page:nth-child(3) span::before
+				.owl-page:nth-child(4) span::before
+				.owl-page:nth-child(5) span::before
+				.owl-page span::after
+				.owl-page:first-child span::after
+				.owl-page:nth-child(2) span::after
+				.owl-page:nth-child(3) span::after
+				.owl-page:nth-child(4) span::after
+				.owl-page:nth-child(5) span::after
+				.owl-page.active span::after
+				.owl-page.active span::before
+		&__main-slider-slide
+		&__main-slider-slide1
+		&__main-slider-slide2
+		&__main-slider-slide3
+		&__main-slider-slide4
+		&__main-slider-slide5
+		&__section
+			@include size(90rem, 57rem)//
+
+	.home
+		&__slider
+			background: url('../assets/home__slide-bg.png') no-repeat 39rem 1rem//
+		&__slide
+		&__slide.active
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slider-headline
+			font-size: 6.2rem//
+			padding-right: 25rem//
+		&__slider-hire-link
+			&::before
+			&:hover::before
+		&__hire-link-arrow
+			&::before, &::after
+			&::before
+			&::after
+		&__slider-pagination-container
+			&::before
+		&__slider-pagination-link
+			padding-top: 1.8rem//
+			&::before
+		&__pagination-name
+		&__pagination-description
+		&__slider-pagination-link.active &__pagination-name,
+		&__slider-pagination-link.active &__pagination-description
+		&__slider-pagination-link.active::before
+
+	.works
+		&__hire-us-link
+			&:hover
+			&:active
+		&__headline
+		&__slider
+		&__slide-item
+		&__slide-item.left
+			width: 11.8rem//
+			top: 1rem//
+		&__slide-item.center
+			width: 28rem//
+		&__slide-item.right
+			width: 11.8rem//
+			top: 1rem//
+		&__slide-item-image
+		&__slide-item.left &__slide-item-image
+			@include size(11.8rem, 11.8rem)//
+		&__slide-item.center &__slide-item-image
+			@include size(28rem, 28rem)//
+		&__slide-item.right &__slide-item-image
+			@include size(11.8rem, 11.8rem)//
+		&__slide-item-headline
+		&__slide-item-paragraph
+		&__slide-item.left &__slide-item-headline
+		&__slide-item.left &__slide-item-paragraph
+		&__slide-item.right &__slide-item-headline
+		&__slide-item.right &__slide-item-paragraph
+		&__slider-button
+			&:hover
+			&:active
+		&__prev-button
+			left: 0rem//
+		&__next-button
+			right: 0rem//
+		&__prev-button &__slider-button-arrow-icon
+			&::before, &::after
+			&::before
+			&::after
+		&__next-button &__slider-button-arrow-icon
+			&::before, &::after
+			&::before
+			&::after
+
+	.about
+		&__figure
+		&__figure1
+			top: 2.7rem//
+			left: 42.3rem//
+		&__figure2
+			top: 25rem//
+			left: 27rem//
+		&__figure3
+			display: none//
+		&__figure4
+			top: 0.7rem//
+			left: 26.6rem//
+		&__hire-us-link
+			&:hover
+			&:active
+		&__headline
+			font-size: 6.2rem//
+			padding-right: 43rem//
+			@include size(100%, auto)//
+		&__career-link
+			&::before
+			&:hover::before
+		&__career-link-arrow
+			&::before, &::after
+			&::before
+			&::after
+		&__links-container
+		&__link
+			&:hover
+			&:first-child
+				background-size: cover
+			&:nth-child(2)
+			&:last-child
+			&:first-child::before, &:nth-child(2)::before, &:last-child::before
+			&:first-child::before
+			&:nth-child(2)::before
+			&:last-child::before
+
+	.contact
+		@include size(100%, 100%)//
+		&__container
+			@include size(90rem, 57rem)//
+		&__hire-us-link
+			&:hover
+			&:active
+		&__block
+		&__address
+		&__email
+		&__phone
+		&__behance
+			&:hover
+			&:active
+		&__dribble
+			&:hover
+			&:active
+		&__contact-us-link
+			&:hover
+			&:active
+
+	.hire-us
+		&__hire-us-link
+			&:hover
+			&:active
+		&__headline
+		&__form
+		&__row
+		&__inputs-row
+		&__checkbox-container
+		&__checkbox-container.active
+		&__checkbox-overlay
+		&__checkbox
+			&:checked + .hire-us__checkbox-indicator::before,
+			&:checked + .hire-us__checkbox-indicator::after
+			&:checked + .hire-us__checkbox-indicator + .hire-us__checkbox-description
+		&__checkbox-indicator
+			&::before
+			&::after
+		&__checkbox-description
+		&__input-label
+		&__user-name
+		&__user-email
+		&__input
+		&__input.active
+		&__input-label.active
+		&__submit-button
+			&:hover
+			&:active
+@media only screen and (max-width: 1199px)
+	body
+	.stub
+		display: flex
+// /* Mobile First Method */
+// /* Custom, iPhone Retina */
+// @media only screen and (min-width: 320px)
+// 	body
+// 		background: lightgreen
+// /* Extra Small Devices, Phones */
+// @media only screen and (min-width: 480px)
+// 	body
+// 		background: pink
+// /* Small Devices, Tablets */
+// @media only screen and (min-width: 768px)
+// 	body
+// 		background: lightblue
+// /* Medium Devices, Desktops */
+// @media only screen and (min-width: 992px)
+// 	body
+// 		background: orange
+// /* Large Devices, Wide Screens */
+// @media only screen and (min-width: 1200px)
+// 	body
+// 		background: purple

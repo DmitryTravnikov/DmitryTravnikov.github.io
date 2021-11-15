@@ -1,0 +1,46 @@
+@import 'variables/variables.sass'
+
+@mixin clearfix()
+	&::after
+		content: ''
+		display: table
+		clear: both
+
+@mixin wrapper($width, $height)
+	width: $width
+	height: $height
+	margin: 0 auto
+	
+@mixin flex($flex-direction, $flex-wrap, $justify-content, $align-items)
+	display: flex
+	flex-direction: $flex-direction
+	flex-wrap: $flex-wrap
+	justify-content: $justify-content
+	align-items: $align-items
+
+@mixin outline($color)
+	outline: 2px solid rgba($color, .6)
+	outline-offset: -2px
+
+@mixin size($width, $height)
+	width: $width
+	height: $height
+
+@mixin headlineStyle()
+	width: 100%
+	margin: 0rem
+	font-family: $osb
+	font-size: 4.2rem
+	line-height: 5.5rem
+	color: $headline-color
+	text-transform: uppercase
+	text-align: center
+
+@mixin paragraphStyle()
+	width: 100%
+	margin: 0rem
+	font-family: $osr
+	font-size: 1.6rem
+	line-height: 2.8rem
+	color: $paragraph-color
+	text-align: center

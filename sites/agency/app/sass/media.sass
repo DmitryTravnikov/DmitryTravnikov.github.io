@@ -1,0 +1,810 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+/* Mobile First Method */
+/* Extra Small Devices, Phones (SM) */
+@media only screen and (min-width: 576px)
+	body
+		background: $media-blue
+	*
+		outline-color: $media-blue
+
+	.header
+		&__wrapper
+		&__menu
+			+flex(row, wrap, center, flex-start)
+		&__menu-link
+			width: auto
+			margin-right: 1rem
+			padding: 2rem 1rem
+			&:last-child
+				margin-right: 0rem
+			&:hover
+
+	.main
+		&__wrapper
+		&__left
+			width: 80%
+		&__right
+			width: 80%
+		&__text-container
+		&__headline
+		&__paragraph
+		&__contact-us-link
+			&:hover
+		&__video-container
+		&__video-overlay
+		&__video-play-button
+			&::before
+		&__video
+
+	.we-do
+		&__wrapper
+		&__left
+			width: 90%
+		&__right
+			width: 90%
+		&__headline
+		&__paragraph
+		&__learn-more-link
+			&:hover
+		&__item
+			&:first-child
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item-headline
+		&__item-paragraph
+
+	.products
+		&__wrapper
+		&__headline
+		&__paragraph
+			width: 40rem
+		&__splitter
+		&__menu
+			width: 80%
+		&__menu-list-item
+		&__menu-link
+			&:hover
+		&__content-container
+			+size(100%, 61rem)
+		&__content
+			+flex(row, wrap, center, flex-start)
+			+size(100%, 61rem)
+		&__item
+			width: 40%
+			margin: 1rem
+			&:first-child
+				margin: 1rem
+			&::before
+			&:hover::before
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item5
+		&__item6
+		&__item7
+		&__item8
+
+	.m-team
+		&__wrapper
+		&__headline
+		&__paragraph
+			width: 40rem
+		&__splitter
+		&__content
+			+flex(row, wrap, center, flex-start)
+		&__worker
+			width: 40%
+			margin: 1rem
+			&:first-child
+				margin: 1rem
+		&__worker1
+		&__worker2
+		&__worker3
+		&__worker4
+		&__worker-pic
+		&__worker-name
+		&__worker-description
+		&__worker-socials
+		&__worker-social-link
+			&:last-child
+
+	.subscribe
+		&__wrapper
+		&__headline
+		&__paragraph
+		&__form
+			+flex(row, wrap, center, stretch)
+		&__email-input
+			width: auto
+			&::placeholder
+		&__button
+			margin-top: 0rem
+			margin-left: 1rem
+			&:hover
+
+	.contact
+		&__wrapper
+		&__headline
+		&__paragraph
+			width: 40rem
+		&__splitter
+		&__form
+			width: 46rem
+		&__form-row
+		&__input
+			&::placeholder
+		&__name-input
+		&__email-input
+		&__message-input
+		&__send-message-button
+			&:hover
+		&__info
+			width: 46rem
+		&__info-headline
+		&__address
+		&__email
+		&__phone
+
+	.modal
+		&__overlay
+		&__window
+			+size(40rem, 20rem)
+		&__subscribe-success
+		&__error-container
+		&__success-container
+		&__paragraph
+		&__subscribe-paragraph
+		&__error-paragraph
+		&__success-paragraph
+/* Small Devices, Tablets (MD) */
+@media only screen and (min-width: 768px)
+	body
+		background: $media-pink
+	*
+		outline-color: $media-pink
+
+	.main
+		&__wrapper
+		&__left
+			width: 70%
+		&__right
+			width: 70%
+		&__text-container
+		&__headline
+		&__paragraph
+		&__contact-us-link
+			&:hover
+		&__video-container
+		&__video-overlay
+		&__video-play-button
+			&::before
+		&__video
+
+	.we-do
+		&__wrapper
+		&__left
+			width: 70%
+		&__right
+			width: 100%
+			+flex(row, wrap, center, stretch)
+		&__headline
+		&__paragraph
+		&__learn-more-link
+			&:hover
+		&__item
+			width: 40%
+			margin: 2rem
+			&:first-child
+				margin: 2rem
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item-headline
+		&__item-paragraph
+
+	.products
+		&__wrapper
+		&__headline
+		&__paragraph
+		&__splitter
+		&__menu
+		&__menu-list-item
+		&__menu-link
+			&:hover
+		&__content-container
+		&__content
+		&__item
+			+size(29rem, 29rem)
+			&:first-child
+			&::before
+			&:hover::before
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item5
+		&__item6
+		&__item7
+		&__item8
+
+	.m-team
+		&__wrapper
+		&__headline
+		&__paragraph
+			width: 40rem
+		&__splitter
+		&__content
+			+flex(row, wrap, center, flex-start)
+		&__worker
+			width: 23rem
+			margin: 1rem
+			&:first-child
+				margin: 1rem
+		&__worker1
+		&__worker2
+		&__worker3
+		&__worker4
+		&__worker-pic
+		&__worker-name
+		&__worker-description
+		&__worker-socials
+		&__worker-social-link
+			&:last-child
+
+	.subscribe
+		&__wrapper
+		&__headline
+			width: 60rem
+		&__paragraph
+			width: 60rem
+		&__form
+		&__email-input
+			&::placeholder
+		&__button
+			&:hover
+
+	.contact
+		&__wrapper
+		&__headline
+		&__paragraph
+			width: 60rem
+		&__splitter
+		&__form
+			width: 90%
+		&__form-row
+		&__input
+			&::placeholder
+		&__name-input
+		&__email-input
+		&__message-input
+		&__send-message-button
+			&:hover
+		&__info
+			width: 90%
+		&__info-headline
+		&__address
+		&__email
+		&__phone
+
+	.copy
+		&__wrapper
+			+flex(row, wrap, space-between, center)
+		&__link
+		&__socials
+			margin-top: 0rem
+		&__social-link
+			&:hover
+			&:last-child
+			svg
+				path
+		&__twitter
+		&__linked-in
+			svg
+		&__google-plus
+			svg
+		&__facebook
+			svg
+/* Medium Devices, Desktops (LG) */
+@media only screen and (min-width: 992px)
+	body
+		background: $media-orange
+	*
+		outline-color: $media-orange
+
+	.main
+		&__wrapper
+		&__left
+			width: 60%
+		&__right
+			width: 60%
+		&__text-container
+		&__headline
+		&__paragraph
+		&__contact-us-link
+			&:hover
+		&__video-container
+		&__video-overlay
+		&__video-play-button
+			&::before
+		&__video
+
+	.we-do
+		&__wrapper
+		&__left
+		&__right
+		&__headline
+		&__paragraph
+		&__learn-more-link
+			&:hover
+		&__item
+			width: 30%
+			&:first-child
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item-headline
+		&__item-paragraph
+
+	.products
+		&__wrapper
+		&__headline
+		&__paragraph
+		&__splitter
+		&__menu
+		&__menu-list-item
+		&__menu-link
+			&:hover
+		&__content-container
+		&__content
+		&__item
+			width: 20%
+			&:first-child
+			&::before
+			&:hover::before
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item5
+			display: block
+		&__item6
+			display: block
+		&__item7
+			display: block
+		&__item8
+			display: block
+
+	.m-team
+		&__wrapper
+		&__headline
+		&__paragraph
+		&__splitter
+		&__content
+		&__worker
+			width: 22%
+			&:first-child
+		&__worker1
+		&__worker2
+		&__worker3
+		&__worker4
+		&__worker-pic
+		&__worker-name
+		&__worker-description
+		&__worker-socials
+		&__worker-social-link
+			&:last-child
+
+	.contact
+		&__wrapper
+			+flex(column, wrap, flex-start, flex-start)
+			position: relative
+		&__headline
+		&__paragraph
+			width: 100%
+			padding: 0rem 20%
+		&__splitter
+		&__form
+			width: 50%
+		&__form-row
+		&__input
+			width: 100%
+			&::placeholder
+		&__name-input
+		&__email-input
+		&__message-input
+		&__send-message-button
+			&:hover
+		&__info
+			width: 60rem
+			position: absolute
+			top: 22.3rem
+			right: -18rem
+			padding: 10rem 0rem 10rem 3rem
+			+flex(column, wrap, flex-start, flex-start)
+		&__info-headline
+			text-align: left
+		&__address
+			text-align: left
+			margin-top: 5rem
+		&__email
+			margin-top: 3rem
+		&__phone
+			margin-top: 3rem
+/* Large Devices, Wide Screens (XL) */
+@media only screen and (min-width: 1200px)
+	body
+		background: $media-purple
+	*
+		outline-color: $media-purple
+
+	.wrapper
+		+wrapper(125rem, auto)
+
+	.header
+		padding-top: 2.9rem
+		padding-bottom: 2.9rem
+		&__wrapper
+		&__menu
+			+flex(row, wrap, center, flex-start)
+		&__menu-link
+			padding-top: 4.2rem
+			padding-bottom: 3.1rem
+			padding-left: 2.4rem
+			padding-right: 2.4rem
+			margin-right: 2.8rem
+			&:last-child
+				margin-right: 0rem
+			&:hover
+
+	.main
+		padding-top: 6.4rem
+		padding-bottom: 11rem
+		&__wrapper
+			+flex(row, wrap, center, flex-start)
+		&__left
+			width: 50%
+		&__right
+			width: 50%
+			padding-top: 0.9rem
+			padding-left: 7.6rem
+		&__text-container
+			+flex(column, wrap, flex-start, flex-start)
+		&__headline
+			font-size: 6rem
+			line-height: 7.2rem
+			letter-spacing: 0.3rem
+			text-align: left
+		&__paragraph
+			padding-right: 9rem
+			text-align: left
+		&__contact-us-link
+			margin-top: 5.5rem
+			padding: 1.7rem 6.4rem
+			&:hover
+		&__video-container
+			margin-top: 0rem
+			width: 55.1rem
+		&__video-overlay
+		&__video-play-button
+			&::before
+		&__video
+
+	.we-do
+		padding-top: 6.6rem
+		padding-bottom: 8.8rem
+		position: relative
+		&::before
+			content: ''
+			+size(79%, .2rem)
+			background: #ECECEC
+			position: absolute
+			bottom: 0rem
+			left: 50%
+			transform: translateX(-50%)
+		&__wrapper
+			+flex(row, wrap, center, flex-start)
+		&__left
+			width: 50%
+			+flex(column, wrap, flex-start, flex-start)
+			padding-top: 3.7rem
+		&__right
+			width: 50%
+			+flex(row, wrap, space-between, flex-start)
+		&__headline
+			text-align: left
+		&__paragraph
+			text-align: left
+			margin-top: 3.3rem
+			padding-right: 10rem
+		&__learn-more-link
+			margin-top: 5.1rem
+			&:hover
+		&__item
+			width: 43%
+			+flex(column, wrap, flex-start, flex-start)
+			&:first-child
+		&__item1
+			background: url('../assets/we-do__icon1.webp') no-repeat 0rem 0rem
+		&__item2
+			background: url('../assets/we-do__icon2.webp') no-repeat 0rem 0rem
+		&__item3
+			background: url('../assets/we-do__icon3.webp') no-repeat 0rem 0rem
+			margin-top: 2.6rem
+		&__item4
+			background: url('../assets/we-do__icon4.webp') no-repeat 0rem 0rem
+			margin-top: 2.6rem
+		&__item-headline
+			margin-top: 0.4rem
+			text-align: left
+		&__item-paragraph
+			margin-top: 1.2rem
+			text-align: left
+
+	.products
+		padding-top: 9.3rem
+		padding-bottom: 6.4rem
+		&__wrapper
+		&__headline
+		&__paragraph
+			margin-top: 1.6rem
+			width: 50rem
+		&__splitter
+			margin-top: 2.6rem
+		&__menu
+			margin-top: 7.4rem
+		&__menu-list-item
+			margin-right: 3.2rem
+		&__menu-link
+			&:hover
+		&__content-container
+			margin-top: 4.4rem
+			+size(100%, 62rem)
+		&__content
+			+size(100%, 62rem)
+		&__item
+			+size(29rem, 29rem)
+			&:first-child
+			&::before
+			&:hover::before
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item5
+		&__item6
+		&__item7
+		&__item8
+
+	.m-team
+		display: none
+		&__wrapper
+		&__headline
+		&__paragraph
+		&__splitter
+		&__content
+		&__worker
+			&:first-child
+		&__worker1
+		&__worker2
+		&__worker3
+		&__worker4
+		&__worker-pic
+		&__worker-name
+		&__worker-description
+		&__worker-socials
+		&__worker-social-link
+			&:last-child
+
+	.d-team
+		display: block
+		background: #fff
+		padding-top: 5rem
+		padding-bottom: 11.6rem
+		&__wrapper
+			+flex(column, wrap, flex-start, flex-start)
+		&__headline
+			+headlineStyle()
+			text-align: left
+			position: relative
+			left: -1rem
+		&__paragraph
+			+paragraphStyle()
+			text-align: left
+			width: 46rem
+			margin-top: 2.4rem
+		&__splitter
+			outline: none
+			border: none
+			+size(13.2rem, .2rem)
+			background: $red
+			margin: 0rem
+			margin-top: 2.8rem
+		&__content
+			margin-top: 6.6rem
+			width: 100%
+			+flex(row, wrap, flex-start, flex-start)
+		&__block
+			width: calc(100% - 32rem)
+			padding-top: 1.3rem
+			padding-left: 7.2rem
+			position: relative
+		&__description
+			transition: .2s
+			position: absolute
+			top: 0rem
+			left: 0rem
+			display: none
+			&.active
+				display: block
+				position: static
+		&__description1
+		&__description2
+		&__description3
+		&__description4
+		&__worker-name
+			width: 100%
+			margin: 0rem
+			font-family: $ossb
+			font-size: 3rem
+			color: #333
+			text-transform: uppercase
+			text-align: left
+		&__worker-info
+			width: 100%
+			margin: 0rem
+			font-family: $osr
+			font-size: 1.6rem
+			line-height: 2.8rem
+			color: #737373
+			text-align: left
+			margin-top: 0.7rem
+			padding-right: 21rem
+		&__worker-socials
+			+flex(row, wrap, flex-start, flex-start)
+			margin-top: 1.2rem
+			padding-left: 0.4rem
+		&__worker-social-link
+			text-decoration: none
+			font-family: $osi
+			font-size: 1.8rem
+			color: #333
+			margin-right: 3.4rem
+			&:last-child
+				margin-right: 0rem
+		&__big-image
+			+size(32rem, 45.8rem)
+		&__workers
+			width: 100%
+			+flex(row, wrap, flex-start, flex-start)
+			margin-top: 2.3rem
+		&__worker-image-container
+			+flex(row, wrap, flex-start, flex-start)
+			position: relative
+			+size(19.8rem, 29.4rem)
+			margin-right: 2rem
+			&:last-child
+				margin-right: 0rem
+		&__worker-image
+			+size(19.8rem, 29.4rem)
+			cursor: pointer
+			&.active
+		&__worker-secondary-name
+			width: 100%
+			margin: 0rem
+			position: absolute
+			bottom: 0rem
+			left: 0rem
+			font-family: $ossb
+			font-size: 1.8rem
+			color: #fff
+			background: rgba(#000, 0.8)
+			opacity: 0
+			z-index: -1
+			text-transform: uppercase
+			text-align: center
+			padding: 0.8rem 0rem
+			transition: .2s
+			&.active
+				opacity: 1
+				z-index: 1
+
+	.subscribe
+		padding-top: 13.2rem
+		padding-bottom: 13.6rem
+		&__wrapper
+		&__headline
+			width: 100%
+			letter-spacing: .1rem
+		&__paragraph
+			width: 100%
+			margin-top: 3.2rem
+		&__form
+			margin-top: 6rem
+		&__email-input
+			width: 52.1rem
+			padding: 3.1rem 3.6rem
+			&::placeholder
+		&__button
+			padding: 3.1rem 5.8rem
+			margin-left: 2.2rem
+			&:hover
+
+	.contact
+		padding-top: 9.4rem
+		padding-bottom: 11rem
+		&__wrapper
+			+flex(column, wrap, flex-start, flex-start)
+		&__headline
+			text-align: left
+		&__paragraph
+			text-align: left
+			padding: 0rem 0rem
+			margin-top: 3.4rem
+			width: 70rem
+		&__splitter
+			margin: 0rem
+			margin-top: 5rem
+		&__form
+			margin-top: 7.6rem
+			width: 73.2rem
+		&__form-row
+			+flex(row, wrap, space-between, flex-start)
+		&__input
+			padding: 2.6rem 5.4rem
+			&::placeholder
+		&__name-input
+			width: 33.9rem
+		&__email-input
+			width: 33.9rem
+			margin-top: 0rem
+		&__message-input
+			margin-top: 4.5rem
+			padding: 3.2rem 5.4rem 2.6rem 5.4rem
+			height: 24.9rem
+		&__send-message-button
+			margin-top: 4.5rem
+			padding: 2.6rem 0rem
+			&:hover
+		&__info
+			top: 28.5rem
+			right: -18.8rem
+			padding-top: 14.1rem
+			padding-left: 8rem
+			padding-bottom: 14.5rem
+		&__info-headline
+		&__address
+			margin-top: 3.2rem
+			padding-right: 22rem
+			line-height: 2.8rem
+		&__email
+			margin-top: 1.7rem
+		&__phone
+			margin-top: 2.4rem
+
+	.copy
+		padding-top: 4.7rem
+		padding-bottom: 2.9rem
+		&__wrapper
+		&__link
+		&__socials
+			margin-top: 0.1rem
+		&__social-link
+			margin-right: 1.8rem
+			&:hover
+			&:last-child
+			svg
+				path
+		&__twitter
+		&__linked-in
+			svg
+		&__google-plus
+			svg
+		&__facebook
+			svg

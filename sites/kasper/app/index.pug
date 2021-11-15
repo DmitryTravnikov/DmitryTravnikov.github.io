@@ -1,0 +1,426 @@
+doctype html
+// [if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]
+// [if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]
+// [if IE 8]><html lang="ru" class="lt-ie9"><![endif]
+// [if gt IE 8]><!
+html(lang="ru")
+	// <![endif]
+	head
+		title Kasper
+		meta(charset="UTF-8")
+		meta(name="description" content="")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		// FontAwesome
+		link(rel="stylesheet", href="libs/fontawesome/css/fontawesome-all.min.css")
+		// OwlCarousel
+		link(rel="stylesheet", href="libs/owl-carousel/owl.carousel.css")
+		link(rel="stylesheet", href="libs/owl-carousel/owl.theme.css")
+		link(rel="stylesheet", href="libs/owl-carousel/owl.transitions.css")
+		// Animate
+		link(rel="stylesheet", href="css/animate.css")
+		// Slider.UI
+		link(rel='stylesheet', href='http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css')
+		// NoUI Slider
+		link(rel="stylesheet", href="libs/nouislider/nouislider.min.css")
+		// Powerange
+		link(rel="stylesheet", href="libs/powerange/powerange.min.css")
+		// General
+		link(rel="shortcut icon" href="assets/!js.png" type="image/x-icon")
+		link(rel="stylesheet" href="css/libs.min.css")
+		link(rel="stylesheet", href="css/normalize.css")
+		link(rel="stylesheet", href="css/fonts.css")
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700&display=swap" rel="stylesheet")
+		link(rel="stylesheet" href="css/main.css")
+		link(rel="stylesheet", href="css/keyframes.css")
+		link(rel="stylesheet", href="css/media.css")
+		link(rel="stylesheet", href="libs/selecter/jquery.fs.selecter.min.css")
+	body
+		// Content Start
+		.top-panel
+			.top-panel__wrapper.wrapper
+				.top-panel__left
+					a.prevdef.top-panel__logo(href="#footer")
+						img.top-panel__image(src="assets/kasper-logo.png", alt="pic")
+				.top-panel__right
+					nav.top-panel__menu-container
+						ul.top-panel__menu
+							li.top-panel__menu-list-item
+								a.prevdef.active.top-panel__menu-link(href="#home") Home
+							li.top-panel__menu-list-item
+								a.prevdef.top-panel__menu-link(href="#services") Services
+							li.top-panel__menu-list-item
+								a.prevdef.top-panel__menu-link(href="#portfolio") Portfolio
+							li.top-panel__menu-list-item
+								a.prevdef.top-panel__menu-link(href="#about") About
+							li.top-panel__menu-list-item
+								a.prevdef.top-panel__menu-link(href="#prices") Pricing
+							li.top-panel__menu-list-item
+								a.prevdef.top-panel__menu-link(href="#contact") Contact
+					.top-panel__search-panel-container
+						.top-panel__search-input-container
+							input.top-panel__search-input(type="text")
+						.top-panel__search-icon
+
+		.home#home
+			.home__wrapper
+				.home__slider
+					.home__slide1.home__slide
+						.home__slide-text-container
+							h3.home__slide-headline HELLO WORLD!
+								|
+								br
+								| WE ARE KASPER,WE MAKE ART.
+							p.home__slide-paragraph Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+					.home__slide2.home__slide
+						.home__slide-text-container
+							h3.home__slide-headline HELLO WORLD!
+								|
+								br
+								| WE ARE KASPER,WE MAKE ART.
+							p.home__slide-paragraph Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+					.home__slide3.home__slide
+						.home__slide-text-container
+							h3.home__slide-headline HELLO WORLD!
+								|
+								br
+								| WE ARE KASPER,WE MAKE ART.
+							p.home__slide-paragraph Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+				button.home__prev-button
+				button.home__next-button
+
+		.services#services
+			h3.services__headline Services
+			.services__separator
+			p.services__paragraph Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+			.services__wrapper.wrapper
+				.services__content
+					.services__content-row.services__content-row1
+						.services__content-item.services__content-item1
+							.services__item-text-container
+								h3.services__item-headline Vorem amet intuitive
+								p.services__item-paragraph Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
+						.services__content-item.services__content-item2
+							.services__item-text-container
+								h3.services__item-headline Vorem amet intuitive
+								p.services__item-paragraph Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
+					.services__content-row.services__content-row2
+						.services__content-item.services__content-item3
+							.services__item-text-container
+								h3.services__item-headline Vorem amet intuitive
+								p.services__item-paragraph Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
+						.services__content-item.services__content-item4
+							.services__item-text-container
+								h3.services__item-headline Vorem amet intuitive
+								p.services__item-paragraph Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
+
+		.services-secondary
+			.services-secondary__wrapper
+				.services-secondary__content
+					h3.services-secondary__headline Our designs come with...
+					ul.services-secondary__list
+						li.services-secondary__list-item Responsive Design
+						li.services-secondary__list-item Modern And Clean Design
+						li.services-secondary__list-item Clean Code
+						li.services-secondary__list-item Browser Friendly
+
+		.portfolio#portfolio
+			h3.portfolio__headline Portfolio
+			.portfolio__separator
+			p.portfolio__paragraph Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+			nav.portfolio__ajax-menu-container
+				ul.portfolio__ajax-menu
+					li.portfolio__ajax-menu-list-item
+						a.active.portfolio__ajax-menu-link(href="index.html") All
+					li.portfolio__ajax-menu-list-item
+						a.portfolio__ajax-menu-link(href="app.html") App
+					li.portfolio__ajax-menu-list-item
+						a.portfolio__ajax-menu-link(href="photography.html") Photography
+					li.portfolio__ajax-menu-list-item
+						a.portfolio__ajax-menu-link(href="web.html") Web
+					li.portfolio__ajax-menu-list-item
+						a.portfolio__ajax-menu-link(href="print.html") Print
+			.portfolio__content-container
+				.portfolio__content
+					.portfolio__item.portfolio__item1
+						a.prevdef.portfolio__button(href="#")
+						.portfolio__text-container
+							h3.portfolio__content-headline Awesome Image
+							p.portfolio__content-paragraph Photography
+					.portfolio__item.portfolio__item2
+						a.prevdef.portfolio__button(href="#")
+						.portfolio__text-container
+							h3.portfolio__content-headline Awesome Image
+							p.portfolio__content-paragraph App
+					.portfolio__item.portfolio__item3
+						a.prevdef.portfolio__button(href="#")
+						.portfolio__text-container
+							h3.portfolio__content-headline Awesome Image
+							p.portfolio__content-paragraph Web
+					.portfolio__item.portfolio__item4
+						a.prevdef.portfolio__button(href="#")
+						.portfolio__text-container
+							h3.portfolio__content-headline Awesome Image
+							p.portfolio__content-paragraph Print
+					.portfolio__item.portfolio__item5
+						a.prevdef.portfolio__button(href="#")
+						.portfolio__text-container
+							h3.portfolio__content-headline Awesome Image
+							p.portfolio__content-paragraph Photography
+					.portfolio__item.portfolio__item6
+						a.prevdef.portfolio__button(href="#")
+						.portfolio__text-container
+							h3.portfolio__content-headline Awesome Image
+							p.portfolio__content-paragraph App
+			a.prevdef.portfolio__more-link(href="#") More
+		
+		.portfolio-vid
+			.portfolio-vid__video-section
+				.portfolio-vid__video-container
+					.portfolio-vid__video-overlay
+						.portfolio-vid__text-container
+							h3.portfolio-vid__video-headline Super Awesome Video Here
+							p.portfolio-vid__video-paragraph It's all you need
+							a.prevdef.portfolio-vid__video-link(href="#") See more
+					iframe.portfolio-vid__video(width="560" height="315" src="https://www.youtube.com/embed/pZ12_E5R3qc?enablejsapi=1&playerapiid=ytplayer&controls=1&showinfo=1&autohide=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
+		.about-us#about
+			h3.about-us__headline About Us
+			.about-us__separator
+			p.about-us__paragraph Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+
+		.about-us__statistics
+			.about-us__statistics-wrapper.wrapper
+				.about-us__statistics-item.about-us__statistics-item1
+					.about-us__statistics-icon.about-us__statistics-icon1
+					p.about-us__statistics-count 1,263
+					p.about-us__statistics-description Coffee Drinks
+				.about-us__statistics-item.about-us__statistics-item2
+					.about-us__statistics-icon.about-us__statistics-icon2
+					p.about-us__statistics-count 256
+					p.about-us__statistics-description Completed Projects
+				.about-us__statistics-item.about-us__statistics-item3
+					.about-us__statistics-icon.about-us__statistics-icon3
+					p.about-us__statistics-count 1,743
+					p.about-us__statistics-description Mail Sent
+				.about-us__statistics-item.about-us__statistics-item4
+					.about-us__statistics-icon.about-us__statistics-icon4
+					p.about-us__statistics-count 17
+					p.about-us__statistics-description Awards Recieved
+
+		.about-us__testimonials
+			.about-us__testimonials-wrapper.wrapper
+				.about-us__testimonials-block1.about-us__testimonials-block
+					h3.about-us__testimonials-headline Testimonials
+					p.about-us__testimonials-paragraph Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+					.about-us__testimonials-slider
+						.about-us__testimonials-slide.about-us__testimonials-slide1
+							.about-us__testimonials-reviews-container
+								.about-us__testimonials-review
+									img.about-us__testimonials-user-pic(src="http://placekitten.com/100/100", alt="pic")
+									.about-us__testimonials-text-container
+										p.about-us__testimonials-user-text Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+										p.about-us__testimonials-author Joht Doe, CEO
+								.about-us__testimonials-review
+									img.about-us__testimonials-user-pic(src="http://placekitten.com/100/100", alt="pic")
+									.about-us__testimonials-text-container
+										p.about-us__testimonials-user-text Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+										p.about-us__testimonials-author Joht Doe, CEO
+						.about-us__testimonials-slide.about-us__testimonials-slide2
+							.about-us__testimonials-reviews-container
+								.about-us__testimonials-review
+									img.about-us__testimonials-user-pic(src="http://placekitten.com/100/100", alt="pic")
+									.about-us__testimonials-text-container
+										p.about-us__testimonials-user-text Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+										p.about-us__testimonials-author Joht Doe, CEO
+								.about-us__testimonials-review
+									img.about-us__testimonials-user-pic(src="http://placekitten.com/100/100", alt="pic")
+									.about-us__testimonials-text-container
+										p.about-us__testimonials-user-text Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+										p.about-us__testimonials-author Joht Doe, CEO
+						.about-us__testimonials-slide.about-us__testimonials-slide3
+							.about-us__testimonials-reviews-container
+								.about-us__testimonials-review
+									img.about-us__testimonials-user-pic(src="http://placekitten.com/100/100", alt="pic")
+									.about-us__testimonials-text-container
+										p.about-us__testimonials-user-text Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+										p.about-us__testimonials-author Joht Doe, CEO
+								.about-us__testimonials-review
+									img.about-us__testimonials-user-pic(src="http://placekitten.com/100/100", alt="pic")
+									.about-us__testimonials-text-container
+										p.about-us__testimonials-user-text Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+										p.about-us__testimonials-author Joht Doe, CEO
+				.about-us__testimonials-block2.about-us__testimonials-block
+					.about-us__testimonials-headline Our Skills
+					.about-us__testimonials-paragraph Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+					.about-us__testimonials-diagrams-container
+							p.about-us__testimonials-diagram-name Adobe
+							.about-us__testimonials-diagram.about-us__testimonials-diagram1
+								.about-us__testimonials-diagram-progress
+							p.about-us__testimonials-diagram-name HTML & CSS
+							.about-us__testimonials-diagram.about-us__testimonials-diagram2
+								.about-us__testimonials-diagram-progress
+							p.about-us__testimonials-diagram-name Javascript
+							.about-us__testimonials-diagram.about-us__testimonials-diagram3
+								.about-us__testimonials-diagram-progress
+							p.about-us__testimonials-diagram-name PHP
+							.about-us__testimonials-diagram.about-us__testimonials-diagram4
+								.about-us__testimonials-diagram-progress
+
+		.about-us__quote
+			.about-us__quote-wrapper.wrapper
+				p.about-us__quote-text “ACCUMSAN ID CURABITUR ET PORTITOR MAURIS BLANDIT DOLOR LOREM SOME EST OUR DONEC STIN LORTIOS”
+				p.about-us__quote-author John Doe
+
+		.prices#prices
+			h3.prices__headline Pricing
+			.prices__separator
+			p.prices__paragraph Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+			.prices__wrapper.wrapper
+				.prices__item.prices__item1
+					.prices__tariff-name-container
+						p.prices__tariff-name Basic
+						p.prices__tariff-price #[sup $] 19 #[sub /MO]
+					p.prices__tariff-feature.prices__tariff-feature1 Feature N0 1
+					p.prices__tariff-feature.prices__tariff-feature2 Extra Feature
+					p.prices__tariff-feature.prices__tariff-feature3 Feature N0 2
+					p.prices__tariff-feature.prices__tariff-feature4 Feature
+					a.prevdef.prices__buy-button(href="#") Buy Now
+				.prices__item.prices__item2
+					.prices__tariff-name-container
+						p.prices__tariff-name Premium
+						p.prices__tariff-price #[sup $] 29 #[sub /MO]
+					p.prices__tariff-feature.prices__tariff-feature1 Feature N0 1
+					p.prices__tariff-feature.prices__tariff-feature2 Extra Feature
+					p.prices__tariff-feature.prices__tariff-feature3 Feature N0 2
+					p.prices__tariff-feature.prices__tariff-feature4 Feature
+					a.prevdef.prices__buy-button(href="#") Buy Now
+				.prices__item.prices__item3
+					.prices__tariff-name-container
+						p.prices__tariff-name Pro
+						p.prices__tariff-price #[sup $] 39 #[sub /MO]
+					p.prices__tariff-feature.prices__tariff-feature1 Feature N0 1
+					p.prices__tariff-feature.prices__tariff-feature2 Extra Feature
+					p.prices__tariff-feature.prices__tariff-feature3 Feature N0 2
+					p.prices__tariff-feature.prices__tariff-feature4 Feature
+					a.prevdef.prices__buy-button(href="#") Buy Now
+				.prices__item.prices__item4
+					.prices__tariff-name-container
+						p.prices__tariff-name Platinum
+						p.prices__tariff-price #[sup $] 49 #[sub /MO]
+					p.prices__tariff-feature.prices__tariff-feature1 Feature N0 1
+					p.prices__tariff-feature.prices__tariff-feature2 Extra Feature
+					p.prices__tariff-feature.prices__tariff-feature3 Feature N0 2
+					p.prices__tariff-feature.prices__tariff-feature4 Feature
+					a.prevdef.prices__buy-button(href="#") Buy Now
+			p.prices__paragraph2 Contact us if you have special request
+			a.prevdef.prices__contact-us-link(href="#contact") Contact Us
+
+		.prices-subscribe
+			.prices-subscribe__wrapper.wrapper
+				.prices-subscribe__input-container
+					form.prices-subscribe__form(action="" method="POST")
+						input.prices-subscribe__email(type="text" placeholder="your mail")
+						button.prevdef.prices-subscribe__submit-button Subscribe
+				p.prices-subscribe__paragraph Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blan dit aliquet elit, eget tincidunt.
+
+		.contact-us#contact
+			h3.contact-us__headline Contact Us
+			.contact-us__separator
+			p.contact-us__paragraph Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+			.contact-us__wrapper.wrapper
+				.contact-us__block.contact-us__block1
+					form.contact-us__form(action="" method="POST")
+						input.contact-us__user-name.contact-us__input(type="text" placeholder="your name")
+						input.contact-us__user-email.contact-us__input(type="text" placeholder="your mail")
+						textarea.contact-us__user-message.contact-us__input(placeholder="your message")
+						button.prevdef.contact-us__send-message-button Send message
+				.contact-us__block.contact-us__block2
+					.contact-us__phones-container
+						p.contact-us__phone-paragraph Get In Touch
+						p.contact-us__phone.contact-us__phone1 +00 123.456.789
+						p.contact-us__phone.contact-us__phone2 +00 123.456.789
+					.contact-us__address-container
+						p.contact-us__address-paragraph Where We Are
+						p.contact-us__address Awesome Address 17
+							|
+							br
+							| New York, NYC
+							br
+							| 123-4567-890
+							br
+							| USA
+
+		footer.footer#footer
+			.footer__wrapper.wrapper
+				a.prevdef.footer__logo(href="#home")
+					img.footer__logo-image(src="assets/kasper-logo.png", alt="pic")
+				p.footer__paragraph We Are Social
+				.footer__socials-container
+					a.prevdef.footer__social-link(href="#")
+						svg(aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-facebook-f fa-w-10 fa-3x")
+							path(fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" class="" data-darkreader-inline-fill="" style="--darkreader-inline-fill:currentColor;")
+					a.prevdef.footer__social-link(href="#")
+						svg(aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-twitter fa-w-16 fa-3x")
+							path(fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" class="" data-darkreader-inline-fill="" style="--darkreader-inline-fill:currentColor;")
+					a.prevdef.footer__social-link(href="#")
+						svg(aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-plus-g" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-google-plus-g fa-w-20 fa-3x")
+							path(fill="currentColor" d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z" class="" data-darkreader-inline-fill="" style="--darkreader-inline-fill:currentColor;")
+					a.prevdef.footer__social-link(href="#")
+						svg(aria-hidden="true" focusable="false" data-prefix="fab" data-icon="dribbble" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-dribbble fa-w-16 fa-3x")
+							path(fill="currentColor" d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z" class="" data-darkreader-inline-fill="" style="--darkreader-inline-fill:currentColor;")
+				p.footer__copyright &copy; 2014 - #[span Kasper] All Rights Reserved
+
+		.modal
+			.modal__overlay
+			.modal__subscribtion-error.modal__block
+				p.modal__subscribtion-error-paragraph Enter your email, please!
+			.modal__subscribtion-success.modal__block
+				p.modal__subscribtion-success-paragraph Thank you for subscribing!
+			.modal__send-message-error.modal__block
+				p.modal__send-message-error-paragraph Fill all the inputs, please!
+			.modal__send-message-success.modal__block
+				p.modal__send-message-success-paragraph Thank you for your message!
+
+		a.prevdef.to-top-link(href="#home")
+		// Content End
+		// Scripts
+		// General
+		script(src="js/libs.min.js")
+		script(src="js/common.js")
+		// Modernizr
+		script(src="libs/modernizr/modernizr.js")
+		// Selector
+		script(src="libs/selecter/jquery.fs.selecter.min.js")
+		//- script.
+		//- 	$(document).ready(function() {
+		//- 		$('select').selecter();
+		//- 	});
+		// Masked Input
+		script(src="libs/masked-input/jquery.maskedinput.min.js")
+		// NoUI Slider
+		script(src="libs/nouislider/nouislider.min.js")
+		// Powerange
+		script(src="libs/powerange/powerange.min.js")
+		// Slider.UI (https://jqueryui.com/slider/)
+		script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js')
+		// WoW
+		script(src="libs/wow/wow.min.js")
+		script
+			//- | new WOW().init();
+		// Parallax
+		script(src="libs/parallax/parallax.min.js")
+		script
+			//- | var scene = document.getElementById('scene');
+			//- | var parallaxInstance = new Parallax(scene);
+		// PageScroll2id
+		script(src="libs/pagescroll2id/jquery.malihu.PageScroll2id.min.js")
+		// OwlCarousel
+		script(src="libs/owl-carousel/owl.carousel.min.js")
+		//  
+				[if lt IE 9]>
+				<script src="libs/html5shiv/es5-shim.min.js"></script>
+				<script src="libs/html5shiv/html5shiv.min.js"></script>
+				<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+				<script src="libs/respond/respond.min.js"></script>
+				<![endif]

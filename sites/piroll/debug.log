@@ -1,0 +1,12 @@
+[0209/172450.735:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0218/192552.612:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0226/231200.592:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0302/215705.584:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0303/121100.860:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0305/111532.487:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0305/112715.412:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0307/100047.169:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0308/144715.649:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0308/144848.850:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0309/112216.752:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1125/141635.948:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)

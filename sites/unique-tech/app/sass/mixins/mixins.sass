@@ -1,0 +1,60 @@
+@import 'variables/variables.sass'
+
+@mixin clearfix()
+	&::after
+		content: ''
+		display: table
+		clear: both
+
+@mixin wrapper($width, $height)
+	width: $width
+	height: $height
+	margin: 0 auto
+	
+@mixin flex($flex-direction, $flex-wrap, $justify-content, $align-items)
+	display: flex
+	flex-direction: $flex-direction
+	flex-wrap: $flex-wrap
+	justify-content: $justify-content
+	align-items: $align-items
+
+@mixin outline($color)
+	outline: 2px solid rgba($color, .6)
+	outline-offset: -2px
+
+@mixin size($width, $height)
+	width: $width
+	height: $height
+
+@mixin headlineStyle()
+	width: auto
+	margin: 0rem
+	font-family: $sspb
+	font-size: 1.6rem
+	color: #fff
+	text-transform: uppercase
+	text-align: center
+	background: $space-grey
+	border-radius: .3rem
+	padding: 1.3rem 9.1rem
+	box-shadow: $bsh
+	position: relative
+
+
+@mixin arrowRight()
+	&::before
+		content: ''
+		+size(7.2rem, 11.3rem)
+		background: url('assets/headline-arrow-right.webp') no-repeat 0rem 0rem
+		position: absolute
+		top: 2.8rem
+		right: -7.2rem
+
+@mixin arrowLeft()
+	&::before
+		content: ''
+		+size(7.4rem, 11.5rem)
+		background: url('assets/headline-arrow-left.webp') no-repeat 0rem 0rem
+		position: absolute
+		top: 2.8rem
+		left: -7.2rem

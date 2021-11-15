@@ -1,0 +1,275 @@
+doctype html
+// [if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]
+// [if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]
+// [if IE 8]><html lang="ru" class="lt-ie9"><![endif]
+// [if gt IE 8]><!
+html(lang="ru")
+	// <![endif]
+	head
+		title Agency
+		meta(charset="UTF-8")
+		meta(name="description" content="")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		// OwlCarousel
+		link(rel="stylesheet", href="libs/owl-carousel/owl.carousel.css")
+		link(rel="stylesheet", href="libs/owl-carousel/owl.theme.css")
+		link(rel="stylesheet", href="libs/owl-carousel/owl.transitions.css")
+		// Bootstrap
+		link(rel="stylesheet", href="libs/bootstrap/bootstrap-grid-4.3.1.min.css")
+		// General
+		link(rel="shortcut icon" href="assets/!js.png" type="image/x-icon")
+		link(rel="stylesheet", href="css/normalize.css")
+		link(rel="stylesheet", href="css/fonts.css")
+		link(rel="stylesheet", href="css/keyframes.css")
+		link(rel="stylesheet" href="css/main.css")
+		link(rel="stylesheet", href="css/media.css")
+	body
+		// Content Start
+
+		// Header
+		header.header#home
+			.header__wrapper.wrapper
+				nav.header__menu
+					a.prevdef.header__menu-link(href="#home") Home
+					a.prevdef.header__menu-link(href="#portfolio") Portfolio
+					a.prevdef.header__menu-link(href="#about-us") About Us
+					a.prevdef.header__menu-link(href="#contact") Contact
+
+		// Main Section
+		.main
+			.main__wrapper.wrapper
+				.main__left
+					.main__text-container
+						h1.main__headline Our Strong Organaisation
+						p.main__paragraph Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt  ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.
+						a.prevdef.main__contact-us-link(href="#") Contact Us
+				.main__right
+					.main__video-container
+						.main__video-overlay
+							a.prevdef.main__video-play-button(href="#")
+						iframe.main__video(width="560" height="315" src="https://www.youtube.com/embed/pZ12_E5R3qc?enablejsapi=1&playerapiid=ytplayer&controls=1&showinfo=1&autohide=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
+		// What We Do
+		.we-do
+			.we-do__wrapper.wrapper
+				.we-do__left
+					h3.we-do__headline Do you know we can provide for you?
+					p.we-do__paragraph Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut labore et.
+					a.prevdef.we-do__learn-more-link(href="#") Learn More
+				.we-do__right
+					.we-do__item.we-do__item1
+						h3.we-do__item-headline Management
+						p.we-do__item-paragraph Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor
+					.we-do__item.we-do__item2
+						h3.we-do__item-headline UI / UX Design
+						p.we-do__item-paragraph Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor
+					.we-do__item.we-do__item3
+						h3.we-do__item-headline Logo / Branding
+						p.we-do__item-paragraph Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor
+					.we-do__item.we-do__item4
+						h3.we-do__item-headline Animation
+						p.we-do__item-paragraph Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor
+
+		// Products
+		.products#portfolio
+			.products__wrapper.wrapper
+				h3.products__headline Feature Products
+				p.products__paragraph Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do eiusmod tempor incididunt ut labore et.
+				hr.products__splitter
+				ul.products__menu
+					li.products__menu-list-item
+						a.active.products__menu-link(href="index.html") All
+					li.products__menu-list-item
+						a.products__menu-link(href="print-template.html") Print Template
+					li.products__menu-list-item
+						a.products__menu-link(href="web-template.html") Web Template
+					li.products__menu-list-item
+						a.products__menu-link(href="user-interface.html") User Interface
+					li.products__menu-list-item
+						a.products__menu-link(href="mock-up.html") Mock-Up
+				.products__content-container
+					.products__content
+						a.prevdef.products__item.products__item1(href="#")
+						a.prevdef.products__item.products__item2(href="#")
+						a.prevdef.products__item.products__item3(href="#")
+						a.prevdef.products__item.products__item4(href="#")
+						a.prevdef.products__item.products__item5(href="#")
+						a.prevdef.products__item.products__item6(href="#")
+						a.prevdef.products__item.products__item7(href="#")
+						a.prevdef.products__item.products__item8(href="#")
+
+		// Mobile Team
+		.m-team
+			.m-team__wrapper.wrapper
+				h3.m-team__headline Meet Our Team
+				p.m-team__paragraph Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.
+				hr.m-team__splitter
+				.m-team__content
+					.m-team__worker.m-team__worker1
+						img.m-team__worker-pic(src="http://source.unsplash.com/198x217", alt="pic")
+						h3.m-team__worker-name Mark Waugh
+						p.m-team__worker-description Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.
+						.m-team__worker-socials
+							a.prevdef.m-team__worker-social-link(href="#") Facebook
+							a.prevdef.m-team__worker-social-link(href="#") Dribble
+							a.prevdef.m-team__worker-social-link(href="#") Behance
+							a.prevdef.m-team__worker-social-link(href="#") Twitter
+					.m-team__worker.m-team__worker2
+						img.m-team__worker-pic(src="http://source.unsplash.com/198x217", alt="pic")
+						h3.m-team__worker-name Mark Waugh
+						p.m-team__worker-description Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.
+						.m-team__worker-socials
+							a.prevdef.m-team__worker-social-link(href="#") Facebook
+							a.prevdef.m-team__worker-social-link(href="#") Dribble
+							a.prevdef.m-team__worker-social-link(href="#") Behance
+							a.prevdef.m-team__worker-social-link(href="#") Twitter
+					.m-team__worker.m-team__worker3
+						img.m-team__worker-pic(src="http://source.unsplash.com/198x217", alt="pic")
+						h3.m-team__worker-name Mark Waugh
+						p.m-team__worker-description Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.
+						.m-team__worker-socials
+							a.prevdef.m-team__worker-social-link(href="#") Facebook
+							a.prevdef.m-team__worker-social-link(href="#") Dribble
+							a.prevdef.m-team__worker-social-link(href="#") Behance
+							a.prevdef.m-team__worker-social-link(href="#") Twitter
+					.m-team__worker.m-team__worker4
+						img.m-team__worker-pic(src="http://source.unsplash.com/198x217", alt="pic")
+						h3.m-team__worker-name Mark Waugh
+						p.m-team__worker-description Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.
+						.m-team__worker-socials
+							a.prevdef.m-team__worker-social-link(href="#") Facebook
+							a.prevdef.m-team__worker-social-link(href="#") Dribble
+							a.prevdef.m-team__worker-social-link(href="#") Behance
+							a.prevdef.m-team__worker-social-link(href="#") Twitter
+
+		// Desktop Team
+		.d-team#about-us
+			.d-team__wrapper.wrapper
+				h3.d-team__headline Meet Our Team
+				p.d-team__paragraph Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.
+				hr.d-team__splitter
+				.d-team__content
+					img.d-team__big-image(src="http://source.unsplash.com/320x458", alt="pic")
+					.d-team__block
+						.d-team__description.d-team__description1.active
+							h3.d-team__worker-name Mark Waugh1
+							p.d-team__worker-info Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.
+							.d-team__worker-socials
+								a.prevdef.d-team__worker-social-link(href="#") Facebook
+								a.prevdef.d-team__worker-social-link(href="#") Dribble
+								a.prevdef.d-team__worker-social-link(href="#") Behance
+								a.prevdef.d-team__worker-social-link(href="#") Twitter
+						.d-team__description.d-team__description2
+							h3.d-team__worker-name Mark Waugh2
+							p.d-team__worker-info Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.
+							.d-team__worker-socials
+								a.prevdef.d-team__worker-social-link(href="#") Facebook
+								a.prevdef.d-team__worker-social-link(href="#") Dribble
+								a.prevdef.d-team__worker-social-link(href="#") Behance
+								a.prevdef.d-team__worker-social-link(href="#") Twitter
+						.d-team__description.d-team__description3
+							h3.d-team__worker-name Mark Waugh3
+							p.d-team__worker-info Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.
+							.d-team__worker-socials
+								a.prevdef.d-team__worker-social-link(href="#") Facebook
+								a.prevdef.d-team__worker-social-link(href="#") Dribble
+								a.prevdef.d-team__worker-social-link(href="#") Behance
+								a.prevdef.d-team__worker-social-link(href="#") Twitter
+						.d-team__description.d-team__description4
+							h3.d-team__worker-name Mark Waugh4
+							p.d-team__worker-info Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.
+							.d-team__worker-socials
+								a.prevdef.d-team__worker-social-link(href="#") Facebook
+								a.prevdef.d-team__worker-social-link(href="#") Dribble
+								a.prevdef.d-team__worker-social-link(href="#") Behance
+								a.prevdef.d-team__worker-social-link(href="#") Twitter
+						.d-team__workers
+							.d-team__worker-image-container
+								img.d-team__worker-image.active(src="http://source.unsplash.com/320x458", alt="pic")
+								p.d-team__worker-secondary-name.active Mark Waugh1
+							.d-team__worker-image-container
+								img.d-team__worker-image(src="http://source.unsplash.com/322x458", alt="pic")
+								p.d-team__worker-secondary-name Mark Waugh2
+							.d-team__worker-image-container
+								img.d-team__worker-image(src="http://source.unsplash.com/324x458", alt="pic")
+								p.d-team__worker-secondary-name Mark Waugh3
+							.d-team__worker-image-container
+								img.d-team__worker-image(src="http://source.unsplash.com/326x458", alt="pic")
+								p.d-team__worker-secondary-name Mark Waugh4
+
+		// Subscribe
+		.subscribe
+			.subscribe__wrapper.wrapper
+				h3.subscribe__headline Design tips, tricks, and freebies. Delivered weekly.
+				p.subscribe__paragraph Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.
+				form.subscribe__form(action="" method="POST")
+					input.subscribe__email-input(type="text" placeholder="Email Address...")
+					button.prevdef.subscribe__button Subscribe
+
+		// Contact
+		.contact#contact
+			.contact__wrapper.wrapper
+				h3.contact__headline Get In Touch
+				p.contact__paragraph Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.
+				hr.contact__splitter
+				form.contact__form(action="" method="POST")
+					.contact__form-row
+						input.contact__input.contact__name-input(type="text" placeholder="Name")
+						input.contact__input.contact__email-input(type="text" placeholder="Your Mail")
+					textarea.contact__input.contact__message-input(placeholder="Type your message")
+					button.prevdef.contact__send-message-button Send Message
+				.contact__info
+					h3.contact__info-headline Contact Info
+					a.prevdef.contact__address(href="#") Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh
+					a.prevdef.contact__email(href="#") redwan@deviserweb.com
+					a.prevdef.contact__phone(href="#") (+88) 017 617 46373
+
+		// Copy
+		.copy
+			.copy__wrapper.wrapper
+				a.prevdef.copy__link(href="#") &copy; Copyright @Junaed 2016, All rights reserved.
+				.copy__socials
+					a.prevdef.copy__social-link.copy__twitter(href="#")
+						svg(aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-twitter fa-w-16 fa-3x")
+							path(fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" class="" data-darkreader-inline-fill="" style="--darkreader-inline-fill:currentColor;")
+					a.prevdef.copy__social-link.copy__linked-in(href="#")
+						svg(aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-linkedin-in fa-w-14 fa-3x")
+							path(fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" class="" data-darkreader-inline-fill="" style="--darkreader-inline-fill:currentColor;")
+					a.prevdef.copy__social-link.copy__google-plus(href="#")
+						svg(aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-plus-g" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-google-plus-g fa-w-20 fa-3x")
+							path(fill="currentColor" d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z" class="" data-darkreader-inline-fill="" style="--darkreader-inline-fill:currentColor;")
+					a.prevdef.copy__social-link.copy__facebook(href="#")
+						svg(aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-facebook-f fa-w-10 fa-3x")
+							path(fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" class="" data-darkreader-inline-fill="" style="--darkreader-inline-fill:currentColor;")
+
+		// Modals
+		.modal__overlay
+		.modal__subscribe-success.modal__window
+			p.modal__subscribe-paragraph.modal__paragraph You subscribed us!
+		.modal__error-container.modal__window
+			p.modal__error-paragraph.modal__paragraph Fill all the inputs, please!
+		.modal__success-container.modal__window
+			p.modal__success-paragraph.modal__paragraph Our customers will contact you soon!
+
+		// To Top
+		a.prevdef.to-top(href="#home")
+		
+		// Content End
+		// Scripts
+		// General
+		script(src="libs/jquery/jquery-3.3.1.min.js")
+		script(src="js/common.js")
+		// Masked Input
+		script(src="libs/masked-input/jquery.maskedinput.min.js")
+		// PageScroll2id
+		script(src="libs/pagescroll2id/jquery.malihu.PageScroll2id.min.js")
+		// OwlCarousel
+		script(src="libs/owl-carousel/owl.carousel.min.js")
+		//  
+				[if lt IE 9]>
+				<script src="libs/html5shiv/es5-shim.min.js"></script>
+				<script src="libs/html5shiv/html5shiv.min.js"></script>
+				<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+				<script src="libs/respond/respond.min.js"></script>
+				<![endif]

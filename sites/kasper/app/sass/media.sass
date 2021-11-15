@@ -1,0 +1,2403 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+/*  Desktop First Method */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1300px)
+	body
+
+	.top-panel
+		&__wrapper
+			@include flex(column, wrap, center, center)//
+			width: 80%//
+			padding-bottom: 4rem//
+		&__left
+		&__right
+			@include flex(row, wrap, center, center)//
+		&__logo
+		&__image
+		&__menu-container
+			width: 100%//
+			margin-top: 3rem//
+		&__menu
+			@include flex(row, wrap, center, center)//
+			width: 100%//
+		&__menu-list-item
+			@include flex(row, wrap, center, center)//
+			margin-right: 2rem//
+			&:last-child
+		&__menu-link
+			padding: 2rem .7rem 2rem//
+			&::before
+		&__menu-link.active
+		&__menu-link.active::before
+		&__search-panel-container
+			@include flex(row, wrap, center, center)//
+			margin-top: 3.6rem//
+		&__search-input-container
+		&__search-input
+			left: 0rem//
+		&__search-input.active
+		&__search-icon
+
+	.home
+		@include size(100%, auto)//
+		padding-top: 30.5rem//
+		padding-bottom: 5rem//
+		&__wrapper
+		&__slider
+			width: 100%//
+			.owl-controls
+				bottom: -3.3rem//
+				.owl-page
+					&:last-child
+				.owl-page span
+				.owl-page.active span
+		&__slide
+			@include flex(row, wrap, center, center)
+			width: 100%//
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide-text-container
+			width: 80%//
+			padding-right: 0rem//
+			@include flex(column, wrap, center, center)//
+			text-align: center//
+		&__slide-headline
+			width: 100%//
+		&__slide-paragraph
+			width: 100%//
+		&__prev-button, &__next-button
+			display: none//
+		&__prev-button::before, &__prev-button::after, &__next-button::before, &__next-button::after
+		&__prev-button::before, &__prev-button::after
+		&__prev-button::before
+		&__prev-button::after
+		&__next-button::before, &__next-button::after
+		&__next-button::before
+		&__next-button::after
+		&__prev-button
+		&__next-button
+
+	.services
+		padding-top: 3.7rem//
+		padding-bottom: 7.7rem//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 40%//
+			padding: 0rem 2rem//
+		&__wrapper
+			width: 80%//
+		&__content
+			margin-top: 3.2rem//
+		&__content-row
+			@include flex(row, wrap, flex-start, center)//
+		&__content-row1
+		&__content-row2
+			margin-top: 2rem//
+		&__content-item
+			width: 50%//
+			@include flex(row, wrap, flex-start, center)//
+			padding-left: 2rem//
+			padding-right: 2rem//
+			padding-top: 7rem//
+			text-align: center//
+			margin-top: 0rem//
+			&:first-child
+				margin-top: 0rem//
+		&__content-item1
+			background: url('../assets/services__icon1.jpg') no-repeat 50% 1rem//
+		&__content-item2
+			background: url('../assets/services__icon2.jpg') no-repeat 50% 1rem//
+		&__content-item3
+			background: url('../assets/services__icon3.jpg') no-repeat 50% 1rem//
+		&__content-item4
+			background: url('../assets/services__icon4.jpg') no-repeat 50% 1rem//
+		&__item-text-container
+		&__item-headline
+		&__item-paragraph
+
+	.services-secondary
+		padding-top: 0rem//
+		padding-bottom: 0rem//
+		background: $space-grey//
+		&__wrapper
+			@include flex(row, wrap, flex-end, center)//
+		&__content
+			width: 100%//
+			padding-left: 2rem//
+			padding-right: 2rem//
+			@include flex(column, wrap, center, center)//
+		&__headline
+		&__list
+		&__list-item
+			&:first-child
+			&::before
+
+	.portfolio
+		padding-top: 5.5rem//
+		padding-bottom: 5.5rem//
+		@include flex(column, wrap, center, center)//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 40%//
+		&__ajax-menu-container
+			@include flex(row, wrap, center, center)//
+			margin-top: 6.9rem//
+		&__ajax-menu
+			@include flex(row, wrap, center, center)//
+		&__ajax-menu-list-item
+			margin-right: 0rem//
+			&:last-child
+		&__ajax-menu-link
+			padding-left: 1.4rem//
+			padding-right: 1.4rem//
+		&__ajax-menu-link.active
+		&__content-container
+			@include size(100%, 32rem)//
+		&__content
+			@include flex(row, wrap, center, center)//
+			@include size(100%, 100%)//
+		&__item
+			@include size(30%, 32rem)//
+			@include flex(column, wrap, flex-end, flex-start)//
+			&:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
+				display: none//
+			&:nth-child(2)
+				margin-top: 0rem//
+			&:first-child
+				margin-right: 2rem//
+			&:nth-child(odd)
+			&:nth-child(even)
+		&__item:hover &__text-container
+		&__item:hover &__button
+		&__button
+			&::before, &::after
+			&::before
+			&::after
+		&__text-container
+			width: 100%//
+		&__content-headline
+		&__content-paragraph
+		&__more-link
+			&:hover
+			&:active
+
+	.about-us
+		background: #fff//
+		padding-top: 4.3rem//
+		padding-bottom: 4.1rem//
+		&__headline
+		&__separator
+		&__paragraph
+			width: 30%//
+		&__statistics
+			padding: 0rem//
+		&__statistics-wrapper
+			@include flex(row, wrap, center, center)//
+			width: 100%//
+			padding: 5rem 0rem//
+		&__statistics-item
+			@include flex(column, wrap, center, center)//
+			width: 20%//
+			margin: 2rem//
+		&__statistics-item1
+			margin-top: 2rem//
+		&__statistics-item2
+		&__statistics-item3
+		&__statistics-item4
+		&__statistics-icon
+		&__statistics-icon
+			&::before
+			&::after
+		&__statistics-icon1
+		&__statistics-icon2
+		&__statistics-icon3
+		&__statistics-icon4
+		&__statistics-count
+		&__statistics-description
+		&__testimonials
+			padding-top: 5.8rem//
+			padding-bottom: 4.6rem//
+		&__testimonials-wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__testimonials-block
+			@include size(100%, auto)//
+			@include flex(column, wrap, center, center)//
+		&__testimonials-block2
+			margin-top: 5rem//
+		&__testimonials-headline
+			margin-left: 0rem//
+			text-align: center//
+		&__testimonials-paragraph
+			margin-left: 0rem//
+			width: 40%//
+			text-align: center//
+		&__testimonials-slider
+			width: 50%//
+			.owl-controls
+				bottom: -1.6rem//
+				left: 49%//
+				.owl-page
+				.owl-page span
+				.owl-page.active span
+		&__testimonials-slide
+			padding: 0rem 7% 1rem//
+		&__testimonials-reviews-container
+			@include flex(column, wrap, flex-start, flex-start)//
+			width: 100%//
+			padding: 0rem//
+		&__testimonials-review
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+			padding-bottom: 2rem//
+			&::before
+				width: 95%//
+				left: 50%//
+				transform: translateX(-50%)//
+			&:last-child
+			&::before
+		&__testimonials-user-pic
+		&__testimonials-text-container
+			@include size(100%, auto)//
+			padding: 0rem//
+		&__testimonials-user-text
+			text-align: center//
+			margin-top: 2rem//
+		&__testimonials-author
+			margin-top: 1.5rem//
+		&__testimonials-block2 &__testimonials-headline
+			margin-left: 0rem//
+		&__testimonials-block2 &__testimonials-paragraph
+			margin-left: 0rem//
+		&__testimonials-diagrams-container
+			padding-left: 2rem//
+			padding-right: 2rem//
+			width: 100%//
+			@include flex(column, wrap, center, center)//
+		&__testimonials-diagram-name
+			&:first-child
+		&__testimonials-diagram
+			width: 40%//
+			&::before
+		&__testimonials-diagram1::before
+			display: none//
+		&__testimonials-diagram2::before
+			display: none//
+		&__testimonials-diagram3::before
+			display: none//
+		&__testimonials-diagram4::before
+			display: none//
+		&__testimonials-diagram1::after
+			display: none//
+		&__testimonials-diagram2::after
+			display: none//
+		&__testimonials-diagram3::after
+			display: none//
+		&__testimonials-diagram4::after
+			display: none//
+		&__testimonials-diagram-progress
+		&__testimonials-diagram1 &__testimonials-diagram-progress
+			width: 87.8%//
+		&__testimonials-diagram2 &__testimonials-diagram-progress
+			width: 84.4%//
+		&__testimonials-diagram3 &__testimonials-diagram-progress
+			width: 70.4%//
+		&__testimonials-diagram4 &__testimonials-diagram-progress
+			width: 74.6%//
+		&__quote
+			padding: 5rem 0rem//
+		&__quote-wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__quote-text
+		&__quote-author
+
+	.prices
+		padding-top: 4.7rem//
+		padding-bottom: 5.1rem//
+		@include flex(column, wrap, center, center)//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 40%//
+		&__wrapper
+			@include flex(row, wrap, space-around, flex-start)//
+			@include wrapper(100%, auto)//
+			padding-top: 4.9rem//
+		&__item
+			@include size(24%, auto)//
+			@include flex(column, wrap, center, center)//
+			margin-top: 0rem//
+			padding-bottom: 4rem//
+			padding-left: 0.5rem//
+			padding-right: 0.5rem//
+			background: $space-grey//
+			margin: .1rem
+		&__item1
+			margin-top: 0rem//
+		&__item2
+		&__item3
+		&__item4
+		&__tariff-name-container
+			@include flex(column, wrap, center, center)//
+			&::before
+			&::after
+		&__tariff-name
+			color: #fff//
+			width: 100%//
+		&__tariff-price
+			color: #fff//
+			width: 100%//
+			sup
+				color: #fff//
+			sub
+				color: #fff//
+		&__tariff-feature
+			color: #fff//
+			width: 100%//
+			&::before
+		&__tariff-feature1
+		&__tariff-feature2
+		&__tariff-feature3
+		&__tariff-feature4
+			&::before
+		&__tariff-feature:last-child::before
+		&__buy-button
+			color: #fff//
+			&:hover
+			&:active
+		&__paragraph2
+			margin-top: 4.9rem//
+		&__contact-us-link
+			&:hover
+			&:active
+
+	.prices-subscribe
+		padding: 5.5rem 0rem//
+		&__wrapper
+			@include flex(row, wrap, center, center)//
+			width: 100%//
+		&__input-container
+			width: 45%//
+		&__form
+			@include flex(row, wrap, space-between, center)//
+		&__email
+			padding: 2.2rem 0.2rem 2.2rem 2.6rem//
+			background: none//
+			width: 50%//
+			&::placeholder
+		&__submit-button
+			&:hover
+			&:active
+		&__paragraph
+			width: 45%//
+			padding-left: 2.2rem//
+			padding-right: 0rem//
+			margin-top: 0rem//
+			text-align: center//
+
+	.contact-us
+		padding-top: 4.4rem//
+		padding-bottom: 5.1rem//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 40%//
+		&__wrapper
+			@include flex(row, wrap, space-between, column)//
+			padding-top: 5rem//
+			width: 100%//
+		&__block
+		&__block1
+			width: 70%//
+		&__block2
+			width: 25%//
+			margin-top: 0rem//
+			@include flex(column, wrap, center, flex-start)//
+			text-align: left//
+		&__form
+			@include flex(column, wrap, center, center)//
+			padding: 0rem 5%//
+		&__input
+			width: 100%//
+			&:first-child
+			&::placeholder
+		&__user-name
+		&__user-email
+		&__user-message
+		&__send-message-button
+			margin-top: 3.3rem//
+			&:hover
+			&:active
+		&__phones-container
+			padding-left: 0rem//
+			@include flex(column, wrap, flex-start, flex-start)//
+		&__phone-paragraph
+			width: 100%//
+		&__phone
+			margin-top: 1.4rem//
+			&:last-child
+		&__address-container
+			margin-top: 9rem//
+			padding-left: 0rem//
+		&__address-paragraph
+			width: 100%//
+		&__address
+			margin-top: 1.4rem//
+
+	.footer
+		padding-top: 4rem//
+		&__wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__logo
+		&__logo-image
+		&__paragraph
+			&::before
+		&__socials-container
+			@include flex(row, wrap, center, center)//
+		&__social-link
+			@include flex(row, wrap, center, center)//
+			&:last-child
+			svg
+				@include flex(row, wrap, center, center)//
+				path
+		&__social-link:nth-child(2)
+			svg
+		&__social-link:nth-child(3)
+			svg
+		&__social-link:hover svg path
+		&__copyright
+			span
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+	body
+
+	.top-panel
+		&__wrapper
+			@include flex(column, wrap, center, center)//
+			width: 80%//
+			padding-bottom: 4rem//
+		&__left
+		&__right
+			@include flex(row, wrap, center, center)//
+		&__logo
+		&__image
+		&__menu-container
+			width: 100%//
+			margin-top: 3rem//
+		&__menu
+			@include flex(row, wrap, center, center)//
+			width: 100%//
+		&__menu-list-item
+			@include flex(row, wrap, center, center)//
+			margin-right: 2rem//
+			&:last-child
+		&__menu-link
+			padding: 2rem .7rem 2rem//
+			&::before
+		&__menu-link.active
+		&__menu-link.active::before
+		&__search-panel-container
+			@include flex(row, wrap, center, center)//
+			margin-top: 3.6rem//
+		&__search-input-container
+		&__search-input
+			left: 0rem//
+		&__search-input.active
+		&__search-icon
+
+	.home
+		@include size(100%, auto)//
+		padding-top: 30.5rem//
+		padding-bottom: 5rem//
+		&__wrapper
+		&__slider
+			width: 100%//
+			.owl-controls
+				bottom: -3.3rem//
+				.owl-page
+					&:last-child
+				.owl-page span
+				.owl-page.active span
+		&__slide
+			@include flex(row, wrap, center, center)
+			width: 100%//
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide-text-container
+			width: 80%//
+			padding-right: 0rem//
+			@include flex(column, wrap, center, center)//
+			text-align: center//
+		&__slide-headline
+			width: 100%//
+		&__slide-paragraph
+			width: 100%//
+		&__prev-button, &__next-button
+			display: none//
+		&__prev-button::before, &__prev-button::after, &__next-button::before, &__next-button::after
+		&__prev-button::before, &__prev-button::after
+		&__prev-button::before
+		&__prev-button::after
+		&__next-button::before, &__next-button::after
+		&__next-button::before
+		&__next-button::after
+		&__prev-button
+		&__next-button
+
+	.services
+		padding-top: 3.7rem//
+		padding-bottom: 7.7rem//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 50%//
+			padding: 0rem 2rem//
+		&__wrapper
+			width: 80%//
+		&__content
+			margin-top: 3.2rem//
+		&__content-row
+			@include flex(row, wrap, flex-start, center)//
+		&__content-row1
+		&__content-row2
+			margin-top: 2rem//
+		&__content-item
+			width: 50%//
+			@include flex(row, wrap, flex-start, center)//
+			padding-left: 2rem//
+			padding-right: 2rem//
+			padding-top: 7rem//
+			text-align: center//
+			margin-top: 0rem//
+			&:first-child
+				margin-top: 0rem//
+		&__content-item1
+			background: url('../assets/services__icon1.jpg') no-repeat 50% 1rem//
+		&__content-item2
+			background: url('../assets/services__icon2.jpg') no-repeat 50% 1rem//
+		&__content-item3
+			background: url('../assets/services__icon3.jpg') no-repeat 50% 1rem//
+		&__content-item4
+			background: url('../assets/services__icon4.jpg') no-repeat 50% 1rem//
+		&__item-text-container
+		&__item-headline
+		&__item-paragraph
+
+	.services-secondary
+		padding-top: 0rem//
+		padding-bottom: 0rem//
+		background: $space-grey//
+		&__wrapper
+			@include flex(row, wrap, flex-end, center)//
+		&__content
+			width: 100%//
+			padding-left: 2rem//
+			padding-right: 2rem//
+			@include flex(column, wrap, center, center)//
+		&__headline
+		&__list
+		&__list-item
+			&:first-child
+			&::before
+
+	.portfolio
+		padding-top: 5.5rem//
+		padding-bottom: 5.5rem//
+		@include flex(column, wrap, center, center)//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 50%//
+		&__ajax-menu-container
+			@include flex(row, wrap, center, center)//
+			margin-top: 6.9rem//
+		&__ajax-menu
+			@include flex(row, wrap, center, center)//
+		&__ajax-menu-list-item
+			margin-right: 0rem//
+			&:last-child
+		&__ajax-menu-link
+			padding-left: 1.4rem//
+			padding-right: 1.4rem//
+		&__ajax-menu-link.active
+		&__content-container
+			@include size(100%, 32rem)//
+		&__content
+			@include flex(row, wrap, center, center)//
+			@include size(100%, 100%)//
+		&__item
+			@include size(50%, 32rem)//
+			@include flex(column, wrap, flex-end, flex-start)//
+			&:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
+				display: none//
+			&:nth-child(2)
+				margin-top: 0rem//
+			&:first-child
+				margin-right: 0rem//
+			&:nth-child(odd)
+			&:nth-child(even)
+		&__item:hover &__text-container
+		&__item:hover &__button
+		&__button
+			&::before, &::after
+			&::before
+			&::after
+		&__text-container
+			width: 100%//
+		&__content-headline
+		&__content-paragraph
+		&__more-link
+			&:hover
+			&:active
+
+	.about-us
+		background: #fff//
+		padding-top: 4.3rem//
+		padding-bottom: 4.1rem//
+		&__headline
+		&__separator
+		&__paragraph
+			width: 30%//
+		&__statistics
+			padding: 0rem//
+		&__statistics-wrapper
+			@include flex(row, wrap, center, center)//
+			width: 100%//
+			padding: 5rem 0rem//
+		&__statistics-item
+			@include flex(column, wrap, center, center)//
+			width: 33%//
+			margin: 5rem//
+		&__statistics-item1
+			margin-top: 5rem//
+		&__statistics-item2
+		&__statistics-item3
+		&__statistics-item4
+		&__statistics-icon
+		&__statistics-icon
+			&::before
+			&::after
+		&__statistics-icon1
+		&__statistics-icon2
+		&__statistics-icon3
+		&__statistics-icon4
+		&__statistics-count
+		&__statistics-description
+		&__testimonials
+			padding-top: 5.8rem//
+			padding-bottom: 4.6rem//
+		&__testimonials-wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__testimonials-block
+			@include size(100%, auto)//
+			@include flex(column, wrap, center, center)//
+		&__testimonials-block2
+			margin-top: 5rem//
+		&__testimonials-headline
+			margin-left: 0rem//
+			text-align: center//
+		&__testimonials-paragraph
+			margin-left: 0rem//
+			width: 40%//
+			text-align: center//
+		&__testimonials-slider
+			width: 50%//
+			.owl-controls
+				bottom: -1.6rem//
+				left: 49%//
+				.owl-page
+				.owl-page span
+				.owl-page.active span
+		&__testimonials-slide
+			padding: 0rem 7% 1rem//
+		&__testimonials-reviews-container
+			@include flex(column, wrap, flex-start, flex-start)//
+			width: 100%//
+			padding: 0rem//
+		&__testimonials-review
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+			padding-bottom: 2rem//
+			&::before
+				width: 95%//
+				left: 50%//
+				transform: translateX(-50%)//
+			&:last-child
+			&::before
+		&__testimonials-user-pic
+		&__testimonials-text-container
+			@include size(100%, auto)//
+			padding: 0rem//
+		&__testimonials-user-text
+			text-align: center//
+			margin-top: 2rem//
+		&__testimonials-author
+			margin-top: 1.5rem//
+		&__testimonials-block2 &__testimonials-headline
+			margin-left: 0rem//
+		&__testimonials-block2 &__testimonials-paragraph
+			margin-left: 0rem//
+		&__testimonials-diagrams-container
+			padding-left: 2rem//
+			padding-right: 2rem//
+			width: 100%//
+			@include flex(column, wrap, center, center)//
+		&__testimonials-diagram-name
+			&:first-child
+		&__testimonials-diagram
+			width: 40%//
+			&::before
+		&__testimonials-diagram1::before
+			display: none//
+		&__testimonials-diagram2::before
+			display: none//
+		&__testimonials-diagram3::before
+			display: none//
+		&__testimonials-diagram4::before
+			display: none//
+		&__testimonials-diagram1::after
+			display: none//
+		&__testimonials-diagram2::after
+			display: none//
+		&__testimonials-diagram3::after
+			display: none//
+		&__testimonials-diagram4::after
+			display: none//
+		&__testimonials-diagram-progress
+		&__testimonials-diagram1 &__testimonials-diagram-progress
+			width: 87.8%//
+		&__testimonials-diagram2 &__testimonials-diagram-progress
+			width: 84.4%//
+		&__testimonials-diagram3 &__testimonials-diagram-progress
+			width: 70.4%//
+		&__testimonials-diagram4 &__testimonials-diagram-progress
+			width: 74.6%//
+		&__quote
+			padding: 5rem 0rem//
+		&__quote-wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__quote-text
+		&__quote-author
+
+	.prices
+		padding-top: 4.7rem//
+		padding-bottom: 5.1rem//
+		@include flex(column, wrap, center, center)//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 40%//
+		&__wrapper
+			@include flex(row, wrap, space-around, flex-start)//
+			@include wrapper(100%, auto)//
+			padding-top: 4.9rem//
+		&__item
+			@include size(24%, auto)//
+			@include flex(column, wrap, center, center)//
+			margin-top: 0rem//
+			padding-bottom: 4rem//
+			padding-left: 0.5rem//
+			padding-right: 0.5rem//
+			background: $space-grey//
+			margin: .1rem
+		&__item1
+			margin-top: 0rem//
+		&__item2
+		&__item3
+		&__item4
+		&__tariff-name-container
+			@include flex(column, wrap, center, center)//
+			&::before
+			&::after
+		&__tariff-name
+			color: #fff//
+			width: 100%//
+		&__tariff-price
+			color: #fff//
+			width: 100%//
+			sup
+				color: #fff//
+			sub
+				color: #fff//
+		&__tariff-feature
+			color: #fff//
+			width: 100%//
+			&::before
+		&__tariff-feature1
+		&__tariff-feature2
+		&__tariff-feature3
+		&__tariff-feature4
+			&::before
+		&__tariff-feature:last-child::before
+		&__buy-button
+			color: #fff//
+			&:hover
+			&:active
+		&__paragraph2
+			margin-top: 4.9rem//
+		&__contact-us-link
+			&:hover
+			&:active
+
+	.prices-subscribe
+		padding: 5.5rem 0rem//
+		&__wrapper
+			@include flex(row, wrap, center, center)//
+			width: 100%//
+		&__input-container
+			width: 45%//
+		&__form
+			@include flex(row, wrap, space-between, center)//
+		&__email
+			padding: 2.2rem 0.2rem 2.2rem 2.6rem//
+			background: none//
+			width: 50%//
+			&::placeholder
+		&__submit-button
+			&:hover
+			&:active
+		&__paragraph
+			width: 45%//
+			padding-left: 2.2rem//
+			padding-right: 0rem//
+			margin-top: 0rem//
+			text-align: center//
+
+	.contact-us
+		padding-top: 4.4rem//
+		padding-bottom: 5.1rem//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 40%//
+		&__wrapper
+			@include flex(row, wrap, space-between, column)//
+			padding-top: 5rem//
+			width: 100%//
+		&__block
+		&__block1
+			width: 70%//
+		&__block2
+			width: 25%//
+			margin-top: 0rem//
+			@include flex(column, wrap, center, flex-start)//
+			text-align: left//
+		&__form
+			@include flex(column, wrap, center, center)//
+			padding: 0rem 5%//
+		&__input
+			width: 100%//
+			&:first-child
+			&::placeholder
+		&__user-name
+		&__user-email
+		&__user-message
+		&__send-message-button
+			margin-top: 3.3rem//
+			&:hover
+			&:active
+		&__phones-container
+			padding-left: 0rem//
+			@include flex(column, wrap, flex-start, flex-start)//
+		&__phone-paragraph
+			width: 100%//
+		&__phone
+			margin-top: 1.4rem//
+			&:last-child
+		&__address-container
+			margin-top: 9rem//
+			padding-left: 0rem//
+		&__address-paragraph
+			width: 100%//
+		&__address
+			margin-top: 1.4rem//
+
+	.footer
+		padding-top: 4rem//
+		&__wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__logo
+		&__logo-image
+		&__paragraph
+			&::before
+		&__socials-container
+			@include flex(row, wrap, center, center)//
+		&__social-link
+			@include flex(row, wrap, center, center)//
+			&:last-child
+			svg
+				@include flex(row, wrap, center, center)//
+				path
+		&__social-link:nth-child(2)
+			svg
+		&__social-link:nth-child(3)
+			svg
+		&__social-link:hover svg path
+		&__copyright
+			span
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+	body
+
+	.top-panel
+		&__wrapper
+			@include flex(column, wrap, center, center)//
+			width: 90%//
+			padding-bottom: 4rem//
+		&__left
+		&__right
+			@include flex(row, wrap, center, center)//
+		&__logo
+		&__image
+		&__menu-container
+			width: 100%//
+			margin-top: 3rem//
+		&__menu
+			@include flex(row, wrap, center, center)//
+			width: 100%//
+		&__menu-list-item
+			@include flex(row, wrap, center, center)//
+			margin-right: 0rem//
+			&:last-child
+		&__menu-link
+			padding: 2rem .7rem 2rem//
+			&::before
+		&__menu-link.active
+		&__menu-link.active::before
+		&__search-panel-container
+			@include flex(row, wrap, center, center)//
+			margin-top: 3.6rem//
+		&__search-input-container
+		&__search-input
+			left: 0rem//
+		&__search-input.active
+		&__search-icon
+
+	.home
+		@include size(100%, auto)//
+		padding-top: 30.5rem//
+		padding-bottom: 5rem//
+		&__wrapper
+		&__slider
+			width: 100%//
+			.owl-controls
+				bottom: -3.3rem//
+				.owl-page
+					&:last-child
+				.owl-page span
+				.owl-page.active span
+		&__slide
+			@include flex(row, wrap, center, center)
+			width: 100%//
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide-text-container
+			width: 80%//
+			padding-right: 0rem//
+			@include flex(column, wrap, center, center)//
+			text-align: center//
+		&__slide-headline
+			width: 100%//
+		&__slide-paragraph
+			width: 100%//
+		&__prev-button, &__next-button
+			display: none//
+		&__prev-button::before, &__prev-button::after, &__next-button::before, &__next-button::after
+		&__prev-button::before, &__prev-button::after
+		&__prev-button::before
+		&__prev-button::after
+		&__next-button::before, &__next-button::after
+		&__next-button::before
+		&__next-button::after
+		&__prev-button
+		&__next-button
+
+	.services
+		padding-top: 3.7rem//
+		padding-bottom: 7.7rem//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 60%//
+			padding: 0rem 2rem//
+		&__wrapper
+			width: 80%//
+		&__content
+			margin-top: 3.2rem//
+		&__content-row
+			@include flex(row, wrap, flex-start, center)//
+		&__content-row1
+		&__content-row2
+			margin-top: 2rem//
+		&__content-item
+			width: 100%//
+			@include flex(row, wrap, flex-start, center)//
+			padding-left: 2rem//
+			padding-right: 2rem//
+			padding-top: 7rem//
+			text-align: center//
+			margin-top: 2rem//
+			&:first-child
+				margin-top: 0rem//
+		&__content-item1
+			background: url('../assets/services__icon1.jpg') no-repeat 50% 1rem//
+		&__content-item2
+			background: url('../assets/services__icon2.jpg') no-repeat 50% 1rem//
+		&__content-item3
+			background: url('../assets/services__icon3.jpg') no-repeat 50% 1rem//
+		&__content-item4
+			background: url('../assets/services__icon4.jpg') no-repeat 50% 1rem//
+		&__item-text-container
+		&__item-headline
+		&__item-paragraph
+
+	.services-secondary
+		padding-top: 0rem//
+		padding-bottom: 0rem//
+		background: $space-grey//
+		&__wrapper
+			@include flex(row, wrap, flex-end, center)//
+		&__content
+			width: 100%//
+			padding-left: 2rem//
+			padding-right: 2rem//
+			@include flex(column, wrap, center, center)//
+		&__headline
+		&__list
+		&__list-item
+			&:first-child
+			&::before
+
+	.portfolio
+		padding-top: 5.5rem//
+		padding-bottom: 5.5rem//
+		@include flex(column, wrap, center, center)//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 60%//
+		&__ajax-menu-container
+			@include flex(row, wrap, center, center)//
+			margin-top: 6.9rem//
+		&__ajax-menu
+			@include flex(row, wrap, center, center)//
+		&__ajax-menu-list-item
+			margin-right: 0rem//
+			&:last-child
+		&__ajax-menu-link
+			padding-left: 1.4rem//
+			padding-right: 1.4rem//
+		&__ajax-menu-link.active
+		&__content-container
+			@include size(100%, 66rem)//
+		&__content
+			@include flex(row, wrap, center, center)//
+			@include size(100%, 100%)//
+		&__item
+			@include size(80%, 32rem)//
+			@include flex(column, wrap, flex-end, flex-start)//
+			&:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
+				display: none//
+			&:nth-child(2)
+				margin-top: 2rem//
+			&:first-child
+				margin-right: 0rem//
+			&:nth-child(odd)
+			&:nth-child(even)
+		&__item:hover &__text-container
+		&__item:hover &__button
+		&__button
+			&::before, &::after
+			&::before
+			&::after
+		&__text-container
+			width: 100%//
+		&__content-headline
+		&__content-paragraph
+		&__more-link
+			&:hover
+			&:active
+
+	.about-us
+		background: #fff//
+		padding-top: 4.3rem//
+		padding-bottom: 4.1rem//
+		&__headline
+		&__separator
+		&__paragraph
+			width: 50%//
+		&__statistics
+			padding: 0rem//
+		&__statistics-wrapper
+			@include flex(row, wrap, center, center)//
+			width: 100%//
+			padding: 5rem 0rem//
+		&__statistics-item
+			@include flex(column, wrap, center, center)//
+			width: 50%//
+			margin: 2rem//
+		&__statistics-item1
+			margin-top: 2rem//
+		&__statistics-item2
+		&__statistics-item3
+		&__statistics-item4
+		&__statistics-icon
+		&__statistics-icon
+			&::before
+			&::after
+		&__statistics-icon1
+		&__statistics-icon2
+		&__statistics-icon3
+		&__statistics-icon4
+		&__statistics-count
+		&__statistics-description
+		&__testimonials
+			padding-top: 5.8rem//
+			padding-bottom: 4.6rem//
+		&__testimonials-wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__testimonials-block
+			@include size(100%, auto)//
+			@include flex(column, wrap, center, center)//
+		&__testimonials-block2
+			margin-top: 5rem//
+		&__testimonials-headline
+			margin-left: 0rem//
+			text-align: center//
+		&__testimonials-paragraph
+			margin-left: 0rem//
+			width: 50%//
+			text-align: center//
+		&__testimonials-slider
+			.owl-controls
+				bottom: -1.6rem//
+				left: 49%//
+				.owl-page
+				.owl-page span
+				.owl-page.active span
+		&__testimonials-slide
+			padding: 0rem 7% 1rem//
+		&__testimonials-reviews-container
+			@include flex(column, wrap, flex-start, flex-start)//
+			width: 100%//
+			padding: 0rem//
+		&__testimonials-review
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+			padding-bottom: 2rem//
+			&::before
+				width: 95%//
+				left: 50%//
+				transform: translateX(-50%)//
+			&:last-child
+			&::before
+		&__testimonials-user-pic
+		&__testimonials-text-container
+			@include size(100%, auto)//
+			padding: 0rem//
+		&__testimonials-user-text
+			text-align: center//
+			margin-top: 2rem//
+		&__testimonials-author
+			margin-top: 1.5rem//
+		&__testimonials-block2 &__testimonials-headline
+			margin-left: 0rem//
+		&__testimonials-block2 &__testimonials-paragraph
+			margin-left: 0rem//
+		&__testimonials-diagrams-container
+			padding-left: 2rem//
+			padding-right: 2rem//
+			width: 100%//
+			@include flex(column, wrap, center, center)//
+		&__testimonials-diagram-name
+			&:first-child
+		&__testimonials-diagram
+			width: 60%//
+			&::before
+		&__testimonials-diagram1::before
+			display: none//
+		&__testimonials-diagram2::before
+			display: none//
+		&__testimonials-diagram3::before
+			display: none//
+		&__testimonials-diagram4::before
+			display: none//
+		&__testimonials-diagram1::after
+			display: none//
+		&__testimonials-diagram2::after
+			display: none//
+		&__testimonials-diagram3::after
+			display: none//
+		&__testimonials-diagram4::after
+			display: none//
+		&__testimonials-diagram-progress
+		&__testimonials-diagram1 &__testimonials-diagram-progress
+			width: 87.8%//
+		&__testimonials-diagram2 &__testimonials-diagram-progress
+			width: 84.4%//
+		&__testimonials-diagram3 &__testimonials-diagram-progress
+			width: 70.4%//
+		&__testimonials-diagram4 &__testimonials-diagram-progress
+			width: 74.6%//
+		&__quote
+			padding: 5rem 0rem//
+		&__quote-wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__quote-text
+		&__quote-author
+
+	.prices
+		padding-top: 4.7rem//
+		padding-bottom: 5.1rem//
+		@include flex(column, wrap, center, center)//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 50%//
+		&__wrapper
+			@include flex(row, wrap, space-around, flex-start)//
+			@include wrapper(100%, auto)//
+			padding-top: 4.9rem//
+		&__item
+			@include size(100%, auto)//
+			@include flex(column, wrap, center, center)//
+			margin-top: 4rem//
+			padding-bottom: 4rem//
+			padding-left: 20%//
+			padding-right: 20%//
+			background: $space-grey//
+		&__item1
+			margin-top: 0rem//
+		&__item2
+		&__item3
+		&__item4
+		&__tariff-name-container
+			@include flex(column, wrap, center, center)//
+			&::before
+			&::after
+		&__tariff-name
+			color: #fff//
+			width: 100%//
+		&__tariff-price
+			color: #fff//
+			width: 100%//
+			sup
+				color: #fff//
+			sub
+				color: #fff//
+		&__tariff-feature
+			color: #fff//
+			width: 100%//
+			&::before
+		&__tariff-feature1
+		&__tariff-feature2
+		&__tariff-feature3
+		&__tariff-feature4
+			&::before
+		&__tariff-feature:last-child::before
+		&__buy-button
+			color: #fff//
+			&:hover
+			&:active
+		&__paragraph2
+			margin-top: 4.9rem//
+		&__contact-us-link
+			&:hover
+			&:active
+
+	.prices-subscribe
+		padding: 5.5rem 0rem//
+		&__wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__input-container
+			width: 95%//
+		&__form
+			@include flex(row, wrap, space-between, center)//
+		&__email
+			padding: 2.2rem 0.2rem 2.2rem 2.6rem//
+			background: none//
+			width: 50%//
+			&::placeholder
+		&__submit-button
+			&:hover
+			&:active
+		&__paragraph
+			width: 80%//
+			padding-left: 0rem//
+			padding-right: 0rem//
+			margin-top: 2rem//
+			text-align: center//
+
+	.contact-us
+		padding-top: 4.4rem//
+		padding-bottom: 5.1rem//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 60%//
+		&__wrapper
+			@include flex(column, wrap, column, column)//
+			padding-top: 5rem//
+			width: 100%//
+		&__block
+		&__block1
+			width: 100%//
+		&__block2
+			width: 100%//
+			margin-top: 3rem//
+			@include flex(column, wrap, center, center)//
+			text-align: center//
+		&__form
+			@include flex(column, wrap, center, center)//
+			padding: 0rem 5%//
+		&__input
+			width: 100%//
+			&:first-child
+			&::placeholder
+		&__user-name
+		&__user-email
+		&__user-message
+		&__send-message-button
+			margin-top: 3.3rem//
+			&:hover
+			&:active
+		&__phones-container
+			padding-left: 0rem//
+			@include flex(column, wrap, flex-start, flex-start)//
+		&__phone-paragraph
+			width: 100%//
+		&__phone
+			margin-top: 1.4rem//
+			&:last-child
+		&__address-container
+			margin-top: 3.7rem//
+			padding-left: 0rem//
+		&__address-paragraph
+			width: 100%//
+		&__address
+			margin-top: 1.4rem//
+
+	.footer
+		padding-top: 4rem//
+		&__wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__logo
+		&__logo-image
+		&__paragraph
+			&::before
+		&__socials-container
+			@include flex(row, wrap, center, center)//
+		&__social-link
+			@include flex(row, wrap, center, center)//
+			&:last-child
+			svg
+				@include flex(row, wrap, center, center)//
+				path
+		&__social-link:nth-child(2)
+			svg
+		&__social-link:nth-child(3)
+			svg
+		&__social-link:hover svg path
+		&__copyright
+			span
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+	body
+
+	.top-panel
+		&__wrapper
+			@include flex(column, wrap, center, center)//
+			width: 80%//
+			padding-bottom: 4rem//
+		&__left
+		&__right
+			@include flex(row, wrap, center, center)//
+		&__logo
+		&__image
+		&__menu-container
+			width: 100%//
+		&__menu
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__menu-list-item
+			@include flex(row, wrap, center, center)//
+			margin-right: 0rem//
+			&:last-child
+		&__menu-link
+			padding: 2rem .7rem 2rem//
+			&::before
+		&__menu-link.active
+		&__menu-link.active::before
+		&__search-panel-container
+			@include flex(row, wrap, center, center)//
+			margin-top: 3.6rem//
+		&__search-input-container
+		&__search-input
+			left: 0rem//
+		&__search-input.active
+		&__search-icon
+
+	.home
+		@include size(100%, auto)//
+		padding-top: 56.5rem//
+		padding-bottom: 5rem//
+		&__wrapper
+		&__slider
+			width: 100%//
+			.owl-controls
+				bottom: -3.3rem//
+				.owl-page
+					&:last-child
+				.owl-page span
+				.owl-page.active span
+		&__slide
+			width: 100%//
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide-text-container
+			width: 100%//
+			padding-right: 0rem//
+			@include flex(column, wrap, center, center)//
+			text-align: center//
+		&__slide-headline
+			width: 100%//
+		&__slide-paragraph
+			width: 100%//
+		&__prev-button, &__next-button
+			display: none//
+		&__prev-button::before, &__prev-button::after, &__next-button::before, &__next-button::after
+		&__prev-button::before, &__prev-button::after
+		&__prev-button::before
+		&__prev-button::after
+		&__next-button::before, &__next-button::after
+		&__next-button::before
+		&__next-button::after
+		&__prev-button
+		&__next-button
+
+	.services
+		padding-top: 3.7rem//
+		padding-bottom: 7.7rem//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 80%//
+			padding: 0rem 2rem//
+		&__wrapper
+			width: 100%//
+		&__content
+			margin-top: 3.2rem//
+		&__content-row
+			@include flex(row, wrap, flex-start, center)//
+		&__content-row1
+		&__content-row2
+			margin-top: 2rem//
+		&__content-item
+			width: 100%//
+			@include flex(row, wrap, flex-start, center)//
+			padding-left: 2rem//
+			padding-right: 2rem//
+			padding-top: 7rem//
+			text-align: center//
+			margin-top: 2rem//
+			&:first-child
+				margin-top: 0rem//
+		&__content-item1
+			background: url('../assets/services__icon1.jpg') no-repeat 50% 1rem//
+		&__content-item2
+			background: url('../assets/services__icon2.jpg') no-repeat 50% 1rem//
+		&__content-item3
+			background: url('../assets/services__icon3.jpg') no-repeat 50% 1rem//
+		&__content-item4
+			background: url('../assets/services__icon4.jpg') no-repeat 50% 1rem//
+		&__item-text-container
+		&__item-headline
+		&__item-paragraph
+
+	.services-secondary
+		padding-top: 0rem//
+		padding-bottom: 0rem//
+		background: $space-grey//
+		&__wrapper
+			@include flex(row, wrap, flex-end, center)//
+		&__content
+			width: 100%//
+			padding-left: 2rem//
+			padding-right: 2rem//
+			@include flex(column, wrap, center, center)//
+		&__headline
+		&__list
+		&__list-item
+			&:first-child
+			&::before
+
+	.portfolio
+		padding-top: 5.5rem//
+		padding-bottom: 5.5rem//
+		@include flex(column, wrap, center, center)//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 80%//
+		&__ajax-menu-container
+			@include flex(row, wrap, center, center)//
+			margin-top: 6.9rem//
+		&__ajax-menu
+			@include flex(row, wrap, center, center)//
+		&__ajax-menu-list-item
+			margin-right: 0rem//
+			&:last-child
+		&__ajax-menu-link
+			padding-left: 0.4rem//
+			padding-right: 0.4rem//
+		&__ajax-menu-link.active
+		&__content-container
+			@include size(100%, 64rem)//
+		&__content
+			@include flex(row, wrap, flex-start, flex-start)//
+			@include size(100%, 100%)//
+		&__item
+			@include size(100%, 32rem)//
+			@include flex(column, wrap, flex-end, flex-start)//
+			&:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
+				display: none//
+			&:first-child
+				margin-right: 0rem//
+			&:nth-child(odd)
+			&:nth-child(even)
+		&__item:hover &__text-container
+		&__item:hover &__button
+		&__button
+			&::before, &::after
+			&::before
+			&::after
+		&__text-container
+			width: 100%//
+		&__content-headline
+		&__content-paragraph
+		&__more-link
+			&:hover
+			&:active
+
+	.about-us
+		background: #fff//
+		padding-top: 4.3rem//
+		padding-bottom: 4.1rem//
+		&__headline
+		&__separator
+		&__paragraph
+			width: 80%//
+		&__statistics
+			padding: 0rem//
+		&__statistics-wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+			padding: 5rem 0rem//
+		&__statistics-item
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+			margin: 2rem//
+			margin-left: 0rem//
+		&__statistics-item1
+			margin-top: 2rem//
+		&__statistics-item2
+		&__statistics-item3
+		&__statistics-item4
+		&__statistics-icon
+		&__statistics-icon
+			&::before
+			&::after
+		&__statistics-icon1
+		&__statistics-icon2
+		&__statistics-icon3
+		&__statistics-icon4
+		&__statistics-count
+		&__statistics-description
+		&__testimonials
+			padding-top: 5.8rem//
+			padding-bottom: 4.6rem//
+		&__testimonials-wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__testimonials-block
+			@include size(100%, auto)//
+			@include flex(column, wrap, center, center)//
+		&__testimonials-block2
+			margin-top: 5rem//
+		&__testimonials-headline
+			margin-left: 0rem//
+			text-align: center//
+		&__testimonials-paragraph
+			margin-left: 0rem//
+			width: 60%//
+			text-align: center//
+		&__testimonials-slider
+			.owl-controls
+				bottom: -1.6rem//
+				left: 49%//
+				.owl-page
+				.owl-page span
+				.owl-page.active span
+		&__testimonials-slide
+			padding: 0rem 7% 1rem//
+		&__testimonials-reviews-container
+			@include flex(column, wrap, flex-start, flex-start)//
+			width: 100%//
+			padding: 0rem//
+		&__testimonials-review
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+			padding-bottom: 2rem//
+			&::before
+				width: 95%//
+				left: 50%//
+				transform: translateX(-50%)//
+			&:last-child
+			&::before
+		&__testimonials-user-pic
+		&__testimonials-text-container
+			@include size(100%, auto)//
+			padding: 0rem//
+		&__testimonials-user-text
+			text-align: center//
+			margin-top: 2rem//
+		&__testimonials-author
+			margin-top: 1.5rem//
+		&__testimonials-block2 &__testimonials-headline
+			margin-left: 0rem//
+		&__testimonials-block2 &__testimonials-paragraph
+			margin-left: 0rem//
+		&__testimonials-diagrams-container
+			padding-left: 2rem//
+			padding-right: 2rem//
+			width: 100%//
+			@include flex(column, wrap, center, center)//
+		&__testimonials-diagram-name
+			&:first-child
+		&__testimonials-diagram
+			width: 70%//
+			&::before
+		&__testimonials-diagram1::before
+			display: none//
+		&__testimonials-diagram2::before
+			display: none//
+		&__testimonials-diagram3::before
+			display: none//
+		&__testimonials-diagram4::before
+			display: none//
+		&__testimonials-diagram1::after
+			display: none//
+		&__testimonials-diagram2::after
+			display: none//
+		&__testimonials-diagram3::after
+			display: none//
+		&__testimonials-diagram4::after
+			display: none//
+		&__testimonials-diagram-progress
+		&__testimonials-diagram1 &__testimonials-diagram-progress
+			width: 87.8%//
+		&__testimonials-diagram2 &__testimonials-diagram-progress
+			width: 84.4%//
+		&__testimonials-diagram3 &__testimonials-diagram-progress
+			width: 70.4%//
+		&__testimonials-diagram4 &__testimonials-diagram-progress
+			width: 74.6%//
+		&__quote
+			padding: 5rem 0rem//
+		&__quote-wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__quote-text
+		&__quote-author
+
+	.prices
+		padding-top: 4.7rem//
+		padding-bottom: 5.1rem//
+		@include flex(column, wrap, center, center)//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 80%//
+		&__wrapper
+			@include flex(row, wrap, space-around, flex-start)//
+			@include wrapper(100%, auto)//
+			padding-top: 4.9rem//
+		&__item
+			@include size(100%, auto)//
+			@include flex(column, wrap, center, center)//
+			margin-top: 4rem//
+			padding-bottom: 4rem//
+			padding-left: 1rem//
+			padding-right: 1rem//
+			background: $space-grey//
+		&__item1
+			margin-top: 0rem//
+		&__item2
+		&__item3
+		&__item4
+		&__tariff-name-container
+			@include flex(column, wrap, center, center)//
+			&::before
+			&::after
+		&__tariff-name
+			color: #fff//
+			width: 100%//
+		&__tariff-price
+			color: #fff//
+			width: 100%//
+			sup
+				color: #fff//
+			sub
+				color: #fff//
+		&__tariff-feature
+			color: #fff//
+			width: 100%//
+			&::before
+		&__tariff-feature1
+		&__tariff-feature2
+		&__tariff-feature3
+		&__tariff-feature4
+			&::before
+		&__tariff-feature:last-child::before
+		&__buy-button
+			color: #fff//
+			&:hover
+			&:active
+		&__paragraph2
+			margin-top: 4.9rem//
+		&__contact-us-link
+			&:hover
+			&:active
+
+	.prices-subscribe
+		padding: 5.5rem 0rem//
+		&__wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__input-container
+			width: 95%//
+		&__form
+			@include flex(row, wrap, space-between, center)//
+		&__email
+			padding: 2.2rem 0.2rem 2.2rem 0.6rem//
+			background: none//
+			width: 50%//
+			&::placeholder
+		&__submit-button
+			&:hover
+			&:active
+		&__paragraph
+			width: 80%//
+			padding-left: 0rem//
+			padding-right: 0rem//
+			margin-top: 2rem//
+			text-align: center//
+
+	.contact-us
+		padding-top: 4.4rem//
+		padding-bottom: 5.1rem//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 80%//
+		&__wrapper
+			@include flex(column, wrap, column, column)//
+			padding-top: 5rem//
+			width: 100%//
+		&__block
+		&__block1
+			width: 100%//
+		&__block2
+			width: 100%//
+			margin-top: 3rem//
+			@include flex(column, wrap, center, center)//
+			text-align: center//
+		&__form
+			@include flex(column, wrap, center, center)//
+			padding: 0rem 5%//
+		&__input
+			width: 100%//
+			&:first-child
+			&::placeholder
+		&__user-name
+		&__user-email
+		&__user-message
+		&__send-message-button
+			margin-top: 3.3rem//
+			&:hover
+			&:active
+		&__phones-container
+			padding-left: 0rem//
+			@include flex(column, wrap, flex-start, flex-start)//
+		&__phone-paragraph
+			width: 100%//
+		&__phone
+			margin-top: 1.4rem//
+			text-align: center//
+			width: 100%//
+			&:last-child
+		&__address-container
+			margin-top: 3.7rem//
+			padding-left: 0rem//
+		&__address-paragraph
+			width: 100%//
+		&__address
+			margin-top: 1.4rem//
+
+	.footer
+		padding-top: 4rem//
+		&__wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__logo
+		&__logo-image
+		&__paragraph
+			&::before
+		&__socials-container
+			@include flex(row, wrap, center, center)//
+		&__social-link
+			@include flex(row, wrap, center, center)//
+			&:last-child
+			svg
+				@include flex(row, wrap, center, center)//
+				path
+		&__social-link:nth-child(2)
+			svg
+		&__social-link:nth-child(3)
+			svg
+		&__social-link:hover svg path
+		&__copyright
+			span
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+	body
+
+	.top-panel
+		&__wrapper
+			@include flex(column, wrap, center, center)//
+			width: 80%//
+			padding-bottom: 4rem//
+		&__left
+		&__right
+			@include flex(row, wrap, center, center)//
+		&__logo
+		&__image
+		&__menu-container
+			width: 100%//
+		&__menu
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__menu-list-item
+			@include flex(row, wrap, center, center)//
+			margin-right: 0rem//
+			&:last-child
+		&__menu-link
+			padding: 2rem .7rem 2rem//
+			&::before
+		&__menu-link.active
+		&__menu-link.active::before
+		&__search-panel-container
+			@include flex(row, wrap, center, center)//
+			margin-top: 3.6rem//
+		&__search-input-container
+		&__search-input
+			left: 0rem//
+		&__search-input.active
+		&__search-icon
+
+	.home
+		@include size(100%, auto)//
+		padding-top: 56.5rem//
+		padding-bottom: 5rem//
+		&__wrapper
+		&__slider
+			width: 100%//
+			.owl-controls
+				bottom: -3.3rem//
+				.owl-page
+					&:last-child
+				.owl-page span
+				.owl-page.active span
+		&__slide
+			width: 100%//
+		&__slide1
+		&__slide2
+		&__slide3
+		&__slide-text-container
+			width: 100%//
+			padding-right: 0rem//
+			@include flex(column, wrap, center, center)//
+			text-align: center//
+		&__slide-headline
+			width: 100%//
+		&__slide-paragraph
+			width: 100%//
+		&__prev-button, &__next-button
+			display: none//
+		&__prev-button::before, &__prev-button::after, &__next-button::before, &__next-button::after
+		&__prev-button::before, &__prev-button::after
+		&__prev-button::before
+		&__prev-button::after
+		&__next-button::before, &__next-button::after
+		&__next-button::before
+		&__next-button::after
+		&__prev-button
+		&__next-button
+
+	.services
+		padding-top: 3.7rem//
+		padding-bottom: 7.7rem//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 80%//
+			padding: 0rem 2rem//
+		&__wrapper
+			width: 100%//
+		&__content
+			margin-top: 3.2rem//
+		&__content-row
+			@include flex(row, wrap, flex-start, center)//
+		&__content-row1
+		&__content-row2
+			margin-top: 2rem//
+		&__content-item
+			width: 100%//
+			@include flex(row, wrap, flex-start, center)//
+			padding-left: 2rem//
+			padding-right: 2rem//
+			padding-top: 7rem//
+			text-align: center//
+			margin-top: 2rem//
+			&:first-child
+				margin-top: 0rem//
+		&__content-item1
+			background: url('../assets/services__icon1.jpg') no-repeat 50% 1rem//
+		&__content-item2
+			background: url('../assets/services__icon2.jpg') no-repeat 50% 1rem//
+		&__content-item3
+			background: url('../assets/services__icon3.jpg') no-repeat 50% 1rem//
+		&__content-item4
+			background: url('../assets/services__icon4.jpg') no-repeat 50% 1rem//
+		&__item-text-container
+		&__item-headline
+		&__item-paragraph
+
+	.services-secondary
+		padding-top: 0rem//
+		padding-bottom: 0rem//
+		background: $space-grey//
+		&__wrapper
+			@include flex(row, wrap, flex-end, center)//
+		&__content
+			width: 100%//
+			padding-left: 2rem//
+			padding-right: 2rem//
+			@include flex(column, wrap, center, center)//
+		&__headline
+		&__list
+		&__list-item
+			&:first-child
+			&::before
+
+	.portfolio
+		padding-top: 5.5rem//
+		padding-bottom: 5.5rem//
+		@include flex(column, wrap, center, center)//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 80%//
+		&__ajax-menu-container
+			@include flex(row, wrap, center, center)//
+			margin-top: 6.9rem//
+		&__ajax-menu
+			@include flex(row, wrap, center, center)//
+		&__ajax-menu-list-item
+			margin-right: 0rem//
+			&:last-child
+		&__ajax-menu-link
+			padding-left: 0.4rem//
+			padding-right: 0.4rem//
+		&__ajax-menu-link.active
+		&__content-container
+			@include size(100%, 64rem)//
+		&__content
+			@include flex(row, wrap, flex-start, flex-start)//
+			@include size(100%, 100%)//
+		&__item
+			@include size(100%, 32rem)//
+			@include flex(column, wrap, flex-end, flex-start)//
+			&:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
+				display: none//
+			&:first-child
+				margin-right: 0rem//
+			&:nth-child(odd)
+			&:nth-child(even)
+		&__item:hover &__text-container
+		&__item:hover &__button
+		&__button
+			&::before, &::after
+			&::before
+			&::after
+		&__text-container
+			width: 100%//
+		&__content-headline
+		&__content-paragraph
+		&__more-link
+			&:hover
+			&:active
+
+	.about-us
+		background: #fff//
+		padding-top: 4.3rem//
+		padding-bottom: 4.1rem//
+		&__headline
+		&__separator
+		&__paragraph
+			width: 80%//
+		&__statistics
+			padding: 0rem//
+		&__statistics-wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+			padding: 5rem 0rem//
+		&__statistics-item
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+			margin: 2rem//
+			margin-left: 0rem//
+		&__statistics-item1
+			margin-top: 2rem//
+		&__statistics-item2
+		&__statistics-item3
+		&__statistics-item4
+		&__statistics-icon
+		&__statistics-icon
+			&::before
+			&::after
+		&__statistics-icon1
+		&__statistics-icon2
+		&__statistics-icon3
+		&__statistics-icon4
+		&__statistics-count
+		&__statistics-description
+		&__testimonials
+			padding-top: 5.8rem//
+			padding-bottom: 4.6rem//
+		&__testimonials-wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__testimonials-block
+			@include size(100%, auto)//
+			@include flex(column, wrap, center, center)//
+		&__testimonials-block2
+			margin-top: 5rem//
+		&__testimonials-headline
+			margin-left: 0rem//
+			text-align: center//
+		&__testimonials-paragraph
+			margin-left: 0rem//
+			width: 80%//
+			text-align: center//
+		&__testimonials-slider
+			.owl-controls
+				bottom: -1.6rem//
+				left: 49%//
+				.owl-page
+				.owl-page span
+				.owl-page.active span
+		&__testimonials-slide
+			padding: 0rem 7% 1rem//
+		&__testimonials-reviews-container
+			@include flex(column, wrap, flex-start, flex-start)//
+			width: 100%//
+			padding: 0rem//
+		&__testimonials-review
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+			padding-bottom: 2rem//
+			&::before
+				width: 95%//
+				left: 50%//
+				transform: translateX(-50%)//
+			&:last-child
+			&::before
+		&__testimonials-user-pic
+		&__testimonials-text-container
+			@include size(100%, auto)//
+			padding: 0rem//
+		&__testimonials-user-text
+			text-align: center//
+			margin-top: 2rem//
+		&__testimonials-author
+			margin-top: 1.5rem//
+		&__testimonials-block2 &__testimonials-headline
+			margin-left: 0rem//
+		&__testimonials-block2 &__testimonials-paragraph
+			margin-left: 0rem//
+		&__testimonials-diagrams-container
+			padding-left: 2rem//
+			padding-right: 2rem//
+			width: 100%//
+		&__testimonials-diagram-name
+			&:first-child
+		&__testimonials-diagram
+			width: 100%//
+			&::before
+		&__testimonials-diagram1::before
+			display: none//
+		&__testimonials-diagram2::before
+			display: none//
+		&__testimonials-diagram3::before
+			display: none//
+		&__testimonials-diagram4::before
+			display: none//
+		&__testimonials-diagram1::after
+			display: none//
+		&__testimonials-diagram2::after
+			display: none//
+		&__testimonials-diagram3::after
+			display: none//
+		&__testimonials-diagram4::after
+			display: none//
+		&__testimonials-diagram-progress
+		&__testimonials-diagram1 &__testimonials-diagram-progress
+			width: 87.8%//
+		&__testimonials-diagram2 &__testimonials-diagram-progress
+			width: 84.4%//
+		&__testimonials-diagram3 &__testimonials-diagram-progress
+			width: 70.4%//
+		&__testimonials-diagram4 &__testimonials-diagram-progress
+			width: 74.6%//
+		&__quote
+			padding: 5rem 0rem//
+		&__quote-wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__quote-text
+		&__quote-author
+
+	.prices
+		padding-top: 4.7rem//
+		padding-bottom: 5.1rem//
+		@include flex(column, wrap, center, center)//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 100%//
+		&__wrapper
+			@include flex(row, wrap, space-around, flex-start)//
+			@include wrapper(100%, auto)//
+			padding-top: 4.9rem//
+		&__item
+			@include size(100%, auto)//
+			@include flex(column, wrap, center, center)//
+			margin-top: 4rem//
+			padding-bottom: 4rem//
+			padding-left: 1rem//
+			padding-right: 1rem//
+			background: $space-grey//
+		&__item1
+			margin-top: 0rem//
+		&__item2
+		&__item3
+		&__item4
+		&__tariff-name-container
+			@include flex(column, wrap, center, center)//
+			&::before
+			&::after
+		&__tariff-name
+			color: #fff//
+			width: 100%//
+		&__tariff-price
+			color: #fff//
+			width: 100%//
+			sup
+				color: #fff//
+			sub
+				color: #fff//
+		&__tariff-feature
+			color: #fff//
+			width: 100%//
+			&::before
+		&__tariff-feature1
+		&__tariff-feature2
+		&__tariff-feature3
+		&__tariff-feature4
+			&::before
+		&__tariff-feature:last-child::before
+		&__buy-button
+			color: #fff//
+			&:hover
+			&:active
+		&__paragraph2
+			margin-top: 4.9rem//
+		&__contact-us-link
+			&:hover
+			&:active
+
+	.prices-subscribe
+		padding: 5.5rem 0rem//
+		&__wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__input-container
+			width: 95%//
+		&__form
+			@include flex(row, wrap, space-between, center)//
+		&__email
+			padding: 2.2rem 0.2rem 2.2rem 0.6rem//
+			background: none//
+			width: 50%//
+			&::placeholder
+		&__submit-button
+			&:hover
+			&:active
+		&__paragraph
+			width: 80%//
+			padding-left: 0rem//
+			padding-right: 0rem//
+			margin-top: 2rem//
+			text-align: center//
+
+	.contact-us
+		padding-top: 4.4rem//
+		padding-bottom: 5.1rem//
+		&__headline
+		&__separator
+			&::before
+		&__paragraph
+			width: 80%//
+		&__wrapper
+			@include flex(column, wrap, column, column)//
+			padding-top: 5rem//
+			width: 100%//
+		&__block
+		&__block1
+			width: 100%//
+		&__block2
+			width: 100%//
+			margin-top: 3rem//
+			@include flex(column, wrap, center, center)//
+			text-align: center//
+		&__form
+			@include flex(column, wrap, center, center)//
+			padding: 0rem 5%//
+		&__input
+			width: 100%//
+			&:first-child
+			&::placeholder
+		&__user-name
+		&__user-email
+		&__user-message
+		&__send-message-button
+			margin-top: 3.3rem//
+			&:hover
+			&:active
+		&__phones-container
+			padding-left: 0rem//
+			@include flex(column, wrap, flex-start, flex-start)//
+		&__phone-paragraph
+			width: 100%//
+		&__phone
+			margin-top: 1.4rem//
+			text-align: center//
+			width: 100%//
+			&:last-child
+		&__address-container
+			margin-top: 3.7rem//
+			padding-left: 0rem//
+			text-align: center//
+		&__address-paragraph
+			width: 100%//
+		&__address
+			margin-top: 1.4rem//
+
+	.footer
+		padding-top: 4rem//
+		&__wrapper
+			@include flex(column, wrap, center, center)//
+			width: 100%//
+		&__logo
+		&__logo-image
+		&__paragraph
+			width: 90%//
+			&::before
+		&__socials-container
+			@include flex(row, wrap, center, center)//
+		&__social-link
+			@include flex(row, wrap, center, center)//
+			&:last-child
+			svg
+				@include flex(row, wrap, center, center)//
+				path
+		&__social-link:nth-child(2)
+			svg
+		&__social-link:nth-child(3)
+			svg
+		&__social-link:hover svg path
+		&__copyright
+			span
+
+	.modal
+		&__overlay
+		&__block
+			@include size(100%, auto)//
+// /* Mobile First Method */
+// /* Custom, iPhone Retina */
+// @media only screen and (min-width: 320px)
+// 	body
+// 		background: $media-green
+// /* Extra Small Devices, Phones */
+// @media only screen and (min-width: 480px)
+// 	body
+// 		background: $media-blue
+// /* Small Devices, Tablets */
+// @media only screen and (min-width: 768px)
+// 	body
+// 		background: $media-pink
+// /* Medium Devices, Desktops */
+// @media only screen and (min-width: 992px)
+// 	body
+// 		background: $media-orange
+// /* Large Devices, Wide Screens */
+// @media only screen and (min-width: 1300px)
+// 	body
+// 		background: $media-purple

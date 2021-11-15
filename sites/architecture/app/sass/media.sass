@@ -1,0 +1,1168 @@
+@import 'mixins/mixins.sass'
+@import 'variables/variables.sass'
+
+/* Mobile First Method */
+/* Extra Small Devices, Phones (SM) */
+@media only screen and (min-width: 576px)
+	body
+		background: $media-blue
+	*
+		outline-color: $media-blue
+
+	.about
+		+flex(column, wrap, flex-start, center)
+		&__wrapper
+			+wrapper(50rem, auto)
+		&__image
+		&__text-container
+		&__section-name
+		&__paragraph
+		&__paragraph1
+		&__paragraph2
+		&__experience-container
+		&__experience-years
+			&::before
+		&__experience-paragraph
+
+	.projects
+		&__wrapper
+		&__section-name
+		&__tabs-container
+		&__tab
+			&:last-child
+			&.active
+		&__tab.ajax
+		&__see-all-link
+		&__content-container
+		&__content
+		&__slider
+			.owl-wrapper-outerm
+			.owl-controls
+				.owl-pagination
+					.owl-page span
+					.owl-page.active span
+					.owl-page:last-child span
+		&__slide
+			+flex(row, wrap, space-between, center)
+		&__slide1
+		&__slide2
+		&__slide3
+		&__item
+			width: 48%
+		&__item1
+		&__item2
+		&__item3
+			+flex(column, wrap, flex-start, flex-start)
+		&__item4
+			+flex(column, wrap, flex-start, flex-start)
+		&__item5
+		&__item6
+		&__item7
+			+flex(column, wrap, flex-start, flex-start)
+		&__item8
+			+flex(column, wrap, flex-start, flex-start)
+		&__item9
+		&__item10
+		&__item11
+			+flex(column, wrap, flex-start, flex-start)
+		&__item12
+			+flex(column, wrap, flex-start, flex-start)
+		&__pic
+		&__pic1
+		&__pic2
+		&__pic3
+		&__pic4
+		&__pic5
+		&__pic6
+		&__pic7
+		&__pic8
+		&__pic9
+		&__pic10
+		&__pic11
+		&__pic12
+		&__text-container
+		&__pic:hover &__text-container
+		&__pic:hover + &__project-name
+		&__paragraph
+		&__paragraph1
+		&__paragraph2
+		&__paragraph3
+			width: 84%
+		&__see-project-link
+		&__project-name
+			&::before
+
+	.we-do
+		&__wrapper
+		&__text-container
+		&__section-name
+			width: 45rem
+		&__paragraph
+			width: 45rem
+		&__paragraph1
+		&__paragraph2
+		&__options-container
+		&__option
+		&__option1
+		&__option2
+		&__option3
+		&__option4
+		&__option-name
+		&__see-more-link
+		&__image
+
+	.clients
+		padding: 3rem 0rem
+		&__wrapper
+		&__section-name
+		&__slider-container
+		&__slider
+			.owl-wrapper-outer
+			.owl-controls
+				.owl-pagination
+					.owl-page span
+					.owl-page.active span
+					.owl-page:last-child span
+		&__slide
+		&__slide1
+		&__slide2
+		&__slide3
+		&__client-pic
+		&__client-pic1
+		&__client-pic2
+		&__client-pic3
+		&__text-container
+			width: 100%
+		&__client-name
+		&__company-name
+		&__client-review
+			width: 40rem
+		&__brands
+			+flex(row, wrap, center, center)
+			width: 100%
+		&__brand
+		&__brand1
+		&__brand2
+		&__brand3
+		&__brand4
+
+	.blog
+		&__wrapper
+		&__section-name-n-see-more-container
+			+flex(row, wrap, space-between, flex-start)
+			width: 100%
+		&__section-name
+		&__see-more-link
+		&__content
+			+flex(row, wrap, center, center)
+		&__item
+			margin: 1rem
+			&:first-child
+				margin: 1rem
+		&__item1
+		&__item2
+		&__item3
+		&__image
+		&__image1
+		&__image2
+		&__image3
+		&__paragraph
+			&::before
+
+
+/* Small Devices, Tablets (MD) */
+@media only screen and (min-width: 768px)
+	body
+		background: $media-pink
+	*
+		outline-color: $media-pink
+
+	.main
+		&__wrapper
+		&__left
+		&__sky-paragraph
+		&__paragraph
+		&__paragraph1
+		&__paragraph2
+		&__right
+		&__slider
+			.owl-wrapper-outer
+			.owl-controls
+				.owl-pagination
+					.owl-page span
+					.owl-page.active span
+					.owl-page:last-child span
+		&__slide
+			+size(100%, 50rem)
+		&__slide1
+		&__slide2
+		&__slide3
+		&__project-description
+		&__project-name
+		&__project-link
+		&__project-counter
+			span
+
+	.projects
+		&__wrapper
+			+flex(column, wrap, flex-start, center)
+		&__section-name
+		&__tabs-container
+		&__tab
+			&:last-child
+			&.active
+		&__tab.ajax
+		&__see-all-link
+		&__content-container
+			width: 70rem
+		&__content
+		&__slider
+			.owl-wrapper-outerm
+			.owl-controls
+				position: absolute
+				top: -3rem
+				left: 50%
+				transform: translateX(-50%)
+				.owl-pagination
+					.owl-page span
+					.owl-page.active span
+					.owl-page:last-child span
+		&__slide
+		&__slide1
+		&__slide2
+		&__slide3
+		&__item
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item5
+		&__item6
+		&__item7
+		&__item8
+		&__item9
+		&__item10
+		&__item11
+		&__item12
+		&__pic
+		&__pic1
+		&__pic2
+		&__pic3
+		&__pic4
+		&__pic5
+		&__pic6
+		&__pic7
+		&__pic8
+		&__pic9
+		&__pic10
+		&__pic11
+		&__pic12
+		&__text-container
+		&__pic:hover &__text-container
+		&__pic:hover + &__project-name
+		&__paragraph
+		&__paragraph1
+		&__paragraph2
+		&__paragraph3
+		&__see-project-link
+		&__project-name
+			&::before
+
+	.we-do
+		&__wrapper
+		&__text-container
+		&__section-name
+		&__paragraph
+		&__paragraph1
+		&__paragraph2
+		&__options-container
+			+flex(row, wrap, center, center)
+			width: 50rem
+			margin-top: 3rem
+		&__option
+			+size(50%, auto)
+			position: relative
+		&__option1
+			&::before
+				content: ''
+				+size(.1rem, 100%)
+				background: #B3B3B3
+				position: absolute
+				top: 0rem
+				right: 0rem
+		&__option2
+			&::before
+				content: ''
+				+size(100%, .1rem)
+				background: #B3B3B3
+				position: absolute
+				bottom: 0rem
+				left: 0rem
+		&__option3
+			&::before
+				content: ''
+				+size(100%, .1rem)
+				background: #B3B3B3
+				position: absolute
+				top: -0.1rem
+				right: 0rem
+		&__option4
+			&::before
+				content: ''
+				+size(.1rem, 100%)
+				background: #B3B3B3
+				position: absolute
+				top: 0rem
+				left: -0.1rem
+		&__option-name
+		&__see-more-link
+		&__image
+
+
+/* Medium Devices, Desktops (LG) */
+@media only screen and (min-width: 992px)
+	body
+		background: $media-orange
+	*
+		outline-color: $media-orange
+
+	.header
+		&__wrapper
+			+flex(row, wrap, center, stretch)
+		&__left
+			width: 30%
+		&__hamburger
+		&__hamburger-elem
+			&::before, &::after
+			&::before
+			&::after
+		&__hamburger.active &__hamburger-elem
+		&__hamburger.active &__hamburger-elem::before
+		&__hamburger.active &__hamburger-elem::after
+		&__logo
+		&__menu
+			width: 100%
+			bottom: -18.8rem
+		&__menu.active
+		&__menu-link
+			&:first-child
+		&__right
+			width: 70%
+			+flex(row, wrap, flex-end, center)
+		&__address
+		&__socials-container
+			margin-top: 0rem
+			margin-left: 2rem
+		&__social-link
+			&:last-child
+			svg
+				path
+		&__facebook
+			svg
+		&__google-plus
+			svg
+		&__twitter
+			svg
+		&__behance
+			svg
+
+	.about
+		&__wrapper
+			+flex(row, wrap, center, stretch)
+			+wrapper(81rem, auto)
+		&__image
+		&__text-container
+			width: calc(100% - 38rem)
+			margin-top: 0rem
+			padding: 0rem 6rem
+		&__section-name
+		&__paragraph
+		&__paragraph1
+		&__paragraph2
+		&__experience-container
+		&__experience-years
+			&::before
+		&__experience-paragraph
+
+	.we-do
+		&__wrapper
+			+flex(row, wrap, center, stretch)
+		&__text-container
+			margin: 2rem
+		&__section-name
+			margin-top: 0rem
+		&__paragraph
+		&__paragraph1
+		&__paragraph2
+		&__options-container
+		&__option
+		&__option1
+			&::before
+		&__option2
+			&::before
+		&__option3
+			&::before
+		&__option4
+			&::before
+		&__option-name
+		&__see-more-link
+		&__image
+			margin: 2rem
+
+	.clients
+		padding: 3rem 0rem
+		&__wrapper
+			+flex(column, wrap, flex-start, center)
+		&__section-name
+		&__slider-container
+			position: relative
+			margin-top: 4rem
+			width: 90rem
+		&__slider
+			.owl-wrapper-outer
+			.owl-controls
+				position: absolute
+				top: 27.4rem
+				left: 27.2rem
+				.owl-pagination
+					.owl-page span
+					.owl-page.active span
+					.owl-page:last-child span
+		&__slide
+			+flex(row, wrap, center, stretch)
+		&__slide1
+		&__slide2
+		&__slide3
+		&__client-pic
+		&__client-pic1
+		&__client-pic2
+		&__client-pic3
+		&__text-container
+			width: 70%
+			+flex(column, wrap, flex-start, flex-start)
+			padding-left: 3rem
+		&__client-name
+			text-align: left
+			margin-top: 0rem
+		&__company-name
+			text-align: left
+			margin-top: 3rem
+		&__client-review
+			text-align: left
+			margin-top: 3rem
+			padding-left: 5.4rem
+			padding-top: .4rem
+			background: url('../assets/clients__quote.webp') no-repeat 0rem 0rem
+		&__brands
+			margin-top: 4rem
+			width: auto
+		&__brand
+		&__brand1
+			margin-left: 0rem
+		&__brand2
+		&__brand3
+		&__brand4
+
+	.footer
+		&__wrapper
+			+flex(row, wrap, center, stretch)
+		&__block
+			width: 20%
+			+flex(column, wrap, flex-start, center)
+			margin: 0rem
+			&:first-child
+				margin: 0rem
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+			+flex(column, wrap, flex-start, flex-start)
+		&__logo
+		&__copy
+			text-align: center
+		&__list
+			+flex(column, wrap, flex-start, center)
+			margin: 0rem
+		&__list-item
+			&:first-child
+		&__list-link
+			&:hover
+		&__menu
+			+flex(column, wrap, flex-start, center)
+			margin: 0rem
+		&__menu-list-item
+			&:first-child
+		&__menu-link
+			&:hover
+		&__select-container
+			margin: 0rem
+		&__select
+		&__option
+		&__select-paragraph
+		&__fake-select-container
+		&__fake-select
+			&::before
+			&.active::before
+		&__fake-options-container
+			&.active
+		&__fake-option
+			&.active
+		&__socials-container
+			margin-top: 1.6rem
+		&__social-link
+			margin-right: 0.6rem
+			&:last-child
+				margin-right: 0rem
+			svg
+				path
+		&__facebook
+			svg
+		&__google-plus
+			svg
+		&__twitter
+			svg
+		&__behance
+			svg
+/* Large Devices, Wide Screens (XL) */
+@media only screen and (min-width: 1200px)
+	body
+		background: $media-purple
+	*
+		outline-color: $media-purple
+
+	.main
+		padding-top: 0rem
+		&__wrapper
+			+flex(row, wrap, center, stretch)
+		&__left
+			position: relative
+			width: 30%
+			+flex(row, wrap, flex-end, flex-end)
+			padding-right: 5rem
+		&__sky-paragraph
+			display: block
+			position: absolute
+			top: 2rem
+			right: 5%
+		&__paragraph
+			width: auto
+			writing-mode: vertical-rl
+			transform: rotate(180deg)
+		&__paragraph1
+		&__paragraph2
+		&__right
+			width: 70%
+			margin-top: 0rem
+			position: relative
+		&__slider
+			.owl-wrapper-outer
+			.owl-controls
+				.owl-pagination
+					width: 10rem
+					+flex(row, wrap, center, center)
+					position: absolute
+					bottom: 3.8rem
+					left: -7rem
+					transform: rotate(90deg)
+					.owl-page span
+					.owl-page.active span
+					.owl-page:last-child span
+		&__slide
+			height: 63.2rem
+			padding-top: 2rem
+		&__slide1
+		&__slide2
+		&__slide3
+		&__project-description
+		&__project-name
+		&__project-link
+		&__project-counter
+			span
+
+	.projects
+		&__wrapper
+			+flex(row, wrap, space-between, center)
+		&__section-name
+		&__tabs-container
+			margin-top: 0rem
+		&__tab
+			&:last-child
+			&.active
+		&__tab.ajax
+		&__see-all-link
+		&__content-container
+			width: 100%
+			height: 47rem
+		&__content
+		&__slider
+			.owl-wrapper-outerm
+			.owl-controls
+				position: relative
+				top: 0rem
+				.owl-pagination
+					.owl-page span
+					.owl-page.active span
+					.owl-page:last-child span
+		&__slide
+		&__slide1
+		&__slide2
+		&__slide3
+		&__item
+			width: 23%
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item5
+		&__item6
+		&__item7
+		&__item8
+		&__item9
+		&__item10
+		&__item11
+		&__item12
+		&__pic
+		&__pic1
+		&__pic2
+		&__pic3
+		&__pic4
+		&__pic5
+		&__pic6
+		&__pic7
+		&__pic8
+		&__pic9
+		&__pic10
+		&__pic11
+		&__pic12
+		&__text-container
+		&__pic:hover &__text-container
+		&__pic:hover + &__project-name
+		&__paragraph
+		&__paragraph1
+		&__paragraph2
+		&__paragraph3
+		&__see-project-link
+		&__project-name
+			&::before
+
+	.we-do
+		&__wrapper
+		&__text-container
+			+flex(column, wrap, flex-start, flex-start)
+		&__section-name
+			text-align: left
+		&__paragraph
+			text-align: left
+		&__paragraph1
+		&__paragraph2
+		&__options-container
+		&__option
+		&__option1
+			&::before
+		&__option2
+			&::before
+		&__option3
+			&::before
+		&__option4
+			&::before
+		&__option-name
+		&__see-more-link
+		&__image
+
+	.blog
+		&__wrapper
+		&__section-name-n-see-more-container
+		&__section-name
+		&__see-more-link
+		&__content
+			+flex(row, wrap, space-between, center)
+		&__item
+			margin: 0rem
+			&:first-child
+				margin: 0rem
+		&__item1
+		&__item2
+		&__item3
+		&__image
+		&__image1
+		&__image2
+		&__image3
+		&__paragraph
+			&::before
+/* Large Devices, Wide Screens (XL) */
+@media only screen and (min-width: 1443px)
+	body
+		background: $media-purple
+	*
+		outline-color: $media-purple
+	
+	.wrapper
+		+wrapper(144.3rem, auto)
+
+	.header
+		&__wrapper
+			+wrapper(100%, auto)
+			+flex(row, wrap, flex-start, flex-start)
+		&__left
+			width: 20%
+			padding: 2.7rem 0% 1.6% 4.6%
+			+flex(row, wrap, flex-start, flex-start)
+		&__hamburger
+			margin-top: 0.8rem
+		&__hamburger-elem
+			&::before, &::after
+			&::before
+			&::after
+		&__hamburger.active &__hamburger-elem
+		&__hamburger.active &__hamburger-elem::before
+		&__hamburger.active &__hamburger-elem::after
+		&__logo
+			margin-top: 0rem
+			margin-left: 2.3rem
+		&__menu
+		&__menu.active
+		&__menu-link
+			&:first-child
+		&__right
+			width: 80%
+			padding: 2.3% 4.4% 0% 0%
+		&__address
+			margin-right: 2.3rem
+		&__socials-container
+		&__social-link
+			margin-right: 1.7rem
+			&:last-child
+			svg
+				path
+		&__facebook
+			svg
+		&__google-plus
+			svg
+		&__twitter
+			svg
+		&__behance
+			svg
+
+	.main
+		&__wrapper
+			+wrapper(100%, auto)
+			+flex(row, wrap, flex-start, stretch)
+			padding-bottom: 5.5rem
+		&__left
+			width: 20%
+			position: relative
+			padding-right: 7.8rem
+			&::before
+				content: ''
+				+size(.4rem, 6.5rem)
+				background: #A3A9B7
+				position: absolute
+				top: 3.5rem
+				right: 23.9rem
+			&::after
+				content: ''
+				+size(25.7rem, 25.4rem)
+				background: url('../assets/dots1.webp') no-repeat center
+				position: absolute
+				bottom: -8.5rem
+				right: -1.1rem
+		&__sky-paragraph
+			top: 2.6rem
+			right: 2.6rem
+		&__paragraph
+			position: relative
+			top: 0.8rem
+			z-index: 1
+		&__paragraph1
+		&__paragraph2
+		&__right
+			width: 80%
+		&__slider
+			.owl-wrapper-outer
+			.owl-controls
+				.owl-pagination
+					left: -9.3rem
+					.owl-page span
+					.owl-page.active span
+					.owl-page:last-child span
+		&__slide
+			width: 94%
+			padding-top: 2.4rem
+			padding-left: 3.7rem
+		&__slide1
+		&__slide2
+		&__slide3
+		&__project-description
+			+flex(column, wrap, flex-start, flex-start)
+		&__project-name
+			text-transform: uppercase
+			letter-spacing: .1rem
+		&__project-link
+			margin-top: 0.7rem
+		&__project-counter
+			font-size: 5rem
+			bottom: 2%
+			right: 3.3%
+			span
+				font-size: 3.2rem
+
+	.about
+		padding: 0rem
+		padding-bottom: 8rem
+		&__wrapper
+		&__image
+			position: relative
+			z-index: 1
+		&__text-container
+			width: 57rem
+			+flex(column, wrap, flex-start, flex-start)
+			padding-left: 8.4rem
+			position: relative
+			&::before
+				content: ''
+				+size(25.7rem, 25.4rem)
+				background: url('../assets/dots2.webp') no-repeat center
+				position: absolute
+				bottom: -4rem
+				left: -20rem
+		&__section-name
+			text-align: left
+		&__paragraph
+			text-align: left
+		&__paragraph1
+			width: 29rem
+			margin-top: 1.2rem
+		&__paragraph2
+			margin-top: 3.6rem
+			width: 49rem
+		&__experience-container
+			+flex(row, wrap, flex-start, flex-start)
+			margin-top: 5.6rem
+			width: 100%
+		&__experience-years
+			padding: 0rem 0.7rem 5.9rem
+
+			&::before
+				top: 6.5rem
+				right: -8.7rem
+		&__experience-paragraph
+			width: auto
+			margin-top: 0rem
+			margin-left: 2.1rem
+			width: 20rem
+
+	.projects
+		padding-top: 4.1rem
+		padding-bottom: 6rem
+		&__wrapper
+		&__section-name
+			margin-left: 24.2rem
+			letter-spacing: .06rem
+			margin-top: 0.3rem
+		&__tabs-container
+			margin-right: 26.1rem
+		&__tab
+			margin-right: 3rem
+			&:last-child
+			&.active
+		&__tab.ajax
+		&__see-all-link
+		&__content-container
+			margin-top: 4.3rem
+			height: 49rem
+		&__content
+		&__slider
+			.owl-wrapper-outerm
+			.owl-controls
+				top: 1.8rem
+				.owl-pagination
+					.owl-page span
+					.owl-page.active span
+					.owl-page:last-child span
+		&__slide
+		&__slide1
+		&__slide2
+		&__slide3
+		&__item
+			width: 23.4%
+		&__item1
+		&__item2
+		&__item3
+		&__item4
+		&__item5
+		&__item6
+		&__item7
+		&__item8
+		&__item9
+		&__item10
+		&__item11
+		&__item12
+		&__pic
+		&__pic1
+		&__pic2
+		&__pic3
+		&__pic4
+		&__pic5
+		&__pic6
+		&__pic7
+		&__pic8
+		&__pic9
+		&__pic10
+		&__pic11
+		&__pic12
+		&__text-container
+			padding-top: 3.8rem
+			padding-left: 2.5rem
+		&__pic:hover &__text-container
+		&__pic:hover + &__project-name
+		&__paragraph
+		&__paragraph1
+		&__paragraph2
+			margin-top: 0.2rem
+		&__paragraph3
+			margin-top: 3.8rem
+			width: 23rem
+		&__see-project-link
+			bottom: 4.5rem
+			left: 2.4rem
+		&__project-name
+			margin-top: 3.4rem
+			padding-left: 6.5rem
+			margin-left: 0.9rem
+			&::before
+
+	.we-do
+		padding-top: 4.2rem
+		padding-bottom: 13rem
+		&__wrapper
+		&__text-container
+			width: 56.7rem
+			margin: 0rem
+			position: relative
+			&::before
+				content: ''
+				+size(25.7rem, 25.4rem)
+				background: url('../assets/dots1.webp') no-repeat center
+				position: absolute
+				bottom: -7rem
+				right: -20rem
+		&__section-name
+			letter-spacing: .1rem
+		&__paragraph
+		&__paragraph1
+			width: 21rem
+		&__paragraph2
+			width: 47rem
+			margin-top: 4.3rem
+		&__options-container
+			margin-top: 4.9rem
+		&__option
+			+size(22.7rem, 8.1rem)
+			padding: 0rem
+			position: relative
+			left: -2.7rem
+		&__option1
+			padding: 1.6rem 0rem 0rem 8rem
+			background: url('../assets/we-do__option-pic1.webp') no-repeat -0.6rem -1rem
+			&::before
+		&__option2
+			padding: 1.6rem 0rem 0rem 12.5rem
+			background: url('../assets/we-do__option-pic2.webp') no-repeat 3.9rem -1rem
+			&::before
+		&__option3
+			padding: 4.6rem 0rem 0rem 7.9rem
+			background: url('../assets/we-do__option-pic3.webp') no-repeat 0rem 1.5rem
+			&::before
+				+size(95%, .1rem)
+		&__option4
+			padding: 3.4rem 0rem 0rem 12.5rem
+			background: url('../assets/we-do__option-pic4.webp') no-repeat 3.9rem 0.9rem
+			&::before
+		&__option-name
+		&__see-more-link
+			margin-top: 3.7rem
+			margin-left: .1rem
+		&__image
+			margin: 0rem
+			position: relative
+
+	.clients
+		padding: 0rem
+		background: #fff
+		&__wrapper
+			+flex(row, wrap, flex-start, flex-start)
+			position: relative
+			background: url('../assets/clients__bg.webp') no-repeat center, #FAFAFA
+			background-size: cover
+			padding-top: 7rem
+			padding-bottom: 11.2rem
+			&::before
+				content: ''
+				+size(25.7rem, 25.4rem)
+				background: url('../assets/dots2.webp') no-repeat center
+				position: absolute
+				bottom: 8rem
+				left: 24rem
+		&__section-name
+			text-align: left
+			margin-left: 25rem
+			letter-spacing: .2rem
+		&__slider-container
+			margin: 0rem auto
+			margin-top: 3.6rem
+			width: 80%
+		&__slider
+			.owl-wrapper-outer
+			.owl-controls
+				top: 28.4rem
+				left: 42.8rem
+				.owl-pagination
+					.owl-page span
+					.owl-page.active span
+					.owl-page:last-child span
+		&__slide
+			+flex(row, wrap, flex-start, flex-start)
+			padding-left: 10.1rem
+		&__slide1
+		&__slide2
+		&__slide3
+		&__client-pic
+			margin-top: 0.9rem
+		&__client-pic1
+		&__client-pic2
+		&__client-pic3
+		&__text-container
+			padding-top: 0rem
+			padding-left: 8.3rem
+			padding-right: 0rem
+			width: auto
+		&__client-name
+			letter-spacing: 0.3rem
+		&__company-name
+			margin-top: 2.8rem
+			margin-left: 0rem
+		&__client-review
+			margin-top: 2.8rem
+			padding-left: 4.6rem
+			width: 40rem
+			background: url('../assets/clients__quote.webp') no-repeat 0rem 0.2rem
+		&__brands
+			width: auto
+			margin-top: 3.4rem
+			margin-left: 2rem
+			+flex(row, wrap, center, center)
+		&__brand
+			margin: 0rem
+			margin-right: 2.7rem
+			&:last-child
+				margin-right: 0rem
+		&__brand1
+		&__brand2
+		&__brand3
+		&__brand4
+
+	.blog
+		padding-top: 7.6rem
+		padding-bottom: 4.8rem
+		position: relative
+		&::before
+			content: ''
+			+size(100%, .1rem)
+			background: #A3A9B7
+			position: absolute
+			bottom: 0rem
+			left: 0rem
+		&__wrapper
+			+flex(row, wrap, space-between, center)
+		&__section-name-n-see-more-container
+		&__section-name
+			margin-left: 24.7rem
+			letter-spacing: 0.3rem
+		&__see-more-link
+			margin-right: 25rem
+			margin-top: 1.9rem
+		&__content
+			margin-top: 3.8rem
+			+flex(row, wrap, center, center)
+		&__item
+			margin-right: 2.4rem
+			+flex(column, wrap, flex-start, flex-start)
+			width: 30rem
+			&:first-child
+				margin-right: 2.4rem
+			&:last-child
+				margin-right: 0rem
+		&__item1
+		&__item2
+		&__item3
+		&__image
+		&__image1
+		&__image2
+		&__image3
+		&__paragraph
+			width: auto
+			text-align: left
+			margin-top: 2rem
+			padding-left: 4.7rem
+			letter-spacing: 0.2rem
+			&::before
+				top: 1.3rem
+
+	.footer
+		&__wrapper
+			+flex(row, wrap, center, flex-start)
+		&__block
+			+flex(column, wrap, flex-start, flex-start)
+			margin: 3rem
+			width: 13%
+			&:first-child
+				margin: 3rem
+		&__block1
+		&__block2
+		&__block3
+		&__block4
+		&__logo
+			text-align: left
+		&__copy
+			text-align: left
+		&__list
+			+flex(column, wrap, flex-start, flex-start)
+		&__list-item
+			&:first-child
+		&__list-link
+			&:hover
+		&__menu
+			+flex(column, wrap, flex-start, flex-start)
+		&__menu-list-item
+			&:first-child
+		&__menu-link
+			&:hover
+		&__select-container
+		&__select
+		&__option
+		&__select-paragraph
+		&__fake-select-container
+		&__fake-select
+			&::before
+			&.active::before
+		&__fake-options-container
+			&.active
+		&__fake-option
+			&.active
+		&__socials-container
+			position: relative
+			left: -1rem
+		&__social-link
+			margin-right: 1.7rem
+			&:last-child
+			svg
+				path
+		&__facebook
+			svg
+		&__google-plus
+			svg
+		&__twitter
+			svg
+		&__behance
+			svg
+
