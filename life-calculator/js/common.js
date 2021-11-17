@@ -74,7 +74,7 @@
 // 	 }, 800);
 // 	 return false;
 //  });//кнопка "наверх" end
-	
+
 //  //Аякс отправка форм
 //  //Документация: http://api.jquery.com/jquery.ajax/
 //  $("form").submit(function() {
@@ -114,15 +114,14 @@
 
 // 	// Аккордеон
 // 	$(document).ready(function() {
-		
+
 // 	 $('.service2>.wrapper>.block-2>article').not(':first-of-type').hide();
-	 
-		
+
 // 		$('.service2>.wrapper>.block-2>.headline').click(function() {
-			
+
 // 			var findArticle = $(this).next();
 // 			var findWrapper = $(this).closest('.block-2');
-			
+
 // 			if (findArticle.is(':visible')) {
 // 				findArticle.slideUp(50);
 // 			}
@@ -136,7 +135,6 @@
 
 // });//doc ready end
 
-
 // var random = Math.floor(Math.random() * 100 + 1);
 
 // document.body.onload = function() {
@@ -148,111 +146,124 @@
 // 	}, 1000);
 // }
 
-$(document).ready(function() {
+$(document).ready(function () {
+  //prevent default
+  $('.prevdef').click(function (event) {
+    event.preventDefault();
+  });
 
-	//prevent default
-	$('.prevdef').click(function(event) {
-		event.preventDefault();
-	});
+  var range = $('#range');
+  var ageOutput = $('#age');
+  var daysOutput = $('#days');
+  var monthsOutput = $('#months');
+  var percentsOutput = $('#percents');
+  var averageLifeExpectancy = 72 / 100;
 
-	var range = $('#range');
-	var ageOutput = $('#age');
-	var daysOutput = $('#days');
-	var monthsOutput = $('#months');
-	var percentsOutput = $('#percents');
-	var averageLifeExpectancy = 72 / 100;
+  var daysResult, monthsResult, percentsResult;
 
-	var daysResult, monthsResult, percentsResult;
+  //calc
+  function calc() {
+    daysResult = range.val() * 365;
+    $(daysOutput).text(
+      daysResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')
+    );
 
-	//calc
-	function calc() {
-		daysResult = range.val() * 365;
-		$(daysOutput).text(daysResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+    monthsResult = range.val() * 12;
+    $(monthsOutput).text(
+      monthsResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')
+    );
 
-		monthsResult = range.val() * 12;
-		$(monthsOutput).text(monthsResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+    percentsResult = Math.round(range.val() / averageLifeExpectancy);
+    $(percentsOutput).text(
+      percentsResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')
+    );
+  }
 
-		percentsResult = Math.round(range.val() / averageLifeExpectancy);
-		$(percentsOutput).text(percentsResult.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
-	}
+  //calc on mousemove and changing
+  $(range).on('mousemove change', function () {
+    $(ageOutput).val(range.val());
 
-	//calc on mousemove and changing
-	$(range).on('mousemove change', function() {
-		$(ageOutput).val(range.val());
+    calc();
+  });
 
-		calc();
-	});
+  //calc on change and keyup
+  $(ageOutput).on('change keyup', function (e) {
+    $(ageOutput).val(ageOutput.val());
+    $(range).val(ageOutput.val());
 
-	//calc on change and keyup
-	$(ageOutput).on('change keyup', function(e) {
-		$(ageOutput).val(ageOutput.val());
-		$(range).val(ageOutput.val());
+    if (
+      (e.keyCode >= 0 && e.keyCode < 8) ||
+      (e.keyCode > 8 && e.keyCode < 48) ||
+      (e.keyCode > 57 && e.keyCode < 96) ||
+      e.keyCode > 105
+    ) {
+      $(ageOutput).val('');
+    }
 
-		if (e.keyCode >= 0 && e.keyCode < 8 || e.keyCode > 8 && e.keyCode < 48 || e.keyCode > 57 && e.keyCode < 96 || e.keyCode > 105) {
-			$(ageOutput).val('');
-		}
+    if (ageOutput.val() > 100) {
+      $(ageOutput).val('');
+    } else if (ageOutput.val() < 1) {
+      $(ageOutput).val('');
+    }
 
-		if (ageOutput.val() > 100) {
-			$(ageOutput).val('');
-		} else if (ageOutput.val() < 1) {
-			$(ageOutput).val('');
-		}
+    calc();
+  });
 
-		calc();
-	});
+  //calc on focus and focusout
+  $(ageOutput)
+    .on('focus', function () {
+      $(this).val('');
+    })
+    .on('focusout', function () {
+      $(this).val(range.val());
 
-	//calc on focus and focusout
-	$(ageOutput).on('focus', function() {
-		$(this).val('');
-	}).on('focusout', function() {
-		$(this).val(range.val());
-		
-		calc();
-	});
+      calc();
+    });
 
-	//switch language and color theme
-	var trigger = $('#trigger');
+  //switch language and color theme
+  var trigger = $('#trigger');
 
-	$(trigger).on('click', function() {
-		//change color theme
-		$(this).toggleClass('active');
-		$('.container').toggleClass('active');
-		$('.outputs, .output').toggleClass('active');
-		$('.language .rus, .language .eng').toggleClass('active');
-		$('h1').toggleClass('active');
-		$(range).toggleClass('active');
+  $(trigger).on('click', function () {
+    //change color theme
+    $(this).toggleClass('active');
+    $('.container').toggleClass('active');
+    $('.outputs, .output').toggleClass('active');
+    $('.language .rus, .language .eng').toggleClass('active');
+    $('h1').toggleClass('active');
+    $(range).toggleClass('active');
 
-		//switch between languages
-		var firstParagraph = $('.outputs .row1 p');
-		var secondParagraph = $('.outputs .row2 p');
-		var thirdParagraph = $('.outputs .row3 p');
+    //switch between languages
+    var firstParagraph = $('.outputs .row1 p');
+    var secondParagraph = $('.outputs .row2 p');
+    var thirdParagraph = $('.outputs .row3 p');
 
-		$('.outputs .row p').toggleClass('eng');
-		if ($(firstParagraph).hasClass('eng')) {
-			$(firstParagraph).text('— Дней вы прожили');
-		} else {
-			$(firstParagraph).text('— Days you had lived');
-		}
+    $('.outputs .row p').toggleClass('eng');
+    if ($(firstParagraph).hasClass('eng')) {
+      $(firstParagraph).text('— Дней вы прожили');
+    } else {
+      $(firstParagraph).text('— Days you had lived');
+    }
 
-		if ($(secondParagraph).hasClass('eng')) {
-			$(secondParagraph).text('— Месяцев');
-		} else {
-			$(secondParagraph).text('— Months');
-		}
+    if ($(secondParagraph).hasClass('eng')) {
+      $(secondParagraph).text('— Месяцев');
+    } else {
+      $(secondParagraph).text('— Months');
+    }
 
-		if ($(thirdParagraph).hasClass('eng')) {
-			$(thirdParagraph).text('— Процентов от средней продолжительности жизни');
-		} else {
-			$(thirdParagraph).text('— Percentage of average life expectancy worldwide');
-		}
-		//headline switch language
-		var headline = $('h1');
-		$(headline).toggleClass('eng');
-		if ($(headline).hasClass('eng')) {
-			$(headline).text('Ваш возраст:');
-		} else {
-			$(headline).text('Your age:');
-		}
-	});//trigger.click end
-
-});//doc.ready end
+    if ($(thirdParagraph).hasClass('eng')) {
+      $(thirdParagraph).text('— Процентов от средней продолжительности жизни');
+    } else {
+      $(thirdParagraph).text(
+        '— Percentage of average life expectancy worldwide'
+      );
+    }
+    //headline switch language
+    var headline = $('h1');
+    $(headline).toggleClass('eng');
+    if ($(headline).hasClass('eng')) {
+      $(headline).text('Ваш возраст:');
+    } else {
+      $(headline).text('Your age:');
+    }
+  }); //trigger.click end
+}); //doc.ready end
