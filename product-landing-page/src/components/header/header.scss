@@ -22,6 +22,10 @@
     opacity: 0;
     z-index: -1;
     transition: 0.2s;
+    &.active {
+      opacity: 1;
+      z-index: 1;
+    }
   }
   &__menu-link {
     text-decoration: none;
@@ -61,15 +65,30 @@
   &__hamburger-elem1 {
     width: 100%;
     top: 0;
+    &.active {
+      top: 50%;
+      width: toRem(40);
+      transform: translateX(50%) rotate(225deg);
+      right: 50%;
+    }
   }
   &__hamburger-elem2 {
     width: toRem(33);
     top: 50%;
     transform: translateY(-50%);
+    &.active {
+      background: transparent;
+    }
   }
   &__hamburger-elem3 {
     width: toRem(19);
     top: calc(100% - toRem(4));
+    &.active {
+      top: 50%;
+      width: toRem(40);
+      transform: translateX(50%) rotate(-225deg);
+      right: 50%;
+    }
   }
 }
 
