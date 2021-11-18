@@ -3,6 +3,74 @@
 @import '../../scss/extends';
 
 .header {
+  @extend .global-gradient-horizontal;
+  position: relative;
+  &__wrapper {
+    @include flex(column, wrap, flex-start, center);
+    padding-top: toRem(28);
+    padding-bottom: toRem(48);
+  }
+  &__menu {
+    @include flex(column, wrap, flex-start, center);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    @extend .global-gradient-horizontal;
+    padding-top: toRem(30);
+    padding-bottom: toRem(54);
+    opacity: 0;
+    z-index: -1;
+    transition: 0.2s;
+  }
+  &__menu-link {
+    text-decoration: none;
+    font-family: $pr;
+    font-size: toRem(15);
+    line-height: toRem(27);
+    letter-spacing: toRem(0.2);
+    color: $white;
+    margin-top: toRem(22);
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__sign-up-n-hamburger-container {
+    @include flex(row, wrap, flex-start, center);
+    margin-top: toRem(10);
+  }
+  &__sign-up {
+    @extend .global-a;
+    background: transparent;
+    border-color: $white;
+    text-transform: none;
+  }
+  &__hamburger {
+    position: relative;
+    @include size(toRem(44), toRem(27));
+    cursor: pointer;
+    margin-left: toRem(27);
+  }
+  &__hamburger-elem {
+    background: $white;
+    position: absolute;
+    right: 0;
+    height: toRem(4);
+    transition: 0.2s;
+  }
+  &__hamburger-elem1 {
+    width: 100%;
+    top: 0;
+  }
+  &__hamburger-elem2 {
+    width: toRem(33);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__hamburger-elem3 {
+    width: toRem(19);
+    top: calc(100% - toRem(4));
+  }
 }
 
 // Media Queries
