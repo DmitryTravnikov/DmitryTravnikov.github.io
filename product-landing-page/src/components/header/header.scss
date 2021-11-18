@@ -9,6 +9,19 @@
     @include flex(column, wrap, flex-start, center);
     padding-top: toRem(28);
     padding-bottom: toRem(48);
+    @media only screen and (min-width: 576px) {
+      @include flex(row, wrap, space-between, center);
+    }
+    @media only screen and (min-width: 992px) {
+      @include flex(row, wrap, space-between, center);
+    }
+    @media only screen and (min-width: 1284px) {
+      width: 1284px;
+      padding-top: toRem(27);
+      @include flex(row, wrap, space-between, center);
+      padding-left: toRem(68);
+      padding-left: toRem(11);
+    }
   }
   &__menu {
     @include flex(column, wrap, flex-start, center);
@@ -26,6 +39,23 @@
       opacity: 1;
       z-index: 1;
     }
+    @media only screen and (min-width: 576px) {
+      @include flex(row, wrap, flex-start, center);
+      padding-right: 5%;
+      padding-left: 5%;
+    }
+    @media only screen and (min-width: 992px) {
+      width: auto;
+      position: static;
+      opacity: 1;
+      z-index: 1;
+      background: none;
+      padding: 0;
+      margin-top: 0;
+    }
+    @media only screen and (min-width: 1284px) {
+      margin-top: toRem(0);
+    }
   }
   &__menu-link {
     text-decoration: none;
@@ -38,10 +68,23 @@
     &:first-child {
       margin-top: 0;
     }
+    @media only screen and (min-width: 576px) {
+      margin-top: 0;
+      margin-right: toRem(50);
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    @media only screen and (min-width: 992px) {
+      margin-right: toRem(41);
+    }
   }
   &__sign-up-n-hamburger-container {
     @include flex(row, wrap, flex-start, center);
     margin-top: toRem(10);
+    @media only screen and (min-width: 1284px) {
+      margin-top: 0;
+    }
   }
   &__sign-up {
     @extend .global-a;
@@ -54,6 +97,9 @@
     @include size(toRem(44), toRem(27));
     cursor: pointer;
     margin-left: toRem(27);
+    @media only screen and (min-width: 992px) {
+      display: none;
+    }
   }
   &__hamburger-elem {
     background: $white;
@@ -99,9 +145,11 @@
 }
 @media only screen and (min-width: 992px) {
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1284px) {
 }
 @media only screen and (min-width: 1400px) {
 }
 
-// * {@include outline()}
+// * {
+//   @include outline();
+// }
