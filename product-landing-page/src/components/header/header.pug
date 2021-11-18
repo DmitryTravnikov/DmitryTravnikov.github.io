@@ -1,0 +1,19 @@
+include ../logo/logo
+
+mixin header(props = {})
+  - const {  } = props;
+
+  .header
+    .header__wrapper.wrapper
+      +logo
+      nav.header__menu
+        a.prevdef.header__menu-link(href="#") Home
+        a.prevdef.header__menu-link(href="#") Product
+        a.prevdef.header__menu-link(href="#") About
+        a.prevdef.header__menu-link(href="#") Contact
+      .header__sign-up-n-hamburger-container
+        a.prevdef.header__sign-up(href="#") Sign up
+        .header__hamburger
+          .header__hamburger-elem.header__hamburger-elem1
+          .header__hamburger-elem.header__hamburger-elem2
+          .header__hamburger-elem.header__hamburger-elem3
