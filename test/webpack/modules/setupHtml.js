@@ -27,7 +27,7 @@ export const setupHtml = () => ({
           {
             loader: 'pug-loader',
             options: {
-              pretty: true,
+              pretty: false,
             },
           },
         ],

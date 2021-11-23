@@ -2,6 +2,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/node,yarn,windows,macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,yarn,windows,macos
 
+src/pixelperfect
+src/psd
+README.md
+
 ### macOS ###
 # General
 .DS_Store
